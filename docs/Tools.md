@@ -75,7 +75,6 @@ ProjectName
 ## 参考与致谢
 
 - [『闲言碎语』予鱼不如予渔，我的公众号都是这样写出来的](https://mp.weixin.qq.com/s?__biz=MzI5Nzk5MTg3MQ==&mid=2247486709&idx=1&sn=fd394016d3d97e800192743f93474def&chksm=ecade725dbda6e33976ae2af4f795bf3b7b5505c2aa22fd9dc018a88d5f22bfee80bd229220c&scene=126&sessionid=0&subscene=0&clicktime=1581573151#rd)
-- [文章排版规范](文章排版规范.md)
 
 <br />
 
