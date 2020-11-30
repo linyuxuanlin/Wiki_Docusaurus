@@ -9,6 +9,7 @@ module.exports = {
   //organizationName: "linyuxuanlin", // Usually your GitHub org/user name.
   //projectName: "Wiki_Docusaurus", // Usually your repo name.
   themeConfig: {
+    hideableSidebar: true,
     navbar: {
       title: "Power's Wiki",
       logo: {
