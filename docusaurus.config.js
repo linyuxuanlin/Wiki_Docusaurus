@@ -109,12 +109,20 @@ module.exports = {
     ],
   ],
 
-  plugins: ["@docusaurus/plugin-google-gtag"],
+  plugins: [
+    "@docusaurus/plugin-google-gtag",
+    "@docusaurus/plugin-google-analytics",
+  ],
   themeConfig: {
     gtag: {
       trackingID: "UA-141789564-1",
       // Optional fields.
       anonymizeIP: true, // Should IPs be anonymized?
+    },
+    googleAnalytics: {
+      trackingID: "UA-152900803-1",
+      // Optional fields.
+      anonymizeIP: false, // Should IPs be anonymized?
     },
   },
 };
