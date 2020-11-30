@@ -5,21 +5,21 @@ module.exports = {
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
-  favicon:
-    "https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20201122195819.png",
+  favicon: "https://cos.ap-guangzhou.myqcloud.com/wiki-media-1253965369/doc/logo-white.svg",
   //organizationName: "linyuxuanlin", // Usually your GitHub org/user name.
   //projectName: "Wiki_Docusaurus", // Usually your repo name.
   themeConfig: {
     hideableSidebar: true,
     navbar: {
       title: "Power's Wiki",
+      /*
       logo: {
         alt: "My Site Logo",
         src:
           "https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20201122195819.png",
       },
-      items: [
-        {
+      */
+      items: [{
           to: "docs/",
           activeBasePath: "docs",
           label: "Docs",
@@ -31,8 +31,23 @@ module.exports = {
           position: "left",
         },
         {
+          to: "digest/Producter",
+          label: "Digest",
+          position: "left",
+        },
+        {
+          to: "docs/Collection",
+          label: "收藏夹",
+          position: "right",
+        },
+        {
+          to: "docs/Links",
+          label: "友情链接",
+          position: "right",
+        },
+        {
           href: "https://github.com/linyuxuanlin/Wiki_Docusaurus",
-          label: "GitHub",
+          label: "本站源码",
           position: "right",
         },
       ],
@@ -95,6 +110,12 @@ module.exports = {
       {
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
+
+          // Please change this to your repo.
+          //editUrl: "https://github.com/facebook/docusaurus/edit/master/website/",
+        },
+        digest: {
+          sidebarPath: require.resolve("./sidebars_digest.js"),
 
           // Please change this to your repo.
           //editUrl: "https://github.com/facebook/docusaurus/edit/master/website/",
