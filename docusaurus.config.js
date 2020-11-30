@@ -30,11 +30,13 @@ module.exports = {
           label: "Blog",
           position: "left",
         },
+        /*
         {
           to: "digest/Producter",
           label: "Digest",
           position: "left",
         },
+        */
         {
           to: "docs/Collection",
           label: "收藏夹",
@@ -114,12 +116,14 @@ module.exports = {
           // Please change this to your repo.
           //editUrl: "https://github.com/facebook/docusaurus/edit/master/website/",
         },
+        /*
         digest: {
           sidebarPath: require.resolve("./sidebars_digest.js"),
 
           // Please change this to your repo.
           //editUrl: "https://github.com/facebook/docusaurus/edit/master/website/",
         },
+        */
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
