@@ -6,8 +6,8 @@ module.exports = {
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
-  organizationName: "linyuxuanlin", // Usually your GitHub org/user name.
-  projectName: "Wiki_Docusaurus", // Usually your repo name.
+  //organizationName: "linyuxuanlin", // Usually your GitHub org/user name.
+  //projectName: "Wiki_Docusaurus", // Usually your repo name.
   themeConfig: {
     navbar: {
       title: "Power's Wiki",
