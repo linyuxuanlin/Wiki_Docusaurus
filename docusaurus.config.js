@@ -16,7 +16,8 @@ module.exports = {
         alt: "My Site Logo",
         src: "img/logo.svg",
       },
-      items: [{
+      items: [
+        {
           to: "docs/",
           activeBasePath: "docs",
           label: "Docs",
@@ -90,10 +91,9 @@ module.exports = {
       "@docusaurus/preset-classic",
 
       {
-
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
-         
+
           // Please change this to your repo.
           //editUrl: "https://github.com/facebook/docusaurus/edit/master/website/",
         },
@@ -106,7 +106,15 @@ module.exports = {
           customCss: require.resolve("./src/css/custom.css"),
         },
       },
-
     ],
   ],
+
+  plugins: ["@docusaurus/plugin-google-gtag"],
+  themeConfig: {
+    gtag: {
+      trackingID: "UA-141789564-1",
+      // Optional fields.
+      anonymizeIP: true, // Should IPs be anonymized?
+    },
+  },
 };
