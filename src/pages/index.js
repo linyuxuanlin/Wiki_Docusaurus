@@ -73,7 +73,7 @@ function Home() {
                 "button button--outline button--secondary button--lg",
                 styles.getStarted
               )}
-              to={useBaseUrl("docs/AirForce-充满灵性的电机驱动模块")}
+              to={useBaseUrl("docs/")}
             >
               Get Started{" "}
             </Link>{" "}
