@@ -1311,7 +1311,7 @@
     "@docusaurus/utils" "2.0.0-alpha.69"
     react-json-view "^1.19.1"
 
-"@docusaurus/plugin-google-analytics@2.0.0-alpha.69":
+"@docusaurus/plugin-google-analytics@2.0.0-alpha.69", "@docusaurus/plugin-google-analytics@^2.0.0-alpha.69":
   version "2.0.0-alpha.69"
   resolved "https://registry.npm.taobao.org/@docusaurus/plugin-google-analytics/download/@docusaurus/plugin-google-analytics-2.0.0-alpha.69.tgz#031e0e4431842b1c9ba99fb6dd6dd258ee91f05e"
   integrity sha1-Ax4ORDGEKxybqZ+23W3SWO6R8F4=
