@@ -1325,7 +1325,7 @@
   dependencies:
     "@docusaurus/core" "2.0.0-alpha.69"
 
-"@docusaurus/plugin-sitemap@2.0.0-alpha.69":
+"@docusaurus/plugin-sitemap@2.0.0-alpha.69", "@docusaurus/plugin-sitemap@^2.0.0-alpha.69":
   version "2.0.0-alpha.69"
   resolved "https://registry.npm.taobao.org/@docusaurus/plugin-sitemap/download/@docusaurus/plugin-sitemap-2.0.0-alpha.69.tgz#ffda02b4be468b3dfeed8fde3c2f2971ee839078"
   integrity sha1-/9oCtL5Giz3+7Y/ePC8pce6DkHg=
