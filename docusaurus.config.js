@@ -109,19 +109,7 @@ module.exports = {
     ],
   ],
 
-  plugins: [
-    "@docusaurus/plugin-google-analytics",
-    [
-      "@docusaurus/plugin-sitemap",
-      {
-        cacheTime: 600 * 1000, // 600 sec - cache purge period
-        changefreq: "weekly",
-        priority: 0.5,
-        trailingSlash: false,
-      },
-    ],
-  ],
-
+  plugins: ["@docusaurus/plugin-google-analytics"],
   themeConfig: {
     googleAnalytics: {
       trackingID: "UA-152900803-1",
