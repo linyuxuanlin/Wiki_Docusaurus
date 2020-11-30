@@ -119,14 +119,14 @@ module.exports = {
         trailingSlash: false,
       },
     ],
-
-    "@docusaurus/plugin-google-analytics",
+    //"@docusaurus/plugin-google-analytics",
   ],
+  /*
   themeConfig: {
     googleAnalytics: {
       trackingID: "UA-152900803-1",
-      // Optional fields.
       anonymizeIP: false, // Should IPs be anonymized?
     },
   },
+  */
 };
