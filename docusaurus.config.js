@@ -9,9 +9,46 @@ module.exports = {
   //organizationName: "linyuxuanlin", // Usually your GitHub org/user name.
   //projectName: "Wiki_Docusaurus", // Usually your repo name.
   themeConfig: {
+
+    colorMode: {
+      // "light" | "dark"
+      //defaultMode: 'dark',
+
+      // Hides the switch in the navbar
+      // Useful if you want to support a single color mode
+      disableSwitch: false,
+
+      // Should we use the prefers-color-scheme media-query,
+      // using user system preferences, instead of the hardcoded defaultMode
+      respectPrefersColorScheme: false,
+
+      // Dark/light switch icon options
+      switchConfig: {
+        // Icon for the switch while in dark mode
+        darkIcon: '🌙',
+
+        // CSS to apply to dark icon,
+        // React inline style object
+        // see https://reactjs.org/docs/dom-elements.html#style
+        darkIconStyle: {
+          marginLeft: '2px',
+        },
+
+        // Unicode icons such as '\u2600' will work
+        // Unicode with 5 chars require brackets: '\u{1F602}'
+        //lightIcon: '\u{1F602}',
+
+        lightIconStyle: {
+          marginLeft: '1px',
+        },
+      },
+    },
+
     hideableSidebar: true,
     navbar: {
       title: "Power's Wiki",
+      hideOnScroll: false,
+      //style: 'primary',
       /*
       logo: {
         alt: "My Site Logo",
@@ -19,7 +56,9 @@ module.exports = {
           "https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20201122195819.png",
       },
       */
-      items: [{
+      items: [
+
+        {
           to: "docs/",
           activeBasePath: "docs",
           label: "Docs",
@@ -31,12 +70,13 @@ module.exports = {
           position: "left",
         },
         /*
-        {
-          to: "digest/Producter",
-          label: "Digest",
-          position: "left",
-        },
-        */
+                {
+                  to: "docs/digest/",
+                  label: "Digest",
+                  position: "left",
+                },
+                */
+
         {
           to: "docs/Collection",
           label: "收藏夹",
