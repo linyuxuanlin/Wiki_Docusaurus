@@ -1,7 +1,7 @@
 module.exports = {
-  title: "Power's Digest",
+  title: "Power's Wiki",
   tagline: "still developing",
-  url: "https://digest.wiki-power.com",
+  url: "https://wiki-power.com",
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
@@ -46,7 +46,7 @@ module.exports = {
 
     hideableSidebar: true,
     navbar: {
-      title: "Power's Digest",
+      title: "Power's Wiki",
       hideOnScroll: false,
       //style: 'primary',
       /*
@@ -57,25 +57,25 @@ module.exports = {
       },
       */
       items: [
+
+        {
+          to: "docs/",
+          activeBasePath: "docs",
+          label: "Docs",
+          position: "left",
+        },
+        {
+          to: "blog",
+          label: "Blog",
+          position: "left",
+        },
         /*
                 {
-                  to: "docs/",
-                  activeBasePath: "docs",
-                  label: "Docs",
+                  to: "docs/digest/",
+                  label: "Digest",
                   position: "left",
                 },
-                {
-                  to: "blog",
-                  label: "Blog",
-                  position: "left",
-                },
-                
-                        {
-                          to: "docs/digest/",
-                          label: "Digest",
-                          position: "left",
-                        },
-                        
+                */
 
         {
           to: "docs/Collection",
@@ -87,10 +87,9 @@ module.exports = {
           label: "友情链接",
           position: "right",
         },
-        */
         {
-          href: "https://wiki-power.com",
-          label: "Wiki",
+          href: "https://github.com/linyuxuanlin/Wiki_Docusaurus",
+          label: "本站源码",
           position: "right",
         },
       ],
@@ -152,7 +151,6 @@ module.exports = {
 
       {
         docs: {
-          routeBasePath: '/',
           sidebarPath: require.resolve("./sidebars.js"),
 
           // Please change this to your repo.
