@@ -92,7 +92,7 @@ module.exports = {
           position: "right",
         },
       ],
-    } /*
+    },
     footer: {
       style: "dark",
       /*
@@ -140,9 +140,9 @@ module.exports = {
             },
           ],
         },
-      ],
+      ],*/
       copyright: `Power Lin © ${new Date().getFullYear()} | <a href="https://beian.miit.gov.cn"> 粤 ICP 备 20014898 号 </a> | Built with Docusaurus`,
-    },*/,
+    },
   },
   presets: [
     [
