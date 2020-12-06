@@ -5,11 +5,11 @@ module.exports = {
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
-  favicon: "https://cos.ap-guangzhou.myqcloud.com/wiki-media-1253965369/doc/logo-white.svg",
+  favicon:
+    "https://cos.ap-guangzhou.myqcloud.com/wiki-media-1253965369/doc/logo-white.svg",
   //organizationName: "linyuxuanlin", // Usually your GitHub org/user name.
   //projectName: "Wiki_Docusaurus", // Usually your repo name.
   themeConfig: {
-
     colorMode: {
       // "light" | "dark"
       //defaultMode: 'dark',
@@ -25,13 +25,13 @@ module.exports = {
       // Dark/light switch icon options
       switchConfig: {
         // Icon for the switch while in dark mode
-        darkIcon: '🌙',
+        darkIcon: "🌙",
 
         // CSS to apply to dark icon,
         // React inline style object
         // see https://reactjs.org/docs/dom-elements.html#style
         darkIconStyle: {
-          marginLeft: '2px',
+          marginLeft: "2px",
         },
 
         // Unicode icons such as '\u2600' will work
@@ -39,7 +39,7 @@ module.exports = {
         //lightIcon: '\u{1F602}',
 
         lightIconStyle: {
-          marginLeft: '1px',
+          marginLeft: "1px",
         },
       },
     },
@@ -57,7 +57,6 @@ module.exports = {
       },
       */
       items: [
-
         {
           to: "docs/",
           activeBasePath: "docs",
@@ -93,7 +92,7 @@ module.exports = {
           position: "right",
         },
       ],
-    },
+    } /*
     footer: {
       style: "dark",
       /*
@@ -141,9 +140,9 @@ module.exports = {
             },
           ],
         },
-      ],*/
+      ],
       copyright: `Power Lin © ${new Date().getFullYear()} | <a href="https://beian.miit.gov.cn"> 粤 ICP 备 20014898 号 </a> | Built with Docusaurus`,
-    },
+    },*/,
   },
   presets: [
     [
