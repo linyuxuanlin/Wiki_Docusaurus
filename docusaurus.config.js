@@ -59,6 +59,7 @@ module.exports = {
       items: [
 
         {
+          
           to: "docs/",
           activeBasePath: "docs",
           label: "Docs",
@@ -151,6 +152,7 @@ module.exports = {
 
       {
         docs: {
+          routeBasePath: '/',
           sidebarPath: require.resolve("./sidebars.js"),
           editUrl: "https://github.com/linyuxuanlin/Wiki_Docusaurus/tree/main/",
         },
