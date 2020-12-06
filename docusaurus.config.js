@@ -151,7 +151,6 @@ module.exports = {
 
       {
         docs: {
-          routeBasePath: '/',
           sidebarPath: require.resolve("./sidebars.js"),
           editUrl: "https://github.com/linyuxuanlin/Wiki_Docusaurus/tree/main/",
         },
