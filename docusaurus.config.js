@@ -58,7 +58,26 @@ module.exports = {
       */
       items: [
 
-       
+        {
+          
+          to: "docs/",
+          activeBasePath: "docs",
+          label: "Docs",
+          position: "left",
+        },
+        {
+          to: "blog",
+          label: "Blog",
+          position: "left",
+        },
+        /*
+                {
+                  to: "docs/digest/",
+                  label: "Digest",
+                  position: "left",
+                },
+                */
+
         {
           to: "docs/Collection",
           label: "收藏夹",
@@ -137,7 +156,10 @@ module.exports = {
           sidebarPath: require.resolve("./sidebars.js"),
           editUrl: "https://github.com/linyuxuanlin/Wiki_Docusaurus/tree/main/",
         },
-        
+        blog: {
+          showReadingTime: true,
+          editUrl: "https://github.com/linyuxuanlin/Wiki_Docusaurus/tree/main/",
+        },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
         },
