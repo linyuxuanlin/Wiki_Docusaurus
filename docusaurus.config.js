@@ -154,7 +154,7 @@ module.exports = {
           sidebarPath: require.resolve("./sidebars.js"),
 
           // Please change this to your repo.
-          //editUrl: "https://github.com/facebook/docusaurus/edit/master/website/",
+          editUrl: "https://github.com/linyuxuanlin/Wiki_Docusaurus",
         },
         /*
         digest: {
@@ -167,7 +167,7 @@ module.exports = {
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
-          //editUrl: "https://github.com/facebook/docusaurus/edit/master/website/blog/",
+          editUrl: "https://github.com/linyuxuanlin/Wiki_Docusaurus",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
