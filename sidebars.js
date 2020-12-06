@@ -20,7 +20,6 @@ module.exports = {
       "自制CMSIS-DAP",
       "PCB名片设计",
       "AD使用Git的注意事项",
-      "https://www.docusaurus.cn/docs/styling-layout",
     ],
     队内管理: ["换届大会-活动总结", "破冰-活动总结"],
     嵌入式开发: [
