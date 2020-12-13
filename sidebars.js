@@ -98,7 +98,8 @@ module.exports = {
       type: 'category',
       label: '高效工作',
       collapsed: false,
-      items: ["使用Markdown进行高效写作",
+      items: [
+      //"使用Markdown进行高效写作",
       "团队知识库搭建记录-DokuWiki",
       "个人知识库极简搭建指南-VuePress",
       "用Vercel加速Pages服务",
@@ -170,4 +171,4 @@ module.exports = {
   //"写作",
   //"财富",
   //"创业",
-  //"个人发展",
+  //"个人发展1",
