@@ -59,27 +59,34 @@ module.exports = {
       },
       */
       items: [
-       
-     
+
         /*
+        {
+          to: "docs/",
+          activeBasePath: "docs",
+          label: "Docs",
+          position: "left",
+        },
+        
+     
+        
                 {
                   to: "docs/digest/",
                   label: "Digest",
                   position: "left",
                 },
                 */
-/*
+
         {
-          to: "docs/Collection",
+          to: "Collection",
           label: "收藏夹",
           position: "right",
         },
         {
-          to: "docs/Links",
+          to: "Links",
           label: "友情链接",
           position: "right",
         },
-        */
         {
           href: "https://github.com/linyuxuanlin/Wiki_Docusaurus",
           label: "本站源码",
