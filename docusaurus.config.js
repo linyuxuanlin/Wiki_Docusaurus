@@ -170,6 +170,8 @@ module.exports = {
         docs: {
           routeBasePath: '/',
           sidebarPath: require.resolve("./sidebars.js"),
+          showLastUpdateAuthor: false,
+          showLastUpdateTime: true,
           editUrl: "https://github.com/linyuxuanlin/Wiki_Docusaurus/tree/main/",
         },
         theme: {
@@ -178,5 +180,5 @@ module.exports = {
       },
     ],
   ],
-  onBrokenLinks: 'log',
+  onBrokenLinks: 'ignore', //遇到错误连接时的处理方法
 };
