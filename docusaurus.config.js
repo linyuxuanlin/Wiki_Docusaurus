@@ -10,7 +10,7 @@ module.exports = {
   //organizationName: "linyuxuanlin", // Usually your GitHub org/user name.
   //projectName: "Wiki_Docusaurus", // Usually your repo name.
   themeConfig: {
-    
+
     algolia: {
       apiKey: '4cb7cbb290ebf1c47479ada3658c3d8e',
       indexName: 'wiki',
@@ -111,7 +111,7 @@ module.exports = {
       ],
     },
     footer: {
-      style: "dark",
+      style: "light",
       /*
       links: [{
           title: "Docs",
@@ -125,6 +125,7 @@ module.exports = {
             },
           ],
         },
+        
         {
           
                     title: "Community",
