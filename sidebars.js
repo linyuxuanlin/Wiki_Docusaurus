@@ -1,5 +1,6 @@
 module.exports = {
   docs: [
+    "Hello",
     {
       type: 'category',
       label: '电路设计',
