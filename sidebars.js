@@ -99,7 +99,7 @@ module.exports = {
       label: '高效工作',
       collapsed: false,
       items: [
-      //"使用Markdown进行高效写作",
+      "使用Markdown进行高效写作",
       "团队知识库搭建记录-DokuWiki",
       "个人知识库极简搭建指南-VuePress",
       "用Vercel加速Pages服务",
