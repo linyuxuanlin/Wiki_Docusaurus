@@ -1,6 +1,8 @@
 ---
 id: Hello
 title: Hello
+
+slug: /
 ---
 
 
