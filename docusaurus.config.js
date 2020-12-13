@@ -178,4 +178,5 @@ module.exports = {
       },
     ],
   ],
+  onBrokenLinks: 'log',
 };
