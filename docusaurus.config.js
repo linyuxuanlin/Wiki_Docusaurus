@@ -76,7 +76,11 @@ module.exports = {
                   position: "left",
                 },
                 */
-        
+        {
+          href: "http://digest.wiki-power.com/",
+          label: "书摘",
+          position: "right",
+        },
         {
           to: "Collection",
           label: "收藏夹",
