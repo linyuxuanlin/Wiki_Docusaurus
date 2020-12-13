@@ -68,7 +68,7 @@ module.exports = {
                   position: "left",
                 },
                 */
-
+/*
         {
           to: "docs/Collection",
           label: "收藏夹",
@@ -79,6 +79,7 @@ module.exports = {
           label: "友情链接",
           position: "right",
         },
+        */
         {
           href: "https://github.com/linyuxuanlin/Wiki_Docusaurus",
           label: "本站源码",
