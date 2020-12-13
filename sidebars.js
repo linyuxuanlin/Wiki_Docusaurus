@@ -131,7 +131,8 @@ module.exports = {
       type: 'category',
       label: '生活经历',
       collapsed: false,
-      items: ["书摘与读书笔记",
+      items: [
+      //"书摘与读书笔记",
       //"华广爬楼指北",
       "读《黑客与画家》",
       "英语六级-备考",
@@ -142,8 +143,6 @@ module.exports = {
       //"科技X的访谈",
     ],
     },
-
-
   ],
 
 };
