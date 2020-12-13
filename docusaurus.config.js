@@ -12,7 +12,7 @@ module.exports = {
   themeConfig: {
     algolia: {
       apiKey: '4cb7cbb290ebf1c47479ada3658c3d8e',
-      indexName: 'digest',
+      indexName: 'wiki',
 
       // Optional: see doc section bellow
       contextualSearch: true,
