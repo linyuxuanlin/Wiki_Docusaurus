@@ -1,29 +1,46 @@
 module.exports = {
-  someSidebar: {
-    电路设计: [
-      "AirForce-充满灵性的电机驱动模块",
-      "如何设计一款单片机的最小系统",
-      "SwiftCtrl-蓝牙手柄",
-      "TinyDVR-小巧身材，满载动力",
-      "ZenDriver-高性能的电机驱动",
-      "PCB布线规范",
-      "PCB元件布局规范",
-      "函数思想在电路设计中的应用",
-      "基本元器件选型",
-      "电源的设计",
-      "AD小技巧整理",
-      "AD入门系列一：环境搭建",
-      "AD入门系列二：基础知识",
-      "AD入门系列三：原理图绘制",
-      "AD入门系列四：PCB绘制",
-      "AD入门系列五：库文件绘制",
-      "自制CMSIS-DAP",
-      "PCB名片设计",
-      "AD使用Git的注意事项",
-    ],
-    队内管理: ["换届大会-活动总结", "破冰-活动总结"],
-    嵌入式开发: [
-      "HAL系列教程1—GPIO",
+  docs: [
+    {
+      type: 'category',
+      label: '电路设计',
+      collapsed: false,
+      items: [
+        "AirForce-充满灵性的电机驱动模块",
+        "如何设计一款单片机的最小系统",
+        "SwiftCtrl-蓝牙手柄",
+        "TinyDVR-小巧身材，满载动力",
+        "ZenDriver-高性能的电机驱动",
+        "PCB布线规范",
+        "PCB元件布局规范",
+        "函数思想在电路设计中的应用",
+        "基本元器件选型",
+        "电源的设计",
+        "AD小技巧整理",
+        "AD入门系列一：环境搭建",
+        "AD入门系列二：基础知识",
+        "AD入门系列三：原理图绘制",
+        "AD入门系列四：PCB绘制",
+        "AD入门系列五：库文件绘制",
+        "自制CMSIS-DAP",
+        "PCB名片设计",
+        "AD使用Git的注意事项",
+      ],
+    },
+    {
+      type: 'category',
+      label: '队内管理',
+      collapsed: false,
+      items: [
+        "换届大会-活动总结", 
+        "破冰-活动总结"
+      ],
+    },
+    {
+      type: 'category',
+      label: '嵌入式开发',
+      collapsed: false,
+      items: [
+        "HAL系列教程1—GPIO",
       "PlatformIO—一站式嵌入式开发工具",
       "PlatformIO搭配CubeMX食用",
       "CubeMX的一些坑",
@@ -31,9 +48,13 @@ module.exports = {
       "KeilMDK配置指南",
       //"STM32模块设计-LED",
       "大疆N3飞控-参考资料",
-    ],
-    操作系统相关: [
-      "Docker学习笔记",
+      ],
+    },
+    {
+      type: 'category',
+      label: '操作系统相关',
+      collapsed: false,
+      items: ["Docker学习笔记",
       "CentOS配置OhMyZsh",
       "如何快速制作一个启动盘",
       "使用VSCode进行远程开发",
@@ -41,16 +62,23 @@ module.exports = {
       //"Linux基础（CentOS）",
       //"从零搭建视觉开发环境（Docker-Linux）",
     ],
-    Arduino: [
-      "ATTiny85调试记录",
+    },
+    {
+      type: 'category',
+      label: 'Arduino',
+      collapsed: false,
+      items: ["ATTiny85调试记录",
       "T-Clock桌上小钟",
       //"小车游华广-比赛",
       //"麦昆小车-测评",
       "一个舵机的自我修养",
-      "麦轮小车",
-    ],
-    软件开发: [
-      "CSS学习笔记",
+      "麦轮小车",],
+    },
+    {
+      type: 'category',
+      label: '软件开发',
+      collapsed: false,
+      items: ["CSS学习笔记",
       "HTML学习笔记",
       "JavaScript学习笔记",
       "自适应网页设计",
@@ -59,10 +87,13 @@ module.exports = {
       "BookJourney-二手书商城小程序",
       "Git学习笔记",
       "Git配置代理",
-      "删除GitHub仓库中某个文件夹",
-    ],
-    高效工作: [
-      "知识库极简搭建指南",
+      "删除GitHub仓库中某个文件夹",],
+    },
+    {
+      type: 'category',
+      label: '高效工作',
+      collapsed: false,
+      items: ["知识库极简搭建指南",
       "用Vercel加速Pages服务",
       "基于树莓派搭建云打印服务器",
       "文章排版规范",
@@ -83,16 +114,24 @@ module.exports = {
       "如何配一台电脑",
       "用reveal.js制作幻灯片",
     ],
-    PM: [
-      "产品经理的日常",
+    },
+    {
+      type: 'category',
+      label: 'PM',
+      collapsed: false,
+      items: ["产品经理的日常",
       "中台的概念",
       "画图基础",
       "智能硬件产品经理的技术要求",
       "如何撰写一份BRD",
       //"智能硬件产品开发流程",
     ],
-    生活经历: [
-      "书摘与读书笔记",
+    },
+    {
+      type: 'category',
+      label: '生活经历',
+      collapsed: false,
+      items: ["书摘与读书笔记",
       //"华广爬楼指北",
       "读《黑客与画家》",
       "英语六级-备考",
@@ -101,6 +140,36 @@ module.exports = {
       "Hack.init()",
       "焊接比赛：培训及总结",
       //"科技X的访谈",
+    ],
+    },
+
+
+  ],
+
+};
+
+/*
+  someSidebar: {
+   
+    : [
+      
+    ],
+    : [
+      
+    ],
+    : [
+      
+    ],
+    : [
+      
+    ],
+    : [
+      
+    : [
+      
+    ],
+    : [
+      
     ],
 
 
