@@ -10,6 +10,8 @@ module.exports = {
   //organizationName: "linyuxuanlin", // Usually your GitHub org/user name.
   //projectName: "Wiki_Docusaurus", // Usually your repo name.
   themeConfig: {
+
+    
     colorMode: {
       // "light" | "dark"
       //defaultMode: 'dark',
@@ -63,6 +65,7 @@ module.exports = {
           label: "Docs",
           position: "left",
         },
+        
         {
           to: "blog",
           label: "Blog",
