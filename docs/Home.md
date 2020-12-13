@@ -1,6 +1,7 @@
 ---
 id: Home
 title: Power's Wiki
+sidebar_label: Home
 slug: /
 ---
 
