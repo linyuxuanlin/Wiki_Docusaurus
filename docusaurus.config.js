@@ -1,5 +1,5 @@
-const math = require('remark-math');
-const katex = require('rehype-katex');
+//const math = require('remark-math');
+const katex = require("rehype-katex");
 
 module.exports = {
   title: "Power's Wiki",
@@ -8,14 +8,14 @@ module.exports = {
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
-  favicon: "https://cos.ap-guangzhou.myqcloud.com/wiki-media-1253965369/doc/logo-white.svg",
+  favicon:
+    "https://cos.ap-guangzhou.myqcloud.com/wiki-media-1253965369/doc/logo-white.svg",
   //organizationName: "linyuxuanlin", // Usually your GitHub org/user name.
   //projectName: "Wiki_Docusaurus", // Usually your repo name.
   themeConfig: {
-
     algolia: {
-      apiKey: '4cb7cbb290ebf1c47479ada3658c3d8e',
-      indexName: 'wiki',
+      apiKey: "4cb7cbb290ebf1c47479ada3658c3d8e",
+      indexName: "wiki",
 
       // Optional: see doc section bellow
       contextualSearch: true,
@@ -73,7 +73,6 @@ module.exports = {
       },
       */
       items: [
-
         /*
         {
           to: "docs/",
@@ -170,12 +169,12 @@ module.exports = {
 
       {
         docs: {
-          routeBasePath: '/',
+          routeBasePath: "/",
           sidebarPath: require.resolve("./sidebars.js"),
           showLastUpdateAuthor: false,
           showLastUpdateTime: true,
           editUrl: "https://github.com/linyuxuanlin/Wiki_Docusaurus/tree/main/",
-          remarkPlugins: [math],
+          //remarkPlugins: [math],
           rehypePlugins: [katex],
         },
         theme: {
@@ -184,13 +183,15 @@ module.exports = {
       },
     ],
   ],
-  onBrokenLinks: 'ignore', //遇到错误连接时的处理方法
+  onBrokenLinks: "ignore", //遇到错误连接时的处理方法
 
-
-  stylesheets: [{
-    href: 'https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css',
-    type: 'text/css',
-    integrity: 'sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X',
-    crossorigin: 'anonymous',
-  }, ],
+  stylesheets: [
+    {
+      href: "https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css",
+      type: "text/css",
+      integrity:
+        "sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X",
+      crossorigin: "anonymous",
+    },
+  ],
 };
