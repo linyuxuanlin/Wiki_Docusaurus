@@ -173,15 +173,17 @@ module.exports = {
           showLastUpdateAuthor: false,
           showLastUpdateTime: true,
           editUrl: "https://github.com/linyuxuanlin/Wiki_Docusaurus/tree/main/",
-          remarkPlugins: [math],
-          rehypePlugins: [katex],
+          remarkPlugins: [remarkMath],
+          rehypePlugins: [
+            [rehypeKatex, {
+              strict: false
+            }]
+          ],
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
         },
-        remarkPlugins: [
-          remarkMath,
-        ],
+
       },
     ],
   ],
