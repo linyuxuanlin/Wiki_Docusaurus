@@ -1,6 +1,3 @@
-const math = require('remark-math');
-const katex = require('rehype-katex');
-
 module.exports = {
   title: "Power's Wiki",
   tagline: "still developing",
@@ -8,7 +5,8 @@ module.exports = {
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
-  favicon: "https://cos.ap-guangzhou.myqcloud.com/wiki-media-1253965369/doc/logo-white.svg",
+  favicon:
+    "https://cos.ap-guangzhou.myqcloud.com/wiki-media-1253965369/doc/logo-white.svg",
   //organizationName: "linyuxuanlin", // Usually your GitHub org/user name.
   //projectName: "Wiki_Docusaurus", // Usually your repo name.
   themeConfig: {
@@ -25,7 +23,7 @@ module.exports = {
 
       //... other Algolia params
     },
-
+    
     colorMode: {
       // "light" | "dark"
       //defaultMode: 'dark',
@@ -175,8 +173,6 @@ module.exports = {
           showLastUpdateAuthor: false,
           showLastUpdateTime: true,
           editUrl: "https://github.com/linyuxuanlin/Wiki_Docusaurus/tree/main/",
-          remarkPlugins: [math],
-          rehypePlugins: [katex],
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
@@ -185,12 +181,4 @@ module.exports = {
     ],
   ],
   onBrokenLinks: 'ignore', //遇到错误连接时的处理方法
-
-
-  stylesheets: [{
-    href: 'https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css',
-    type: 'text/css',
-    integrity: 'sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X',
-    crossorigin: 'anonymous',
-  }, ],
 };
