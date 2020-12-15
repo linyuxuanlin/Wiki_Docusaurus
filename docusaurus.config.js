@@ -179,9 +179,6 @@ module.exports = {
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
         },
-        remarkPlugins: [
-          remarkMath,
-        ],
       },
     ],
   ],
