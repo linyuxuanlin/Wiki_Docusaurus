@@ -4,7 +4,7 @@ module.exports = {
     {
       type: 'category',
       label: '电路设计',
-      collapsed: false,
+      collapsed: true,
       items: [
         "AirForce-充满灵性的电机驱动模块",
         "如何设计一款单片机的最小系统",
@@ -33,7 +33,7 @@ module.exports = {
     {
       type: 'category',
       label: '队内管理',
-      collapsed: false,
+      collapsed: true,
       items: [
         "团队知识库的搭建-理论",
         "动员大会-经验总结",
@@ -45,7 +45,7 @@ module.exports = {
     {
       type: 'category',
       label: '嵌入式开发',
-      collapsed: false,
+      collapsed: true,
       items: [
         "HAL系列教程1—GPIO",
         "PlatformIO—一站式嵌入式开发工具",
@@ -61,7 +61,7 @@ module.exports = {
     {
       type: 'category',
       label: '高效工作',
-      collapsed: false,
+      collapsed: true,
       items: [
         "使用Markdown进行高效写作",
         "团队知识库搭建记录-DokuWiki",
@@ -86,7 +86,7 @@ module.exports = {
     {
       type: 'category',
       label: '软件开发',
-      collapsed: false,
+      collapsed: true,
       items: ["CSS学习笔记",
         "HTML学习笔记",
         "JavaScript学习笔记",
@@ -101,7 +101,7 @@ module.exports = {
     {
       type: 'category',
       label: '小技巧',
-      collapsed: false,
+      collapsed: true,
       items: [
         "MSI主板开启虚拟化的方法",
         "Git配置代理",
