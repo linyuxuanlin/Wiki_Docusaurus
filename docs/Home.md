@@ -30,4 +30,4 @@ Hi there~
 
 <br />
 
-Power Lin | [粤 ICP 备 20014898 号](https://beian.miit.gov.cn)
+Power Lin | [粤 ICP 备 20014898 号](https://beian.miit.gov.cn) | [![GitHub last commit](https://img.shields.io/github/last-commit/linyuxuanlin/Wiki_Docusaurus)](https://github.com/linyuxuanlin/Wiki_Docusaurus)
