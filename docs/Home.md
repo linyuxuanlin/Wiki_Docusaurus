@@ -30,4 +30,4 @@ Hi there~
 
 <br />
 
-Power Lin | [粤 ICP 备 20014898 号](https://beian.miit.gov.cn) | CC BY-NC-SA 4.0
+Power Lin | [粤 ICP 备 20014898 号](https://beian.miit.gov.cn)
