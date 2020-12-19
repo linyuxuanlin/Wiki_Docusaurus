@@ -2,25 +2,6 @@
 # yarn lockfile v1
 
 
-"@algolia/autocomplete-core@^1.0.0-alpha.35":
-  version "1.0.0-alpha.37"
-  resolved "https://registry.npm.taobao.org/@algolia/autocomplete-core/download/@algolia/autocomplete-core-1.0.0-alpha.37.tgz#d41a6561b38761c4967ff7aa3e1d5d0aa3ceb31c"
-  integrity sha1-1BplYbOHYcSWf/eqPh1dCqPOsxw=
-  dependencies:
-    "@algolia/autocomplete-shared" "1.0.0-alpha.37"
-
-"@algolia/autocomplete-preset-algolia@^1.0.0-alpha.35":
-  version "1.0.0-alpha.37"
-  resolved "https://registry.npm.taobao.org/@algolia/autocomplete-preset-algolia/download/@algolia/autocomplete-preset-algolia-1.0.0-alpha.37.tgz#8c8e8ccec13bdea6db72c9994329c63fe804ca58"
-  integrity sha1-jI6MzsE73qbbcsmZQynGP+gEylg=
-  dependencies:
-    "@algolia/autocomplete-shared" "1.0.0-alpha.37"
-
-"@algolia/autocomplete-shared@1.0.0-alpha.37":
-  version "1.0.0-alpha.37"
-  resolved "https://registry.npm.taobao.org/@algolia/autocomplete-shared/download/@algolia/autocomplete-shared-1.0.0-alpha.37.tgz#07d8fc2bd983df195e39716c9b432fd9ec85533a"
-  integrity sha1-B9j8K9mD3xleOXFsm0Mv2eyFUzo=
-
 "@algolia/cache-browser-local-storage@4.8.2":
   version "4.8.2"
   resolved "https://registry.npm.taobao.org/@algolia/cache-browser-local-storage/download/@algolia/cache-browser-local-storage-4.8.2.tgz#e94c50d360c53fc48d107484de2012f3a0bbed9a"
@@ -1123,28 +1104,27 @@
   resolved "https://registry.npm.taobao.org/@csstools/convert-colors/download/@csstools/convert-colors-1.4.0.tgz#ad495dc41b12e75d588c6db8b9834f08fa131eb7"
   integrity sha1-rUldxBsS511YjG24uYNPCPoTHrc=
 
-"@docsearch/css@3.0.0-alpha.32":
-  version "3.0.0-alpha.32"
-  resolved "https://registry.npm.taobao.org/@docsearch/css/download/@docsearch/css-3.0.0-alpha.32.tgz#3d89c8db4035531d201f74ef2115f72094a24036"
-  integrity sha1-PYnI20A1Ux0gH3TvIRX3IJSiQDY=
+"@docsearch/css@^1.0.0-alpha.28":
+  version "1.0.0-alpha.28"
+  resolved "https://registry.npm.taobao.org/@docsearch/css/download/@docsearch/css-1.0.0-alpha.28.tgz#c8a2cd8c1bb3a6855c51892e9dbdab5d42fe6e23"
+  integrity sha1-yKLNjBuzpoVcUYkunb2rXUL+biM=
 
-"@docsearch/react@^3.0.0-alpha.31":
-  version "3.0.0-alpha.32"
-  resolved "https://registry.npm.taobao.org/@docsearch/react/download/@docsearch/react-3.0.0-alpha.32.tgz#ae3fa82e9c88683d9415bc439c4af7e2c0cfa5b7"
-  integrity sha1-rj+oLpyIaD2UFbxDnEr34sDPpbc=
+"@docsearch/react@^1.0.0-alpha.27":
+  version "1.0.0-alpha.28"
+  resolved "https://registry.npm.taobao.org/@docsearch/react/download/@docsearch/react-1.0.0-alpha.28.tgz#4f039ed79f8b3332b19a57677b219aebc5010e9d"
+  integrity sha1-TwOe15+LMzKxmldneyGa68UBDp0=
   dependencies:
-    "@algolia/autocomplete-core" "^1.0.0-alpha.35"
-    "@algolia/autocomplete-preset-algolia" "^1.0.0-alpha.35"
-    "@docsearch/css" "3.0.0-alpha.32"
+    "@docsearch/css" "^1.0.0-alpha.28"
+    "@francoischalifour/autocomplete-core" "^1.0.0-alpha.28"
+    "@francoischalifour/autocomplete-preset-algolia" "^1.0.0-alpha.28"
     algoliasearch "^4.0.0"
 
-"@docusaurus/core@2.0.0-alpha.70":
-  version "2.0.0-alpha.70"
-  resolved "https://registry.npm.taobao.org/@docusaurus/core/download/@docusaurus/core-2.0.0-alpha.70.tgz#81bff8b093421a0c740fac02903dd23938806077"
-  integrity sha1-gb/4sJNCGgx0D6wCkD3SOTiAYHc=
+"@docusaurus/core@2.0.0-alpha.69":
+  version "2.0.0-alpha.69"
+  resolved "https://registry.npm.taobao.org/@docusaurus/core/download/@docusaurus/core-2.0.0-alpha.69.tgz#1452b9b2f2c5f67f75a45275e7eb5943c1f43a24"
+  integrity sha1-FFK5svLF9n91pFJ15+tZQ8H0OiQ=
   dependencies:
     "@babel/core" "^7.12.3"
-    "@babel/generator" "^7.12.5"
     "@babel/plugin-proposal-nullish-coalescing-operator" "^7.12.1"
     "@babel/plugin-proposal-optional-chaining" "^7.12.1"
     "@babel/plugin-syntax-dynamic-import" "^7.8.3"
@@ -1154,11 +1134,10 @@
     "@babel/preset-typescript" "^7.12.1"
     "@babel/runtime" "^7.12.5"
     "@babel/runtime-corejs3" "^7.12.5"
-    "@babel/traverse" "^7.12.5"
-    "@docusaurus/cssnano-preset" "2.0.0-alpha.70"
-    "@docusaurus/types" "2.0.0-alpha.70"
-    "@docusaurus/utils" "2.0.0-alpha.70"
-    "@docusaurus/utils-validation" "2.0.0-alpha.70"
+    "@docusaurus/cssnano-preset" "2.0.0-alpha.69"
+    "@docusaurus/types" "2.0.0-alpha.69"
+    "@docusaurus/utils" "2.0.0-alpha.69"
+    "@docusaurus/utils-validation" "2.0.0-alpha.69"
     "@endiliey/static-site-generator-webpack-plugin" "^4.0.0"
     "@svgr/webpack" "^5.4.0"
     babel-loader "^8.2.1"
@@ -1221,25 +1200,25 @@
     webpack-merge "^4.2.2"
     webpackbar "^4.0.0"
 
-"@docusaurus/cssnano-preset@2.0.0-alpha.70":
-  version "2.0.0-alpha.70"
-  resolved "https://registry.npm.taobao.org/@docusaurus/cssnano-preset/download/@docusaurus/cssnano-preset-2.0.0-alpha.70.tgz#75dc56a71dc365a450729fd109b86fab72a6f560"
-  integrity sha1-ddxWpx3DZaRQcp/RCbhvq3Km9WA=
+"@docusaurus/cssnano-preset@2.0.0-alpha.69":
+  version "2.0.0-alpha.69"
+  resolved "https://registry.npm.taobao.org/@docusaurus/cssnano-preset/download/@docusaurus/cssnano-preset-2.0.0-alpha.69.tgz#19bc826850c9107c7bae507589284ac6f66b8485"
+  integrity sha1-GbyCaFDJEHx7rlB1iShKxvZrhIU=
   dependencies:
     cssnano-preset-advanced "^4.0.7"
     postcss "^7.0.2"
     postcss-combine-duplicated-selectors "^9.1.0"
     postcss-sort-media-queries "^1.7.26"
 
-"@docusaurus/mdx-loader@2.0.0-alpha.70":
-  version "2.0.0-alpha.70"
-  resolved "https://registry.npm.taobao.org/@docusaurus/mdx-loader/download/@docusaurus/mdx-loader-2.0.0-alpha.70.tgz#4cc3c92a5a89ffdc8313da998d4646564940b3e7"
-  integrity sha1-TMPJKlqJ/9yDE9qZjUZGVklAs+c=
+"@docusaurus/mdx-loader@2.0.0-alpha.69":
+  version "2.0.0-alpha.69"
+  resolved "https://registry.npm.taobao.org/@docusaurus/mdx-loader/download/@docusaurus/mdx-loader-2.0.0-alpha.69.tgz#cf882670d2cb05902197776bba471d04696ceae9"
+  integrity sha1-z4gmcNLLBZAhl3drukcdBGls6uk=
   dependencies:
     "@babel/parser" "^7.12.5"
     "@babel/traverse" "^7.12.5"
-    "@docusaurus/core" "2.0.0-alpha.70"
-    "@docusaurus/utils" "2.0.0-alpha.70"
+    "@docusaurus/core" "2.0.0-alpha.69"
+    "@docusaurus/utils" "2.0.0-alpha.69"
     "@mdx-js/mdx" "^1.6.21"
     "@mdx-js/react" "^1.6.21"
     escape-html "^1.0.3"
@@ -1255,16 +1234,16 @@
     url-loader "^4.1.1"
     webpack "^4.44.1"
 
-"@docusaurus/plugin-content-blog@2.0.0-alpha.70":
-  version "2.0.0-alpha.70"
-  resolved "https://registry.npm.taobao.org/@docusaurus/plugin-content-blog/download/@docusaurus/plugin-content-blog-2.0.0-alpha.70.tgz#795a5ddf181dfb314873a5dc33010d1a5bd94d28"
-  integrity sha1-eVpd3xgd+zFIc6XcMwENGlvZTSg=
+"@docusaurus/plugin-content-blog@2.0.0-alpha.69":
+  version "2.0.0-alpha.69"
+  resolved "https://registry.npm.taobao.org/@docusaurus/plugin-content-blog/download/@docusaurus/plugin-content-blog-2.0.0-alpha.69.tgz#ba96b65c1d19452487330c860677ee20a5af5275"
+  integrity sha1-upa2XB0ZRSSHMwyGBnfuIKWvUnU=
   dependencies:
-    "@docusaurus/core" "2.0.0-alpha.70"
-    "@docusaurus/mdx-loader" "2.0.0-alpha.70"
-    "@docusaurus/types" "2.0.0-alpha.70"
-    "@docusaurus/utils" "2.0.0-alpha.70"
-    "@docusaurus/utils-validation" "2.0.0-alpha.70"
+    "@docusaurus/core" "2.0.0-alpha.69"
+    "@docusaurus/mdx-loader" "2.0.0-alpha.69"
+    "@docusaurus/types" "2.0.0-alpha.69"
+    "@docusaurus/utils" "2.0.0-alpha.69"
+    "@docusaurus/utils-validation" "2.0.0-alpha.69"
     chalk "^3.0.0"
     feed "^4.2.1"
     fs-extra "^9.0.1"
@@ -1276,16 +1255,16 @@
     remark-admonitions "^1.2.1"
     webpack "^4.44.1"
 
-"@docusaurus/plugin-content-docs@2.0.0-alpha.70":
-  version "2.0.0-alpha.70"
-  resolved "https://registry.npm.taobao.org/@docusaurus/plugin-content-docs/download/@docusaurus/plugin-content-docs-2.0.0-alpha.70.tgz#42dfa40786e819b42974dd167048b190b37bbee5"
-  integrity sha1-Qt+kB4boGbQpdN0WcEixkLN7vuU=
+"@docusaurus/plugin-content-docs@2.0.0-alpha.69":
+  version "2.0.0-alpha.69"
+  resolved "https://registry.npm.taobao.org/@docusaurus/plugin-content-docs/download/@docusaurus/plugin-content-docs-2.0.0-alpha.69.tgz#5ef4d293765d02e11ffb2a201c491a34f92e2a83"
+  integrity sha1-XvTSk3ZdAuEf+yogHEkaNPkuKoM=
   dependencies:
-    "@docusaurus/core" "2.0.0-alpha.70"
-    "@docusaurus/mdx-loader" "2.0.0-alpha.70"
-    "@docusaurus/types" "2.0.0-alpha.70"
-    "@docusaurus/utils" "2.0.0-alpha.70"
-    "@docusaurus/utils-validation" "2.0.0-alpha.70"
+    "@docusaurus/core" "2.0.0-alpha.69"
+    "@docusaurus/mdx-loader" "2.0.0-alpha.69"
+    "@docusaurus/types" "2.0.0-alpha.69"
+    "@docusaurus/utils" "2.0.0-alpha.69"
+    "@docusaurus/utils-validation" "2.0.0-alpha.69"
     chalk "^3.0.0"
     execa "^3.4.0"
     fs-extra "^9.0.1"
@@ -1304,89 +1283,87 @@
     utility-types "^3.10.0"
     webpack "^4.44.1"
 
-"@docusaurus/plugin-content-pages@2.0.0-alpha.70":
-  version "2.0.0-alpha.70"
-  resolved "https://registry.npm.taobao.org/@docusaurus/plugin-content-pages/download/@docusaurus/plugin-content-pages-2.0.0-alpha.70.tgz#6cb937c9601d92bb616c7d95974d780d1a708ef7"
-  integrity sha1-bLk3yWAdkrthbH2Vl014DRpwjvc=
+"@docusaurus/plugin-content-pages@2.0.0-alpha.69":
+  version "2.0.0-alpha.69"
+  resolved "https://registry.npm.taobao.org/@docusaurus/plugin-content-pages/download/@docusaurus/plugin-content-pages-2.0.0-alpha.69.tgz#215c52c7788b3794dc692ceb3d0a563adddc0435"
+  integrity sha1-IVxSx3iLN5TcaSzrPQpWOt3cBDU=
   dependencies:
-    "@docusaurus/core" "2.0.0-alpha.70"
-    "@docusaurus/mdx-loader" "2.0.0-alpha.70"
-    "@docusaurus/types" "2.0.0-alpha.70"
-    "@docusaurus/utils" "2.0.0-alpha.70"
-    "@docusaurus/utils-validation" "2.0.0-alpha.70"
+    "@docusaurus/core" "2.0.0-alpha.69"
+    "@docusaurus/mdx-loader" "2.0.0-alpha.69"
+    "@docusaurus/types" "2.0.0-alpha.69"
+    "@docusaurus/utils" "2.0.0-alpha.69"
+    "@docusaurus/utils-validation" "2.0.0-alpha.69"
     globby "^10.0.1"
     joi "^17.2.1"
     loader-utils "^1.2.3"
-    lodash "^4.17.19"
     minimatch "^3.0.4"
     remark-admonitions "^1.2.1"
     slash "^3.0.0"
     webpack "^4.44.1"
 
-"@docusaurus/plugin-debug@2.0.0-alpha.70":
-  version "2.0.0-alpha.70"
-  resolved "https://registry.npm.taobao.org/@docusaurus/plugin-debug/download/@docusaurus/plugin-debug-2.0.0-alpha.70.tgz#7a41d24151a92195311c85ab827656cf705a0c68"
-  integrity sha1-ekHSQVGpIZUxHIWrgnZWz3BaDGg=
+"@docusaurus/plugin-debug@2.0.0-alpha.69":
+  version "2.0.0-alpha.69"
+  resolved "https://registry.npm.taobao.org/@docusaurus/plugin-debug/download/@docusaurus/plugin-debug-2.0.0-alpha.69.tgz#643c3119d688ffa318eeb7d719942e1e24ad5a95"
+  integrity sha1-ZDwxGdaI/6MY7rfXGZQuHiStWpU=
   dependencies:
-    "@docusaurus/core" "2.0.0-alpha.70"
-    "@docusaurus/types" "2.0.0-alpha.70"
-    "@docusaurus/utils" "2.0.0-alpha.70"
+    "@docusaurus/core" "2.0.0-alpha.69"
+    "@docusaurus/types" "2.0.0-alpha.69"
+    "@docusaurus/utils" "2.0.0-alpha.69"
     react-json-view "^1.19.1"
 
-"@docusaurus/plugin-google-analytics@2.0.0-alpha.70":
-  version "2.0.0-alpha.70"
-  resolved "https://registry.npm.taobao.org/@docusaurus/plugin-google-analytics/download/@docusaurus/plugin-google-analytics-2.0.0-alpha.70.tgz#9476314353d585716cbdd408319ff30bdbda4f87"
-  integrity sha1-lHYxQ1PVhXFsvdQIMZ/zC9vaT4c=
+"@docusaurus/plugin-google-analytics@2.0.0-alpha.69":
+  version "2.0.0-alpha.69"
+  resolved "https://registry.npm.taobao.org/@docusaurus/plugin-google-analytics/download/@docusaurus/plugin-google-analytics-2.0.0-alpha.69.tgz#031e0e4431842b1c9ba99fb6dd6dd258ee91f05e"
+  integrity sha1-Ax4ORDGEKxybqZ+23W3SWO6R8F4=
   dependencies:
-    "@docusaurus/core" "2.0.0-alpha.70"
+    "@docusaurus/core" "2.0.0-alpha.69"
 
-"@docusaurus/plugin-google-gtag@2.0.0-alpha.70":
-  version "2.0.0-alpha.70"
-  resolved "https://registry.npm.taobao.org/@docusaurus/plugin-google-gtag/download/@docusaurus/plugin-google-gtag-2.0.0-alpha.70.tgz#a90e54830a6f95a83cf51b82e7e6adcf6a699dc1"
-  integrity sha1-qQ5Ugwpvlag89RuC5+atz2ppncE=
+"@docusaurus/plugin-google-gtag@2.0.0-alpha.69":
+  version "2.0.0-alpha.69"
+  resolved "https://registry.npm.taobao.org/@docusaurus/plugin-google-gtag/download/@docusaurus/plugin-google-gtag-2.0.0-alpha.69.tgz#b6d9c77e99f60dbffe2622f0567fce589bc420b3"
+  integrity sha1-ttnHfpn2Db/+JiLwVn/OWJvEILM=
   dependencies:
-    "@docusaurus/core" "2.0.0-alpha.70"
+    "@docusaurus/core" "2.0.0-alpha.69"
 
-"@docusaurus/plugin-sitemap@2.0.0-alpha.70":
-  version "2.0.0-alpha.70"
-  resolved "https://registry.npm.taobao.org/@docusaurus/plugin-sitemap/download/@docusaurus/plugin-sitemap-2.0.0-alpha.70.tgz#1eb02e4a4ecf5fb2bdf641a6f962ae421ff86916"
-  integrity sha1-HrAuSk7PX7K99kGm+WKuQh/4aRY=
+"@docusaurus/plugin-sitemap@2.0.0-alpha.69":
+  version "2.0.0-alpha.69"
+  resolved "https://registry.npm.taobao.org/@docusaurus/plugin-sitemap/download/@docusaurus/plugin-sitemap-2.0.0-alpha.69.tgz#ffda02b4be468b3dfeed8fde3c2f2971ee839078"
+  integrity sha1-/9oCtL5Giz3+7Y/ePC8pce6DkHg=
   dependencies:
-    "@docusaurus/core" "2.0.0-alpha.70"
-    "@docusaurus/types" "2.0.0-alpha.70"
+    "@docusaurus/core" "2.0.0-alpha.69"
+    "@docusaurus/types" "2.0.0-alpha.69"
     fs-extra "^9.0.1"
     joi "^17.2.1"
     sitemap "^3.2.2"
 
-"@docusaurus/preset-classic@2.0.0-alpha.70":
-  version "2.0.0-alpha.70"
-  resolved "https://registry.npm.taobao.org/@docusaurus/preset-classic/download/@docusaurus/preset-classic-2.0.0-alpha.70.tgz#7857f606eecdbaa34f8df83d62812908be02126f"
-  integrity sha1-eFf2Bu7NuqNPjfg9YoEpCL4CEm8=
+"@docusaurus/preset-classic@2.0.0-alpha.69":
+  version "2.0.0-alpha.69"
+  resolved "https://registry.npm.taobao.org/@docusaurus/preset-classic/download/@docusaurus/preset-classic-2.0.0-alpha.69.tgz#f8ecfd610852e6754037f006edc38dc4d6146da6"
+  integrity sha1-+Oz9YQhS5nVAN/AG7cONxNYUbaY=
   dependencies:
-    "@docusaurus/core" "2.0.0-alpha.70"
-    "@docusaurus/plugin-content-blog" "2.0.0-alpha.70"
-    "@docusaurus/plugin-content-docs" "2.0.0-alpha.70"
-    "@docusaurus/plugin-content-pages" "2.0.0-alpha.70"
-    "@docusaurus/plugin-debug" "2.0.0-alpha.70"
-    "@docusaurus/plugin-google-analytics" "2.0.0-alpha.70"
-    "@docusaurus/plugin-google-gtag" "2.0.0-alpha.70"
-    "@docusaurus/plugin-sitemap" "2.0.0-alpha.70"
-    "@docusaurus/theme-classic" "2.0.0-alpha.70"
-    "@docusaurus/theme-search-algolia" "2.0.0-alpha.70"
+    "@docusaurus/core" "2.0.0-alpha.69"
+    "@docusaurus/plugin-content-blog" "2.0.0-alpha.69"
+    "@docusaurus/plugin-content-docs" "2.0.0-alpha.69"
+    "@docusaurus/plugin-content-pages" "2.0.0-alpha.69"
+    "@docusaurus/plugin-debug" "2.0.0-alpha.69"
+    "@docusaurus/plugin-google-analytics" "2.0.0-alpha.69"
+    "@docusaurus/plugin-google-gtag" "2.0.0-alpha.69"
+    "@docusaurus/plugin-sitemap" "2.0.0-alpha.69"
+    "@docusaurus/theme-classic" "2.0.0-alpha.69"
+    "@docusaurus/theme-search-algolia" "2.0.0-alpha.69"
 
-"@docusaurus/theme-classic@2.0.0-alpha.70":
-  version "2.0.0-alpha.70"
-  resolved "https://registry.npm.taobao.org/@docusaurus/theme-classic/download/@docusaurus/theme-classic-2.0.0-alpha.70.tgz#58e2dceee1076980700865df460e771e8d78cb68"
-  integrity sha1-WOLc7uEHaYBwCGXfRg53Ho14y2g=
+"@docusaurus/theme-classic@2.0.0-alpha.69":
+  version "2.0.0-alpha.69"
+  resolved "https://registry.npm.taobao.org/@docusaurus/theme-classic/download/@docusaurus/theme-classic-2.0.0-alpha.69.tgz#64885b973df695e52356e3484fd9a03101b86e58"
+  integrity sha1-ZIhblz32leUjVuNIT9mgMQG4blg=
   dependencies:
-    "@docusaurus/core" "2.0.0-alpha.70"
-    "@docusaurus/plugin-content-blog" "2.0.0-alpha.70"
-    "@docusaurus/plugin-content-docs" "2.0.0-alpha.70"
-    "@docusaurus/plugin-content-pages" "2.0.0-alpha.70"
-    "@docusaurus/theme-common" "2.0.0-alpha.70"
-    "@docusaurus/types" "2.0.0-alpha.70"
-    "@docusaurus/utils" "2.0.0-alpha.70"
-    "@docusaurus/utils-validation" "2.0.0-alpha.70"
+    "@docusaurus/core" "2.0.0-alpha.69"
+    "@docusaurus/plugin-content-blog" "2.0.0-alpha.69"
+    "@docusaurus/plugin-content-docs" "2.0.0-alpha.69"
+    "@docusaurus/plugin-content-pages" "2.0.0-alpha.69"
+    "@docusaurus/theme-common" "2.0.0-alpha.69"
+    "@docusaurus/types" "2.0.0-alpha.69"
+    "@docusaurus/utils-validation" "2.0.0-alpha.69"
     "@mdx-js/mdx" "^1.6.21"
     "@mdx-js/react" "^1.6.21"
     "@types/react-toggle" "^4.0.2"
@@ -1402,26 +1379,25 @@
     react-router-dom "^5.2.0"
     react-toggle "^4.1.1"
 
-"@docusaurus/theme-common@2.0.0-alpha.70":
-  version "2.0.0-alpha.70"
-  resolved "https://registry.npm.taobao.org/@docusaurus/theme-common/download/@docusaurus/theme-common-2.0.0-alpha.70.tgz#fa42aef2ec1b535d37f72fc978a3138c49667a37"
-  integrity sha1-+kKu8uwbU1039y/JeKMTjElmejc=
+"@docusaurus/theme-common@2.0.0-alpha.69":
+  version "2.0.0-alpha.69"
+  resolved "https://registry.npm.taobao.org/@docusaurus/theme-common/download/@docusaurus/theme-common-2.0.0-alpha.69.tgz#4fd13db9fdd2b94e2010cd579ccfacde41824839"
+  integrity sha1-T9E9uf3SuU4gEM1XnM+s3kGCSDk=
   dependencies:
-    "@docusaurus/core" "2.0.0-alpha.70"
-    "@docusaurus/plugin-content-blog" "2.0.0-alpha.70"
-    "@docusaurus/plugin-content-docs" "2.0.0-alpha.70"
-    "@docusaurus/plugin-content-pages" "2.0.0-alpha.70"
-    "@docusaurus/types" "2.0.0-alpha.70"
+    "@docusaurus/core" "2.0.0-alpha.69"
+    "@docusaurus/plugin-content-blog" "2.0.0-alpha.69"
+    "@docusaurus/plugin-content-docs" "2.0.0-alpha.69"
+    "@docusaurus/plugin-content-pages" "2.0.0-alpha.69"
+    "@docusaurus/types" "2.0.0-alpha.69"
 
-"@docusaurus/theme-search-algolia@2.0.0-alpha.70":
-  version "2.0.0-alpha.70"
-  resolved "https://registry.npm.taobao.org/@docusaurus/theme-search-algolia/download/@docusaurus/theme-search-algolia-2.0.0-alpha.70.tgz#7f41241e0d22e89438817a3d4a27d880116c06c1"
-  integrity sha1-f0EkHg0i6JQ4gXo9SifYgBFsBsE=
+"@docusaurus/theme-search-algolia@2.0.0-alpha.69":
+  version "2.0.0-alpha.69"
+  resolved "https://registry.npm.taobao.org/@docusaurus/theme-search-algolia/download/@docusaurus/theme-search-algolia-2.0.0-alpha.69.tgz#955da97fd3052118fee1b5ffa1abfa33043fd67a"
+  integrity sha1-lV2pf9MFIRj+4bX/oav6MwQ/1no=
   dependencies:
-    "@docsearch/react" "^3.0.0-alpha.31"
-    "@docusaurus/core" "2.0.0-alpha.70"
-    "@docusaurus/theme-common" "2.0.0-alpha.70"
-    "@docusaurus/utils" "2.0.0-alpha.70"
+    "@docsearch/react" "^1.0.0-alpha.27"
+    "@docusaurus/core" "2.0.0-alpha.69"
+    "@docusaurus/utils" "2.0.0-alpha.69"
     algoliasearch "^4.0.0"
     algoliasearch-helper "^3.1.1"
     clsx "^1.1.1"
@@ -1429,36 +1405,35 @@
     joi "^17.2.1"
     lodash "^4.17.19"
 
-"@docusaurus/types@2.0.0-alpha.70":
-  version "2.0.0-alpha.70"
-  resolved "https://registry.npm.taobao.org/@docusaurus/types/download/@docusaurus/types-2.0.0-alpha.70.tgz#44b98290919cca2505aea334daecf762c7537d10"
-  integrity sha1-RLmCkJGcyiUFrqM02uz3YsdTfRA=
+"@docusaurus/types@2.0.0-alpha.69":
+  version "2.0.0-alpha.69"
+  resolved "https://registry.npm.taobao.org/@docusaurus/types/download/@docusaurus/types-2.0.0-alpha.69.tgz#05d1a28f325600185b3cb4088326c865fb4b54a9"
+  integrity sha1-BdGijzJWABhbPLQIgybIZftLVKk=
   dependencies:
     "@types/webpack" "^4.41.0"
     commander "^4.0.1"
     querystring "0.2.0"
     webpack-merge "^4.2.2"
 
-"@docusaurus/utils-validation@2.0.0-alpha.70":
-  version "2.0.0-alpha.70"
-  resolved "https://registry.npm.taobao.org/@docusaurus/utils-validation/download/@docusaurus/utils-validation-2.0.0-alpha.70.tgz#04f24a7b3a4568ca164a8c1a4cf0caa8ba5caa6e"
-  integrity sha1-BPJKezpFaMoWSowaTPDKqLpcqm4=
+"@docusaurus/utils-validation@2.0.0-alpha.69":
+  version "2.0.0-alpha.69"
+  resolved "https://registry.npm.taobao.org/@docusaurus/utils-validation/download/@docusaurus/utils-validation-2.0.0-alpha.69.tgz#35adab0f2b787dfdcf508ea0aa3552578be583a5"
+  integrity sha1-Na2rDyt4ff3PUI6gqjVSV4vlg6U=
   dependencies:
-    "@docusaurus/utils" "2.0.0-alpha.70"
+    "@docusaurus/utils" "2.0.0-alpha.69"
     chalk "^3.0.0"
     joi "^17.2.1"
 
-"@docusaurus/utils@2.0.0-alpha.70":
-  version "2.0.0-alpha.70"
-  resolved "https://registry.npm.taobao.org/@docusaurus/utils/download/@docusaurus/utils-2.0.0-alpha.70.tgz#01779efcb4ff3bf39f9e74b3ef06fc2c8a43633a"
-  integrity sha1-AXee/LT/O/OfnnSz7wb8LIpDYzo=
+"@docusaurus/utils@2.0.0-alpha.69":
+  version "2.0.0-alpha.69"
+  resolved "https://registry.npm.taobao.org/@docusaurus/utils/download/@docusaurus/utils-2.0.0-alpha.69.tgz#9532cd489742beede570575ab70265dacecb3f24"
+  integrity sha1-lTLNSJdCvu3lcFdatwJl2s7LPyQ=
   dependencies:
-    "@docusaurus/types" "2.0.0-alpha.70"
+    "@docusaurus/types" "2.0.0-alpha.69"
     chalk "^3.0.0"
     escape-string-regexp "^2.0.0"
     fs-extra "^9.0.1"
     gray-matter "^4.0.2"
-    lodash "^4.17.20"
     lodash.camelcase "^4.3.0"
     lodash.kebabcase "^4.1.1"
     resolve-pathname "^3.0.0"
@@ -1473,6 +1448,16 @@
     eval "^0.1.4"
     url "^0.11.0"
     webpack-sources "^1.4.3"
+
+"@francoischalifour/autocomplete-core@^1.0.0-alpha.28":
+  version "1.0.0-alpha.28"
+  resolved "https://registry.npm.taobao.org/@francoischalifour/autocomplete-core/download/@francoischalifour/autocomplete-core-1.0.0-alpha.28.tgz#6b9d8491288e77f831e9b345d461623b0d3f5005"
+  integrity sha1-a52EkSiOd/gx6bNF1GFiOw0/UAU=
+
+"@francoischalifour/autocomplete-preset-algolia@^1.0.0-alpha.28":
+  version "1.0.0-alpha.28"
+  resolved "https://registry.npm.taobao.org/@francoischalifour/autocomplete-preset-algolia/download/@francoischalifour/autocomplete-preset-algolia-1.0.0-alpha.28.tgz#a5ad7996f42e43e4acbb4e0010d663746d0e9997"
+  integrity sha1-pa15lvQuQ+Ssu04AENZjdG0OmZc=
 
 "@hapi/hoek@^9.0.0":
   version "9.1.0"
