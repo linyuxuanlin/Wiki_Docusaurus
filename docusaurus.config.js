@@ -5,8 +5,7 @@ module.exports = {
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
-  favicon:
-    "https://cos.ap-guangzhou.myqcloud.com/wiki-media-1253965369/doc/logo-white.svg",
+  favicon: "https://cos.ap-guangzhou.myqcloud.com/wiki-media-1253965369/doc/logo-white.svg",
   //organizationName: "linyuxuanlin", // Usually your GitHub org/user name.
   //projectName: "Wiki_Docusaurus", // Usually your repo name.
   themeConfig: {
@@ -23,7 +22,7 @@ module.exports = {
 
       //... other Algolia params
     },
-    
+
     colorMode: {
       // "light" | "dark"
       //defaultMode: 'dark',
@@ -110,9 +109,9 @@ module.exports = {
         },
       ],
     },
-    footer: {
+    /*footer: {
       style: "light",
-      /*
+      
       links: [{
           title: "Docs",
           items: [{
@@ -159,8 +158,8 @@ module.exports = {
           ],
         },
       ],*/
-      copyright: `Power Lin © ${new Date().getFullYear()} | <a href="https://beian.miit.gov.cn"> 粤 ICP 备 20014898 号 </a> | Built with Docusaurus`,
-    },
+    //copyright: `Power Lin © ${new Date().getFullYear()} | <a href="https://beian.miit.gov.cn"> 粤 ICP 备 20014898 号 </a> | Built with Docusaurus`,
+    //},
   },
   presets: [
     [

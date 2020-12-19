@@ -29,3 +29,5 @@ Hi there~
 [![GitHub](https://img.shields.io/badge/GitHub-282c34)](https://github.com/linyuxuanlin)
 
 <br />
+
+Power Lin | [粤 ICP 备 20014898 号](https://beian.miit.gov.cn) | CC BY-NC-SA 4.0
