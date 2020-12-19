@@ -2,8 +2,8 @@ module.exports = {
   docs: [
     "Home",
     {
-      type: 'category',
-      label: '电路设计',
+      type: "category",
+      label: "电路设计",
       collapsed: true,
       items: [
         "AirForce-充满灵性的电机驱动模块",
@@ -29,10 +29,9 @@ module.exports = {
       ],
     },
 
-
     {
-      type: 'category',
-      label: '队内管理',
+      type: "category",
+      label: "队务管理",
       collapsed: true,
       items: [
         "团队知识库的搭建-理论",
@@ -43,8 +42,8 @@ module.exports = {
       ],
     },
     {
-      type: 'category',
-      label: '嵌入式开发',
+      type: "category",
+      label: "嵌入式开发",
       collapsed: true,
       items: [
         "HAL系列教程1—GPIO",
@@ -59,8 +58,8 @@ module.exports = {
     },
 
     {
-      type: 'category',
-      label: '高效工作',
+      type: "category",
+      label: "高效工作",
       collapsed: true,
       items: [
         "使用Markdown进行高效写作",
@@ -84,10 +83,11 @@ module.exports = {
       ],
     },
     {
-      type: 'category',
-      label: '软件开发',
+      type: "category",
+      label: "软件开发",
       collapsed: true,
-      items: ["CSS学习笔记",
+      items: [
+        "CSS学习笔记",
         "HTML学习笔记",
         "JavaScript学习笔记",
         "Docker学习笔记",
@@ -99,8 +99,8 @@ module.exports = {
     },
 
     {
-      type: 'category',
-      label: '小技巧',
+      type: "category",
+      label: "小技巧",
       collapsed: true,
       items: [
         "MSI主板开启虚拟化的方法",
@@ -122,10 +122,11 @@ module.exports = {
       ],
     },
     {
-      type: 'category',
-      label: '产品经理',
+      type: "category",
+      label: "产品经理",
       collapsed: true,
-      items: ["产品经理的日常",
+      items: [
+        "产品经理的日常",
         "中台的概念",
         "画图基础",
         "智能硬件产品经理的技术要求",
@@ -134,10 +135,11 @@ module.exports = {
       ],
     },
     {
-      type: 'category',
-      label: 'Arduino',
+      type: "category",
+      label: "Arduino",
       collapsed: true,
-      items: ["ATTiny85调试记录",
+      items: [
+        "ATTiny85调试记录",
         "T-Clock桌上小钟",
         //"小车游华广-比赛",
         //"麦昆小车-测评",
@@ -146,8 +148,8 @@ module.exports = {
       ],
     },
     {
-      type: 'category',
-      label: '生活经历',
+      type: "category",
+      label: "生活经历",
       collapsed: true,
       items: [
         //"书摘与读书笔记",
@@ -162,17 +164,13 @@ module.exports = {
       ],
     },
     {
-      type: 'category',
-      label: '期末复习',
+      type: "category",
+      label: "期末复习",
       collapsed: true,
-      items: [
-        "复习提纲-传感器",
-      ],
+      items: ["复习提纲-传感器"],
     },
   ],
-
 };
-
 
 //隐藏的：
 //"Python学习笔记",
