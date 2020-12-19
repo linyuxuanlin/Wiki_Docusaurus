@@ -40,7 +40,7 @@ title: T-Clock 桌上小钟
 
 ## 参考与致谢
 
-- [T-Clock 桌上小钟（旧）](https://wiki-power.com/unlist/T-Clock%E6%A1%8C%E4%B8%8A%E5%B0%8F%E9%92%9F%EF%BC%88%E6%97%A7%EF%BC%89.html)
+- [T-Clock 桌上小钟（旧）](T-Clock桌上小钟（旧）)
 - [心知天气](https://www.seniverse.com/)
 - [ESP8266 接入心知天气 API【程序＋详细讲解】](https://www.bilibili.com/video/av89935868/?spm_id_from=333.788.b_636f6d6d656e74.4)
 - [ESP8266 ＋ OLED = 网络时钟和未来 3 日天气预报](https://www.bilibili.com/video/av88920975/)

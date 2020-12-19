@@ -21,7 +21,7 @@ Hi there~
 本站使用 [**Docusaurus**](https://v2.docusaurus.io/) 框架驱动，本站点全部内容储存于 [**GitHub**](https://github.com/linyuxuanlin/Wiki_Docusaurus) ，并采用 [**Vercel**](https://vercel.com/) 托管部署。  
 如果你也想搭建自己的知识库，可以直接扒走整个仓库，也可以通过以下的方式与我交流：
 
-[![微信](https://img.shields.io/badge/WeChat-07C160)](https://wiki-power.com/unlist/WeChat.html)
+[![微信](https://img.shields.io/badge/WeChat-07C160)](WeChat)
 [![Telegram](https://img.shields.io/badge/Telegram-34ABE0)](https://t.me/linyuxuanlin)
 [![知乎](https://img.shields.io/badge/知乎-0084ff)](https://www.zhihu.com/people/linyuxuanlin)
 [![少数派](https://img.shields.io/badge/少数派-C23133)](https://sspai.com/u/power/)

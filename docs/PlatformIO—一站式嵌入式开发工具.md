@@ -28,7 +28,7 @@ PlatformIO 是一个强大的一站式工具，来看看它的特点：
 
 ## 下载安装
 
-首先，确保你的电脑有 VSCode（VSCode 的下载安装可以跳转 [**这篇文章**](https://wiki-power.com/post/%E9%AB%98%E6%95%88%E5%B7%A5%E4%BD%9C/VSCode%E7%94%9F%E4%BA%A7%E5%8A%9B%E6%8C%87%E5%8D%97-%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE.html)）
+首先，确保你的电脑有 VSCode（VSCode 的下载安装可以跳转 [**这篇文章**](VSCode生产力指南-环境配置)
 
 在 `拓展` （`Ctrl + Shift + X`） 内搜索并安装 `Python` 和 `PlatformIO IDE`.
 

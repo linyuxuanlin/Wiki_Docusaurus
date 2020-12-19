@@ -24,8 +24,6 @@ title: Tools
 
 ### 微信公众号
 
-- [**MD2WeChat**](https://linyuxuanlin.github.io/MD2WeChat/)：Markdown 转富文本格式，公众号发文专用
-
 ### 存档备份
 
 - [**语雀**](https://www.yuque.com/collection-power)：备份收藏的文章（含图片），防止内容失效

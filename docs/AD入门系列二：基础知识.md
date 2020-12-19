@@ -121,17 +121,17 @@ AD 插件：
       - 固定孔
         - M3 螺孔：内 **3.1** mm、外 **4** mm
    4. 排布元件
-      - 参考文章 [**PCB 元件布局规范**](/PCB元件布局规范)
+      - 参考文章 [**PCB 元件布局规范**](PCB元件布局规范)
    5. 布线
       - 设置布线规则
-        - 参考 [**PCB 布线规范**](/PCB布线规范)
+        - 参考 [**PCB 布线规范**](PCB布线规范)
       - **不要开启自动布线！**
       - **开启泪滴功能**
    6. 字体标识（引脚标识 / 版权 / 迷惑性文字）
       - 放置于丝印层（顶层 / 底层）
       - 放底层要先镜像
    7. 敷铜（**PG**）
-      - 参考 [**PCB 布线规范**](/PCB布线规范)
+      - 参考 [**PCB 布线规范**](PCB布线规范)
 4. 打板
    1. 保存项目
    2. 将 **.pcb** 文件压缩（这样做似乎不太对，可以的话导出 Gerber）
@@ -162,7 +162,7 @@ AD 插件：
 
 ### 使用 Git 管理项目
 
-详见 [**AD 使用 Git 的注意事项**](https://wiki-power.com/post/%E7%94%B5%E8%B7%AF%E8%AE%BE%E8%AE%A1/AD%E4%BD%BF%E7%94%A8Git%E7%9A%84%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9.html)
+详见 [**AD 使用 Git 的注意事项**](AD使用Git的注意事项)
 
 ## 总结
 
@@ -172,7 +172,7 @@ AD 插件：
 ## 参考与致谢
 
 - [Altium 公司 Altium Designer 专栏](https://seujxh.wordpress.com/2018/09/30/altium%e5%85%ac%e5%8f%b8altium-designer%e4%b8%93%e6%a0%8f/)
-- [嘉立创 SMT 贴片 可贴列表 PADS 集成库 \（正式版、)](http://club.szlcsc.com/article/details_2757_1.html)
+- [嘉立创 SMT 贴片 可贴列表 PADS 集成库 \（正式版)](http://club.szlcsc.com/article/details_2757_1.html)
 - [Altium Designer 使用 Git 构想](https://blog.csdn.net/weifengdq/article/details/78406438)
 - [Using Version Control](https://www.altium.com/documentation/altium-designer/using-version-control-ad)
 - 彬哥整理的经验和笔记
