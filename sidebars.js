@@ -136,6 +136,14 @@ module.exports = {
     },
     {
       type: 'category',
+      label: '小技巧',
+      collapsed: false,
+      items: [
+        "MSI主板开启虚拟化的方法",
+      ],
+    },
+    {
+      type: 'category',
       label: 'PM',
       collapsed: false,
       items: ["产品经理的日常",
