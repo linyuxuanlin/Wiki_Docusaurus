@@ -15,15 +15,11 @@ slug: /
 Hi there~  
 这是我的知识库。
 
-为了避免遗忘，也为了便于分享，我把知识储存归档在这儿。  
+为了避免遗忘，也为了便于分享，我把知识归档储存于此。  
 请尽情浏览吧~
 
 [![GitHub deployments](https://img.shields.io/github/deployments/linyuxuanlin/Wiki_Docusaurus/Production?label=Build&style=flat-square)](https://vercel.com/linyuxuanlin/wiki-docusaurus/deployments)
 [![GitHub last commit](https://img.shields.io/github/last-commit/linyuxuanlin/Wiki_Docusaurus?color=FCD734&style=flat-square)](https://github.com/linyuxuanlin/Wiki_Docusaurus/commits/main)
 [![contact](https://img.shields.io/badge/Contact%20me-here-34ABE0?&style=flat-square)](ContactMe)
 
-本站使用 [**Docusaurus**](https://v2.docusaurus.io/) 框架驱动，本站点全部内容储存于 [**GitHub**](https://github.com/linyuxuanlin/Wiki_Docusaurus) ，并采用 [**Vercel**](https://vercel.com/) 托管部署。
-
-<br />
-
-**Power Lin** | [粤 ICP 备 20014898 号](https://beian.miit.gov.cn)
+<h6>Power Lin |  <a href="https://beian.miit.gov.cn"> 粤 ICP 备 20014898 号 </a> | Built with Docusaurus</h6>
