@@ -5,8 +5,7 @@ module.exports = {
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
-  favicon:
-    "https://cos.ap-guangzhou.myqcloud.com/wiki-media-1253965369/doc/logo-white.svg",
+  favicon: "https://cos.ap-guangzhou.myqcloud.com/wiki-media-1253965369/doc/logo-white.svg",
   //organizationName: "linyuxuanlin", // Usually your GitHub org/user name.
   //projectName: "Wiki_Docusaurus", // Usually your repo name.
   themeConfig: {
@@ -25,7 +24,7 @@ module.exports = {
 
     colorMode: {
       // "light" | "dark"
-      defaultMode: "dark",
+      //defaultMode: "dark",
 
       // Hides the switch in the navbar
       // Useful if you want to support a single color mode
