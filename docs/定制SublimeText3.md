@@ -5,10 +5,10 @@ title: 定制 SublimeText3
 
 ## 背景
 
-**Sublime Text** 是一款非常强大的文本编辑器。由于下学期有 Python 相关课程，而 Pycharm 等工具的 UI 有些难看。我决定把 Sublime Text 打造为 Python 开发利器。
+**Sublime Text** 是一款非常强大的文本编辑器。由于下学期有 Python 相关课程，而 Pycharm 等工具的 UI 有些难看。我想尝试把 Sublime Text 打造为 Python 开发利器。
 
 定制后的效果图：  
- ![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/ST3 效果。png)
+ ![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/ST3效果.png)
 
 ## [极简部署](https://www.jianguoyun.com/p/Da9TMr0Q-OOjBxif86sB)
 

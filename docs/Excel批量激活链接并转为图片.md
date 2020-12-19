@@ -1,6 +1,6 @@
 ---
-id: Excel批量激活链接并转换为图片
-title: Excel批量激活链接并转换为图片
+id: Excel批量激活链接并转为图片
+title: Excel批量激活链接并转为图片
 ---
 
 ## 下载 KuTool 插件

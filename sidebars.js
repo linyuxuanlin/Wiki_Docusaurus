@@ -113,11 +113,11 @@ module.exports = {
         "使用Markdown进行高效写作",
         "团队知识库搭建记录-DokuWiki",
         "个人知识库极简搭建指南-VuePress",
-        "用Vercel加速Pages服务",
+
         "基于树莓派搭建云打印服务器",
         "文章排版规范",
-        //"Excel批量激活链接并转换为图片",
-        //"如何保存易逝的文字",
+
+
         "基于docsify搭建个人Wiki",
         "用Graphviz绘制关系图",
         "博客转至GitBook",
@@ -126,7 +126,7 @@ module.exports = {
         "把回忆放心交给GooglePhotos",
         "构建知识管理系统",
         "回归博客",
-        "定制SublimeText3",
+
         "VSCode生产力指南-环境配置",
         "VSCode生产力指南-JupyterNotebook",
         "在浏览器上运行VScode（code-server）",
@@ -140,6 +140,12 @@ module.exports = {
       collapsed: false,
       items: [
         "MSI主板开启虚拟化的方法",
+        "定制SublimeText3",
+        "如何保存易逝的文字",
+        //"Excel批量激活链接并转为图片",
+        "用Vercel加速Pages服务",
+        "Doxygen注释规范",
+        "AltiumDesigner安装库文件"
       ],
     },
     {
@@ -177,7 +183,7 @@ module.exports = {
 
 //隐藏的：
 //"Python学习笔记",
-//"Doxygen注释规范",
+//
 //"STM32麦轮小车",
 //"RM校内赛-前期策划",
 //"报告书都要写些什么？",
