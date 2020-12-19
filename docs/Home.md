@@ -15,8 +15,8 @@ slug: /
 Hi there~  
 这是我的知识库。
 
-为了避免遗忘，也为了便于分享，我把知识归档储存于此。  
-请尽情浏览吧~
+为了避免遗忘，便于分享，我把知识归档储存于此。  
+尽情浏览吧~
 
 [![GitHub deployments](https://img.shields.io/github/deployments/linyuxuanlin/Wiki_Docusaurus/Production?label=Build&style=flat-square)](https://vercel.com/linyuxuanlin/wiki-docusaurus/deployments)
 [![GitHub last commit](https://img.shields.io/github/last-commit/linyuxuanlin/Wiki_Docusaurus?color=FCD734&style=flat-square)](https://github.com/linyuxuanlin/Wiki_Docusaurus/commits/main)
