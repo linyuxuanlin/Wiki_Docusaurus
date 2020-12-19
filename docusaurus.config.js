@@ -1,11 +1,13 @@
 module.exports = {
   title: "Power's Wiki",
+  //titleDelimiter: "🦖", // Defaults to `|`
   tagline: "still developing",
   url: "https://wiki-power.com",
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
-  favicon: "https://cos.ap-guangzhou.myqcloud.com/wiki-media-1253965369/doc/logo-white.svg",
+  favicon:
+    "https://cos.ap-guangzhou.myqcloud.com/wiki-media-1253965369/doc/logo-white.svg",
   //organizationName: "linyuxuanlin", // Usually your GitHub org/user name.
   //projectName: "Wiki_Docusaurus", // Usually your repo name.
   themeConfig: {
