@@ -64,14 +64,14 @@ apt-get install screen
 ```
 
 ```shell
-screen -S VS Code-online # VS Code-online 为自取的名字
+screen -S VSCode-online # VS Code-online 为自取的名字
 export PASSWORD="password" && ./code-server --port 8888 --host 0.0.0.0
 ```
 
-再次进入运行中的 screen 镜像：
+再次进入运行中的 screen 作业：
 
 ```shell
-screen -r 镜像名
+screen -r 作业名
 ```
 
 如果需要停止后台 screen 的运行：
