@@ -39,7 +39,8 @@ module.exports = {
       // Dark/light switch icon options
       switchConfig: {
         // Icon for the switch while in dark mode
-        darkIcon: "🌙",
+        darkIcon: " ",
+        lightIcon: ' ',
 
         // CSS to apply to dark icon,
         // React inline style object
