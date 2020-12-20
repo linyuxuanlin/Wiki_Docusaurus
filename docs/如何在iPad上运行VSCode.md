@@ -23,7 +23,7 @@ title: 如何在 iPad 上运行 VS Code
 curl -fsSL https://code-server.dev/install.sh | sh
 ```
 
-如果发现半天下载不下来，多半是因为 DNS 污染，解决方法参考 [**GitHub 改 Host**](GitHub改Host) 这篇文章。
+如果发现半天下载不下来，多半是因为 DNS 污染，参考 [**GitHub 改 Host**](GitHub改Host) 解决。
 
 ## 二、运行 code-server
 
@@ -33,12 +33,12 @@ curl -fsSL https://code-server.dev/install.sh | sh
 export PASSWORD="设置一个访问密码" && code-server --port 80 --host 0.0.0.0
 ```
 
-如果没有出现错误，那就打开浏览器，输入你服务器的 IP 地址并访问，就可以看到一个在线的 VS Code 了。
+如果没有出现错误，那么打开浏览器，输入服务器的 IP 地址访问，就可以看到一个在线的 VS Code 了。
 
 ## 三、配置后台运行
 
 运行在前台的 code-server ，会因为 ssh 退出而结束进程。  
-为了使其能在后台运行，我们可以使用 screen 程序（可以把它理解为一个容器）
+为了使其能在后台运行，我们可以使用 screen 程序（可以把它理解为一个容器）。
 
 ### 1. 安装 screen
 
@@ -60,13 +60,13 @@ export PASSWORD="设置一个访问密码" && code-server --port 80 --host 0.0.0
 
 如果顺利的话，就可以在浏览器输入 IP 地址访问了。
 
-## 四、添加桌面快捷方式
+## 拓展
+
+### 添加桌面快捷方式
 
 如果在 iPad 上使用，可以用 Safari 浏览器打开，点击右上角 `分享` 图标 --> `添加到主屏幕` 。  
 可以将其假装为一个 App 使用，并隐去浏览器状态栏。  
 顺带说一句，外接键鼠也都支持。
-
-## 拓展
 
 ### screen 的其他操作
 
