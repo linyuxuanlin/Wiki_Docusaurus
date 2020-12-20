@@ -1,13 +1,15 @@
 ---
-id: 在浏览器上运行VScode（code-server）
-title: 在浏览器上运行 VScode（code-server）
+id: 在浏览器上运行VSCode（旧）
+title: 在浏览器上运行 VS Code（旧）
 ---
+
+注：新版本 code-server 的部署请参考 [**如何在 iPad 上跑 VS Code**](如何在iPad上跑VSCode) 这篇文章。
 
 ## 背景
 
-众所周知，VSCode 是一个功能十分强大的编辑器。如果能在 iPad 这类轻便的平台上使用 VSCode（iPadOS 对键鼠的支持已经能够媲美桌面系统），那我们就可以随时随地工作了。
+众所周知，VS Code 是一个功能十分强大的编辑器。如果能在 iPad 这类轻便的平台上使用 VS Code（iPadOS 对键鼠的支持已经能够媲美桌面系统），那我们就可以随时随地工作了。
 
-恰好有一个让 VSCode 跑在服务器上的服务：code-server. 部署完成后，可通过浏览器访问。这样，只要有网络，任何设备都能够轻松用上 VSCode.
+恰好有一个让 VS Code 跑在服务器上的服务：code-server. 部署完成后，可通过浏览器访问。这样，只要有网络，任何设备都能够轻松用上 VS Code.
 
 ## 准备环境
 
@@ -62,8 +64,8 @@ apt-get install screen
 ```
 
 ```shell
-screen -S VSCode-online # VSCode-online 为自取的名字
-export PASSWORD="password" && ./code-server --port 8888 --host 0.0.0.0
+screen -S VS Code-online # VS Code-online 为自取的名字
+export PASSWORD="password" && ./code-server --p11ort 8888 --host 0.0.0.0
 ```
 
 再次进入运行中的 screen 镜像：
@@ -83,7 +85,7 @@ screen -X -S id quit # 替换掉 id
 
 ### 4. 轻松使用
 
-在浏览器直接输入 `http://你的服务器 ip` 即可享用云端 VSCode.
+在浏览器直接输入 `http://你的服务器 ip` 即可享用云端 VS Code.
 
 ![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20200413181001.jpg)
 
@@ -95,10 +97,10 @@ screen -X -S id quit # 替换掉 id
 
 ## 参考与致谢
 
-- [在浏览器上运行 vscode，code-server（阿里云服务器）](https://copyfuture.com/blogs-details/20200405045150018h4edt0f4q8486jq)
-- [在浏览器上运行 vscode，code-server](https://segmentfault.com/a/1190000022267386)
+- [在浏览器上运行 VS Code，code-server（阿里云服务器）](https://copyfuture.com/blogs-details/20200405045150018h4edt0f4q8486jq)
+- [在浏览器上运行 VS Code，code-server](https://segmentfault.com/a/1190000022267386)
 - [（推荐）VS code 在线工具——code-serve 在云服务器上的安装和使用 与常见的问题解决 （超详细）](https://blog.csdn.net/Granery/article/details/90415636)
-- [iPad 编程学习环境---vscode web 版本搭建](https://blog.icodef.com/2019/11/17/1670)
+- [iPad 编程学习环境---VS Code web 版本搭建](https://blog.icodef.com/2019/11/17/1670)
 
 > 文章作者：**Power Lin**
 > 原文地址：<https://wiki-power.com>

@@ -62,6 +62,7 @@ module.exports = {
       label: "高效工作",
       collapsed: true,
       items: [
+        "如何在iPad上跑VSCode",
         "使用Markdown进行高效写作",
         "团队知识库搭建记录-DokuWiki",
         "个人知识库极简搭建指南-VuePress",
@@ -77,7 +78,7 @@ module.exports = {
         "回归博客",
         "VSCode生产力指南-环境配置",
         "VSCode生产力指南-JupyterNotebook",
-        "在浏览器上运行VScode（code-server）",
+        "在浏览器上运行VSCode（旧）",
         "如何配一台电脑",
         "用reveal.js制作幻灯片",
       ],
