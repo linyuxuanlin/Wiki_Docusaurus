@@ -103,6 +103,7 @@ module.exports = {
       label: "小技巧",
       collapsed: true,
       items: [
+        "GitHub改Host",
         "Linux用户操作",
         "MSI主板开启虚拟化的方法",
         "Git配置代理",
