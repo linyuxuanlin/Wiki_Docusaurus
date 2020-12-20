@@ -78,7 +78,7 @@ export PASSWORD="设置一个访问密码" && code-server --port 80 --host 0.0.0
 ### code-server 相关命令参数
 
 - 通过外网访问：code-server 服务默认只运行在本地（`127.0.0.1`）。为了能通过 IP 访问，可以添加 `--host 0.0.0.0` 参数
-- 指定运行端口：`--port xxxx`，你可以将 `xxxx` 替换为 `8888` ；也可以是 `80` （走 Http 协议，直接用 IP 访问不用加端口号）
+- 指定运行端口：`--port xxxx`，你可以将 `xxxx` 替换为 `8888` ；也可以是 `80` （走 Http 协议，直接用 IP 访问，不用加端口号）
 - 如果不需要访问密码：加上 `--auth none`
 
 ### 安装 Git
