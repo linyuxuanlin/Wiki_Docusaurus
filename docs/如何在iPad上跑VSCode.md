@@ -8,6 +8,7 @@ title: 如何在 iPad 上跑 VS Code
 ## 参考与致谢
 
 - [在浏览器上运行 VSCode（旧）](在浏览器上运行VSCode（旧）)
+- [GitHub 改 Host](GitHub改Host)
 
 <br />
 
@@ -18,6 +19,10 @@ title: 如何在 iPad 上跑 VS Code
 > 版权声明：文章采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh) 协议，转载请注明出处。
 
 screen 用户同步
+
+## 拓展
+
+### 命令的参数
 
 ## 配置服务器
 
@@ -37,4 +42,16 @@ screen 用户同步
 curl -fsSL https://code-server.dev/install.sh | sh
 ```
 
-如果发现半天下载不下来，多半是因为 DNS 污染问题，参考
+如果发现半天下载不下来，多半是因为 DNS 污染，解决方法参考 [**GitHub 改 Host**](GitHub改Host) 这篇文章。
+
+## 运行 code-server
+
+使用命令：
+
+```shell
+export PASSWORD="设置一个访问密码" && ./code-server --port 80 --host 0.0.0.0
+```
+
+如果没有出现错误，那就打开浏览器，输入你服务器的 IP 地址并访问，就可以看到一个在线的 VS Code 了。
+
+## 设置后台运行
