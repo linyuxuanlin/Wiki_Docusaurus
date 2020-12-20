@@ -99,6 +99,7 @@ yum install git
 
 - [在浏览器上运行 VSCode（旧）](在浏览器上运行VSCode（旧）)
 - [GitHub 改 Host](GitHub改Host)
+- [screen 的安装和使用](https://www.jianshu.com/p/420569381e74)
 
 <br />
 
