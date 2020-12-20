@@ -26,24 +26,24 @@ title: 在浏览器上运行 VScode（code-server）
 ### 1. 下载
 
 ```shell
-$ wget https://github.com/cdr/code-server/releases/download/3.1.0/code-server-3.1.0-linux-x86_64.tar.gz # 下载 code-server
+wget https://github.com/cdr/code-server/releases/download/3.1.0/code-server-3.1.0-linux-x86_64.tar.gz # 下载 code-server
 ```
 
-不要照搬命令，在 code-server 的 [**Release**](https://github.com/cdr/code-server/releases) 页面复制最新版本的链接（根据服务器的架构来选择，我使用的是 `code-server-3.1.0-linux-x86_64.tar.gz` 版本），用 `$ wget` 或 `SFTP` 下载 / 传输至服务器上。
+不要照搬命令，在 code-server 的 [**Release**](https://github.com/cdr/code-server/releases) 页面复制最新版本的链接（根据服务器的架构来选择，我使用的是 `code-server-3.1.0-linux-x86_64.tar.gz` 版本），用 `wget` 或 `SFTP` 下载 / 传输至服务器上。
 
 如果下载速度很慢，可复制下载链接，并在 [**这个网站**](https://d.serctl.com/) 中获取新的下载链接。
 
 ```shell
-$ tar -xvf code-server-3.1.0-linux-x86_64.tar.gz # 解压
-$ mv code-server-3.1.0-linux-x86_64.tar.gz code-server# 改名（非必要）
+tar -xvf code-server-3.1.0-linux-x86_64.tar.gz # 解压
+mv code-server-3.1.0-linux-x86_64.tar.gz code-server# 改名（非必要）
 ```
 
 ### 2. 安装
 
 ```shell
-$ cd code-server
-$ export PASSWORD="yourpassword"
-$ ./code-server --port 8888 --host 0.0.0.0
+cd code-server
+export PASSWORD="yourpassword"
+./code-server --port 8888 --host 0.0.0.0
 ```
 
 - 将 `yourpassword` 改为你设定的密码，否则会随机生成密码
@@ -57,22 +57,22 @@ $ ./code-server --port 8888 --host 0.0.0.0
 默认直接运行的情况下，ssh 连接一断就没了。为了使其能够后台运行，可以用 `screen` ：
 
 ```shell
-$ yum install screen
+yum install screen
 或
-$ apt-get install screen
+apt-get install screen
 ```
 
 ```shell
-$ screen -S VSCode-online # VSCode-online 为自取的名字
-$ export PASSWORD="yourpassword"
-$ ./code-server --port 8888 --host 0.0.0.0
+screen -S VSCode-online # VSCode-online 为自取的名字
+export PASSWORD="yourpassword"
+./code-server --port 8888 --host 0.0.0.0
 ```
 
 如果需要停止后台运行：
 
 ```shell
-$ screen -ls # 查看已运行服务的 id
-$ screen -X -S id quit # 替换掉 id
+screen -ls # 查看已运行服务的 id
+screen -X -S id quit # 替换掉 id
 ```
 
 ### 4. 轻松使用

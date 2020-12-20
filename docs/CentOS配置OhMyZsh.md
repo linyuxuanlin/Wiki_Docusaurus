@@ -6,7 +6,7 @@ title: CentOS 配置 Oh My Zsh
 ## 查看当前 Shell
 
 ```Shell
-$ echo $SHELL
+echo $SHELL
 ```
 
 一般情况下会返回 `bin/bash`
@@ -14,7 +14,7 @@ $ echo $SHELL
 ## 安装 zsh
 
 ```shell
-$ yum install -y zsh
+yum install -y zsh
 ```
 
 ## 切换默认 Shell 为 zsh
@@ -22,13 +22,13 @@ $ yum install -y zsh
 需要在 root 用户下运行此命令：
 
 ```shell
-$ $ chsh -s /bin/zsh
+chsh -s /bin/zsh
 ```
 
 ## 安装 git
 
 ```shell
-$ yum install -y git
+yum install -y git
 ```
 
 ## 安装 Oh My Zsh
@@ -36,9 +36,9 @@ $ yum install -y git
 ### 自动
 
 ```shell
-$ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 或
-$ sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
+sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 ```
 
 ### 手动
@@ -48,13 +48,13 @@ $ sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/
 下载源码：
 
 ```shell
-$ git clone https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
+git clone https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
 ```
 
 复制配置：
 
 ```shell
-$ cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc
+cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc
 ```
 
 ## 修改 Oh My Zsh 主题
@@ -62,13 +62,13 @@ $ cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc
 列出所有主题：
 
 ```shell
-$ ls ~/.oh-my-zsh/themes
+ls ~/.oh-my-zsh/themes
 ```
 
 修改主题：
 
 ```shell
-$ vim ~/.zshrc
+vim ~/.zshrc
 ```
 
 将默认主题是 `ZSH_THEME="robbyrussell"` 修改为自己喜欢的即可。
@@ -76,7 +76,7 @@ $ vim ~/.zshrc
 ## 重启生效
 
 ```shell
-$ reboot
+reboot
 ```
 
 ## 参考与致谢

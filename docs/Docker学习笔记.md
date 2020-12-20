@@ -34,7 +34,7 @@ Docker 有三个基本概念：
 安装完成后，运行下面的命令，验证是否安装成功：
 
 ```shell
-$ docker version
+docker version
 ```
 
 ### 配置权限
@@ -42,14 +42,14 @@ $ docker version
 Docker 需要 `sudo` 权限。为了避免每次使用都要获取权限，可以把用户加入 Docker 用户组：
 
 ```shell
-$ sudo groupadd docker
-$ sudo usermod -aG docker $USER
+sudo groupadd docker
+sudo usermod -aG docker $USER
 ```
 
 重启 Docker 后测试：
 
 ```shell
-$ docker run hello-world
+docker run hello-world
 ```
 
 能看到 `hello-world` 的提示信息则为成功。
@@ -59,15 +59,15 @@ $ docker run hello-world
 Docker 安装完成后，需要启动其进程：
 
 ```shell
-$ sudo systemctl start docker
+sudo systemctl start docker
 或
-$ sudo service docker start
+sudo service docker start
 ```
 
 也可以配置开机自启动：
 
 ```shell
-$ sudo systemctl enable docker
+sudo systemctl enable docker
 ```
 
 ## 基本操作
@@ -78,10 +78,10 @@ Docker 把应用程序及其依赖，打包在 image 文件里面。image 文件
 
 ```shell
 # 列出本地所有 image 文件
-$ docker image ls
+docker image ls
 
 # 删除 image 文件
-$ docker image rm [imageName]
+docker image rm [imageName]
 ```
 
 为了节省时间与规范化，尽量用别人制作好的 image 文件（尽量不要自己制作，即使要定制，也应该基于别人的 image 文件进行加工）。  

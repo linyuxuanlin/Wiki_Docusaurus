@@ -10,7 +10,7 @@ title: Linux 基础（CentOS）
 使用 ssh：
 
 ```shell
-$ ssh user@IP
+ssh user@IP
 ```
 
 ## 常用命令

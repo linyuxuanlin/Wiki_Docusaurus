@@ -7,7 +7,7 @@ title: 使用 VSCode 进行远程开发
 
 ## 背景
 
-尝试了各类 SSH 工具，最终还是回到免费好用颜值又高的 VS Code.
+尝试了各类 SSH 工具，最终还是回到界面好看又强大的 VS Code.  
 本篇文章仅记录以供日后参考用，部分内容未详细展开说明。更多教程请参考文末链接。
 
 VS Code 基础配置篇：[**VS Code 生产力指南 - 环境配置**](VSCode生产力指南-环境配置)
@@ -25,25 +25,25 @@ VS Code 基础配置篇：[**VS Code 生产力指南 - 环境配置**](VSCode生
 运行此命令查看当前限制：
 
 ```shell
-$ cat /proc/sys/fs/inotify/max_user_watches
+cat /proc/sys/fs/inotify/max_user_watches
 ```
 
 编辑 `/etc/sysctl.conf` 文件：
 
 ```shell
-$ sudo vim /etc/sysctl.conf
+sudo vim /etc/sysctl.conf
 ```
 
 增加如下代码，将此限制增加到最大值：
 
 ```shell
-$ fs.inotify.max_user_watches=524288
+fs.inotify.max_user_watches=524288
 ```
 
 保存，启用设置：
 
 ```shell
-$ sudo sysctl -p
+sudo sysctl -p
 ```
 
 ## 参考与致谢

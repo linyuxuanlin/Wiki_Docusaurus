@@ -8,13 +8,13 @@ title: Bash 基础
 查看当前 Shell：
 
 ```shell
-$ echo $SHELL
+echo $SHELL
 ```
 
 查看当前的 Linux 系统安装的所有 Shell：
 
 ```shell
-$ cat /etc/shells
+cat /etc/shells
 ```
 
 ## 背景
@@ -26,7 +26,6 @@ $ cat /etc/shells
 ## 总结
 
 ## 参考与致谢
-
 
 <br />
 

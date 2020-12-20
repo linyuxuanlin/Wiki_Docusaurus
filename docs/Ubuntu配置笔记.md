@@ -22,9 +22,9 @@ title: Ubuntu 配置笔记
 2. VS Code
 3. Qv2ray（https://qv2ray.net/）
 4. Git
-   - `$ sudo apt install git`
-   - `$ git config --global user.name "John Doe"`
-   - `$ git config --global user.email johndoe@example.com`
+   - `sudo apt install git`
+   - `git config --global user.name "John Doe"`
+   - `git config --global user.email johndoe@example.com`
 
 ## 技巧
 
@@ -34,28 +34,28 @@ title: Ubuntu 配置笔记
 
 - cd
   - 切换工作目录
-  - `$ cd <目录路径>`
+  - `cd <目录路径>`
 - pwd
   - 查看当前绝对路径
-  - `$ pwd`
+  - `pwd`
 - mkdir
   - 创建目录
-  - `$ mkdir （选项） <目录名称>`
+  - `mkdir （选项） <目录名称>`
 - ls
   - 列出目录下的内容
-  - `$ ls （选项） （目录名称）`
+  - `ls （选项） （目录名称）`
 - touch
   - 改变文件 / 目录时间
-  - `$ touch （选项） <文件名称>`
+  - `touch （选项） <文件名称>`
 - mv
   - 剪切
-  - `$ mv （选项） （源文件/目录） <目的地文件/目录>`
+  - `mv （选项） （源文件/目录） <目的地文件/目录>`
 - cp
   - 复制
-  - `$ cp （选项） （源文件名/目录名） <目的地文件名/目录名>`
+  - `cp （选项） （源文件名/目录名） <目的地文件名/目录名>`
 - rm
   - 删除
-  - `$ rm （选项） <文件名/目录名>`
+  - `rm （选项） <文件名/目录名>`
 
 ### 快捷键
 
@@ -68,25 +68,25 @@ title: Ubuntu 配置笔记
 
 编译器：
 
-- `$ sudo apt-get install g++`
-- `$ sudo apt-get install python`
+- `sudo apt-get install g++`
+- `sudo apt-get install python`
 
 1. 添加软件源：
-   - $ sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
+   - sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
 2. 添加密钥：
-   - `$ sudo apt-key adv --keyserver 'hkp://keyserver.ubuntu.com:80' --recv-key C1CF6E31E6BADE8868B172B4F42ED6FBAB17C654`
+   - `sudo apt-key adv --keyserver 'hkp://keyserver.ubuntu.com:80' --recv-key C1CF6E31E6BADE8868B172B4F42ED6FBAB17C654`
 3. 安装 ROS：
-   - `$ sudo apt update`
-   - `$ sudo apt install ros-noetic-desktop-full`
+   - `sudo apt update`
+   - `sudo apt install ros-noetic-desktop-full`
 4. 初始化 rosdep
-   - `$ sudo apt-get install python3-rosdep`
-   - `$ sudo rosdep init`
-   - `$ rosdep update`
+   - `sudo apt-get install python3-rosdep`
+   - `sudo rosdep init`
+   - `rosdep update`
 5. 设置环境变量
-   - `$ echo "source /opt/ros/melodic/setup.bash" >> ~/.bashrc`
-   - `$ source ~/.bashrc`
+   - `echo "source /opt/ros/melodic/setup.bash" >> ~/.bashrc`
+   - `source ~/.bashrc`
 6. 安装 rosinstall
-   - `$ sudo apt install python3-rosinstall python3-rosinstall-generator python3-wstool build-essential`
+   - `sudo apt install python3-rosinstall python3-rosinstall-generator python3-wstool build-essential`
 
 ## 卸载
 

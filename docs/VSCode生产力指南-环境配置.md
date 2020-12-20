@@ -125,7 +125,7 @@ VS Code 发展到现在，各种功能已经非常强大，基本超越收费闭
 输入命令：
 
 ```shell
-$ git config --global credential.helper store
+git config --global credential.helper store
 ```
 
 重启 VS Code 即可。

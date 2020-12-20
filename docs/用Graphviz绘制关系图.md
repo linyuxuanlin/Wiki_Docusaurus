@@ -15,13 +15,13 @@ title: 用 Graphviz 绘制关系图
 
 发现一个很好用的在线编辑器：\[GraphvizOnline\]\([http://dreampuf.github.io/GraphvizOnline/\#digraph graph_name { ](http://dreampuf.github.io/GraphvizOnline/#digraph%20graph_name%20{%20) %20%20A-&gt;B\[label%3D"关系"\]%20 }\) 支持即时渲染，导出 `.png` 与 `.svg` 等格式。
 
-macOS 安装：`$ brew install graphviz`
+macOS 安装：`brew install graphviz`
 
 ## 作图流程
 
 1. 新建 `xxx.dot`
 2. 编辑 `.dot` 文档
-3. 切换到所在目录，导出：`$ dot xxx.dot -T png -o xxx.png`
+3. 切换到所在目录，导出：`dot xxx.dot -T png -o xxx.png`
 
 ## 简易语法
 

@@ -11,10 +11,10 @@ title: 删除 GitHub 仓库中某个文件夹
 ## 解决方法
 
 ```bash
-$ git pull origin master        # 先将远程仓库里面的项目拉取下来
-$ dir                           # 查看有哪些文件夹
-$ git rm -r --cached target     # 删除名字为 target 的文件夹
-$ git commit -m '删除了 target'  # 添加操作说明并提交
+git pull origin master        # 先将远程仓库里面的项目拉取下来
+dir                           # 查看有哪些文件夹
+git rm -r --cached target     # 删除名字为 target 的文件夹
+git commit -m '删除了 target'  # 添加操作说明并提交
 ```
 
 ## 参考与致谢
