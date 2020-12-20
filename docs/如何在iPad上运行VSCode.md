@@ -5,7 +5,7 @@ title: 如何在 iPad 上运行 VS Code
 
 注：本教程基于 code-server v3.8.0, CentOS 8.2.
 
-## 配置服务器
+## 一、配置服务器
 
 首先，你需要有一台 24h 不停机的服务器（推荐买阿里云 / 腾讯云学生机，只需 ¥9.9/月）  
 为保证使用体验，这里推荐服务器的配置：
@@ -15,7 +15,7 @@ title: 如何在 iPad 上运行 VS Code
 
 刷 Linux（这里我使用 CentOS 8.2），确保 ssh 能正常连上即可。
 
-## 一、安装 code-server
+## 二、安装 code-server
 
 在新的版本下（≥v3.8.0），可以直接使用脚本安装：
 
@@ -25,7 +25,7 @@ curl -fsSL https://code-server.dev/install.sh | sh
 
 如果发现半天下载不下来，多半是因为 DNS 污染，参考 [**GitHub 改 Host**](GitHub改Host) 解决。
 
-## 二、运行 code-server
+## 三、运行 code-server
 
 使用命令：
 
@@ -35,7 +35,7 @@ export PASSWORD="设置一个访问密码" && code-server --port 80 --host 0.0.0
 
 如果没有出现错误，那么打开浏览器，输入服务器的 IP 地址访问，就可以看到一个在线的 VS Code 了。
 
-## 三、配置后台运行
+## 四、配置后台运行
 
 运行在前台的 code-server ，会因为 ssh 退出而结束进程。  
 为了使其能在后台运行，我们可以使用 screen 程序（可以把它理解为一个容器）。
