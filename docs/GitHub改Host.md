@@ -28,6 +28,14 @@ Host 路径:
 - Windows: `C:\Windows\System32\drivers\etc`
 - Linux: `/etc/hosts`
 
+补一点 Linux 下的操作方法：
+
+1. 打开终端
+2. 输入命令：`vi /etc/hosts`
+3. 按 `A` 切换到编辑模式
+4. 在末尾添加上面的几句 Host 指向
+5. 按 `Esc` 退出编辑，按 `:wq` 保存并退出
+
 ## 拓展
 
 ### 查询域名的 IP
