@@ -104,6 +104,7 @@ module.exports = {
       label: "小技巧",
       collapsed: true,
       items: [
+        "LaTeX希腊字母对照表",
         "GitHub改Host",
         "Linux用户操作",
         "MSI主板开启虚拟化的方法",
