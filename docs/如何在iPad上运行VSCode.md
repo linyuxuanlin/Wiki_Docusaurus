@@ -90,6 +90,10 @@ VS Code 配合 Git 使用，方便进行云开发。
 yum install git
 ```
 
+### 域名绑定与反代 https
+
+【施工中】
+
 ### 当前版本 bugs 及解决
 
 - 无法通过 VS Code 内置的 Settings Sync 服务同步用户设置：可以通过额外安装 [**Settings Sync**](https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync) 插件解决
@@ -100,6 +104,7 @@ yum install git
 - [在浏览器上运行 VSCode（旧）](在浏览器上运行VSCode（旧）)
 - [GitHub 改 Host](GitHub改Host)
 - [screen 的安装和使用](https://www.jianshu.com/p/420569381e74)
+- [Setup Guide · cdr/code-server](https://github.com/cdr/code-server/blob/v3.8.0/doc/guide.md)
 
 <br />
 
