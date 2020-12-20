@@ -31,11 +31,10 @@ wget https://github.com/cdr/code-server/releases/download/3.1.0/code-server-3.1.
 
 不要照搬命令，在 code-server 的 [**Release**](https://github.com/cdr/code-server/releases) 页面复制最新版本的链接（根据服务器的架构来选择，我使用的是 `code-server-3.1.0-linux-x86_64.tar.gz` 版本），用 `wget` 或 `SFTP` 下载 / 传输至服务器上。
 
-如果下载速度很慢，可复制下载链接，并在 [**这个网站**](https://d.serctl.com/) 中获取新的下载链接。
+如果下载速度很慢，可复制下载链接，使用 [**GitHub 文件加速**](https://gh.api.99988866.xyz/) 这个网站获取国内加速下载链接。
 
 ```shell
 tar -xvf code-server-3.1.0-linux-x86_64.tar.gz # 解压
-mv code-server-3.1.0-linux-x86_64.tar.gz code-server# 改名（非必要）
 ```
 
 ### 2. 安装
@@ -50,7 +49,7 @@ export PASSWORD="yourpassword"
 - `--port 8888` 意为指定运行端口，你可以设置为 `80` 端口（Http 协议），这样访问的时候就不用加端口号了
 - `--host 0.0.0.0` 让服务能通过外网访问。默认的 `127.0.0.1` 只能本地访问
 - 如不需要密码验证，可以加上 `--auth none`
-- 如启动服务不成功，可能为架构版本选择错误，换一个版本即可
+- 如启动服务不成功，可能为 **处理器架构版本** 选择错误，换一个版本即可
 
 ### 3. 配置后台运行
 
