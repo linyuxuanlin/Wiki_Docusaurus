@@ -92,7 +92,7 @@ yum install git
 
 ### 当前版本 bugs 及解决
 
-- 无法通过 VS Code 内置的 Settings Sync 服务同步用户设置：可以通过额外安装 [**Settings Sync**](https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync) 解决
+- 无法通过 VS Code 内置的 Settings Sync 服务同步用户设置：可以通过额外安装 [**Settings Sync**](https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync) 插件解决
 - 部分鼠标滚轮无法正常滚动页面：目前只能使用直接触摸滚动，或用键盘方向键替代
 
 ## 参考与致谢
