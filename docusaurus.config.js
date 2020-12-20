@@ -1,16 +1,16 @@
 module.exports = {
   title: "Power's Wiki",
   //titleDelimiter: "🦖", // Defaults to `|`
-  tagline: "still developing",
+  tagline: "啥都玩的斜杠青年",
   url: "https://wiki-power.com",
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
-  favicon:
-    "https://cos.ap-guangzhou.myqcloud.com/wiki-media-1253965369/doc/logo-white.svg",
+  favicon: "https://cos.ap-guangzhou.myqcloud.com/wiki-media-1253965369/doc/logo-white.svg",
   //organizationName: "linyuxuanlin", // Usually your GitHub org/user name.
   //projectName: "Wiki_Docusaurus", // Usually your repo name.
   themeConfig: {
+    image: 'https://cos.ap-guangzhou.myqcloud.com/wiki-media-1253965369/doc/logo-white.svg',
     algolia: {
       apiKey: "4cb7cbb290ebf1c47479ada3658c3d8e",
       indexName: "wiki",
