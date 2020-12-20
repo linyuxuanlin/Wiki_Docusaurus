@@ -81,7 +81,7 @@ export PASSWORD="设置一个访问密码" && code-server --port 80 --host 0.0.0
 - 指定运行端口：`--port xxxx`，你可以将 `xxxx` 替换为 `8888` ；也可以是 `80` （走 Http 协议，直接用 IP 访问不用加端口号）
 - 如果不需要访问密码：加上 `--auth none`
 
-### 安装 Git 服务
+### 安装 Git
 
 VS Code 配合 Git 使用，方便进行云开发。  
 可以使用如下命令安装 Git：

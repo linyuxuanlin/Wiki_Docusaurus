@@ -5,8 +5,7 @@ title: GitHub 改 Host
 
 ## 问题
 
-1. GitHub 头像加载不出来
-2. 错误：`curl: (7) Failed to connect to raw.githubusercontent.com port 443: Connection refused `
+错误：`curl: (7) Failed to connect to raw.githubusercontent.com port 443: Connection refused `
 
 ## 原因
 
