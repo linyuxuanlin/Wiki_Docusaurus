@@ -5,21 +5,6 @@ title: 如何在 iPad 上跑 VS Code
 
 注：本教程基于 code-server v3.8.0, CentOS 8.2.
 
-## 参考与致谢
-
-- [在浏览器上运行 VSCode（旧）](在浏览器上运行VSCode（旧）)
-- [GitHub 改 Host](GitHub改Host)
-
-<br />
-
-<br />
-
-> 文章作者：**Power Lin**  
-> 原文地址：<https://wiki-power.com>  
-> 版权声明：文章采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh) 协议，转载请注明出处。
-
-screen 用户同步
-
 ## 配置服务器
 
 首先，你需要有一台 24h 不停机的服务器（推荐买阿里云/腾讯云学生机，只需 ¥9.9/月）  
@@ -109,3 +94,16 @@ yum install git
 
 - 无法通过 VS Code 内置的 Settings Sync 服务同步用户设置：可以通过额外安装 [**Settings Sync**](https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync) 解决
 - 部分鼠标滚轮无法正常滚动页面：目前只能使用直接触摸滚动，或用键盘方向键替代
+
+## 参考与致谢
+
+- [在浏览器上运行 VSCode（旧）](在浏览器上运行VSCode（旧）)
+- [GitHub 改 Host](GitHub改Host)
+
+<br />
+
+<br />
+
+> 文章作者：**Power Lin**  
+> 原文地址：<https://wiki-power.com>  
+> 版权声明：文章采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh) 协议，转载请注明出处。
