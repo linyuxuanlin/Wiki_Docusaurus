@@ -3,7 +3,7 @@ id: 在浏览器上运行VSCode（旧）
 title: 在浏览器上运行 VS Code（旧）
 ---
 
-注：新版本 code-server 的部署请参考 [**如何在 iPad 上跑 VS Code**](如何在iPad上跑VSCode) 这篇文章。
+注：≥v3.8.0 版本 code-server 的部署请参考 [**如何在 iPad 上跑 VS Code**](如何在iPad上运行VSCode) ，有更简洁的方法。
 
 ## 背景
 

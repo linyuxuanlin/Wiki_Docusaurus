@@ -62,7 +62,7 @@ module.exports = {
       label: "高效工作",
       collapsed: true,
       items: [
-        "如何在iPad上跑VSCode",
+        "如何在iPad上运行VSCode",
         "使用Markdown进行高效写作",
         "团队知识库搭建记录-DokuWiki",
         "个人知识库极简搭建指南-VuePress",
