@@ -30,7 +30,7 @@ curl -fsSL https://code-server.dev/install.sh | sh
 使用命令：
 
 ```shell
-export PASSWORD="设置一个访问密码" && code-server --port 80 --host 0.0.0.0
+export PASSWORD="设置一个访问密码" && code-server --port 80 --host 0.0.0.0 --auth password
 ```
 
 如果没有出现错误，那么打开浏览器，输入服务器的 IP 地址访问，就可以看到一个在线的 VS Code 了。
@@ -55,7 +55,7 @@ screen -S VSCode-online # VSCode-online 为自取的名字
 ### 3. 开启 code-server 服务
 
 ```shell
-export PASSWORD="设置一个访问密码" && code-server --port 80 --host 0.0.0.0
+export PASSWORD="设置一个访问密码" && code-server --port 80 --host 0.0.0.0 --auth password
 ```
 
 如果顺利的话，就可以在浏览器输入 IP 地址访问了。
@@ -79,7 +79,7 @@ export PASSWORD="设置一个访问密码" && code-server --port 80 --host 0.0.0
 
 - 通过外网访问：code-server 服务默认只运行在本地（`127.0.0.1`）。为了能通过 IP 访问，可以添加 `--host 0.0.0.0` 参数
 - 指定运行端口：`--port xxxx`，你可以将 `xxxx` 替换为 `8888` ；也可以是 `80` （走 Http 协议，直接用 IP 访问，不用加端口号）
-- 如果不需要访问密码：加上 `--auth none`
+- 设置访问密码：加上`--auth password` ；如不需要，则不加任何参数，或加上 `--auth none`
 
 ### 安装 Git
 
@@ -90,13 +90,19 @@ VS Code 配合 Git 使用，方便进行云开发。
 yum install git
 ```
 
-### 域名绑定与反代 https
+### 使用域名访问
+
+通过服务器 IP 访问也许会有些奇怪，我们可以绑定一个自定义的域名，通过域名来访问 code-server 服务。  
+购买一个域名，在 DNS 解析处添加服务器 IP 的，使用 A 类型即可。
+
+### https
 
 【施工中】
 
 ### 当前版本 bugs 及解决
 
 - 无法通过 VS Code 内置的 Settings Sync 服务同步用户设置：可以通过额外安装 [**Settings Sync**](https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync) 插件解决
+- Settings Sync 跳转 GitHub 登录出错：使用电脑浏览器进行配置
 - iPad 上用鼠标滚轮无法正常滚动页面：目前只能使用直接触摸滚动，或用键盘方向键替代
 
 ## 参考与致谢
