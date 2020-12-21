@@ -3,9 +3,9 @@ id: 如何在iPad上运行VSCode
 title: 如何在 iPad 上运行 VS Code
 ---
 
-![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20201221140748.jpg)
-
 注：本教程基于 code-server v3.8.0, CentOS 8.2.
+
+![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20201221140748.jpg)
 
 ## 一、配置服务器
 
