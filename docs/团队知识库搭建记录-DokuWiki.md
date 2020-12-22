@@ -20,7 +20,7 @@ title: 团队知识库搭建记录 - DokuWiki
 - MoinMoin Wiki
 - FosWiki
 - xwiki
-- mm-wiki 从 7456
+- mm-wiki
 - MinDoc
 
 <br />
