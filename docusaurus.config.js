@@ -12,8 +12,8 @@ module.exports = {
   themeConfig: {
     image: 'https://cos.ap-guangzhou.myqcloud.com/wiki-media-1253965369/doc/logo-white.svg',
     algolia: {
-      apiKey: "4cb7cbb290ebf1c47479ada3658c3d8e",
-      indexName: "wiki",
+      apiKey: "5c07d8bf9c9928c4453857f6cad0420e",
+      indexName: "wiki-power",
 
       // Optional: see doc section bellow
       contextualSearch: true,
