@@ -6285,17 +6285,6 @@ mdast-util-definitions@^4.0.0:
   dependencies:
     unist-util-visit "^2.0.0"
 
-mdast-util-from-markdown@^0.8.0:
-  version "0.8.4"
-  resolved "https://registry.npm.taobao.org/mdast-util-from-markdown/download/mdast-util-from-markdown-0.8.4.tgz#2882100c1b9fc967d3f83806802f303666682d32"
-  integrity sha1-KIIQDBufyWfT+DgGgC8wNmZoLTI=
-  dependencies:
-    "@types/mdast" "^3.0.0"
-    mdast-util-to-string "^2.0.0"
-    micromark "~2.11.0"
-    parse-entities "^2.0.0"
-    unist-util-stringify-position "^2.0.0"
-
 mdast-util-math@^0.1.0:
   version "0.1.2"
   resolved "https://registry.npm.taobao.org/mdast-util-math/download/mdast-util-math-0.1.2.tgz#629a0793bd8822432917e5ddda5279492390cc2b"
@@ -8641,35 +8630,12 @@ remark-parse@8.0.3:
     vfile-location "^3.0.0"
     xtend "^4.0.1"
 
-remark-parse@^9.0.0:
-  version "9.0.0"
-  resolved "https://registry.npm.taobao.org/remark-parse/download/remark-parse-9.0.0.tgz?cache=0&sync_timestamp=1602663704570&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fremark-parse%2Fdownload%2Fremark-parse-9.0.0.tgz#4d20a299665880e4f4af5d90b7c7b8a935853640"
-  integrity sha1-TSCimWZYgOT0r12Qt8e4qTWFNkA=
-  dependencies:
-    mdast-util-from-markdown "^0.8.0"
-
 remark-squeeze-paragraphs@4.0.0:
   version "4.0.0"
   resolved "https://registry.npm.taobao.org/remark-squeeze-paragraphs/download/remark-squeeze-paragraphs-4.0.0.tgz#76eb0e085295131c84748c8e43810159c5653ead"
   integrity sha1-dusOCFKVExyEdIyOQ4EBWcVlPq0=
   dependencies:
     mdast-squeeze-paragraphs "^4.0.0"
-
-remark-stringify@^9.0.0:
-  version "9.0.1"
-  resolved "https://registry.npm.taobao.org/remark-stringify/download/remark-stringify-9.0.1.tgz#576d06e910548b0a7191a71f27b33f1218862894"
-  integrity sha1-V20G6RBUiwpxkacfJ7M/EhiGKJQ=
-  dependencies:
-    mdast-util-to-markdown "^0.6.0"
-
-remark@13:
-  version "13.0.0"
-  resolved "https://registry.npm.taobao.org/remark/download/remark-13.0.0.tgz?cache=0&sync_timestamp=1602663702770&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fremark%2Fdownload%2Fremark-13.0.0.tgz#d15d9bf71a402f40287ebe36067b66d54868e425"
-  integrity sha1-0V2b9xpAL0Aofr42Bntm1Uho5CU=
-  dependencies:
-    remark-parse "^9.0.0"
-    remark-stringify "^9.0.0"
-    unified "^9.1.0"
 
 remove-trailing-separator@^1.0.1:
   version "1.1.0"
@@ -9809,7 +9775,7 @@ unicode-property-aliases-ecmascript@^1.0.4:
   resolved "https://registry.npm.taobao.org/unicode-property-aliases-ecmascript/download/unicode-property-aliases-ecmascript-1.1.0.tgz#dd57a99f6207bedff4628abefb94c50db941c8f4"
   integrity sha1-3Vepn2IHvt/0Yoq++5TFDblByPQ=
 
-unified@9.2.0, unified@^9.0.0, unified@^9.1.0:
+unified@9.2.0, unified@^9.0.0:
   version "9.2.0"
   resolved "https://registry.npm.taobao.org/unified/download/unified-9.2.0.tgz#67a62c627c40589edebbf60f53edfd4d822027f8"
   integrity sha1-Z6YsYnxAWJ7eu/YPU+39TYIgJ/g=
