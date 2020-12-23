@@ -25,7 +25,7 @@ Hi there~
 <h6>Power Lin |  <a href="https://beian.miit.gov.cn"> 粤 ICP 备 20014898 号 </a> | Built with Docusaurus</h6>
 
 
-<script src="https://utteranc.es/client.js"
+<script src="src/theme/DocItem/client.js"
         repo="linyuxuanlin/Wiki_Docusaurus_comments"
         issue-term="url"
         theme="github-light"

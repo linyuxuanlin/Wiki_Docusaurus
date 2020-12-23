@@ -1,3 +1,4 @@
+
 module.exports = {
   title: "Power's Wiki",
   //titleDelimiter: "🦖", // Defaults to `|`
