@@ -23,7 +23,7 @@ title: AD 入门系列二：基础知识
 - [**JLCSMT_LIB**](https://gitee.com/JLC_SMT/JLCSMT_LIB)：嘉立创提供的标准集成库，包含嘉立创可以 SMT 贴片的所有元件，直接用这个集成库，打板 / SMT 的时候兼容性会比较好。
 - [**Hare_Library**](https://github.com/linyuxuanlin/Power_Lib_Altium/tree/master/Other_Libs/Hare_Library)：彬哥整理的原理图库 / 封装库，涵盖队内硬件所需的大部分元器件。
 
-如何安装库文件：参考 [**Altium Designer 安装库文件**](AltiumDesigner安装库文件)
+如何安装库文件：参考 [**Altium Designer 安装库文件**](https://wiki-power.com/AltiumDesigner安装库文件)
 
 ### 不常见的元器件
 

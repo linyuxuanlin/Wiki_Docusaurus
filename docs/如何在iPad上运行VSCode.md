@@ -25,7 +25,7 @@ title: 如何在 iPad 上运行 VS Code
 curl -fsSL https://code-server.dev/install.sh | sh
 ```
 
-如果发现半天下载不下来，多半是因为 DNS 污染，参考 [**GitHub 改 Host**](GitHub改Host) 解决。
+如果发现半天下载不下来，多半是因为 DNS 污染，参考 [**GitHub 改 Host**](https://wiki-power.com/GitHub改Host) 解决。
 
 ## 三、运行 code-server
 
@@ -109,8 +109,8 @@ yum install git
 
 ## 参考与致谢
 
-- [在浏览器上运行 VSCode（旧）](在浏览器上运行VSCode（旧）)
-- [GitHub 改 Host](GitHub改Host)
+- [在浏览器上运行 VSCode（旧）](https://wiki-power.com/在浏览器上运行VSCode（旧）)
+- [GitHub 改 Host](https://wiki-power.com/GitHub改Host)
 - [screen 的安装和使用](https://www.jianshu.com/p/420569381e74)
 - [Setup Guide · cdr/code-server](https://github.com/cdr/code-server/blob/v3.8.0/doc/guide.md)
 

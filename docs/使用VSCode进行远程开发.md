@@ -10,7 +10,7 @@ title: 使用 VSCode 进行远程开发
 尝试了各类 SSH 工具，最终还是回到界面好看又强大的 VS Code.  
 本篇文章仅记录以供日后参考用，部分内容未详细展开说明。更多教程请参考文末链接。
 
-VS Code 基础配置篇：[**VS Code 生产力指南 - 环境配置**](VSCode生产力指南-环境配置)
+VS Code 基础配置篇：[**VS Code 生产力指南 - 环境配置**](https://wiki-power.com/VSCode生产力指南-环境配置)
 
 ## 配置扩展
 
