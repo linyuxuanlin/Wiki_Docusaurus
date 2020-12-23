@@ -23,3 +23,12 @@ Hi there~
 [![contact](https://img.shields.io/badge/Contact%20me-here-34ABE0?&style=flat-square)](ContactMe)
 
 <h6>Power Lin |  <a href="https://beian.miit.gov.cn"> 粤 ICP 备 20014898 号 </a> | Built with Docusaurus</h6>
+
+
+<script src="https://utteranc.es/client.js"
+        repo="linyuxuanlin/Wiki_Docusaurus_comments"
+        issue-term="url"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
