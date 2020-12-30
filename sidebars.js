@@ -168,12 +168,7 @@ module.exports = {
         "一些观点",
       ],
     },
-    {
-      type: "category",
-      label: "期末复习",
-      collapsed: true,
-      items: ["复习提纲-传感器"],
-    },
+
   ],
 };
 
