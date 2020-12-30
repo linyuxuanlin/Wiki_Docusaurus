@@ -105,7 +105,7 @@ module.exports = {
         },
         {
           href: "https://nav.wiki-power.com/",
-          label: "导航站(施工中)",
+          label: "导航站（施工中）",
           position: "right",
         },
         {
