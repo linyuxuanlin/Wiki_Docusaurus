@@ -1,4 +1,3 @@
-
 module.exports = {
   title: "Power's Wiki",
   //titleDelimiter: "🦖", // Defaults to `|`
@@ -102,6 +101,11 @@ module.exports = {
         {
           to: "Links",
           label: "友情链接",
+          position: "right",
+        },
+        {
+          href: "https://nav.wiki-power.com/",
+          label: "导航站(施工中)",
           position: "right",
         },
         {
