@@ -100,7 +100,7 @@ module.exports = {
         },
         {
           to: "Links",
-          label: "友情链接",
+          label: "友链",
           position: "right",
         },
         {
