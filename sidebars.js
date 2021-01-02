@@ -104,6 +104,7 @@ module.exports = {
       label: "小技巧",
       collapsed: true,
       items: [
+        "Vue.js小技巧"
         "正则表达式实用语句",
         "LaTeX希腊字母对照表",
         "GitHub改Host",
