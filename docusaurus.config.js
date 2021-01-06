@@ -104,14 +104,16 @@ module.exports = {
           label: "收藏夹",
           position: "right",
         },
+        /*
         {
           to: "Links",
           label: "友链",
           position: "right",
         },
+        */
         {
           href: "https://nav.wiki-power.com/",
-          label: "导航站(施工中)",
+          label: "友链 / 导航",
           position: "right",
         },
         {
