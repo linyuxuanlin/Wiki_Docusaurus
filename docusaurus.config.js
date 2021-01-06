@@ -116,7 +116,7 @@ module.exports = {
         },
         {
           href: "https://github.com/linyuxuanlin/Wiki_Docusaurus",
-          label: "本站源码&nbsp;",
+          label: "本站源码     ",
           position: "right",
         },
       ],
