@@ -89,6 +89,12 @@ module.exports = {
                 },
                 */
         {
+          href: "https://wiki.wildwolf.tech/",
+          label: "野狼队知识库",
+          position: "right",
+        },
+
+        {
           href: "http://digest.wiki-power.com/",
           label: "书摘",
           position: "right",
@@ -110,7 +116,7 @@ module.exports = {
         },
         {
           href: "https://github.com/linyuxuanlin/Wiki_Docusaurus",
-          label: "本站源码  ",
+          label: "本站源码&nbsp;",
           position: "right",
         },
       ],
