@@ -148,6 +148,7 @@ module.exports = {
       label: "小技巧",
       collapsed: true,
       items: [
+        "如何为公众号文章增加特效",
         "卡片式写作",
         "npm和Yarn换源加速国内访问",
         "Vue.js小技巧",
