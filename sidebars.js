@@ -26,7 +26,9 @@ module.exports = {
         "自制CMSIS-DAP",
         "PCB名片设计",
         "常用的防反接电路",
+        "什么是金手指",
         "AD使用Git的注意事项",
+        
       ],
     },
 
