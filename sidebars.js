@@ -25,6 +25,7 @@ module.exports = {
         "AD入门系列五：库文件绘制",
         "自制CMSIS-DAP",
         "PCB名片设计",
+        "常用的防反接电路",
         "AD使用Git的注意事项",
       ],
     },
