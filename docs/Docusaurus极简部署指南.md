@@ -1,5 +1,5 @@
 ---
-id: Docusaurus 极简部署指南
+id: Docusaurus极简部署指南
 title: Docusaurus 极简部署指南
 ---
 
