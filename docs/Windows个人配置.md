@@ -37,7 +37,11 @@ title: Windows 个人配置
 - [卓越性能](https://bobi.site/archives/875)
 - 设置 - 更新和安全 - 开发者选项 - 开启开发人员模式
 - 桌面图标分布
-- 预览版模式（未完成）
+- 预览版模式
+- 个性化
+- 显示设置
+- 剪切板历史记录及同步
+- 重命名电脑名称
 
 ## 下载软件
 
@@ -60,5 +64,7 @@ title: Windows 个人配置
 - [**GitHub Desktop**](https://desktop.github.com)
 - [**VS Code**](https://code.visualstudio.com/)
 - [**Git**](https://git-scm.com/downloads)
+- [**Todesk**](https://www.todesk.com/download.html)
+- [**坚果云**](https://www.jianguoyun.com/s/downloads)
 
 
