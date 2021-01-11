@@ -43,6 +43,7 @@ title: Windows 个人配置
 - 剪切板历史记录及同步
 - 重命名电脑名称
 - 鼠标触摸板键盘等
+- [GodMode](https://github.com/linyuxuanlin/Windows-setup/blob/main/Software/System/GodMode.lnk)
 
 ## 下载软件
 
@@ -58,7 +59,7 @@ title: Windows 个人配置
 - Outsite & V2
   - 下载 N 和 core, 将 core 内文件覆盖到 N 目录下
   - 设置开机启动
-- Logitech Options：罗技鼠标专用（自动弹出下载安装）
+- [**Logitech Options**](https://www.logitech.com.cn/zh-cn/product/options)：罗技鼠标专用（自动弹出下载安装）
 - [**微信**](https://pc.weixin.qq.com/?t=win_weixin&lang=zh_CN)
   - 使用系统默认浏览器打开网页
 - [**火绒安全**](https://www.huorong.cn/)
@@ -68,5 +69,20 @@ title: Windows 个人配置
 - [**Todesk**](https://www.todesk.com/download.html)
 - [**坚果云**](https://www.jianguoyun.com/s/downloads)
 - [**Windows Terminal**](https://github.com/microsoft/terminal/releases/)
+- [**Geek Uninstaller**](https://github.com/linyuxuanlin/Windows-setup/blob/main/Software/System/geekuninstaller.exe)
+- [**Bandizip**](https://github.com/linyuxuanlin/Windows-setup/blob/main/Software/System/Bandizip.zip)：无广告版本
+- [**Dism++**](https://www.chuyu.me/zh-Hans/)：系统工具
+- [**JPEGView**](https://github.com/linyuxuanlin/Windows-setup/blob/main/Software/System/JPEGView64.zip)
+- [**卡硬工具箱**](http://www.kbtool.cn/down.php)
+- [**Mem Reduct**](https://github.com/henrypp/memreduct/releases)
+- [**OInstall**](https://github.com/linyuxuanlin/Windows-setup/blob/main/Software/System/OInstall.exe)：Office 工具
+- [**PowerToys**](https://github.com/microsoft/PowerToys/releases/)
+- [**Snipaste**](https://zh.snipaste.com/download.html)
+- [**SpaceSniffer**](https://github.com/linyuxuanlin/Windows-setup/blob/main/Software/System/SpaceSniffer.exe)
+- [**Sumatra PDF**](https://www.sumatrapdfreader.org/download-free-pdf-viewer.html)
+- [**TIM**](https://tim.qq.com/download.html)
+- [**PotPlayer**](https://daumpotplayer.com/download/)
 
-
+https://jingyan.baidu.com/article/4853e1e516d3091908f7265a.html
+https://zhidao.baidu.com/question/2208010216987558628.html
+https://zhidao.baidu.com/question/326859904713262805.html
