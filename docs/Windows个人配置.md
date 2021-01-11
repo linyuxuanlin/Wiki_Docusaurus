@@ -33,6 +33,7 @@ title: Windows 个人配置
 - 定制任务栏
 - [激活 Windows](https://bobi.site/archives/57)
 - 登录 Microsoft 账户
+- [卓越性能](AD使用Git的注意事项.md)
 
 
 ## 下载软件
@@ -55,5 +56,6 @@ title: Windows 个人配置
 - [**火绒安全**](https://www.huorong.cn/)
 - [**GitHub Desktop**](https://desktop.github.com)
 - [**VS Code**](https://code.visualstudio.com/)
+- 
 
 
