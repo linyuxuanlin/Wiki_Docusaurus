@@ -54,6 +54,6 @@ title: Windows 个人配置
   - 使用系统默认浏览器打开网页
 - [**火绒安全**](https://www.huorong.cn/)
 - [**GitHub Desktop**](https://desktop.github.com)
-
+- [**VS Code**](https://code.visualstudio.com/)
 
 
