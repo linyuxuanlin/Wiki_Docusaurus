@@ -33,7 +33,7 @@ title: Windows 个人配置
 
 ## 下载软件
 
-- [](https://www.diskgenius.cn/download.php)：并分出 C（系统），D（数据），P（软件）盘
+- [**DiskDenius**](https://www.diskgenius.cn/download.php)：并分出 C（系统），D（数据），P（软件）盘
 - [**Chrome**](https://www.google.cn/chrome/)：浏览器
   - 设为默认浏览器
 - [**KMS**](https://github.com/linyuxuanlin/Windows-setup/blob/main/Software/System/KMS.exe)：激活 Windows
