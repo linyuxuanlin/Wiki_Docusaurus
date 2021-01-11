@@ -32,7 +32,8 @@ title: Windows 个人配置
 
 ## 下载软件
 
-- [**DiskDenius**](https://www.diskgenius.cn/download.php)：并分出 C（System），D（Data），P（Software）盘
+- [**DiskDenius**](https://www.diskgenius.cn/download.php)
+  - 预留 10 GB 空闲（SSD）
   - NTFS, 4096 扇区（4k 对齐）
 - [**Chrome**](https://www.google.cn/chrome/)：浏览器
   - 设为默认浏览器
