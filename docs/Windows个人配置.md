@@ -5,28 +5,13 @@ title: Windows 个人配置
 
 
 
-## 参考与致谢 
+## 安装系统与初始化
 
 
-
-<br />
-
-<br />
-
-> 文章作者：**Power Lin**  
-> 原文地址：<https://wiki-power.com>  
-> 版权声明：文章采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh) 协议，转载请注明出处。
-
-## 安装系统
-
-用户名：Power  
-不使用微软账户初始化
-开启诊断（预览版系统）
-
-## 初始化
-
-1. 更新系统、驱动
-2. 连接蓝牙键鼠
+- 不使用微软账户初始化
+- 开启诊断（预览版系统需要）
+- 更新系统、驱动
+- 连接蓝牙键鼠
 
 ## 设置项
 
@@ -82,7 +67,21 @@ title: Windows 个人配置
 - [**Sumatra PDF**](https://www.sumatrapdfreader.org/download-free-pdf-viewer.html)
 - [**TIM**](https://tim.qq.com/download.html)
 - [**PotPlayer**](https://daumpotplayer.com/download/)
+- [**PicGo**](https://github.com/Molunerfinn/PicGo/releases/tag/v2.3.0-beta.4)
+- [**Bamboo**](https://christopherwk210.github.io/bamboo/)：基于 TinyPNG 的图像压缩软件
+- [**DeskGo**](https://pm.myapp.com/invc/xfspeed/qqpcmgr/data/DeskGo_2_9_1051_127_lite.exe)：桌面整理
 
-https://jingyan.baidu.com/article/4853e1e516d3091908f7265a.html
-https://zhidao.baidu.com/question/2208010216987558628.html
-https://zhidao.baidu.com/question/326859904713262805.html
+
+
+## 参考与致谢 
+
+- [Chrome 此类型的文件可能会损害您的计算机](https://zhidao.baidu.com/question/326859904713262805.html)
+
+
+<br />
+
+<br />
+
+> 文章作者：**Power Lin**  
+> 原文地址：<https://wiki-power.com>  
+> 版权声明：文章采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh) 协议，转载请注明出处。
