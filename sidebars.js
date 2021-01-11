@@ -146,6 +146,7 @@ module.exports = {
         //"科技X的访谈",
         "为什么要「站在巨人的肩膀上」",
         "如何不被AI取代",
+        "Windows个人配置",
         "一些观点",
 
       ],
@@ -156,6 +157,7 @@ module.exports = {
       label: "小技巧",
       collapsed: true,
       items: [
+        
         "如何为公众号文章增加特效",
         "如何在Linux下使用微信",
         "如何打印出手写效果的文字",
