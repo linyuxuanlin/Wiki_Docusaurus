@@ -47,6 +47,7 @@ title: Windows 个人配置
 - Logitech Options：罗技鼠标专用（自动弹出下载安装）
 - [**微信**](https://pc.weixin.qq.com/?t=win_weixin&lang=zh_CN)
   - 使用系统默认浏览器打开网页
+- [**火绒安全**](https://www.huorong.cn/)
 
 
 
