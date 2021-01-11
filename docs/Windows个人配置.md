@@ -31,6 +31,7 @@ title: Windows 个人配置
 
 - 用户账户控制设置：设为从不通知
 - 定制任务栏
+- 登录 Microsoft 账户
 
 ## 下载软件
 
@@ -40,7 +41,9 @@ title: Windows 个人配置
   - 设为默认浏览器
   - 更改下载位置
   - 同步账户
-- [**KMS**](https://github.com/linyuxuanlin/Windows-setup/blob/main/Software/System/KMS.exe)：激活 Windows
+- [**KMS**](https://github.com/linyuxuanlin/Windows-setup/blob/main/Software/System/KMS.exe)：
+  - 激活 Windows
+  - 关闭 Windows Defender
 - Outsite & V2
   - 下载 N 和 core, 将 core 内文件覆盖到 N 目录下
   - 设置开机启动
@@ -48,6 +51,7 @@ title: Windows 个人配置
 - [**微信**](https://pc.weixin.qq.com/?t=win_weixin&lang=zh_CN)
   - 使用系统默认浏览器打开网页
 - [**火绒安全**](https://www.huorong.cn/)
+- [**GitHub Desktop**](https://desktop.github.com)
 
 
 
