@@ -30,10 +30,12 @@ title: Windows 个人配置
 ## 设置项
 
 - 用户账户控制设置：设为从不通知
+- 定制任务栏
 
 ## 下载软件
 
-- [**DiskDenius**](https://www.diskgenius.cn/download.php)：并分出 C（系统），D（数据），P（软件）盘
+- [**DiskDenius**](https://www.diskgenius.cn/download.php)：并分出 C（System），D（Data），P（Software）盘
+  - NTFS, 4096 扇区（4k 对齐）
 - [**Chrome**](https://www.google.cn/chrome/)：浏览器
   - 设为默认浏览器
 - [**KMS**](https://github.com/linyuxuanlin/Windows-setup/blob/main/Software/System/KMS.exe)：激活 Windows
