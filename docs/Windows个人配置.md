@@ -49,6 +49,6 @@ title: Windows 个人配置
 - [**微信**](https://pc.weixin.qq.com/?t=win_weixin&lang=zh_CN)
   - 使用系统默认浏览器打开网页
 - [**火绒安全**](https://www.huorong.cn/)
-
+- [**Git**](https://git-scm.com/downloads)
 
 
