@@ -29,6 +29,7 @@ title: Windows 个人配置
 - 重命名电脑名称
 - 鼠标触摸板键盘等
 - [GodMode](https://github.com/linyuxuanlin/Windows-setup/blob/main/Software/System/GodMode.lnk)
+- 关闭休眠：`powercfg /hibernate off`
 
 ## 下载软件
 
