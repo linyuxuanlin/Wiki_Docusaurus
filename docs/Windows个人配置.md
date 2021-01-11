@@ -35,7 +35,7 @@ title: Windows 个人配置
 - 登录 Microsoft 账户
 - [卓越性能](https://bobi.site/archives/875)
 - 设置 - 更新和安全 - 开发者选项 - 开启开发人员模式
-
+- 桌面图标分布
 
 ## 下载软件
 
