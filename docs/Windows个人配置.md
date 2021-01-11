@@ -7,7 +7,7 @@ title: Windows 个人配置
 
 ## 参考与致谢 
 
-* []()
+
 
 <br />
 
@@ -38,7 +38,15 @@ title: Windows 个人配置
   - NTFS, 4096 扇区（4k 对齐）
 - [**Chrome**](https://www.google.cn/chrome/)：浏览器
   - 设为默认浏览器
+  - 更改下载位置
+  - 同步账户
 - [**KMS**](https://github.com/linyuxuanlin/Windows-setup/blob/main/Software/System/KMS.exe)：激活 Windows
-- Outsite
+- Outsite & V2
+  - 下载 N 和 core, 将 core 内文件覆盖到 N 目录下
+  - 设置开机启动
 - Logitech Options：罗技鼠标专用（自动弹出下载安装）
 - [**微信**](https://pc.weixin.qq.com/?t=win_weixin&lang=zh_CN)
+  - 使用系统默认浏览器打开网页
+
+
+
