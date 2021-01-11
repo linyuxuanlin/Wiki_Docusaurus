@@ -56,6 +56,6 @@ title: Windows 个人配置
 - [**火绒安全**](https://www.huorong.cn/)
 - [**GitHub Desktop**](https://desktop.github.com)
 - [**VS Code**](https://code.visualstudio.com/)
-
+- [**Git**](https://git-scm.com/downloads)
 
 
