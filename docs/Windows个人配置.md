@@ -31,7 +31,9 @@ title: Windows 个人配置
 
 - 用户账户控制设置：设为从不通知
 - 定制任务栏
+- [激活 Windows](https://bobi.site/archives/57)
 - 登录 Microsoft 账户
+
 
 ## 下载软件
 
