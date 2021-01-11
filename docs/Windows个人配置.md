@@ -33,7 +33,7 @@ title: Windows 个人配置
 - 定制任务栏
 - [激活 Windows](https://bobi.site/archives/57)
 - 登录 Microsoft 账户
-- [卓越性能](AD使用Git的注意事项.md)
+- [卓越性能](https://bobi.site/archives/875)
 
 
 ## 下载软件
