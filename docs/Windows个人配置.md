@@ -67,5 +67,6 @@ title: Windows 个人配置
 - [**Git**](https://git-scm.com/downloads)
 - [**Todesk**](https://www.todesk.com/download.html)
 - [**坚果云**](https://www.jianguoyun.com/s/downloads)
+- [**Windows Terminal**](https://github.com/microsoft/terminal/releases/)
 
 
