@@ -41,3 +41,5 @@ title: Windows 个人配置
 - [**KMS**](https://github.com/linyuxuanlin/Windows-setup/blob/main/Software/System/KMS.exe)：激活 Windows
 - Logitech Options：罗技鼠标专用（自动弹出下载安装）
 - [**微信**](https://pc.weixin.qq.com/?t=win_weixin&lang=zh_CN)
+
+8FCe2JqNUGDg
