@@ -100,7 +100,7 @@ GitHub CLI 目前正处于 Beta 版本，值得一试。
 - [Git 教程 - 廖雪峰](https://www.liaoxuefeng.com/wiki/896043488029600)
 - [实际项目中如何使用 Git 做分支管理](https://blog.csdn.net/ShuSheng0007/article/details/80791849)
 - [A successful Git branching model](https://nvie.com/posts/a-successful-git-branching-model/)
-- [git-cheatsheet.pdf](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/doc/git-cheatsheet.pdf)
+- [git-cheatsheet.pdf](https://github.com/linyuxuanlin/File-host/blob/main/Doc/software-development/git-cheatsheet.pdf)
 - [Pro Git](https://git-scm.com/book/zh/v2)
 - [GitHub CLI - Manual](https://cli.github.com/manual/)
 
