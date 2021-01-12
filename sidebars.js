@@ -73,6 +73,7 @@ module.exports = {
       label: "高效工作",
       collapsed: true,
       items: [
+        '为什么你需要搭建一个知识库',
         "Docusaurus极简部署指南",
         "Hugo极简搭建指南",
         "如何在iPad上运行VSCode",
