@@ -18,7 +18,7 @@ Altium Designer 支持使用 Git/SVN 用以版本控制。如果使用 Git, 直�
 
 在使用 Altium Designer 时，软件会自动生成一些缓存文件（例如 `History` 文件夹），它们不但拖慢了提交速度，也污染了提交记录。这时候就要使用 `.gitignore`，用来忽略这些缓存文件。
 
-直接下载：[**.gitignore**](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/doc/.gitignore)
+直接下载：[**.gitignore**](https://github.com/linyuxuanlin/File-host/blob/main/circuit-design/.gitignore)
 
 直接将其放在 Git 仓库的根目录即可，如果显示重复，则需与原先的 `.gitignore` 合并。
 

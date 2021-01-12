@@ -102,7 +102,7 @@ title: VS Code 生产力指南 - 环境配置
 
 ### 字体
 
-等宽字体是写代码的必备，我个人推荐 [**雅黑等宽 (Microsoft YaHei Mono)**](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/doc/Microsoft-YaHei-Mono.ttf) 字体。
+等宽字体是写代码的必备，我个人推荐 [**雅黑等宽 (Microsoft YaHei Mono)**](https://github.com/linyuxuanlin/File-host/blob/main/software-development/Microsoft-YaHei-Mono.ttf) 字体。
 
 下载 .ttf 字体文件后安装，重启 VS Code，并在 `设置 - 文本编辑器 - 字体 - Font Family` 选项中将 `'Microsoft YaHei Mono'` 添加至头部，即可启用字体。
 

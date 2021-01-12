@@ -21,7 +21,7 @@ Jupyter Notebook 是一个很强大的工具，它允许我们在一个文档环
 如果没有 Python 环境，可以通过以下方法安装：
 
 1. 在 [**Python 官网**](https://www.python.org/) 下载最新版本安装包（尽量选择 `web-based installer` 版本）
-2. 如果网络环境有问题，可以直接下载我转存的 [**3.8.2-amd64-webinstall**](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/doc/python-3.8.2-amd64-webinstall.exe) 版本并安装
+
 
 配置完本地 Python 环境后，我们还需要在 VS Code 内安装 [**Python**](https://marketplace.visualstudio.com/items?itemName=ms-python.python) 插件。在近期的一次更新中，Jupyter Notebooks 已经被包含在这个插件内，不用再单独安装了。
 
