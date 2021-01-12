@@ -24,8 +24,3 @@ title: Collection
 - [**发明控 · bilibili**](https://space.bilibili.com/14010836?spm_id_from=333.788.b_765f7570696e666f.1)：ESP8266/ 嵌入式 / 树莓派项目
 
 ---
-
-## 软件开发
-
-- [**《Think Python 2e》**]()
-- [****]()
