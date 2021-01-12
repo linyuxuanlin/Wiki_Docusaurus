@@ -99,18 +99,8 @@ module.exports = {
           label: "书摘",
           position: "right",
         },
-        {
-          to: "Collection",
-          label: "收藏夹",
-          position: "right",
-        },
-        /*
-        {
-          to: "Links",
-          label: "友链",
-          position: "right",
-        },
-        */
+        
+       
         {
           href: "https://nav.wiki-power.com/",
           label: "友链 / 导航",
