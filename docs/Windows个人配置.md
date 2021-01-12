@@ -28,7 +28,7 @@ title: Windows 个人配置
 - 剪切板历史记录及同步
 - 重命名电脑名称
 - 鼠标触摸板键盘等
-- [GodMode](https://github.com/linyuxuanlin/Windows-setup/blob/main/Software/System/GodMode.lnk)
+- [GodMode](https://github.com/linyuxuanlin/Doc-host/blob/main/Software/System/GodMode.lnk)
 - 关闭休眠：`powercfg /hibernate off`
 
 ## 下载软件
@@ -40,7 +40,7 @@ title: Windows 个人配置
   - 设为默认浏览器
   - 更改下载位置
   - 同步账户
-- [**KMS**](https://github.com/linyuxuanlin/Windows-setup/blob/main/Software/System/KMS.exe)：
+- [**KMS**](https://github.com/linyuxuanlin/Doc-host/blob/main/Software/System/KMS.exe)：
   - 激活 Windows
   - 关闭 Windows Defender
 - Outsite & V2
@@ -56,16 +56,16 @@ title: Windows 个人配置
 - [**Todesk**](https://www.todesk.com/download.html)
 - [**坚果云**](https://www.jianguoyun.com/s/downloads)
 - [**Windows Terminal**](https://github.com/microsoft/terminal/releases/)
-- [**Geek Uninstaller**](https://github.com/linyuxuanlin/Windows-setup/blob/main/Software/System/geekuninstaller.exe)
-- [**Bandizip**](https://github.com/linyuxuanlin/Windows-setup/blob/main/Software/System/Bandizip.zip)：无广告版本
+- [**Geek Uninstaller**](https://github.com/linyuxuanlin/Doc-host/blob/main/Software/System/geekuninstaller.exe)
+- [**Bandizip**](https://github.com/linyuxuanlin/Doc-host/blob/main/Software/System/Bandizip.zip)：无广告版本
 - [**Dism++**](https://www.chuyu.me/zh-Hans/)：系统工具
-- [**JPEGView**](https://github.com/linyuxuanlin/Windows-setup/blob/main/Software/System/JPEGView64.zip)
+- [**JPEGView**](https://github.com/linyuxuanlin/Doc-host/blob/main/Software/System/JPEGView64.zip)
 - [**卡硬工具箱**](http://www.kbtool.cn/down.php)
 - [**Mem Reduct**](https://github.com/henrypp/memreduct/releases)
-- [**OInstall**](https://github.com/linyuxuanlin/Windows-setup/blob/main/Software/System/OInstall.exe)：Office 工具
+- [**OInstall**](https://github.com/linyuxuanlin/Doc-host/blob/main/Software/System/OInstall.exe)：Office 工具
 - [**PowerToys**](https://github.com/microsoft/PowerToys/releases/)
 - [**Snipaste**](https://zh.snipaste.com/download.html)
-- [**SpaceSniffer**](https://github.com/linyuxuanlin/Windows-setup/blob/main/Software/System/SpaceSniffer.exe)
+- [**SpaceSniffer**](https://github.com/linyuxuanlin/Doc-host/blob/main/Software/System/SpaceSniffer.exe)
 - [**Sumatra PDF**](https://www.sumatrapdfreader.org/download-free-pdf-viewer.html)
 - [**TIM**](https://tim.qq.com/download.html)
 - [**PotPlayer**](https://daumpotplayer.com/download/)
