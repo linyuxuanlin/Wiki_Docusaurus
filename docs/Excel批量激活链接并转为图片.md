@@ -5,7 +5,7 @@ title: Excel批量激活链接并转为图片
 
 ## 下载 KuTool 插件
 
-点击 [**此链接**](https://cos.ap-guangzhou.myqcloud.com/wiki-media-1253965369/doc/Kutools/KutoolsforExcelSetup21.00.exe) 下载 KuTool 插件，安装之后下载 [**破解补丁**](https://cos.ap-guangzhou.myqcloud.com/wiki-media-1253965369/doc/Kutools/KutoolsforExcel21.00%20%E4%B8%80%E9%94%AE%E7%A0%B4%E8%A7%A3%E8%A1%A5%E4%B8%81.exe) 并拷贝到软件安装目录，用管理员身份打开软件，完成破解。
+点击 [**此链接**](https://github.com/linyuxuanlin/File-host/tree/main/software/Kutools/KutoolsforExcelSetup21.00.exe) 下载 KuTool 插件，安装之后下载 [**破解补丁**](https://github.com/linyuxuanlin/File-host/tree/main/software/Kutools/KutoolsforExcel21.00%20%E4%B8%80%E9%94%AE%E7%A0%B4%E8%A7%A3%E8%A1%A5%E4%B8%81.exe) 并拷贝到软件安装目录，用管理员身份打开软件，完成破解。
 
 ## 合并表
 
