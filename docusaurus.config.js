@@ -90,7 +90,7 @@ module.exports = {
                 */
         {
           href: "https://wiki.wildwolf.tech/",
-          label: "野狼队知识库",
+          label: "队内知识库",
           position: "right",
         },
 
@@ -103,14 +103,16 @@ module.exports = {
        
         {
           href: "https://nav.wiki-power.com/",
-          label: "友链 / 导航",
+          label: "友链 & 导航站",
           position: "right",
         },
+        /*
         {
           href: "https://github.com/linyuxuanlin/Wiki_Docusaurus",
           label: "本站源码     ",
           position: "right",
         },
+        */
       ],
     },
     /*footer: {
