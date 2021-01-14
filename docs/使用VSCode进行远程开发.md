@@ -1,6 +1,6 @@
 ---
 id: 使用VSCode进行远程开发
-title: 使用 VSCode 进行远程开发
+title: 使用 VS Code 进行远程开发
 ---
 
 —— 将 VS Code 作为 SSH 工具，连接开发远程服务器。
