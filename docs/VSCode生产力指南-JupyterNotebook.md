@@ -3,9 +3,8 @@ id: VSCode生产力指南-JupyterNotebook
 title: VS Code 生产力指南 - JupyterNotebook
 ---
 
-—— 如何用 VS Code 打造高效率的生产力工具。
+用 VS Code 打造高效率的生产力工具。
 
-## 背景
 
 ![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20200323155728.png)
 
@@ -79,9 +78,7 @@ Jupyter Notebook 使用 **代码单元（code cells）** 的形式来创建、�
 
 ![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20200323154832.png)
 
-## 总结
 
-本篇文章讲解了 Jupyter Notebook 在 VS Code 上的配置和基本操作。更多 VS Code 的骚操作，敬请期待下一篇文章。
 
 ## 参考与致谢
 
