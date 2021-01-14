@@ -18,8 +18,6 @@ import clsx from 'clsx';
 import styles from './styles.module.css';
 import { useActivePlugin, useVersions, useActiveVersion } from '@theme/hooks/useDocs';
 
-/*
-
 function DocItem(props) {
   useEffect(() => {
     const script = document.createElement('script');
@@ -155,5 +153,3 @@ function DocItem(props) {
 }
 
 export default DocItem;
-
-*/
