@@ -80,7 +80,7 @@ module.exports = {
         '使用Markdown进行高效写作',
         '团队知识库搭建记录-DokuWiki',
         '个人知识库极简搭建指南-VuePress',
-        '基于树莓派搭建云打印服务器',
+        '用树莓派架设云打印服务器',
         '文章排版规范',
         '基于docsify搭建个人Wiki',
         '用Graphviz绘制关系图',
