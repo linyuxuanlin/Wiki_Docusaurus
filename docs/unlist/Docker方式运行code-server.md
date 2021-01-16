@@ -3,13 +3,37 @@ id: Docker方式运行code-server
 title: Docker 方式运行 code-server
 ---
 
-## 准备条件
+## 准备
+
+本方法需要使用 Docker. 其安装部署请参照：[**Docker 简易指南**](https://wiki-power.com/Docker%E7%AE%80%E6%98%93%E6%8C%87%E5%8D%97)
+
+## 部署
+
+一行命令部署：
+
+```shell
+docker run -d --name=[容器名] -e PASSWORD=[密码] -p [外部端口]:8443 --restart unless-stopped ghcr.io/linuxserver/code-server
+```
+
+参数解释：
+- `--name`：给容器取个名
+- `-e PASSWORD`：访问密码
+- `-p`：端口设置，如果外部端口设置为 80, 可通过服务器 IP 访问
+
+例子：
+
+```shell
+docker run -d --name=VSConline -e PASSWORD=123 -p 8443:8443 --restart unless-stopped ghcr.io/linuxserver/code-server
+```
+
+## Git 配置
+
+请参照 [**Git 学习笔记**](https://wiki-power.com/Git%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0#%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE) 中对 Git 的用户名和邮箱配置
 
 
+## 参考与致谢
 
-## 参考与致谢 
-
-* [linuxserver/code-server](https://hub.docker.com/r/linuxserver/code-server)
+- [linuxserver/code-server](https://hub.docker.com/r/linuxserver/code-server)
 
 <br />
 
