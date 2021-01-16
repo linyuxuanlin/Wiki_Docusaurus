@@ -31,6 +31,8 @@ Docker 有三个基本概念：
 
 各版本系统的下载安装详见 [**Install Docker Engine**](https://docs.docker.com/engine/install/)
 
+- [CentOS 安装 Docker](unlist/CentOS安装Docker.md)
+
 安装完成后，运行下面的命令，验证是否安装成功：
 
 ```shell
