@@ -7,6 +7,14 @@ title: 如何在 iPad 上运行 VS Code
 
 ![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20201221140748.jpg)
 
+## 补充更新
+
+更推荐以 Docker 方式安装 code-server 服务。  
+仅需一行命令部署，且无需配置后台运行和 Git 等环境。  
+详见：[Docker 方式运行 code-server](https://wiki-power.com/unlist/Docker%E6%96%B9%E5%BC%8F%E8%BF%90%E8%A1%8Ccode-server)
+
+如果你不想用 Docker 的方式部署，请继续阅读下文。
+
 ## 一、配置服务器
 
 首先，你需要有一台 24h 不停机的服务器（推荐买阿里云 / 腾讯云学生机，只需 ¥9.9/月）  
@@ -17,7 +25,11 @@ title: 如何在 iPad 上运行 VS Code
 
 刷 Linux（这里我使用 CentOS 8.2），确保 ssh 能正常连上即可。
 
+
+
 ## 二、安装 code-server
+
+
 
 在新的版本下（≥v3.8.0），可以直接使用脚本安装：
 
