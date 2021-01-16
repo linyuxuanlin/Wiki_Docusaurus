@@ -72,19 +72,18 @@ image 与 container 是一对多的关系，就是同一个模子印多个饼，
 
 ### image
 
-
+列出本地所有 image 文件：
 ```shell
-# 列出本地所有 image 文件
 docker image ls
 ```
 
+删除 image 文件：
 ```shell
-# 删除 image 文件
 docker image rm [imageName]
 ```
 
-虽然 image 可以自己造，但一般我们都是直接用别人的，既省时省力，又有利于维护环境统一。  
-你可以在 [**Docker Hub**](https://hub.docker.com/) 搜索和下载大家分享的 image 文件，拣下载量较多的用。
+虽然 image 可以自己造，但我们推荐直接用别人的，既省时省力，又有利于维护环境统一。  
+你可以在 [**Docker Hub**](https://hub.docker.com/) 搜索并下载 image 文件，拣下载量较多的用。
 
 ## 参考与致谢
 
