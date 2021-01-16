@@ -3,10 +3,10 @@ id: Docker简易指南
 title: Docker 简易指南
 ---
 
+![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20210116153041.png)
+
 软件开发中最麻烦的就是配环境。运行环境的差异，可能导致意想不到的结果。  
 如何通过 Docker 来解决这个问题呢？
-
-![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20210116153041.png)
 
 ## Docker 是什么
 
@@ -146,7 +146,7 @@ docker container logs [containerID]
 docker container exec -it [containerID] /bin/bash
 ```
 
-## 实例：Hello World 
+## 实例：Hello World
 
 下面将用官方 hello-world 例子来演示 Docker。
 
