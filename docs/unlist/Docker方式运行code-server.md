@@ -12,18 +12,19 @@ title: Docker 方式运行 code-server
 一行命令部署：
 
 ```shell
-docker run -d --name=[容器名] -e PASSWORD=[密码] -p [外部端口]:8443 --restart unless-stopped ghcr.io/linuxserver/code-server
+docker run -d --name=[容器名] -e PASSWORD=[密码] -e SUDO_PASSWORD=[root密码] -p [外部端口]:8443 --restart unless-stopped ghcr.io/linuxserver/code-server
 ```
 
 参数详情：
 - `--name`：给容器取个名
 - `-e PASSWORD`：访问密码
+- `-e SUDO_PASSWORD`：root 密码
 - `-p`：端口设置，如果外部端口设置为 80, 可通过服务器 IP 访问
 
 例子：
 
 ```shell
-docker run -d --name=VSConline -e PASSWORD=123 -p 8443:8443 --restart unless-stopped ghcr.io/linuxserver/code-server
+docker run -d --name=VSConline -e PASSWORD=123 -e SUDO_PASSWORD=123 -p 8443:8443 --restart unless-stopped ghcr.io/linuxserver/code-server
 ```
 
 ## Git 配置
