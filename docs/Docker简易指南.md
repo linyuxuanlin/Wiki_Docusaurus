@@ -1,6 +1,6 @@
 ---
-id: Docker学习笔记
-title: Docker 学习笔记
+id: Docker简易指南
+title: Docker 简易指南
 ---
 
 开发中最麻烦的事情就是配环境，运行环境不一样，可能导致不一样的结果。  

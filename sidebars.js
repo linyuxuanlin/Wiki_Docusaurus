@@ -105,7 +105,7 @@ module.exports = {
         'CSS学习笔记',
         'HTML学习笔记',
         'JavaScript学习笔记',
-        'Docker学习笔记',
+        'Docker简易指南',
         '自适应网页设计',
         '前端开发-环境搭建',
         'BookJourney-二手书商城小程序',
