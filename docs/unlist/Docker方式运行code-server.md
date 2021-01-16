@@ -15,7 +15,7 @@ title: Docker 方式运行 code-server
 docker run -d --name=[容器名] -e PASSWORD=[密码] -p [外部端口]:8443 --restart unless-stopped ghcr.io/linuxserver/code-server
 ```
 
-参数解释：
+参数详情：
 - `--name`：给容器取个名
 - `-e PASSWORD`：访问密码
 - `-p`：端口设置，如果外部端口设置为 80, 可通过服务器 IP 访问
@@ -28,7 +28,7 @@ docker run -d --name=VSConline -e PASSWORD=123 -p 8443:8443 --restart unless-sto
 
 ## Git 配置
 
-请参照 [**Git 学习笔记**](https://wiki-power.com/Git%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0#%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE) 中对 Git 的用户名和邮箱配置
+请参照 [**Git 学习笔记**](https://wiki-power.com/Git%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0#%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE) 中对 Git 的用户名和邮箱配置。
 
 
 ## 参考与致谢
