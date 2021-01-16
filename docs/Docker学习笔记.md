@@ -20,7 +20,6 @@ Docker 有三要素，分别是 image, container, repository.
 
 image 与 container 是一对多的关系，就是同一个模子印多个饼，每个饼可以加不一样的佐料调味。
 
-
 ## Docker 安装配置
 
 各版本系统的下载安装详见 [**Install Docker Engine**](https://docs.docker.com/engine/install/)
@@ -57,7 +56,6 @@ sudo systemctl start docker
 sudo systemctl enable docker
 ```
 
-
 ### 换源
 
 因为 Docker 的官方源地址在国外，所以有时候下载缓慢，我们通过更换国内镜像源来解决：
@@ -81,16 +79,15 @@ sudo service docker restart
 
 ## Docker 基本操作
 
-
 ### image 操作
 
-列出本地所有 image 文件：
+#### 列出本地所有 image
 
 ```shell
 docker image ls
 ```
 
-删除 image 文件：
+#### 删除 image
 
 ```shell
 docker image rm [imageName]
@@ -99,29 +96,55 @@ docker image rm [imageName]
 虽然 image 可以自己造，但我们推荐直接用别人的，既省时省力，又有利于维护环境统一。  
 你可以在 [**Docker Hub**](https://hub.docker.com/) 搜索并下载 image 文件，拣下载量较多的用。
 
-
 ### container 操作
 
-列出本机正在运行的容器：
+#### 列出正在运行的容器
+
 ```shell
 docker container ls
 ```
 
-可以加上 `--all` 参数，列出包括已经停止的容器。
-
-
+可以加上 `--all` 参数，列出所有（包括已经停止的）容器。
 
 列出容器时，能看到容器对应的 ID, 这个 ID 在很多地方会用到。
 
-删除容器：
+#### 新建并运行容器
+
+```shell
+docker container run [imageName]
+```
+
+#### 运行已经存在的容器
+
+```shell
+docker container start [containerID]
+```
+
+#### 停止容器的运行
+
+```shell
+docker container stop [containerID]
+```
+
+#### 删除容器
 
 ```shell
 docker container rm [containerID]
 ```
 
+#### 查看容器的输出
 
+```shell
+docker container logs [containerID]
+```
 
-## Hello World 实例
+#### 操作容器
+
+```shell
+docker container exec -it [containerID] /bin/bash
+```
+
+## 实例：Hello World 
 
 下面将用官方 hello-world 例子来演示 Docker。
 
@@ -150,7 +173,6 @@ docker container run hello-world
 docker container kill [containID]
 ```
 
-
 ## 参考与致谢
 
 - [Docker 入门教程](http://www.ruanyifeng.com/blog/2018/02/docker-tutorial.html)
@@ -162,4 +184,3 @@ docker container kill [containID]
 > 文章作者：**Power Lin**  
 > 原文地址：<https://wiki-power.com>  
 > 版权声明：文章采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh) 协议，转载请注明出处。
-
