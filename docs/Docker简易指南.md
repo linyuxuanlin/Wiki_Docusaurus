@@ -6,9 +6,9 @@ title: Docker 简易指南
 软件开发中最麻烦的就是配环境。运行环境的差异，可能导致意想不到的结果。  
 如何通过 Docker 来解决这个问题呢？
 
-## Docker 是什么
+![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20210116153041.png)
 
-![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20210116152609.png)
+## Docker 是什么
 
 Docker 把软件本身和它所需的运行环境打包起来，你用的时候就不需要再去配环境了（环境都在包里），这样就能确保你的环境和开发者的一模一样，杜绝因运行环境而出现的错误。
 
