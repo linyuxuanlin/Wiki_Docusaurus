@@ -13,21 +13,13 @@ Docker 把软件本身和它所需的运行环境打包起来，你用的时候�
 说起来，虚拟机也是这个原理，但虚拟机的缺点是相对庞大、占用资源也多。简而言之，就是可以，但没必要。Docker 相比虚拟机，不是模拟一个完整的操作系统，而是对进程进行隔离，占用少、启动快、体积小。
 
 
-## Docker 基本概念
-
-Docker 有三个基本概念：
-
-- **镜像 / 文件（image）**：将软件与环境封装在一起，就成了一个镜像
-- **容器（container）**：借用面向对象的思想，镜像是一个类，容器就是将类实例化，生成的一个对象。镜像是静态的定义，容器是镜像运行时的实体。容器可以被创建、启动、停止、删除、暂停等
-- **仓库（repository）**：类似一个代码控制中心，用来保存镜像。
-
 ## Docker 安装配置
 
 各版本系统的下载安装详见 [**Install Docker Engine**](https://docs.docker.com/engine/install/)
 
-- [CentOS 安装 Docker](https://wiki-power.com/unlist/CentOS%E5%AE%89%E8%A3%85Docker)
+- [**CentOS 安装 Docker**](https://wiki-power.com/unlist/CentOS%E5%AE%89%E8%A3%85Docker)
 
-安装完成后，运行下面的命令，验证是否安装成功：
+验证是否安装成功：
 
 ```shell
 docker version
@@ -38,50 +30,64 @@ docker version
 Docker 需要 `sudo` 权限。为了避免每次使用都要获取权限，可以把用户加入 Docker 用户组：
 
 ```shell
-sudo groupadd docker
 sudo usermod -aG docker $USER
 ```
 
-重启 Docker 后测试：
-
-```shell
-docker run hello-world
-```
-
-能看到 `hello-world` 的提示信息则为成功。
 
 ### 启动 Docker
 
-Docker 安装完成后，需要启动其进程：
+按如下命令启动 Docker：
 
 ```shell
 sudo systemctl start docker
-或
-sudo service docker start
 ```
 
-也可以配置开机自启动：
+（也可以使用 `sudo service docker start`）
+
+
+配置开机自启动（可选）：
 
 ```shell
 sudo systemctl enable docker
 ```
 
+## Docker 基础知识
+
+### Docker 三要素
+
+Docker 有三要素，分别是 image, container, repository. 
+
+- **image（镜像）**：把软件与环境打包在一起，可以看作是一个模板
+- **container（容器）**：把 image 实例化，相当于把模板拿来用
+
+
+image 与 container 是一对多的关系，可以理解为用同一个模子印出多个饼，每个饼加不一样的佐料调味。
+
+
+- **仓库（repository）**：类似一个代码控制中心，用来保存镜像。
+
+
 ## 基本操作
 
-### image 文件
+### image
 
-Docker 把应用程序及其依赖，打包在 image 文件里面。image 文件可以看作是容器的模板，根据 image 文件生成容器的实例。同一个 image 文件，可以生成多个同时运行的容器实例。
 
 ```shell
 # 列出本地所有 image 文件
 docker image ls
+```
 
+```shell
 # 删除 image 文件
 docker image rm [imageName]
 ```
 
-为了节省时间与规范化，尽量用别人制作好的 image 文件（尽量不要自己制作，即使要定制，也应该基于别人的 image 文件进行加工）。  
-你可以在 [**Docker Hub**](https://hub.docker.com/) 搜索和下载大家分享的 image 文件，尽量挑选最多人用的那一个。
+虽然 image 可以自己造，但一般我们都是直接用别人的，既省时省力，又有利于维护环境统一。  
+你可以在 [**Docker Hub**](https://hub.docker.com/) 搜索和下载大家分享的 image 文件，拣下载量较多的用。
+
+## 参考与致谢
+
+- [Docker 入门教程](http://www.ruanyifeng.com/blog/2018/02/docker-tutorial.html)
 
 <br />
 
