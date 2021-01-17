@@ -87,7 +87,7 @@ sudo rm /usr/local/bin/docker-compose
 
 通常我们将 `docker-compose.yml` 文件放到一个目录，表示一个应用。
 
-要运行这个程序，只要在这个目录下执行 `docker-compose up` 命令，即可按 `yaml` 文件中的配置启动服务。
+要运行这个程序，只要在这个目录下执行 `docker-compose up` 命令，即可按 `yaml` 文件中的配置启动服务。（加参数 `-d` 可以后台运行）
 
 要停止服务的运行，用 `docker-compose down` 就可以了。
 
