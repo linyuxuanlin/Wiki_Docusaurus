@@ -3,9 +3,9 @@ id: DockerCompose-更优雅的打开方式
 title: Docker Compose - 更优雅的打开方式
 ---
 
-Docker Compose 是一种对 Docker 镜像的编排方式，解决了传统命令行 Docker 运行多镜像的麻烦。
-
 ![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20210117130925.jpg)
+
+Docker Compose 是一种对 Docker 镜像的编排方式，解决了传统命令行 Docker 运行多镜像的麻烦。
 
 Docker 的思想是解耦，即一个镜像一个进程，提高复用率，而不是把多个服务封装成一个镜像。但像一个典型的 web 应用，至少需要服务端和数据库配合，这样至少需要两条以上的 Docker 命令；甚至有些服务需要按一定先后顺序启动，这样一来，需要的镜像和操作步骤会很复杂。
 
