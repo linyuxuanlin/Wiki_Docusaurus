@@ -7,6 +7,35 @@ title: Docker 方式运行 code-server
 
 本方法需要使用 Docker. 其安装部署请参照：[**Docker 简易指南**](https://wiki-power.com/Docker%E7%AE%80%E6%98%93%E6%8C%87%E5%8D%97)
 
+## 使用 Docker Compose 方式（推荐）
+
+如果不熟悉 Docker Compose, 请详细阅读 [**Docker Compose - 更优雅的打开方式**](https://wiki-power.com/DockerCompose-%E6%9B%B4%E4%BC%98%E9%9B%85%E7%9A%84%E6%89%93%E5%BC%80%E6%96%B9%E5%BC%8F) 这篇文章。
+
+```yaml
+---
+version: "2.1"
+services:
+  code-server:
+    image: ghcr.io/linuxserver/code-server
+    container_name: code-server
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Europe/London
+      - PASSWORD=password #optional
+      - SUDO_PASSWORD=password #optional
+      - SUDO_PASSWORD_HASH= #optional
+      - PROXY_DOMAIN=code-server.my.domain #optional
+    volumes:
+      - /path/to/appdata/config:/config
+    ports:
+      - 8443:8443
+    restart: unless-stopped
+```
+
+
+## 使用 Docker Cli 方式
+
 ## 部署
 
 一行命令部署：
