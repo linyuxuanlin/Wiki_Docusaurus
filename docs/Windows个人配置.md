@@ -3,6 +3,8 @@ id: Windows初始化与软件推荐
 title: Windows 初始化与软件推荐
 ---
 
+![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20210117142759.jpg)
+
 ## 一些个人设置
 
 - 不使用微软账户初始化
