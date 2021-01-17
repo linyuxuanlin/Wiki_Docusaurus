@@ -51,6 +51,7 @@ module.exports = {
       label: '嵌入式开发',
       collapsed: true,
       items: [
+        'C与STM32常用宏定义'
         'HAL系列教程1—GPIO',
         'PlatformIO—一站式嵌入式开发工具',
         'PlatformIO搭配CubeMX食用',
