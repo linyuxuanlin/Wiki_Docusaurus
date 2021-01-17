@@ -3,10 +3,7 @@ id: Windows个人配置
 title: Windows 个人配置
 ---
 
-
-
 ## 安装系统与初始化
-
 
 - 不使用微软账户初始化
 - 开启诊断（预览版系统需要）
@@ -76,16 +73,15 @@ title: Windows 个人配置
 ## 选装
 
 - [**7-Zip**](https://github.com/linyuxuanlin/File-host/tree/main/software/7z.exe)：压缩率高
-- [**WPS特供版**](http://wpspro.support.wps.cn/gov/guangdong/chaozhou/installation/WPS%20Office%202019%20%E4%B8%93%E4%B8%9A%E7%89%88%EF%BC%88%E6%BD%AE%E5%B7%9E%E5%B8%82%E5%85%9A%E6%94%BF%E6%9C%BA%E5%85%B3%E5%8D%95%E4%BD%8D%EF%BC%89.exe)：清爽无广告
-  - 备用链接：https://pan.baidu.com/s/1d_DVwbLScESe1Zh7um6YTA 
+- [**WPS 特供版**](http://wpspro.support.wps.cn/gov/guangdong/chaozhou/installation/WPS%20Office%202019%20%E4%B8%93%E4%B8%9A%E7%89%88%EF%BC%88%E6%BD%AE%E5%B7%9E%E5%B8%82%E5%85%9A%E6%94%BF%E6%9C%BA%E5%85%B3%E5%8D%95%E4%BD%8D%EF%BC%89.exe)：清爽无广告
+  - 备用链接：https://pan.baidu.com/s/1d_DVwbLScESe1Zh7um6YTA
   - 提取码：`y1xe`
 - [**SoftDownloader**](https://github.com/linyuxuanlin/File-host/tree/main/software/SoftDownloader.zip)：能找到绝大部分的软件，一键安装
 - [**万彩办公大师**](https://github.com/linyuxuanlin/File-host/tree/main/software/OfficeBox.zip)：各类办公相关的小工具，很强大
 
-## 参考与致谢 
+## 参考与致谢
 
 - [Chrome 此类型的文件可能会损害您的计算机](https://zhidao.baidu.com/question/326859904713262805.html)
-
 
 <br />
 
