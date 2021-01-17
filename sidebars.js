@@ -73,6 +73,7 @@ module.exports = {
       label: '高效工作',
       collapsed: true,
       items: [
+        'Windows初始化与软件推荐',
         '为什么你需要一个知识库',
         'Docusaurus极简部署指南',
         'Hugo极简搭建指南',
@@ -148,7 +149,6 @@ module.exports = {
         //'科技X的访谈',
         '为什么要「站在巨人的肩膀上」',
         '如何不被AI取代',
-        'Windows个人配置',
         '一些观点',
 
       ],

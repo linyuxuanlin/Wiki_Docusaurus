@@ -1,17 +1,13 @@
 ---
-id: Windows个人配置
-title: Windows 个人配置
+id: Windows初始化与软件推荐
+title: Windows 初始化与软件推荐
 ---
 
-## 安装系统与初始化
+## 一些个人设置
 
 - 不使用微软账户初始化
 - 开启诊断（预览版系统需要）
 - 更新系统、驱动
-- 连接蓝牙键鼠
-
-## 设置项
-
 - 用户账户控制设置：设为从不通知
 - 定制任务栏
 - [激活 Windows](https://bobi.site/archives/57)
@@ -20,15 +16,15 @@ title: Windows 个人配置
 - 设置 - 更新和安全 - 开发者选项 - 开启开发人员模式
 - 桌面图标分布
 - 预览版模式
-- 个性化
-- 显示设置
-- 剪切板历史记录及同步
+- 配置个性化设置
+- 配置显示设置
+- 配置剪切板历史记录及同步
 - 重命名电脑名称
-- 鼠标触摸板键盘等
-- [GodMode](https://github.com/linyuxuanlin/File-host/tree/main/software/GodMode.lnk)
+- 配置鼠标触摸板键盘等
+- 启动隐藏设置：[GodMode](https://github.com/linyuxuanlin/File-host/tree/main/software/GodMode.lnk)
 - 关闭休眠：`powercfg /hibernate off`
 
-## 下载软件
+## 必装软件
 
 - [**DiskDenius**](https://www.diskgenius.cn/download.php)
   - 预留 10 GB 空闲（SSD）
@@ -70,7 +66,7 @@ title: Windows 个人配置
 - [**Bamboo**](https://christopherwk210.github.io/bamboo/)：基于 TinyPNG 的图像压缩软件
 - [**DeskGo**](https://pm.myapp.com/invc/xfspeed/qqpcmgr/data/DeskGo_2_9_1051_127_lite.exe)：桌面整理
 
-## 选装
+## 选装软件
 
 - [**7-Zip**](https://github.com/linyuxuanlin/File-host/tree/main/software/7z.exe)：压缩率高
 - [**WPS 特供版**](http://wpspro.support.wps.cn/gov/guangdong/chaozhou/installation/WPS%20Office%202019%20%E4%B8%93%E4%B8%9A%E7%89%88%EF%BC%88%E6%BD%AE%E5%B7%9E%E5%B8%82%E5%85%9A%E6%94%BF%E6%9C%BA%E5%85%B3%E5%8D%95%E4%BD%8D%EF%BC%89.exe)：清爽无广告
