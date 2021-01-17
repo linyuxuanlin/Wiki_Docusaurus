@@ -106,7 +106,7 @@ module.exports = {
         'HTML学习笔记',
         'JavaScript学习笔记',
         'Docker简易指南',
-        'DockerCompose-更优雅的打开方式'
+        'DockerCompose-更优雅的打开方式',
         '自适应网页设计',
         '前端开发-环境搭建',
         'BookJourney-二手书商城小程序',
