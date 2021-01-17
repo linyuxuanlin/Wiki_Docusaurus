@@ -57,7 +57,7 @@ title: Windows 个人配置
 - [**坚果云**](https://www.jianguoyun.com/s/downloads)
 - [**Windows Terminal**](https://github.com/microsoft/terminal/releases/)
 - [**Geek Uninstaller**](https://github.com/linyuxuanlin/File-host/tree/main/software/geekuninstaller.exe)
-- [**Bandizip**](https://github.com/linyuxuanlin/File-host/tree/main/software/Bandizip.zip)：无广告版本
+- [**Bandizip**](https://github.com/linyuxuanlin/File-host/tree/main/software/Bandizip.exe)：无广告版本
 - [**Dism++**](https://www.chuyu.me/zh-Hans/)：系统工具
 - [**JPEGView**](https://github.com/linyuxuanlin/File-host/tree/main/software/JPEGView64.zip)
 - [**卡硬工具箱**](http://www.kbtool.cn/down.php)
@@ -73,7 +73,14 @@ title: Windows 个人配置
 - [**Bamboo**](https://christopherwk210.github.io/bamboo/)：基于 TinyPNG 的图像压缩软件
 - [**DeskGo**](https://pm.myapp.com/invc/xfspeed/qqpcmgr/data/DeskGo_2_9_1051_127_lite.exe)：桌面整理
 
+## 选装
 
+- [**7-Zip**](https://github.com/linyuxuanlin/File-host/tree/main/software/7z.exe)：压缩率高
+- [**WPS特供版**](http://wpspro.support.wps.cn/gov/guangdong/chaozhou/installation/WPS%20Office%202019%20%E4%B8%93%E4%B8%9A%E7%89%88%EF%BC%88%E6%BD%AE%E5%B7%9E%E5%B8%82%E5%85%9A%E6%94%BF%E6%9C%BA%E5%85%B3%E5%8D%95%E4%BD%8D%EF%BC%89.exe)：清爽无广告
+  - 备用链接：https://pan.baidu.com/s/1d_DVwbLScESe1Zh7um6YTA 
+  - 提取码：`y1xe`
+- [**SoftDownloader**](https://github.com/linyuxuanlin/File-host/tree/main/software/SoftDownloader.zip)：能找到绝大部分的软件，一键安装
+- [**万彩办公大师**](https://github.com/linyuxuanlin/File-host/tree/main/software/OfficeBox.zip)：各类办公相关的小工具，很强大
 
 ## 参考与致谢 
 
