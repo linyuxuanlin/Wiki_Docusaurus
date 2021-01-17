@@ -29,7 +29,7 @@ module.exports = {
         '什么是金手指',
         '电路设计中常用的接口及关键点',
         'AD使用Git的注意事项',
-        
+
       ],
     },
 
@@ -114,7 +114,7 @@ module.exports = {
       ],
     },
 
-    
+
     {
       type: 'category',
       label: '产品经理',
@@ -159,7 +159,7 @@ module.exports = {
       label: '小技巧',
       collapsed: true,
       items: [
-        
+
         '如何为公众号文章增加特效',
         '如何在Linux下使用微信',
         '如何打印出手写效果的文字',
