@@ -39,7 +39,7 @@ title: Keil MDK 配置指南
 
 ## 3. 破解
 
-**点击下载 [**破解器**](https://github.com/linyuxuanlin/File-host/blob/main/software/KEIL_Lic.exe)
+点击下载 [**破解器**](https://github.com/linyuxuanlin/File-host/blob/main/software/KEIL_Lic.exe)
 
 **关闭 MDK，右键以管理员身份打开：**
 
