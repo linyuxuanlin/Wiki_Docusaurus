@@ -61,6 +61,13 @@ title: Keil MDK 配置指南
 
 ![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/UTOOLS1564406431978.png)
 
+
+
+## 参考与致谢 
+
+- [Keil 保护视力背景颜色设置](https://blog.csdn.net/w5862338/article/details/50984536)
+- [keil 代码格式化](https://blog.csdn.net/sudaroot/article/details/88095269)
+
 <br />
 
 <br />
