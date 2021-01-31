@@ -31,7 +31,7 @@ title: AD 入门系列二：基础知识
 
 AD 插件：
 
-- [**Altium Library Loader**](https://www.samacsys.com/altium-designer-library-instructions/)：这个用起来真的超级方便（相对以下方法）
+- [**Altium Library Loader**](https://www.samacsys.com/altium-designer-library-instructions/)：这个用起来真的超级方便
 
 搜索引擎：
 
