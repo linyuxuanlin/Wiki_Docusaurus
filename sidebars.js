@@ -54,6 +54,7 @@ module.exports = {
       items: [
         'C与STM32常用宏定义',
         'HAL系列教程1—GPIO',
+        'HAL库开发指南（一）-环境配置',
         'PlatformIO—一站式嵌入式开发工具',
         'PlatformIO搭配CubeMX食用',
         'CubeMX的一些坑',

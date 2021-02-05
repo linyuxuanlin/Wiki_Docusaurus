@@ -1,7 +1,11 @@
 ---
-id: HAL库开发指南-环境配置
-title: HAL 库开发指南 - 环境配置
+id: HAL库开发指南（一）-环境配置
+title: HAL 库开发指南（一） - 环境配置
 ---
+
+## Keil MDK
+
+详见文章 [**Keil MDK 配置指南**](https://wiki-power.com/KeilMDK%E9%85%8D%E7%BD%AE%E6%8C%87%E5%8D%97)
 
 ## Java Runtime Environment
 
