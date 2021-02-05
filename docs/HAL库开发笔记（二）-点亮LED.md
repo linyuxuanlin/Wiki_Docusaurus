@@ -6,11 +6,9 @@ title: HAL 库开发笔记（二） - 点亮 LED
 
 ## 配置时钟与串口下载
 
-请参考文章 [**HAL 库开发笔记（一） - 环境配置**](https://wiki-power.com/HAL%E5%BA%93%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89-%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE#%E9%A1%B9%E7%9B%AE%E7%9A%84%E9%85%8D%E7%BD%AE) 。
+此处参照文章 [**HAL 库开发笔记（一） - 环境配置**](https://wiki-power.com/HAL%E5%BA%93%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89-%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE#%E9%A1%B9%E7%9B%AE%E7%9A%84%E9%85%8D%E7%BD%AE) 中的方法进行配置。
 
-高速时钟我用的是 HSI, HSE 怎么都用不了，可能是硬件的问题，有待后续排除。
 
-![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20210205145831.png)
 
 
 ## 配置 GPIO
@@ -19,7 +17,7 @@ title: HAL 库开发笔记（二） - 点亮 LED
 
 ![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20210205150422.png)
 
-对应到我的板子上，就需要把 `PD4` 和 `PI3` 这两个 GPIO 设置为输出（`GPIO_Output`）。如果设置为上电点亮，那么根据电路原理图，将初始电位设置为低（`Lows`）。
+对应到我的板子上，就需要把 `PD4` 和 `PI3` 这两个 GPIO 设置为输出（`GPIO_Output`）。如果设置为上电点亮，那么根据电路原理图，将初始电位设置为低（`Low`）。
 
 ## 添加闪灯效果
 
