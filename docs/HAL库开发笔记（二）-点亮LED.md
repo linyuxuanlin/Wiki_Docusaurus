@@ -39,7 +39,8 @@ GPIO 的功能是输入 / 输出电信号。我们来看看它的内部结构：
 
 ## 配置时钟与串口下载
 
-首先还是要在 CubeMX 里配置各种参数。不再赘述，请参照文章 [**HAL 库开发笔记（一） - 环境配置**](https://wiki-power.com/HAL%E5%BA%93%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89-%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE#%E9%A1%B9%E7%9B%AE%E7%9A%84%E9%85%8D%E7%BD%AE) 中的方法进行配置。
+在进行下一步实验之前，首先还是需要在 CubeMX 里配置各种参数。  
+此处不再赘述，请参照文章 [**HAL 库开发笔记（一） - 环境配置**](https://wiki-power.com/HAL%E5%BA%93%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89-%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE#%E9%A1%B9%E7%9B%AE%E7%9A%84%E9%85%8D%E7%BD%AE) 中的方法进行配置。
 
 
 ## 点亮 LED
