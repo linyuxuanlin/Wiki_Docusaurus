@@ -68,6 +68,8 @@ if(HAL_GPIO_ReadPin(KEY1_GPIO_Port,KEY1_Pin)==0)
 
 即可实现按下按键开灯，松开按键关灯的效果。
 
+有许多人搞不清楚 `GPIO_PIN_SET` 和 `GPIO_PIN_RESET` 是什么意思。其实这两个变量的功能仅仅为设置 GPIO 引脚高 / 低电平。具体灯是开是关，还得看电路原理图。
+
 ## 常用的 GPIO 函数
 
 读取 GPIO 状态，返回高 / 低电平：
@@ -93,6 +95,8 @@ HAL_GPIO_TogglePin(GPIOx, GPIO_Pin);
 ## 参考与致谢 
 
 - [【STM32】STM32CubeMX 教程二 -- 基本使用 (新建工程点亮 LED 灯)](https://blog.csdn.net/as480133937/article/details/98947162)
+- [STM32CubeMX 实战教程（二）—— 按键点个灯](https://blog.csdn.net/weixin_43892323/article/details/104343933)
+
 
 <br />
 
