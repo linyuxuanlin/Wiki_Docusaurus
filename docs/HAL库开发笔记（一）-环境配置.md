@@ -35,7 +35,7 @@ title: HAL库开发笔记（一） - 环境配置
 
 ### 配置时钟树
 
-点开 `Clock Configuration` 界面。
+在 `Clock Configuration` 界面进行配置。
 
 
 ## 生成代码注意
