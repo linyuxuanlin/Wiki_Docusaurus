@@ -35,6 +35,25 @@ HAL_GPIO_TogglePin(GPIOI, GPIO_PIN_3);
 
 即可实现闪灯效果。
 
+## 常用的 GPIO 函数
+
+读取 GPIO 状态，返回高 / 低电平：
+
+```c
+GPIO_PinState HAL_GPIO_ReadPin(GPIOx, GPIO_Pin);
+```
+
+写 GPIO 状态，写入高 / 低电平：
+
+```c
+HAL_GPIO_WritePin(GPIOx, GPIO_Pin, PinState);
+```
+
+翻转 GPIO 电平：
+
+```c
+HAL_GPIO_TogglePin(GPIOx, GPIO_Pin);
+```
 
 ## 参考与致谢 
 

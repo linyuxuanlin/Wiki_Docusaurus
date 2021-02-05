@@ -35,10 +35,29 @@ title: HAL 库开发笔记（一） - 环境配置
 
 `Pinout & Configurations` - `System Core` - `RCC`
 
+按照板子的情况设置就行了。
+
+举个例子，参照板子原理图：
+
+![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20210205205030.png)
+
+将 `HSE` 和 `LSE` 的选项都设置为外部晶振就可以了：
+
+![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20210205205140.png)
+
 ### 配置时钟树
 
 在 `Clock Configuration` 界面进行配置。
 
+
+![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20210205205550.png)
+
+根据上图的步骤如下：
+
+1. 根据板载外部晶振的参数，填入最左侧两个频率的值
+2. 勾选 `HSE`, 因为外部晶振频率和精度都比内部的高
+3. 勾选 `PLLCLK`, 使用 PLL 环锁倍频到较高的频率
+4. 填入 `HCKL` 的值，一般根据下方提示的最大频率填写，填写后按回车，可以自动计算分频倍频数
 
 ## 生成代码注意
 
