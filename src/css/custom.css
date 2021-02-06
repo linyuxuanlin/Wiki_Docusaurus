@@ -51,16 +51,16 @@
   --marble: #aaadb0;
   --platinum: #f1f4f6;
   --porcelain: #fcfcfc;
-  --main-font: Helvetica, bold, sans-serif;
-  --helvetica: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  --fjalla: "Fjalla One", Arial, sans-serif;
+  --main-font: Helvetica, bold, "Segoe UI";
+  --helvetica: "Helvetica Neue", Helvetica, Arial, "Segoe UI";
+  --fjalla: "Fjalla One", Arial, "Segoe UI";
 }
 
 h1,
 h2,
 h3,
 .nav-item {
-  font-family: "Helvetica Neue", sans-serif;
+  font-family: "Helvetica Neue", "Segoe UI";
 }
 
 .docusaurus-highlight-code-line {
@@ -88,21 +88,21 @@ h3,
 
 .font_tiny {
   font-size: 12x;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", "Segoe UI";
   letter-spacing: 0.15px;
   line-height: 1.333;
 }
 
 .font_small {
   font-size: 14x;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", "Segoe UI";
   letter-spacing: 0.15px;
   line-height: 1.143;
 }
 
 .font_small_bold {
   font-size: 14x;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", "Segoe UI";
   font-weight: bold;
   letter-spacing: 0.15px;
   line-height: 1.143;
@@ -110,14 +110,14 @@ h3,
 
 .font_intermediate {
   font-size: 16x;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", "Segoe UI";
   letter-spacing: 0.15px;
   line-height: 1.375;
 }
 
 .font_intermediate_bold {
   font-size: 16x;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", "Segoe UI";
   font-weight: bold;
   letter-spacing: 0.15px;
   line-height: 1.375;
@@ -125,7 +125,7 @@ h3,
 
 .font_medium {
   font-size: 20x;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", "Segoe UI";
   letter-spacing: 0.1px;
   line-height: 1.4;
   color: var(--amphora-black);
@@ -133,7 +133,7 @@ h3,
 
 .font_medium_bold {
   font-size: 20x;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", "Segoe UI";
   font-weight: bold;
   letter-spacing: 0.1px;
   line-height: 1.4;
@@ -141,14 +141,14 @@ h3,
 
 .font_large {
   font-size: 24px;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", "Segoe UI";
   letter-spacing: 0.3px;
   line-height: 1.333;
 }
 
 .font_large_caps {
   font-size: 32px;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", "Segoe UI";
   text-transform: capitalize;
   letter-spacing: 0.25px;
   line-height: 1.375;
@@ -156,14 +156,14 @@ h3,
 
 .font_extra_large {
   font-size: 42px;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", "Segoe UI";
   letter-spacing: 0.3px;
   line-height: 1.174;
 }
 
 .font_xxl {
   font-size: 46px;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", "Segoe UI";
   letter-spacing: 0.3px;
   line-height: 1.174;
 }
