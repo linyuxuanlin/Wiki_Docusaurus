@@ -62,9 +62,13 @@ GPIO 的功能是输入 / 输出电信号。我们来看看它的内部结构：
 如果要添加闪灯效果，只需要在主循环的用户代码区域内添加几行代码：
 
 ```c
+/* USER CODE BEGIN 3 */
+
 HAL_Delay(500);
 HAL_GPIO_TogglePin(GPIOD, GPIO_PIN_4);
 HAL_GPIO_TogglePin(GPIOI, GPIO_PIN_3);
+
+/* USER CODE END 3 */
 ```
 
 ![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20210205151322.png)
@@ -90,6 +94,8 @@ HAL_GPIO_TogglePin(GPIOI, GPIO_PIN_3);
 在主循环的用户代码区域内添加如下代码：
 
 ```c
+/* USER CODE BEGIN 3 */
+
 if(HAL_GPIO_ReadPin(KEY1_GPIO_Port,KEY1_Pin)==0)
 {
 	HAL_Delay(100);
@@ -100,6 +106,7 @@ if(HAL_GPIO_ReadPin(KEY1_GPIO_Port,KEY1_Pin)==0)
 }else{
 	HAL_GPIO_WritePin(LED1_GPIO_Port,LED1_Pin,GPIO_PIN_SET);
 }
+/* USER CODE END 3 */
 ```
 
 即可实现按下按键开灯，松开按键关灯的效果。

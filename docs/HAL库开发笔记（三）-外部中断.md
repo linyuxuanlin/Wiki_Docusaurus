@@ -30,7 +30,53 @@ NVIC 全称为 Nested Vectored Interrupt Controller, 翻译过来就是 **嵌套
 
 欲判断中断的优先级，首先要先比较的是抢占优先级。抢占优先级相同的情况下，响应优先高的中断优先级别高。如果两个优先级都一样，那么就要根据中断向量表来确定。
 
+## 外部中断按键控灯
 
+在进行下一步实验之前，需要在 CubeMX 里配置串口下载、时钟等各类参数。  
+此处不再赘述，请参考文章 [**HAL 库开发笔记（一） - 环境配置**](https://wiki-power.com/HAL%E5%BA%93%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89-%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE#%E9%A1%B9%E7%9B%AE%E7%9A%84%E9%85%8D%E7%BD%AE) 中的方法进行配置。
+
+### 配置 GPIO 与中断
+
+![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20210205150422.png)
+
+如图，LED 还是按照上一篇文章的方法，配置为输出；按键因为是低电平触发，也就是在按下的一瞬间会产生一个下降沿，所以引脚应该配置为下降沿触发的中断。
+
+在我的板子上，就是将 `PI8` 配置为 `GPIO_EXTI8` 模式（外部中断，挂载在中断线 8 上的），并配置为下降沿触发，根据原理图，选择内部上拉（Pull-up）。如图所示：
+
+![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20210206131409.png)
+
+接着，点击跳转 NVIC 标签页面，使能我们配置的中断：
+
+![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20210206134916.png)
+
+另外，要把抢占优先级降低一位（从 0 变为 1，原因下文会解释
+）。
+
+### 添加功能代码
+
+只需要在 `stm32f4xx_it.c` 末尾添加如下代码：
+
+```c
+/* USER CODE BEGIN 1 */
+
+void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
+{
+    if(HAL_GPIO_ReadPin(KEY1_GPIO_Port, KEY1_Pin) == 0)
+    {
+        HAL_Delay(100);
+        if(HAL_GPIO_ReadPin(KEY1_GPIO_Port, KEY1_Pin) == 0)
+        {
+            HAL_GPIO_TogglePin(LED1_GPIO_Port,LED1_Pin);
+        }
+    }
+}
+
+/* USER CODE END 1 */
+```
+
+这段代码的作用是重写中断的回调函数，增加用按键切换灯开关的功能。但是这里的 `HAL_Delay()` 延时函数有坑，因为其来源是 SysTick 定时器（在固定时间间隔内产生中断），所以就有所属的中断优先级。在上面配置 NVIC 的图中可以看出，SysTick 和我们配置的中断抢占优先级都是 0, 所以便无法在外部中断触发时接着触发 SysTick 了。所以，我们要把外部中断的抢占优先级改低（由 0 改为 1）。
+
+编译上传后即可通过按下按键，切换 LED 灯的亮灭状态了。
 
 ## 参考与致谢 
 
@@ -46,17 +92,3 @@ NVIC 全称为 Nested Vectored Interrupt Controller, 翻译过来就是 **嵌套
 > 版权声明：文章采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh) 协议，转载请注明出处。
 
 
-## 外部中断按键控灯
-
-在进行下一步实验之前，需要在 CubeMX 里配置串口下载、时钟等各类参数。  
-此处不再赘述，请参考文章 [**HAL 库开发笔记（一） - 环境配置**](https://wiki-power.com/HAL%E5%BA%93%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89-%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE#%E9%A1%B9%E7%9B%AE%E7%9A%84%E9%85%8D%E7%BD%AE) 中的方法进行配置。
-
-## 配置 GPIO 与中断
-
-![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20210205150422.png)
-
-如图，LED 还是按照上一篇文章的方法，配置为输出；按键因为是低电平触发，也就是在按下的一瞬间会产生一个下降沿，所以引脚应该配置为下降沿触发的中断。
-
-在我的板子上，就是将 `PI8` 配置为 `GPIO_EXTI8` 模式（外部中断，挂载在中断线 8 上的），并配置为下降沿触发，根据原理图，选择内部上拉（Pull-up）。如图所示：
-
-![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20210206131409.png)
