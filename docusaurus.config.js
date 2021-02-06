@@ -57,7 +57,7 @@ module.exports = {
       },
     },
 
-    hideableSidebar: true,
+    hideableSidebar: false,
     navbar: {
       title: "Power's Wiki",
       hideOnScroll: false,
