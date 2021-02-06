@@ -1,6 +1,6 @@
 ---
 id: HAL库开发笔记（二）-GPIO
-title: HAL 库开发笔记（二） - GPIO
+title: HAL 库开发笔记（二）-GPIO
 ---
 
 ## 基本原理

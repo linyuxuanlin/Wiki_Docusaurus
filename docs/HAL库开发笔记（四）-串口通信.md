@@ -1,6 +1,6 @@
 ---
 id: HAL库开发笔记（四）-串口通信
-title: HAL 库开发笔记（四） - 串口通信
+title: HAL 库开发笔记（四）- 串口通信
 ---
 
 ## 参考与致谢 
@@ -15,3 +15,10 @@ title: HAL 库开发笔记（四） - 串口通信
 > 文章作者：**Power Lin**  
 > 原文地址：<https://wiki-power.com>  
 > 版权声明：文章采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh) 协议，转载请注明出处。
+
+
+## 基本原理
+
+「
+」
+
