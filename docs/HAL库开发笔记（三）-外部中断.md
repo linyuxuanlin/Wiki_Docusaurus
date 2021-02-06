@@ -18,9 +18,9 @@ title: HAL 库开发笔记（三）- 外部中断
 
 ### NVIC
 
-![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20210206121058.png)
-
 NVIC 全称为 Nested Vectored Interrupt Controller, 翻译过来就是 **嵌套向量中断控制器** 。它主要有三个参数，分别是：中断使能，抢占优先级，响应优先级。（优先级数值越小，优先级越高）
+
+![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20210206121058.png)
 
 **中断使能**：指的就是是否开启中断。如果开启中断，那么当满足中断触发条件的时候，会跳到中断服务程序运行；否则不理会中断服务程序，继续运行主程序。
 
