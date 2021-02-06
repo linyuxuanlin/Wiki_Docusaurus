@@ -1,22 +1,5 @@
 module.exports = {
   docs: [
-    Guides: [
-      'Home',
-      {
-        Docs: [
-          'docs-introduction',
-          'AirForce-充满灵性的电机驱动模块',
-          'AirForce-充满灵性的电机驱动模块',
-          'AirForce-充满灵性的电机驱动模块',
-        ],
-        电路: [
-          'docs-introduction',
-          'AirForce-充满灵性的电机驱动模块',
-          'AirForce-充满灵性的电机驱动模块',
-          'AirForce-充满灵性的电机驱动模块',
-        ],
-      },
-    ],
     'Home',
     {
       type: 'category',
