@@ -1,13 +1,16 @@
 module.exports = {
 
-    firstSidebar: {
-      'Category A': ['PCB布线规范'],
-    },
-    secondSidebar: {
-      'Category A': ['PCB布线规范'],
-      'Category B': ['PCB布线规范'],
-    },
-
+  docs: {
+    Guides: [
+      'Home',
+      'PCB元件布局规范',
+      {
+        Docs: [
+          'PCB元件布局规范',
+        ],
+      },
+    ],
+  },
 
   /*
   docs: [

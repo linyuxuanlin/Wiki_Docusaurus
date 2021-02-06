@@ -84,13 +84,13 @@ module.exports = {
           position: "left",
         },
         
-     */
+     
         
                 {
                   to: "firstSidebar",
                   label: "Digest",
                   position: "left",
-                },
+                },*/
                 
         {
           href: "https://wiki.wildwolf.tech/",
