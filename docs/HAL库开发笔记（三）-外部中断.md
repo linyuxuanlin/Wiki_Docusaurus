@@ -46,12 +46,9 @@ NVIC 全称为 Nested Vectored Interrupt Controller, 翻译过来就是 **嵌套
 > 版权声明：文章采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh) 协议，转载请注明出处。
 
 
+## 外部中断按键控灯
 
-
-
-## 配置时钟与串口下载
-
-在进行下一步实验之前，需要在 CubeMX 里配置各种参数。  
+在进行下一步实验之前，需要在 CubeMX 里配置串口下载、时钟等各类参数。  
 此处不再赘述，请参考文章 [**HAL 库开发笔记（一） - 环境配置**](https://wiki-power.com/HAL%E5%BA%93%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89-%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE#%E9%A1%B9%E7%9B%AE%E7%9A%84%E9%85%8D%E7%BD%AE) 中的方法进行配置。
 
 ## 配置 GPIO 与中断
@@ -60,4 +57,7 @@ NVIC 全称为 Nested Vectored Interrupt Controller, 翻译过来就是 **嵌套
 
 如图，LED 还是按照上一篇文章的方法，配置为输出；按键因为是低电平触发，也就是在按下的一瞬间会产生一个下降沿，所以引脚应该配置为下降沿触发的中断。
 
-在我的板子上，就是将 `PI8` 配置为 `GPIO_EXTI8` 模式（外部中断，挂载在中断线 8 上的）。
+在我的板子上，就是将 `PI8` 配置为 `GPIO_EXTI8` 模式（外部中断，挂载在中断线 8 上的），并配置为下降沿触发，根据原理图，选择内部上拉（Pull-up）。如图所示：
+
+![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20210206130441.png)
+
