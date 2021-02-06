@@ -187,7 +187,7 @@ module.exports = {
       "@docusaurus/preset-classic",
 
       {
-        docs: {
+        firstSidebar: {
           routeBasePath: "/",
           sidebarPath: require.resolve("./sidebars.js"),
           showLastUpdateAuthor: false,
