@@ -1,5 +1,19 @@
 module.exports = {
+
+    firstSidebar: {
+      'Category A': ['PCB布线规范'],
+    },
+    secondSidebar: {
+      'Category A': ['PCB布线规范'],
+      'Category B': ['PCB布线规范'],
+    },
+
+
+  /*
   docs: [
+
+
+    
     'Home',
     {
       type: 'category',
@@ -197,7 +211,7 @@ module.exports = {
       ],
     },
 
-  ],
+  ],*/
 };
 
 //归档：
