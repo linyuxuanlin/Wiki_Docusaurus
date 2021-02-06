@@ -1,5 +1,5 @@
 module.exports = {
-
+ /*
   docs: {
     Guides: [
       
@@ -10,11 +10,8 @@ module.exports = {
     ],
   },
 
-  /*
+ */
   docs: [
-
-
-    
     'Home',
     {
       type: 'category',
@@ -212,7 +209,7 @@ module.exports = {
       ],
     },
 
-  ],*/
+  ],
 };
 
 //归档：
