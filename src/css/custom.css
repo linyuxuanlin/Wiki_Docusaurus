@@ -7,7 +7,7 @@
 
 /* You can override the default Infima variables here. */
 :root {
-	--ifm-color-primary: #f5f6f7;
+	--ifm-color-primary: #3578e5;
 	--ifm-color-primary-dark: #f74402;
 	--ifm-color-primary-darker: #e94102;
 	--ifm-color-primary-darkest: #c03502;
@@ -131,11 +131,11 @@ article {
 	border-left: 4px solid var(--ifm-link-color);
 }
 
-/* Navbar */
+/* Navbar 
 
 .navbar__title {
 	color: var(--ifm-color-primary);
-}
+}*/
 
 .navbar {
 	border-bottom: 2px solid var(--accent-color);
