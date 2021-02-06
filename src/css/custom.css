@@ -7,7 +7,7 @@
 
 /* You can override the default Infima variables here. */
 :root {
-	--ifm-color-primary: #fd5618;
+	--ifm-color-primary: #f5f6f7;
 	--ifm-color-primary-dark: #f74402;
 	--ifm-color-primary-darker: #e94102;
 	--ifm-color-primary-darkest: #c03502;
@@ -15,7 +15,7 @@
 	--ifm-color-primary-lighter: #fd7441;
 	--ifm-color-primary-lightest: #fe926a;
 
-	--accent-color: #662d91;
+	--accent-color: #f5f5f5;
 	--accent-color-contrast: #ffffff;
 
 	--ifm-navbar-background-color: var(--accent-color-contrast);
@@ -28,7 +28,7 @@
 }
 
 html[data-theme='dark'] {
-	--ifm-background-color: #1f222f;
+	--ifm-background-color: #2f3136;
 	--ifm-navbar-background-color: #242837;
 	--nuget_logo_url: url(/nodify/img/NuGet_logo_dark.svg);
 	--github_logo_url: url(/nodify/img/github_logo_dark.svg);
@@ -82,7 +82,7 @@ html[data-theme='dark'] .DocSearch {
 }
 
 html[data-theme='dark'] .hero {
-	--ifm-hero-background-color: #1f222f;
+	--ifm-hero-background-color: #2f3136;
 	--ifm-hero-text-color: var(--accent-color-contrast);
 	background-image: url(/nodify/img/circuit_board_dark.svg);
 	--ifm-heading-color: var(--accent-color-contrast);
