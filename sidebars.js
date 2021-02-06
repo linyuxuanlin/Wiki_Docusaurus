@@ -56,6 +56,7 @@ module.exports = {
         //'HAL系列教程1—GPIO',
         'HAL库开发笔记（一）-环境配置',
         'HAL库开发笔记（二）-GPIO',
+        'HAL库开发笔记（三）-外部中断',
         //'HAL库开发笔记（二）-点亮LED',
         'PlatformIO—一站式嵌入式开发工具',
         'PlatformIO搭配CubeMX食用',
