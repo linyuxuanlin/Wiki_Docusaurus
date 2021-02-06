@@ -84,14 +84,14 @@ module.exports = {
           position: "left",
         },
         
-     
+     */
         
                 {
-                  to: "docs/digest/",
+                  to: "firstSidebar",
                   label: "Digest",
                   position: "left",
                 },
-                */
+                
         {
           href: "https://wiki.wildwolf.tech/",
           label: "队内知识库",
@@ -187,7 +187,7 @@ module.exports = {
       "@docusaurus/preset-classic",
 
       {
-        firstSidebar: {
+        docs: {
           routeBasePath: "/",
           sidebarPath: require.resolve("./sidebars.js"),
           showLastUpdateAuthor: false,
