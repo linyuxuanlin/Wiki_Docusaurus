@@ -230,9 +230,11 @@ div[class^="announcementBarContent"] a:hover {
   text-decoration: underline;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
 /* Remove shadow on the left */
 :root {
-  --ifm-global-shadow-md: 0px;
+  --ifm-global-shadow-md: 10px;
   --ifm-font-family-base: 'Segoe UI', Helvetica, Arial, sans-serif;
 }
 
