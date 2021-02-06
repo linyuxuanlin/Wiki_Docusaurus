@@ -115,7 +115,7 @@ if(HAL_GPIO_ReadPin(KEY1_GPIO_Port,KEY1_Pin)==0)
 
 另外，`HAL_Delay(100);` 的功能是代码消除按键抖动。不过 `HAL_Delay()` 函数用的是轮询，会占用资源导致卡机，下一篇文章我们将用硬件中断来解决这个缺陷。
 
-## 常用的 GPIO 函数
+## 常用的 GPIO 函数参考
 
 读取 GPIO 状态，返回高 / 低电平：
 
