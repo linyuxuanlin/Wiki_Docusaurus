@@ -31,14 +31,8 @@ module.exports = {
     colorMode: {
       // "light" | "dark"
       //defaultMode: "dark",
-
-      // Hides the switch in the navbar
-      // Useful if you want to support a single color mode
       disableSwitch: false,
-
-      // Should we use the prefers-color-scheme media-query,
-      // using user system preferences, instead of the hardcoded defaultMode
-      respectPrefersColorScheme: false,
+      respectPrefersColorScheme: true,
 
       // Dark/light switch icon options
       switchConfig: {
