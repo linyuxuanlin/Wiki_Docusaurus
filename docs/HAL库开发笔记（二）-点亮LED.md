@@ -9,7 +9,7 @@ GPIO 是 **通用输入输出端口**（General Purpose Input Output）。
 
 ![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20200615205256.jpg)
 
-如图，除了有颜色的引脚（电源和某些功能引脚）之外的，都叫 GPIO. 可见其通用程度。
+拿 F103C8T6 芯片举个例子（上图），除了有颜色的引脚（电源和某些功能引脚）之外的，都叫 GPIO. 可见其通用程度。
 
 GPIO 的功能是输入 / 输出电信号。我们来看看它的内部结构：
 
