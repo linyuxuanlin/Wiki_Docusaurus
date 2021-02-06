@@ -16,7 +16,7 @@ module.exports = {
     {
       type: 'category',
       label: '电路设计',
-      collapsed: true,
+      
       items: [
         'AirForce-充满灵性的电机驱动模块',
         '如何设计一款单片机的最小系统',
@@ -49,7 +49,7 @@ module.exports = {
     {
       type: 'category',
       label: '队务管理',
-      collapsed: true,
+      
       items: [
         //'团队公开知识库的搭建',
         '团队知识库的搭建-理论',
@@ -62,7 +62,7 @@ module.exports = {
     {
       type: 'category',
       label: '嵌入式开发',
-      collapsed: true,
+      
       items: [
         'C与STM32常用宏定义',
         //'HAL系列教程1—GPIO',
@@ -89,7 +89,7 @@ module.exports = {
     {
       type: 'category',
       label: '高效工作',
-      collapsed: true,
+      
       items: [
         'Windows初始化与软件推荐',
         '为什么你需要一个知识库',
@@ -119,7 +119,7 @@ module.exports = {
     {
       type: 'category',
       label: '软件开发',
-      collapsed: true,
+      
       items: [
         'CSS学习笔记',
         'HTML学习笔记',
@@ -137,7 +137,7 @@ module.exports = {
     {
       type: 'category',
       label: '产品经理',
-      collapsed: true,
+      
       items: [
         '产品经理的日常',
         '中台的概念',
@@ -153,7 +153,7 @@ module.exports = {
     {
       type: 'category',
       label: '生活经历',
-      collapsed: true,
+      
       items: [
         //'书摘与读书笔记',
         //'华广爬楼指北',
@@ -175,7 +175,7 @@ module.exports = {
     {
       type: 'category',
       label: '小技巧',
-      collapsed: true,
+      
       items: [
 
         '如何为公众号文章增加特效',
