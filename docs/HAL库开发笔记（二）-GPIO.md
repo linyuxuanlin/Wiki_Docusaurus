@@ -3,7 +3,7 @@ id: HAL库开发笔记（二）-GPIO
 title: HAL 库开发笔记（二） - GPIO
 ---
 
-## GPIO 的基础知识
+## 基本原理
 
 GPIO 是 **通用输入输出端口**（General Purpose Input Output）。
 
