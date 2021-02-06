@@ -60,7 +60,7 @@ module.exports = {
     hideableSidebar: false,
     navbar: {
       title: "Power's Wiki",
-      hideOnScroll: false,
+      hideOnScroll: true,
       //style: 'primary',
       /*
       logo: {
