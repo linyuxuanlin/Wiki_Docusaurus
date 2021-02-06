@@ -1,0 +1,238 @@
+/* stylelint-disable docusaurus/copyright-header */
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #3578e5;
+  /*#25c2a0;*/
+  --ifm-color-primary-dark: #1d68e1;
+  /*rgb(33, 175, 144);*/
+  --ifm-color-primary-darker: #1b62d4;
+  /*rgb(31, 165, 136);*/
+  --ifm-color-primary-darkest: #1751af;
+  /*rgb(26, 136, 112);*/
+  --ifm-color-primary-light: #4e89e8;
+  /*rgb(70, 203, 174);*/
+  --ifm-color-primary-lighter: #5a91ea;
+  /*rgb(102, 212, 189);*/
+  --ifm-color-primary-lightest: #80aaef;
+  /*rgb(146, 224, 208);*/
+  --ifm-code-font-size: 90%;
+  /*95%;*/
+}
+
+:root {
+  /* primary colours */
+  --amphora-red: #bc312a;
+  --amphora-black: #181717;
+  --amphora-white: #fffefd;
+  /* secondary */
+  --turquoise: #5aa6c0;
+  --blue-garnet: #0a789e;
+  --pearl: #cfd2d6;
+  /* text colours */
+  --ebony: #222222;
+  --stone: #696464;
+  /* messaging and alerts */
+  --mandarin: #f68d00;
+  --plum: #e7140d;
+  --apple: #399b1e;
+  --berry: #057ed1;
+  /* messaging and alert pastels */
+  --pear: #fffaed;
+  --peach: #fbeae5;
+  --avocado: #effae3;
+  --yam: #e7f4ff;
+  /* backgerounds and dividers */
+  --marble: #aaadb0;
+  --platinum: #f1f4f6;
+  --porcelain: #fcfcfc;
+  --main-font: Helvetica, bold, sans-serif;
+  --helvetica: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --fjalla: "Fjalla One", Arial, sans-serif;
+}
+
+h1,
+h2,
+h3,
+.nav-item {
+  font-family: "Helvetica Neue", sans-serif;
+}
+
+.docusaurus-highlight-code-line {
+  background-color: rgb(91, 81, 72);
+  display: block;
+  margin: 0 calc(-1 * var(--ifm-pre-padding));
+  padding: 0 var(--ifm-pre-padding);
+}
+
+.hero .hero__title {
+  font-size: 2.7rem;
+}
+
+.hero-banner {
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  background: url("/img/network.jpg");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.font_tiny {
+  font-size: 12x;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.15px;
+  line-height: 1.333;
+}
+
+.font_small {
+  font-size: 14x;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.15px;
+  line-height: 1.143;
+}
+
+.font_small_bold {
+  font-size: 14x;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  letter-spacing: 0.15px;
+  line-height: 1.143;
+}
+
+.font_intermediate {
+  font-size: 16x;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.15px;
+  line-height: 1.375;
+}
+
+.font_intermediate_bold {
+  font-size: 16x;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  letter-spacing: 0.15px;
+  line-height: 1.375;
+}
+
+.font_medium {
+  font-size: 20x;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.1px;
+  line-height: 1.4;
+  color: var(--amphora-black);
+}
+
+.font_medium_bold {
+  font-size: 20x;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  letter-spacing: 0.1px;
+  line-height: 1.4;
+}
+
+.font_large {
+  font-size: 24px;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.3px;
+  line-height: 1.333;
+}
+
+.font_large_caps {
+  font-size: 32px;
+  font-family: "Roboto", sans-serif;
+  text-transform: capitalize;
+  letter-spacing: 0.25px;
+  line-height: 1.375;
+}
+
+.font_extra_large {
+  font-size: 42px;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.3px;
+  line-height: 1.174;
+}
+
+.font_xxl {
+  font-size: 46px;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.3px;
+  line-height: 1.174;
+}
+
+.body-1 {
+  font-size: 20px;
+}
+
+.text--white {
+  color: #fffefd;
+}
+
+.text--black {
+  color: #181717;
+}
+
+.price-card {
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  padding: 24px 32px;
+  fill: #fffefd;
+  width: 360px;
+  color: #181717;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.opacity-container {
+  width: 100%;
+  color: white;
+  background: rgba(72, 140, 166, 0.8) !important;
+}
+
+.avatar {
+  border-radius: 15%;
+}
+
+html[data-theme="dark"] {
+  --ifm-background-color: #1e2125;
+  --ifm-background-surface-color: #121212;
+}
+
+article {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Announcement Bar */
+div[class^="announcementBarContent"] {
+  background-color: var(--ifm-background-surface-color);
+  color: var(--ifm-font-color-base);
+}
+
+div[class^="announcementBarContent"] a {
+  color: var(--ifm-link-color);
+  text-decoration: inherit;
+}
+
+div[class^="announcementBarContent"] a:hover {
+  color: var(--ifm-link-color);
+  text-decoration: underline;
+}
+
+/* Remove shadow on the left */
+:root {
+  --ifm-global-shadow-md: 0px;
+}
+
+
