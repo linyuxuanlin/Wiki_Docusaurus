@@ -16,7 +16,7 @@
 	--ifm-color-primary-lightest: #fe926a;
 
 	--accent-color: #662d91;
-	--accent-color-contrast: #f4f1fa;
+	--accent-color-contrast: #ffffff;
 
 	--ifm-navbar-background-color: var(--accent-color-contrast);
 	--ifm-background-color: var(--accent-color-contrast);
