@@ -7,235 +7,184 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #3578e5;
-  /*#25c2a0;*/
-  --ifm-color-primary-dark: #1d68e1;
-  /*rgb(33, 175, 144);*/
-  --ifm-color-primary-darker: #1b62d4;
-  /*rgb(31, 165, 136);*/
-  --ifm-color-primary-darkest: #1751af;
-  /*rgb(26, 136, 112);*/
-  --ifm-color-primary-light: #4e89e8;
-  /*rgb(70, 203, 174);*/
-  --ifm-color-primary-lighter: #5a91ea;
-  /*rgb(102, 212, 189);*/
-  --ifm-color-primary-lightest: #80aaef;
-  /*rgb(146, 224, 208);*/
-  --ifm-code-font-size: 90%;
-  /*95%;*/
+	--ifm-color-primary: #fd5618;
+	--ifm-color-primary-dark: #f74402;
+	--ifm-color-primary-darker: #e94102;
+	--ifm-color-primary-darkest: #c03502;
+	--ifm-color-primary-light: #fd6a33;
+	--ifm-color-primary-lighter: #fd7441;
+	--ifm-color-primary-lightest: #fe926a;
+
+	--accent-color: #662d91;
+	--accent-color-contrast: #f4f1fa;
+
+	--ifm-navbar-background-color: var(--accent-color-contrast);
+	--ifm-background-color: var(--accent-color-contrast);
+
+	--ifm-code-font-size: 95%;
+
+	--nuget_logo_url: url(/nodify/img/NuGet_logo.svg);
+	--github_logo_url: url(/nodify/img/github_logo.svg);
 }
 
-:root {
-  /* primary colours */
-  --amphora-red: #bc312a;
-  --amphora-black: #181717;
-  --amphora-white: #fffefd;
-  /* secondary */
-  --turquoise: #5aa6c0;
-  --blue-garnet: #0a789e;
-  --pearl: #cfd2d6;
-  /* text colours */
-  --ebony: #222222;
-  --stone: #696464;
-  /* messaging and alerts */
-  --mandarin: #f68d00;
-  --plum: #e7140d;
-  --apple: #399b1e;
-  --berry: #057ed1;
-  /* messaging and alert pastels */
-  --pear: #fffaed;
-  --peach: #fbeae5;
-  --avocado: #effae3;
-  --yam: #e7f4ff;
-  /* backgerounds and dividers */
-  --marble: #aaadb0;
-  --platinum: #f1f4f6;
-  --porcelain: #fcfcfc;
-  --main-font: Helvetica, bold, sans-serif;
-  --helvetica: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  --fjalla: "Fjalla One", Arial, sans-serif;
-}
-
-h1,
-h2,
-h3,
-.nav-item {
-  font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
+html[data-theme='dark'] {
+	--ifm-background-color: #1f222f;
+	--ifm-navbar-background-color: #242837;
+	--nuget_logo_url: url(/nodify/img/NuGet_logo_dark.svg);
+	--github_logo_url: url(/nodify/img/github_logo_dark.svg);
 }
 
 .docusaurus-highlight-code-line {
-  background-color: rgb(91, 81, 72);
-  display: block;
-  margin: 0 calc(-1 * var(--ifm-pre-padding));
-  padding: 0 var(--ifm-pre-padding);
+	background-color: rgb(72, 77, 91);
+	display: block;
+	margin: 0 calc(-1 * var(--ifm-pre-padding));
+	padding: 0 var(--ifm-pre-padding);
 }
 
-.hero .hero__title {
-  font-size: 2.7rem;
+html[data-theme='light'] .DocSearch {
+	/* --docsearch-primary-color: var(--ifm-color-primary); */
+	/* --docsearch-text-color: var(--ifm-font-color-base); */
+	--docsearch-muted-color: var(--ifm-color-secondary-darkest);
+	--docsearch-container-background: rgba(94, 100, 112, 0.7);
+	/* Modal */
+	--docsearch-modal-background: var(--ifm-color-secondary-lighter);
+	/* Search box */
+	--docsearch-searchbox-background: var(--ifm-color-secondary);
+	--docsearch-searchbox-focus-background: var(--ifm-color-white);
+	/* Hit */
+	--docsearch-hit-color: var(--ifm-font-color-base);
+	--docsearch-hit-active-color: var(--ifm-color-white);
+	--docsearch-hit-background: var(--ifm-color-white);
+	/* Footer */
+	--docsearch-footer-background: var(--ifm-color-white);
 }
 
-.hero-banner {
-  text-align: center;
-  position: relative;
-  overflow: hidden;
-  background: url("/img/network.jpg");
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+html[data-theme='dark'] .DocSearch {
+	--docsearch-text-color: var(--ifm-font-color-base);
+	--docsearch-muted-color: var(--ifm-color-secondary-darkest);
+	--docsearch-container-background: rgba(47, 55, 69, 0.7);
+	/* Modal */
+	--docsearch-modal-background: var(--ifm-background-color);
+	/* Search box */
+	--docsearch-searchbox-background: var(--ifm-background-color);
+	--docsearch-searchbox-focus-background: var(--ifm-color-black);
+	/* Hit */
+	--docsearch-hit-color: var(--ifm-font-color-base);
+	--docsearch-hit-active-color: var(--ifm-color-white);
+	--docsearch-hit-background: var(--ifm-color-emphasis-100);
+	/* Footer */
+	--docsearch-footer-background: var(--ifm-background-surface-color);
+	--docsearch-key-gradient: linear-gradient(
+		-26.5deg,
+		var(--ifm-color-emphasis-200) 0%,
+		var(--ifm-color-emphasis-100) 100%
+	);
 }
 
-.font_tiny {
-  font-size: 12x;
-  font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
-  letter-spacing: 0.15px;
-  line-height: 1.333;
+html[data-theme='dark'] .hero {
+	--ifm-hero-background-color: #1f222f;
+	--ifm-hero-text-color: var(--accent-color-contrast);
+	background-image: url(/nodify/img/circuit_board_dark.svg);
+	--ifm-heading-color: var(--accent-color-contrast);
 }
 
-.font_small {
-  font-size: 14x;
-  font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
-  letter-spacing: 0.15px;
-  line-height: 1.143;
+html[data-theme='light'] .hero {
+	--ifm-hero-background-color: var(--accent-color-contrast);
+	--ifm-hero-text-color: #242837;
+	background-image: url(/nodify/img/circuit_board.svg);
+	--ifm-heading-color: #451e63;
 }
 
-.font_small_bold {
-  font-size: 14x;
-  font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
-  font-weight: bold;
-  letter-spacing: 0.15px;
-  line-height: 1.143;
+.hero__title {
+	font-size: 3.5rem;
+	text-align: left;
 }
 
-.font_intermediate {
-  font-size: 16x;
-  font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
-  letter-spacing: 0.15px;
-  line-height: 1.375;
-}
-
-.font_intermediate_bold {
-  font-size: 16x;
-  font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
-  font-weight: bold;
-  letter-spacing: 0.15px;
-  line-height: 1.375;
-}
-
-.font_medium {
-  font-size: 20x;
-  font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
-  letter-spacing: 0.1px;
-  line-height: 1.4;
-  color: var(--amphora-black);
-}
-
-.font_medium_bold {
-  font-size: 20x;
-  font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
-  font-weight: bold;
-  letter-spacing: 0.1px;
-  line-height: 1.4;
-}
-
-.font_large {
-  font-size: 24px;
-  font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
-  letter-spacing: 0.3px;
-  line-height: 1.333;
-}
-
-.font_large_caps {
-  font-size: 32px;
-  font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
-  text-transform: capitalize;
-  letter-spacing: 0.25px;
-  line-height: 1.375;
-}
-
-.font_extra_large {
-  font-size: 42px;
-  font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
-  letter-spacing: 0.3px;
-  line-height: 1.174;
-}
-
-.font_xxl {
-  font-size: 46px;
-  font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
-  letter-spacing: 0.3px;
-  line-height: 1.174;
-}
-
-.body-1 {
-  font-size: 20px;
-}
-
-.text--white {
-  color: #fffefd;
-}
-
-.text--black {
-  color: #181717;
-}
-
-.price-card {
-  border: 2px solid #ccc;
-  border-radius: 4px;
-  padding: 24px 32px;
-  fill: #fffefd;
-  width: 360px;
-  color: #181717;
-}
-
-.full-width {
-  width: 100%;
-}
-
-.opacity-container {
-  width: 100%;
-  color: white;
-  background: rgba(72, 140, 166, 0.8) !important;
-}
-
-.avatar {
-  border-radius: 15%;
-}
-
-html[data-theme="dark"] {
-  --ifm-background-color: #2f3136;
-  --ifm-background-surface-color: #2f3136;  /*NAV背景色*/
+@media screen and (max-width: 996px) {
+	.hero__title {
+		font-size: 36px;
+		text-align: center;
+	}
 }
 
 article {
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
+	max-width: 700px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
-/* Announcement Bar */
-div[class^="announcementBarContent"] {
-  background-color: var(--ifm-background-surface-color);
-  color: var(--ifm-font-color-base);
+.main-wrapper {
+	max-width: 1400px;
 }
 
-div[class^="announcementBarContent"] a {
-  color: var(--ifm-link-color);
-  text-decoration: inherit;
+@media (min-width: 1416px) {
+	.main-wrapper {
+		width: 1400px;
+		align-self: center;
+	}
 }
 
-div[class^="announcementBarContent"] a:hover {
-  color: var(--ifm-link-color);
-  text-decoration: underline;
+.table-of-contents .table-of-contents__link--active {
+	font-weight: var(--ifm-font-weight-semibold);
+	margin-left: -16px;
+	padding-left: 12px;
+	border-left: 4px solid var(--ifm-link-color);
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+/* Navbar */
 
-/* Remove shadow on the left */
-:root {
-  --ifm-global-shadow-md: 0px;
-  --ifm-font-family-base: 'Segoe UI', Helvetica, Arial, sans-serif;
+.navbar__title {
+	color: var(--ifm-color-primary);
 }
 
+.navbar {
+	border-bottom: 2px solid var(--accent-color);
+}
 
+.navbar .navbar__items {
+	flex: auto;
+}
+
+.navbar__inner {
+	margin: 0 auto;
+	max-width: 1360px;
+}
+
+.navbar__item.navbar__link[href*='github'],
+.navbar__item.navbar__link[href*='nuget'] {
+	font-size: 0;
+	padding: 4px;
+	margin: 0 4px;
+}
+
+.navbar__item.navbar__link[href*='github']:before {
+	background-image: var(--github_logo_url);
+	background-size: cover;
+	content: '';
+	display: block;
+	width: 32px;
+	height: 32px;
+}
+
+.navbar__item.navbar__link[href*='nuget']:before {
+	background-image: var(--nuget_logo_url);
+	background-size: cover;
+	content: '';
+	display: block;
+	width: 32px;
+	height: 32px;
+}
+
+.navbar__item.navbar__link:hover {
+	opacity: 0.7;
+}
+
+.navbar .react-toggle {
+	margin-left: 8px;
+}
+
+/* Button */
+
+html[data-theme='dark'] .button.button--primary {
+	--ifm-button-color: var(--accent-color-contrast);
+}
