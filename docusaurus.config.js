@@ -32,7 +32,7 @@ module.exports = {
       // "light" | "dark"
       //defaultMode: "dark",
       disableSwitch: false,
-      respectPrefersColorScheme: false,
+      respectPrefersColorScheme: true,
 
       // Dark/light switch icon options
       switchConfig: {
