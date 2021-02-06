@@ -15,8 +15,8 @@
 	--ifm-color-primary-lighter: #fd7441;
 	--ifm-color-primary-lightest: #fe926a;
 
-	/*--accent-color: #f5f5f5;
-	--accent-color-contrast: #ffffff;*/
+	--accent-color: #f5f5f5;
+	--accent-color-contrast: #ffffff;
 
 	--ifm-navbar-background-color: var(--accent-color-contrast);
 	--ifm-background-color: var(--accent-color-contrast);
@@ -175,11 +175,10 @@ article {
 	height: 32px;
 }
 
-/*
 .navbar__item.navbar__link:hover {
 	opacity: 0.7;
 }
-*/
+
 
 .navbar .react-toggle {
 	margin-left: 8px;
