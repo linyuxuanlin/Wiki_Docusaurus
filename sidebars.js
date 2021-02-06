@@ -1,22 +1,9 @@
 module.exports = {
- /*
-  docs: {
-    Guides: [
-      
-      'PCB元件布局规范',
-    ],
-    '电路设计': [
-      '锂电池的选型',
-    ],
-  },
-
- */
   docs: [
     'Home',
     {
       type: 'category',
       label: '电路设计',
-      
       items: [
         'AirForce-充满灵性的电机驱动模块',
         '如何设计一款单片机的最小系统',
@@ -42,14 +29,12 @@ module.exports = {
         '什么是金手指',
         '电路设计中常用的接口及关键点',
         'AD使用Git的注意事项',
-
       ],
     },
 
     {
       type: 'category',
       label: '队务管理',
-      
       items: [
         //'团队公开知识库的搭建',
         '团队知识库的搭建-理论',
@@ -62,7 +47,6 @@ module.exports = {
     {
       type: 'category',
       label: '嵌入式开发',
-      
       items: [
         'C与STM32常用宏定义',
         //'HAL系列教程1—GPIO',
@@ -89,7 +73,6 @@ module.exports = {
     {
       type: 'category',
       label: '高效工作',
-      
       items: [
         'Windows初始化与软件推荐',
         '为什么你需要一个知识库',
@@ -119,7 +102,6 @@ module.exports = {
     {
       type: 'category',
       label: '软件开发',
-      
       items: [
         'CSS学习笔记',
         'HTML学习笔记',
@@ -137,7 +119,6 @@ module.exports = {
     {
       type: 'category',
       label: '产品经理',
-      
       items: [
         '产品经理的日常',
         '中台的概念',
@@ -153,7 +134,6 @@ module.exports = {
     {
       type: 'category',
       label: '生活经历',
-      
       items: [
         //'书摘与读书笔记',
         //'华广爬楼指北',
@@ -164,20 +144,16 @@ module.exports = {
         'THEHack2019黑客马拉松',
         'Hack.init()黑客马拉松',
         '焊接大赛培训及总结',
-        
         '为什么要「站在巨人的肩膀上」',
         '如何不被AI取代',
         '一些观点',
-
       ],
     },
 
     {
       type: 'category',
       label: '小技巧',
-      
       items: [
-
         '如何为公众号文章增加特效',
         '如何在Linux下使用微信',
         '如何打印出手写效果的文字',

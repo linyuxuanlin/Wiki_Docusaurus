@@ -13,7 +13,7 @@ module.exports = {
   //organizationName: "linyuxuanlin", // Usually your GitHub org/user name.
   //projectName: "Wiki_Docusaurus", // Usually your repo name.
   themeConfig: {
-    sidebarCollapsible: true,
+    sidebarCollapsible: true, //默认折叠
     image: 'https://cos.ap-guangzhou.myqcloud.com/wiki-media-1253965369/doc/logo-zip.png',
     algolia: {
       apiKey: "5c07d8bf9c9928c4453857f6cad0420e",
