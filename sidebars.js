@@ -1,14 +1,16 @@
 module.exports = {
 
   docs: {
+
+    'Home',
+
     Guides: [
-      'Home',
+      
       'PCB元件布局规范',
-      {
-        Docs: [
-          'PCB元件布局规范',
-        ],
-      },
+    ],
+    '电路设计': [
+      
+      'PCB元件布局规范',
     ],
   },
 
