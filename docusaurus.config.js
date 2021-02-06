@@ -191,7 +191,7 @@ module.exports = {
           routeBasePath: "/",
           sidebarPath: require.resolve("./sidebars.js"),
           showLastUpdateAuthor: false,
-          enableUpdateTime: true,
+          showLastUpdateTime: true,
           editUrl: "https://github.com/linyuxuanlin/Wiki_Docusaurus/tree/main/",
           remarkPlugins: [math],
           rehypePlugins: [katex],
