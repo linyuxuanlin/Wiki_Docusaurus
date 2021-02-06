@@ -234,7 +234,7 @@ div[class^="announcementBarContent"] a:hover {
 
 /* Remove shadow on the left */
 :root {
-  --ifm-global-shadow-md: 10px;
+  --ifm-global-shadow-md: 0px;
   --ifm-font-family-base: 'Segoe UI', Helvetica, Arial, sans-serif;
 }
 
