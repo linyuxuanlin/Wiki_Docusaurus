@@ -204,8 +204,8 @@ h3,
 }
 
 html[data-theme="dark"] {
-  --ifm-background-color: #121212;
-  --ifm-background-surface-color: #121212;  /*NAV背景色*/
+  --ifm-background-color: #2f3136;
+  --ifm-background-surface-color: #2f3136;  /*NAV背景色*/
 }
 
 article {
