@@ -7,7 +7,7 @@ module.exports = {
   tagline: "啥都玩的斜杠青年",
   url: "https://wiki-power.com",
   baseUrl: "/",
-  onBrokenLinks: "throw",
+  onBrokenLinks: "warn",
   onBrokenMarkdownLinks: "warn",
   favicon: "https://cos.ap-guangzhou.myqcloud.com/wiki-media-1253965369/doc/logo-zip.png",
   //organizationName: "linyuxuanlin", // Usually your GitHub org/user name.
@@ -76,100 +76,23 @@ module.exports = {
       },
       */
       items: [
-        /*
-        {
-          to: "docs/",
-          activeBasePath: "docs",
-          label: "Docs",
-          position: "left",
-        },
-        
-     
-        
-                {
-                  to: "firstSidebar",
-                  label: "Digest",
-                  position: "left",
-                },*/
-                
         {
           href: "https://wiki.wildwolf.tech/",
           label: "队内知识库",
           position: "right",
         },
-
         {
           href: "http://digest.wiki-power.com/",
           label: "书摘",
           position: "right",
         },
-        
-       
         {
           href: "https://nav.wiki-power.com/",
           label: "友链 & 导航站",
           position: "right",
         },
-        /*
-        {
-          href: "https://github.com/linyuxuanlin/Wiki_Docusaurus",
-          label: "本站源码     ",
-          position: "right",
-        },
-        */
       ],
     },
-    /*footer: {
-      style: "light",
-      
-      links: [{
-          title: "Docs",
-          items: [{
-              label: "Style Guide",
-              to: "docs/",
-            },
-            {
-              label: "Second Doc",
-              to: "docs/doc2/",
-            },
-          ],
-        },
-        
-        {
-          
-                    title: "Community",
-                    items: [
-
-                      {
-                        label: "Stack Overflow",
-                        href: "https://stackoverflow.com/questions/tagged/docusaurus",
-                      },
-                      {
-                        label: "Discord",
-                        href: "https://discordapp.com/invite/docusaurus",
-                      },
-                      {
-                        label: "Twitter",
-                        href: "https://twitter.com/docusaurus",
-                      },
-                      
-                    ],
-        },
-        {
-          title: "More",
-          items: [{
-              label: "Blog",
-              to: "blog",
-            },
-            {
-              label: "GitHub",
-              href: "https://github.com/facebook/docusaurus",
-            },
-          ],
-        },
-      ],*/
-    //copyright: `Power Lin © ${new Date().getFullYear()} | <a href="https://beian.miit.gov.cn"> 粤 ICP 备 20014898 号 </a> | Built with Docusaurus`,
-    //},
   },
 
   stylesheets: [
@@ -185,7 +108,6 @@ module.exports = {
   presets: [
     [
       "@docusaurus/preset-classic",
-
       {
         docs: {
           routeBasePath: "/",
@@ -202,5 +124,4 @@ module.exports = {
       },
     ],
   ],
-  onBrokenLinks: "ignore", //遇到错误连接时的处理方法
 };
