@@ -104,3 +104,24 @@ HAL_UART_Receive_IT(&huart1,&Buffer,1);
 
 /* USER CODE END 2 */
 ```
+
+最后，我们需要对 printf 进行重定向。意思就是把 printf 函数用在 STM32 中做串口是输出功能。只需要在 `usart.c` 中重写 fputc 函数并使其作用于串口即可：
+```c title="usart.c"
+/* USER CODE BEGIN 0 */
+
+#include "stdio.h"
+
+/* USER CODE END 0 */
+```
+
+```c title="usart.c"
+/* USER CODE BEGIN 1 */
+
+int fputc(int ch,FILE *f)
+{
+	HAL_UART_Transmit(&huart1,(uint8_t*)&ch,1,100);
+	return ch;
+}
+
+/* USER CODE END 1 */
+```
