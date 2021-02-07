@@ -16,7 +16,7 @@ title: HAL 库开发笔记（四）- 串口通信
 > 原文地址：<https://wiki-power.com>  
 > 版权声明：文章采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh) 协议，转载请注明出处。
 
-串口通信算得上是单片机中最常用、最基础的一种通讯方式。
+串口通信算得上是单片机中最常用、最基础的一种通讯方式。常用可作为一种调试的手段，与单片机通讯监控数据、发送指令，也可以用作两个单片机之间互相通讯使用。
 
 ## 基本原理
 
@@ -46,3 +46,25 @@ title: HAL 库开发笔记（四）- 串口通信
 ![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20210207095433.png)
 
 USART 是 UART 的升级版，区别在于多了 CLK 线，在 CLK 没有信号的时候，就表明没有数据传输任务，有 CLK 信号的时候，就是正在传输信号，并且 CLK 提供了时钟同步功能，效验也更精确。
+
+## 串口通讯实验
+
+在进行下一步实验之前，需要在 CubeMX 里配置串口下载、时钟等各类参数。  
+具体步骤请参考文章 [**HAL 库开发笔记（一） - 环境配置**](https://wiki-power.com/HAL%E5%BA%93%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89-%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE#%E9%A1%B9%E7%9B%AE%E7%9A%84%E9%85%8D%E7%BD%AE) 中的方法进行配置。
+
+## 配置 USART 引脚
+
+![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20210207100329.png)
+
+根据原理图，我们用来进行通讯实验的串口是 `USART1` , 即 `PA9` `PA10` 引脚。那么，我们首先需要在 CubeMX 内将这两个引脚配置为 `USART1` 的发送和接受功能，然后点击左侧 USART1 标签页，将模式（Mode）设为异步（Asynchronous），并在下方修改波特率（Baud Rate）等参数：
+
+![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20210207100941.png)
+
+参数详情如下：
+
+- **波特率设置**（Baud Rate）：没有哪种波特率最好，根据实际情况进行修改，要与串口调试助手上一致。
+- **数据位数**（Word Length）：如果使能了奇偶校验，那么实际数据将在该位数上减一。
+- **校验**（Parity）：可选择奇偶校验或不校验。
+- **停止位**（Stop Bits）：额外一位或两位用于作为发送或接收完毕信号位。
+- **数据方向**（Data Direction）：可选择仅发送，仅接收或收发模式。
+- **过采样**（Over Sampling）：8 倍或 16 倍采样率可以有效防止数据出错。
