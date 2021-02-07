@@ -71,7 +71,7 @@ USART 是 UART 的升级版，区别在于多了 CLK 线，在 CLK 没有信号�
 
 最后，在 NVIC 标签页使能 USART1 的串口中断，如图：
 
-![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20210207101431.png)
+![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20210207104641.png)
 
 ### 添加功能代码
 
@@ -99,6 +99,8 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
 
 ```c title="main.c"
 /* USER CODE BEGIN 2 */
+
 HAL_UART_Receive_IT(&huart1,&Buffer,1);
+
 /* USER CODE END 2 */
 ```
