@@ -49,14 +49,13 @@ NVIC 全称为 Nested Vectored Interrupt Controller, 翻译过来就是 **嵌套
 
 ![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20210206134916.png)
 
-另外，要把抢占优先级降低一位（从 0 变为 1，原因下文会解释
-）。
+另外，要把抢占优先级降低一位（从 0 变为 1，原因下文会解释）。
 
 ### 添加功能代码
 
 只需要在 `stm32f4xx_it.c` 末尾添加如下代码：
 
-```c
+```c title="stm32f4xx_it.c"
 /* USER CODE BEGIN 1 */
 
 void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)

@@ -76,6 +76,29 @@ USART 是 UART 的升级版，区别在于多了 CLK 线，在 CLK 没有信号�
 ### 添加功能代码
 
 
-```c title="stm32f4xx_it.c"
+首先需要在 `stm32f4xx_it.c` 末尾添加如下代码：
 
+```c title="stm32f4xx_it.c"
+/* USER CODE BEGIN 1 */
+
+void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
+{
+    if(huart->Instance==USART1)
+    {
+        HAL_UART_Transmit(&huart1, &Buffer, 1, 0xff);
+        HAL_UART_Receive_IT(&huart1,&Buffer,1);
+    }
+}
+
+/* USER CODE END 1 */
+```
+
+其中，`Buffer` 是在 `main.c` 中定义的 uint8_t 类型全局变量。这里每接受的一个字节后就产生中断，将该字节数据返回并重新开启中断。
+
+另外，在 `main.c` 中，我们需要在串口初始化后、主循环前，添加接收中断开启函数：
+
+```c title="main.c"
+/* USER CODE BEGIN 2 */
+HAL_UART_Receive_IT(&huart1,&Buffer,1);
+/* USER CODE END 2 */
 ```
