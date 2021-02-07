@@ -68,3 +68,7 @@ USART 是 UART 的升级版，区别在于多了 CLK 线，在 CLK 没有信号�
 - **停止位**（Stop Bits）：额外一位或两位用于作为发送或接收完毕信号位。
 - **数据方向**（Data Direction）：可选择仅发送，仅接收或收发模式。
 - **过采样**（Over Sampling）：8 倍或 16 倍采样率可以有效防止数据出错。
+
+最后，在 NVIC 标签页使能 USART1 的串口中断，如图：
+
+![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20210207101431.png)
