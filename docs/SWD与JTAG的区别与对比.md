@@ -25,10 +25,26 @@ JTAG, 全名为 Joint Test Action Group（联合测试行动小组）。截至�
 
 ![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20210209191921.png)
 
-JTAG 一般使用 5 个引脚来进行下载调试：
+JTAG 一般使用 5 个引脚：
 
 - **TDI**（Test Data In）：串行输入引脚
 - **TDO**（Test Data Out）：串行输出引脚
 - **TCK**（Test Clock）：时钟引脚
 - **TMS**（Test Mode Select）：模式选择（控制信号）引脚
 - **TRST**（Test Reset）：复位引脚
+
+
+## SWD
+
+全称为 Serial Wire Debug（串行线调试），是 ARM 专门设计的协议。
+
+SWD 一般使用 2 个引脚：
+
+- **SWDIO**（Serial Wire Data Input Output）：串行数据输入输出引脚
+- **SWCLK**（Serial Wire Clock）：串行线时钟引脚
+
+## JTAG 与 SWD 的兼容性
+
+一般来说，单片机板子上会有这个烧录座，可同时兼容 JTAG 与 SWD：
+
+![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20210210122923.jpg)
