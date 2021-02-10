@@ -28,21 +28,7 @@ module.exports = {
       //... other Algolia params
     },
 
-    footer: {
-      links: [
-        {
-          title: "1",
-          items: [
-            {
-              label: "粤 ICP 备 20014898 号",
-              href: "https://beian.miit.gov.cn/",
-            },
-          ],
-        },
-      ],
-      copyright: `Copyright © ${new Date().getFullYear()} Power`,
-    },
-  },
+
     
     colorMode: {
       // "light" | "dark"
