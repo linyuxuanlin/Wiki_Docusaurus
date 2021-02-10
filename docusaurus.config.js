@@ -15,8 +15,6 @@ module.exports = {
   themeConfig: {
     sidebarCollapsible: true, //默认折叠
     image: 'https://cos.ap-guangzhou.myqcloud.com/wiki-media-1253965369/doc/logo-zip.png',
-
-    /*
     algolia: {
       apiKey: "5c07d8bf9c9928c4453857f6cad0420e",
       indexName: "wiki-power",
@@ -29,10 +27,9 @@ module.exports = {
 
       //... other Algolia params
     },
-    */
 
 
-
+    
     
     colorMode: {
       // "light" | "dark"
@@ -94,10 +91,6 @@ module.exports = {
       ],
     },
   },
-
-  plugins: [
-    require.resolve('@cmfcmf/docusaurus-search-local')
-  ],
 
   stylesheets: [
     {
