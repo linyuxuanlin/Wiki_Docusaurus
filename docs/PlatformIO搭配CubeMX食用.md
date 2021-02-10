@@ -5,7 +5,7 @@ title: PlatformIO 搭配 CubeMX 食用
 
 ## 背景
 
-在 [**上一篇文章**](PlatformIO—一站式嵌入式开发工具) 中，我们可以看到，PlatformIO 用起来比 Keil 优雅多了。  
+在 [**上一篇文章**](https://wiki-power.com/PlatformIO—一站式嵌入式开发工具) 中，我们可以看到，PlatformIO 用起来比 Keil 优雅多了。  
 众所周知，STM32 打开方式中，HAL 库比标准库更方便易用（配合神器 CubeMX），但 PlatformIO 官方对 CubeMX 的兼容不是特别完美（需通过 Python 中间件来进行代码转换）
 
 在这篇文章中，我将介绍一种独特的方法，让 PlatformIO 配合 CubeMX 食用起来更加美味。
