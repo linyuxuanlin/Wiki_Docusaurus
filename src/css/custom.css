@@ -1,7 +1,11 @@
+
+// 主题色
 :root {
 	--ifm-color-primary: #0094d9;
 }
 
+
+// 目录样式优化
 .table-of-contents .table-of-contents__link--active {
 	font-weight: var(--ifm-font-weight-semibold);
 	margin-left: -16px;
@@ -9,3 +13,7 @@
 	border-left: 4px solid var(--ifm-link-color);
 }
 
+// 搜索样式优化
+.DocSearch-Button-Key {
+	display: none !important;
+  }
