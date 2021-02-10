@@ -30,6 +30,7 @@ module.exports = {
 
 
     
+    
     colorMode: {
       // "light" | "dark"
       //defaultMode: "dark",
