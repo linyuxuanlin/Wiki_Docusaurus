@@ -3,19 +3,14 @@ id: SWD与JTAG的区别与对比
 title: SWD 与 JTAG 的区别与对比
 ---
 
-## 参考与致谢 
 
-- [下载调试接口 SWD 和 JTAG 的区别](https://mp.weixin.qq.com/s/MW57t266yvv6TOweeFEUVA)
+众所周知，SWD 和 JTAG 是单片机下载程序与调试的常用接口。其共同之处：
 
-<br />
-
-<br />
-
-> 文章作者：**Power Lin**  
-> 原文地址：<https://wiki-power.com>  
-> 版权声明：文章采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh) 协议，转载请注明出处。
-
-众所周知，SWD 和 JTAG 是单片机下载程序与调试的常用接口。
+- **供电电压范围**: 1.2 V - 5.5 V
+- **时钟速率**: 可配置高达 10 MHz
+- **SWO 跟踪捕获**: 数据速率高达 50 Mbit/s（UART/NRZ 模式）
+- **隔离电压**: 1 kV
+- **热插拔**：支持
 
 ## JTAG
 
@@ -29,14 +24,14 @@ JTAG 一般使用 5 个引脚：
 
 - **TDI**（Test Data In）：串行输入引脚
 - **TDO**（Test Data Out）：串行输出引脚
-- **TCK**（Test Clock）：时钟引脚
+- **TCK**（Test Clock）：时钟引脚，一般附加 100k 下拉电阻
 - **TMS**（Test Mode Select）：模式选择（控制信号）引脚
 - **TRST**（Test Reset）：复位引脚
 
 
 ## SWD
 
-全称为 Serial Wire Debug（串行线调试），是 ARM 专门设计的协议。
+全称为 Serial Wire Debug（串行线调试），是 ARM 专门设计的协议，在 ARM 系列单片机中性能表现较佳。
 
 SWD 一般使用 2 个引脚：
 
@@ -45,6 +40,28 @@ SWD 一般使用 2 个引脚：
 
 ## JTAG 与 SWD 的兼容性
 
-一般来说，单片机板子上会有这个烧录座，可同时兼容 JTAG 与 SWD：
+一般来说，单片机板子上会有以下这些烧录座，可同时兼容 JTAG 与 SWD：
 
 ![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20210210122923.jpg)
+
+![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20210210123714.png)
+
+- TCK 兼容 SWCLK
+- TMS 兼容 SWDIO
+- （TDO 兼容 SWO）
+
+
+## 参考与致谢 
+
+- [下载调试接口 SWD 和 JTAG 的区别](https://mp.weixin.qq.com/s/MW57t266yvv6TOweeFEUVA)
+- [Cortex JTAG, SWD Debug Port Sharing](https://southlife.tistory.com/107)
+- [JTAG/SWD Interface](https://www.keil.com/support/man/docs/ulinkplus/ulinkplus_jtagswd_interface.htm)
+- [JTAG](https://en.wikipedia.org/wiki/JTAG)
+
+<br />
+
+<br />
+
+> 文章作者：**Power Lin**  
+> 原文地址：<https://wiki-power.com>  
+> 版权声明：文章采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh) 协议，转载请注明出处。
