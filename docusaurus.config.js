@@ -31,7 +31,7 @@ module.exports = {
     footer: {
       links: [
         {
-          title: " ",
+          title: "1",
           items: [
             {
               label: "粤 ICP 备 20014898 号",
