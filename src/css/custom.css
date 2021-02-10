@@ -1,4 +1,3 @@
-
 /* 主题色 */
 :root {
 	--ifm-color-primary: #0094d9;
@@ -16,8 +15,21 @@
 /* 搜索样式优化（去掉 Ctrl + K） */
 .DocSearch-Button-Key {
 	display: none !important;
-  }
+}
 
-.main-wrapper > div > div {
+/* 去掉侧边栏右侧的分割线 */
+.main-wrapper>div>div {
 	border-right: none !important;
+}
+
+.search-icon {
+	background-image: var(--ifm-navbar-search-input-icon);
+	height: auto;
+	width: 24px;
+	cursor: pointer;
+	padding: 8px;
+	line-height: 32px;
+	background-repeat: no-repeat;
+	background-position: center;
+	display: none;
   }
