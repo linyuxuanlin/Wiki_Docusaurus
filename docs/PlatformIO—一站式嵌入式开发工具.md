@@ -43,7 +43,7 @@ PlatformIO 是一个强大的一站式工具，来看看它的特点：
 - [PlatformIO](https://platformio.org/)
 - [PlatformIO Docs](https://docs.platformio.org/en/latest/index.html)
 - [ussserrr/stm32pio](https://github.com/ussserrr/stm32pio#requirements)
-- [用 VScode 作为 stm32 开发平台（platformIO）](https://www.jianshu.com/p/49cfa03d6164)
+- [用 VS Code 作为 stm32 开发平台（platformIO）](https://www.jianshu.com/p/49cfa03d6164)
 - [PlatformIO IDE(VSCode) - stm32cube 框架的工程](https://www.smslit.top/2019/08/24/platformio-stm32-cubemx/)
 
 <br />
