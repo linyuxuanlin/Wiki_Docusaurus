@@ -61,9 +61,7 @@ SWD 的优势：
 - TMS 兼容 SWDIO
 - （TDO 兼容 SWO）
 
-什么时候选 SWD 而非 JTAG：
-
-采用 SWD 而非 JTAG 的理由：
+选用 SWD 而非 JTAG 的理由：
 
 - 电路原理图设计需要足够简单，且可以在没有 JTAG 功能的情况下进行测试
 - PCB 在尺寸方面有限制，SWD 可以节省空间
