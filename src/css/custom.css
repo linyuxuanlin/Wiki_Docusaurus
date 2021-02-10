@@ -13,7 +13,7 @@
 	border-left: 4px solid var(--ifm-link-color);
 }
 
-/* 搜索样式优化 */
+/* 搜索样式优化（去掉 Ctrl + K） */
 .DocSearch-Button-Key {
 	display: none !important;
   }
