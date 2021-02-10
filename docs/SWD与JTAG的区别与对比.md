@@ -29,14 +29,25 @@ JTAG 一般使用 5 个引脚：
 - **TRST**（Test Reset）：复位引脚
 
 
+JTAG 的优势：
+
+- 不限于 ARM 系列芯片
+- 具有更多用于编程，调试和生产测试的用途
+
 ## SWD
 
-全称为 Serial Wire Debug（串行线调试），是 ARM 专门设计的协议，在 ARM 系列单片机中性能表现较佳。
+全称为 Serial Wire Debug（串行线调试），是 ARM 专门设计的协议，仅支持 ARM（所以在 ARM 系列单片机中性能表现较佳）。
 
 SWD 一般使用 2 个引脚：
 
 - **SWDIO**（Serial Wire Data Input Output）：串行数据输入输出引脚
 - **SWCLK**（Serial Wire Clock）：串行线时钟引脚
+
+SWD 的优势：
+
+- 使用引脚更少，只需 SWDIO 和 SWCLK 两个引脚
+- SWD 具有特殊功能，例如打印调试信息
+- 与 JTAG 相比，SWD 在速度上具有更好的整体性能
 
 ## JTAG 与 SWD 的兼容性
 
@@ -50,6 +61,13 @@ SWD 一般使用 2 个引脚：
 - TMS 兼容 SWDIO
 - （TDO 兼容 SWO）
 
+什么时候选 SWD 而非 JTAG：
+
+采用 SWD 而非 JTAG 的理由：
+
+- 电路原理图设计需要足够简单，且可以在没有 JTAG 功能的情况下进行测试
+- PCB 在尺寸方面有限制，SWD 可以节省空间
+- MCU 已经没有多余的引脚给 JTAG 用了
 
 ## 参考与致谢 
 
