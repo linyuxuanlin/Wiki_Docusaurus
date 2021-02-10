@@ -2,6 +2,10 @@ const math = require('remark-math');
 const katex = require('rehype-katex');
 
 module.exports = {
+  plugins: [
+    require.resolve('@cmfcmf/docusaurus-search-local')
+  ],
+
   title: "Power's Wiki",
   //titleDelimiter: "🦖", // Defaults to `|`
   tagline: "啥都玩的斜杠青年",
