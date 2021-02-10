@@ -47,7 +47,7 @@ module.exports = {
         // React inline style object
         // see https://reactjs.org/docs/dom-elements.html#style
         darkIconStyle: {
-          marginLeft: "5px",
+          marginLeft: "2px",
         },
 
         // Unicode icons such as '\u2600' will work
