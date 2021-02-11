@@ -6,7 +6,7 @@ module.exports = {
   //titleDelimiter: "🦖", // Defaults to `|`
   tagline: "啥都玩的斜杠青年",
   url: "https://wiki-power.com",
-  baseUrl: "cdn.jsdelivr.net/gh/linyuxuanlin/Wiki_Docusaurus/",
+  baseUrl: "/",
   onBrokenLinks: "warn",
   onBrokenMarkdownLinks: "warn",
   favicon: "https://cos.ap-guangzhou.myqcloud.com/wiki-media-1253965369/doc/logo-zip.png",
