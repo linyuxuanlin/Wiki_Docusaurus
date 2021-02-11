@@ -116,7 +116,7 @@ module.exports = {
           rehypePlugins: [katex],
         },
         theme: {
-          customCss: require.resolve("./src/css/custom.css"),
+          customCss: require.resolve("https://cdn.jsdelivr.net/gh/linyuxuanlin/Wiki_Docusaurus/src/css/custom.css"),
         },
       },
     ],
