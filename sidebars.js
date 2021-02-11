@@ -49,7 +49,7 @@ module.exports = {
       label: '嵌入式开发',
       items: [
         'C与STM32常用宏定义',
-        'SWD与JTAG的区别与对比',
+        'SWD与JTAG的区别与联系',
         //'HAL系列教程1—GPIO',
         'HAL库开发笔记（一）-环境配置',
         'HAL库开发笔记（二）-GPIO',

@@ -1,6 +1,6 @@
 ---
-id: SWD与JTAG的区别与对比
-title: SWD 与 JTAG 的区别与对比
+id: SWD与JTAG的区别与联系
+title: SWD 与 JTAG 的区别与联系
 ---
 
 
