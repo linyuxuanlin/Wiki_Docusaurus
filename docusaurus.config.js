@@ -2,6 +2,7 @@ const math = require('remark-math');
 const katex = require('rehype-katex');
 
 module.exports = {
+  publicPath: process.env.NODE_ENV === 'production' ? `//cdn.jsdelivr.net/gh/chanshiyucx/chanshiyucx.github.io/` : '/',
   title: "Power's Wiki",
   //titleDelimiter: "🦖", // Defaults to `|`
   tagline: "啥都玩的斜杠青年",
