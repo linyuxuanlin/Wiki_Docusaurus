@@ -22,3 +22,6 @@
 .main-wrapper>div>div {
 	border-right: none !important;
 }
+
+/* 隐藏 scrollbar */
+::-webkit-scrollbar {display:none;}
