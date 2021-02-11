@@ -2,12 +2,11 @@ const math = require('remark-math');
 const katex = require('rehype-katex');
 
 module.exports = {
-  publicPath: process.env.NODE_ENV === 'production' ? `//cdn.jsdelivr.net/gh/linyuxuanlin/Wiki_Docusaurus/` : '/',
   title: "Power's Wiki",
   //titleDelimiter: "🦖", // Defaults to `|`
   tagline: "啥都玩的斜杠青年",
   url: "https://wiki-power.com",
-  baseUrl: "/",
+  baseUrl: "//cdn.jsdelivr.net/gh/linyuxuanlin/Wiki_Docusaurus/",
   onBrokenLinks: "warn",
   onBrokenMarkdownLinks: "warn",
   favicon: "https://cos.ap-guangzhou.myqcloud.com/wiki-media-1253965369/doc/logo-zip.png",
