@@ -23,3 +23,5 @@
 	border-right: none !important;
 }
 
+.element::-webkit-scrollbar { width: 0 !important }
+
