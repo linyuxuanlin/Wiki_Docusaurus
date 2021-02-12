@@ -110,7 +110,7 @@ title: HTML 学习笔记
 
 ## 参考与致谢
 
-- [HTML 教程 \| 菜鸟教程](http://www.runoob.com/html/html-tutorial.html)
+- [HTML 教程 | 菜鸟教程](http://www.runoob.com/html/html-tutorial.html)
 - [HTML 30 分钟入门教程](http://deerchao.net/tutorials/html/html.htm)
 - [HTML - head 头部浅析](https://www.tielemao.com/831.html)
 
