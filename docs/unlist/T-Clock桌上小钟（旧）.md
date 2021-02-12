@@ -157,9 +157,7 @@ void loop(void)
 - [使用 Arduino UNO 为 Arduino Pro Mini 下载程序](http://blog.sina.com.cn/s/blog_53f8d23d0102wv3m.html)
 - [U8glib 用法](https://github.com/olikraus/u8glib/wiki/device#ssd1306-128x64)
 
-<br />
 
-<br />
 
 > 文章作者：**Power Lin**  
 > 原文地址：<https://wiki-power.com>  

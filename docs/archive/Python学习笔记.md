@@ -73,9 +73,7 @@ days_in_feb = 30
 print(str(days_in_feb) + ' days in February')
 ```
 
-<br />
 
-<br />
 
 > 文章作者：**Power Lin**  
 > 原文地址：<https://wiki-power.com>  

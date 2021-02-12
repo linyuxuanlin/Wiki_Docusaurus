@@ -72,9 +72,7 @@ CDC 虚拟串口功能具备一般的串口功能，允许双向通信，允许�
 - [wuxx / nanoDAP](https://github.com/wuxx/nanoDAP)
 - [LGG001 / DAPLink-Brochure](https://github.com/LGG001/DAPLink-Brochure)
 
-<br />
 
-<br />
 
 > 文章作者：**Power Lin**  
 > 原文地址：<https://wiki-power.com>  

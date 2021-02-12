@@ -41,9 +41,7 @@ sudo yum install docker-ce docker-ce-cli containerd.io
 
 * [Install Docker Engine on CentOS](https://docs.docker.com/engine/install/centos/)
 
-<br />
 
-<br />
 
 > 文章作者：**Power Lin**  
 > 原文地址：<https://wiki-power.com>  

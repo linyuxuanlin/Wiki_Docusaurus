@@ -69,9 +69,7 @@ Markdown 以前后空行来区分段落。如果单纯要换行，只需在句�
 - [高效写作方式 Markdown，让你彻底摆脱排版的困扰](https://zhuanlan.zhihu.com/p/41893875)
 - [younghz/Markdown](https://github.com/younghz/Markdown)
 
-<br />
 
-<br />
 
 > 文章作者：**Power Lin**  
 > 原文地址：<https://wiki-power.com>  

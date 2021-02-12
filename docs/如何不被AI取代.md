@@ -26,9 +26,7 @@ title: 如何不被 AI 取代
 
 - [你需要补哪些核心能力？](https://mp.weixin.qq.com/s?__biz=MzIyODI1MzYyNA==&mid=2653540387&idx=1&sn=985fbe7c3ca0a3ac90d5f56356eac31a&scene=21##wechat_redirect)
 
-<br />
 
-<br />
 
 > 文章作者：**Power Lin**  
 > 原文地址：<https://wiki-power.com>  

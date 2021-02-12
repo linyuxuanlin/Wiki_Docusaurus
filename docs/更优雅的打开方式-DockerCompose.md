@@ -114,9 +114,7 @@ services:
 - [Install Docker Compose](https://docs.docker.com/compose/install/#prerequisites)
 - [Docker-Compose 模板文件参数详解](https://blog.51cto.com/14154700/2466054)
 
-<br />
 
-<br />
 
 > 文章作者：**Power Lin**  
 > 原文地址：<https://wiki-power.com>  

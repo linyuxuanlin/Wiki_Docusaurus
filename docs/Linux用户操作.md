@@ -39,9 +39,7 @@ su 用户名
 
 - [linux 创建用户、设置密码](https://blog.csdn.net/li_101357/article/details/69367457)
 
-<br />
 
-<br />
 
 > 文章作者：**Power Lin**  
 > 原文地址：<https://wiki-power.com>  

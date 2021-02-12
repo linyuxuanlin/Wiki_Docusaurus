@@ -116,9 +116,7 @@ Sublime Text 3 可从 [官网](http://www.sublimetext.com/) 下载（推荐下�
 - [Sublime Text 3 调教你的私人利器（上）](https://www.sheyilin.com/2015/05/sublime_text_3_tiao_jiao_ni_de_si_ren_li_qi_1/)
 - [Sublime Text 自动生成文件头部注释（版权信息）：FileHeader 插件的使用](https://blog.csdn.net/afei__/article/details/82890493)
 
-<br />
 
-<br />
 
 > 文章作者：**Power Lin**  
 > 原文地址：<https://wiki-power.com>  

@@ -32,9 +32,7 @@ ssh user@IP
 
 - [Linux 教程](https://www.runoob.com/linux/linux-tutorial.html)
 
-<br />
 
-<br />
 
 > 文章作者：**Power Lin**  
 > 原文地址：<https://wiki-power.com>  

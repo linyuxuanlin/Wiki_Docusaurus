@@ -13,9 +13,7 @@ title: AD 入门系列四：PCB 绘制
 
 ## 参考与致谢
 
-<br />
 
-<br />
 
 > 文章作者：**Power Lin**  
 > 原文地址：<https://wiki-power.com>  

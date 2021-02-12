@@ -65,9 +65,7 @@ docker run -d --name=VSConline -e PASSWORD=123 -e SUDO_PASSWORD=123 -p 8443:8443
 
 - [linuxserver/code-server](https://hub.docker.com/r/linuxserver/code-server)
 
-<br />
 
-<br />
 
 > 文章作者：**Power Lin**  
 > 原文地址：<https://wiki-power.com>  

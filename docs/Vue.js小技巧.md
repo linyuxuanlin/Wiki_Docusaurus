@@ -16,9 +16,7 @@ title: Vue.js 小技巧
 
 - [如何去除 vue 项目中的 # --- History 模式](https://www.cnblogs.com/zhuzhenwei918/p/6892066.html)
 
-<br />
 
-<br />
 
 > 文章作者：**Power Lin**  
 > 原文地址：<https://wiki-power.com>  

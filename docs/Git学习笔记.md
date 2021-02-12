@@ -104,9 +104,7 @@ GitHub CLI 目前正处于 Beta 版本，值得一试。
 - [Pro Git](https://git-scm.com/book/zh/v2)
 - [GitHub CLI - Manual](https://cli.github.com/manual/)
 
-<br />
 
-<br />
 
 > 文章作者：**Power Lin**  
 > 原文地址：<https://wiki-power.com>  

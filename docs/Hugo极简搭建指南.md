@@ -80,9 +80,7 @@ Build static pages
 
 * [Quick Start · Hugo](https://gohugo.io/getting-started/quick-start/)
 
-<br />
 
-<br />
 
 > 文章作者：**Power Lin**  
 > 原文地址：<https://wiki-power.com>  

@@ -112,9 +112,7 @@ void M_process(s16 x,s16 y) { //传入左摇杆 L(x,y) 坐标
 - [Mecanum Wheel Robot - Bluetooth Controlled](https://www.instructables.com/id/Mecanum-wheel-robot-bluetooth-controlled/)
 - [Design of Omnidirectional Mobile Platform Control System Based on STM32 CAN Bus Control](https://image.hanspub.org/Html/11-1540843_22169.htm)
 
-<br />
 
-<br />
 
 > 文章作者：**Power Lin**  
 > 原文地址：<https://wiki-power.com>  

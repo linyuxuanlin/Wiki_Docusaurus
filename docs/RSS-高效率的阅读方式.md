@@ -90,9 +90,7 @@ A：读书这种方式也没有被时代淘汰。一个趋势是，凡是互联�
 - [自制全文 RSS 汇总（附 推荐工具）](https://www.douban.com/note/522518464/)
 - [论 RSS 的「复兴」](https://sspai.com/post/43998)
 
-<br />
 
-<br />
 
 > 文章作者：**Power Lin**  
 > 原文地址：<https://wiki-power.com>  

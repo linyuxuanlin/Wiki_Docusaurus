@@ -94,9 +94,7 @@ title: AD 小技巧整理
 
 - [Altium Designer19 设计宝典：实战操作技巧与问题解决方法](https://item.jd.com/12756518.html)
 
-<br />
 
-<br />
 
 > 文章作者：**Power Lin**  
 > 原文地址：<https://wiki-power.com>  

@@ -71,9 +71,7 @@ title: HAL 库开发笔记（一）- 环境配置
 - [【STM32】系统时钟 RCC 详解](https://blog.csdn.net/as480133937/article/details/98845509)
 - [板子初始化，RCC时钟树完整配置的方式和详细过程](https://www.notion.so/2-RCC-770c0c454f954408a3956257aa0fb523)
 
-<br />
 
-<br />
 
 > 文章作者：**Power Lin**  
 > 原文地址：<https://wiki-power.com>  

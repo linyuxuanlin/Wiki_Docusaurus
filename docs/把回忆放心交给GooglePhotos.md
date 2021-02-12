@@ -75,9 +75,7 @@ A：建议用移动硬盘加密备份，或者打包加密再上传到国外的�
 - [这一次，Google Photos 要重新定义「云相册」](https://sspai.com/post/29151)
 - [Google 隐私权和条款](https://policies.google.com/privacy?hl=zh-CN)
 
-<br />
 
-<br />
 
 > 文章作者：**Power Lin**  
 > 原文地址：<https://wiki-power.com>  

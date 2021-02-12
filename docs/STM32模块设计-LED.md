@@ -5,9 +5,7 @@ title: STM32 模块设计 - LED
 
 ## 参考与致谢
 
-<br />
 
-<br />
 
 > 文章作者：**Power Lin**  
 > 原文地址：<https://wiki-power.com>  

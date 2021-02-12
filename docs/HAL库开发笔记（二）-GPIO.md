@@ -143,9 +143,7 @@ HAL_GPIO_TogglePin(GPIOx, GPIO_Pin);
 - [STM32CubeMX 实战教程（二）—— 按键点个灯](https://blog.csdn.net/weixin_43892323/article/details/104343933)
 
 
-<br />
 
-<br />
 
 > 文章作者：**Power Lin**  
 > 原文地址：<https://wiki-power.com>  

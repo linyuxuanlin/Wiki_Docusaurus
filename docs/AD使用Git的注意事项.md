@@ -193,9 +193,7 @@ Project Logs for */
 
 - [.gitignore 文件配置：Altium Designer 工程文件类型](https://blog.csdn.net/u010160335/article/details/80100232)
 
-<br />
 
-<br />
 
 > 文章作者：**Power Lin**  
 > 原文地址：<https://wiki-power.com>  

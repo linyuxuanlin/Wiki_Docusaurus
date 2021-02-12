@@ -46,9 +46,7 @@ cgr test taobao
 - [cgr -- change registry | yarn & npm registry manager](https://www.npmjs.com/package/cgr)
 
 
-<br />
 
-<br />
 
 > 文章作者：**Power Lin**  
 > 原文地址：<https://wiki-power.com>  

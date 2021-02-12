@@ -98,9 +98,7 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
 - [进阶篇 II [Interrupt]](https://alchemicronin.github.io/posts/ff6aca34/)
 - [STM32CubeMX 实战教程（三）—— 外部中断（中断及 HAL_Delay 函数避坑）](https://blog.csdn.net/weixin_43892323/article/details/104383560?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.control&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.control)
 
-<br />
 
-<br />
 
 > 文章作者：**Power Lin**  
 > 原文地址：<https://wiki-power.com>  

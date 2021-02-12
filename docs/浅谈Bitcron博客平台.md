@@ -51,9 +51,7 @@ A：可以联系我拿邀请码。
 - [Bitcron 初体验](https://cyhour.com/533/)
 - [我把 pi.bitcron.com 全部看了一遍，整理出了这些有用的信息](https://www.liaoyuqin.com/post/help/pibitcron)
 
-<br />
 
-<br />
 
 > 文章作者：**Power Lin**  
 > 原文地址：<https://wiki-power.com>  

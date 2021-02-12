@@ -177,9 +177,7 @@ AD 插件：
 - [Using Version Control](https://www.altium.com/documentation/altium-designer/using-version-control-ad)
 - 彬哥整理的经验和笔记
 
-<br />
 
-<br />
 
 > 文章作者：**Power Lin**  
 > 原文地址：<https://wiki-power.com>  

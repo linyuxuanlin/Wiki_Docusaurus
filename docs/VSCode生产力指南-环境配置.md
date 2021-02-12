@@ -142,9 +142,7 @@ git config --global credential.helper store
 - [Vscode 编辑 markdown 代码块（snippets）](https://www.jianshu.com/p/a87e9ca2d208)
 - [在 Visual Studio Code 中添加自定义的代码片段](https://blog.walterlv.com/post/add-custom-code-snippet-for-vscode.html##%E5%85%B3%E4%BA%8E%E6%96%87%E4%BB%B6%E5%90%8D%E7%A7%B0)
 
-<br />
 
-<br />
 
 > 文章作者：**Power Lin**  
 > 原文地址：<https://wiki-power.com>  

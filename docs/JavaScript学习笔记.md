@@ -52,9 +52,7 @@ var carname = "Volvo";
 
 **引用数据类型**：对象 \(Object\)、数组 \(Array\)、函数 \(Function\)。
 
-<br />
 
-<br />
 
 > 文章作者：**Power Lin**  
 > 原文地址：<https://wiki-power.com>  

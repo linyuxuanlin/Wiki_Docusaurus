@@ -40,9 +40,7 @@ GitBook 不仅在概念上深得我心，在参数配置上也是一流的：
 
 - [Why Wiki](https://wiki.imshuai.com/why-wiki.html)
 
-<br />
 
-<br />
 
 > 文章作者：**Power Lin**  
 > 原文地址：<https://wiki-power.com>  

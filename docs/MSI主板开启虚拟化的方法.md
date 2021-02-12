@@ -30,9 +30,7 @@ shutdown.exe /r /o
 - [如何进入 BIOS？](https://zhuanlan.zhihu.com/p/34223088)
 - [微星（MSI）电脑、主板开启 VT 的方法](http://mumu.163.com/20181108/25905_784199.html)
 
-<br />
 
-<br />
 
 > 文章作者：**Power Lin**  
 > 原文地址：<https://wiki-power.com>  

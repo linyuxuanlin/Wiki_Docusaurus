@@ -162,9 +162,7 @@ title: 基于 docsify 搭建个人 Wiki
 - [Github+jsDelivr+PicGo 打造稳定快速、高效免费图床](https://www.itrhx.com/2019/08/01/A27-image-hosting/)
 - [教育杂想](https://bug-hunter.baklib.com/unclassified/863b)
 
-<br />
 
-<br />
 
 > 文章作者：**Power Lin**  
 > 原文地址：<https://wiki-power.com>  

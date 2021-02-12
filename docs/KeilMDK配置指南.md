@@ -68,9 +68,7 @@ title: Keil MDK 配置指南
 - [Keil 保护视力背景颜色设置](https://blog.csdn.net/w5862338/article/details/50984536)
 - [keil 代码格式化](https://blog.csdn.net/sudaroot/article/details/88095269)
 
-<br />
 
-<br />
 
 > 文章作者：**Power Lin**  
 > 原文地址：<https://wiki-power.com>  

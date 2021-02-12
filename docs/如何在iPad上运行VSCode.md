@@ -126,9 +126,7 @@ yum install git
 - [screen 的安装和使用](https://www.jianshu.com/p/420569381e74)
 - [Setup Guide · cdr/code-server](https://github.com/cdr/code-server/blob/v3.8.0/doc/guide.md)
 
-<br />
 
-<br />
 
 > 文章作者：**Power Lin**  
 > 原文地址：<https://wiki-power.com>  

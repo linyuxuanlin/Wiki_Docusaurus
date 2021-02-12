@@ -74,9 +74,7 @@ SWD 的优势：
 - [JTAG/SWD Interface](https://www.keil.com/support/man/docs/ulinkplus/ulinkplus_jtagswd_interface.htm)
 - [JTAG](https://en.wikipedia.org/wiki/JTAG)
 
-<br />
 
-<br />
 
 > 文章作者：**Power Lin**  
 > 原文地址：<https://wiki-power.com>  

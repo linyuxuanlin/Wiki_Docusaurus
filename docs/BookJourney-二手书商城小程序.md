@@ -45,9 +45,7 @@ A：总利润收入：¥16.66……
 
 - [EastWorld / wechat-app-mall](https://github.com/EastWorld/wechat-app-mall)
 
-<br />
 
-<br />
 
 > 文章作者：**Power Lin**  
 > 原文地址：<https://wiki-power.com>  

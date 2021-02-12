@@ -21,9 +21,7 @@ DoChat（盒装微信）是一款适用于 Linux 桌面的容器化微信。
 
 - [huan/docker-wechat](https://github.com/huan/docker-wechat)
 
-<br />
 
-<br />
 
 > 文章作者：**Power Lin**  
 > 原文地址：<https://wiki-power.com>  
