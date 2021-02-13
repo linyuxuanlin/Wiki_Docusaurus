@@ -75,8 +75,8 @@ module.exports = {
       type: 'category',
       label: '高效工作',
       items: [
-        'Windows初始化与软件推荐',
         '为什么你需要一个知识库',
+        'Windows初始化与软件推荐',
         'Docusaurus极简部署指南',
         'Hugo极简搭建指南',
         '如何在iPad上运行VSCode',
