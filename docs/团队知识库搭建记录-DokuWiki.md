@@ -3,17 +3,6 @@ id: 团队知识库搭建记录-DokuWiki
 title: 团队知识库搭建记录 - DokuWiki
 ---
 
-## 参考与致谢
-
-- [dokuwiki 学习（一）—— 增加页面命名空间](https://blog.csdn.net/wszll_Alex/article/details/80246721)
-- [dokuwiki 学习（二）—— 新增页面（文章）](https://blog.csdn.net/wszll_Alex/article/details/80246836)
-- [dokuwiki 学习（三）—— 删除页面（文章）](https://blog.csdn.net/wszll_Alex/article/details/80252098)
-- [dokuwiki 学习（四）—— 移动页面（文章）](https://blog.csdn.net/wszll_Alex/article/details/80252132)
-- [dokuwiki 插件的常用配置及其他 Tips](https://leekwen.blog.csdn.net/article/details/54907445?utm_medium=distribute.pc_relevant_t0.none-task-blog-BlogCommendFromMachineLearnPai2-1.control&depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-BlogCommendFromMachineLearnPai2-1.control)
-- [自定义 DokuWiki](https://wiki.gimo.me/wiki/customize)
-- [Upload doesn't match extension - DokuWiki User Forum](https://forum.dokuwiki.org/d/1297-upload-doesn-t-match-extension/3)
-
-- [dokuwiki 学习（六）—— 增加媒体命名空间](https://blog.csdn.net/wszll_Alex/article/details/80252201)
 
 对比：
 
@@ -125,3 +114,15 @@ php function getimagesize(/srv/www/www.ini.unizh.ch/tmp/phpQu74yf) does not thin
 ### 批量导入用户出现乱码
 
 解决方法：使用 utf8 编码的 .csv 文件
+
+
+## 参考与致谢
+
+- [dokuwiki 学习（一）—— 增加页面命名空间](https://blog.csdn.net/wszll_Alex/article/details/80246721)
+- [dokuwiki 学习（二）—— 新增页面（文章）](https://blog.csdn.net/wszll_Alex/article/details/80246836)
+- [dokuwiki 学习（三）—— 删除页面（文章）](https://blog.csdn.net/wszll_Alex/article/details/80252098)
+- [dokuwiki 学习（四）—— 移动页面（文章）](https://blog.csdn.net/wszll_Alex/article/details/80252132)
+- [dokuwiki 插件的常用配置及其他 Tips](https://leekwen.blog.csdn.net/article/details/54907445?utm_medium=distribute.pc_relevant_t0.none-task-blog-BlogCommendFromMachineLearnPai2-1.control&depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-BlogCommendFromMachineLearnPai2-1.control)
+- [自定义 DokuWiki](https://wiki.gimo.me/wiki/customize)
+- [Upload doesn't match extension - DokuWiki User Forum](https://forum.dokuwiki.org/d/1297-upload-doesn-t-match-extension/3)
+- [dokuwiki 学习（六）—— 增加媒体命名空间](https://blog.csdn.net/wszll_Alex/article/details/80252201)
