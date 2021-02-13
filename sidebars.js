@@ -184,22 +184,25 @@ module.exports = {
   ],
 };
 
-//归档：
-//'Python学习笔记',
-//'STM32麦轮小车',
-//'RM校内赛-前期策划',
-//'报告书都要写些什么？',
-//'无人驾驶比赛',
-//'硬件模块',
-//'命令行基本操作'
-//'科技X的访谈',
-//'极简面包-烘培',
+// 归档：
+//'archive/Python学习笔记',
+//'archive/STM32麦轮小车',
+//'archive/RM校内赛-前期策划',
+//'archive/报告书都要写些什么？',
+//'archive/无人驾驶比赛',
+//'archive/硬件模块',
+//'archive/命令行基本操作'
+//'archive/科技X的访谈',
+//'archive/极简面包-烘培',
 
-//unlist:
-//'构建知识管理系统',
-//'回归博客',
-//'团队知识库搭建记录-DokuWiki',
-//'个人知识库极简搭建指南-VuePress',
-//'博客转至GitBook',
-//'浅谈Bitcron博客平台',
-//'基于docsify搭建个人Wiki',
+// 未列出文章：
+//'unlist/CentOS安装Docker',
+//'unlist/Docker方式运行code-server',
+//'unlist/T-Clock桌上小钟（旧）',
+//'unlist/构建知识管理系统',
+//'unlist/回归博客',
+//'unlist/团队知识库搭建记录-DokuWiki',
+//'unlist/个人知识库极简搭建指南-VuePress',
+//'unlist/博客转至GitBook',
+//'unlist/浅谈Bitcron博客平台',
+//'unlist/基于docsify搭建个人Wiki',
