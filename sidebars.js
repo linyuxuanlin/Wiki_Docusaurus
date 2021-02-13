@@ -36,7 +36,6 @@ module.exports = {
       type: 'category',
       label: '队务管理',
       items: [
-        //'团队公开知识库的搭建',
         '团队知识库的搭建-理论',
         '动员大会-经验总结',
         '换届大会-经验总结',
@@ -50,7 +49,6 @@ module.exports = {
       items: [
         'C与STM32常用宏定义',
         'SWD与JTAG的区别与联系',
-        //'HAL系列教程1—GPIO',
         'HAL库开发笔记（一）-环境配置',
         'HAL库开发笔记（二）-GPIO',
         'HAL库开发笔记（三）-外部中断',
@@ -60,12 +58,9 @@ module.exports = {
         'CubeMX的一些坑',
         'STM32的启动模式',
         'KeilMDK配置指南',
-        //'STM32模块设计-LED',
         '大疆N3飞控-参考资料',
         'ATTiny85调试记录',
         'T-Clock桌上小钟',
-        //'小车游华广-比赛',
-        //'麦昆小车-测评',
         '麦轮小车',
         '一个舵机的自我修养',
       ],
@@ -86,7 +81,6 @@ module.exports = {
         '用Graphviz绘制关系图',
         'RSS-高效率的阅读方式',
         '把回忆放心交给GooglePhotos',
-        
         'VSCode生产力指南-环境配置',
         'VSCode生产力指南-JupyterNotebook',
         '在浏览器上运行VSCode（旧）',
@@ -123,15 +117,12 @@ module.exports = {
         '软件开发中的注意事项',
         '专业与分工',
         '关于复盘',
-        //'智能硬件产品开发流程',
       ],
     },
     {
       type: 'category',
       label: '生活经历',
       items: [
-        //'书摘与读书笔记',
-        //'华广爬楼指北',
         '读《黑客与画家》',
         '英语六级-备考',
         '音乐相关',
@@ -167,7 +158,6 @@ module.exports = {
         '删除GitHub仓库中某个文件夹',
         '定制SublimeText3',
         '如何保存易逝的文字',
-        //'Excel批量激活链接并转为图片',
         '用Vercel加速Pages服务',
         'Doxygen注释规范',
         'AltiumDesigner安装库文件',
@@ -175,9 +165,6 @@ module.exports = {
         '如何快速制作一个启动盘',
         '使用VSCode进行远程开发',
         'Node.js和npm的安装与卸载（MacOS）',
-        //'Bash基础',
-        //'Linux基础（CentOS）',
-        //'从零搭建视觉开发环境（Docker-Linux）',
       ],
     },
 
@@ -194,6 +181,17 @@ module.exports = {
 //'archive/命令行基本操作'
 //'archive/科技X的访谈',
 //'archive/极简面包-烘培',
+
+//'archive/Bash基础',
+//'archive/Linux基础（CentOS）',
+//'archive/从零搭建视觉开发环境（Docker-Linux）',
+//'archive/Excel批量激活链接并转为图片',
+//'archive/智能硬件产品开发流程',
+//'archive/华广爬楼指北',
+//'archive/小车游华广-比赛',
+//'archive/麦昆小车-测评',
+//'archive/STM32模块设计-LED',
+//'archive/团队公开知识库的搭建',
 
 // 未列出文章：
 //'unlist/CentOS安装Docker',
