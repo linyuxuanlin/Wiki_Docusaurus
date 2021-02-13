@@ -71,6 +71,7 @@ module.exports = {
       label: '高效工作',
       items: [
         '为什么你需要一个知识库',
+        '个人知识库的搭建-基于Docusaurus',
         'Windows初始化与软件推荐',
         'Docusaurus极简部署指南',
         'Hugo极简搭建指南',
