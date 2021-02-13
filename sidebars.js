@@ -81,18 +81,12 @@ module.exports = {
         'Hugo极简搭建指南',
         '如何在iPad上运行VSCode',
         '使用Markdown进行高效写作',
-        '团队知识库搭建记录-DokuWiki',
-        '个人知识库极简搭建指南-VuePress',
         '用树莓派架设云打印服务器',
         '文章排版规范',
-        '基于docsify搭建个人Wiki',
         '用Graphviz绘制关系图',
-        '博客转至GitBook',
-        '浅谈Bitcron博客平台',
         'RSS-高效率的阅读方式',
         '把回忆放心交给GooglePhotos',
-        '构建知识管理系统',
-        '回归博客',
+        
         'VSCode生产力指南-环境配置',
         'VSCode生产力指南-JupyterNotebook',
         '在浏览器上运行VSCode（旧）',
@@ -200,3 +194,12 @@ module.exports = {
 //'命令行基本操作'
 //'科技X的访谈',
 //'极简面包-烘培',
+
+//unlist:
+//'构建知识管理系统',
+//'回归博客',
+//'团队知识库搭建记录-DokuWiki',
+//'个人知识库极简搭建指南-VuePress',
+//'博客转至GitBook',
+//'浅谈Bitcron博客平台',
+//'基于docsify搭建个人Wiki',
