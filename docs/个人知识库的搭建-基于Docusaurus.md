@@ -54,11 +54,12 @@ title: 个人知识库的搭建 - 基于 Docusaurus
 npx @docusaurus/init@latest init [name] [template]
 ```
 
-> 例如：我的网站项目文件夹的名字为 `wiki`，那就将 `wiki` 替换掉 `[name]`，而根据 [**官方文档**](https://v2.docusaurus.io/docs/installation#scaffold-project-website)， `[template]` 指的是网站模板的主题，这里我们将其替换为 `classic` 即可。所以此处我们执行的命令为：
+例如，如果我的网站项目文件夹的名字为 `wiki`，那就用 `wiki` 替换掉 `[name]`，而根据 [**官方文档**](https://v2.docusaurus.io/docs/installation#scaffold-project-website)， `[template]` 指的是网站模板的主题，这里我们将其替换为 `classic` 即可。所以此处我们执行的命令为：
+
 ```bash
 npx @docusaurus/init@latest init wiki classic
 ```
-> 我们在 VS Code 内使用快捷键 `Ctrl` + <code>`</code> 打开终端，把上面的那行代码粘贴进来并敲击回车，耐心等待加载完成。
+我们在 VS Code 内使用快捷键 `Ctrl` + <code>`</code> 打开终端，把上面的那行代码粘贴进来并敲击回车，耐心等待加载完成。
 
 当加载完成后，我们在终端内使用命令切换到网站文件夹目录：
 
@@ -91,8 +92,12 @@ npm run start
 重启 VS Code，召出终端，粘贴以下的命令初始化 Git：
 
 ```bash
-
+git config --global user.name "username"
+git config --global user.email "email@example.com"
 ```
+
+此处需要把 `"username"` 替换为你的 Git 提交用户名，推荐与刚刚在 GitHub 注册的账户名一致，例如我将其替换为 `linyuxuanlin`。`"email@example.com"` 同理，替换为 GitHub 注册的邮箱即可。
 
 
 更加详细的配置说明可以参考 [**Git 学习笔记**](https://wiki-power.com/Git%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0) 这篇文章。
+
