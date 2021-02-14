@@ -101,3 +101,8 @@ git config --global user.email "email@example.com"
 
 更加详细的配置说明可以参考 [**Git 学习笔记**](https://wiki-power.com/Git%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0) 这篇文章。
 
+### 在 VS Code 内配置项目仓库
+
+为了接下来能推送到 GitHub 服务器上，我们需要在 VS Code 内配置项目 Git 仓库，并上传到 GitHub 上。
+
+在 VS Code 
