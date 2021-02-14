@@ -22,20 +22,20 @@ title: 个人知识库的搭建 - 基于 Docusaurus
 
 ### 安装 Node.js
 
-访问 [**Node.js 官网**](https://nodejs.org/zh-cn/)，下载并安装 Node.js 。
+访问 [**Node.js 官网**](https://nodejs.org/zh-cn/)，下载并安装 Node.js。
 
 ### VS Code 的安装配置
 
 我们用 VS Code 作为本地编辑器，用于修改网站框架、编写文章。
 
-首先，到 [**VS Code 官网**](https://code.visualstudio.com/) 下载安装 VS Code 。
+首先，到 [**VS Code 官网**](https://code.visualstudio.com/) 下载安装 VS Code。
 
 软件安装完成后，我们可以选装以下两个插件：
 
 - [**Chinese (Simplified) Language Pack**](https://marketplace.visualstudio.com/items?itemName=MS-CEINTL.vscode-language-pack-zh-hans)：汉化 VS Code 界面
 - [**Markdown All in One**](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)：提供更多 Markdown 语法支持
 
-安装插件后，可能需要按提示重启 VS Code 。
+安装插件后，可能需要按提示重启 VS Code。
 
 
 更加详细的配置说明可以参考 [**VS Code 生产力指南 - 环境配置**](https://wiki-power.com/VSCode%E7%94%9F%E4%BA%A7%E5%8A%9B%E6%8C%87%E5%8D%97-%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE) 这篇文章。
@@ -109,3 +109,6 @@ git config --global user.email "email@example.com"
 
 随后，使用快捷键 `Ctrl` + `Alt` + `S` 将本地 Git 仓库推送到 GitHub（按提示登录 GitHub 账户即可）。
 
+### 使用 Vercel 云端部署网站
+
+此处 Vercel 的功能，相当于 GitHub Action 加上 GitHub Pages。
