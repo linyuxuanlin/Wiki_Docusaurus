@@ -111,4 +111,5 @@ git config --global user.email "email@example.com"
 
 ### 使用 Vercel 云端部署网站
 
-此处 Vercel 的功能，相当于 GitHub Action 加上 GitHub Pages。
+此处 Vercel 的功能，相当于 GitHub Action + GitHub Pages，即自动持续部署 + 静态网站展示。选择 Vercel 是因为其生成的静态网站，国内访问速度相比 GitHub Pages 会快很多。
+
