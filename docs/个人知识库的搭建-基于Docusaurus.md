@@ -41,8 +41,8 @@ title: 个人知识库的搭建 - 基于 Docusaurus
 
 切换到需要建立网站项目的目录。
 
-> 例如：我想要在电脑的 D 盘下建立一个名为 `Wiki` 的文件夹，作为这个知识库项目。那么请在 VS Code 内选择 `文件` - `打开文件夹`，点击 D 盘，并点击 `选择文件夹`
+> 例如：我想要在电脑的 D 盘下建立一个名为 `wiki` 的文件夹，作为这个知识库项目。那么请在 VS Code 内选择 `文件` - `打开文件夹`，点击 D 盘，并点击 `选择文件夹`
 
 使用 npx 初始化网站：`npx @docusaurus/init@latest init [name] [template]`
 
-> 例如：我的网站项目文件夹的名字为 `Wiki`，那就将 `Wiki` 替换掉 `[name]`，而根据[**官方文档**](https://v2.docusaurus.io/docs/installation#scaffold-project-website)， `[template]` 指的是网站模板的主题，这里我们替换为 `classic` 即可。
+> 例如：我的网站项目文件夹的名字为 `wiki`，那就将 `wiki` 替换掉 `[name]`，而根据[**官方文档**](https://v2.docusaurus.io/docs/installation#scaffold-project-website)， `[template]` 指的是网站模板的主题，这里我们将其替换为 `classic` 即可。所以此处我们执行的语句为 `npx @docusaurus/init@latest init wiki classic`。我们在 VS Code 内使用快捷键 `Ctrl` + `\``
