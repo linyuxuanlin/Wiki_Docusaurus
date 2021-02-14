@@ -52,3 +52,18 @@ title: 个人知识库的搭建 - 基于 Docusaurus
 
 > 例如：我的网站项目文件夹的名字为 `wiki`，那就将 `wiki` 替换掉 `[name]`，而根据 [**官方文档**](https://v2.docusaurus.io/docs/installation#scaffold-project-website)， `[template]` 指的是网站模板的主题，这里我们将其替换为 `classic` 即可。所以此处我们执行的命令为 **`npx @docusaurus/init@latest init wiki classic`**。我们在 VS Code 内使用快捷键 `Ctrl` + <code>`</code> 打开终端，把上面的那行代码粘贴进来并敲击回车，耐心等待加载完成。
 
+当加载完成后，我们在终端内使用命令切换到网站文件夹目录：
+
+```bash
+cd [name]
+```
+
+其中，`[name]` 替换为你网站项目文件夹的名字，例如在上一步我们使用的是 `wiki`。
+
+接着，执行以下命令：
+
+```bash
+npm run start
+```
+
+执行网站的本地部署。等待部署进度完成后，它会自动在浏览器打开 [**localhost:3000**](localhost:3000) 页面，如果一切顺利，你可以看到网站已经成功生成。
