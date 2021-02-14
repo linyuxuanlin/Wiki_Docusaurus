@@ -3,20 +3,13 @@ id: 个人知识库的搭建-基于Docusaurus
 title: 个人知识库的搭建 - 基于 Docusaurus
 ---
 
-【施工中】
-
-## 参考与致谢 
-
-
-> 文章作者：**Power Lin**  
-> 原文地址：<https://wiki-power.com>  
-> 版权声明：文章采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh) 协议，转载请注明出处。
+本篇文章将基于 Docusaurus 框架，对知识库的搭建展开详细讲解。
 
 准备条件：
+
 - 科学上网
 - 随机应变的能力
 - 一点儿英语基础
-
 
 ## 配置本地环境
 
@@ -37,10 +30,7 @@ title: 个人知识库的搭建 - 基于 Docusaurus
 
 安装插件后，可能需要按提示重启 VS Code。
 
-
 更加详细的配置说明可以参考 [**VS Code 生产力指南 - 环境配置**](https://wiki-power.com/VSCode%E7%94%9F%E4%BA%A7%E5%8A%9B%E6%8C%87%E5%8D%97-%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE) 这篇文章。
-
-
 
 ### 安装 Docusaurus 框架
 
@@ -59,6 +49,7 @@ npx @docusaurus/init@latest init [name] [template]
 ```bash
 npx @docusaurus/init@latest init wiki classic
 ```
+
 我们在 VS Code 内使用快捷键 `Ctrl` + <code>`</code> 打开终端，把上面的那行代码粘贴进来并敲击回车，耐心等待加载完成。
 
 当加载完成后，我们在终端内使用命令切换到网站文件夹目录：
@@ -98,7 +89,6 @@ git config --global user.email "email@example.com"
 
 此处需要把 `"username"` 替换为你的 Git 提交用户名，推荐与刚刚在 GitHub 注册的账户名一致，例如我将其替换为 `linyuxuanlin`。`"email@example.com"` 同理，替换为 GitHub 注册的邮箱即可。
 
-
 更加详细的配置说明可以参考 [**Git 学习笔记**](https://wiki-power.com/Git%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0) 这篇文章。
 
 ### 在 VS Code 内配置项目仓库
@@ -113,3 +103,16 @@ git config --global user.email "email@example.com"
 
 此处 Vercel 的功能，相当于 GitHub Action + GitHub Pages，即自动持续部署 + 静态网站展示。选择 Vercel 是因为其生成的静态网站，国内访问速度相比 GitHub Pages 会快很多。
 
+首先，直接访问 [**Vercel 的 GitHub 登录页面**](https://github.com/login?client_id=Iv1.9d7d662ea00b8481&return_to=%2Flogin%2Foauth%2Fauthorize%3Fclient_id%3DIv1.9d7d662ea00b8481%26scope%3Dread%253Auser%252Cuser%253Aemail%26state%3DFdx6thivZ89LeAihPfRiiYf9) ，使用 GitHub 账户注册 Vercel 账户。
+
+完成之后，点击网页上的 `New Project`，导入 GitHub 响应的仓库（例如我们之前建立的 `wiki` 仓库），此处可能需要根据提示，再进行一次 GitHub 的登录。导入之后，一路点击 `Next` 继续，很快网站就能部署成功了。
+
+### 配置域名绑定
+
+【TODO】
+
+## 参考与致谢
+
+> 文章作者：**Power Lin**  
+> 原文地址：<https://wiki-power.com>  
+> 版权声明：文章采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh) 协议，转载请注明出处。
