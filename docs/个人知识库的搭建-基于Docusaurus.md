@@ -107,3 +107,4 @@ git config --global user.email "email@example.com"
 
 在 VS Code 内使用快捷键 `Ctrl` + `Shift` + `G` 切换到源代码管理界面，初始化项目 Git 仓库，并作出首次提交。
 
+随后，使用快捷键 `Ctrl` + `Alt` + `S` 将本地 Git 仓库推送到 GitHub。
