@@ -105,4 +105,5 @@ git config --global user.email "email@example.com"
 
 为了接下来能推送到 GitHub 服务器上，我们需要在 VS Code 内配置项目 Git 仓库，并上传到 GitHub 上。
 
-在 VS Code 
+在 VS Code 内使用快捷键 `Ctrl` + `Shift` + `G` 切换到源代码管理界面，初始化项目 Git 仓库，并作出首次提交。
+
