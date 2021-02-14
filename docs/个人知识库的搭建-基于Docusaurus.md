@@ -50,4 +50,5 @@ title: 个人知识库的搭建 - 基于 Docusaurus
 
 使用 npx 初始化网站：`npx @docusaurus/init@latest init [name] [template]`
 
-> 例如：我的网站项目文件夹的名字为 `wiki`，那就将 `wiki` 替换掉 `[name]`，而根据[**官方文档**](https://v2.docusaurus.io/docs/installation#scaffold-project-website)， `[template]` 指的是网站模板的主题，这里我们将其替换为 `classic` 即可。所以此处我们执行的语句为 **`npx @docusaurus/init@latest init wiki classic`**。我们在 VS Code 内使用快捷键 `Ctrl` + `\``
+> 例如：我的网站项目文件夹的名字为 `wiki`，那就将 `wiki` 替换掉 `[name]`，而根据 [**官方文档**](https://v2.docusaurus.io/docs/installation#scaffold-project-website)， `[template]` 指的是网站模板的主题，这里我们将其替换为 `classic` 即可。所以此处我们执行的命令为 **`npx @docusaurus/init@latest init wiki classic`**。我们在 VS Code 内使用快捷键 `Ctrl` + <code>`</code>
+
