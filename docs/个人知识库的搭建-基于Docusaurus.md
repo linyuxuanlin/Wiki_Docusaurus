@@ -22,13 +22,13 @@ title: 个人知识库的搭建 - 基于 Docusaurus
 
 ### 安装 Node.js
 
-访问 [**Node.js 官网**](https://nodejs.org/zh-cn/)，下载并安装 Node.js.
+访问 [**Node.js 官网**](https://nodejs.org/zh-cn/)，下载并安装 Node.js。
 
 ### VS Code 的安装配置
 
 我们用 VS Code 作为本地编辑器，用于修改网站框架、编写文章。
 
-首先，到 [**VS Code 官网**](https://code.visualstudio.com/) 下载安装 VS Code.
+首先，到 [**VS Code 官网**](https://code.visualstudio.com/) 下载安装 VS Code。
 
 软件安装完成后，我们可以选装以下两个插件：
 
@@ -107,4 +107,5 @@ git config --global user.email "email@example.com"
 
 在 VS Code 内使用快捷键 `Ctrl` + `Shift` + `G` 切换到源代码管理界面，初始化项目 Git 仓库，并作出首次提交。
 
-随后，使用快捷键 `Ctrl` + `Alt` + `S` 将本地 Git 仓库推送到 GitHub。
+随后，使用快捷键 `Ctrl` + `Alt` + `S` 将本地 Git 仓库推送到 GitHub（按提示登录 GitHub 账户即可）。
+
