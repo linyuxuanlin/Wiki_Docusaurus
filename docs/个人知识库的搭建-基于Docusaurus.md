@@ -110,7 +110,9 @@ git config --global user.email "email@example.com"
 
 ## 总结
 
-这篇文章我们实现了基于 Docusaurus 的知识库的本地和云端部署。下一篇文章中，我将对个性化的配置做详细的讲解。【待更新】
+这篇文章我们实现了基于 Docusaurus 的知识库的本地和云端部署。本文的过程中如果遇到问题，可以联系我 [**微信**](https://wiki-power.com/WeChat) 反馈。在下一篇文章【待更新】中，我将对个性化的配置做详细的讲解。
+
+
 
 
 ## 参考与致谢
