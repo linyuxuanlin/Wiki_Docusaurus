@@ -14,7 +14,7 @@ title: 用 Vercel 加速 Pages 服务
 - 提供 Google Cloud 与 AWS 节点，有香港与台湾节点，国内访问速度还可以
 - 免费额度有 20 GB，够用
 - 不限站点与 Serverless API 数量
-- Serverless 支持 Node.js, Go, Python, Ruby
+- Serverless 支持 Node.js，Go，Python，Ruby
 - 支持 now.sh CLI，GitHub，GitLab，Bitbucket 导入 / 部署
 
 ## 用法

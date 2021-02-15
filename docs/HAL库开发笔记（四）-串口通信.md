@@ -31,8 +31,8 @@ title: HAL 库开发笔记（四）- 串口通信
 
 ### 同步和异步
 
-- **同步通信**：带时钟同步信号传输。例如 SPI, IIC 等通信接口。
-- **异步通信**：不带时钟同步信号。例如 UART, 单总线。
+- **同步通信**：带时钟同步信号传输。例如 SPI，IIC 等通信接口。
+- **异步通信**：不带时钟同步信号。例如 UART，单总线。
 
 ### USART 和 UART 
 
@@ -54,7 +54,7 @@ USART 是 UART 的升级版，区别在于多了 CLK 线，在 CLK 没有信号�
 
 ![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20210207100329.png)
 
-根据原理图，我们用来进行通讯实验的串口是 `USART1` , 即 `PA9` `PA10` 引脚。那么，我们首先需要在 CubeMX 内将这两个引脚配置为 `USART1` 的发送和接受功能，然后点击左侧 USART1 标签页，将模式（Mode）设为异步（Asynchronous），并在下方修改波特率（Baud Rate）等参数：
+根据原理图，我们用来进行通讯实验的串口是 `USART1` ，即 `PA9` `PA10` 引脚。那么，我们首先需要在 CubeMX 内将这两个引脚配置为 `USART1` 的发送和接受功能，然后点击左侧 USART1 标签页，将模式（Mode）设为异步（Asynchronous），并在下方修改波特率（Baud Rate）等参数：
 
 ![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20210207100941.png)
 

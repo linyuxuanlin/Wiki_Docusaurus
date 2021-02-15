@@ -39,13 +39,13 @@ services:
     restart: unless-stopped
 ```
 
-在这个 `yaml` 文件中，定义了两个服务：web 和 database, 一个服务在运行时对应一个容器的实例， 上面的文件表示要启动两个实例。
+在这个 `yaml` 文件中，定义了两个服务：web 和 database，一个服务在运行时对应一个容器的实例， 上面的文件表示要启动两个实例。
 
 ## 安装 Docker Compose
 
 ### 前提
 
-Docker Compose 依赖 Docker Engine, 所以请先确保你已经安装了 Docker Engine 环境。如果你还没安装，可以参考上一篇教程：[**Docker 简易指南**](https://wiki-power.com/Docker%E7%AE%80%E6%98%93%E6%8C%87%E5%8D%97) 安装 Docker Engine.
+Docker Compose 依赖 Docker Engine，所以请先确保你已经安装了 Docker Engine 环境。如果你还没安装，可以参考上一篇教程：[**Docker 简易指南**](https://wiki-power.com/Docker%E7%AE%80%E6%98%93%E6%8C%87%E5%8D%97) 安装 Docker Engine.
 
 如果你用的是 Windows 和 MacOS 的桌面客户端，那就不用另外安装 Docker Compose 了，因为已经包含在 Docker Desktop 内了。
 

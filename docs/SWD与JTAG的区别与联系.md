@@ -14,7 +14,7 @@ title: SWD 与 JTAG 的区别与联系
 
 ## JTAG
 
-JTAG, 全名为 Joint Test Action Group（联合测试行动小组）。截至本文最新的标准为 IEEE Standard 1149.1-1990.
+JTAG，全名为 Joint Test Action Group（联合测试行动小组）。截至本文最新的标准为 IEEE Standard 1149.1-1990.
 
 其拓扑图（菊花链）如下：
 
@@ -70,7 +70,7 @@ SWD 的优势：
 ## 参考与致谢 
 
 - [下载调试接口 SWD 和 JTAG 的区别](https://mp.weixin.qq.com/s/MW57t266yvv6TOweeFEUVA)
-- [Cortex JTAG, SWD Debug Port Sharing](https://southlife.tistory.com/107)
+- [Cortex JTAG，SWD Debug Port Sharing](https://southlife.tistory.com/107)
 - [JTAG/SWD Interface](https://www.keil.com/support/man/docs/ulinkplus/ulinkplus_jtagswd_interface.htm)
 - [JTAG](https://en.wikipedia.org/wiki/JTAG)
 

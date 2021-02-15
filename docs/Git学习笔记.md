@@ -32,7 +32,7 @@ git config --global user.email "email@example.com"
 
 - 查看修改（仅文件在工作区时可以使用）：`git diff`
 - 查看仓库状态：`git status`
-- 查看提交历史（按照提交顺序）：`git log` , 按 `q` 退出
+- 查看提交历史（按照提交顺序）：`git log` ，按 `q` 退出
 - 查看命令历史（所有提交记录）：`git reflog`
 
 ## 远程仓库
@@ -87,11 +87,11 @@ git config --global user.email "email@example.com"
 
 借助 GitHub 平台，我们可以发现丰富多彩的开源项目，并于全世界的开发者一起搭建开源世界。  
 当我们发现了一个优秀的开源项目，可以先 Fork 到自己的 GitHub 账户下（这样才拥有读写权限），然后再通过 SSH 克隆到本地进行开发。  
-开发完成后，可以在 GitHub 上发起一个 pull request, 如果原项目所有者觉得你的修改合适，那么将并入原有的开源项目中。
+开发完成后，可以在 GitHub 上发起一个 pull request，如果原项目所有者觉得你的修改合适，那么将并入原有的开源项目中。
 
 ### GitHub CLI
 
-GitHub CLI 是 GitHub 的命令行工具，将 pull requests, issues 等功能搬到命令行使用。  
+GitHub CLI 是 GitHub 的命令行工具，将 pull requests，issues 等功能搬到命令行使用。  
 下载地址：[**cli.github.com**](https://cli.github.com/)  
 GitHub CLI 目前正处于 Beta 版本，值得一试。
 

@@ -15,7 +15,7 @@ Jupyter Notebook 是一个很强大的工具，它允许我们在一个文档环
 ## 环境配置
 
 众所周知，Jupyter Notebooks 依赖 Python 环境。  
-为了确认你是否拥有 Python 环境，在 VS Code 命令面板（`Ctrl + Shift + P`）内键入 **Python: Select Interpreter**, 如果看到有可以选择的 Python 版本，那就没问题。
+为了确认你是否拥有 Python 环境，在 VS Code 命令面板（`Ctrl + Shift + P`）内键入 **Python: Select Interpreter**，如果看到有可以选择的 Python 版本，那就没问题。
 
 如果没有 Python 环境，可以通过以下方法安装：
 

@@ -32,7 +32,7 @@ title: Windows 初始化与软件推荐
 
 - [**DiskDenius**](https://www.diskgenius.cn/download.php)
   - 预留 10 GB 空闲（SSD）
-  - NTFS, 4096 扇区（4k 对齐）
+  - NTFS，4096 扇区（4k 对齐）
 - [**Chrome**](https://www.google.cn/chrome/)：浏览器
   - 设为默认浏览器
   - 更改下载位置
@@ -41,7 +41,7 @@ title: Windows 初始化与软件推荐
   - 激活 Windows
   - 关闭 Windows Defender
 - Outsite & V2
-  - 下载 N 和 core, 将 core 内文件覆盖到 N 目录下
+  - 下载 N 和 core，将 core 内文件覆盖到 N 目录下
   - 设置开机启动
 - [**Logitech Options**](https://www.logitech.com.cn/zh-cn/product/options)：罗技鼠标专用（自动弹出下载安装）
 - [**微信**](https://pc.weixin.qq.com/?t=win_weixin&lang=zh_CN)

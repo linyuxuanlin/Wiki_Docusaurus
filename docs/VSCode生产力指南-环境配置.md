@@ -49,7 +49,7 @@ title: VS Code 生产力指南 - 环境配置
 ### Markdown
 
 - [**Markdown All in One**](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)：提供更强大的 Markdown 语法支持
-- [**Markdown Paste Image**](https://marketplace.visualstudio.com/items?itemName=onesdev.vscode-paste-image-plus)：将图片粘贴到 Markdown, 并拷贝至 /res 文件夹内
+- [**Markdown Paste Image**](https://marketplace.visualstudio.com/items?itemName=onesdev.vscode-paste-image-plus)：将图片粘贴到 Markdown，并拷贝至 /res 文件夹内
 - [**Pangu-Markdown**](https://marketplace.visualstudio.com/items?itemName=xlthu.Pangu-Markdown)：规范 Markdown 格式（中英文间加空格、替换规范标点等）
   - **配置项**：启用保存时自动格式化
 - [**vscode-pandoc**](https://marketplace.visualstudio.com/items?itemName=DougFinke.vscode-pandoc)：增加 Pandoc 支持，将 Markdown 导出为 PDF/Word/HTML 等格式
@@ -132,7 +132,7 @@ git config --global credential.helper store
 
 ## 总结
 
-以上为 VS Code 基本的环境配置，下一篇将详细讨论 Git, Jupyter NoteBook 及用户代码片段等操作方法，敬请期待。
+以上为 VS Code 基本的环境配置，下一篇将详细讨论 Git，Jupyter NoteBook 及用户代码片段等操作方法，敬请期待。
 
 ### 参考链接
 
