@@ -107,9 +107,11 @@ git config --global user.email "email@example.com"
 
 完成之后，点击网页上的 `New Project`，导入 GitHub 响应的仓库（例如我们之前建立的 `wiki` 仓库），此处可能需要根据提示，再进行一次 GitHub 的登录。导入之后，一路点击 `Next` 继续，很快网站就能部署成功了。
 
-### 配置域名绑定
 
-【TODO】
+## 总结
+
+这篇文章我们实现了基于 Docusaurus 的知识库的本地和云端部署。下一篇文章中，我将对个性化的配置做详细的讲解。【待更新】
+
 
 ## 参考与致谢
 
