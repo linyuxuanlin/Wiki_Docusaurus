@@ -119,10 +119,10 @@ int fputc(int ch,FILE *f)
 图片的格式仅仅比链接多加了个 `!` 符号，例如：
 
 ```markdown
-![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20210216121722.png)
+![](https://cdn.jsdelivr.net/gh/linyuxuanlin/Wiki-WildWolf/static/uploads/b944219198103ea09f0f02bcb830e9b.png)
 ```
 
-![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20210216121722.png)
+![](https://cdn.jsdelivr.net/gh/linyuxuanlin/Wiki-WildWolf/static/uploads/b944219198103ea09f0f02bcb830e9b.png)
 
 注：图片可不加显示文字，即 `[ ]` 内可留空。
 
@@ -190,47 +190,75 @@ int fputc(int ch,FILE *f)
       - 子子项
 2. 列表项二
 
-
 ### 表格
+
+使用 `|` 符号来分隔不同的单元格，使用 `-` 符号来分隔表头和其他行：
+
+```markdown
+| name       | age |
+| ---------- | --- |
+| LearnShare | 12  |
+| Mike       | 32  |
+```
+
+| name       | age |
+| ---------- | --- |
+| LearnShare | 12  |
+| Mike       | 32  |
+
+若想对齐表格中的列，可以使用 `:` 符号：
+
+- `:---` 或 `---` 代表左对齐
+- `:--:` 代表居中对齐
+- `---:` 代表右对齐
+
+```markdown
+|    name    | age |
+| :--------: | --: |
+| LearnShare |  12 |
+|    Mike    |  32 |
+```
+
+|    name    | age |
+| :--------: | --: |
+| LearnShare |  12 |
+|    Mike    |  32 |
 
 ### 分割线
 
----
+你可以用 `---` 符号生成分割线，以分隔不同内容的文段：
 
-## 分割线
-
-用法：
-
-```
+```markdown
 ---
 ```
 
-效果：
-
----
-
-## 列表
-
-```
-有序列表
-1. 列表项1
-2. 列表项2
-3. 列表项3
-```
+![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20210216123630.png)
 
 ## 高级用法
 
 ### 段落与分行
 
-Markdown 以前后空行来区分段落。如果单纯要换行，只需在句末加两个空格后回车即可。
+在 Markdown 中，请以前后各空一行，来区分不同的段落。  
+同一段落内的换行，只需在句末加两个空格即可。
 
-【施工中】
+### 导出其他格式
+
+如需要导出 PDF，Word，图片等格式，可以使用 Pandoc 来实现。  
+如果你使用的是 VS Code，可以直接使用 [**Markdown PDF**](https://marketplace.visualstudio.com/items?itemName=yzane.markdown-pdf) 以导出 PDF 文档。
+
+### 用 Markdown 写公众号文章
+
+微信公众号用的是富文本编辑器，我们可以使用网页工具 [**MD2WeChat**](https://md2wechat.wiki-power.com/) 对 Markdown 进行解析渲染，并粘贴至公众号编辑器内。
+
+详情请参考 [**使用 Markdown 进行高效写作**](https://wiki-power.com/%E5%A6%82%E4%BD%95%E7%94%A8Markdown%E5%86%99%E5%85%AC%E4%BC%97%E5%8F%B7%E6%96%87%E7%AB%A0) 这篇文章。
 
 ## 参考与致谢
 
 - [个人 Markdown 编辑方法](https://sinnammanyo.cn/About-Markdown/)
 - [高效写作方式 Markdown，让你彻底摆脱排版的困扰](https://zhuanlan.zhihu.com/p/41893875)
 - [younghz/Markdown](https://github.com/younghz/Markdown)
+- [Learning-Markdown (Markdown 入门参考)](https://xianbai.me/learn-md/index.html)
+- [基本撰写和格式语法](https://docs.github.com/cn/github/writing-on-github/basic-writing-and-formatting-syntax)
 
 > 文章作者：**Power Lin**  
 > 原文地址：<https://wiki-power.com>  

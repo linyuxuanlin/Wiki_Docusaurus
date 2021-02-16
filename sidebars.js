@@ -141,6 +141,7 @@ module.exports = {
       type: 'category',
       label: '小技巧',
       items: [
+        '如何用Markdown写公众号文章',
         '如何快速删除node_modules',
         '如何为公众号文章增加特效',
         '如何在Linux下使用微信',
