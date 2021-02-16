@@ -8,7 +8,9 @@ title: 如何用 Markdown 写公众号文章
 
 我们都知道，微信公众号用的是富文本编辑器，是无法直接解析 Markdown 语法的。但我们可以自己先将 Markdown 解析为富文本，再粘贴进公众号文章的编辑界面。
 
-[**MD2WeChat**](https://md2wechat.wiki-power.com/) 是我根据开源项目 lyricat/wechat-format 定制的一个网页工具，可以很方便地将 Markdown 语法解析为富文本：
+## MD2WeChat
+
+[**MD2WeChat**](https://md2wechat.wiki-power.com/) 是我根据开源项目 [lyricat/wechat-format](https://github.com/lyricat/wechat-format) 定制的一个网页工具，可以很方便地将 Markdown 语法解析为富文本：
 
 [![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20210216125752.png)](https://md2wechat.wiki-power.com/)
 
