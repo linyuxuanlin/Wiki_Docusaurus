@@ -15,7 +15,7 @@ title: 使用 Markdown 进行高效写作
 
 ## 工具
 
-首先，你需要一个支持 Markdown 的编辑器，我推荐使用 VS Code 或 Typora。
+首先，你需要一个支持 Markdown 的编辑器，我推荐使用 VS Code 或 Typora。  
 软件的安装配置，可以参考我写过的教程：[**VS Code 生产力指南 - 环境配置**](https://wiki-power.com/VSCode生产力指南-环境配置)
 
 ## 常用语法
