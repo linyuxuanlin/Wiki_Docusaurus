@@ -114,6 +114,18 @@ int fputc(int ch,FILE *f)
 
 本站点是使用 [Docusaurus](https://v2.docusaurus.io/) 构建的。
 
+### 图片
+
+图片的格式仅仅比链接多加了个 `!` 符号，例如：
+
+```markdown
+![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20210216121722.png)
+```
+
+![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20210216121722.png)
+
+注：图片可不加显示文字，即 `[ ]` 内可留空。
+
 ### 列表
 
 #### 无序列表
@@ -178,7 +190,6 @@ int fputc(int ch,FILE *f)
       - 子子项
 2. 列表项二
 
-### 图片
 
 ### 表格
 
