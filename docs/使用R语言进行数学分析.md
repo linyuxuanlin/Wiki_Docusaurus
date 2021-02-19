@@ -185,16 +185,64 @@ In sqrt(−1) : NaNs produced
 [1] "Sam has 100 dollars"
 ```
 
-如果要从字符串中提取子串，可以使用函数 `substr`：（示例中把第 `3` 到第 `12` 个字符之间的字符截取了下来）
+如果要从字符串中提取子串，可以使用函数 `substr`（示例中把第 `3` 到第 `12` 个字符之间的字符截取了下来）：
 
 ```r
-> substr("Mary has a little lamb.", start=3, stop=12) 
+> substr("Mary has a little lamb.", start=3, stop=12)
 [1] "ry has a l"
 ```
 
-如果要把第一个遇见的字符替换成另外一个，可以使用函数 `sub`：（示例中把 `little` 替换成了 `big`）
+如果要把第一个遇见的字符替换成另外一个，可以使用函数 `sub`（示例中把 `little` 替换成了 `big`）：
 
 ```r
-> sub("little", "big", "Mary has a little lamb.") 
+> sub("little", "big", "Mary has a little lamb.")
 [1] "Mary has a big lamb."
 ```
+
+## 向量
+
+### R 语言中的向量
+
+向量是一个包含相同类型元素的数组，向量中的成员被官方称为 components。
+
+以下是一个示例向量（包含三个数值变量 `2` `3` `5`）：
+
+```r
+> c(2, 3, 5)
+[1] 2 3 5
+```
+
+也可以全部由逻辑型构成：
+
+```r
+> c(TRUE, FALSE, TRUE, FALSE, FALSE)
+[1] TRUE FALSE TRUE FALSE FALSE
+```
+
+也可以由字符型构成：
+
+```r
+> c("aa", "bb", "cc", "dd", "ee")
+[1] "aa" "bb" "cc" "dd" "ee"
+```
+
+如果想知道一个向量内有多少个成员，可以使用函数 `length`：
+
+```r
+> length(c("aa", "bb", "cc", "dd", "ee"))
+[1] 5
+```
+
+### 合并向量
+
+如果要合并两个向量，可以使用函数 `c`：
+
+```r
+> n = c(2, 3, 5)
+> s = c("aa", "bb", "cc", "dd", "ee")
+> c(n, s)
+[1] "2"  "3"  "5"  "aa" "bb" "cc" "dd" "ee"
+```
+
+注意在上面的例子中，如果合并两个不同数据类型的向量，那合并后的类型将会是向下兼容的（即将比较严格的类型，进行强制类型转换为比较宽松的类型，例如将数值型变成字符型）
+
