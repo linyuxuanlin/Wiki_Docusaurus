@@ -41,6 +41,7 @@ title: AMRE（一）- 环境配置
 R 语言的数据类型，主要有这几种：
 
 - **数值型（numerics）**：例如 1，2.5
+- **复数型（complex）**
 - **逻辑判断（logical）**：TRUE/FALSE
 - **字符型（characters）**
 - **因子（factors）**
@@ -110,4 +111,40 @@ R 语言像 C 语言一样，把整数 `1` `0` 与逻辑 `TRUE` `FALSE`对应了
 [1] 1 
 > as.integer(FALSE)   # FALSE 的数值型变量 
 [1] 0
+```
+
+### 复数型（complex）
+
+在 R 语言中，复数变量通过 `i` 来定义：
+
+
+```r
+> z = 1 + 2i     # 创建一个复数变量 z
+> z              # 输出 z 的值
+[1] 1+2i 
+> class(z)       # 输出 z 的类型
+[1] "complex"
+```
+
+如果我们单纯对 `-1` 开方，那将会出错：
+
+```r
+> sqrt(−1)       # 对 -1 开方
+[1] NaN 
+Warning message: 
+In sqrt(−1) : NaNs produced
+```
+
+但是对复数 `−1+0i` 开方，那就没问题：
+
+```r
+> sqrt(−1+0i)    # 对 −1+0i 开方
+[1] 0+1i
+```
+
+也可以用强制类型转换来进行运算：
+
+```r
+> sqrt(as.complex(−1)) 
+[1] 0+1i
 ```
