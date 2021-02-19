@@ -1,30 +1,7 @@
 ---
-id: AMRE（一）-环境配置
-title: AMRE（一）- 环境配置
+id: 使用R语言进行数学分析
+title: 使用 R 语言进行数学分析
 ---
-
-## 参考与致谢 
-
-- [零基础学 R 语言](https://bookdown.org/qiyuandong/intro_r/)
-
-> 文章作者：**Power Lin**  
-> 原文地址：<https://wiki-power.com>  
-> 版权声明：文章采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh) 协议，转载请注明出处。
-
-
-
-
-## 教学资源
-
-### 在线资源（推荐）
-
-- [R-tutorial](http://www.r-tutor.com/r-introduction)
-
-### 书籍
-
-- [The R-book](https://www.cs.upc.edu/~robert/teaching/estadistica/TheRBook.pdf)
-- [R for Data Science](https://r4ds.had.co.nz/index.html)
-
 
 
 ## 软件安装
@@ -35,6 +12,22 @@ title: AMRE（一）- 环境配置
 - [**RStudio**](https://rstudio.com/products/rstudio/download/#download)
   - 直接点击蓝色的 `Download` 按钮，或者在页面下方选择其他系统版本下载。下载软件后请自行完成安装。
 
+## 教学资源
+
+### 在线资源（推荐）
+
+- [R-tutorial](http://www.r-tutor.com/r-introduction)
+- [零基础学 R 语言](https://bookdown.org/qiyuandong/intro_r/)
+
+### 书籍
+
+- [The R-book](https://www.cs.upc.edu/~robert/teaching/estadistica/TheRBook.pdf)
+- [R for Data Science](https://r4ds.had.co.nz/index.html)
+
+
+
+
+
 
 ## 基本数据类型
 
@@ -42,7 +35,7 @@ R 语言的数据类型，主要有这几种：
 
 - **数值型（numerics）**：例如 1，2.5
 - **复数型（complex）**
-- **逻辑判断（logical）**：TRUE/FALSE
+- **逻辑型（logical）**：TRUE/FALSE
 - **字符型（characters）**
 - **因子（factors）**
 
@@ -147,4 +140,29 @@ In sqrt(−1) : NaNs produced
 ```r
 > sqrt(as.complex(−1)) 
 [1] 0+1i
+```
+
+### 逻辑型（logical）
+
+逻辑型通常通过比较变量而产生：
+
+```r
+> x = 1; y = 2   # 样本变量 
+> z = x > y      # x 比 y 大吗？
+> z              # 输出逻辑变量
+[1] FALSE 
+> class(z)       # 输出 z 的类型
+[1] "logical"
+```
+
+基本逻辑操作有 `&`（与），`|`（或）, `!`（非）：
+
+```r
+> u = TRUE; v = FALSE 
+> u & v          # 对 u，v 进行 "与" 运算 
+[1] FALSE 
+> u | v          # 对 u，v 进行 "或" 运算 
+[1] TRUE 
+> !u             # 对 u 进行 "非" 运算 
+[1] FALSE
 ```
