@@ -93,7 +93,7 @@ module.exports = {
       type: 'category',
       label: '软件开发',
       items: [
-        '使用R语言进行数学分析',
+        '使用R语言进行数据分析',
         'CSS学习笔记',
         'HTML学习笔记',
         'JavaScript学习笔记',
