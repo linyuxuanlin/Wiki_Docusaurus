@@ -5,7 +5,7 @@ title: Git 配置代理
 
 ## 问题来源
 
-`git clone` 与 `git pull` 速度太慢。
+国内 `git clone` 与 `git pull` 速度太慢。
 
 ## 解决方法
 
@@ -18,16 +18,16 @@ title: Git 配置代理
 ### 2. 给 Git 全局配置 http 代理
 
 ```bash
-git config --global http.proxy http://127.0.0.1: 端口号
-git config --global https.proxy https://127.0.0.1: 端口号
+git config --global http.proxy http://127.0.0.1:【端口号】
+git config --global https.proxy https://127.0.0.1:【端口号】
 
 # 如果上面的不生效，则用：
-git config --global http.proxy 'socks5://127.0.0.1: 端口号'
-git config --global https.proxy 'socks5://127.0.0.1: 端口号'
+git config --global http.proxy 'socks5://127.0.0.1:【端口号】'
+git config --global https.proxy 'socks5://127.0.0.1:【端口号】'
 
 # 如果只对 GitHub 进行代理，对国内的仓库不影响（不熟悉配置文件不建议使用）：
-git config --global http.https://github.com.proxy https://127.0.0.1:1080
-git config --global https.https://github.com.proxy https://127.0.0.1:1080
+git config --global http.https://github.com.proxy https://127.0.0.1:【端口号】
+git config --global https.https://github.com.proxy https://127.0.0.1:【端口号】
 
 # 只对 GitLab 进行代理，对国内的仓库不影响（不熟悉配置文件不建议使用）：
 git config --global https.https://https://gitlab.com.proxy https://127.0.0.1:1080
