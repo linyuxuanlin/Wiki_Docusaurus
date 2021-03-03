@@ -142,6 +142,7 @@ module.exports = {
       type: 'category',
       label: '小技巧',
       items: [
+        '如何使用gitignore忽略特殊文件',
         '3D打印：ABS与PLA的区别',
         '如何批量拉取Git仓库更新',
         '如何用Markdown写公众号文章',
