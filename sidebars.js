@@ -71,6 +71,7 @@ module.exports = {
       label: '高效工作',
       items: [
         '为什么你需要一个知识库',
+        '个人文案排版规范',
         '个人知识库的搭建-基于Docusaurus',
         'Windows初始化与软件推荐',
         'Docusaurus极简部署指南',
@@ -78,7 +79,6 @@ module.exports = {
         '如何在iPad上运行VSCode',
         '使用Markdown进行高效写作',
         '用树莓派架设云打印服务器',
-        '文章排版规范',
         '用Graphviz绘制关系图',
         'RSS-高效率的阅读方式',
         '把回忆放心交给GooglePhotos',
