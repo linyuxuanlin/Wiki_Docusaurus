@@ -123,8 +123,9 @@ module.exports = {
     },
     {
       type: 'category',
-      label: '生活经历',
+      label: '生活',
       items: [
+        '如何品尝一杯鸡尾酒',
         '读《黑客与画家》',
         '英语六级-备考',
         '音乐相关',
