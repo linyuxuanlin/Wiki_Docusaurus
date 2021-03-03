@@ -1,6 +1,6 @@
 ---
-id: 如何使用gitignore忽略特殊文件
-title: 如何使用 gitignore 忽略特殊文件
+id: 使用gitignore忽略特殊文件
+title: 使用 gitignore 忽略特殊文件
 ---
 
 
