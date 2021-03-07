@@ -43,7 +43,7 @@ title: Windows 初始化与软件推荐
   - 下载 N 和 core，将 core 内文件覆盖到 N 目录下
   - 设置开机启动
 - [**Logitech Options**](https://www.logitech.com.cn/zh-cn/product/options)：罗技鼠标专用（自动弹出下载安装）
-- [**微信**](https://pc.weixin.qq.com/?t=win_weixin&lang=zh_CN)
+- [**微信（测试版）**](https://dldir1.qq.com/weixin/Windows/Beta/WeChatBeta.exe)
   - 使用系统默认浏览器打开网页
 - [**火绒安全**](https://www.huorong.cn/)
 - [**GitHub Desktop**](https://desktop.github.com)
