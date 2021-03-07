@@ -11,10 +11,10 @@ title: Windows 初始化与软件推荐
 
 - 不使用微软账户初始化
 - 开启诊断（预览版系统需要）
+- [激活 Windows](https://bobi.site/archives/57)
 - 更新系统、驱动
 - 用户账户控制设置：设为从不通知
 - 定制任务栏
-- 激活 Windows：[**HEU_KMS_Activator**](https://github.com/zbezj/HEU_KMS_Activator)
 - 登录 Microsoft 账户
 - [**卓越性能**](https://bobi.site/archives/875)
 - 设置 - 更新和安全 - 开发者选项 - 开启开发人员模式
