@@ -30,15 +30,14 @@ title: Windows 初始化与软件推荐
 
 ## 必装软件
 
-- [**DiskDenius**](https://www.diskgenius.cn/download.php)
+- [**DiskDenius**](https://www.diskgenius.cn/download.php)：磁盘工具
   - 预留 10 GB 空闲（SSD）
   - NTFS，4096 扇区（4k 对齐）
 - [**Chrome**](https://www.google.cn/chrome/)：浏览器
   - 设为默认浏览器
-  - 更改下载位置
   - 同步账户
 - [**KMS**](https://github.com/linyuxuanlin/File-host/tree/main/software/KMS.exe)：
-  - 激活 Windows
+  - 激活 Windows（已失效）
   - 关闭 Windows Defender
 - Outsite & V2
   - 下载 N 和 core，将 core 内文件覆盖到 N 目录下
