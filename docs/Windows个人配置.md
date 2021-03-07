@@ -11,7 +11,7 @@ title: Windows 初始化与软件推荐
 
 - 不使用微软账户初始化
 - 开启诊断（预览版系统需要）
-- [激活 Windows](https://bobi.site/archives/57)
+- 激活 Windows：[**HEU_KMS_Activator**](https://github.com/zbezj/HEU_KMS_Activator)
 - 更新系统、驱动
 - 用户账户控制设置：设为从不通知
 - 定制任务栏
