@@ -69,6 +69,7 @@ title: Windows 初始化与软件推荐
 - [**Bamboo**](https://christopherwk210.github.io/bamboo/)：基于 TinyPNG 的图像压缩软件
 - [**DeskGo**](https://pm.myapp.com/invc/xfspeed/qqpcmgr/data/DeskGo_2_9_1051_127_lite.exe)：桌面整理
 - [**Driver Booster**](https://www.iobit.com/en/driver-booster.php)：驱动安装工具
+- [**NDM**](https://www.neatdownloadmanager.com/index.php/en/)：下载器
 
 ## 选装软件
 
