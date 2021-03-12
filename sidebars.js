@@ -94,6 +94,7 @@ module.exports = {
       type: 'category',
       label: '软件开发',
       items: [
+        '机器视觉入门',
         '使用R语言进行数据分析',
         'CSS学习笔记',
         'HTML学习笔记',
