@@ -51,6 +51,7 @@ title: Windows 初始化与软件推荐
 - [**Git**](https://git-scm.com/downloads)
 - [**Todesk**](https://www.todesk.com/download.html)
 - [**坚果云**](https://www.jianguoyun.com/s/downloads)
+- [**Win10Apps**](https://github.com/linyuxuanlin/File-host/tree/main/software/Win10Apps.exe)
 - [**Windows Terminal**](https://github.com/microsoft/terminal/releases/)
 - [**Geek Uninstaller**](https://github.com/linyuxuanlin/File-host/tree/main/software/geekuninstaller.exe)
 - [**Bandizip**](https://github.com/linyuxuanlin/File-host/tree/main/software/Bandizip.exe)：无广告版本
