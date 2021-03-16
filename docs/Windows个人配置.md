@@ -33,7 +33,7 @@ title: Windows 初始化与软件推荐
 - [**DiskDenius**](https://www.diskgenius.cn/download.php)：磁盘工具
   - 预留 10 GB 空闲（SSD）
   - NTFS，4096 扇区（4k 对齐）
-- [**Chrome**](https://www.google.cn/chrome/)：浏览器
+- [**Chrome 测试版**](https://www.google.com/intl/zh-CN/chrome/beta/)：浏览器
   - 设为默认浏览器
   - 同步账户
 - [**KMS**](https://github.com/linyuxuanlin/File-host/tree/main/software/KMS.exe)：
@@ -51,6 +51,7 @@ title: Windows 初始化与软件推荐
 - [**Git**](https://git-scm.com/downloads)
 - [**Todesk**](https://www.todesk.com/download.html)
 - [**坚果云**](https://www.jianguoyun.com/s/downloads)
+- [**Win10Apps**](https://github.com/linyuxuanlin/File-host/tree/main/software/Win10Apps.exe)
 - [**Windows Terminal**](https://github.com/microsoft/terminal/releases/)
 - [**Geek Uninstaller**](https://github.com/linyuxuanlin/File-host/tree/main/software/geekuninstaller.exe)
 - [**Bandizip**](https://github.com/linyuxuanlin/File-host/tree/main/software/Bandizip.exe)：无广告版本
