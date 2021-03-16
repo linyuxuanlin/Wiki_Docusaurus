@@ -40,15 +40,20 @@ getdir $root_dir
 
 ```bash
 sh pull-master.sh
-```
-
 或
-
-```bash
 ./pull-master.sh
 ```
 
-或直接打开 `pull-master.sh`
+或直接双击 `pull-master.sh` 运行
+
+## 定时执行
+
+1. 搜索并打开 `任务计划程序`
+2. 点击 `创建任务`
+   1. 在 `常规` 标签页内填写名称
+   2. 在 `触发器` 标签页内设置周期
+   3. 在 `操作` 标签页内新建操作，填写 `程序或脚本`（例如 `F:\pull-master.sh`），添加参数（例如 `pull-master.sh`），起始于（例如 `F:\`）
+3. 测试运行，如果没问题即可。（如不成功可参考 [**Pull-Git-Repo.xml**](https://github.com/linyuxuanlin/File-host/blob/main/software-development/Pull-Git-Repo.xml)）
 
 ## 参考与致谢 
 
