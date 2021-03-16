@@ -48,6 +48,8 @@ sh pull-master.sh
 ./pull-master.sh
 ```
 
+或直接打开 `pull-master.sh`
+
 ## 参考与致谢 
 
 - [批量 git pull 小脚本](https://www.jianshu.com/p/42e8da5eb0af)
