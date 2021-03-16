@@ -70,8 +70,8 @@ module.exports = {
       type: 'category',
       label: '高效工作',
       items: [
-        '个人数字资产永久保存指南',
-        '如何用Markdown写学术论文',
+        //'个人数字资产永久保存指南',
+        //'如何用Markdown写学术论文',
         '为什么你需要一个知识库',
         '个人文案排版规范',
         '个人知识库的搭建-基于Docusaurus',
