@@ -54,3 +54,4 @@ sh pull-master.sh
 
 - [批量 git pull 小脚本](https://www.jianshu.com/p/42e8da5eb0af)
 - [git 批量 pull_shell 脚本 -- 多个代码库批量 pull 最新 master 代码](https://blog.csdn.net/weixin_39618730/article/details/113024998)
+- [Windows 定时执行 shell 脚本](https://blog.csdn.net/qq_40463753/article/details/84976977)
