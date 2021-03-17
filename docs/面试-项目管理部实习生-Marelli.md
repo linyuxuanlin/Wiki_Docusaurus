@@ -1,12 +1,12 @@
 ---
-id: 面试-项目管理部实习生-Marelli
-title: 面试-项目管理部实习生-Marelli
+id: 面试-项目管理实习生-Marelli
+title: 面试 - 项目管理实习生 - Marelli
 ---
 
 ## 参考与致谢
 
 - [项目管理实习生 (22 届毕业生)](https://www.zhipin.com/job_detail/9a80d208293f6c501nZ93Nq_FltX.html?ka=search_list_jname_3_blank&lid=45ZH7P67Abi.search.3&securityId=UtPbL1EKY77xLPxYs-CcsEU5UVSSAgB1iXa5Io2nhZ6Ooptyj1thpW5Gwj74Q7D6qLGdy-pHB3q7BFifVCnEFTsuQmVfOQ%7E%7E)
-- [项目管理部实习生](https://www.zhipin.com/job_detail/176d0e20cc423f7f1nZ83du9FFNZ.html?ka=search_list_jname_2_blank&lid=45ZH7P67Abi.search.2&securityId=BAEdpFFEXT68A6eakDBNV3mMl556eLDV_cWhyMU3EkmBSPqBpzkEA-qqBobeO4_r-QNYONBuSBywSjHJUmjO5iKG8jDsww%7E%7E)
+
 
 > 文章作者：**Power Lin**  
 > 原文地址：<https://wiki-power.com>  
