@@ -5,7 +5,7 @@ title: 如何用 Markdown 写一份简历
 
 ![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20210318220041.png)
 
-预览网址：[**cv-template.wiki-power.com**](https://cv-template.wiki-power.com/)
+预览网址：[**cv-template.wiki-power.com**](https://cv-template.wiki-power.com/)  
 如何导出 PDF：在网页上使用快捷键 `Ctrl` + `P` 唤出打印界面，目标打印机选择 `Microsoft Print to PDF`，即可导出 PDF 版本的简历。
 
 ## 使用方法
