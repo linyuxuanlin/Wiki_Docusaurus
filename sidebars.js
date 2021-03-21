@@ -129,6 +129,7 @@ module.exports = {
       type: 'category',
       label: '生活',
       items: [
+        //'面试-项目管理实习生-Marelli',
         '如何调制一杯鸡尾酒',
         '如何合理配置个人资产',
         '读《黑客与画家》',
