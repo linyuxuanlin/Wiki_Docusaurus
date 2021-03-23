@@ -5,7 +5,11 @@ title: Ubuntu 配置笔记
 
 【施工中】
 
+
+下载 Ubuntu 系统镜像：<https://cn.ubuntu.com/download>
+
 ## 安装系统
+
 
 参考 https://www.bilibili.com/read/cv2480151/
 
