@@ -3,20 +3,6 @@ id: Ubuntu配置笔记
 title: Ubuntu 配置笔记
 ---
 
-【施工中】
-
-
-下载 Ubuntu 系统镜像：<https://cn.ubuntu.com/download>
-
-## 安装系统
-
-
-参考 https://www.bilibili.com/read/cv2480151/
-
-1. 用 PE 盘清除原有 Windows 系统
-2. 下载 .iso 镜像文件
-3. 用 UltralISO 烧进新 U 盘
-4. 进 BIOS 并安装 Ubuntu
 
 ## 安装软件
 
