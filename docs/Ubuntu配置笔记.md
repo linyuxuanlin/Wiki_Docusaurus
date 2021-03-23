@@ -15,7 +15,7 @@ timedatectl set-local-rtc 1 --adjust-system-clock
 
 1. Chrome
 2. VS Code
-3. Qv2ray（https://qv2ray.net/）
+3. [**Qv2ray**](https://qv2ray.net/)
 4. Git
    - `sudo apt install git`
    - `git config --global user.name "John Doe"`
