@@ -5,6 +5,12 @@ title: Ubuntu 配置笔记
 
 ## 双系统时间问题
 
+装完双系统，会出现时间问题（Windows 与 Ubuntu 时间不同步），使用下面命令可解决：
+
+```bash
+timedatectl set-local-rtc 1 --adjust-system-clock
+```
+
 ## 安装软件
 
 第三方软件不能安装的问题：https://linux.cn/article-12183-1.html
