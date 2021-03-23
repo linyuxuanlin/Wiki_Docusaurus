@@ -13,8 +13,6 @@ timedatectl set-local-rtc 1 --adjust-system-clock
 
 ## 安装软件
 
-第三方软件不能安装的问题：https://linux.cn/article-12183-1.html
-
 1. Chrome
 2. VS Code
 3. Qv2ray（https://qv2ray.net/）
