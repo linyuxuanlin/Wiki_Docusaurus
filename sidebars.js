@@ -73,7 +73,6 @@ module.exports = {
       items: [
         //'个人数字资产永久保存指南',
         //'如何用Markdown写学术论文',
-        '双系统极简安装指南',
         '如何用Markdown写一份简历',
         '为什么你需要一个知识库',
         '个人文案排版规范',
@@ -98,6 +97,8 @@ module.exports = {
       type: 'category',
       label: '软件开发',
       items: [
+        '双系统极简安装指南',
+        'Ubuntu配置笔记',
         '机器视觉入门',
         '使用R语言进行数据分析',
         'CSS学习笔记',
