@@ -15,9 +15,16 @@ title: 如何用 Markdown 写一份简历
 
 打开项目 [**linyuxuanlin/Markdown-CV-Site**](https://github.com/linyuxuanlin/Markdown-CV-Site)，点击绿色的按钮 `Use this template` 初始化为自己的仓库。
 
-打开 [**Vercel**](https://vercel.com/)，点击 `New Project`，导入刚刚初始化的 GitHub 仓库，`Framework Preset` 选择为 `Other`，在 `Build Command` 内填入 `npm run build`，在 `Development Command` 内填入 `dist`，点击下一步，等待几十秒，网站就生成了。
+打开 [**Vercel**](https://vercel.com/)，点击 `New Project`，导入刚刚初始化的 GitHub 仓库，设置下列参数：
 
-修改简历的内容，请编辑根目录下的 `_config.yml` 和 `markdown/resume-template.md` 文件，推送到 GitHub 仓库后，可自动触发 Vercel 构建。
+- `FRAMEWORK PRESET`：选择 `Other`
+- `BUILD COMMAND`：填入 `npm run build`
+- `OUTPUT DIRECTORY`：填入 `dist`
+
+
+点击下一步，等待几十秒，网站就生成了。
+
+如需修改简历的内容，请编辑根目录下的 `_config.yml` 和 `markdown/resume-template.md` 文件，推送到 GitHub 仓库后，可自动触发 Vercel 构建。
 
 ## 参考与致谢
 
