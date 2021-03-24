@@ -21,15 +21,16 @@ timedatectl set-local-rtc 1 --adjust-system-clock
    - `git config --global user.name "John Doe"`
    - `git config --global user.email johndoe@example.com`
 
-https://outsite.cloud/api/v1/client/subscribe?token=d60ef813f940f31e427ee28327c07b80
-
-vmess://ew0KICAidiI6ICIyIiwNCiAgInBzIjogIua0m+adieeftiB8IOeUteS/oeS4k+e6vyB8IOeUteS/oei1t+mjniB8IOWbm+e9keebtOi/niIsDQogICJhZGQiOiAibGEub3V0c2l0ZS5jbG91ZCIsDQogICJwb3J0IjogIjQ0MyIsDQogICJpZCI6ICIwYjJlZmNjYS04ZjkzLTRhOGYtYTVmOC0yNWQ4MmMyYmZiMWIiLA0KICAiYWlkIjogIjEiLA0KICAibmV0IjogIndzIiwNCiAgInR5cGUiOiAibm9uZSIsDQogICJob3N0IjogIiIsDQogICJwYXRoIjogIi9vdXRzaXRlIiwNCiAgInRscyI6ICJ0bHMiLA0KICAic25pIjogIiINCn0= 
 
 ## 技巧
 
 ### 查看隐藏文件
 
 使用快捷键：`Ctrl` + `H`
+
+### 打开终端
+
+使用快捷键：`Ctrl` + `Alt` + `T`
 
 ### 命令
 
@@ -60,10 +61,7 @@ vmess://ew0KICAidiI6ICIyIiwNCiAgInBzIjogIua0m+adieeftiB8IOeUteS/oeS4k+e6vyB8IOeU
   - 删除
   - `rm （选项） <文件名/目录名>`
 
-### 快捷键
 
-- 终端：`Ctrl` `Alt` `T`
-- 显示隐藏文件：`Ctrl` `H`
 
 ## ROS
 
