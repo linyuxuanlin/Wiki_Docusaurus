@@ -54,7 +54,8 @@ source /opt/ros/foxy/setup.bash
 ros2 run demo_nodes_cpp talker
 ```
 
-打开另一个命令行窗口，运行 Listener：
+打开一个新的命令行窗口，运行 Listener：
+
 ```bash
 source /opt/ros/foxy/setup.bash
 ros2 run demo_nodes_py listener
