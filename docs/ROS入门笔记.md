@@ -81,9 +81,59 @@ source /opt/ros/foxy/setup.bash
 printenv | grep -i ROS
 ```
 
+## 小海龟仿真器
+
+### 安装
+
+```bash
+sudo apt update
+sudo apt install ros-foxy-turtlesim
+```
+
+检查是否安装成功：
+
+```bash
+ros2 pkg executables turtlesim
+```
+
+### 启动海龟模拟器
+
+```bash
+ros2 run turtlesim turtlesim_node
+```
+
+想要让小海龟动起来，可以打开一个新的命令行窗口，输入命令：
+
+```bash
+ros2 run turtlesim turtle_teleop_key
+```
+
+按命令行中的提示即可实现操控。
+
+### 安装 rqt 工具
+
+```bash
+sudo apt update
+sudo apt install ~nros-foxy-rqt*
+```
+
+### 启动 rqt 工具
+
+首先，要确保有一只小海龟在后台运行。在命令行输入：
+
+```bash
+rqt
+```
+
+唤醒 rqt 工具，依次打开 `Plugins > Services > Service Caller`，点击刷新按钮，即可看到所有服务。
+
+选择 `/spawn` 服务，
+
 
 ## 参考与致谢
 
 - [ROS2 入门教程 ——2. Ubuntu20.04 安装 ROS2 Foxy](https://www.guyuehome.com/10226)
+- [ROS2 入门教程 ——3. ROS2 环境配置](https://www.guyuehome.com/10243)
+- [ROS2 入门教程 ——4. 小海龟仿真器基础使用](https://www.guyuehome.com/10386)
 
 
