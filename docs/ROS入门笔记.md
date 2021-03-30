@@ -63,15 +63,24 @@ ros2 run demo_nodes_py listener
 
 ### 如果想卸载 ROS
 
-```
+```bash
 sudo apt remove ros-foxy-* && sudo apt autoremove
 ```
 
 随后检查～/.bashrc 　以及／opt / 目录是否有 ros 文件夹存在。
 
-## Next?
+## ROS2 环境配置
 
-【编辑中】
+```bash
+source /opt/ros/foxy/setup.bash
+```
+
+设置完成后的检查：
+
+```bash
+printenv | grep -i ROS
+```
+
 
 ## 参考与致谢
 
