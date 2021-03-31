@@ -33,6 +33,12 @@ git config --global https.https://github.com.proxy https://127.0.0.1:【端口�
 git config --global https.https://https://gitlab.com.proxy https://127.0.0.1:1080
 ```
 
+Ubuntu 下配置：
+
+```bash
+git config --global http.https://github.com.proxy socks5://127.0.0.1:10808
+```
+
 ### 恢复
 
 如果不想用代理，可以用以下的方法恢复：
