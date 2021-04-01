@@ -125,7 +125,6 @@ sudo apt install ~nros-foxy-rqt*
 rqt
 ```
 
-
 唤醒 rqt 工具，依次打开 `Plugins > Services > Service Caller`，点击刷新按钮，即可看到所有服务。
 
 选择 `/spawn` 服务，填写小海龟的名字（例如 `'GuaiGuai'`）和位置，就可以多生成一只海龟。如果要修改其轨迹的颜色形状，可以修改 `/set_pen` 服务的内容。
@@ -136,11 +135,8 @@ rqt
 ros2 run turtlesim turtle_teleop_key --ros-args --remap turtle1/cmd_vel:=guaiguai/cmd_vel
 ```
 
-
 ## 参考与致谢
 
 - [ROS2 入门教程 ——2. Ubuntu20.04 安装 ROS2 Foxy](https://www.guyuehome.com/10226)
 - [ROS2 入门教程 ——3. ROS2 环境配置](https://www.guyuehome.com/10243)
 - [ROS2 入门教程 ——4. 小海龟仿真器基础使用](https://www.guyuehome.com/10386)
-
-
