@@ -125,6 +125,7 @@ sudo apt install ~nros-foxy-rqt*
 rqt
 ```
 
+
 唤醒 rqt 工具，依次打开 `Plugins > Services > Service Caller`，点击刷新按钮，即可看到所有服务。
 
 选择 `/spawn` 服务，填写小海龟的名字（例如 `'GuaiGuai'`）和位置，就可以多生成一只海龟。如果要修改其轨迹的颜色形状，可以修改 `/set_pen` 服务的内容。
