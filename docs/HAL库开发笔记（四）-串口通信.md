@@ -110,9 +110,9 @@ HAL_UART_Receive_IT(&huart1,&Buffer,1);
 #include "stdio.h"
 
 /* USER CODE END 0 */
-```
 
-```c title="usart.c"
+......
+
 /* USER CODE BEGIN 1 */
 
 int fputc(int ch,FILE *f)
