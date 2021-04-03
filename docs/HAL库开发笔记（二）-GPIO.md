@@ -61,7 +61,7 @@ GPIO 的功能是输入 / 输出电信号。我们来看看它的内部结构：
 如果配置之无误的话，上电即可点亮两颗用户 LED.   
 如果要添加闪灯效果，只需要在主循环的用户代码区域内添加几行代码：
 
-```c
+```c title="main.c"
 /* USER CODE BEGIN 3 */
 
 HAL_Delay(500);
@@ -87,13 +87,14 @@ HAL_GPIO_TogglePin(GPIOI, GPIO_PIN_3);
 
 ![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20210205150422.png)
 
-将按键所属的 GPIO（`PI8`）设置为输入（`GPIO_Input`）。根据原理图，选择内部上拉（Pull-up）。生成代码。
+将按键所属的 GPIO（`PI8`）设置为输入（`GPIO_Input`）。根据原理图，选择内部上拉（`Pull-up`）。生成代码。
 
 ### 添加功能代码
 
 在主循环的用户代码区域内添加如下代码：
 
-```c
+
+```c title="main.c"
 /* USER CODE BEGIN 3 */
 
 if(HAL_GPIO_ReadPin(KEY1_GPIO_Port,KEY1_Pin)==0)
