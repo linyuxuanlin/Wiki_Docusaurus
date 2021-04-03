@@ -3,12 +3,10 @@ id: HAL库开发笔记（四）-串口通信
 title: HAL 库开发笔记（四）- 串口通信
 ---
 
-## 参考与致谢 
+## 参考与致谢
 
 - [STM32CubeMX 实战教程（六）—— 串口通信](https://blog.csdn.net/weixin_43892323/article/details/105339949)
 - [进阶篇 III [UART & USART]](https://alchemicronin.github.io/posts/b4c69a89/#1-0-%E4%BB%80%E4%B9%88%E6%98%AFUART%E5%92%8CUSART%EF%BC%9F%E6%9C%89%E4%BB%80%E4%B9%88%E5%8C%BA%E5%88%AB%E5%98%9B%EF%BC%9F)
-
-
 
 > 文章作者：**Power Lin**  
 > 原文地址：<https://wiki-power.com>  
@@ -34,7 +32,7 @@ title: HAL 库开发笔记（四）- 串口通信
 - **同步通信**：带时钟同步信号传输。例如 SPI，IIC 等通信接口。
 - **异步通信**：不带时钟同步信号。例如 UART，单总线。
 
-### USART 和 UART 
+### USART 和 UART
 
 - **UART**：通用异步收发器（Universal Asynchronous Receiver/Transmitter）
 - **USART**：通用同步异步收发器（Universal Synchronous/Asynchronous Receiver/Transmitter）
@@ -50,7 +48,7 @@ USART 是 UART 的升级版，区别在于多了 CLK 线，在 CLK 没有信号�
 在进行下一步实验之前，需要在 CubeMX 里配置串口下载、时钟等各类参数。  
 具体步骤请参考文章 [**HAL 库开发笔记（一） - 环境配置**](https://wiki-power.com/HAL%E5%BA%93%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89-%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE#%E9%A1%B9%E7%9B%AE%E7%9A%84%E9%85%8D%E7%BD%AE) 中的方法进行配置。
 
-## 配置 USART 引脚
+### 配置 USART 引脚
 
 ![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20210207100329.png)
 
@@ -72,7 +70,6 @@ USART 是 UART 的升级版，区别在于多了 CLK 线，在 CLK 没有信号�
 ![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20210207104641.png)
 
 ### 添加功能代码
-
 
 首先需要在 `stm32f4xx_it.c` 末尾添加如下代码：
 
@@ -112,8 +109,6 @@ extern uint8_t Buffer;
 
 ```
 
-
-
 另外，在 `main.c` 中，我们需要在串口初始化后、主循环前，添加接收中断开启函数：
 
 ```c title="main.c"
@@ -125,6 +120,7 @@ HAL_UART_Receive_IT(&huart1,&Buffer,1);
 ```
 
 最后，我们需要对 printf 进行重定向。意思就是把 printf 函数用在 STM32 中做串口是输出功能。只需要在 `usart.c` 中重写 fputc 函数并使其作用于串口即可：
+
 ```c title="usart.c"
 /* USER CODE BEGIN 0 */
 
