@@ -43,6 +43,8 @@ NVIC 全称为 Nested Vectored Interrupt Controller，翻译过来就是 **嵌�
 
 在我的板子上，就是将 `PI8` 配置为 `GPIO_EXTI8` 模式（外部中断，挂载在中断线 8 上的），并配置为下降沿触发，根据原理图，选择内部上拉（Pull-up）。如图所示：
 
+![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20210403222304.png)
+
 ![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20210206131409.png)
 
 接着，点击跳转 NVIC 标签页面，使能我们配置的中断：
