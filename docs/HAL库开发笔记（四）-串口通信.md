@@ -3,15 +3,6 @@ id: HAL库开发笔记（四）-串口通信
 title: HAL 库开发笔记（四）- 串口通信
 ---
 
-## 参考与致谢
-
-- [STM32CubeMX 实战教程（六）—— 串口通信](https://blog.csdn.net/weixin_43892323/article/details/105339949)
-- [进阶篇 III [UART & USART]](https://alchemicronin.github.io/posts/b4c69a89/#1-0-%E4%BB%80%E4%B9%88%E6%98%AFUART%E5%92%8CUSART%EF%BC%9F%E6%9C%89%E4%BB%80%E4%B9%88%E5%8C%BA%E5%88%AB%E5%98%9B%EF%BC%9F)
-
-> 文章作者：**Power Lin**  
-> 原文地址：<https://wiki-power.com>  
-> 版权声明：文章采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh) 协议，转载请注明出处。
-
 串口通信算得上是单片机中最常用、最基础的一种通讯方式。常用可作为一种调试的手段，与单片机通讯监控数据、发送指令，也可以用作两个单片机之间互相通讯使用。
 
 ## 基本原理
@@ -140,3 +131,19 @@ int fputc(int ch,FILE *f)
 
 /* USER CODE END 1 */
 ```
+
+### 下载验证
+
+程序烧录成功后，我们打开串口助手，配置对应的端口和波特率。  
+本实验的效果是，发送什么内容，就返回同样的内容，如图所示：
+
+![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20210403232628.png)
+
+## 参考与致谢
+
+- [STM32CubeMX 实战教程（六）—— 串口通信](https://blog.csdn.net/weixin_43892323/article/details/105339949)
+- [进阶篇 III [UART & USART]](https://alchemicronin.github.io/posts/b4c69a89/#1-0-%E4%BB%80%E4%B9%88%E6%98%AFUART%E5%92%8CUSART%EF%BC%9F%E6%9C%89%E4%BB%80%E4%B9%88%E5%8C%BA%E5%88%AB%E5%98%9B%EF%BC%9F)
+
+> 文章作者：**Power Lin**  
+> 原文地址：<https://wiki-power.com>  
+> 版权声明：文章采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh) 协议，转载请注明出处。
