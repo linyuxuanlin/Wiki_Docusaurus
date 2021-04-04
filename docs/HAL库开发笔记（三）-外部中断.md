@@ -30,6 +30,21 @@ NVIC 全称为 Nested Vectored Interrupt Controller，翻译过来就是 **嵌�
 
 欲判断中断的优先级，首先要先比较的是抢占优先级。抢占优先级相同的情况下，响应优先高的中断优先级别高。如果两个优先级都一样，那么就要根据中断向量表来确定。
 
+### 中断回调函数参考
+
+配置了 GPIO 中断和 NVIC 优先级之后，在 `stm32f4xx_it.c` 文件末尾重写中断回调函数即可实现功能。
+
+```c
+/* USER CODE BEGIN 1 */
+
+void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
+{
+   
+}
+
+/* USER CODE END 1 */
+```
+
 ## 外部中断按键控灯
 
 在进行下一步实验之前，需要在 CubeMX 里配置串口下载、时钟等各类参数。  
@@ -79,20 +94,7 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
 
 编译上传后即可通过按下按键，切换 LED 灯的亮灭状态了。
 
-## 中断回调函数参考
 
-配置了 GPIO 中断和 NVIC 优先级之后，在 `stm32f4xx_it.c` 文件末尾重写中断回调函数即可实现功能。
-
-```c
-/* USER CODE BEGIN 1 */
-
-void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
-{
-   
-}
-
-/* USER CODE END 1 */
-```
 
 
 ## 参考与致谢 

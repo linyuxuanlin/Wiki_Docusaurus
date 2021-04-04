@@ -36,6 +36,26 @@ GPIO 的功能是输入 / 输出电信号。我们来看看它的内部结构：
 - **复用开漏**
 - **复用推挽**
 
+### 常用的 GPIO 函数参考
+
+读取 GPIO 状态，返回高 / 低电平：
+
+```c
+GPIO_PinState HAL_GPIO_ReadPin(GPIOx, GPIO_Pin);
+```
+
+写 GPIO 状态，写入高 / 低电平：
+
+```c
+HAL_GPIO_WritePin(GPIOx, GPIO_Pin, PinState);
+```
+
+翻转 GPIO 电平：
+
+```c
+HAL_GPIO_TogglePin(GPIOx, GPIO_Pin);
+```
+
 
 
 
@@ -68,6 +88,7 @@ HAL_Delay(500);
 HAL_GPIO_TogglePin(GPIOD, GPIO_PIN_4);
 HAL_GPIO_TogglePin(GPIOI, GPIO_PIN_3);
 
+}
 /* USER CODE END 3 */
 ```
 
@@ -108,6 +129,7 @@ if(HAL_GPIO_ReadPin(KEY1_GPIO_Port,KEY1_Pin)==0)
 	HAL_GPIO_WritePin(LED1_GPIO_Port,LED1_Pin,GPIO_PIN_SET);
 }
 
+}
 /* USER CODE END 3 */
 ```
 
@@ -116,26 +138,6 @@ if(HAL_GPIO_ReadPin(KEY1_GPIO_Port,KEY1_Pin)==0)
 有许多人搞不清楚 `GPIO_PIN_SET` 和 `GPIO_PIN_RESET` 是什么意思。其实这两个变量的功能仅仅为设置 GPIO 引脚高 / 低电平。具体灯是开是关，还得看电路原理图。
 
 另外，`HAL_Delay(100);` 的功能是代码消除按键抖动。不过 `HAL_Delay()` 函数用的是轮询，会占用资源导致卡机，下一篇文章我们将用硬件中断来解决这个缺陷。
-
-## 常用的 GPIO 函数参考
-
-读取 GPIO 状态，返回高 / 低电平：
-
-```c
-GPIO_PinState HAL_GPIO_ReadPin(GPIOx, GPIO_Pin);
-```
-
-写 GPIO 状态，写入高 / 低电平：
-
-```c
-HAL_GPIO_WritePin(GPIOx, GPIO_Pin, PinState);
-```
-
-翻转 GPIO 电平：
-
-```c
-HAL_GPIO_TogglePin(GPIOx, GPIO_Pin);
-```
 
 
 
