@@ -46,6 +46,53 @@ DMA 提供外设 / 存储器或存储器 / 存储器之间的高速数据传输�
 
 ### 常用的 DMA 函数参考
 
+#### 串口 DMA 发送数据
+
+```c
+HAL_UART_Transmit_DMA(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size)
+```
+
+功能：串口通过 DMA 发送指定长度的数据。  
+参数：
+
+- **UART_HandleTypeDef \*huart**：UATR 的别名（如 : UART_HandleTypeDef huart1 -> huart1）
+- **\*pData**：需要发送的数据
+- **Size**：发送的字节数
+
+例子：
+
+```c
+HAL_UART_Transmit_DMA(&huart1, (uint8_t *)Senbuff, sizeof(Senbuff));  //串口发送 Senbuff 数组
+```
+
+#### 串口 DMA 接收数据
+
+```c
+HAL_UART_Receive_DMA(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size)
+```
+
+功能：串口通过 DMA 接收指定长度的数据。  
+参数：
+
+- **UART_HandleTypeDef \*huart**：UATR 的别名（如 : UART_HandleTypeDef huart1 -> huart1）
+- **\*pData**：需要存放接收数据的数组
+- **Size**：接收的字节数
+
+例子：
+
+```c
+HAL_UART_Receive_DMA(&huart1, (uint8_t *)Recbuff, sizeof(Recbuff));  //串口接收，存放到 Recbuff 数组
+```
+
+#### 串口 DMA 恢复函数
+
+```c
+HAL_UART_DMAResume(&huart1)
+```
+
+作用：恢复 DMA 的传输  
+返回值：0（正在恢复）；1（已经完成恢复）
+
 ## DMA 串口传输实验
 
 ### 在 CubeMX 内配置 DMA
