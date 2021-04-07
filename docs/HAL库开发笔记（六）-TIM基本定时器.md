@@ -26,6 +26,7 @@ title: HAL 库开发笔记（六）-TIM 基本定时器
 
 在 STM32F4 系列单片机上，TIM6 和 TIM7 这两个基本定时器的特性如下：
 
+- 挂载在 APB1 总线上
 - 16 位自动重载递增计数器
 - 16 位可编程预分频器，用于对计数器时钟频率进行分频（即运行时修改），分频系数介于 1 和 65536 之间
 - 用于触发 DAC 的同步电路
@@ -54,20 +55,20 @@ title: HAL 库开发笔记（六）-TIM 基本定时器
 
 ![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20210407152250.png)
 
-这是因为，STM32F4 系列的 TIM2-TIM7，TIM12-TIM14 是挂载在低速 APB1 时钟线上，而 TIM1，TIM8-TIM11 是挂载在高速 APB2 时钟线上，我们这里用到基本定时器 TIM6，所以要看 APB1 的速率（这里经过分频倍频后是 90 MHz）。
+这是因为，STM32F4 系列的 TIM2-TIM7，TIM12-TIM14 是挂载在低速 APB1 总线上，而 TIM1，TIM8-TIM11 是挂载在高速 APB2 总线上，我们这里用到基本定时器 TIM6，所以要看 APB1 的速率（这里经过分频倍频后是 90 MHz）。
 
 接着，我们找到侧边栏 Timer 中的 TIM6 标签页，先勾选 `Activated` 激活定时器，并在下方配置以下的参数：
 
-![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20210407153728.png)
+![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20210407173136.png)
 
-各个参数的含义：
+各参数的含义：
 
-- **Prescaler**（预分频系数）：9000
+- **Prescaler**（预分频系数）：8999
 - **Counter Mode**（计数模式）：Up（从 0 开始向上计数至预分频系数后溢出）
-- **Counter Period**（计时周期 / 装载值）：5000
+- **Counter Period**（计时周期 / 装载值）：4999
 - **auto-reload preload**（是否自动重装载）：Enable（溢出时会自动重装初值）
 
-因为我这里用的时钟源为 90 MHz，所以预分频系数设置为 9000（也就是 9000 分频），分频后为 10 kHz（90 MHz/9000）。装载值设置为 5000（每周期计数 5000 次），所以得到 500 ms 一个周期。
+因为我这里用的时钟源为 90 MHz，所以预分频系数设置为 8999（也就是 9000 分频），分频后为 10 kHz（90 MHz/9000）。装载值设置为 4999（每周期计数 5000 次），所以得到 500 ms 一个周期。
 
 接着我们在其 NVIC 标签页，对中断进行使能：
 
