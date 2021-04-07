@@ -114,6 +114,10 @@ module.exports = {
           editUrl: "https://github.com/linyuxuanlin/Wiki_Docusaurus/edit/main/",
           remarkPlugins: [math],
           rehypePlugins: [katex],
+          feedOptions: {
+            type: 'all',
+            copyright: `Copyright © ${new Date().getFullYear()} Power`,
+          },
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
