@@ -76,7 +76,7 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
 
 关于 LED 的配置，可以参考前面的文章 [**HAL 库开发笔记（二）-GPIO**](https://wiki-power.com/HAL%E5%BA%93%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0%EF%BC%88%E4%BA%8C%EF%BC%89-GPIO)。
 
-下载烧录，可以发现，LED 按我们预设的 500 ms 周期切换开关状态（也就是每 500 ms 发生溢出并产生一个上溢事件，我们在回调函数中对 LED 灯进行了翻转操作）。
+下载烧录，可以看到 LED 按我们预设的 500 ms 周期切换开关状态（也就是每 500 ms 发生溢出并产生一个上溢事件，我们在回调函数中对 LED 灯进行了翻转操作）。
 
 ## 参考与致谢
 
