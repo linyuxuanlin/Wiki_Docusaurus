@@ -5,14 +5,6 @@ title: HAL 库开发笔记（六）-TIM 基本定时器
 
 在 STM32 中，有基本定时器、通用定时器和高级定时器这三类定时器，用于处理各类周期任务。在本篇文章中，我将对基本定时器展开详细介绍。
 
-## 参考与致谢
-
-- [**STM32CubeMX 实战教程（四）—— 基本定时器（还是点灯）**](https://blog.csdn.net/weixin_43892323/article/details/104534920)
-
-> 文章作者：**Power Lin**  
-> 原文地址：<https://wiki-power.com>  
-> 版权声明：文章采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh) 协议，转载请注明出处。
-
 ## 基本原理
 
 ### 基本定时器的特性
@@ -55,3 +47,41 @@ title: HAL 库开发笔记（六）-TIM 基本定时器
 
 ### 在代码内配置基本定时器
 
+在 `main.c` 中开启定时器：
+
+```c title="main.c"
+/* USER CODE BEGIN 2 */
+
+  HAL_TIM_Base_Start_IT(&htim6);
+
+/* USER CODE END 2 */
+```
+
+在 `stm32f4xx_it.c` 中添加回调函数：
+
+```c title="stm32f4xx_it.c"
+/* USER CODE BEGIN 1 */
+
+void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
+{
+    if(htim->Instance == TIM6)
+    {
+        HAL_GPIO_TogglePin(LED1_GPIO_Port, LED1_Pin);
+    }
+
+}
+
+/* USER CODE END 1 */
+```
+
+关于 LED 的配置，可以参考前面的文章 [**HAL 库开发笔记（二）-GPIO**](https://wiki-power.com/HAL%E5%BA%93%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0%EF%BC%88%E4%BA%8C%EF%BC%89-GPIO)。
+
+下载烧录，可以发现，LED 按我们预设的 500 ms 周期切换开关状态（也就是每 500 ms 发生溢出并产生一个上溢事件，我们在回调函数中对 LED 灯进行了翻转操作）。
+
+## 参考与致谢
+
+- [**STM32CubeMX 实战教程（四）—— 基本定时器（还是点灯）**](https://blog.csdn.net/weixin_43892323/article/details/104534920)
+
+> 文章作者：**Power Lin**  
+> 原文地址：<https://wiki-power.com>  
+> 版权声明：文章采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh) 协议，转载请注明出处。
