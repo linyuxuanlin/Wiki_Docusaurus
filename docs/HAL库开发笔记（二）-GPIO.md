@@ -15,7 +15,6 @@ GPIO 的功能是输入 / 输出电信号。我们来看看它的内部结构：
 
 ![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20200615211744.jpg)
 
-
 - 最右边的 I/O 引脚 ，就是实物芯片的引脚。上下的 `保护二极管` 在一定程度上可防止外部不正常电压经引脚烧毁芯片。
 - 红色虚线框内是输入功能（芯片读取外部信号）。两个带开关的上拉 / 下拉电阻，是用来实现上下拉输入功能的。如果两个开关都不闭合，我们则称其为浮空输入（上不顶天下不着地，没有参考电平）。这三种输入模式读出来的都是数字量（高 / 低电平）。此外，还有模拟输入功能，顾名思义就是直接读取引脚上的模拟量。（复用功能输入我们后面再提及）。
 - 蓝色虚线框内是输出功能。输出有 4 种模式：推挽、开漏、复用推挽、复用开漏。
@@ -56,18 +55,12 @@ HAL_GPIO_WritePin(GPIOx, GPIO_Pin, PinState);
 HAL_GPIO_TogglePin(GPIOx, GPIO_Pin);
 ```
 
-
-
-
-
 ## 点亮 LED
-
 
 在进行下一步实验之前，需要在 CubeMX 里配置串口下载、时钟等各类参数。  
 此处不再赘述，请参考文章 [**HAL 库开发笔记（一） - 环境配置**](https://wiki-power.com/HAL%E5%BA%93%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89-%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE#%E9%A1%B9%E7%9B%AE%E7%9A%84%E9%85%8D%E7%BD%AE) 中的方法进行配置。
 
-
-### 配置 GPIO
+### 在 CubeMX 内配置 GPIO
 
 将 LED 相应的 GPIO 口设置为输出，并设置初始电平。
 
@@ -76,9 +69,9 @@ HAL_GPIO_TogglePin(GPIOx, GPIO_Pin);
 对应到我的板子上，就需要把 `PD4` 和 `PI3` 这两个 GPIO 设置为输出（`GPIO_Output`）。  
 如果想要上电就点亮，那么根据电路原理图，将初始电位设置为低（`Low`）。
 
-### 添加功能代码
+### 在代码内配置 GPIO
 
-如果配置之无误的话，上电即可点亮两颗用户 LED.   
+如果配置之无误的话，上电即可点亮两颗用户 LED.  
 如果要添加闪灯效果，只需要在主循环的用户代码区域内添加几行代码：
 
 ```c title="main.c"
@@ -96,13 +89,11 @@ HAL_GPIO_TogglePin(GPIOI, GPIO_PIN_3);
 
 即可实现闪灯效果。
 
-
-
 ## 按键控灯
 
 在学习了 GPIO 的输出后，我们用按键来学习 GPIO 的输入模式。
 
-### 配置 GPIO
+### 在 CubeMX 内配置 GPIO
 
 按照上面的方法配置 LED 所属的 GPIO 端口后，根据板载按键的原理图：
 
@@ -110,10 +101,9 @@ HAL_GPIO_TogglePin(GPIOI, GPIO_PIN_3);
 
 将按键所属的 GPIO（`PI8`）设置为输入（`GPIO_Input`）。根据原理图，选择内部上拉（`Pull-up`）。生成代码。
 
-### 添加功能代码
+### 在代码内配置 GPIO
 
 在主循环的用户代码区域内添加如下代码：
-
 
 ```c title="main.c"
 /* USER CODE BEGIN 3 */
@@ -139,15 +129,10 @@ if(HAL_GPIO_ReadPin(KEY1_GPIO_Port,KEY1_Pin)==0)
 
 另外，`HAL_Delay(100);` 的功能是代码消除按键抖动。不过 `HAL_Delay()` 函数用的是轮询，会占用资源导致卡机，下一篇文章我们将用硬件中断来解决这个缺陷。
 
-
-
-## 参考与致谢 
+## 参考与致谢
 
 - [【STM32】STM32CubeMX 教程二 -- 基本使用 (新建工程点亮 LED 灯)](https://blog.csdn.net/as480133937/article/details/98947162)
 - [STM32CubeMX 实战教程（二）—— 按键点个灯](https://blog.csdn.net/weixin_43892323/article/details/104343933)
-
-
-
 
 > 文章作者：**Power Lin**  
 > 原文地址：<https://wiki-power.com>  

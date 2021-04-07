@@ -13,10 +13,6 @@ title: HAL 库开发笔记（六）-TIM 基本定时器
 > 原文地址：<https://wiki-power.com>  
 > 版权声明：文章采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh) 协议，转载请注明出处。
 
-
-
-
-
 ## 基本原理
 
 ### 基本定时器的特性
@@ -28,7 +24,9 @@ title: HAL 库开发笔记（六）-TIM 基本定时器
 - 用于触发 DAC 的同步电路
 - 发生计数器上溢更新事件时会生成中断 / DMA 请求
 
-## 定时闪灯
+## 用基本定时器使 LED 定时闪烁
+
+### 在 CubeMX 内配置基本定时器
 
 本次实验是用基本定时器实现计时功能，让 LED 0.5 秒变换一次开关状态。
 
@@ -44,7 +42,16 @@ title: HAL 库开发笔记（六）-TIM 基本定时器
 
 各个参数的含义：
 
-- **Prescaler**（预分频计时器）：
-- **Counter Mode**（计数模式）：
-- **Counter Period**（计时周期）：
-- **auto-reload preload**（是否自动重装载）：
+- **Prescaler**（预分频系数）：9000
+- **Counter Mode**（计数模式）：Up（从 0 开始向上计数至预分频系数后溢出）
+- **Counter Period**（计时周期 / 装载值）：5000
+- **auto-reload preload**（是否自动重装载）：Enable（溢出时会自动重装初值）
+
+因为我这里用的时钟源为 90 MHz，所以预分频系数设置为 9000（也就是 9000 分频），分频后为 10 kHz（90 MHz/9000）。装载值设置为 5000（每周期计数 5000 次），所以得到 500 ms 一个周期。
+
+接着我们在其 NVIC 标签页，对中断进行使能：
+
+![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20210407155959.png)
+
+### 在代码内配置基本定时器
+

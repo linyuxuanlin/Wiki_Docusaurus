@@ -104,7 +104,7 @@ HAL_UART_DMAResume(&huart1)
 
 ![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20210404170002.png)
 
-### 在代码中配置 DMA
+### 在代码内配置 DMA
 
 ```c title="main.c"
 /* USER CODE BEGIN Init */

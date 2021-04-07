@@ -7,7 +7,6 @@ title: HAL 库开发笔记（三）- 外部中断
 
 ## 基本原理
 
-
 ### 轮询与中断
 
 什么是轮询和中断？以取外卖举个例子，轮询就是每分钟我都要去一趟门口，看看外卖小哥来了没。那么这段时间我做不了别的事情了，就光盯着外卖；但假如外卖小哥在我恰好离开门口的时候送到了，那么就错过了外卖。相反的，中断就是让外卖小哥来的时候打个电话，我搁下手中的活去拿外卖，这样我既能够安心干活，又不怕错过外卖。
@@ -39,7 +38,7 @@ NVIC 全称为 Nested Vectored Interrupt Controller，翻译过来就是 **嵌�
 
 void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
 {
-   
+
 }
 
 /* USER CODE END 1 */
@@ -50,7 +49,7 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
 在进行下一步实验之前，需要在 CubeMX 里配置串口下载、时钟等各类参数。  
 具体步骤请参考文章 [**HAL 库开发笔记（一） - 环境配置**](https://wiki-power.com/HAL%E5%BA%93%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89-%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE#%E9%A1%B9%E7%9B%AE%E7%9A%84%E9%85%8D%E7%BD%AE) 中的方法进行配置。
 
-### 配置 GPIO 与中断
+### 在 CubeMX 内配置中断
 
 ![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20210205150422.png)
 
@@ -68,7 +67,7 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
 
 另外，要把抢占优先级降低一位（从 0 变为 1，原因下文会解释）。
 
-### 添加功能代码
+### 在代码内配置中断
 
 只需要在 `stm32f4xx_it.c` 末尾添加如下代码：
 
@@ -94,18 +93,11 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
 
 编译上传后即可通过按下按键，切换 LED 灯的亮灭状态了。
 
-
-
-
-## 参考与致谢 
+## 参考与致谢
 
 - [进阶篇 II [Interrupt]](https://alchemicronin.github.io/posts/ff6aca34/)
 - [STM32CubeMX 实战教程（三）—— 外部中断（中断及 HAL_Delay 函数避坑）](https://blog.csdn.net/weixin_43892323/article/details/104383560?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.control&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.control)
 
-
-
 > 文章作者：**Power Lin**  
 > 原文地址：<https://wiki-power.com>  
 > 版权声明：文章采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh) 协议，转载请注明出处。
-
-

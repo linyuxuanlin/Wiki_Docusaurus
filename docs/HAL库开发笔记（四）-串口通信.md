@@ -39,7 +39,7 @@ USART 是 UART 的升级版，区别在于多了 CLK 线，在 CLK 没有信号�
 在进行下一步实验之前，需要在 CubeMX 里配置串口下载、时钟等各类参数。  
 具体步骤请参考文章 [**HAL 库开发笔记（一） - 环境配置**](https://wiki-power.com/HAL%E5%BA%93%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89-%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE#%E9%A1%B9%E7%9B%AE%E7%9A%84%E9%85%8D%E7%BD%AE) 中的方法进行配置。
 
-### 配置 USART 引脚
+### 在 CubeMX 内配置串口
 
 ![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20210207100329.png)
 
@@ -60,7 +60,7 @@ USART 是 UART 的升级版，区别在于多了 CLK 线，在 CLK 没有信号�
 
 ![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20210207104641.png)
 
-### 添加功能代码
+### 在代码内配置串口
 
 首先需要在 `stm32f4xx_it.c` 末尾添加如下代码：
 
