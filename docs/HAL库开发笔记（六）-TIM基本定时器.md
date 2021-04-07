@@ -16,6 +16,19 @@ title: HAL 库开发笔记（六）-TIM 基本定时器
 - 用于触发 DAC 的同步电路
 - 发生计数器上溢更新事件时会生成中断 / DMA 请求
 
+### 常用的定时器函数参考
+
+- HAL_TIM_Base_Init() 初始化定时器时基单元
+- HAL_TIM_Base_DeInit() 禁用定时器，与初始化相反
+- HAL_TIM_Base_MspInit() MSP 初始化函数，定时器初始化时会自动调用
+- HAL_TIM_Base_MspDeInit() 与上一个相反
+- HAL_TIM_Base_Start() 开启定时器
+- HAL_TIM_Base_Stop() 停止定时器
+- HAL_TIM_Base_Start_IT() 以中断模式开启定时器
+- HAL_TIM_Base_Stop_IT() 关闭中断模式的定时器
+- HAL_TIM_Base_Start_DMA() 以 DMA 模式开启定时器
+- HAL_TIM_Base_Stop_DMA() 关闭 DMA 模式的定时器
+
 ## 用基本定时器使 LED 定时闪烁
 
 ### 在 CubeMX 内配置基本定时器
@@ -52,7 +65,7 @@ title: HAL 库开发笔记（六）-TIM 基本定时器
 ```c title="main.c"
 /* USER CODE BEGIN 2 */
 
-  HAL_TIM_Base_Start_IT(&htim6);
+HAL_TIM_Base_Start_IT(&htim6);
 
 /* USER CODE END 2 */
 ```

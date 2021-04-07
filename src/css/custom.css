@@ -26,8 +26,3 @@
 /* 隐藏 scrollbar */
 ::-webkit-scrollbar {display:none;}
 
-img{
-	width: 70%;
-	border: 3px;
-	background: none;
-  }
