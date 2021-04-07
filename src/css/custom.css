@@ -26,7 +26,7 @@
 /* 隐藏 scrollbar */
 ::-webkit-scrollbar {display:none;}
 
-img[alt=name_for_alt] {
+img{
 	width: 70%;
 	border: 3px;
 	background: none;
