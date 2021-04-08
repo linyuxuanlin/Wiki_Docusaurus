@@ -1,6 +1,6 @@
 ---
 title: Hello blog
-tags: [Blog]
+tags:
 ---
 
 终于，我还是给知识库加上了博客的功能。
