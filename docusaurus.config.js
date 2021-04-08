@@ -121,11 +121,20 @@ module.exports = {
           rehypePlugins: [katex],
         },
         blog: {
-          blogTitle: 'Power\'s blog!',
-          blogDescription: 'A docusaurus powered blog!',
+          //blogTitle: 'Power\'s blog!',
+          //blogDescription: 'A docusaurus powered blog!',
+          blogSidebarCount: 8,
+          postsPerPage: 8,
+          showReadingTime: false,
+          path: 'blog',
+          blogSidebarTitle: 'Recent',
+          editUrl: 'https://github.com/linyuxuanlin/Wiki_Docusaurus/edit/main/blog/',
           feedOptions: {
-            type: 'all',
-            copyright: `Copyright © ${new Date().getFullYear()} Power`,
+            type: 'all', // required. 'rss' | 'feed' | 'all'
+            title: 'Power\'s Blog', // default to siteConfig.title
+            description: '测试信息', // default to  `${siteConfig.title} Blog`
+            copyright: '',
+            language: undefined, // possible values: http://www.w3.org/TR/REC-html40/struct/dirlang.html#langcodes
           },
         },
         theme: {
