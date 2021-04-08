@@ -74,6 +74,11 @@ module.exports = {
       */
       items: [
         {
+          to: "blog",
+          label: "博客",
+          position: "right",
+        },
+        {
           href: "https://wiki.wildwolf.tech/",
           label: "队内知识库",
           position: "right",
@@ -114,6 +119,14 @@ module.exports = {
           editUrl: "https://github.com/linyuxuanlin/Wiki_Docusaurus/edit/main/",
           remarkPlugins: [math],
           rehypePlugins: [katex],
+        },
+        blog: {
+          blogTitle: 'Power\'s blog!',
+          blogDescription: 'A docusaurus powered blog!',
+          feedOptions: {
+            type: 'all',
+            copyright: `Copyright © ${new Date().getFullYear()} Power`,
+          },
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
