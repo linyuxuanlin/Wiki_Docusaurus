@@ -55,6 +55,11 @@ sh pull-master.sh
    3. 在 `操作` 标签页内新建操作，填写 `程序或脚本`（例如 `F:\pull-master.sh`），添加参数（例如 `pull-master.sh`），起始于（例如 `F:\`）
 3. 测试运行，如果没问题即可。（如不成功可参考 [**Pull-Git-Repo.xml**](https://github.com/linyuxuanlin/File-host/blob/main/software-development/Pull-Git-Repo.xml)）
 
+
+## 在群晖 NAS 上部署
+
+
+
 ## 参考与致谢 
 
 - [批量 git pull 小脚本](https://www.jianshu.com/p/42e8da5eb0af)
