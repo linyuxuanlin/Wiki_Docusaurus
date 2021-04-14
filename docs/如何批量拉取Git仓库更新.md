@@ -19,16 +19,16 @@ function showMsg()
 
 function getdir(){
     for element in `ls $1`
-    do  
+    do
         dir_or_file=$1"/"$element
         if [ -d $dir_or_file ]
         then
-            cd $1"/"$element 
+            cd $1"/"$element
             showMsg 'git pull '$element
             git pull
         else
             echo $dir_or_file
-        fi  
+        fi
     done
 }
 root_dir="【包含多个仓库的路径】"
@@ -55,12 +55,13 @@ sh pull-master.sh
    3. 在 `操作` 标签页内新建操作，填写 `程序或脚本`（例如 `F:\pull-master.sh`），添加参数（例如 `pull-master.sh`），起始于（例如 `F:\`）
 3. 测试运行，如果没问题即可。（如不成功可参考 [**Pull-Git-Repo.xml**](https://github.com/linyuxuanlin/File-host/blob/main/software-development/Pull-Git-Repo.xml)）
 
-
 ## 在群晖 NAS 上部署
 
+1. 将 `pull-master.sh` 脚本放在 NAS 上任意路径
+2. 修改 `pull-master.sh` 内 `root_dir` 的路径，比如我改为 `"/volume1/projects"`，也就是你放 Git 仓库的地方
+3. `控制面板` - `任务计划` - `新增` - `计划的任务` - `用户定义的脚本`，在 `计划` 和 `任务设置` 标签页配置周期运行时间，和脚本的路径
 
-
-## 参考与致谢 
+## 参考与致谢
 
 - [批量 git pull 小脚本](https://www.jianshu.com/p/42e8da5eb0af)
 - [git 批量 pull_shell 脚本 -- 多个代码库批量 pull 最新 master 代码](https://blog.csdn.net/weixin_39618730/article/details/113024998)
