@@ -74,7 +74,7 @@ module.exports = {
       type: 'category',
       label: '高效工作',
       items: [
-        //'个人数据防核指南',
+        //'个人数据防灾指南',
         //'如何用Markdown写学术论文',
         '如何用Markdown写一份简历',
         '为什么你需要一个知识库',
