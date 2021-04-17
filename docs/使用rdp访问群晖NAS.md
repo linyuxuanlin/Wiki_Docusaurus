@@ -29,8 +29,8 @@ title: 使用rdp访问群晖NAS
 ```bash title="frps.ini"
 [common]
 server_addr = 服务器 IP
-server_port = 服务器 frp 端口，默认为 7000
-token = 密钥，与服务器配置的相同
+server_port = 服务端 frp 端口，默认为 7000
+token = 密钥，需与服务端配置的相同
 
 [nas-http]
 type = http
