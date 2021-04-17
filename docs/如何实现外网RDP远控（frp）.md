@@ -69,7 +69,7 @@ rm -f frpc frpc.ini
 vim frps.ini
 ```
 
-```vim title="frps.ini"
+```ini title="frps.ini"
 [common]
 bind_port = 7000
 dashboard_port = 7500
@@ -108,7 +108,7 @@ nohup: ignoring input and appending output to 'nohup.out'
 
 还是参考 frp 的 [**Releases**](https://github.com/fatedier/frp/releases) 页面，选择符合自己架构的版本下载。下载后解压重命名，可删除 `frps` 和 `frps.ini` 文件。打开 `frpc.ini` 文件：
 
-```vim title="frpc.ini"
+```ini title="frpc.ini"
 [common]
 server_addr = x.x.x.x
 server_port = 7000

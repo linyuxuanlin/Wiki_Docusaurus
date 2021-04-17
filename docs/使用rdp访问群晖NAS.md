@@ -26,7 +26,7 @@ title: 使用 rdp 访问群晖 NAS
 
 在任意位置新建 `frps.ini` 文件，填入以下内容：
 
-```bash title="frps.ini"
+```ini title="frps.ini"
 [common]
 server_addr = 服务器 IP
 server_port = 服务端 frp 端口，默认为 7000
