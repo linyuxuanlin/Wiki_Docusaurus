@@ -3,13 +3,13 @@ id: 使用rdp访问群晖NAS
 title: 使用rdp访问群晖NAS
 ---
 
-## 参考与致谢
+使用 frp 在任意网络下访问群晖 NAS。
 
-- []()
+## 为什么要通过 frp 访问群晖
 
-> 文章作者：**Power Lin**  
-> 原文地址：<https://wiki-power.com>  
-> 版权声明：文章采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh) 协议，转载请注明出处。
+- 无公网 IP
+- QuickConnect 服务太慢
+- 花生壳等服务需要单独买流量
 
 ## 服务端配置
 
@@ -28,9 +28,9 @@ title: 使用rdp访问群晖NAS
 
 ```bash title="frps.ini"
 [common]
-server_addr = 120.77.39.223
-server_port = 7000
-token = Lin82467627171982547.
+server_addr = 服务器 IP
+server_port = 服务器 frp 端口，默认为 7000
+token = 密钥，与服务器配置的相同
 
 [nas-http]
 type = http
@@ -49,3 +49,12 @@ remote_port = 与服务端 vhost_http_port 相同
 - 在 `卷` 标签页添加文件，选择本地的 `frps.ini` 文件，对应装载路径为 `/frp/frpc.ini`
 - 勾选 `使用与 Docker Host 相同的网络`
 
+启动容器，稍等片刻，就可以通过域名 + http 端口号的形式访问群晖 DSM 了。
+
+## 参考与致谢
+
+- [群晖 NAS 使用 Docker 安装配置 frpc 内网穿透教程](https://www.ioiox.com/archives/26.html)
+
+> 文章作者：**Power Lin**  
+> 原文地址：<https://wiki-power.com>  
+> 版权声明：文章采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh) 协议，转载请注明出处。
