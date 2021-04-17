@@ -3,6 +3,8 @@ id: 如何实现外网RDP远控（frp）
 title: 如何实现外网RDP远控（frp）
 ---
 
+用 frp 方法，实现任意网络下的远程桌面控制。
+
 ## 为什么使用 RDP
 
 RDP 是 Windows 自带的协议。相比市面上的远程桌面软件，如 Todesk、Anydesk、向日葵等，有以下优势：
