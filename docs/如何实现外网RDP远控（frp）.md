@@ -139,8 +139,6 @@ remote_port = 7002
 > RDP（Remote Desktop 协议）在 Windows 上默认的端口号为 3389，协议 TCP。
 > SMB（Windows 文件共享协议）默认端口号为 445，协议 TCP。
 
----
-
 为了在后台运行 frpc，我们创建脚本 `frpc.vbs`，将以下内容粘贴进去：
 
 ```vb title="frpc.vbs"
