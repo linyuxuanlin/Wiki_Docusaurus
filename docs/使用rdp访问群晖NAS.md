@@ -32,12 +32,26 @@ server_addr = 服务器 IP
 server_port = 服务端 frp 端口，默认为 7000
 token = 密钥，需与服务端配置的相同
 
-[nas-http]
-type = http
-local_ip = 服务器 IP
-local_port = 群晖门户 http 端口，默认为 5000
+[dsm-http]
+type = tcp
+local_ip = localhost
+local_port = 群晖 DSM http 端口，默认为 5000
 custom_domains = 绑定的域名
-remote_port = 与服务端 vhost_http_port 相同
+remote_port = 自定义远程端口
+
+[dsm-https]
+type = tcp
+local_ip = localhost
+local_port = 群晖 DSM https 端口，默认为 5001
+custom_domains = 绑定的域名
+remote_port = 自定义远程端口
+
+[ssh]
+type = tcp
+local_ip = localhost
+local_port = 默认为 22
+custom_domains = 绑定的域名
+remote_port = 自定义远程端口
 ```
 
 ### 使用 Docker 方法

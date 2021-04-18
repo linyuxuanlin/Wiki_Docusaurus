@@ -76,15 +76,12 @@ dashboard_port = 7500
 token = 12345678
 dashboard_user = admin
 dashboard_pwd = admin
-vhost_http_port = 10080
-vhost_https_port = 10443
 ```
 
 - **bind_port**：客户端和服务端连接的端口，在之后配置客户端时会用上，一般默认即可。
 - **dashboard_port**：服务端仪表板的端口，一般默认即可。如果按默认设置为 `7500`，则可通过 `7500` 端口访问仪表盘（例如 `服务器 IP:7500`），查看 frp 状态。
 - **token**：客户端和服务端连接的口令，请自行设置。
 - **dashboard_user** / **dashboard_pwd**：仪表盘用户名和密码，请自行设置。
-- **vhost_http_port** / **vhost_https_port**：用于反代 HTTP 主机，暂时不用，默认即可。
 
 编辑完成后，按 `Esc` 后输入 `:wq` 保存退出。
 
@@ -112,7 +109,7 @@ nohup: ignoring input and appending output to 'nohup.out'
 [common]
 server_addr = x.x.x.x
 server_port = 7000
-token = 123456
+token = 12345678
 [rdp]
 type = tcp
 local_ip = 127.0.0.1
