@@ -128,7 +128,7 @@ module.exports = {
           showReadingTime: false,
           path: 'blog',
           blogSidebarTitle: 'Recent',
-          editUrl: 'https://github.com/linyuxuanlin/Wiki_Docusaurus/edit/main/blog/',
+          editUrl: 'https://github.com/linyuxuanlin/Wiki_Docusaurus/edit/main/',
           feedOptions: {
             type: 'all', // required. 'rss' | 'feed' | 'all'
             title: 'Power\'s Blog', // default to siteConfig.title
