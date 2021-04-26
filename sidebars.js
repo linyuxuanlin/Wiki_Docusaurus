@@ -77,6 +77,7 @@ module.exports = {
       items: [
         //'个人数据防灾指南',
         //'如何用Markdown写学术论文',
+        '基于calibre-web搭建在线书库（群晖Docker）',
         '如何实现外网RDP远控（frp）',
         '使用rdp访问群晖NAS',
         '如何用Markdown写一份简历',
