@@ -7,9 +7,7 @@ title: 基于 calibre-web 搭建在线书库（群晖 Docker）
 
 ![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20210429125418.png)
 
-
 相比于传统用文件夹的方式，以开源的 Calibre 为代表的书库管理方式，能提供更丰富的功能诸如在线阅读、下载、格式转换、推送到邮箱、去除重复书籍等。calibre-web 是一个基于 Calibre 的 Docker 镜像，可以让我们很方便地将书库部署在像群晖这样的服务器上。
-
 
 ## 建立初始文件夹
 
