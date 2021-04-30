@@ -3,17 +3,17 @@ id: 基于acme.sh自动申请域名证书（群晖Docker）
 title: 基于 acme.sh 自动申请域名证书（群晖 Docker）
 ---
 
-本文将会介绍如何使用 Docker 镜像 acme.sh，实现名证书自动申请和续签功能。
+本文介绍如何使用 Docker 镜像 acme.sh，实现名证书自动申请和续签功能。
 
 [**acme.sh**](https://github.com/acmesh-official/acme.sh) 可以从 letsencrypt 生成免费的证书，支持 Docker 部署，支持 http 和 DNS 两种域名验证方式，其中包括手动，自动 DNS 及 DNS alias 模式方便各种环境和需求。可同时申请合并多张单域名，泛域名证书，并自动续签证书和部署到项目。
 
 ## 准备 DNS API
 
-本文以腾讯云为例申请 DNS API，其他解析平台请参考 [**dnsapi**](https://github.com/acmesh-official/acme.sh/wiki/dnsapi) 这篇文章。
+本文以腾讯云为例申请 DNS API，其他解析平台请参考官方文档 [**dnsapi**](https://github.com/acmesh-official/acme.sh/wiki/dnsapi)。
 
 首先，打开 [**DNSPOD**](https://console.dnspod.cn/)，点击右上角头像 - `密钥管理`
 
-接着，创建一个新的密钥，并拷贝 ID 与 Token。
+接着，创建一个新的密钥，并拷贝 **ID** 与 **Token**。
 
 ## 在群晖 Docker 上部署
 
