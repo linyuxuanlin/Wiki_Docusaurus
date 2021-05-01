@@ -1,6 +1,6 @@
 ---
-id: 基于calibre-web搭建在线书库（群晖Docker）
-title: 基于 calibre-web 搭建在线书库（群晖 Docker）
+id: 基于Calibre搭建在线书库（群晖Docker）
+title: 基于 Calibre 搭建在线书库（群晖 Docker）
 ---
 
 如何在群晖 NAS 用 calibre-web（Docker）搭建一个在线书库。
