@@ -14,3 +14,7 @@ title: 基于 Bitwarden 搭建密码管理器（群晖 Docker）
 > 原文地址：<https://wiki-power.com>  
 > 版权声明：文章采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh) 协议，转载请注明出处。
 
+本文介绍如何在自己的群晖上使用 Docker 对全平台密码管理服务器 Bitwarden 进行私有部署。
+
+
+目前的密码管理器方案有 1Password，Lastpass，
