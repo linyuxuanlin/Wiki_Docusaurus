@@ -3,23 +3,11 @@ id: 基于Bitwarden搭建密码管理器（群晖Docker）
 title: 基于 Bitwarden 搭建密码管理器（群晖 Docker）
 ---
 
-【撰写中】
-
-## 参考与致谢
-
-- [群晖 NAS 高级服务 - docker 部署 bitwarden 全平台密码管理器](https://www.ioiox.com/archives/70.html)
-- [使用群晖搭建第三方 Bitwarden 密码服务器](https://ppgg.in/blog/10271.html#comment-8463)
-
-> 文章作者：**Power Lin**  
-> 原文地址：<https://wiki-power.com>  
-> 版权声明：文章采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh) 协议，转载请注明出处。
-
 本文介绍如何在自己的群晖上使用 Docker 对全平台密码管理服务器 Bitwarden 进行私有部署。
 
 目前的密码管理器方案有 1Password，Lastpass，KeePass，Bitwarden 等，这几种方案各有优劣。在这里我的需求是可多端同步使用，开源可自部署，且有自动填充的功能，同时兼顾界面美观，所以我选择了在自己的群会上部署 Bitwarden 服务。
 
 首先，你需要一个外部访问群晖的 IP 或域名，且已经申请了 SSL 证书。详情可参考文章 [**基于 acme.sh 自动申请域名证书（群晖 Docker）**](https://wiki-power.com/%E5%9F%BA%E4%BA%8Eacme.sh%E8%87%AA%E5%8A%A8%E7%94%B3%E8%AF%B7%E5%9F%9F%E5%90%8D%E8%AF%81%E4%B9%A6%EF%BC%88%E7%BE%A4%E6%99%96Docker%EF%BC%89)
-
 
 ## 在群晖 Docker 上部署
 
@@ -47,7 +35,6 @@ title: 基于 Bitwarden 搭建密码管理器（群晖 Docker）
 
 ## 配置 HTTPS 访问与证书
 
-
 ### 配置反代
 
 依次打开 `控制面板` - `登录门户` - `高级` - `反向代理服务器`。
@@ -72,4 +59,29 @@ title: 基于 Bitwarden 搭建密码管理器（群晖 Docker）
 
 ## 多设备使用
 
-### Windows
+可以在 Bitwarden 官方的 [**下载页面**](https://bitwarden.com/download/)，下载各版本的客户端
+
+### 桌面端
+
+推荐直接使用浏览器扩展 [**Bitwarden - 免费密码管理器**](https://chrome.google.com/webstore/detail/bitwarden-free-password-m/nngceckbapebfimnlniiiahkandclblb)
+
+在登录的时候，先点击左上角的小齿轮，进入设置：
+
+![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20210503215149.png)
+
+在 `自托管环境` 中的 `服务器 URL` 填入群晖 NAS 的 IP:外部端口，即可正常登录。
+
+如果需要，也可以下载桌面客户端使用。
+
+### 移动端
+
+直接在 AppStore 或各应用商城下载 Bitwarden App，在登录页面也需要配置自托管环境，步骤与桌面端相同。
+
+## 参考与致谢
+
+- [群晖 NAS 高级服务 - docker 部署 bitwarden 全平台密码管理器](https://www.ioiox.com/archives/70.html)
+- [使用群晖搭建第三方 Bitwarden 密码服务器](https://ppgg.in/blog/10271.html#comment-8463)
+
+> 文章作者：**Power Lin**  
+> 原文地址：<https://wiki-power.com>  
+> 版权声明：文章采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh) 协议，转载请注明出处。
