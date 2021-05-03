@@ -163,6 +163,7 @@ module.exports = {
       type: 'category',
       label: '小技巧',
       items: [
+        '解决Google相册导出时间信息丢失问题',
         '使用gitignore忽略特殊文件',
         '3D打印：ABS与PLA的区别',
         '如何批量拉取Git仓库更新',
