@@ -18,6 +18,30 @@ title: 基于 Bitwarden 搭建密码管理器（群晖 Docker）
 
 目前的密码管理器方案有 1Password，Lastpass，KeePass，Bitwarden 等，这几种方案各有优劣。在这里我的需求是可多端同步使用，开源可自部署，且有自动填充的功能，同时兼顾界面美观，所以我选择了在自己的群会上部署 Bitwarden 服务。
 
-## 建立存放数据的文件夹
+## 在群晖 Docker 上部署
+
+### 建立存放数据的文件夹
 
 首先，我们建立存放 Bitwarden 数据的文件夹（比如我是 `docker/bitwarden`）。
+
+### 下载镜像并配置容器
+
+打开群晖 Docker 套件，下载 `bitwardenrs/server` 镜像，双击启动，勾选 `启用自动重新启动`，然后进入 `高级设置`。
+
+在 `卷` 页面配置挂载的文件夹，点击 `添加文件夹`，选择本地的 `docker/bitwarden` 路径，装载路径填 `/data`（默认不可变）：
+
+![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20210503211711.png)
+
+在 `端口设置` 页面，手动设置容器端口 80 所对应的本地端口（比如我设置为 `8003`）：
+
+![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20210503211759.png)
+
+随后完成配置，启动容器。输入群晖本地 IP:8003，我们就能看到 Bitwarden 的登陆页面了。但是当我们创建账户后登录时，会看到这样一条提示：
+
+![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20210503212146.png)
+
+这是因为，Docker 容器本身没有提供 https 端口配置，而 Bitwarden 又只能够通过 https 来进行登录（SSL 加密防止中间人攻击）。所以，在这里我们必须使用群晖自带的反向代理服务，通过 https 来访问内部 http 端口了。
+
+## 配置 HTTPS 访问与证书
+
+依次打开 **控制面板** - **登录门户** - **高级** - **反向代理服务器**
