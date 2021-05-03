@@ -18,11 +18,14 @@ title: 基于 Bitwarden 搭建密码管理器（群晖 Docker）
 
 目前的密码管理器方案有 1Password，Lastpass，KeePass，Bitwarden 等，这几种方案各有优劣。在这里我的需求是可多端同步使用，开源可自部署，且有自动填充的功能，同时兼顾界面美观，所以我选择了在自己的群会上部署 Bitwarden 服务。
 
+首先，你需要一个外部访问群晖的 IP 或域名，且已经申请了 SSL 证书。详情可参考文章 [**基于 acme.sh 自动申请域名证书（群晖 Docker）**](https://wiki-power.com/%E5%9F%BA%E4%BA%8Eacme.sh%E8%87%AA%E5%8A%A8%E7%94%B3%E8%AF%B7%E5%9F%9F%E5%90%8D%E8%AF%81%E4%B9%A6%EF%BC%88%E7%BE%A4%E6%99%96Docker%EF%BC%89)
+
+
 ## 在群晖 Docker 上部署
 
 ### 建立存放数据的文件夹
 
-首先，我们建立存放 Bitwarden 数据的文件夹（比如我是 `docker/bitwarden`）。
+我们在 `docker` 目录下建立存放 Bitwarden 数据的文件夹（比如 `docker/bitwarden`）。
 
 ### 下载镜像并配置容器
 
@@ -44,4 +47,23 @@ title: 基于 Bitwarden 搭建密码管理器（群晖 Docker）
 
 ## 配置 HTTPS 访问与证书
 
-依次打开 **控制面板** - **登录门户** - **高级** - **反向代理服务器**
+
+### 配置反代
+
+依次打开 **控制面板** - **登录门户** - **高级** - **反向代理服务器**。
+
+我们新增名称为 `bitwarden` 的反代服务。按照下图填写配置：
+
+![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20210503213004.png)
+
+- `来源`
+  - `协议`：选择 `HTTPS`
+  - `主机名`：填写外部访问的域名
+  - `端口`：填写外部访问的端口
+  - 勾选 `启用 HSTS`
+- `目的地`
+  - `协议`：选择 `HTTP`
+  - `主机名`：填写 `localhost`
+  - `端口`：填写内部访问的端口（即刚刚容器 `80` 端口映射的端口，我的是 `8003`）
+
+### 配置

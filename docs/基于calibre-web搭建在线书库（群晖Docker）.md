@@ -41,7 +41,7 @@ title: 基于 Calibre 搭建在线书库（群晖 Docker）
 
 ## 启用 HTTPS
 
-推荐使用 FRP 进行内网穿透，并申请证书进行 SSL 加密。具体教程可以参考我的另一篇文章【撰写中】。
+推荐使用 FRP 进行内网穿透，并申请证书进行 SSL 加密。具体教程可以参考我的另一篇文章 [**基于 acme.sh 自动申请域名证书（群晖 Docker）**](https://wiki-power.com/%E5%9F%BA%E4%BA%8Eacme.sh%E8%87%AA%E5%8A%A8%E7%94%B3%E8%AF%B7%E5%9F%9F%E5%90%8D%E8%AF%81%E4%B9%A6%EF%BC%88%E7%BE%A4%E6%99%96Docker%EF%BC%89)。
 
 将申请到的证书和密钥文件复制一份到 `docker/calibre-web/` 目录下。
 
