@@ -77,6 +77,15 @@ title: 基于 Bitwarden 搭建密码管理器（群晖 Docker）
 
 直接在 AppStore 或各应用商城下载 Bitwarden App，在登录页面也需要配置自托管环境，步骤与桌面端相同。
 
+
+## 备份密码数据库
+
+备份 Bitwarden 数据库的方法有两种：
+
+1. 在网页端或客户端内选择 `导出密码库`
+2. 直接备份 `data` 文件夹
+
+
 ## 参考与致谢
 
 - [群晖 NAS 高级服务 - docker 部署 bitwarden 全平台密码管理器](https://www.ioiox.com/archives/70.html)
