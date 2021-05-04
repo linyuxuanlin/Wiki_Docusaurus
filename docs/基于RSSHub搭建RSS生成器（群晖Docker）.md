@@ -5,7 +5,8 @@ title: 基于 RSSHub 搭建 RSS 生成器（群晖 Docker）
 
 ## 参考与致谢 
 
-- []()
+- [RSSHub](https://docs.rsshub.app/)
+- [在群晖中使用 Docker 安装 RSSHub](在群晖中使用 Docker 安装 RSSHub)
 
 > 文章作者：**Power Lin**  
 > 原文地址：<https://wiki-power.com>  
