@@ -5,15 +5,6 @@ title: 基于 RSSHub 搭建 RSS 生成器（群晖 Docker）
 
 RSSHub 是一个开源、简单易用、易于扩展的 RSS 生成器，可以给任何奇奇怪怪的内容生成 RSS 订阅源。
 
-## 参考与致谢
-
-- [RSSHub 官方文档](https://docs.rsshub.app/)
-- [在群晖中使用 Docker 安装 RSSHub](https://immwind.com/use-docker-install-rsshub-in-synology)
-
-> 文章作者：**Power Lin**  
-> 原文地址：<https://wiki-power.com>  
-> 版权声明：文章采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh) 协议，转载请注明出处。
-
 ## 在群晖 Docker 上部署
 
 打开群晖 Docker 套件，下载 `diygod/rsshub` 镜像，双击启动，勾选 `启用自动重新启动`，然后进入 `高级设置`。
@@ -35,3 +26,12 @@ RSSHub 是一个开源、简单易用、易于扩展的 RSS 生成器，可以�
 那么，使用 `你的域名/douban/movie/playing` 就可以使用自己的服务器来生成 RSS 源了。
 
 建议使用群晖系统自带的反向代理，实现 HTTPS 加密访问。具体教程可以参考文章 [**用群晖自带反向代理实现 HTTPS 访问**](https://wiki-power.com/%E7%94%A8%E7%BE%A4%E6%99%96%E8%87%AA%E5%B8%A6%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86%E5%AE%9E%E7%8E%B0HTTPS%E8%AE%BF%E9%97%AE)
+
+## 参考与致谢
+
+- [RSSHub 官方文档](https://docs.rsshub.app/)
+- [在群晖中使用 Docker 安装 RSSHub](https://immwind.com/use-docker-install-rsshub-in-synology)
+
+> 文章作者：**Power Lin**  
+> 原文地址：<https://wiki-power.com>  
+> 版权声明：文章采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh) 协议，转载请注明出处。
