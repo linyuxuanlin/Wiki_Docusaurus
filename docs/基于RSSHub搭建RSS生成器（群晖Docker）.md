@@ -5,6 +5,8 @@ title: 基于 RSSHub 搭建 RSS 生成器（群晖 Docker）
 
 RSSHub 是一个开源、简单易用、易于扩展的 RSS 生成器，可以给任何奇奇怪怪的内容生成 RSS 订阅源。
 
+![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20210504105215.png)
+
 ## 在群晖 Docker 上部署
 
 打开群晖 Docker 套件，下载 `diygod/rsshub` 镜像，双击启动，勾选 `启用自动重新启动`，然后进入 `高级设置`。
