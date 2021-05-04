@@ -79,6 +79,7 @@ module.exports = {
       items: [
         //'个人数据防灾指南',
         //'如何用Markdown写学术论文',
+        '基于RSSHub搭建RSS生成器（群晖Docker）',
         '基于Bitwarden搭建密码管理器（群晖Docker）',
         '基于acme.sh自动申请域名证书（群晖Docker）',
         '基于Calibre搭建在线书库（群晖Docker）',
