@@ -103,6 +103,7 @@ module.exports = {
         '在浏览器上运行VSCode（旧）',
         '如何配一台电脑',
         '用reveal.js制作幻灯片',
+        //'未订阅的RSS源'
       ],
     },
     {
