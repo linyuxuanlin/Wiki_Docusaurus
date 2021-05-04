@@ -9,7 +9,6 @@ title: 基于 Bitwarden 搭建密码管理器（群晖 Docker）
 
 目前的密码管理器方案有 1Password，Lastpass，KeePass，Bitwarden 等，这几种方案各有优劣。在这里我的需求是可多端同步使用，开源可自部署，且有自动填充的功能，同时兼顾界面美观，所以我选择了在自己的群会上部署 Bitwarden 服务。
 
-
 ## 在群晖 Docker 上部署
 
 ### 建立存放数据的文件夹
@@ -34,7 +33,6 @@ title: 基于 Bitwarden 搭建密码管理器（群晖 Docker）
 
 这是因为，Docker 容器本身没有提供 https 端口配置，而 Bitwarden 又只能够通过 https 来进行登录（SSL 加密防止中间人攻击）。所以，在这里我们必须使用群晖自带的反向代理服务，通过 https 来访问内部 http 端口了。具体教程可以参考文章 [**用群晖自带反向代理实现 HTTPS 访问**](https://wiki-power.com/%E7%94%A8%E7%BE%A4%E6%99%96%E8%87%AA%E5%B8%A6%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86%E5%AE%9E%E7%8E%B0HTTPS%E8%AE%BF%E9%97%AE)
 
-
 ## 多设备使用
 
 可以在 Bitwarden 官方的 [**下载页面**](https://bitwarden.com/download/)，下载各版本的客户端
@@ -55,14 +53,12 @@ title: 基于 Bitwarden 搭建密码管理器（群晖 Docker）
 
 直接在 AppStore 或各应用商城下载 Bitwarden App，在登录页面也需要配置自托管环境，步骤与桌面端相同。
 
-
 ## 备份密码数据库
 
 备份 Bitwarden 数据库的方法有两种：
 
 1. 在网页端或客户端内选择 `导出密码库`
 2. 直接备份 `data` 文件夹
-
 
 ## 参考与致谢
 
