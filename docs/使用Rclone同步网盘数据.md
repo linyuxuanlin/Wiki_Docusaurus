@@ -276,7 +276,7 @@ rclone sync COS_backup:/wiki-media-1253965369 /volume1/wiki-media -P
 - [基于 [对象存储] 的低成本全功能私有云搭建](https://zhuanlan.zhihu.com/p/104628740)
 - [使用 Rclone 和 WinFsp 将阿里云 oss / 腾讯云 cos 挂载为 windows 磁盘](https://www.boxmoe.com/486.html)
 - [使用 rclone 在 Windows 下挂载 Google 个人 / 团队云盘](https://blog.rhilip.info/archives/874/)
-- [使用 rclone 每天定时备份 typecho 博客网站内容及 mysql 数据库到 Google Drive/Onedrive 等网盘](https://omo.moe/archives/616/)
+- [使用 rclone 每天定时备份 typecho 博客网站内容及 mysql 数据库到 Google Drive/Onedrive 等网盘](https://omo.moe/archives/616/)'
 
 > 文章作者：**Power Lin**  
 > 原文地址：<https://wiki-power.com>  
