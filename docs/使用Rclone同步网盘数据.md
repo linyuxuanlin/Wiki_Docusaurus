@@ -5,13 +5,13 @@ title: 使用 Rclone 同步网盘数据
 
 Rclone 是一个用于管理网盘文件的命令行工具，支持 40 余种网盘（包括 S3 类）。Rclone 也有衍生的图形化界面的软件 RcloneBrowser，方便一般用户使用。本文介绍如何通过 Rclone 同步腾讯云对象储存。
 
-### 软件安装
+## 软件安装
 
 - [**Rclone**](https://rclone.org/downloads/)：下载后将 `.exe` 解压，记下路径。
 - [**RcloneBrowser**](https://github.com/kapitainsky/RcloneBrowser/releases)：GUI 工具。安装后选择 Rclone 的路径。
 - （[**WinFsp**](http://www.secfs.net/winfsp/rel/)：依赖库，如果挂载虚拟硬盘就需要安装）
 
-### 配置流程
+## 配置流程
 
 打开 Rclone Browser，点击左下角的 `Config...`，接下来根据提示输入：
 
@@ -217,13 +217,12 @@ e/n/d/r/c/s/q> q
 - 在 Skip files 区域勾选 `Skip all files that exist`，避免重复下载消耗流量。
 - 在 Task description 区域输入任务名称，方便下次同步使用。
 
-配置完成后，切换到 Tasks 标签页，选择相应的任务，点击 `Run` 开始下载。
+配置完成后，切换到 Tasks 标签页，选择相应的任务，点击 `Run` 即可开始下载。
 
-将下载的文件夹使用 Git 的方式备份。
 
-【编辑中】
+## 在群晖 NAS 上配置
 
-### 在群晖 NAS 上配置
+注：在群晖上建议使用 CloudSync，不要对底层代码进行修改。
 
 准备工作：
 
