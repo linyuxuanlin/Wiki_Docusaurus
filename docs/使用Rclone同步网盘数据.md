@@ -3,7 +3,7 @@ id: 使用Rclone同步网盘数据
 title: 使用 Rclone 同步网盘数据
 ---
 
-### 工具
+### 软件安装
 
 - [**Rclone**](https://rclone.org/downloads/)：下载后将 `.exe` 解压，记下路径。
 - [**RcloneBrowser**](https://github.com/kapitainsky/RcloneBrowser/releases)：GUI 工具。安装后选择 Rclone 的路径。
