@@ -3,6 +3,8 @@ id: 使用Rclone同步网盘数据
 title: 使用 Rclone 同步网盘数据
 ---
 
+Rclone 是一个用于管理网盘文件的命令行工具，支持 40 余种网盘（包括 S3 类）。Rclone 也有衍生的图形化界面的软件 RcloneBrowser，方便一般用户使用。本文介绍如何通过 Rclone 同步腾讯云对象储存。
+
 ### 软件安装
 
 - [**Rclone**](https://rclone.org/downloads/)：下载后将 `.exe` 解压，记下路径。
