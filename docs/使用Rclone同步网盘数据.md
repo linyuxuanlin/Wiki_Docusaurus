@@ -32,13 +32,13 @@ e/n/d/r/c/s/q> n
 
 给远程连接取个名字（例如 `test`）：
 
-```bash
+```shell
 name> test
 ```
 
 选择服务商（以下我以腾讯云 COS 为例，选择 `4`）：
 
-```bash
+```shell
 Choose a number from below, or type in your own value
  1 / 1Fichier
    \ "fichier"
@@ -53,7 +53,7 @@ Choose a number from below, or type in your own value
 Storage> 4
 ```
 
-```bash
+```shell
 Choose a number from below, or type in your own value
  1 / Amazon Web Services (AWS) S3
    \ "AWS"
@@ -87,7 +87,7 @@ provider> 11
 
 选择认证类型。因为我们是第一次配置，所以选择 `1`：
 
-```bash
+```shell
 Choose a number from below, or type in your own value
  1 / Enter AWS credentials in the next step
    \ "false"
@@ -99,7 +99,7 @@ env_auth> 1
 
 输入云服务的账号，这里相当于腾讯云 COS 的 SecretId：
 
-```bash
+```shell
 AWS Access Key ID.
 
 access_key_id> ******
@@ -107,7 +107,7 @@ access_key_id> ******
 
 输入密码，相当于 SecretKey：
 
-```bash
+```shell
 AWS Secret Access Key (password)
 
 secret_access_key> ******
@@ -115,7 +115,7 @@ secret_access_key> ******
 
 选择云服务的地区：
 
-```bash
+```shell
 Endpoint for Tencent COS API.
  1 / Beijing Region.
    \ "cos.ap-beijing.myqcloud.com"
@@ -132,7 +132,7 @@ endpoint> 4
 
 选择读写类型，图床一般是公读私写：
 
-```bash
+```shell
 Canned ACL used when creating buckets and storing or copying objects.
  1 / Owner gets Full_CONTROL. No one else has access rights (default).
    \ "default"
@@ -146,7 +146,7 @@ acl> 2
 
 选择储存类型（选择 `1` 默认即可）：
 
-```bash
+```shell
 The storage class to use when storing new objects in Tencent COS.
  1 / Default
    \ ""
@@ -162,7 +162,7 @@ storage_class> 1
 
 是否编辑高级设置（选择 `n` 否）：
 
-```bash
+```shell
 Edit advanced config? (y/n)
 y) Yes
 n) No (default)
@@ -172,7 +172,7 @@ y/n> n
 
 最后确认，检查无误后输入 `y`：
 
-```bash
+```shell
 Remote config
 --------------------
 [Txcos]
@@ -192,7 +192,7 @@ y/e/d> y
 
 输入 `q` 退出：
 
-```bash
+```shell
 Current remotes:
 
 Name                 Type
@@ -231,13 +231,13 @@ e/n/d/r/c/s/q> q
 
 安装 Rclone:
 
-```bash
+```shell
 curl https://rclone.org/install.sh | sudo bash
 ```
 
 配置服务：
 
-```bash
+```shell
 rclone config
 ```
 
@@ -245,7 +245,7 @@ rclone config
 
 同步的命令：
 
-```bash
+```shell
 # 本地到网盘
 rclone [功能选项] <本地路径> <网盘名称:路径> [参数] [参数] ...
 
@@ -258,7 +258,7 @@ rclone [功能选项] <网盘名称:路径> <网盘名称:路径> [参数] [参�
 
 例如我是：
 
-```bash
+```shell
 rclone sync COS_backup:/wiki-media-1253965369 /volume1/wiki-media -P
 ```
 

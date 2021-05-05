@@ -11,13 +11,13 @@ title: Node.js 和 npm 的安装与卸载（MacOS）
 
 通过 `homebrew` 安装的：
 
-```bash
+```shell
 brew uninstall node
 ```
 
 通过 `.pkg` 安装包安装的：
 
-```bash
+```shell
 sudo rm -rf /usr/local/{bin/{node,npm},lib/node_modules/npm,lib/node,share/man/*/node.*}
 ```
 

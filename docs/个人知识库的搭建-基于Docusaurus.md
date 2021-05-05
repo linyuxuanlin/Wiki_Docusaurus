@@ -40,13 +40,13 @@ title: 个人知识库的搭建 - 基于 Docusaurus
 
 使用 npx 初始化网站：
 
-```bash
+```shell
 npx @docusaurus/init@latest init [name] [template]
 ```
 
 例如，如果我的网站项目文件夹的名字为 `wiki`，那就用 `wiki` 替换掉 `[name]`，而根据 [**官方文档**](https://v2.docusaurus.io/docs/installation#scaffold-project-website)， `[template]` 指的是网站模板的主题，这里我们将其替换为 `classic` 即可。所以此处我们执行的命令为：
 
-```bash
+```shell
 npx @docusaurus/init@latest init wiki classic
 ```
 
@@ -54,7 +54,7 @@ npx @docusaurus/init@latest init wiki classic
 
 当加载完成后，我们在终端内使用命令切换到网站文件夹目录：
 
-```bash
+```shell
 cd [name]
 ```
 
@@ -62,7 +62,7 @@ cd [name]
 
 接着，执行以下命令：
 
-```bash
+```shell
 npm run start
 ```
 
@@ -82,7 +82,7 @@ npm run start
 
 重启 VS Code，召出终端，粘贴以下的命令初始化 Git：
 
-```bash
+```shell
 git config --global user.name "username"
 git config --global user.email "email@example.com"
 ```

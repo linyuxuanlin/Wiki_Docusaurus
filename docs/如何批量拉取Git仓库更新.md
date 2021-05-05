@@ -9,7 +9,7 @@ title: 如何批量拉取 Git 仓库更新
 
 1. 新建脚本文件 `pull-master.sh`，并将以下代码粘贴进去：
 
-```bash title="pull-master.sh"
+```shell title="pull-master.sh"
 #!/bin/bash
 
 function showMsg()
@@ -38,7 +38,7 @@ getdir $root_dir
 2. 将 `【包含多个仓库的路径】` 替换为你的路径，比如我的是 `C:\repos`。
 3. 运行命令：
 
-```bash
+```shell
 sh pull-master.sh
 或
 ./pull-master.sh
@@ -64,7 +64,7 @@ sh pull-master.sh
 
 如果每次都需要输入密码，可以输入以下命令（需提前开启用户家目录）：
 
-```bash
+```shell
 git config –global credential.helper store
 ```
 

@@ -9,7 +9,7 @@ title: ROS入门笔记
 
 ### 设置 UTF-8 编码
 
-```bash
+```shell
 sudo locale-gen en_US en_US.UTF-8
 sudo update-locale LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8
 export LANG=en_US.UTF-8
@@ -17,31 +17,31 @@ export LANG=en_US.UTF-8
 
 ### 设置软件源
 
-```bash
+```shell
 sudo apt update && sudo apt install curl gnupg2 lsb-release
 curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc | sudo apt-key add -
 ```
 
-```bash
+```shell
 sudo sh -c 'echo "deb [arch=$(dpkg --print-architecture)] http://packages.ros.org/ros2/ubuntu $(lsb_release -cs) main" > /etc/apt/sources.list.d/ros2-latest.list'
 ```
 
 ### 安装 ROS2
 
-```bash
+```shell
 sudo apt update
 sudo apt install ros-foxy-desktop
 ```
 
 ### 设置环境变量
 
-```bash
+```shell
 source /opt/ros/foxy/setup.bash
 ```
 
 ### 安装自动补全工具
 
-```bash
+```shell
 sudo apt install python3-argcomplete
 ```
 
@@ -49,21 +49,21 @@ sudo apt install python3-argcomplete
 
 运行 Talker：
 
-```bash
+```shell
 source /opt/ros/foxy/setup.bash
 ros2 run demo_nodes_cpp talker
 ```
 
 打开一个新的命令行窗口，运行 Listener：
 
-```bash
+```shell
 source /opt/ros/foxy/setup.bash
 ros2 run demo_nodes_py listener
 ```
 
 ### 如果想卸载 ROS
 
-```bash
+```shell
 sudo apt remove ros-foxy-* && sudo apt autoremove
 ```
 
@@ -71,13 +71,13 @@ sudo apt remove ros-foxy-* && sudo apt autoremove
 
 ## ROS2 环境配置
 
-```bash
+```shell
 source /opt/ros/foxy/setup.bash
 ```
 
 设置完成后的检查：
 
-```bash
+```shell
 printenv | grep -i ROS
 ```
 
@@ -85,26 +85,26 @@ printenv | grep -i ROS
 
 ### 安装
 
-```bash
+```shell
 sudo apt update
 sudo apt install ros-foxy-turtlesim
 ```
 
 检查是否安装成功：
 
-```bash
+```shell
 ros2 pkg executables turtlesim
 ```
 
 ### 启动海龟模拟器
 
-```bash
+```shell
 ros2 run turtlesim turtlesim_node
 ```
 
 想要让小海龟动起来，可以打开一个新的命令行窗口，输入命令：
 
-```bash
+```shell
 ros2 run turtlesim turtle_teleop_key
 ```
 
@@ -112,7 +112,7 @@ ros2 run turtlesim turtle_teleop_key
 
 ### 安装 rqt 工具
 
-```bash
+```shell
 sudo apt update
 sudo apt install ~nros-foxy-rqt*
 ```
@@ -121,7 +121,7 @@ sudo apt install ~nros-foxy-rqt*
 
 首先，要确保有一只小海龟在后台运行。在命令行输入：
 
-```bash
+```shell
 rqt
 ```
 
@@ -131,7 +131,7 @@ rqt
 
 控制新生成海龟的运动，可以通过以下命令（注意海龟的名字）：
 
-```bash
+```shell
 ros2 run turtlesim turtle_teleop_key --ros-args --remap turtle1/cmd_vel:=guaiguai/cmd_vel
 ```
 

@@ -7,31 +7,31 @@ title: Linux 用户操作
 
 ### 添加用户
 
-```bash
+```shell
 useradd -m 用户名
 ```
 
 ### 设置密码  
 
-```bash
+```shell
 passwd 用户名
 ```
 
 ### 删除用户
 
-```bash
+```shell
 userdel  -r  用户名
 ```
 
 ### 删除用户目录
 
-```bash
+```shell
 rm -rf 用户名
 ```
 
 ### 切换当前用户
 
-```bash
+```shell
 su 用户名
 ```
 

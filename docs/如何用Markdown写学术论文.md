@@ -16,7 +16,7 @@ title: 如何用 Markdown 写学术论文
 
 ## 语法
 
-```bash
+```shell
 pandoc demo-math.md -o demo-math.docx
 ```
 
@@ -38,7 +38,7 @@ pandoc demo-math.md -o demo-math.docx
 
 将复制的 BibTeX 信息粘贴进 `myref.bib` 文件，在文章中使用 `[@article]` 引用。
 
-```bash
+```shell
 pandoc --filter pandoc-citeproc --bibliography=myref.bib --csl=chinese-gb7714-2005-numeric.csl demo-citation.md -o demo-citation.docx
 ```
 
@@ -59,7 +59,7 @@ fignos-plus-name: 图
 ![标题](链接){#fig:图注}
 ```
 
-```bash
+```shell
 pandoc --filter pandoc-fignos --filter pandoc-citeproc --bibliography=myref.bib --csl=chinese-gb7714-2005-numeric.csl demo-figref.md -o demo-figref.docx
 ```
 

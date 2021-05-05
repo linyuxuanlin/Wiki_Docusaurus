@@ -8,7 +8,7 @@ title: npm 和 Yarn 换源加速国内访问
 npm 和 Yarn 默认源地址在国外，国内访问速度慢。  
 以下命令查看当前使用的镜像源：
 
-```bash
+```shell
 yarn config get registry
 ```
 
@@ -18,7 +18,7 @@ yarn config get registry
 
 ### 安装 cgr
 
-```bash
+```shell
 npm install -g cgr
 ```
 

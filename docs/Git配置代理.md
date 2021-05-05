@@ -17,7 +17,7 @@ title: Git 配置代理
 
 ### 2. 给 Git 全局配置 http 代理
 
-```bash
+```shell
 git config --global http.proxy http://127.0.0.1:【端口号】
 git config --global https.proxy https://127.0.0.1:【端口号】
 
@@ -35,7 +35,7 @@ git config --global https.https://https://gitlab.com.proxy https://127.0.0.1:108
 
 Ubuntu 下配置：
 
-```bash
+```shell
 git config --global http.https://github.com.proxy socks5://127.0.0.1:10808
 ```
 
@@ -43,7 +43,7 @@ git config --global http.https://github.com.proxy socks5://127.0.0.1:10808
 
 如果不想用代理，可以用以下的方法恢复：
 
-```bash
+```shell
 git config --global --unset http.proxy
 git config --global --unset https.proxy
 ```

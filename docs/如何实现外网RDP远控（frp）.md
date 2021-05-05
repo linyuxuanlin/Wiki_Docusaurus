@@ -30,25 +30,25 @@ frp 是一个反向代理软件，体积轻量但功能强大，可以使处于�
 
 首先，查看服务器架构：
 
-```bash
+```shell
 arch
 ```
 
 参考 frp 的 [**Releases**](https://github.com/fatedier/frp/releases) 页面，选择符合自己架构的版本下载（比如我是 `X86_64` 架构，即选择 `amd64`）:
 
-```bash
+```shell
 wget https://github.com/fatedier/frp/releases/download/v0.36.2/frp_0.36.2_linux_amd64.tar.gz
 ```
 
 下载后，解压并改名：
 
-```bash
+```shell
 tar -zxvf frp_0.36.2_linux_amd64.tar.gz && mv frp_0.36.2_linux_amd64 frp
 ```
 
 我们看一下 frp 文件夹内的文件：
 
-```bash
+```shell
 cd frp && ls
 ```
 
@@ -59,13 +59,13 @@ cd frp && ls
 
 其中，`frps` 与 `frps.ini` 是服务端的程序与配置文件（s 结尾代表 server），而 `frpc` 与 `frpc.ini` 是客户端相关的（c 结尾代表 client），我们现在暂时不用，可以删除：
 
-```bash
+```shell
 rm -f frpc frpc.ini
 ```
 
 接下来，我们修改 `frps.ini` 文件：
 
-```bash
+```shell
 vim frps.ini
 ```
 
@@ -87,13 +87,13 @@ dashboard_pwd = admin
 
 为了在后台运行 frp 服务，我们可以使用 nohup 命令：
 
-```bash
+```shell
 nohup ./frps -c frps.ini &
 ```
 
 如果看到以下输出：
 
-```bash
+```shell
 nohup: ignoring input and appending output to 'nohup.out'
 ```
 
