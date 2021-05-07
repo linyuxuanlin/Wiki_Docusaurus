@@ -71,6 +71,8 @@ title: Windows 初始化与软件推荐
 - [**DeskGo**](https://pm.myapp.com/invc/xfspeed/qqpcmgr/data/DeskGo_2_9_1051_127_lite.exe)：桌面整理
 - [**Wise Driver Care**](https://github.com/linyuxuanlin/File-host/blob/main/software/Wise%20Driver%20Care.zip)：驱动安装管理工具
 - [**NDM**](https://www.neatdownloadmanager.com/index.php/en/)：下载器
+- [**AltDrag**](https://github.com/linyuxuanlin/File-host/tree/main/software/AltDrag.exe)：窗口拖动 / 缩放 / 更改透明度小工具
+
 
 ## 选装软件
 
@@ -80,6 +82,9 @@ title: Windows 初始化与软件推荐
   - 提取码：`y1xe`
 - [**SoftDownloader**](https://github.com/linyuxuanlin/File-host/tree/main/software/SoftDownloader.zip)：能找到绝大部分的软件，一键安装
 - [**万彩办公大师**](https://github.com/linyuxuanlin/File-host/tree/main/software/OfficeBox.zip)：各类办公相关的小工具，很强大
+- [**IObit Unlocker**](https://github.com/linyuxuanlin/File-host/tree/main/software/IObit_Unlocker.exe)：文件占用解锁工具
+- [**EmptyFolderNuker**](https://github.com/linyuxuanlin/File-host/tree/main/software/EmptyFolderNuker.exe)：检测并删除空文件夹的工具
+
 
 ## 参考与致谢
 
