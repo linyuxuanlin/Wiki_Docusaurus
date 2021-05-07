@@ -85,8 +85,6 @@ title: Windows 初始化与软件推荐
 
 - [Chrome 此类型的文件可能会损害您的计算机](https://zhidao.baidu.com/question/326859904713262805.html)
 
-
-
 > 文章作者：**Power Lin**  
 > 原文地址：<https://wiki-power.com>  
 > 版权声明：文章采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh) 协议，转载请注明出处。
