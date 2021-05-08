@@ -64,7 +64,7 @@ title: Windows 初始化与软件推荐
 - [**Snipaste**](https://zh.snipaste.com/download.html)
 - [**SpaceSniffer**](https://github.com/linyuxuanlin/File-host/tree/main/software/SpaceSniffer.exe)
 - [**Sumatra PDF**](https://www.sumatrapdfreader.org/download-free-pdf-viewer.html)
-- [**TIM**](https://tim.qq.com/download.html)
+- [**修改版 QQ**](https://github.com/linyuxuanlin/File-host/blob/main/software/QQ%209.4.2.27666%20Lite-20210118%20by%20flighty-Q.exe)
 - [**PotPlayer**](https://daumpotplayer.com/download/)
 - [**PicGo**](https://github.com/Molunerfinn/PicGo/releases/tag/v2.3.0-beta.4)
 - [**Bamboo**](https://christopherwk210.github.io/bamboo/)：基于 TinyPNG 的图像压缩软件
