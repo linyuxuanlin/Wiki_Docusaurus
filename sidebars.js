@@ -128,7 +128,7 @@ module.exports = {
       ],
     },
 
-
+/*
     {
       type: 'category',
       label: '产品经理',
@@ -143,6 +143,7 @@ module.exports = {
         '关于复盘',
       ],
     },
+    */
     {
       type: 'category',
       label: '生活',
