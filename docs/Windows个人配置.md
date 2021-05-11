@@ -74,7 +74,6 @@ title: Windows 初始化与软件推荐
 - [**NDM**](https://www.neatdownloadmanager.com/index.php/en/)：下载器
 - [**AltDrag**](https://github.com/linyuxuanlin/File-host/tree/main/software/AltDrag.exe)：窗口拖动 / 缩放 / 更改透明度小工具
 
-
 ## 选装软件
 
 - [**7-Zip**](https://github.com/linyuxuanlin/File-host/tree/main/software/7z.exe)：压缩率高
@@ -85,7 +84,6 @@ title: Windows 初始化与软件推荐
 - [**万彩办公大师**](https://github.com/linyuxuanlin/File-host/tree/main/software/OfficeBox.zip)：各类办公相关的小工具，很强大
 - [**IObit Unlocker**](https://github.com/linyuxuanlin/File-host/tree/main/software/IObit_Unlocker.exe)：文件占用解锁工具
 - [**EmptyFolderNuker**](https://github.com/linyuxuanlin/File-host/tree/main/software/EmptyFolderNuker.exe)：检测并删除空文件夹的工具
-
 
 ## 参考与致谢
 
