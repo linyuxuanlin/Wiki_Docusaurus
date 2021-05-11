@@ -78,7 +78,7 @@ module.exports = {
       type: 'category',
       label: '高效工作',
       items: [
-        //'个人数据防灾指南',
+        //'我是如何做数据容灾的',
         //'如何用Markdown写学术论文',
         '基于RSSHub搭建RSS生成器（群晖Docker）',
         '基于Bitwarden搭建密码管理器（群晖Docker）',
