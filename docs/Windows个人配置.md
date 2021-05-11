@@ -27,7 +27,7 @@ title: Windows 初始化与软件推荐
 - 配置鼠标触摸板键盘等
 - 启动隐藏设置：[GodMode](https://github.com/linyuxuanlin/File-host/tree/main/software/GodMode.lnk)
 - 关闭休眠：`powercfg /hibernate off`
-- [**开启 Chrome 和 Edge 的多线程下载**]()
+- [**开启 Chrome 和 Edge 的多线程下载**](https://wiki-power.com/%E5%BC%80%E5%90%AFChrome%E5%92%8CEdge%E7%9A%84%E5%A4%9A%E7%BA%BF%E7%A8%8B%E4%B8%8B%E8%BD%BD)
 
 ## 必装软件
 
