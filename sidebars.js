@@ -166,6 +166,7 @@ module.exports = {
       type: 'category',
       label: '小技巧',
       items: [
+        '开启Chrome和Edge的多线程下载',
         '使用Rclone同步网盘数据',
         '用群晖自带反向代理实现HTTPS访问',
         '解决Google相册导出时间信息丢失问题',
