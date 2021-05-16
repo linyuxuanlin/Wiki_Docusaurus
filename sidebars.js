@@ -54,6 +54,7 @@ module.exports = {
       label: '嵌入式开发',
       items: [
         'C与STM32常用宏定义',
+        'C与STM32代码规范',
         'SWD与JTAG的区别与联系',
         'HAL库开发笔记（一）-环境配置',
         'HAL库开发笔记（二）-GPIO',
