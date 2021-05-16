@@ -13,6 +13,13 @@ module.exports = {
   //organizationName: "linyuxuanlin", // Usually your GitHub org/user name.
   //projectName: "Wiki_Docusaurus", // Usually your repo name.
   themeConfig: {
+/*
+    footer: {
+      
+      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+    },
+    */
+
     sidebarCollapsible: true, //默认折叠
     image: 'https://cos.ap-guangzhou.myqcloud.com/wiki-media-1253965369/doc/logo-zip.png',
     algolia: {
