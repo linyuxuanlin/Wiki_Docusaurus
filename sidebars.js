@@ -80,27 +80,27 @@ module.exports = {
       items: [
         //'我是如何做数据容灾的',
         //'如何用Markdown写学术论文',
-        '基于RSSHub搭建RSS生成器（群晖Docker）',
-        '基于Bitwarden搭建密码管理器（群晖Docker）',
-        '基于acme.sh自动申请域名证书（群晖Docker）',
-        '基于Calibre搭建在线书库（群晖Docker）',
-        '如何实现外网RDP远控（frp）',
-        '使用rdp访问群晖NAS',
-        '如何用Markdown写一份简历',
-        '为什么你需要一个知识库',
-        '个人文案排版规范',
-        '个人知识库的搭建-基于Docusaurus',
-        'Windows初始化与软件推荐',
-        'Docusaurus极简部署指南',
-        'Hugo极简搭建指南',
-        '如何在iPad上运行VSCode',
-        '使用Markdown进行高效写作',
-        '用树莓派架设云打印服务器',
-        '用Graphviz绘制关系图',
+        '基于RSSHub搭建RSS生成器（群晖Docker）', // CSDN
+        '基于Bitwarden搭建密码管理器（群晖Docker）', // CSDN
+        '基于acme.sh自动申请域名证书（群晖Docker）', // CSDN
+        '基于Calibre搭建在线书库（群晖Docker）', // CSDN
+        '如何实现外网RDP远控（frp）', // CSDN
+        '使用rdp访问群晖NAS', // CSDN
+        '如何用Markdown写一份简历', // CSDN
+        '为什么你需要一个知识库', // CSDN
+        '个人文案排版规范', // CSDN
+        '个人知识库的搭建-基于Docusaurus', // CSDN
+        'Windows初始化与软件推荐', // CSDN
+        'Docusaurus极简部署指南', // CSDN
+        'Hugo极简搭建指南', // CSDN
+        '如何在iPad上运行VSCode', // CSDN
+        '使用Markdown进行高效写作', // CSDN
+        '用树莓派架设云打印服务器', // CSDN
+        '用Graphviz绘制关系图', // CSDN
         'RSS-高效率的阅读方式',
         '把回忆放心交给GooglePhotos',
-        'VSCode生产力指南-环境配置',
-        'VSCode生产力指南-JupyterNotebook',
+        'VSCode生产力指南-环境配置', // CSDN
+        'VSCode生产力指南-JupyterNotebook', // CSDN
         '在浏览器上运行VSCode（旧）',
         '如何配一台电脑',
         //'面试问题记录'
