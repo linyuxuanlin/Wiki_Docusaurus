@@ -73,6 +73,7 @@ title: Windows 初始化与软件推荐
 - [**Wise Driver Care**](https://github.com/linyuxuanlin/File-host/blob/main/software/Wise%20Driver%20Care.zip)：驱动安装管理工具
 - [**NDM**](https://www.neatdownloadmanager.com/index.php/en/)：下载器
 - [**AltDrag**](https://github.com/linyuxuanlin/File-host/tree/main/software/AltDrag.exe)：窗口拖动 / 缩放 / 更改透明度小工具
+- [**Raidrive**](https://github.com/linyuxuanlin/File-host/blob/main/software/raidrive-2020-6-80.exe)：挂载远程硬盘的工具（无广告版），我通过 WebDAV 挂载 NAS 为本地磁盘。
 
 ## 选装软件
 
