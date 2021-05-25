@@ -90,6 +90,7 @@ module.exports = {
         '如何用Markdown写一份简历', // CSDN
         '为什么你需要一个知识库', // CSDN
         '个人文案排版规范', // CSDN
+        '视觉组文章写作规范', // CSDN
         '个人知识库的搭建-基于Docusaurus', // CSDN
         'Windows初始化与软件推荐', // CSDN
         'Docusaurus极简部署指南', // CSDN
