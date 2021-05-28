@@ -7,6 +7,7 @@ module.exports = {
       items: [
         'AirForce-充满灵性的电机驱动模块',
         '如何设计一款单片机的最小系统',
+        'STM32F4硬件开发',
         'SwiftCtrl-蓝牙手柄',
         'TinyDVR-小巧身材，满载动力',
         'ZenDriver-高性能的电机驱动',
