@@ -152,7 +152,7 @@ LSE 时钟源可以有两种提供方式：外部源（有源）、外部晶振 
 
 ## 调试管理
 
-STM32 程序的下载调试，一般用
+STM32 一般使用 SWJ 协议进行下载调试。
 
 ### SWJ 调试端口
 
@@ -161,4 +161,6 @@ STM32F4 内置 SWJ（SW/JTAG）接口。其中，SW-DP 是 2 引脚（时钟 + �
 在 STM32F4 中，SWJ 的引脚分配如下：
 
 ![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20210529210858.png)
+
+### JTAG 的内部上下拉
 
