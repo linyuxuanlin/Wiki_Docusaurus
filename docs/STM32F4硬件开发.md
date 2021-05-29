@@ -149,3 +149,16 @@ LSE 时钟源可以有两种提供方式：外部源（有源）、外部晶振 
 一般情况下，我们在 BOOT0 串接 10 K 的下拉电阻，BOOT1任意即可。如果需要模式切换，那么可以参照以下的设计：
 
 ![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20200605163537.png)
+
+## 调试管理
+
+STM32 程序的下载调试，一般用
+
+### SWJ 调试端口
+
+STM32F4 内置 SWJ（SW/JTAG）接口。其中，SW-DP 是 2 引脚（时钟 + 数据），JTAG-DP 是 5 引脚，他们有些引脚是复用的。详细区别请见文章 [**SWD 与 JTAG 的区别与联系**](https://wiki-power.com/SWD%E4%B8%8EJTAG%E7%9A%84%E5%8C%BA%E5%88%AB%E4%B8%8E%E8%81%94%E7%B3%BB)
+
+在 STM32F4 中，SWJ 的引脚分配如下：
+
+![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20210529210858.png)
+
