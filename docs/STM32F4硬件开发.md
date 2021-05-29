@@ -3,7 +3,7 @@ id: STM32F4硬件开发
 title: STM32F4 硬件开发
 ---
 
-## 参考与致谢 
+## 参考与致谢
 
 - [AN4488: Getting started with STM32F4xxxx MCU hardware development](https://www.st.com/content/ccc/resource/technical/document/application_note/76/f9/c8/10/8a/33/4b/f0/DM00115714.pdf/files/DM00115714.pdf/jcr:content/translations/en.DM00115714.pdf)
 
@@ -30,4 +30,6 @@ STM32F4 的正常工作电压是 1.8 V 到 3.6 V（在某些情况下可降至 1
 
 为了提高转换精度，ADC 配有独立的电源引脚，可单独滤波并屏蔽 PCB 上的噪声。
 
-ADC 电压源从单独的 VDDA 引脚输入。
+ADC 电压源从单独的 VDDA 引脚输入。在电路设计时，应该把 VSSA 接到同个供电地，而非 VSS。
+
+如果芯片的封装是 100 引脚以上的，就会有引出 VREF+和 VREF-，它们的作用是给 ADC 输入外部参考电压。VREF-要接至内部 VSSA。
