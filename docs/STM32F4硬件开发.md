@@ -164,7 +164,7 @@ JTAG 引脚不能悬空（因为他们直接连着用于模式调试控制的触
 
 ## 参考设计
 
-![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20210529212347.png)
+![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20210529213723.png)
 
 ## 参考与致谢
 
