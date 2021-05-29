@@ -3,19 +3,11 @@ id: STM32F4硬件开发
 title: STM32F4 硬件开发
 ---
 
-## 参考与致谢
-
-- [AN4488: Getting started with STM32F4xxxx MCU hardware development](https://www.st.com/content/ccc/resource/technical/document/application_note/76/f9/c8/10/8a/33/4b/f0/DM00115714.pdf/files/DM00115714.pdf/jcr:content/translations/en.DM00115714.pdf)
-
-> 文章作者：**Power Lin**  
-> 原文地址：<https://wiki-power.com>  
-> 版权声明：文章采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh) 协议，转载请注明出处。
-
-本篇文章会在以下几个方面展开讲解：
+本篇文章将会在以下几个方面展开讲解：
 
 - 电源
-- 时钟管理
-- 复位控制
+- 时钟
+- 复位
 - 启动模式
 - 调试管理
 
@@ -63,8 +55,6 @@ VBAT 也可为 RTC 供电，由复位模块中内置的掉电复位 （PDR）电
   - **过滤模拟噪声**：可通过 47 Ω 电阻连至 VDDA。
 - **VBAT**：接外部电池（1.65 V-3.6 V）。如果不需要电池电源，则接至 VDD 引脚。
 - **VCAP1/VCAP2**：各对地连接一个 2.2 µF 陶瓷电容（ESR < 2 Ω）；如果只有 VCAP1，则连一个 4.7 µF 陶瓷电容（ESR < 1 Ω）。
-- **稳压器**
-  - 为激活或停用，必须将特定引脚 BYPASS_REG （不是所有的封装都有）连接到 VSS 或 VDD。【待补充】
 
 ### 复位与电源监控
 
@@ -73,10 +63,6 @@ VBAT 也可为 RTC 供电，由复位模块中内置的掉电复位 （PDR）电
 ![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20210529143014.png)
 
 STM32F4 芯片中集成 POR/PDR 电路，具体上电 / 掉电复位的特征见上图。如需禁用此功能，可通过 PDR_ON 引脚实现。
-
-#### 可编程电压检测器（PVD）
-
-【待补充】
 
 #### 系统复位
 
@@ -94,7 +80,6 @@ STM32F4 芯片中集成 POR/PDR 电路，具体上电 / 掉电复位的特征见
 
 即使不需要外部复位电路，也建议外加一个下拉电容以提高 EMS 性能。
 
-
 ## 时钟
 
 在 STM32F4 上，可使用三种不同的时钟源来驱动系统时钟（SYSCLK）：
@@ -105,7 +90,7 @@ STM32F4 芯片中集成 POR/PDR 电路，具体上电 / 掉电复位的特征见
 
 也有两种次级时钟源：
 
-- LSI RC（32 kHz低速内部 RC），用于驱动独立看门狗，也可用于 RTC 停机 / 待机模式下自动唤醒。
+- LSI RC（32 kHz 低速内部 RC），用于驱动独立看门狗，也可用于 RTC 停机 / 待机模式下自动唤醒。
 - LSE（32.768 kHz 低速外部晶振），用于驱动 RTC。
 
 如果需要降低功耗，每个时钟在未使用时都可以单独关闭。
@@ -146,7 +131,7 @@ LSE 时钟源可以有两种提供方式：外部源（有源）、外部晶振 
 
 启动模式的详细介绍请见文章 [**STM32 的启动模式**](https://wiki-power.com/STM32%E7%9A%84%E5%90%AF%E5%8A%A8%E6%A8%A1%E5%BC%8F)
 
-一般情况下，我们在 BOOT0 串接 10 K 的下拉电阻，BOOT1任意即可。如果需要模式切换，那么可以参照以下的设计：
+一般情况下，我们在 BOOT0 串接 10 K 的下拉电阻，BOOT1 任意即可。如果需要模式切换，那么可以参照以下的设计：
 
 ![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20200605163537.png)
 
@@ -164,3 +149,27 @@ STM32F4 内置 SWJ（SW/JTAG）接口。其中，SW-DP 是 2 引脚（时钟 + �
 
 ### JTAG 的内部上下拉
 
+JTAG 引脚不能悬空（因为他们直接连着用于模式调试控制的触发器），所以在芯片内部有集成了对他们的上下拉：
+
+- **JNTRST**：内部上拉
+- **JTDI**：内部上拉
+- **JTMS/SWDIO**：内部上拉
+- **TCK/SWCLK**：内部下拉
+
+软件释放 JTAG 的 I/O 后，可以作为普通的 I/O 口使用。
+
+### 连接标准 JTAG 座的硬件设计
+
+![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20210529211840.png)
+
+## 参考设计
+
+![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20210529212347.png)
+
+## 参考与致谢
+
+- [AN4488: Getting started with STM32F4xxxx MCU hardware development](https://www.st.com/content/ccc/resource/technical/document/application_note/76/f9/c8/10/8a/33/4b/f0/DM00115714.pdf/files/DM00115714.pdf/jcr:content/translations/en.DM00115714.pdf)
+
+> 文章作者：**Power Lin**  
+> 原文地址：<https://wiki-power.com>  
+> 版权声明：文章采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh) 协议，转载请注明出处。
