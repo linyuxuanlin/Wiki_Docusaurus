@@ -85,8 +85,8 @@ module.exports = {
         '基于RSSHub搭建RSS生成器（群晖Docker）', // CSDN
         '基于Bitwarden搭建密码管理器（群晖Docker）', // CSDN
         '基于acme.sh自动申请域名证书（群晖Docker）', // CSDN
-        '基于Calibre搭建在线书库（群晖Docker）', // CSDN todo
-        '如何实现外网RDP远控（frp）', // CSDN todo
+        '基于Calibre搭建在线书库（群晖Docker）', // CSDN
+        '如何实现外网RDP远控（frp）', // CSDN
         '使用rdp访问群晖NAS', // CSDN todo
         '如何用Markdown写一份简历', // CSDN todo
         '为什么你需要一个知识库', // CSDN todo
