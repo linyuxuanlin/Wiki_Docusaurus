@@ -84,26 +84,26 @@ module.exports = {
         //'如何用Markdown写学术论文',
         '基于RSSHub搭建RSS生成器（群晖Docker）', // CSDN
         '基于Bitwarden搭建密码管理器（群晖Docker）', // CSDN
-        '基于acme.sh自动申请域名证书（群晖Docker）', // CSDN
-        '基于Calibre搭建在线书库（群晖Docker）', // CSDN
-        '如何实现外网RDP远控（frp）', // CSDN
-        '使用rdp访问群晖NAS', // CSDN
-        '如何用Markdown写一份简历', // CSDN
-        '为什么你需要一个知识库', // CSDN
-        '个人文案排版规范', // CSDN
-        '技术文档写作规范', // CSDN
-        '个人知识库的搭建-基于Docusaurus', // CSDN
-        'Windows初始化与软件推荐', // CSDN
-        'Docusaurus极简部署指南', // CSDN
-        'Hugo极简搭建指南', // CSDN
-        '如何在iPad上运行VSCode', // CSDN
-        '使用Markdown进行高效写作', // CSDN
-        '用树莓派架设云打印服务器', // CSDN
-        '用Graphviz绘制关系图', // CSDN
+        '基于acme.sh自动申请域名证书（群晖Docker）', // CSDN todo
+        '基于Calibre搭建在线书库（群晖Docker）', // CSDN todo
+        '如何实现外网RDP远控（frp）', // CSDN todo
+        '使用rdp访问群晖NAS', // CSDN todo
+        '如何用Markdown写一份简历', // CSDN todo
+        '为什么你需要一个知识库', // CSDN todo
+        '个人文案排版规范', // CSDN todo
+        '技术文档写作规范', // CSDN todo
+        '个人知识库的搭建-基于Docusaurus', // CSDN todo
+        'Windows初始化与软件推荐', // CSDN todo
+        'Docusaurus极简部署指南', // CSDN todo
+        'Hugo极简搭建指南', // CSDN todo
+        '如何在iPad上运行VSCode', // CSDN todo
+        '使用Markdown进行高效写作', // CSDN todo
+        '用树莓派架设云打印服务器', // CSDN todo
+        '用Graphviz绘制关系图', // CSDN todo
         'RSS-高效率的阅读方式',
         '把回忆放心交给GooglePhotos',
-        'VSCode生产力指南-环境配置', // CSDN
-        'VSCode生产力指南-JupyterNotebook', // CSDN
+        'VSCode生产力指南-环境配置', // CSDN todo
+        'VSCode生产力指南-JupyterNotebook', // CSDN todo
         '在浏览器上运行VSCode（旧）',
         '如何配一台电脑',
         //'面试问题记录'
