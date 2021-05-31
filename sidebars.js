@@ -92,11 +92,11 @@ module.exports = {
         '为什么你需要一个知识库', // CSDN
         '个人文案排版规范', // CSDN todo
         '技术文档写作规范', // CSDN todo
-        '个人知识库的搭建-基于Docusaurus', // CSDN todo
+        '个人知识库的搭建-基于Docusaurus', // CSDN
         'Windows初始化与软件推荐', // CSDN todo
         'Docusaurus极简部署指南', // CSDN todo
         'Hugo极简搭建指南', // CSDN todo
-        '如何在iPad上运行VSCode', // CSDN todo
+        '如何在iPad上运行VSCode', // CSDN
         '使用Markdown进行高效写作', // CSDN todo
         '用树莓派架设云打印服务器', // CSDN todo
         '用Graphviz绘制关系图', // CSDN todo
