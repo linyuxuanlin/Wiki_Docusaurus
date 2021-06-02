@@ -1,6 +1,6 @@
 ---
-id: 开启Chrome和Edge的多线程下载
-title: 开启 Chrome 和 Edge 的多线程下载
+id: 开启Chrome（Edge）多线程下载
+title: 开启 Chrome（Edge） 多线程下载
 ---
 
 ## 如何开启
