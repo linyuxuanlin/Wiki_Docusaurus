@@ -9,6 +9,7 @@ module.exports = {
         '如何设计一款单片机的最小系统', // CSDN
         'STM32F4硬件开发',
         '模电基础',
+        '全桥驱动电路的设计',
         'SwiftCtrl-蓝牙手柄',
         'TinyDVR-小巧身材，满载动力',
         'ZenDriver-高性能的电机驱动',
