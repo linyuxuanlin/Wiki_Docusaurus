@@ -48,16 +48,6 @@ TJA1050 有两种工作模式（高速 / 静音），由引脚 S（RS） 来控�
 
 如图，CAN 协议控制器（例如单片机）通过串行线（RX/TX）连接到收发器，在收发器上转换为 CAN 信号（CANH/CANL），并通过引脚 S 来选择高速 / 静音模式。
 
-## TJA1050 与 SN65HVD230 的区别
-
-注意，CAN 信号线在 PCB 布线的时候，要走差分线。终端电阻一般在 CAN 线起始端和末端才需要使用，中间端不需要外加终端电阻
-
-## 参考与致谢
-
-> 文章作者：**Power Lin**  
-> 原文地址：<https://wiki-power.com>  
-> 版权声明：文章采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh) 协议，转载请注明出处。
-
 ## 基于 SN65HVD230
 
 完整资料请见 [**Modularity_of_Functional_Circuit/ 模块设计 - CAN 通信 / 基于 SN65HVD230**](https://github.com/linyuxuanlin/Modularity_of_Functional_Circuit/tree/master/%E6%A8%A1%E5%9D%97%E8%AE%BE%E8%AE%A1-CAN%E9%80%9A%E4%BF%A1/%E5%9F%BA%E4%BA%8ESN65HVD230)
@@ -84,3 +74,33 @@ SN65HVD230 有三种工作模式（高速 / 斜率 / 静音），由引脚 S（R
 #### 低功耗模式
 
 将 Rs 强上拉至 3.3V
+
+### 芯片管脚
+
+![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20210607155539.png)
+
+### 参考电路
+
+![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20210607171051.png)
+
+PESD2CAN 是 CAN 专用的 ESD 保护二极管，保护芯片免受静电和其他瞬变因素的损害。
+
+参考的 PCB 布局如下：
+
+![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20210607171427.png)
+
+## TJA1050 与 SN65HVD230 的异同
+
+TJA1050 与 SN65HVD230 主要的区别是工作电压的不同，TJA1050 工作在 5 V 环境下的，而 SN65HVD230 工作在 3.3 V 环境下。
+
+共同的注意事项:
+
+- CAN 信号线在 PCB 布线的时候，要走差分线。
+- 末端电阻一般在 CAN 线起始端和末端才需要使用，中间端不需要外加。
+- 如果需要对总线的共模电压进行过滤和稳定，也可以使用分体式末端电阻（如上文所示，分为两个 60 Ω 电阻，中间加连接到地的电容）。
+
+## 参考与致谢
+
+> 文章作者：**Power Lin**  
+> 原文地址：<https://wiki-power.com>  
+> 版权声明：文章采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh) 协议，转载请注明出处。
