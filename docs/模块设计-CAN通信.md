@@ -3,7 +3,7 @@ id: 模块设计-CAN通信
 title: 模块设计 - CAN 通信
 ---
 
-## 参考与致谢 
+## 参考与致谢
 
 - []()
 
@@ -13,8 +13,9 @@ title: 模块设计 - CAN 通信
 
 CAN（Controller Area Network）是一种多主方式的串行通讯总线。基本设计规范要求有高的位速率、高抗电磁干扰性，而且能够检测出产生的任何错误，当信号传输距离达到 10Km 时 CAN-bus 仍可提供高达 5Kbps 的数据传输速率。
 
-
 CAN 模块的设计，是基于 CAN 芯片，对串口信号与 CAN 差分信号进行互相转换。
+
+匹配电容：
 
 - 输入 / 输出：串行信号（RX/TX） <--> CAN 差分信号（CANH/CANL）
 
@@ -49,11 +50,15 @@ TJA1050 有两种工作模式（高速 / 静音），由引脚 S（或 RS） 来
 
 静音模式中，节点可以被设置成对总线绝对无源的状态，此时微控制器不再直接访问 CAN 控制器，TJA1050 将会释放总线。
 
-
 ### 管脚分布
 
 ![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20210607102222.png)
 
+### 参考电路
+
+![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20210607115611.png)
+
+如图，CAN 协议控制器（例如单片机）通过串行线（RX/TX）连接到收发器，在收发器上转换为 CAN 信号（CANH/CANL），并通过引脚 S 来选择高速 / 静音模式。
 
 ## 基于 SN65HVD230DR
 
