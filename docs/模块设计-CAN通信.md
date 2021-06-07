@@ -5,7 +5,6 @@ title: 模块设计 - CAN 通信
 
 ## 参考与致谢
 
-- []()
 
 > 文章作者：**Power Lin**  
 > 原文地址：<https://wiki-power.com>  
