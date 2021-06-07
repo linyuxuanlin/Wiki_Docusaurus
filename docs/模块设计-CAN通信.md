@@ -3,24 +3,17 @@ id: 模块设计-CAN通信
 title: 模块设计 - CAN 通信
 ---
 
-## 参考与致谢
-
-
-> 文章作者：**Power Lin**  
-> 原文地址：<https://wiki-power.com>  
-> 版权声明：文章采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh) 协议，转载请注明出处。
-
 CAN（Controller Area Network）是一种多主方式的串行通讯总线。基本设计规范要求有高的位速率、高抗电磁干扰性，而且能够检测出产生的任何错误，当信号传输距离达到 10Km 时 CAN-bus 仍可提供高达 5Kbps 的数据传输速率。
 
 CAN 模块的设计，是基于 CAN 芯片，对串行信号（RX/TX）与 CAN 差分信号（CANH/CANL）进行互相转换。以下是两种较为常用的 CAN 收发器。
 
 ## 基于 TJA1050
 
-资料请见 [**Modularity_of_Functional_Circuit/ 模块设计 - CAN 通信 / 基于 TJA1050**](https://github.com/linyuxuanlin/Modularity_of_Functional_Circuit/tree/master/%E6%A8%A1%E5%9D%97%E8%AE%BE%E8%AE%A1-CAN%E9%80%9A%E4%BF%A1/%E5%9F%BA%E4%BA%8ETJA1050)
+完整资料请见 [**Modularity_of_Functional_Circuit/ 模块设计 - CAN 通信 / 基于 TJA1050**](https://github.com/linyuxuanlin/Modularity_of_Functional_Circuit/tree/master/%E6%A8%A1%E5%9D%97%E8%AE%BE%E8%AE%A1-CAN%E9%80%9A%E4%BF%A1/%E5%9F%BA%E4%BA%8ETJA1050)
 
 ### 特性
 
-- 供电范围：4.75-5.25 V
+- 供电：**5 V**（4.75-5.25 V）
 - 高速率：60 Kbps-1 Mbps
 - 完全符合 ISO 11898 标准
 - 低电磁辐射（EME）
@@ -53,8 +46,41 @@ TJA1050 有两种工作模式（高速 / 静音），由引脚 S（RS） 来控�
 
 ![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20210607115611.png)
 
-如图，CAN 协议控制器（例如单片机）通过串行线（RX/TX）连接到收发器，在收发器上转换为 CAN 信号（CANH/CANL），并通过引脚 S 来选择高速 / 静音模式。注意，CAN 信号线在 PCB 布线的时候，要走差分线。
+如图，CAN 协议控制器（例如单片机）通过串行线（RX/TX）连接到收发器，在收发器上转换为 CAN 信号（CANH/CANL），并通过引脚 S 来选择高速 / 静音模式。
 
-## 基于 SN65HVD230DR
+## TJA1050 与 SN65HVD230 的区别
 
-## TJA1050 与 SN65HVD230DR 的区别
+注意，CAN 信号线在 PCB 布线的时候，要走差分线。终端电阻一般在 CAN 线起始端和末端才需要使用，中间端不需要外加终端电阻
+
+## 参考与致谢
+
+> 文章作者：**Power Lin**  
+> 原文地址：<https://wiki-power.com>  
+> 版权声明：文章采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh) 协议，转载请注明出处。
+
+## 基于 SN65HVD230
+
+完整资料请见 [**Modularity_of_Functional_Circuit/ 模块设计 - CAN 通信 / 基于 SN65HVD230**](https://github.com/linyuxuanlin/Modularity_of_Functional_Circuit/tree/master/%E6%A8%A1%E5%9D%97%E8%AE%BE%E8%AE%A1-CAN%E9%80%9A%E4%BF%A1/%E5%9F%BA%E4%BA%8ESN65HVD230)
+
+### 特性
+
+- 由 **3.3 V** 单电源供电
+- 可以连接至少 120 个节点
+- 低电流待机模式
+- 速率：最高 1 Mbps
+
+### 工作模式
+
+SN65HVD230 有三种工作模式（高速 / 斜率 / 静音），由引脚 S（RS） 来控制。一般我们使用高速模式。
+
+#### 高速模式
+
+将 Rs 强下拉至 GND 以启用高速模式。
+
+#### 斜率模式
+
+使用 10k 至 100k 之间的电阻，将 Rs 下拉至 GND。具体电阻阻值与速率的关系，请参考数据手册。
+
+#### 低功耗模式
+
+将 Rs 强上拉至 3.3V
