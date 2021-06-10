@@ -5,15 +5,16 @@ module.exports = {
       type: 'category',
       label: '电路设计',
       items: [
-        'AirForce-充满灵性的电机驱动模块',
+        'TinyDVR-小巧身材，满载动力',
         '如何设计一款单片机的最小系统', // CSDN
         'STM32F4硬件开发',
+        'RaptorDVR-集成稳压的30A双电机驱动',
         //'模电基础',
         //'数电基础',
         //'全桥驱动电路的设计',
         '模块设计-CAN通信',
         'SwiftCtrl-蓝牙手柄',
-        'TinyDVR-小巧身材，满载动力',
+        'AirForce-充满灵性的电机驱动模块',
         'ZenDriver-高性能的电机驱动',
         'PCB布线规范',
         'PCB元件布局规范',
