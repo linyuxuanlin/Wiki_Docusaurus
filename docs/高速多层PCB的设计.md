@@ -5,7 +5,6 @@ title: 高速多层 PCB 的设计
 
 ## 参考与致谢 
 
-- []()
 
 > 文章作者：**Power Lin**  
 > 原文地址：<https://wiki-power.com>  
