@@ -176,6 +176,7 @@ module.exports = {
       type: 'category',
       label: '小技巧',
       items: [
+        'VSCode的便携模式',
         '开启Chrome（Edge）多线程下载',
         '移除Chrome（Edge）由组织管理',
         '使用Rclone同步网盘数据',
