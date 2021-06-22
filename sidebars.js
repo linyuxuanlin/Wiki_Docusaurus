@@ -176,6 +176,7 @@ module.exports = {
       type: 'category',
       label: '小技巧',
       items: [
+        'Windows常用命令',
         'VSCode的便携模式',
         '开启Chrome（Edge）多线程下载',
         '移除Chrome（Edge）由组织管理',
