@@ -49,7 +49,6 @@ title: HAL 库开发笔记（一）- 环境配置
 
 在 `Clock Configuration` 界面进行配置。
 
-
 ![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20210205205550.png)
 
 根据上图的步骤如下：
@@ -65,13 +64,15 @@ title: HAL 库开发笔记（一）- 环境配置
 
 ![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20210130095239.png)
 
+## HAL 库与标准库的区别
 
-## 参考与致谢 
+为了增加可移植性，HAL 库相比标准库多了 **句柄、MSP 函数、Callback 函数** 这三个功能，具体可参见文末引用链接中的内容。
+
+## 参考与致谢
 
 - [【STM32】系统时钟 RCC 详解](https://blog.csdn.net/as480133937/article/details/98845509)
-- [板子初始化，RCC时钟树完整配置的方式和详细过程](https://www.notion.so/2-RCC-770c0c454f954408a3956257aa0fb523)
-
-
+- [板子初始化，RCC 时钟树完整配置的方式和详细过程](https://www.notion.so/2-RCC-770c0c454f954408a3956257aa0fb523)
+- [STM32 HAL 库与标准库的区别\_浅谈句柄、MSP 函数、Callback 函数](https://blog.csdn.net/weixin_43186792/article/details/88759321)
 
 > 文章作者：**Power Lin**  
 > 原文地址：<https://wiki-power.com>  
