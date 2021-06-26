@@ -47,9 +47,9 @@ title: HAL 库开发笔记（六）-TIM 基本定时器
 
 ## 用基本定时器使 LED 定时闪烁
 
-### 在 CubeMX 内配置基本定时器
-
 本次实验是用基本定时器实现计时功能，让 LED 0.5 秒变换一次开关状态。
+
+### 在 CubeMX 内配置基本定时器
 
 首先，我们打开 Clock Configuratgion 时钟树配置页面，找到并记下最右侧 APB1 Timer clocks 的数值：
 

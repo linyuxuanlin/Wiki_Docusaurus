@@ -3,15 +3,57 @@ id: HAL库开发笔记（七）-TIM通用定时器
 title: HAL 库开发笔记（七）-TIM 通用定时器
 ---
 
-
 ## 参考与致谢
 
-- [STM32CubeMX 实战教程（四）—— 基本定时器（还是点灯）](https://blog.csdn.net/weixin_43892323/article/details/104534920)
-- [进阶篇 VI [Timer & PWM]](https://alchemicronin.github.io/posts/fd31d369/)
+- [STM32CubeMX 实战教程（五）—— 通用定时器（PWM 输出）](https://blog.csdn.net/weixin_43892323/article/details/104776035)
 
 > 文章作者：**Power Lin**  
 > 原文地址：<https://wiki-power.com>  
 > 版权声明：文章采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh) 协议，转载请注明出处。
 
-
 在上一篇文章 [**HAL 库开发笔记（六）-TIM 基本定时器**](https://wiki-power.com/HAL%E5%BA%93%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0%EF%BC%88%E5%85%AD%EF%BC%89-TIM%E5%9F%BA%E6%9C%AC%E5%AE%9A%E6%97%B6%E5%99%A8) 中，我简单介绍了 STM32F4 的三类定时器，也详细讲解了基本定时器。在本篇文章中，我们将继续介绍通用定时器。
+
+## 基本原理
+
+在 STM32F4 中，通用定时器有 TIM2-TIM5，TIM9-TIM14。
+
+### 通用定时器的特性
+
+在 STM32F4 中，通用定时器的特性如下：
+
+- 16/32 位递增、递减和递增 / 递减自动重载计数器
+- 16 位可编程预分频器，用于对计数器时钟频率进行分频（分频系数为 1-65536）
+- 4 个独立通道，分别可用于：
+  - 输入捕获
+  - 输出比较
+  - PWM 生成（边沿和中心对齐模式）
+  - 单脉冲模式输出
+- 使用外部信号控制定时器且可实现多个定时器互连的同步电路
+- 发生如下事件时生成中断 / DMA 请求：
+  - 更新：计数器上溢 / 下溢、计数器初始化（通过软件或内部 / 外部触发）
+  - 触发事件（计数器启动、停止、初始化或通过内部 / 外部触发计数）
+  - 输入捕获
+  - 输出比较
+- 支持定位用增量（正交）编码器和霍尔传感器电路
+- 外部时钟触发输入或逐周期电流管理
+
+### 常用的定时器函数参考
+
+以下是常用的定时器函数参考，与基本定时器的函数相同。
+
+- **HAL_TIM_Base_Init()**：初始化定时器时基单元
+- **HAL_TIM_Base_DeInit()**：禁用定时器，与初始化相反
+- **HAL_TIM_Base_MspInit()**：MSP 初始化函数，定时器初始化时会自动调用
+- **HAL_TIM_Base_MspDeInit()**：与上一个相反
+- **HAL_TIM_Base_Start()**：开启定时器
+- **HAL_TIM_Base_Stop()**：停止定时器
+- **HAL_TIM_Base_Start_IT()**：以中断模式开启定时器
+- **HAL_TIM_Base_Stop_IT()**：关闭中断模式的定时器
+- **HAL_TIM_Base_Start_DMA()**：以 DMA 模式开启定时器
+- **HAL_TIM_Base_Stop_DMA()**：关闭 DMA 模式的定时器
+
+## 用通用定时器输出 1 kHz/50% 占空比的 PWM
+
+本次实验使用通用定时器输出 1 kHz，50% 占空比的 PWM 信号，可用示波器显示输出的波形。
+
+### 在 CubeMX 内配置通用定时器
