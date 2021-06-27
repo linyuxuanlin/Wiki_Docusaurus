@@ -57,3 +57,21 @@ title: HAL 库开发笔记（七）-TIM 通用定时器
 本次实验使用通用定时器输出 1 kHz，50% 占空比的 PWM 信号，可用示波器显示输出的波形。
 
 ### 在 CubeMX 内配置通用定时器
+
+首先，我们打开 Clock Configuratgion 时钟树配置页面，因通用定时器挂载在挂载在高速 APB2 总线上，所以我们找到并记下 APB2 Timer clocks 的时钟频率（180 MHz）：
+
+![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20210627133951.png)
+
+接着，我们找到侧边栏 Timer 中找到 TIM8，设置通道 1（`Channel 1`）为 PWM 生成（`PWM Generation CH1`），为了能生成 1 kHz 频率的 PWM 方波，我们需要在下方配置以下参数：
+
+- **Prescaler**（预分频系数）：180-1
+- **Counter Mode**（计数模式）：Up（从 0 开始向上计数至预分频系数后溢出）
+- **Counter Period**（计时周期 / 装载值）：1000-1
+- **auto-reload preload**（是否自动重装载）：Enable（溢出时会自动重装初值）
+
+![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20210627153422.png)
+
+因此处选用的时钟源为 180 MHz，因此将预分频系数设置为 180-1 = 179，分频后为 1 MHz，将装载值设置为 1000-1 = 9999，所以得到 1 kHz 的频率。
+
+### 在代码内配置基本定时器
+
