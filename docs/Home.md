@@ -5,7 +5,7 @@ sidebar_label: Home
 slug: /
 ---
 
-> 一个不会讲故事的攻城狮，算不上一个很酷的产品汪~
+;> 一个不会讲故事的攻城狮，算不上一个很酷的产品汪~
 
 [![GitHub](https://img.shields.io/badge/dynamic/json?label=GitHub&query=%24.data.totalSubs&url=https%3A%2F%2Fapi.spencerwoo.com%2Fsubstats%2F%3Fsource%3Dgithub%26queryKey%3Dlinyuxuanlin&labelColor=555555&color=282c34&longCache=true?&style=for-the-badge)](https://github.com/linyuxuanlin)
 [![知乎](https://img.shields.io/badge/dynamic/json?color=282c34&labelColor=0084ff&label=ZHIHU&query=%24.data.totalSubs&url=https%3A%2F%2Fapi.spencerwoo.com%2Fsubstats%2F%3Fsource%3Dzhihu%26queryKey%3Dlinyuxuanlin&longCache=true?&style=for-the-badge)](https://www.zhihu.com/people/linyuxuanlin)
