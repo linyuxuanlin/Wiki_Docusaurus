@@ -104,7 +104,6 @@ module.exports = {
         '技术文档写作规范', // CSDN todo
         '个人知识库的搭建-基于Docusaurus', // CSDN
         'Windows初始化与软件推荐', // CSDN todo
-        'Windows11个人初始化配置', 
         'Docusaurus极简部署指南', // CSDN todo
         'Hugo极简搭建指南', // CSDN todo
         '如何在iPad上运行VSCode', // CSDN
@@ -182,6 +181,7 @@ module.exports = {
       label: '小技巧',
       items: [
         'Windows常用命令',
+        'Windows11个人初始化配置', 
         'VSCode的便携模式',
         '开启Chrome（Edge）多线程下载',
         '移除Chrome（Edge）由组织管理',
