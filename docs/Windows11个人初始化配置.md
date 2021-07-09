@@ -3,6 +3,8 @@ id: Windows11个人初始化配置
 title: Windows11个人初始化配置
 ---
 
+## 系统配置
+
 - frp
 
 ## 软件安装
