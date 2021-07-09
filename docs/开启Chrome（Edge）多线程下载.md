@@ -1,6 +1,6 @@
 ---
 id: 开启Chrome（Edge）多线程下载
-title: 开启 Chrome（Edge） 多线程下载
+title: 开启 Chrome（Edge）多线程下载
 ---
 
 ## 如何开启
