@@ -104,6 +104,7 @@ module.exports = {
         '技术文档写作规范', // CSDN todo
         '个人知识库的搭建-基于Docusaurus', // CSDN
         'Windows初始化与软件推荐', // CSDN todo
+        'Windows11个人初始化配置', 
         'Docusaurus极简部署指南', // CSDN todo
         'Hugo极简搭建指南', // CSDN todo
         '如何在iPad上运行VSCode', // CSDN
