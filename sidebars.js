@@ -40,7 +40,6 @@ module.exports = {
         'PCB名片设计',
         '常用的防反接电路',
         '什么是金手指',
-        '电路设计中常用的接口及关键点',
         'AD使用Git的注意事项',
       ],
     },
@@ -235,7 +234,7 @@ module.exports = {
 //'archive/命令行基本操作'
 //'archive/科技X的访谈',
 //'archive/极简面包-烘培',
-
+//'电路设计中常用的接口及关键点',
 //'archive/Bash基础',
 //'archive/Linux基础（CentOS）',
 //'archive/从零搭建视觉开发环境（Docker-Linux）',
