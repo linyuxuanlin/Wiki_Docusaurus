@@ -5,15 +5,6 @@ title: 如何在 Markdown 中使用 LaTeX
 
 Markdown 原生支持使用 LaTeX 编写数学公式和符号。
 
-## 参考与致谢
-
-- [Markdown 数学公式](https://markdown.budshome.com/formula.html)
-- - [LaTeX-Symbols.pdf](https://def.fe.up.pt/latex/Symbols.pdf)
-
-> 文章作者：**Power Lin**  
-> 原文地址：<https://wiki-power.com>  
-> 版权声明：文章采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh) 协议，转载请注明出处。
-
 ## 字体样式
 
 - 换行：`\\`
@@ -99,3 +90,24 @@ Markdown 原生支持使用 LaTeX 编写数学公式和符号。
 |   ≤    |    \leq    |   ⋀    | \bigwedge |
 |   ≥    |    \geq    |   ≠    |   \neq    |
 |   ≈    |  \approx   |   ≡    |  \equiv   |
+
+## 微积分符号
+
+| 运算符 | 表达式 | 运算符 | 表达式 |
+| :----: | :----: | :----: | :----: |
+|   ∮    | \oint  |   ∞    | \infty |
+|   ∇    | \nabla |   ∫    |  \int  |
+|   ∑    |  \sum  |  lim   |  \lim  |
+|   →    | \vec{} |   -    |   -    |
+
+## 逻辑符号
+
+| 运算符 |  表达式  | 运算符 |   表达式   |
+| :----: | :------: | :----: | :--------: |
+|   ∵    | \because |   ∴    | \therefore |
+|   ∀    | \forall  |   ∃    |  \exists   |
+
+## 参考与致谢
+
+- [Markdown 数学公式](https://markdown.budshome.com/formula.html)
+- - [LaTeX-Symbols.pdf](https://def.fe.up.pt/latex/Symbols.pdf)
