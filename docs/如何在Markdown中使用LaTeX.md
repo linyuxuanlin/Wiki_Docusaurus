@@ -110,4 +110,4 @@ Markdown 原生支持使用 LaTeX 编写数学公式和符号。
 ## 参考与致谢
 
 - [Markdown 数学公式](https://markdown.budshome.com/formula.html)
-- - [LaTeX-Symbols.pdf](https://def.fe.up.pt/latex/Symbols.pdf)
+- [LaTeX-Symbols.pdf](https://def.fe.up.pt/latex/Symbols.pdf)
