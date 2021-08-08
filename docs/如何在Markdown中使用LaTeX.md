@@ -54,30 +54,48 @@ Markdown 原生支持使用 LaTeX 编写数学公式和符号。
 
 ## 希腊字母
 
-| 希腊字母 |  表达式  | 希腊字母 |   表达式    |
-| :------: | :------: | :------: | :---------: |
-|    A     |    A     |    α     |   \alpha    |
-|    B     |    B     |    β     |    \beta    |
-|    Γ     |  \Gamma  |    γ     |   \gamma    |
-|    Δ     |  \Delta  |    δ     |   \delta    |
-|    E     |    E     |    ϵ     |  \epsilon   |
-|    Z     |    Z     |    ε     | \varepsilon |
-|    H     |    H     |    η     |    \eta     |
-|    Θ     |  \Theta  |    θ     |   \theta    |
-|    I     |    I     |    ι     |    \iota    |
-|    K     |    K     |    κ     |   \kappa    |
-|    Λ     | \Lambda  |    λ     |   \lambda   |
-|    M     |    M     |    μ     |     \mu     |
-|    N     |    N     |    ν     |     \nu     |
-|    Ξ     |   \Xi    |    ξ     |     \xi     |
-|    O     |    O     |    ο     |  \omicron   |
-|    Π     |   \Pi    |    π     |     \pi     |
-|    P     |    P     |    ρ     |    \rho     |
-|    Σ     |  \Sigma  |    σ     |   \sigma    |
-|    T     |    T     |    τ     |    \tau     |
-|    Υ     | \Upsilon |    υ     |  \upsilon   |
-|    Φ     |   \Phi   |    ϕ     |    \phi     |
-|    −     |    -     |    φ     |   \varphi   |
-|    X     |    X     |    χ     |    \chi     |
-|    Ψ     |   \Psi   |    ψ     |    \psi     |
-|    Ω     |  \Omega  |    ω     |   \omega    |
+| 希腊字母（大写） |  表达式  | 希腊字母 （小写） |   表达式    |
+| :--------------: | :------: | :---------------: | :---------: |
+|        A         |    A     |         α         |   \alpha    |
+|        B         |    B     |         β         |    \beta    |
+|        Γ         |  \Gamma  |         γ         |   \gamma    |
+|        Δ         |  \Delta  |         δ         |   \delta    |
+|        E         |    E     |         ϵ         |  \epsilon   |
+|        Z         |    Z     |         ε         | \varepsilon |
+|        H         |    H     |         η         |    \eta     |
+|        Θ         |  \Theta  |         θ         |   \theta    |
+|        I         |    I     |         ι         |    \iota    |
+|        K         |    K     |         κ         |   \kappa    |
+|        Λ         | \Lambda  |         λ         |   \lambda   |
+|        M         |    M     |         μ         |     \mu     |
+|        N         |    N     |         ν         |     \nu     |
+|        Ξ         |   \Xi    |         ξ         |     \xi     |
+|        O         |    O     |         ο         |  \omicron   |
+|        Π         |   \Pi    |         π         |     \pi     |
+|        P         |    P     |         ρ         |    \rho     |
+|        Σ         |  \Sigma  |         σ         |   \sigma    |
+|        T         |    T     |         τ         |    \tau     |
+|        Υ         | \Upsilon |         υ         |  \upsilon   |
+|        Φ         |   \Phi   |         ϕ         |    \phi     |
+|        −         |    -     |         φ         |   \varphi   |
+|        X         |    X     |         χ         |    \chi     |
+|        Ψ         |   \Psi   |         ψ         |    \psi     |
+|        Ω         |  \Omega  |         ω         |   \omega    |
+
+## 运算符
+
+| 运算符 |   表达式   | 运算符 |  表达式   |
+| :----: | :--------: | :----: | :-------: |
+|   ±    |    \pm     |   ∅    | \emptyset |
+|   ×    |   \times   |   ∈    |    \in    |
+|   ÷    |    \div    |   ∉    |  \notin   |
+|   ∣    |    \mid    |   ⊂    |  \subset  |
+|   ⋅    |   \cdot    |   ⊃    |  \supset  |
+|   ∘    |   \circ    |   ⊆    | \subseteq |
+|   ∗    |    \ast    |   ⊇    | \supseteq |
+|   ⨀    |  \bigodot  |   ⋂    |  \bigcap  |
+|   ⨂    | \bigotimes |   ⋃    |  \bigcup  |
+|   ⨁    | \bigoplus  |   ⋁    |  \bigvee  |
+|   ≤    |    \leq    |   ⋀    | \bigwedge |
+|   ≥    |    \geq    |   ≠    |   \neq    |
+|   ≈    |  \approx   |   ≡    |  \equiv   |
