@@ -114,6 +114,7 @@ module.exports = {
         '用树莓派架设云打印服务器', // CSDN todo
         '用Graphviz绘制关系图', // CSDN todo
         'RSS-高效率的阅读方式',
+        '如何在Markdown中使用LaTeX',
         '把回忆放心交给GooglePhotos',
         'VSCode生产力指南-环境配置', // CSDN todo
         'VSCode生产力指南-JupyterNotebook', // CSDN todo
@@ -205,7 +206,6 @@ module.exports = {
         'npm和Yarn换源加速国内访问',
         'Vue.js小技巧',
         '正则表达式实用语句',
-        'LaTeX希腊字母对照表',
         'GitHub改Host',
         'Linux用户操作',
         'MSI主板开启虚拟化的方法',
