@@ -5,11 +5,10 @@ title: 如何在 Markdown 中使用 LaTeX
 
 Markdown 原生支持使用 LaTeX 编写数学公式和符号。
 
-
-
-## 参考与致谢 
+## 参考与致谢
 
 - [Markdown 数学公式](https://markdown.budshome.com/formula.html)
+- - [LaTeX-Symbols.pdf](https://def.fe.up.pt/latex/Symbols.pdf)
 
 > 文章作者：**Power Lin**  
 > 原文地址：<https://wiki-power.com>  
@@ -31,7 +30,7 @@ Markdown 原生支持使用 LaTeX 编写数学公式和符号。
 - 下标：`_`
 - 如有嵌套，使用 `{}` 包含。
 
-例： $ X^{2m}_{3n} $
+例： $$X^{2m}_{3n}$$
 
 ## 上 / 下划线
 
@@ -39,3 +38,46 @@ Markdown 原生支持使用 LaTeX 编写数学公式和符号。
 - 下划线：`\underline`
 
 例：$$\overline{x^2+a+b}$$
+
+## 分数
+
+分数的表示：`\frac{分子}{分母}`
+
+## 方程组
+
+方式一：`\begin{array}{c} 表达式一\\表达式二... \end{array}`
+方式二：`\begin{cases}…\end{cases}`
+
+## 开平方根
+
+格式：`\sqrt[n`]{x}`，其中 `n` 表示开根次数，`x` 表示被开方项。
+
+## 希腊字母
+
+| 希腊字母 |  表达式  | 希腊字母 |   表达式    |
+| :------: | :------: | :------: | :---------: |
+|    A     |    A     |    α     |   \alpha    |
+|    B     |    B     |    β     |    \beta    |
+|    Γ     |  \Gamma  |    γ     |   \gamma    |
+|    Δ     |  \Delta  |    δ     |   \delta    |
+|    E     |    E     |    ϵ     |  \epsilon   |
+|    Z     |    Z     |    ε     | \varepsilon |
+|    H     |    H     |    η     |    \eta     |
+|    Θ     |  \Theta  |    θ     |   \theta    |
+|    I     |    I     |    ι     |    \iota    |
+|    K     |    K     |    κ     |   \kappa    |
+|    Λ     | \Lambda  |    λ     |   \lambda   |
+|    M     |    M     |    μ     |     \mu     |
+|    N     |    N     |    ν     |     \nu     |
+|    Ξ     |   \Xi    |    ξ     |     \xi     |
+|    O     |    O     |    ο     |  \omicron   |
+|    Π     |   \Pi    |    π     |     \pi     |
+|    P     |    P     |    ρ     |    \rho     |
+|    Σ     |  \Sigma  |    σ     |   \sigma    |
+|    T     |    T     |    τ     |    \tau     |
+|    Υ     | \Upsilon |    υ     |  \upsilon   |
+|    Φ     |   \Phi   |    ϕ     |    \phi     |
+|    −     |    -     |    φ     |   \varphi   |
+|    X     |    X     |    χ     |    \chi     |
+|    Ψ     |   \Psi   |    ψ     |    \psi     |
+|    Ω     |  \Omega  |    ω     |   \omega    |
