@@ -24,8 +24,8 @@ title: Windows11个人初始化配置
 - [**微信（测试版）**](https://dldir1.qq.com/weixin/Windows/Beta/WeChatBeta.exe)
 - [**火绒安全**](https://www.huorong.cn/)
 - [**Git**](https://git-scm.com/downloads)
-- [百度网盘]
 
 ## 绿化 / 配置
 
+- 百度网盘 - 绿化
 - PeaZip Configration
