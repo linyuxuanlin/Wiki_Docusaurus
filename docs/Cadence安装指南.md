@@ -14,9 +14,23 @@ title: Cadence 安装指南
 绘制原理图使用 OrCAD Capture CIS（开始菜单-》Cadence-》Capture CIS）  
 绘制 PCB 使用 Allegro PCB Designer （开始菜单-》Cadence-》PCB Editor）
 
-http://cip-server.local/CIP-E/
+CIP 库：http://cip-server.local/CIP-E/
 
-操作指南：
+## 一些设置
+
+DRC 设置：
+
+![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20210810134720.png)
+
+复制元器件时自动重命名位号：
+
+![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20210810134747.png)
+
+移动字符时贴近栅格：
+
+![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20210810134758.png)
+
+## 快捷键
 
 - 拉线：`W`
 - 取消：`ESC`
