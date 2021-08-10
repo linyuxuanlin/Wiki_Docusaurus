@@ -21,3 +21,4 @@ http://cip-server.local/CIP-E/
 - 拉线：`W`
 - 取消：`ESC`
 - 拉排线：`F4`
+- 加标签：`N`
