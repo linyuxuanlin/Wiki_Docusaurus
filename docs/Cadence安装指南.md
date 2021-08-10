@@ -3,11 +3,11 @@ id: Cadence安装指南
 title: Cadence 安装指南
 ---
 
-## 参考与致谢 
+## 参考与致谢
 
-- [【Cadence快速入门】一文总结版](https://blog.csdn.net/ReCclay/article/details/101225359)
+- [【Cadence 快速入门】一文总结版](https://blog.csdn.net/ReCclay/article/details/101225359)
 - [OrCAD Capture Tutorial](https://resources.orcad.com/orcad-capture-tutorials)
-- [cadence软件用于高分屏笔记本时候显示字体模糊问题解决](https://blog.csdn.net/qq_34338527/article/details/108846792)
+- [cadence 软件用于高分屏笔记本时候显示字体模糊问题解决](https://blog.csdn.net/qq_34338527/article/details/108846792)
 
 ---
 
