@@ -23,3 +23,4 @@ http://cip-server.local/CIP-E/
 - 拉排线：`F4`
 - 加标签：`N`
 - 旋转：`R`
+- 打开 CIS 面板：`Z`
