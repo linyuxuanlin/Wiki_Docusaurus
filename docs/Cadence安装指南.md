@@ -22,3 +22,4 @@ http://cip-server.local/CIP-E/
 - 取消：`ESC`
 - 拉排线：`F4`
 - 加标签：`N`
+- 旋转：`R`
