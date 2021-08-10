@@ -1,14 +1,6 @@
 ---
-id: Cadence安装指南
-title: Cadence 安装指南
----
-
-## 参考与致谢
-
-- [【Cadence 快速入门】一文总结版](https://blog.csdn.net/ReCclay/article/details/101225359)
-- [OrCAD Capture Tutorial](https://resources.orcad.com/orcad-capture-tutorials)
-- [cadence 软件用于高分屏笔记本时候显示字体模糊问题解决](https://blog.csdn.net/qq_34338527/article/details/108846792)
-
+id: Cadence基础入门
+title: Cadence 基础入门
 ---
 
 绘制原理图使用 OrCAD Capture CIS（开始菜单-》Cadence-》Capture CIS）  
@@ -38,3 +30,9 @@ DRC 设置：
 - 加标签：`N`
 - 旋转：`R`
 - 打开 CIS 面板：`Z`
+
+## 参考与致谢
+
+- [【Cadence 快速入门】一文总结版](https://blog.csdn.net/ReCclay/article/details/101225359)
+- [OrCAD Capture Tutorial](https://resources.orcad.com/orcad-capture-tutorials)
+- [cadence 软件用于高分屏笔记本时候显示字体模糊问题解决](https://blog.csdn.net/qq_34338527/article/details/108846792)

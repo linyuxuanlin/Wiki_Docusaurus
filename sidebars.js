@@ -42,7 +42,7 @@ module.exports = {
         'PCB名片设计',
         '常用的防反接电路',
         '连接器的规范与设计',
-        'Cadence安装指南',
+        'Cadence基础入门',
         'AD使用Git的注意事项',
       ],
     },
