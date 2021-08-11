@@ -87,14 +87,21 @@ DRC 设置：
 
 坑：当使用 CIP 库，显示 `not found in the configured librarie lists` 时，要检查路径内空格的编码。
 
+- **鼠标滚轮缩放**：`Options` - `Preferences…` - `Pan and Zoom` - 左右两个 `Zoom Factor` 设置为 1.1 倍
+- **放置元件时刷新原理图**：`Options` - `Preferences…` - `Miscellaneous` - `Place Part` – 勾选 `Refresh part on selection`
+- 
+
 ## 快捷键
 
 - 拉线：`W`
 - 取消：`ESC`
 - 拉排线：`F4`
-- 加标签：`N`
-- 旋转：`R`
-- 打开 CIS 面板：`Z`
+- 放置网络标号：`N`
+- 旋转 / 水平镜像 / 垂直镜像元件：`R` / `H` / `V`
+- 打开 CIP 面板：`Z`
+- 放置电源 / 地：`F` / `G`
+- No connect：`X`
+- 筛选器：`Ctrl` + `I`
 
 ## 参考与致谢
 
