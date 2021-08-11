@@ -3,10 +3,73 @@ id: Cadence基础入门
 title: Cadence 基础入门
 ---
 
+## 基础
+
 绘制原理图使用 OrCAD Capture CIS（开始菜单-》Cadence-》Capture CIS）  
 绘制 PCB 使用 Allegro PCB Designer （开始菜单-》Cadence-》PCB Editor）
 
-CIP 库：http://cip-server.local/CIP-E/
+一般来说，使用一个 `.DSN` 文件即可涵括整个工程，打开会自动生成 `.opj` 等原理图文件。如果使用 git 做版本管理，可以添加以下 gitignore：
+
+```gitignore
+# From original gitignore 
+
+#############
+## Allegro
+#############
+
+# Ignore log file
+*.log
+*.log,1
+*.log,2
+*.log,3
+
+*.dml
+*.lst
+
+#ignore 记录操作allegro的事件
+*.jrl
+*.jrl,1
+
+*.tag
+
+#报告文件
+*.rpt
+
+#报告文件
+*.cfg
+*.cfg,1
+
+*.lck
+
+#报表文件
+*.txt
+*.txt,1
+*.txt,2
+
+#XY数据除外
+!place_txt.txt
+
+#DXF导入文件
+*.cnv
+
+#Gerber param file除外
+!art_param.txt
+
+#Folder
+#过滤整个文件夹
+/signoise.run/ 
+
+#############
+## OrCAD
+#############
+*.dbk
+*.opj
+*.DRC
+*.DSNlck
+
+#ignore netlist
+allegro/ 
+```
 
 ## 一些设置
 
