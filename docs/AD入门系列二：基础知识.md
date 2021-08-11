@@ -171,7 +171,6 @@ AD 插件：
 - [嘉立创 SMT 贴片 可贴列表 PADS 集成库 \（正式版)](http://club.szlcsc.com/article/details_2757_1.html)
 - [Altium Designer 使用 Git 构想](https://blog.csdn.net/weifengdq/article/details/78406438)
 - [Using Version Control](https://www.altium.com/documentation/altium-designer/using-version-control-ad)
-- 彬哥整理的经验和笔记
 
 
 
