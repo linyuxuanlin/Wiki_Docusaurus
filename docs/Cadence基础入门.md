@@ -22,6 +22,8 @@ DRC 设置：
 
 ![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20210810134758.png)
 
+坑：当使用 CIP 库，显示 `not found in the configured librarie lists` 时，要检查路径内空格的编码。
+
 ## 快捷键
 
 - 拉线：`W`
