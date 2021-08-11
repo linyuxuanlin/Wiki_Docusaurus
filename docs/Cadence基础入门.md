@@ -89,7 +89,7 @@ DRC 设置：
 
 - **鼠标滚轮缩放**：`Options` - `Preferences…` - `Pan and Zoom` - 左右两个 `Zoom Factor` 设置为 1.1 倍
 - **放置元件时刷新原理图**：`Options` - `Preferences…` - `Miscellaneous` - `Place Part` – 勾选 `Refresh part on selection`
-- 
+-
 
 ## 快捷键
 
