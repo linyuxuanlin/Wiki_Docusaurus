@@ -33,11 +33,7 @@ AD 插件：
 
 - [**Altium Library Loader**](https://www.samacsys.com/altium-designer-library-instructions/)：这个用起来真的超级方便
 
-搜索引擎：
-
-- [**芯片之家**](http://www.chiphome.com/)
-- [**SnapEDA**](https://www.snapeda.com/)
-- [**Ultra Librarian**](https://www.ultralibrarian.com/)
+搜索引擎：[**原理图与封装下载 · Power's NAV**](https://nav.wiki-power.com/#87696a153c91c609c4c595e421e880ae)
 
 ## 快捷键
 
