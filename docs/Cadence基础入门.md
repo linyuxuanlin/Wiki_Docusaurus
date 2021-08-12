@@ -89,7 +89,7 @@ DRC 设置：
 
 - **鼠标滚轮缩放**：`Options` - `Preferences…` - `Pan and Zoom` - 左右两个 `Zoom Factor` 设置为 1.1 倍
 - **放置元件时刷新原理图**：`Options` - `Preferences…` - `Miscellaneous` - `Place Part` – 勾选 `Refresh part on selection`
--
+- **设置栅格大小**：`Options` - `Preferences…` - `Grid Display` - `Grid Spacing` - 设置为 1/2
 
 ## 快捷键
 
@@ -102,6 +102,10 @@ DRC 设置：
 - 放置电源 / 地：`F` / `G`
 - No connect：`X`
 - 筛选器：`Ctrl` + `I`
+
+## 错误与解决
+
+- 无法拖动元器件：一般重启即可
 
 ## 参考与致谢
 
