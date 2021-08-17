@@ -20,7 +20,7 @@ ADC 是模数转换，将模拟信号变成数字信号，以供数字设备处�
 - 24 V 供电
 - 9 通道
   - 7 pin's 0 or 24vac(on/off)
-  - 2pin's 0-10vac(variable)
+  - 2 pin's 0-10vac(variable)
 - 10 个螺丝端子（1 个地）
 - 过电压保护
 - 耐反向电压
