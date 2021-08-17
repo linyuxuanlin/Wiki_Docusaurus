@@ -73,4 +73,8 @@ ADS1015 是TI公司生产的一款 delta-sigma(ΔΣ) AD转换芯片，采用IIC�
 
 ### IIC
 
-ADS1015 可以根据 ADDR 接 GND VDD SDA SCL四个引脚，来设置不同地址
+ADS1015 可以根据 ADDR 接 GND VDD SDA SCL四个引脚，来设置不同地址：
+
+![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20210817142432.png)
+
+注：优先使用 GND，VDD 和 SCL 来定义地址。
