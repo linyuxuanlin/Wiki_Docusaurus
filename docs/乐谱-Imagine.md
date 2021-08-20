@@ -19,9 +19,9 @@ It's easy if you try
 No hell below us  
 Above us only sky  
 
-F - Am - Dm  
+F - Am - Dm7  
 Imagine all the people  
-G - G7  
+G ---- C -G7  
 Living for today  
 
 F - G - C - E  
