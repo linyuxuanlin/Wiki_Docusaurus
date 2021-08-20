@@ -13,22 +13,22 @@ Main Riff :
 
 Intro: main Riff - x2 -
 
-C Cmaj7 F  
+C - Cmaj7 - F  
 Imagine there's no heaven  
 It's easy if you try  
 No hell below us  
 Above us only sky  
 
-F Am Dm  
+F - Am - Dm  
 Imagine all the people  
-G G7  
+G - G7  
 Living for today  
 
-F G C E  
+F - G - C - E  
 You may say I'm a dreamer  
-F G C E  
+F - G - C - E  
 But I'm not the only one  
-F G C E  
+F - G - C - E  
 I hope someday you'll join us  S
-F G C  
+F - G - C  
 And the world will live as one  
