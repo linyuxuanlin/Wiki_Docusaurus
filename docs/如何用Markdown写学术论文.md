@@ -3,16 +3,13 @@ id: 如何用Markdown写学术论文
 title: 如何用 Markdown 写学术论文
 ---
 
-
 ## 环境安装
+
 我们需要安装以下几样东西：
 
 - [**Python 环境**](https://www.python.org/downloads/)
 - [**Pandoc 环境**](https://github.com/jgm/pandoc/releases/)
   - pandoc-fignos 插件：`pip install pandoc-fignos`
-
-
-
 
 ## 语法
 
@@ -23,7 +20,6 @@ pandoc demo-math.md -o demo-math.docx
 ### 数学公式
 
 可直接编辑 LaTeX 语法，具体参考 [LaTeX 希腊字母对照表](https://wiki-power.com/LaTeX%E5%B8%8C%E8%85%8A%E5%AD%97%E6%AF%8D%E5%AF%B9%E7%85%A7%E8%A1%A8)
-
 
 ### 脚注
 
@@ -65,11 +61,10 @@ pandoc --filter pandoc-fignos --filter pandoc-citeproc --bibliography=myref.bib 
 
 【更新中】
 
-## 参考与致谢 
+## 参考与致谢
 
 - [如何用 Markdown 写论文？](https://www.jianshu.com/p/b0ac7ae98100)
 
 > 文章作者：**Power Lin**  
 > 原文地址：<https://wiki-power.com>  
 > 版权声明：文章采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh) 协议，转载请注明出处。
-

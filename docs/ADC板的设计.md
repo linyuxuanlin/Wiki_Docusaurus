@@ -63,17 +63,11 @@ ADS1015 可以根据 ADDR 引脚选择接 GND，VDD，SDA，SCL 四个引脚，�
 
 ### 分压电路
 
-> This library is intended to be a generic driver for the ADS1015, although it's very strongly minded (by way of defaults and some, perhaps erroneous, comments) toward our Breakout Garden ADC breakout.
->
-> The gain is only relevant to the range of the ADC itself, which is 0v to VCC (a maxmum of 5v). The +-24v range is provided by means of a voltage divider which only exists on our Breakout Garden breakout.
->
-> Since our voltage divider divides 24v down to 1.14v there's no reason to ever use a gain value that gives a full-scale range higher than +-2.048
->
-> In the case of a differential reading (which can only be measured between channels 0 and 1 due to VREF occupying channel 3 on our breakout) the input range is 0-24v since neither of the input voltages can be negative. The result produced would be a +-24v differential between input A and B
->
-> In this case (again only on out breakout) you would be measuring the difference between 0-24v divided down to 0-1.14v on both channels, and subsequently multipled by by the resistor divider values.
+![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20210820142209.png)
 
-1.14V
+$V_{OUT}=\frac{V_S\times R_2}{R_1+R_2}$
+
+0-24V -> 0-1.14V
 
 - R1：7.5k
 - R2：374r
@@ -118,3 +112,13 @@ AIN2(+) ~ AIN3(-).
 - [A/D(模数转换)的主要指标](http://c.biancheng.net/cpp/html/1960.html)
 - [Differential inputs and programmable gain](https://github.com/pimoroni/ads1015-python/issues/8)
 - [Using the ADS1115](https://www.best-microcontroller-projects.com/ads1115.html)
+
+> This library is intended to be a generic driver for the ADS1015, although it's very strongly minded (by way of defaults and some, perhaps erroneous, comments) toward our Breakout Garden ADC breakout.
+>
+> The gain is only relevant to the range of the ADC itself, which is 0v to VCC (a maxmum of 5v). The +-24v range is provided by means of a voltage divider which only exists on our Breakout Garden breakout.
+>
+> Since our voltage divider divides 24v down to 1.14v there's no reason to ever use a gain value that gives a full-scale range higher than +-2.048
+>
+> In the case of a differential reading (which can only be measured between channels 0 and 1 due to VREF occupying channel 3 on our breakout) the input range is 0-24v since neither of the input voltages can be negative. The result produced would be a +-24v differential between input A and B
+>
+> In this case (again only on out breakout) you would be measuring the difference between 0-24v divided down to 0-1.14v on both channels, and subsequently multipled by by the resistor divider values.
