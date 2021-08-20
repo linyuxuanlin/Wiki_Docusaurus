@@ -21,15 +21,15 @@ ADC 板将模拟信号变成数字信号，以供数字设备处理。
 
 ## ADC 芯片方案
 
-ADC 芯片选择 TI 的 ADS1015，其基本参数如下：
+ADC 芯片选择 TI 的 ADS1115，其基本参数如下：
 
 - 电源电压：2.0-5.5V
 - 调制器：delta-sigma(ΔΣ) 型
 - 参考电压：内部
 - 通信接口协议：IIC
 - 单芯片通道：4 个
-- 分辨率：12 位（4096）
-- 可编程数据速率：128-3.3k SPS
+- 分辨率：16 位（65536）
+- 可编程数据速率：8-860 SPS
 - 可编程比较器（PGA）
 - 模式：单冲、持续
 
@@ -99,9 +99,19 @@ AIN2(+) ~ AIN3(-).
 
 010 : FSR = ±2.048 V (default)
 
+### ESD
+
+Electrostatic discharge (ESD) diodes connected to VDD and GND protect the ADS111x analog inputs. Keep the absolute voltage of any input within the range shown in Equation 3 to prevent the ESD diodes from turning on.
+
+GND – 0.3 V < V(AINX) < VDD + 0.3 V
+
+If the voltages on the input pins can potentially violate these conditions, use external Schottky diodes and series resistors to limit the input current to safe values (see the Absolute Maximum Ratings table).
+
 ## 参考与致谢
 
 ![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20210820101621.png)
+
+![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20210820144842.png)
 
 - [ADS1015 +/-24V ADC breakout](https://shop.pimoroni.com/products/ads1015-adc-breakout)
 - [ADS1015](https://www.ti.com.cn/product/cn/ADS1015)
