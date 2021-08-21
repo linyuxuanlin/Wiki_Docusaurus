@@ -13,7 +13,7 @@ Main Riff :
 
 Intro: main Riff - x2 -
 
-C - Cmaj7 - F  
+C - - C7 F - -
 Imagine there's no heaven  
 It's easy if you try  
 No hell below us  
