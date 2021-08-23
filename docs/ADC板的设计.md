@@ -35,7 +35,7 @@ ADC 芯片选择 TI 的 ADS1115，其基本参数如下：
 
 ### 简化框图
 
-![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20210817110252.png)
+![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20210823091816.png)
 
 ### 引脚分布
 
@@ -108,8 +108,6 @@ GND – 0.3 V < V(AINX) < VDD + 0.3 V
 If the voltages on the input pins can potentially violate these conditions, use external Schottky diodes and series resistors to limit the input current to safe values (see the Absolute Maximum Ratings table).
 
 ### 过压过流保护
-
-
 
 如果模拟输入电压长期超出规定值 300 mV，芯片将永久是损坏。防止过压的一种方法是放置限流电阻。ADS1115 的模拟输入可以承受高达 10 mA 的连续电流。
 
