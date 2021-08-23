@@ -29,7 +29,7 @@ ADC 芯片选择 TI 的 ADS1115，其基本参数如下：
 - 可编程比较器（PGA）
 - 模式：单冲、持续
 - 参考电压：内置
-- 时钟：内置
+- 时钟：内置，1 MHz
 
 ### 简化框图
 
@@ -61,6 +61,8 @@ ADS1015 可以根据 ADDR 引脚选择接 GND，VDD，SDA，SCL 四个引脚，�
 
 ![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20210817150513.png)
 
+![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20210820144842.png)
+
 多个 ADS1015 一起使用：根据 ADDR 接法来区分地址
 
 ### 分压电路
@@ -77,27 +79,27 @@ $V_{OUT}=\frac{V_S\times R_2}{R_1+R_2}$
 - R1：10k
 - R2：499r
 
-FSR = ±2.048 V
-LSB size:62.5 μV
-010 : FSR = ±2.048 V (default)
-common:6M
+FSR = ±2.048 V  
+LSB size:62.5 μV  
+010 : FSR = ±2.048 V (default)  
+common:6M  
 diff:4.9MΩ
 
 ### MUX
 
 AIN0 与 AIN1 可以依据 AIN3 进行差分测量
 
-Input signal referenced to ground (All 4 inputs are selectable)
-AIN0(+) ~ GND(-),
-AIN1(+) ~ GND(-),
-AIN2(+) ~ GND(-).
-AIN3(+) ~ GND(-).
-Two Differential inputs:
-AIN0(+) ~ AIN1(-),
-AIN2(+) ~ AIN3(-).
-Three referenced inputs:
-AIN0(+) ~ AIN3(-),
-AIN1(+) ~ AIN3(-),
+Input signal referenced to ground (All 4 inputs are selectable)  
+AIN0(+) ~ GND(-),  
+AIN1(+) ~ GND(-),  
+AIN2(+) ~ GND(-).  
+AIN3(+) ~ GND(-).  
+Two Differential inputs:  
+AIN0(+) ~ AIN1(-),  
+AIN2(+) ~ AIN3(-).  
+Three referenced inputs:  
+AIN0(+) ~ AIN3(-),  
+AIN1(+) ~ AIN3(-),  
 AIN2(+) ~ AIN3(-).
 
 000 : AINP = AIN0 and AINN = AIN1 (default)
@@ -106,32 +108,22 @@ AIN2(+) ~ AIN3(-).
 
 010 : FSR = ±2.048 V (default)
 
-### ESD
+### 输入滤波
 
-Electrostatic discharge (ESD) diodes connected to VDD and GND protect the ADS111x analog inputs. Keep the absolute voltage of any input within the range shown in Equation 3 to prevent the ESD diodes from turning on.
-
-GND – 0.3 V < V(AINX) < VDD + 0.3 V
-
-If the voltages on the input pins can potentially violate these conditions, use external Schottky diodes and series resistors to limit the input current to safe values (see the Absolute Maximum Ratings table).
+（Analog Input Filtering）
+【待编辑】
 
 ### 保护电路
 
-ESD 防护：
-
-芯片内每个模拟输入脚上有连接着 VDD 与 GND 的 ESD 二极管。在正常电压范围内（$GND - 0.3 V ~ VDD + 0.3 V$），它们不会被开启。
+芯片内每个模拟输入脚上有连接着 VDD 与 GND 的 ESD 二极管，在正常电压范围内（$GND - 0.3 V ~ VDD + 0.3 V$）不会开启。
 
 如果模拟输入引脚的电压有可能过于离谱，那可以外加肖特基管和一些电阻去进行限流。
 
-
-过压过流保护：
-
-如果模拟输入电压长期超出规定值 300 mV，芯片将永久是损坏。防止过压的一种方法是放置限流电阻。ADS1115 的模拟输入可以承受高达 10 mA 的连续电流。
+如果模拟输入电压长期超出规定值 300 mV，或者 10 mA 以上的连续电流，将造成芯片永久损坏。
 
 ## 参考与致谢
 
 ![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20210820101621.png)
-
-![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20210820144842.png)
 
 - [ADS1015 +/-24V ADC breakout](https://shop.pimoroni.com/products/ads1015-adc-breakout)
 - [ADS1015](https://www.ti.com.cn/product/cn/ADS1015)
