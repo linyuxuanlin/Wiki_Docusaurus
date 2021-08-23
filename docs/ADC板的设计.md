@@ -28,6 +28,8 @@ ADC 芯片选择 TI 的 ADS1115，其基本参数如下：
 - 可编程数据速率：8-860 SPS
 - 可编程比较器（PGA）
 - 模式：单冲、持续
+- 参考电压：内置
+- 时钟：内置
 
 ### 简化框图
 
@@ -83,6 +85,8 @@ diff:4.9MΩ
 
 ### MUX
 
+AIN0 与 AIN1 可以依据 AIN3 进行差分测量
+
 Input signal referenced to ground (All 4 inputs are selectable)
 AIN0(+) ~ GND(-),
 AIN1(+) ~ GND(-),
@@ -110,7 +114,16 @@ GND – 0.3 V < V(AINX) < VDD + 0.3 V
 
 If the voltages on the input pins can potentially violate these conditions, use external Schottky diodes and series resistors to limit the input current to safe values (see the Absolute Maximum Ratings table).
 
-### 过压过流保护
+### 保护电路
+
+ESD 防护：
+
+芯片内每个模拟输入脚上有连接着 VDD 与 GND 的 ESD 二极管。在正常电压范围内（$GND - 0.3 V ~ VDD + 0.3 V$），它们不会被开启。
+
+如果模拟输入引脚的电压有可能过于离谱，那可以外加肖特基管和一些电阻去进行限流。
+
+
+过压过流保护：
 
 如果模拟输入电压长期超出规定值 300 mV，芯片将永久是损坏。防止过压的一种方法是放置限流电阻。ADS1115 的模拟输入可以承受高达 10 mA 的连续电流。
 
