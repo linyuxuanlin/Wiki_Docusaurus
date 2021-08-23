@@ -15,7 +15,6 @@ ADC 板将模拟信号变成数字信号，以供数字设备处理。
 - 和 BlueNano V1 兼容同一个外壳
 - 加两个 Microbus 座子以连接 Beagle Connect
 
-
 ## ADC 芯片方案
 
 ADC 芯片选择 TI 的 ADS1115，其基本参数如下：
@@ -43,6 +42,10 @@ ADC 芯片选择 TI 的 ADS1115，其基本参数如下：
 - 模拟：浮空或连接中间电源（接地会产生较大的漏电流）
 - NC：浮空或接地
 - ALERT/RDY：浮空或弱上拉
+
+### 推荐使用条件
+
+![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20210823170550.png)
 
 ### IIC
 
