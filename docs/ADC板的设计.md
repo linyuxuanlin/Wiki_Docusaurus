@@ -143,3 +143,41 @@ AIN2(+) ~ AIN3(-).
 > In the case of a differential reading (which can only be measured between channels 0 and 1 due to VREF occupying channel 3 on our breakout) the input range is 0-24v since neither of the input voltages can be negative. The result produced would be a +-24v differential between input A and B
 >
 > In this case (again only on out breakout) you would be measuring the difference between 0-24v divided down to 0-1.14v on both channels, and subsequently multipled by by the resistor divider values.
+
+## ADC 原理
+
+时域信号经过傅里叶变换转化为频域信号。
+
+![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20210825140051.png)
+
+LSB 为量化误差，可以等效为噪声（量化噪声）
+
+信噪比 SNR 是描述信号纯净度的参数。
+
+FFT（快速傅里叶变换）：将离散的时域信号转化为频域信号。
+
+ADC 的一些定义：
+
+|             术语              |      取值       |                解释                 |
+| :---------------------------: | :-------------: | :---------------------------------: |
+|     Resolution（分辨率/位）      |        n        |        用来量化输入的比特数         |
+|   Number of codes（编码数）   |       2n        |         输出代码组合的数量          |
+| Full-scale range input（FSR） |       FSR       | 用于设定转换器的输入范围和 LSB 电压，量程宽度 |
+|              LSB              |    FSR / 2n     |              最小电压步长               |
+|   Full-scale input voltage    | (2n – 1) • 1LSB | 满量程输入电压 |
+
+=
+
+=
+
+Full-scale output code = 2n – 1
+Largest code that can be read
+Transfer function: Output Code = round [VIN / (FSR/2n)]
+Relationship between input voltage and
+output code
+
+![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20210825150129.png)
+
+ADC 的量化误差：
+
+![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20210825150623.png)
