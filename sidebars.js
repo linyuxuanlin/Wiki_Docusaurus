@@ -81,6 +81,7 @@ module.exports = {
         'PlatformIO—一站式嵌入式开发工具',
         'PlatformIO搭配CubeMX食用',
         'CubeMX的一些坑',
+        'BeagleBone踩坑记录',
         'STM32的启动模式',
         'KeilMDK配置指南',
         '大疆N3飞控-参考资料',
