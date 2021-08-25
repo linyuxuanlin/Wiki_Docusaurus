@@ -71,18 +71,27 @@ ADS1015 可以根据 ADDR 引脚选择接 GND，VDD，SDA，SCL 四个引脚，�
 
 $V_{OUT}=\frac{V_S\times R_2}{R_1+R_2}$
 
-0-24V -> 0-1.14V
-
-这里选择的分压方案：
-
-- R1：10k
-- R2：499r
-
+（废弃方案：0-24V -> 0-1.14V，R1=10k；R2=499r）
+（
 FSR = ±2.048 V  
 LSB size:62.5 μV  
 010 : FSR = ±2.048 V (default)  
 common:6M  
 diff:4.9MΩ
+）
+
+0-24V -> 0-4V
+
+这里选择的分压方案：
+
+- R1：10k
+- R2：2k
+
+FSR = ±4.096 V  
+LSB size:125 μV  
+001 : FSR = ±4.096 V (not default!)  
+common:6MΩ  
+diff:15MΩ
 
 ### MUX
 
@@ -103,14 +112,6 @@ AIN2(+) ~ AIN3(-).
 
 000 : AINP = AIN0 and AINN = AIN1 (default)
 
-### PGA
-
-010 : FSR = ±2.048 V (default)
-
-### 输入滤波
-
-（Analog Input Filtering）
-【待编辑】
 
 ### 保护电路
 
@@ -158,13 +159,13 @@ FFT（快速傅里叶变换）：将离散的时域信号转化为频域信号�
 
 ADC 的一些定义：
 
-|             术语              |      取值       |                解释                 |
-| :---------------------------: | :-------------: | :---------------------------------: |
-|     Resolution（分辨率/位）      |        n        |        用来量化输入的比特数         |
-|   Number of codes（编码数）   |       2n        |         输出代码组合的数量          |
+|             术语              |      取值       |                     解释                      |
+| :---------------------------: | :-------------: | :-------------------------------------------: |
+|    Resolution（分辨率/位）    |        n        |             用来量化输入的比特数              |
+|   Number of codes（编码数）   |       2n        |              输出代码组合的数量               |
 | Full-scale range input（FSR） |       FSR       | 用于设定转换器的输入范围和 LSB 电压，量程宽度 |
-|              LSB              |    FSR / 2n     |              最小电压步长               |
-|   Full-scale input voltage    | (2n – 1) • 1LSB | 满量程输入电压 |
+|              LSB              |    FSR / 2n     |                 最小电压步长                  |
+|   Full-scale input voltage    | (2n – 1) • 1LSB |                满量程输入电压                 |
 
 =
 
@@ -181,3 +182,9 @@ output code
 ADC 的量化误差：
 
 ![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20210825150623.png)
+
+
+
+
+done:
+
