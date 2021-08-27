@@ -1,6 +1,6 @@
 ---
-id: Joystick
-title: Joystick
+id: BeagleConnect_Robotics_Joystick
+title: BeagleConnect_Robotics_Joystick
 ---
 
 ## 参考
@@ -13,7 +13,9 @@ title: Joystick
 按键：311020072
 - 111020103
 
-摇杆：311110005
+摇杆：~~311110005~~ 替换为 311110068
 - 101020028
+
+
 
 pico 102110537
