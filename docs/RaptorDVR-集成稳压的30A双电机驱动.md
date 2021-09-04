@@ -25,6 +25,7 @@ RaptorDVR 是一款能驱动 30 A 电流的直流减速双电机驱动板，上�
 ## 参考与致谢
 
 - [Hercules Dual 15A 6-20V Motor Controller](https://wiki.seeedstudio.com/Hercules_Dual_15A_6-20V_Motor_Controller/)
+- 105010000
 
 > 文章作者：**Power Lin**  
 > 原文地址：<https://wiki-power.com>  
