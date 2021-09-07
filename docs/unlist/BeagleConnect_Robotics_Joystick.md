@@ -21,5 +21,14 @@ title: BeagleConnect_Robotics_Joystick
 pico 102110537
 
 
+
+## OLED
+
+
 OLED：308020188
 产品：104020249 https://www.seeedstudio.com/Grove-OLED-Yellow-Blue-Display-0-96-SSD1315-V1-0-p-5010.html
+
+
+IIC 接法：
+
+- D2 接 D1（SDA）
