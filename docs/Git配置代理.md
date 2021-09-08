@@ -39,6 +39,12 @@ Ubuntu 下配置：
 git config --global http.https://github.com.proxy socks5://127.0.0.1:10808
 ```
 
+### 查看配置文件的路径
+
+```
+git config –list –show-origin
+```
+
 ### 恢复
 
 如果不想用代理，可以用以下的方法恢复：
