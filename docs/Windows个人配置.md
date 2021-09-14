@@ -21,9 +21,7 @@ title: Windows 初始化与软件推荐
 - 激活 Windows：[**HEU_KMS_Activator**](https://github.com/zbezj/HEU_KMS_Activator)
 - 更新系统、驱动
 - 配置浏览器（Edge Canary）
-  - 油猴
-  - Bitwarden
-  - 关闭 [**Chrome 此类型的文件可能会损害您的计算机**](https://zhidao.baidu.com/question/326859904713262805.html)
+  - 拓展
   - [**开启 Chrome（Edge）多线程下载**](https://wiki-power.com/%E5%BC%80%E5%90%AFChrome%EF%BC%88Edge%EF%BC%89%E5%A4%9A%E7%BA%BF%E7%A8%8B%E4%B8%8B%E8%BD%BD)
 - 用户账户控制设置：设为从不通知
 - 定制任务栏
@@ -43,7 +41,6 @@ title: Windows 初始化与软件推荐
 - [**Logitech Options**](https://www.logitech.com.cn/zh-cn/product/options)：罗技鼠标专用（自动弹出下载安装）
 - [**Python**](https://www.microsoft.com/zh-cn/p/python-39/9p7qfqmjrfp7?rtc=1&activetab=pivot:overviewtab)
 - [**微信（测试版）**](https://dldir1.qq.com/weixin/Windows/Beta/WeChatBeta.exe)
-  - 使用系统默认浏览器打开网页
 - [**Git**](https://git-scm.com/downloads)
 - [winget](https://www.microsoft.com/zh-cn/p/app-installer/9nblggh4nns1?ocid=9nblggh4nns1_ORSEARCH_Bing&rtc=2&activetab=pivot:overviewtab)
   - Powertoys:`WinGet install powertoys`
