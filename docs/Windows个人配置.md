@@ -45,7 +45,7 @@ title: Windows 初始化与软件推荐
 - [**微信（测试版）**](https://dldir1.qq.com/weixin/Windows/Beta/WeChatBeta.exe)
   - 使用系统默认浏览器打开网页
 - [**Git**](https://git-scm.com/downloads)
-- [winget]()
+- [winget](https://www.microsoft.com/zh-cn/p/app-installer/9nblggh4nns1?ocid=9nblggh4nns1_ORSEARCH_Bing&rtc=2&activetab=pivot:overviewtab)
   - Powertoys:`WinGet install powertoys`
 
 - [**DiskDenius**](https://www.diskgenius.cn/download.php)：磁盘工具
