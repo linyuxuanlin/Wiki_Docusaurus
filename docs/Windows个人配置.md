@@ -11,6 +11,7 @@ title: Windows 初始化与软件推荐
 
 - 不使用微软账户初始化
 - 开启诊断（预览版系统需要）
+- 重命名电脑名称
 - 设置 - 更新和安全 - 开发者选项 - 开启开发人员模式
 - 预览版模式
 - [**卓越性能**](https://bobi.site/archives/875)
@@ -23,19 +24,20 @@ title: Windows 初始化与软件推荐
   - 油猴
   - Bitwarden
   - 关闭 [**Chrome 此类型的文件可能会损害您的计算机**](https://zhidao.baidu.com/question/326859904713262805.html)
+  - [**开启 Chrome（Edge）多线程下载**](https://wiki-power.com/%E5%BC%80%E5%90%AFChrome%EF%BC%88Edge%EF%BC%89%E5%A4%9A%E7%BA%BF%E7%A8%8B%E4%B8%8B%E8%BD%BD)
 - 用户账户控制设置：设为从不通知
 - 定制任务栏
-
 - 配置个性化设置
 - 配置显示设置
 - 配置剪切板历史记录及同步
-- 重命名电脑名称
 - 配置鼠标触摸板键盘等
 - 启动隐藏设置：[GodMode](https://github.com/linyuxuanlin/File-host/tree/main/software/GodMode.lnk)
 - 关闭休眠：`powercfg /hibernate off`
-- [**开启 Chrome（Edge）多线程下载**](https://wiki-power.com/%E5%BC%80%E5%90%AFChrome%EF%BC%88Edge%EF%BC%89%E5%A4%9A%E7%BA%BF%E7%A8%8B%E4%B8%8B%E8%BD%BD)
+
 
 ## 必装软件
+
+- 工作软件
 
 - [**DiskDenius**](https://www.diskgenius.cn/download.php)：磁盘工具
   - 预留 10 GB 空闲（SSD）
