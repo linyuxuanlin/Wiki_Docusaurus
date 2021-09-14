@@ -16,11 +16,11 @@ title: Windows 初始化与软件推荐
 - 预览版模式
 - [**卓越性能**](https://bobi.site/archives/875)
 - 安装 Synology Drive Client
-- 安装火绒（防止 Windows Defender 误删文件）
+- 安装 [**火绒安全**](https://www.huorong.cn/)（防止 Windows Defender 误删文件）
 - 登录 Microsoft 账户
 - 激活 Windows：[**HEU_KMS_Activator**](https://github.com/zbezj/HEU_KMS_Activator)
 - 更新系统、驱动
-- 配置浏览器
+- 配置浏览器（Edge Canary）
   - 油猴
   - Bitwarden
   - 关闭 [**Chrome 此类型的文件可能会损害您的计算机**](https://zhidao.baidu.com/question/326859904713262805.html)
@@ -35,35 +35,31 @@ title: Windows 初始化与软件推荐
 - 关闭休眠：`powercfg /hibernate off`
 
 
-## 必装软件
+## 安装软件
 
 - 工作软件
+- [**VS Code insiders**](https://code.visualstudio.com/docs/?dv=win64&build=insiders)
+  - Setting Sync
+- [**Logitech Options**](https://www.logitech.com.cn/zh-cn/product/options)：罗技鼠标专用（自动弹出下载安装）
+- [**Python**](https://www.microsoft.com/zh-cn/p/python-39/9p7qfqmjrfp7?rtc=1&activetab=pivot:overviewtab)
+- [**微信（测试版）**](https://dldir1.qq.com/weixin/Windows/Beta/WeChatBeta.exe)
+  - 使用系统默认浏览器打开网页
+- [**Git**](https://git-scm.com/downloads)
 
-- [**VS Code insiders**](https://code.visualstudio.com/insiders/)
 
 - [**DiskDenius**](https://www.diskgenius.cn/download.php)：磁盘工具
   - 预留 10 GB 空闲（SSD）
   - NTFS，4096 扇区（4k 对齐）
-- [**Chrome 测试版**](https://www.google.com/intl/zh-CN/chrome/beta/)：浏览器
-  - 设为默认浏览器
-  - 同步账户
 - [**KMS**](https://github.com/linyuxuanlin/File-host/tree/main/software/KMS.exe)：
   - 激活 Windows（已失效）
   - 关闭 Windows Defender
-- Outsite & V2
-  - 下载 N 和 core，将 core 内文件覆盖到 N 目录下
-  - 设置开机启动
-- [**Logitech Options**](https://www.logitech.com.cn/zh-cn/product/options)：罗技鼠标专用（自动弹出下载安装）
-- [**微信（测试版）**](https://dldir1.qq.com/weixin/Windows/Beta/WeChatBeta.exe)
-  - 使用系统默认浏览器打开网页
-- [**火绒安全**](https://www.huorong.cn/)
+
+
+
 - [**GitHub Desktop**](https://desktop.github.com)
 
-- [**Git**](https://git-scm.com/downloads)
-- [**Todesk**](https://www.todesk.com/download.html)
-- [**坚果云**](https://www.jianguoyun.com/s/downloads)
+
 - [**Win10Apps**](https://github.com/linyuxuanlin/File-host/tree/main/software/Win10Apps.exe)
-- [**Windows Terminal**](https://github.com/microsoft/terminal/releases/)
 - [**Geek Uninstaller**](https://github.com/linyuxuanlin/File-host/tree/main/software/geekuninstaller.exe)
 - [**Bandizip**](https://github.com/linyuxuanlin/File-host/tree/main/software/Bandizip.exe)：无广告版本
 - [**Dism++**](https://www.chuyu.me/zh-Hans/)：系统工具
