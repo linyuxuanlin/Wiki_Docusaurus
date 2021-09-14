@@ -20,6 +20,9 @@ title: Windows 初始化与软件推荐
 - 激活 Windows：[**HEU_KMS_Activator**](https://github.com/zbezj/HEU_KMS_Activator)
 - 更新系统、驱动
 - 配置浏览器
+  - 油猴
+  - Bitwarden
+  - 关闭 [**Chrome 此类型的文件可能会损害您的计算机**](https://zhidao.baidu.com/question/326859904713262805.html)
 - 用户账户控制设置：设为从不通知
 - 定制任务栏
 
@@ -91,7 +94,7 @@ title: Windows 初始化与软件推荐
 
 ## 参考与致谢
 
-- [Chrome 此类型的文件可能会损害您的计算机](https://zhidao.baidu.com/question/326859904713262805.html)
+
 
 > 文章作者：**Power Lin**  
 > 原文地址：<https://wiki-power.com>  
