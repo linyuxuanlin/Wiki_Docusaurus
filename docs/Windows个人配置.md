@@ -32,7 +32,6 @@ title: Windows 初始化与软件推荐
 - 启动隐藏设置：[GodMode](https://github.com/linyuxuanlin/File-host/tree/main/software/GodMode.lnk)
 - 关闭休眠：`powercfg /hibernate off`
 
-
 ## 安装软件
 
 - 工作软件
@@ -50,13 +49,11 @@ title: Windows 初始化与软件推荐
   - 预留 10 GB 空闲（SSD）
   - NTFS，4096 扇区（4k 对齐）
 - [**KMS**](https://github.com/linyuxuanlin/File-host/tree/main/software/KMS.exe)：
+
   - 激活 Windows（已失效）
   - 关闭 Windows Defender
 
-
-
 - [**GitHub Desktop**](https://desktop.github.com)
-
 
 - [**Win10Apps**](https://github.com/linyuxuanlin/File-host/tree/main/software/Win10Apps.exe)
 - [**Geek Uninstaller**](https://github.com/linyuxuanlin/File-host/tree/main/software/geekuninstaller.exe)
@@ -91,8 +88,6 @@ title: Windows 初始化与软件推荐
 - [**EmptyFolderNuker**](https://github.com/linyuxuanlin/File-host/tree/main/software/EmptyFolderNuker.exe)：检测并删除空文件夹的工具
 
 ## 参考与致谢
-
-
 
 > 文章作者：**Power Lin**  
 > 原文地址：<https://wiki-power.com>  
