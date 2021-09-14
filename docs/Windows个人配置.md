@@ -11,14 +11,18 @@ title: Windows 初始化与软件推荐
 
 - 不使用微软账户初始化
 - 开启诊断（预览版系统需要）
-- 激活 Windows：[**HEU_KMS_Activator**](https://github.com/zbezj/HEU_KMS_Activator)
-- 更新系统、驱动
-- 用户账户控制设置：设为从不通知
-- 定制任务栏
-- 登录 Microsoft 账户
-- [**卓越性能**](https://bobi.site/archives/875)
 - 设置 - 更新和安全 - 开发者选项 - 开启开发人员模式
 - 预览版模式
+- [**卓越性能**](https://bobi.site/archives/875)
+- 安装 Synology Drive Client
+- 安装火绒（防止 Windows Defender 误删文件）
+- 登录 Microsoft 账户
+- 激活 Windows：[**HEU_KMS_Activator**](https://github.com/zbezj/HEU_KMS_Activator)
+- 更新系统、驱动
+- 配置浏览器
+- 用户账户控制设置：设为从不通知
+- 定制任务栏
+
 - 配置个性化设置
 - 配置显示设置
 - 配置剪切板历史记录及同步
