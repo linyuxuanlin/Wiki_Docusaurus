@@ -39,6 +39,8 @@ title: Windows 初始化与软件推荐
 
 - 工作软件
 
+- [**VS Code insiders**](https://code.visualstudio.com/insiders/)
+
 - [**DiskDenius**](https://www.diskgenius.cn/download.php)：磁盘工具
   - 预留 10 GB 空闲（SSD）
   - NTFS，4096 扇区（4k 对齐）
@@ -56,7 +58,7 @@ title: Windows 初始化与软件推荐
   - 使用系统默认浏览器打开网页
 - [**火绒安全**](https://www.huorong.cn/)
 - [**GitHub Desktop**](https://desktop.github.com)
-- [**VS Code**](https://code.visualstudio.com/)
+
 - [**Git**](https://git-scm.com/downloads)
 - [**Todesk**](https://www.todesk.com/download.html)
 - [**坚果云**](https://www.jianguoyun.com/s/downloads)
