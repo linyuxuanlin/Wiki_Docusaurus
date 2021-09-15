@@ -31,6 +31,7 @@ title: Windows 初始化与软件推荐
 - 配置鼠标触摸板键盘等
 - 启动隐藏设置：[GodMode](https://github.com/linyuxuanlin/File-host/tree/main/software/GodMode.lnk)
 - 关闭休眠：`powercfg /hibernate off`
+- [**解决英文环境下的中文字体显示问题**](https://blog.csdn.net/amoscn/article/details/106224359)
 
 ## 安装软件
 
