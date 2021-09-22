@@ -125,6 +125,7 @@ module.exports = {
           showLastUpdateAuthor: false,
           showLastUpdateTime: true,
           editUrl: "https://github.com/linyuxuanlin/Wiki_Docusaurus/edit/main/",
+          showLastUpdateTime: true,
           remarkPlugins: [math],
           rehypePlugins: [katex],
         },
