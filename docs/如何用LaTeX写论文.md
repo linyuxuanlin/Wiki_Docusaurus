@@ -15,8 +15,6 @@ title: 如何用 LaTeX 写论文
 
 ## 本地编译
 
-为了使数据更加安全，我们也可以选择本地编译的方式。
-
 首先下载 TeX 发行版，这里我们选择 TeX Live。下载安装镜像：[`**texlive.iso**`](https://mirrors.sjtug.sjtu.edu.cn/ctan/systems/texlive/Images/texlive.iso)，用压缩软件解压，双击运行目录下的 `tl-install-windows.bat` 安装（请耐心等候，安装时间大概要 40 分钟左右）。
 
 点击进入项目仓库的 [**Releases**](https://github.com/sjtug/SJTUThesis/releases) 页面，下载最新版本的 zip 包并解压。
