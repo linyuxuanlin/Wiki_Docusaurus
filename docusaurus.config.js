@@ -20,7 +20,7 @@ module.exports = {
     },
     */
 
-    sidebarCollapsible: true, //默认折叠
+    //sidebarCollapsible: true, //默认折叠
     image: 'https://cos.ap-guangzhou.myqcloud.com/wiki-media-1253965369/doc/logo-zip.png',
     algolia: {
       apiKey: "5c07d8bf9c9928c4453857f6cad0420e",
@@ -119,6 +119,7 @@ module.exports = {
       "@docusaurus/preset-classic",
       {
         docs: {
+          sidebarCollapsible: true, //默认折叠
           routeBasePath: "/",
           sidebarPath: require.resolve("./sidebars.js"),
           showLastUpdateAuthor: false,
