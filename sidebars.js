@@ -97,6 +97,7 @@ module.exports = {
       items: [
         //'我是如何做数据容灾的',
         //'如何用Markdown写学术论文',
+        '如何用LaTeX写论文',
         '基于RSSHub搭建RSS生成器（群晖Docker）', // CSDN
         '基于Bitwarden搭建密码管理器（群晖Docker）', // CSDN
         '基于acme.sh自动申请域名证书（群晖Docker）', // CSDN
