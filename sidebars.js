@@ -3,7 +3,7 @@ module.exports = {
     'Home',
     {
       type: 'category',
-      label: '电路设计 - 项目方案',
+      label: '硬件设计 - 项目方案',
       items: [
         'TinyDVR-小巧身材，满载动力',
         'RaptorDVR-集成稳压的30A双电机驱动',
@@ -24,7 +24,7 @@ module.exports = {
     },
     {
       type: 'category',
-      label: '电路设计 - 分立元件',
+      label: '硬件设计 - 分立元件',
       items: [
         '基本元器件-电阻',
         '基本元器件-电容',
@@ -41,7 +41,7 @@ module.exports = {
     },
     {
       type: 'category',
-      label: '电路设计 - 理论基础',
+      label: '硬件设计 - 理论基础',
       items: [
         '如何设计一款单片机的最小系统', // CSDN
         'STM32F4硬件开发',
