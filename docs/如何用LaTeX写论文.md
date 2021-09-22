@@ -3,6 +3,10 @@ id: 如何用LaTeX写论文
 title: 如何用 LaTeX 写论文
 ---
 
+使用的是 [**sjtug/SJTUThesis**](https://github.com/sjtug/SJTUThesis) 提供的方法与模板（后期会修改为本校模板并更新文章）。
+
+简单体验请使用 **在线编辑** 的方法，为了数据安全，更推荐 **本地编译**。
+
 ## 在线编辑
 
 点击进入项目仓库的 [**Releases**](https://github.com/sjtug/SJTUThesis/releases) 页面，下载最新版本的 zip 包。
