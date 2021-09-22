@@ -1,6 +1,6 @@
 ---
-id: PCB名片设计
-title: PCB 名片设计
+id: PCB名片的设计
+title: PCB 名片的设计
 ---
 
 ## 效果图
