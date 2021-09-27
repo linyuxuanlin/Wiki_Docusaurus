@@ -5,7 +5,6 @@ title: LoRa 物联网通信技术
 
 ## 参考与致谢 
 
-- []()
 
 > 文章作者：**Power Lin**  
 > 原文地址：<https://wiki-power.com>  
