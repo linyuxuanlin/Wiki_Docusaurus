@@ -21,4 +21,15 @@ title: BeagleBone 踩坑记录
 - 重启后，按页面提示，按键盘 `7`，即可禁用驱动程序强制签名
 - 开机后，即可正常安装 BeagleBone 的驱动程序
 
+### 镜像下载烧录
 
+官网镜像下载地址：https://beagleboard.org/latest-images  
+烧录工具：https://sourceforge.net/projects/win32diskimager/files/latest/download
+
+将镜像烧录进 SD 卡，断电插入 BeagleBone，下次上电就会从 SD 卡启动系统
+
+LEDs
+D2 在 boot 中配置为心跳闪烁
+D3 在 boot 中配置为读写SD卡数据时亮起
+D4 在 boot 中配置为当 CPU 活动时亮起
+D5 在 boot 中配置为当eMMC 读写时亮起
