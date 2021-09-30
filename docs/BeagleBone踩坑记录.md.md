@@ -33,3 +33,22 @@ D2 在 boot 中配置为心跳闪烁
 D3 在 boot 中配置为读写SD卡数据时亮起
 D4 在 boot 中配置为当 CPU 活动时亮起
 D5 在 boot 中配置为当eMMC 读写时亮起
+
+### 使用串口访问
+
+使用 USB 转串口连接板载的串行端子，在电脑端打开串口工具（如 WindTerm）进行连接。（初始用户名和密码均为 `root`）
+
+波特率是 115200！
+
+查看连接地址： `ifconfig`
+
+### 使用以太网访问
+
+
+
+## 跑程序
+
+```python
+pip install adafruit-bbio
+
+```
