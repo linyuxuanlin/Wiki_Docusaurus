@@ -380,7 +380,6 @@ if GPIO.event_detected("P9_12"):
     print "event detected!"
 ```
 
-
 ---
 
 ### 延时：
