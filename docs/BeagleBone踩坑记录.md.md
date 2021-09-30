@@ -8,6 +8,9 @@ title: BeagleBone 踩坑记录
 - [Seeed Studio BeagleBone® Green Gateway](https://wiki.seeedstudio.com/BeagleBone-Green-Gateway/)
 - [Beaglebone black 4G 调试中的问题](https://blog.csdn.net/qq_32543253/article/details/53536266)
 - [项目](https://beagleboard.org/p)
+- [Python Adafruit_GPIO.I2C Examples](https://www.programcreek.com/python/example/92524/Adafruit_GPIO.I2C)
+- [Adafruit-BBIO 1.2.0](https://pypi.org/project/Adafruit-BBIO/#description)
+- [Upgrade the software on your Beagle](https://beagleboard.org/upgrade#connect)
 
 ## 环境配置
 
@@ -79,7 +82,6 @@ while True:
 
 ```
 
-
 ### OLED
 
 ```python
@@ -98,7 +100,7 @@ grayH= 0xF0
 grayL= 0x0F
 Normal_Display_Cmd=0xA4
 
-BasicFont = [[0 for x in xrange(8)] for x in xrange(10)]
+BasicFont = [[0 for x in range(8)] for x in range(10)]
 BasicFont=[[0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00],
 [0x00,0x00,0x5F,0x00,0x00,0x00,0x00,0x00],
 [0x00,0x00,0x07,0x00,0x07,0x00,0x00,0x00],
@@ -209,11 +211,11 @@ def oled_init():
     sendCommand(0xA0) # set remap
     sendCommand(0x46)
     sendCommand(0xAB) # set vdd internal
-    sendCommand(0x01) 
+    sendCommand(0x01)
     sendCommand(0x81) # set contrasr
     sendCommand(0x53) # 100 nit
     sendCommand(0xB1) # Set Phase Length
-    sendCommand(0X51) 
+    sendCommand(0X51)
     sendCommand(0xB3) # Set Display Clock Divide Ratio/Oscillator Frequency
     sendCommand(0x01)
     sendCommand(0xB9)
@@ -222,7 +224,7 @@ def oled_init():
     sendCommand(0xBE) # set VCOMH
     sendCommand(0X07) # (0x07);
     sendCommand(0xB6) # Set second pre-charge period
-    sendCommand(0x01) 
+    sendCommand(0x01)
     sendCommand(0xD5) # enable second precharge and enternal vsl
     sendCommand(0X62) # (0x62);
     sendCommand(0xA4) # Set Normal Display Mode
@@ -232,14 +234,14 @@ def oled_init():
     # delay(100);
 
     # Row Address
-    sendCommand(0x75)    # Set Row Address 
+    sendCommand(0x75)    # Set Row Address
     sendCommand(0x00)    # Start 0
-    sendCommand(0x5f)    # End 95 
+    sendCommand(0x5f)    # End 95
 
 
     # Column Address
-    sendCommand(0x15)    # Set Column Address 
-    sendCommand(0x08)    # Start from 8th Column of driver IC. This is 0th Column for OLED 
+    sendCommand(0x15)    # Set Column Address
+    sendCommand(0x08)    # Start from 8th Column of driver IC. This is 0th Column for OLED
     sendCommand(0x37)    # End at  (8 + 47)th column. Each Column has 2 pixels(segments)
 
     # Init gray level for text. Default:Brightest White
@@ -300,9 +302,9 @@ def oled_putChar(C):
 
 def oled_putString(String):
     for i in range(len(String)):
-        oled_putChar(String[i])   
-    
-    
+        oled_putChar(String[i])
+
+
 if __name__=="__main__":
     oled_init()
     oled_setNormalDisplay()
@@ -314,3 +316,118 @@ if __name__=="__main__":
     print ('hello world')
 
 ```
+
+## 使用 Adafruit-BBIO 开发
+
+### 安装 Adafruit-BBIO
+
+```
+sudo apt-get update
+sudo apt-get install build-essential python3-dev python3-pip -y
+sudo pip3 install Adafruit_BBIO
+```
+
+## GPIO
+
+调用库：
+
+```python
+import Adafruit_BBIO.GPIO as GPIO
+```
+
+#### 设置引脚输入 / 输出
+
+```python
+GPIO.setup("P8_14", GPIO.OUT)
+```
+
+`输入` / `输出` 可选 `GPIO.IN`/`GPIO.OUT`。
+
+#### 设置输出高 / 低电平
+
+```python
+GPIO.output("P8_14", GPIO.HIGH)
+```
+
+`高` / `低` 电平可选 `GPIO.HIGH`/`GPIO.LOW`，或 `1`/`0`。
+
+#### 引脚输入模式
+
+查看输入端口的状态：
+
+```python
+if GPIO.input("P8_14"):
+  print("HIGH")
+else:
+  print("LOW")
+```
+
+等待边沿输入，参数有 `GPIO.RISING`/`GPIO.FALLING`/`GPIO.BOTH`：
+
+```python
+GPIO.wait_for_edge(channel, GPIO.RISING)
+
+或
+
+GPIO.wait_for_edge(channel, GPIO.RISING, timeout)
+```
+
+#### 监测输入
+
+```python
+GPIO.add_event_detect("P9_12", GPIO.FALLING)
+if GPIO.event_detected("P9_12"):
+    print "event detected!"
+```
+
+
+---
+
+### 延时：
+
+延时 1 秒：
+
+```python
+import time
+time.sleep(1)
+```
+
+```python
+
+```
+
+```python
+
+```
+
+```python
+
+```
+
+```python
+
+```
+
+```python
+
+```
+
+## 其他
+
+安装 Adafruit-BBIO 时，如果失败可选手动安装：
+
+```
+sudo apt-get update
+sudo apt-get install build-essential python3-dev python3-pip -y
+git clone git://github.com/adafruit/adafruit-beaglebone-io-python.git
+cd adafruit-beaglebone-io-python
+sudo python3 setup.py install
+```
+
+升级 Adafruit-BBIO：
+
+```
+sudo pip3 install --upgrade Adafruit_BBIO
+```
+
+因为 python-smbus 这个依赖的原因，I2C 仅限在 python2 下使用。
