@@ -90,7 +90,7 @@ import Adafruit_GPIO.I2C as I2C
 import time
 import math
 
-Oled = I2C.Device(0x3c)
+Oled = I2C.Device(0x3c,busnum=None)
 Command_Mode=0x80
 Data_mode=0x40
 
