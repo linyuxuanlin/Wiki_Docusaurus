@@ -222,7 +222,7 @@ from Adafruit_I2C import Adafruit_I2C
 i2c = Adafruit_I2C(0x77)
 ```
 
-I2C 功能需要安装 python 包 `python-smbus`，但目前这个包只兼容 python 2 版本。
+I2C 功能需要安装 python 包 `python-smbus`，但目前这个包只兼容 python 2 版本。我们可以用 [**smbus2**](https://pypi.org/project/smbus2/) 替换使用。
 
 ### SPI
 
@@ -231,7 +231,6 @@ I2C 功能需要安装 python 包 `python-smbus`，但目前这个包只兼容 p
 ```py
 from Adafruit_BBIO.SPI import SPI
 ```
-
 
 ## 其他
 
@@ -263,3 +262,12 @@ sudo pip3 install --upgrade Adafruit_BBIO
 - [Upgrade the software on your Beagle](https://beagleboard.org/upgrade#connect)
 - [Setting up IO Python Library on BeagleBone Black](https://learn.adafruit.com/setting-up-io-python-library-on-beaglebone-black)
 - [测试固件](http://plm.seeedstudio.com.cn:9002/Windchill/app/#ptc1/tcomp/infoPage?oid=VR%3Awt.doc.WTDocument%3A30844361&u8=1)
+
+## 驱动 Seeed OLED（SSD1306，I2C，12864）
+
+```py
+sudo apt-get install python3-pip
+pip3 install smbus2
+```
+
+[Grove - OLED Display 0.96 inch](https://wiki.seeedstudio.com/Grove-OLED_Display_0.96inch/#play-with-beaglebone-green)
