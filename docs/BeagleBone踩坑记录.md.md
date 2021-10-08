@@ -56,10 +56,14 @@ usb1：192.168.6.2
 
 使用 SSH 方式访问，用户名为 `debian`，密码为 `temppwd`。
 
-## 使用 BBIO 框架运行程序
+## 使用 Adafruit-BBIO 开发
 
-```python
-pip install adafruit-bbio
+### 安装 Adafruit-BBIO
+
+```
+sudo apt-get update
+sudo apt-get install build-essential python3-dev python3-pip -y
+sudo pip3 install Adafruit_BBIO
 ```
 
 ### 基本程序框架
@@ -79,17 +83,7 @@ while True:
     time.sleep(1)
 ```
 
-## 使用 Adafruit-BBIO 开发
-
-### 安装 Adafruit-BBIO
-
-```
-sudo apt-get update
-sudo apt-get install build-essential python3-dev python3-pip -y
-sudo pip3 install Adafruit_BBIO
-```
-
-## GPIO
+### GPIO
 
 调用库：
 
@@ -142,8 +136,6 @@ if GPIO.event_detected("P9_12"):
     print "event detected!"
 ```
 
----
-
 ### 延时：
 
 延时 1 秒：
@@ -151,22 +143,6 @@ if GPIO.event_detected("P9_12"):
 ```python
 import time
 time.sleep(1)
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
 ```
 
 ```python
