@@ -3,20 +3,27 @@ id: BeagleBone踩坑记录
 title: BeagleBone 踩坑记录
 ---
 
-## 参考与致谢
+## 硬件资源
 
-- [Seeed Studio BeagleBone® Green Gateway](https://wiki.seeedstudio.com/BeagleBone-Green-Gateway/)
-- [Beaglebone black 4G 调试中的问题](https://blog.csdn.net/qq_32543253/article/details/53536266)
-- [项目](https://beagleboard.org/p)
-- [Python Adafruit_GPIO.I2C Examples](https://www.programcreek.com/python/example/92524/Adafruit_GPIO.I2C)
-- [Adafruit-BBIO 1.2.0](https://pypi.org/project/Adafruit-BBIO/#description)
-- [Upgrade the software on your Beagle](https://beagleboard.org/upgrade#connect)
+![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20211008090724.png)
+
+- USB Type-A：作为 USB 从机（Host）模式使用
+- USB Micro：为板子供电并且作为从机
+- LEDs
+  - D2：在启动时以心跳灯闪烁
+  - D3：读写 SD 卡数据时亮起
+  - D4：当 CPU 活动时亮起
+  - D5：当 eMMC 读写时亮起
+- Boot/User 按钮：不管按不按，如果有 SD 卡都会默认从 SD 卡启动（殊途同归），当启动后就作为一个普通按钮，连接到 GPIO_72
+- I2C Grove 接口：连接到 I2C2
+- Uart Grove 接口：连接到 UART2
+- Serial Debug：连接到 UART0，靠近 USB 的引脚为 pin1，从 pin1-pin6 分别为：GND, NC, NC, RX, TX, NC
 
 ## 环境配置
 
 ### 驱动安装问题
 
-在 Windows 10 及以上版本系统，默认采用驱动程序强制签名，这就是驱动安装失败的原因。
+在 Windows 10 及以上版本系统，默认采用驱动程序强制签名，这可能是驱动安装失败的原因。
 
 解决方法：
 
@@ -32,23 +39,15 @@ title: BeagleBone 踩坑记录
 
 将镜像烧录进 SD 卡，断电插入 BeagleBone，下次上电就会从 SD 卡启动系统
 
-LEDs
-D2 在 boot 中配置为心跳闪烁
-D3 在 boot 中配置为读写 SD 卡数据时亮起
-D4 在 boot 中配置为当 CPU 活动时亮起
-D5 在 boot 中配置为当 eMMC 读写时亮起
-
 ### 使用串口访问
 
 使用 USB 转串口连接板载的串行端子，在电脑端打开串口工具（如 WindTerm）进行连接。（初始用户名和密码均为 `root`）
 
 波特率是 115200！
 
-查看连接地址： `ifconfig`
-
 ### 使用以太网访问
 
-使用串口查找到连接地址，用户名为 `debian`，密码为 `temppwd`
+在串口连接内使用命令 `ifconfig` 找到以太网地址，通过地址连接。用户名为 `debian`，密码为 `temppwd`
 
 ### 通过 USB 访问
 
@@ -430,3 +429,12 @@ sudo pip3 install --upgrade Adafruit_BBIO
 ```
 
 因为 python-smbus 这个依赖的原因，I2C 仅限在 python2 下使用。
+
+## 参考与致谢
+
+- [Seeed Studio BeagleBone® Green Gateway](https://wiki.seeedstudio.com/BeagleBone-Green-Gateway/)
+- [Beaglebone black 4G 调试中的问题](https://blog.csdn.net/qq_32543253/article/details/53536266)
+- [项目](https://beagleboard.org/p)
+- [Python Adafruit_GPIO.I2C Examples](https://www.programcreek.com/python/example/92524/Adafruit_GPIO.I2C)
+- [Adafruit-BBIO 1.2.0](https://pypi.org/project/Adafruit-BBIO/#description)
+- [Upgrade the software on your Beagle](https://beagleboard.org/upgrade#connect)
