@@ -47,23 +47,22 @@ title: BeagleBone 踩坑记录
 
 ### 使用以太网访问
 
-在串口连接内使用命令 `ifconfig` 找到以太网地址，通过地址连接。用户名为 `debian`，密码为 `temppwd`
+在串口连接内使用命令 `ifconfig` 找到以太网地址，通过地址连接。用户名为 `debian`，密码为 `temppwd`。
 
 ### 通过 USB 访问
-
-SSH：
 
 usb0：192.168.7.2  
 usb1：192.168.6.2
 
-## 跑程序
+使用 SSH 方式访问，用户名为 `debian`，密码为 `temppwd`。
+
+## 使用 BBIO 框架运行程序
 
 ```python
 pip install adafruit-bbio
-
 ```
 
-## 程序架构
+### 基本程序框架
 
 ```python
 import time
@@ -78,7 +77,6 @@ while True:
     time.sleep(1)
     GPIO.output(RELAY, GPIO.HIGH)
     time.sleep(1)
-
 ```
 
 ### OLED
