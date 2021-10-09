@@ -1,6 +1,6 @@
 ---
-id: Linux基础（CentOS）
-title: Linux 基础（CentOS）
+id: Linux基础
+title: Linux 基础
 ---
 
 —— 记录所学知识。
@@ -31,8 +31,6 @@ ssh user@IP
 ## 参考与致谢
 
 - [Linux 教程](https://www.runoob.com/linux/linux-tutorial.html)
-
-
 
 > 文章作者：**Power Lin**  
 > 原文地址：<https://wiki-power.com>  
