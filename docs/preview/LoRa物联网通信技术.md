@@ -3,8 +3,7 @@ id: LoRa物联网通信技术
 title: LoRa 物联网通信技术
 ---
 
-## 参考与致谢 
-
+## 参考与致谢
 
 > 文章作者：**Power Lin**  
 > 原文地址：<https://wiki-power.com>  
@@ -20,10 +19,6 @@ LoRa 的名字取自 Long Range 缩写，代表远距离通信的技术。
 2. 超远距离
 3. 网络架构架设便利
 
-
-
 ## Seeed 的 LoRa 产品
 
 - SenseCAP
-
-
