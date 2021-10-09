@@ -11,5 +11,11 @@ title: 嵌入式 Linux 入门
 > 原文地址：<https://wiki-power.com>  
 > 版权声明：文章采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh) 协议，转载请注明出处。
 
-
 ## 常用命令
+
+- 查看 CPU 信息：`cat /proc/cpuinfo`
+- 查看内核版本：`cat /proc/version`
+- 查看内存使用情况：`cat /proc/meminfo`
+  - 也可以使用命令 `free` 来简单了解内存使用情况
+- 查看 FLASH 存储器使用情况：`cat /proc/partitions`
+- 查看任务进程：`top`
