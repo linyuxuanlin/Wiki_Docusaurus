@@ -19,3 +19,11 @@ title: 嵌入式 Linux 入门
   - 也可以使用命令 `free` 来简单了解内存使用情况
 - 查看 FLASH 存储器使用情况：`cat /proc/partitions`
 - 查看任务进程：`top`
+- 查看支持的文件系统：`cat /proc/filesystems`（nodev 表示不需要挂载块设备）
+- 查看 CPU 主频：`cat /sys/devices/system/cpu/cpu0/cpufreq/cpuinfo_cur_freq`
+
+## Linux 的驱动
+
+Linux 上驱动的作用，就是把硬件设备与 Linux 文件建立了映射关系。
+
+比如，控制 LED 灯和按键时，我们不需要知道他们的具体硬件连接，只要知道哪个文件代表哪个设备，然后就可以通过文件以同样的方式操控同类设备了。
