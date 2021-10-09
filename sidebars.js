@@ -145,6 +145,7 @@ module.exports = {
         '前端开发-环境搭建',
         'BookJourney-二手书商城小程序',
         'Linux基础',
+        '嵌入式Linux入门',
         'Git学习笔记',
       ],
     },
