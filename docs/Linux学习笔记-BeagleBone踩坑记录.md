@@ -1,6 +1,6 @@
 ---
-id: BeagleBone踩坑记录
-title: BeagleBone 踩坑记录
+id: Linux学习笔记-BeagleBone踩坑记录
+title: Linux 学习笔记 - BeagleBone 踩坑记录
 ---
 
 ## 硬件资源

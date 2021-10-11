@@ -1,6 +1,6 @@
 ---
-id: Linux用户操作
-title: Linux 用户操作
+id: Linux学习笔记-用户操作
+title: Linux 学习笔记 - 用户操作
 ---
 
 ## 基本操作
@@ -38,8 +38,6 @@ su 用户名
 ## 参考与致谢
 
 - [linux 创建用户、设置密码](https://blog.csdn.net/li_101357/article/details/69367457)
-
-
 
 > 文章作者：**Power Lin**  
 > 原文地址：<https://wiki-power.com>  

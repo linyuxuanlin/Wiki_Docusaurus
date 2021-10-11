@@ -1,6 +1,6 @@
 ---
-id: 嵌入式Linux入门
-title: 嵌入式 Linux 入门
+id: Linux学习笔记-嵌入式开发
+title: Linux 学习笔记 - 嵌入式开发
 ---
 
 ## 参考与致谢

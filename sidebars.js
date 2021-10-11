@@ -76,11 +76,13 @@ module.exports = {
         'HAL库开发笔记（五）-DMA',
         'HAL库开发笔记（六）-TIM基本定时器',
         'HAL库开发笔记（七）-TIM通用定时器',
-        'Linux用户操作',
+        'Linux学习笔记-基础知识',
+        'Linux学习笔记-用户操作',
+        'Linux学习笔记-嵌入式开发',
+        'Linux学习笔记-BeagleBone踩坑记录',
         'PlatformIO—一站式嵌入式开发工具',
         'PlatformIO搭配CubeMX食用',
         'CubeMX的一些坑',
-        'BeagleBone踩坑记录',
         'STM32的启动模式',
         'KeilMDK配置指南',
         '大疆N3飞控-参考资料',
@@ -144,8 +146,6 @@ module.exports = {
         '自适应网页设计',
         '前端开发-环境搭建',
         'BookJourney-二手书商城小程序',
-        'Linux基础',
-        '嵌入式Linux入门',
         'Git学习笔记',
       ],
     },
@@ -166,22 +166,22 @@ module.exports = {
         '出展活动-经验总结',
       ],
     },
-/*
-    {
-      type: 'category',
-      label: '产品经理',
-      items: [
-        '产品经理的日常',
-        '中台的概念',
-        '画图基础',
-        '智能硬件产品经理的技术要求',
-        '如何撰写一份BRD',
-        '软件开发中的注意事项',
-        '专业与分工',
-        '关于复盘',
-      ],
-    },
-    */
+    /*
+        {
+          type: 'category',
+          label: '产品经理',
+          items: [
+            '产品经理的日常',
+            '中台的概念',
+            '画图基础',
+            '智能硬件产品经理的技术要求',
+            '如何撰写一份BRD',
+            '软件开发中的注意事项',
+            '专业与分工',
+            '关于复盘',
+          ],
+        },
+        */
     {
       type: 'category',
       label: '生活',
@@ -207,7 +207,7 @@ module.exports = {
       label: '小技巧',
       items: [
         'Windows常用命令',
-        'Windows11个人初始化配置', 
+        'Windows11个人初始化配置',
         'VSCode的便携模式',
         '开启Chrome（Edge）多线程下载',
         '移除Chrome（Edge）由组织管理',

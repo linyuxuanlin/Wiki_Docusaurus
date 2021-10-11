@@ -1,6 +1,6 @@
 ---
-id: Linux基础
-title: Linux 基础
+id: Linux学习笔记-基础知识
+title: Linux 学习笔记 - 基础知识
 ---
 
 ## 连接远程主机
