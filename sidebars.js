@@ -64,7 +64,7 @@ module.exports = {
     },
     {
       type: 'category',
-      label: '嵌入式开发',
+      label: '嵌入式开发 - 单片机',
       items: [
         'C与STM32常用宏定义',
         'C与STM32代码规范',
@@ -76,10 +76,6 @@ module.exports = {
         'HAL库开发笔记（五）-DMA',
         'HAL库开发笔记（六）-TIM基本定时器',
         'HAL库开发笔记（七）-TIM通用定时器',
-        'Linux学习笔记-基础知识',
-        'Linux学习笔记-用户操作',
-        'Linux学习笔记-嵌入式开发',
-        'Linux学习笔记-BeagleBone踩坑记录',
         'PlatformIO—一站式嵌入式开发工具',
         'PlatformIO搭配CubeMX食用',
         'CubeMX的一些坑',
@@ -92,7 +88,16 @@ module.exports = {
         '一个舵机的自我修养',
       ],
     },
-
+    {
+      type: 'category',
+      label: '嵌入式开发 - Linux',
+      items: [
+        'Linux学习笔记-基础知识',
+        'Linux学习笔记-用户操作',
+        'Linux学习笔记-嵌入式开发',
+        'Linux学习笔记-BeagleBone踩坑记录',
+      ],
+    },
     {
       type: 'category',
       label: '高效工作',

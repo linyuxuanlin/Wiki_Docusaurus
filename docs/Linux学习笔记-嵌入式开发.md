@@ -3,14 +3,6 @@ id: Linux学习笔记-嵌入式开发
 title: Linux 学习笔记 - 嵌入式开发
 ---
 
-## 参考与致谢
-
-- [[野火]i.MX Linux 开发实战指南](https://doc.embedfire.com/linux/imx6/base/zh/latest/index.html)
-
-> 文章作者：**Power Lin**  
-> 原文地址：<https://wiki-power.com>  
-> 版权声明：文章采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh) 协议，转载请注明出处。
-
 ## 常用命令
 
 - 查看 CPU 信息：`cat /proc/cpuinfo`
@@ -27,3 +19,11 @@ title: Linux 学习笔记 - 嵌入式开发
 Linux 上驱动的作用，就是把硬件设备与 Linux 文件建立了映射关系。
 
 比如，控制 LED 灯和按键时，我们不需要知道他们的具体硬件连接，只要知道哪个文件代表哪个设备，然后就可以通过文件以同样的方式操控同类设备了。
+
+## 参考与致谢
+
+- [[野火]i.MX Linux 开发实战指南](https://doc.embedfire.com/linux/imx6/base/zh/latest/index.html)
+
+> 文章作者：**Power Lin**  
+> 原文地址：<https://wiki-power.com>  
+> 版权声明：文章采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh) 协议，转载请注明出处。
