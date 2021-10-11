@@ -324,3 +324,13 @@ bb-wl18xx-bluetooth
 bluetoothctl
 scan on
 ```
+
+配对连接设备（后面一串是要配对设备的 MAC 地址）：
+
+```shell
+pair A4:xx:xx:xx:xx:30
+trust A4:xx:xx:xx:xx:30
+connect A4:xx:xx:xx:xx:30
+```
+
+可使用 `quit` 推出蓝牙命令行。
