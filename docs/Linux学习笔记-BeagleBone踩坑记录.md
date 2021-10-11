@@ -254,6 +254,8 @@ sudo pip3 install --upgrade Adafruit_BBIO
 
 ## 驱动 Seeed OLED（SSD1306，I2C，12864）
 
+使用 pip3 下载 smbus2 包：
+
 ```py
 sudo apt-get install python3-pip
 pip3 install smbus2
