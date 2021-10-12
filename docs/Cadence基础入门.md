@@ -98,12 +98,15 @@ DRC 设置：
 - 拉排线：`F4`
 - 放置网络标号：`N`
 - 旋转 / 水平镜像 / 垂直镜像元件：`R` / `H` / `V`
-- 打开 CIP 面板：`Z`
+- 打开 CIS 面板：`Z`
 - 放置电源 / 地：`F` / `G`
 - No connect：`X`
 - 筛选器：`Ctrl` + `I`
 - 多选元素：按住 `Ctrl` 进行选择
 - 复制并自动增加标号：按住 `Ctrl` 拖动元器件
+
+- 放置总线：`E`
+- 放置文字：`T`
 
 ## 错误与解决
 
@@ -114,3 +117,9 @@ DRC 设置：
 - [【Cadence 快速入门】一文总结版](https://blog.csdn.net/ReCclay/article/details/101225359)
 - [OrCAD Capture Tutorial](https://resources.orcad.com/orcad-capture-tutorials)
 - [cadence 软件用于高分屏笔记本时候显示字体模糊问题解决](https://blog.csdn.net/qq_34338527/article/details/108846792)
+
+## 技巧
+
+### off-page 与 port 的区别
+
+off-page 一般用于平坦式原理图，而 port 一般用于层次原理图。
