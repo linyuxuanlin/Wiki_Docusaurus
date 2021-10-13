@@ -7,6 +7,7 @@ title: OSD335x 最小系统的设计
 
 - [SO YOU WANT TO BUILD AN EMBEDDED LINUX SYSTEM?](https://jaycarlson.net/embedded-linux/#)
 - [OSD335x-SM System-in-Package Smallest AM335x Module, Quickest Design](https://octavosystems.com/octavo_products/osd335x-sm/#Technical%20Documents)
+- [OSD335x Reference Design Tutorial Series](https://octavosystems.com/app_notes/osd335x-design-tutorial/)
 
 > 文章作者：**Power Lin**  
 > 原文地址：<https://wiki-power.com>  
@@ -46,3 +47,43 @@ OSD335x 的最小系统包括 4 个部分：电源、时钟、复位、烧录调
 推荐为所有电源输出添加测试点，方便调试。
 
 还有一些为内部供电的引脚：VDDSHV_3P3V、VDDS_DDR、VDD_MPU、VDD_CORE、VDDS_PLL。他们仅供引出测试点测量，但不要引出给外部电路使用。
+
+![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20211013142917.png)
+
+### 模拟参考输入与地
+
+![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20211013143532.png)
+
+OSD335x 有 ADC 接口，如果要使用 ADC，则必须正确使用模拟电源和模拟地。ADC 接口能承受最高 1.8V 的模拟输入（参照 VREFP 引脚）。通常来说，VREFP 可直接连接 SYS_ADC_1P8V，但如果有需要，可以分压到一个更低的电压。
+
+### 电源管理
+
+在 OSD335x 内部，AM335x 通过 I2C0 与 TPS65217C PMIC 进行通信。
+
+I2C0 内部有 4.7k 上拉电阻，但如果要带设备的话，最好在外部额外添加上拉电阻。
+
+TPS65217C PMIC 可通过 I2C 来设置以下参数：
+
+- 电池充电电压
+- 充电安全时间控制
+- Buck/Boost 输出电压
+- LDO 输出电压
+- 上电 / 掉电时序
+- 过流过温阈值
+
+![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20211013161739.png)
+
+除了通过 I2C 连接，PMIC 还有些功能引脚需要连接 OSD335x：
+
+- PMIC_POWER_EN：用于 AM335x 控制 PMIC 上电时序
+- PMIC_IN_PWR_EN：使能 PMIC 的 buck 和 LDO，给高电平会开始进入上电时序控制
+- RTC_PWRONRSTN：AM335x RTC 的独立电源复位脚
+- PMIC_OUT_LDO_PGOOD：LDO1 和 LDO2 的输出状态，高电平输出良好，低电平代表任意一个 LDO 输出异常。
+- EXT_WAKEUP：外部事件唤醒引脚
+- PMIC_OUT_NWAKEUP：Host 外部事件唤醒引脚（低电平有效）
+- EXTINTN：AM335x 外部中断输入引脚
+- PMIC_OUT_NINT：PMIC 终端输出引脚（低电平有效）
+
+![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20211013161927.png)
+
+![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20211013163119.png)
