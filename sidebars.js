@@ -94,7 +94,27 @@ module.exports = {
     },
     {
       type: 'category',
-      label: '高效工作',
+      label: '软件开发',
+      items: [
+        '双系统极简安装指南',
+        'Ubuntu配置笔记',
+        'ROS入门笔记',
+        '机器视觉入门',
+        '使用R语言进行数据分析',
+        'CSS学习笔记',
+        'HTML学习笔记',
+        'JavaScript学习笔记',
+        'Docker简易指南',
+        'DockerCompose-更优雅的打开方式',
+        '自适应网页设计',
+        '前端开发-环境搭建',
+        'BookJourney-二手书商城小程序',
+        'Git学习笔记',
+      ],
+    },
+    {
+      type: 'category',
+      label: '高效工作指南',
       items: [
         //'我是如何做数据容灾的',
         //'如何用Markdown写学术论文',
@@ -128,29 +148,10 @@ module.exports = {
         //'用reveal.js制作幻灯片',
       ],
     },
+
     {
       type: 'category',
-      label: '软件开发',
-      items: [
-        '双系统极简安装指南',
-        'Ubuntu配置笔记',
-        'ROS入门笔记',
-        '机器视觉入门',
-        '使用R语言进行数据分析',
-        'CSS学习笔记',
-        'HTML学习笔记',
-        'JavaScript学习笔记',
-        'Docker简易指南',
-        'DockerCompose-更优雅的打开方式',
-        '自适应网页设计',
-        '前端开发-环境搭建',
-        'BookJourney-二手书商城小程序',
-        'Git学习笔记',
-      ],
-    },
-    {
-      type: 'category',
-      label: '行政相关',
+      label: '机器人队行政',
       items: [
         '四校交流-策划案',
         '四校交流-策划案-正式',
@@ -183,7 +184,7 @@ module.exports = {
         */
     {
       type: 'category',
-      label: '生活',
+      label: '生活方式',
       items: [
         '如何调制一杯鸡尾酒',
         '乐谱-Imagine',
