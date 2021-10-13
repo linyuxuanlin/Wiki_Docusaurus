@@ -3,13 +3,6 @@ id: 高速多层PCB的设计
 title: 高速多层 PCB 的设计
 ---
 
-## 参考与致谢 
-
-
-> 文章作者：**Power Lin**  
-> 原文地址：<https://wiki-power.com>  
-> 版权声明：文章采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh) 协议，转载请注明出处。
-
 ## 高速 PCB 设计需考虑因素
 
 - 成本控制
@@ -45,3 +38,8 @@ title: 高速多层 PCB 的设计
 
 为了减少边沿辐射，电源层要相对地层内缩（pullback）1 mm 以上。
 
+## 参考与致谢
+
+> 文章作者：**Power Lin**  
+> 原文地址：<https://wiki-power.com>  
+> 版权声明：文章采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh) 协议，转载请注明出处。
