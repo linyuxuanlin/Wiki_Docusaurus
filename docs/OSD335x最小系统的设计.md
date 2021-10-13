@@ -87,3 +87,7 @@ TPS65217C PMIC 可通过 I2C 来设置以下参数：
 ![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20211013161927.png)
 
 ![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20211013163119.png)
+
+### 电源按键
+
+TPS65217C PMIC 内部有一个低电平有效的复位输入，通过 PMIC_IN_PB_IN 引脚连接在 OSD335x，也可以外接按键。
