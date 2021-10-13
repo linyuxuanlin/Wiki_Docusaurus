@@ -3,8 +3,11 @@ module.exports = {
     'Home',
     {
       type: 'category',
-      label: '硬件设计 - 项目方案',
+      label: '硬件设计 - 应用开发',
       items: [
+        '如何设计一款单片机的最小系统', // CSDN
+        'STM32F4硬件开发',
+        'OSD335x最小系统的设计',
         'TinyDVR-小巧身材，满载动力',
         'RaptorDVR-集成稳压的30A双电机驱动',
         '模块设计-CAN通信',
@@ -24,7 +27,7 @@ module.exports = {
     },
     {
       type: 'category',
-      label: '硬件设计 - 分立元件',
+      label: '硬件设计 - 基础知识',
       items: [
         '基本元器件-电阻',
         '基本元器件-电容',
@@ -36,15 +39,6 @@ module.exports = {
         '基本元器件-运算放大器',
         '保险丝的选型',
         '锂电池选型指南',
-
-      ],
-    },
-    {
-      type: 'category',
-      label: '硬件设计 - 理论基础',
-      items: [
-        '如何设计一款单片机的最小系统', // CSDN
-        'STM32F4硬件开发',
         //'高速多层PCB的设计',
         //'数电基础',
         '设计规范-PCB',

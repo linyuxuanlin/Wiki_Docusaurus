@@ -33,3 +33,5 @@ OSD335x 的最小系统包括 4 个部分：电源、时钟、复位、烧录调
 ![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20211012173057.png)
 
 ### 输出
+
+- SYS_VOUT：
