@@ -90,4 +90,10 @@ TPS65217C PMIC 可通过 I2C 来设置以下参数：
 
 ### 电源按键
 
-TPS65217C PMIC 内部有一个低电平有效的复位输入，通过 PMIC_IN_PB_IN 引脚连接在 OSD335x，也可以外接按键。
+TPS65217C PMIC 内部有一个低电平有效的复位输入，通过 PMIC_IN_PB_IN 引脚连接在 OSD335x，也可以外接按键。这个输入引脚有 50ms 的去抖动时间，和一个内部上拉电阻。除此之外，这个电源按钮还有以下功能：
+
+- 当 PMIC_IN_PB_IN 检测到下降沿输入时，PMIC 将会从关闭或睡眠模式中唤醒
+- 当 PMIC_IN_PB_IN 保持低电平超过 8 秒时，PMIC 会重新上电/复位
+- 如果 PMIC_IN_PB_IN 引脚长时间保持低电平，器件将继续在 ACTIVE 和 RESET 状态之间循环，每 8 秒进入 RESET
+
+![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20211013165738.png)
