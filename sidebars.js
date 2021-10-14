@@ -27,7 +27,7 @@ module.exports = {
     },
     {
       type: 'category',
-      label: '硬件设计 - 基础知识',
+      label: '硬件设计 - 基础理论',
       items: [
         '基本元器件-电阻',
         '基本元器件-电容',
