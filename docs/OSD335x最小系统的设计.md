@@ -3,18 +3,6 @@ id: OSD335x最小系统的设计
 title: OSD335x 最小系统的设计
 ---
 
-## 参考与致谢
-
-- [SO YOU WANT TO BUILD AN EMBEDDED LINUX SYSTEM?](https://jaycarlson.net/embedded-linux/#)
-- [OSD335x-SM System-in-Package Smallest AM335x Module, Quickest Design](https://octavosystems.com/octavo_products/osd335x-sm/#Technical%20Documents)
-- [OSD335x Reference Design Tutorial Series](https://octavosystems.com/app_notes/osd335x-design-tutorial/)
-
-> 文章作者：**Power Lin**  
-> 原文地址：<https://wiki-power.com>  
-> 版权声明：文章采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh) 协议，转载请注明出处。
-
-【编辑中】
-
 ![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20211012144907.png)
 
 TI 的 OSD335x-SM 芯片，是一颗将 Cortex-A8 AM335x 处理器、DDR3 内存、TPS65217C PMIC（电源管理芯片）、TL5209 LDO、所需的被动器件、以及 4KB 的 EEPROM 集成在 BGA 封装内的 SIP（System-in-Package）模组。
@@ -104,11 +92,78 @@ TPS65217C PMIC 内部有一个低电平有效的复位输入，通过 PMIC_IN_PB
 
 ![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20211014092054.png)
 
+## 复位
+
+OSD335x 有几种复位方式：
+
+- 冷复位（上电复位）：在设备上电和电源域上电时进行
+- 热复位
+  - 是部分复位，不影响全局逻辑
+  - 是为了减少复位恢复时间
+
+OSD335x 有 3 个复位输入（与 AM335x 上的复位输入同名）：
+
+- PWRONRSTN：冷复位；在上电期间需要保持低电平，直到所有输入电源线都稳定为止；不可阻塞，除了 RTC 外，整个系统都会收到影响。
+- WARMRSTN：热复位；一些 PRCM（电源、复位和时钟管理）和控制模块寄存器对热复位不敏感
+- RTC_PWRONRSTN：RTC 模块专用的上电复位输入不受冷复位影响，RTC_PWRONRSTN 也不会对设备其他部分产生影响。
+
+![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20211014105556.png)
+
 ## 时钟
 
 ### OSC0 与 OSC1
 
 OSD335x 有两个时钟输入：
 
-- OSC0：高速时钟输入（主时钟），在 19.2MHz、24MHz、25MHz 或 26MHz 频率下工作。此时钟源为所有非 RTC 功能提供参考。OSC0 时钟输入拥有 OSC0_IN、OSC0_OUT 和 OSC0_GND 引脚。
+- OSC0：高速时钟输入（主时钟），在 19.2MHz、24MHz（推荐）、25MHz 或 26MHz 频率下工作。此时钟源为所有非 RTC 功能提供参考。OSC0 时钟输入拥有 OSC0_IN、OSC0_OUT 和 OSC0_GND 引脚。
 - OSC1：低速时钟输入，运行在 32.768kHz 下，为 RTC 供电。OSC1 时钟输入拥有 OSC1_IN、OSC1_OUT 和 OSC1_GND 引脚。此时钟源默认失能，非必要输入，如果需要的话，可以接收内部 32kHz RC 晶振信号。
+
+![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20211014095242.png)
+
+上图中，Rbias 与 Rd 是可选的。如果不能提供准确的频率，Rbias 可用于灵活校准，可以 DNP（可不加进原理图或留空位）。但如果不需要 Rd 的话，必须用导线替代，否则会造成断路。
+
+在参考设计中，OSC0 选用 7A-24.000MAAJ-T 24MHz 晶振，18pF 电容，1MΩ 电阻作为 Rbias。
+
+![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20211014101932.png)
+
+RTC_KALDO_ENN 引脚默认外部下拉（10k 电阻），用于使能内部 RTC LDO。
+
+## 烧录调试接口
+
+在参考设计中，使用 JTAG 接口。
+
+https://octavosystems.com/octavosystems.com/wp-content/uploads/2017/07/JTAG.jpg
+
+## 其他外设
+
+### 启动配置
+
+启动配置表可参考 [**AM335x Technical Reference Manual (TRM)**](http://www.ti.com/lit/pdf/spruh73) 的 **SYSBOOT Configuration Pins** 章节
+
+在参考设计中，我们这样接：
+
+![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20211014110132.png)
+
+配置以下参数：
+
+- 设置时钟频率为 24Mhz
+- 通过 XDMA_EVENT_INTR0 禁用 CLKOUT1 输出，该引脚仅用于 JTAG 仿真。
+- 将启动顺序设置为 SPI0 -> MMC0 -> USB0 -> UART0
+
+### 用户按键与 LED
+
+![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20211014110906.png)
+
+### 外设排针
+
+![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20211014110947.png)
+
+## 参考与致谢
+
+- [SO YOU WANT TO BUILD AN EMBEDDED LINUX SYSTEM?](https://jaycarlson.net/embedded-linux/#)
+- [OSD335x-SM System-in-Package Smallest AM335x Module, Quickest Design](https://octavosystems.com/octavo_products/osd335x-sm/#Technical%20Documents)
+- [OSD335x Reference Design Tutorial Series](https://octavosystems.com/app_notes/osd335x-design-tutorial/)
+
+> 文章作者：**Power Lin**  
+> 原文地址：<https://wiki-power.com>  
+> 版权声明：文章采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh) 协议，转载请注明出处。
