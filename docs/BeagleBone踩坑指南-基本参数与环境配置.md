@@ -69,7 +69,6 @@ pip3 install smbus2
 
 ## 参考与致谢
 
-
 - [Beaglebone black 4G 调试中的问题](https://blog.csdn.net/qq_32543253/article/details/53536266)
 - [项目](https://beagleboard.org/p)
 - [Upgrade the software on your Beagle](https://beagleboard.org/upgrade#connect)
