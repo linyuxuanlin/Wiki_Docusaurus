@@ -97,3 +97,18 @@ TPS65217C PMIC 内部有一个低电平有效的复位输入，通过 PMIC_IN_PB
 - 如果 PMIC_IN_PB_IN 引脚长时间保持低电平，器件将继续在 ACTIVE 和 RESET 状态之间循环，每 8 秒进入复位。
 
 ![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20211013165738.png)
+
+### 电源指示灯
+
+我们使用 SYS_VDD2_3P3V（150mA） 作为电源指示灯的输出。
+
+![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20211014092054.png)
+
+## 时钟
+
+### OSC0 与 OSC1
+
+OSD335x 有两个时钟输入：
+
+- OSC0：高速时钟输入（主时钟），在 19.2MHz、24MHz、25MHz 或 26MHz 频率下工作。此时钟源为所有非 RTC 功能提供参考。OSC0 时钟输入拥有 OSC0_IN、OSC0_OUT 和 OSC0_GND 引脚。
+- OSC1：低速时钟输入，运行在 32.768kHz 下，为 RTC 供电。OSC1 时钟输入拥有 OSC1_IN、OSC1_OUT 和 OSC1_GND 引脚。此时钟源默认失能，非必要输入，如果需要的话，可以接收内部 32kHz RC 晶振信号。
