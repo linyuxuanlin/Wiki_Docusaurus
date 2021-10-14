@@ -1,6 +1,6 @@
 ---
-id: Linux学习笔记-BeagleBone踩坑记录
-title: Linux 学习笔记 - BeagleBone 踩坑记录
+id: BeagleBone踩坑指南-基本参数与环境配置
+title: BeagleBone 踩坑指南 - 基本参数与环境配置
 ---
 
 ## 各版本 BeagleBone 的区别

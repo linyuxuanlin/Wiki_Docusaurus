@@ -90,7 +90,8 @@ module.exports = {
         'Linux学习笔记-基础知识',
         'Linux学习笔记-用户操作',
         'Linux学习笔记-嵌入式开发',
-        'Linux学习笔记-BeagleBone踩坑记录',
+        'BeagleBone踩坑指南-基本参数与环境配置',
+        'BeagleBone踩坑指南-基本参数与环境配置',
       ],
     },
 
