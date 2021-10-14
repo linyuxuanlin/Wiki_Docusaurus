@@ -1,6 +1,6 @@
 ---
-id: BeagleBone踩坑指南-使用BBIO库开发
-title: BeagleBone 踩坑指南 - 使用 BBIO 库开发
+id: BeagleBone指南-使用BBIO库开发
+title: BeagleBone 指南 - 使用 BBIO 库开发
 ---
 
 ## 安装 Adafruit-BBIO
