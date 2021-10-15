@@ -7,8 +7,8 @@ title: Robotics Cape Rev2 测试
 
 - VCC_IN：通过两种输入方式
 - Battery_Voltage：Vsample=(6.667/36.667)\*Vin
-- VDD_6V：测试满电流
-- VDD_5V：测试满电流
+- VDD_6V：测试最大带载电流（纹波）
+- VDD_5V：测试最大带载电流（纹波）
 
 ## 电机驱动 1
 
