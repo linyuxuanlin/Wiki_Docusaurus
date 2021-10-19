@@ -59,3 +59,10 @@ title: Robotics Cape Rev2 测试
 - 按钮：测试输入
 - LED：测试输出
 - EEPROM：通过 SPI 测试
+
+
+## 问题
+
+- M2 丝印错误
+- 增加测试点
+- 
