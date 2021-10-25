@@ -10,7 +10,7 @@ title: Robotics Cape Rev2 测试
   - Motor1_SLP#/Motor1_FAULT#/Motor1_OC#/Motor1_CLMT/Motor1_Current：其他控制信号
 - 电机输出：通过 J4 测电压，或接电机测试
 
-## 电机驱动 2/3/4
+## 电机驱动 2/3/4 
 
 - 控制信号
   - MotorN_IN1/MotorN_IN2/MotorN_PWM：输入电机信号
