@@ -3,20 +3,6 @@ id: RoboticsCapeRev2测试
 title: Robotics Cape Rev2 测试
 ---
 
-## 电机驱动 1
-
-- 控制信号
-  - Motor1_IN1/Motor1_IN2/Motor1_PWM：输入电机信号
-  - Motor1_SLP#/Motor1_FAULT#/Motor1_OC#/Motor1_CLMT/Motor1_Current：其他控制信号
-- 电机输出：通过 J4 测电压，或接电机测试
-
-## 电机驱动 2/3/4
-
-- 控制信号
-  - MotorN_IN1/MotorN_IN2/MotorN_PWM：输入电机信号
-  - MotorN_DISABLE/MotorN_IPROPI/MotorN_FAULT#：其他控制信号
-- 电机输出：通过 J5/J6/J7 测电压，或接电机测试
-
 ## 舵机
 
 - 控制信号：通过 ServoN（10 路舵机）输入 PWM 控制信号
@@ -60,9 +46,15 @@ title: Robotics Cape Rev2 测试
 - LED：测试输出
 - EEPROM：通过 SPI 测试
 
-
 ## 问题
 
 - M2 丝印错误
 - 增加测试点
-- 
+- Motor 2/3/4 产生过流保护后不能复位，需要用 nSleep 信号产生复位，现原理图设计没有将 nSleep 拉出。后续将 Disable 信号换为 nSleep。
+- Motor1 的电容和主板有干涉，需要像板边方向再挪 2mm。
+- 需要根据测试需求增加测试点。
+- usb power switch 要用 tps2044
+- usb hub dp 需要上拉 1.5k，否则不枚举设备。
+- VDD_5V 需要加防倒灌二极管，12Vdc 插错孔，导致 USB Hub 损害。
+- 电池接口增加防反接保护电路。
+- I2C EEPROM 与气压计硬件冲突，无法分时复用。
