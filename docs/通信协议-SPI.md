@@ -13,8 +13,6 @@ SPI（Serial Peripheral Interface）是一种 **全双工、同步、串行、�
 - **SDI/SDO**（serial data in / serial data out）：描述了相对于主机的数据流的方向，但更多时候在板子上出现的是 MOSI（Master Out Slave In）和 MISO（Master In Slave Out）。对应地，SDO 在主机上是 MOSI，在从机上是 MISO；而 SDI 在主机上是 MISO，在从机上是 MOSI；在菊花链拓扑中，A 器件 MISO 连接到 B 器件的 MISO。
 - **CS/SS**（chip select / slave select）：由主机驱动，用于仲裁 SPI 总线上通信的优先级。当 CS 线上为低电平时，就会激活 SPI 通信。CS 是低电平有效。
 
-![](https://i0.hdslb.com/bfs/article/73ac92eb7f4f3f2338f23ec409456ca1370216b1.gif)
-
 ## SPI 数据锁存操作
 
 - SPI 数据在 SCLK 上升或下降沿时进行锁存。
