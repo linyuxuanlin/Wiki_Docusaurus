@@ -22,7 +22,6 @@ module.exports = {
         '自制CMSIS-DAP',
         '电机驱动系统的设计',
         'PCB名片的设计',
-
       ],
     },
     {
