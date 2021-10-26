@@ -33,9 +33,9 @@ SPI（Serial Peripheral Interface）是一种 **全双工、同步、串行、�
 
 ## SPI 临界边沿
 
-- $t_{SU}$（setup time）:定义在临界边沿事件发生多久前，SDI 数据就该被确定并稳定下来。
-- $t_{HO}$（hold time）:定义在临界边沿事件发生后，SDI 上的数据必须保留多长时间。
-- $t_{DO}$（delay time）:定义在临界边沿事件发生后，SDO 上的有效数据的延迟时间。
+- $t_{SU}$（setup time）：定义在临界边沿事件发生多久前，SDI 数据就该被确定并稳定下来。
+- $t_{HO}$（hold time）：定义在临界边沿事件发生后，SDI 上的数据必须保留多长时间。
+- $t_{DO}$（delay time）：定义在临界边沿事件发生后，SDO 上的有效数据的延迟时间。
 
 ![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20211026160940.png)
 
