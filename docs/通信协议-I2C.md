@@ -15,7 +15,15 @@ title: 通信协议 - I2C
 
 ![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20211026174634.png)
 
-## IIC 的引脚
+## I2C 的引脚
 
 - **SCL**（serial clock）：由主机产生的方波，用来控制传输速率和数据的锁存。
-- **SDA**（serial data）：
+- **SDA**（serial data）：这是一个半双工的同步信号线，传输的数据包括地址、控制信号与通信数据。
+
+## I2C 地址
+
+- I2C 地址划分，是 7 bit 地址加上 1 bit 读写指示
+- I2C 总线上的每个设备都必须有一个唯一的地址，如果地址重复会出问题。有些设备的 I2C 地址是可以编程设置的。
+
+![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20211027112717.png)
+
