@@ -1,0 +1,28 @@
+/* 主题色 */
+:root {
+	/*--ifm-color-primary: #0094d9;*/
+	--ifm-color-primary: #02acbe;
+}
+
+
+/* 目录样式优化 */
+.table-of-contents .table-of-contents__link--active {
+	font-weight: var(--ifm-font-weight-semibold);
+	margin-left: -16px;
+	padding-left: 12px;
+	border-left: 4px solid var(--ifm-link-color);
+}
+
+/* 搜索样式优化（去掉 Ctrl + K） */
+.DocSearch-Button-Key {
+	display: none !important;
+}
+
+/* 去掉侧边栏右侧的分割线 */
+.main-wrapper>div>div {
+	border-right: none !important;
+}
+
+/* 隐藏 scrollbar */
+::-webkit-scrollbar {display:none;}
+
