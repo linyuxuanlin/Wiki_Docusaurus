@@ -27,3 +27,5 @@ title: 通信协议 - I2C
 
 ![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20211027112717.png)
 
+## I2C 通信
+
