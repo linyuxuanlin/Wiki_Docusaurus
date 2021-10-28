@@ -95,7 +95,7 @@ module.exports = {
         'BeagleBone系列-基本参数与环境配置',
         'BeagleBone系列-无线连接',
         'BeagleBone系列-使用BBIO库开发',
-        'BeagleBone系列-BBAI入坑',
+        //'BeagleBone系列-BBAI入坑',
       ],
     },
 
