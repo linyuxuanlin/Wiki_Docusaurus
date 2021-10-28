@@ -18,3 +18,5 @@ GPIO（General Purpose I/O）即通用输入输出端口。这些引脚通常有
 与 LED 子系统类似，Linux 提供了 GPIO 子系统驱动框架，使用该驱动框架将 CPU 的 GPIO 引脚导出到用户空间，我们通过访问 `/sys` 文件系统进行控制。GPIO 子系统支持把引脚用于基本的输入输出功能，其中输入功能支持中断检测。（在 Linux 内核源码 `Documentation/gpio` 目录可找到关于 GPIO 子系统更详细的说明）
 
 ## GPIO 设备目录
+
+GPIO 驱动子系统导出到用户空间的目录是 `/sys/class/gpio`，使用如下的命令查看：
