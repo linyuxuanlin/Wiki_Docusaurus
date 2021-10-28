@@ -1,6 +1,6 @@
 ---
-id: BeagleBone指南-基本参数与环境配置
-title: BeagleBone 指南 - 基本参数与环境配置
+id: BeagleBone系列-基本参数与环境配置
+title: BeagleBone 系列 - 基本参数与环境配置
 ---
 
 ## 硬件资源

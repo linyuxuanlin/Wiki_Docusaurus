@@ -1,6 +1,6 @@
 ---
-id: BeagleBone指南-无线连接
-title: BeagleBone 指南 - 无线连接
+id: BeagleBone系列-无线连接
+title: BeagleBone 系列 - 无线连接
 ---
 
 ## 各版本 BeagleBone 的区别

@@ -1,6 +1,6 @@
 ---
-id: BeagleBone指南-使用BBIO库开发
-title: BeagleBone 指南 - 使用 BBIO 库开发
+id: BeagleBone系列-使用BBIO库开发
+title: BeagleBone 系列 - 使用 BBIO 库开发
 ---
 
 ## 安装 Adafruit-BBIO
