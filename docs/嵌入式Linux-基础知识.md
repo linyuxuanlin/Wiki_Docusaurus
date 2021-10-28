@@ -1,6 +1,6 @@
 ---
-id: Linux学习笔记-嵌入式开发
-title: Linux 学习笔记 - 嵌入式开发
+id: 嵌入式Linux-基础知识
+title: 嵌入式 Linux - 基础知识
 ---
 
 ## 常用命令

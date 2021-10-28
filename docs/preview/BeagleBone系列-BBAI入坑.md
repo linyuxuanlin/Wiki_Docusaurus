@@ -31,6 +31,8 @@ wget https://github.com/linyuxuanlin/File-host/blob/main/stash/k3-j721e-beaglebo
 
 改名为 `k3-j721e-beagleboneai64.dtb`，移至 `/boot` 目录下并覆盖原文件。（我将文件传到 GitHub 仓库，使用 `wget` 命令获取。可能需要修改 GitHub host 才能正常下载）
 
+也可以直接使用 sftp 传输文件。
+
 ## evtest
 
 event test 工具是打印 evdev 内核事件的工具，它直接从内核设备读取并打印设备描述的带有值和符号名的事件，可以用来调试鼠标、键盘、触摸板等输入设备。
