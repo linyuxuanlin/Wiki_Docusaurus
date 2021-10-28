@@ -7,6 +7,7 @@ title: BeagleBone 系列 - BBAI 入坑
 
 - [镜像](https://rcn-ee.net/rootfs/debian-arm64/)
 - [测试代码](https://gitee.com/gary87m/notes_seeed/blob/master/BBAI_Robotics%20Cape.md)
+- [Cape 问题](https://docs.qq.com/sheet/DU1BBZnNORlJhRG5w)
 
 > 文章作者：**Power Lin**  
 > 原文地址：<https://wiki-power.com>  
@@ -27,6 +28,8 @@ title: BeagleBone 系列 - BBAI 入坑
 ```shell
 wget https://github.com/linyuxuanlin/File-host/blob/main/stash/k3-j721e-beagleboneai64.dtb?raw=true
 ```
+
+改名为 `k3-j721e-beagleboneai64.dtb`，移至 `/boot` 目录下并覆盖原文件。（我将文件传到 GitHub 仓库，使用 `wget` 命令获取。可能需要修改 GitHub host 才能正常下载）
 
 ## evtest
 
@@ -75,4 +78,20 @@ Event: time 1634868166.284257, type 1 (EV_KEY), code 257 (BTN_1), value 0
 Event: time 1634868166.284257, -------------- SYN_REPORT ------------
 ```
 
+## SPI 总线上设备
 
+- Barometer - BMP280
+- 6-DOF - LSM6DS3TR
+- Compass - BMM150
+
+```shell
+cd /sys/bus/iio/devices
+ls -l
+
+cat iio\:device0/name
+cat iio\:device1/name
+cat iio\:device2/name
+cat iio\:device3/name
+cat iio\:device4/name
+cat iio\:device5/name
+```
