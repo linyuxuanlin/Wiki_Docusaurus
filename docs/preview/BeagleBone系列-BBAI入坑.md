@@ -136,3 +136,16 @@ Press CTRL-A Z for help on special keys
 
 hello
 ```
+
+测试不成功，未收发到数据。
+
+## LEDs
+
+```shell
+cd /sys/class/leds && ls -l
+
+echo 255 > beaglebone:green:cape0/brightness
+echo 255 > beaglebone:green:cape3/brightness
+
+echo 0 > beaglebone:green:cape1/brightness # 关不掉
+```
