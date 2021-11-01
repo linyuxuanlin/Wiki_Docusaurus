@@ -20,3 +20,4 @@ GPIO（General Purpose I/O）即通用输入输出端口。这些引脚通常有
 ## GPIO 设备目录
 
 GPIO 驱动子系统导出到用户空间的目录是 `/sys/class/gpio`，使用如下的命令查看：
+

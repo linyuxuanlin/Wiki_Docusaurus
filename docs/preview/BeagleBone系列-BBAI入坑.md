@@ -145,7 +145,7 @@ hello
 cd /sys/class/leds && ls -l
 
 echo 255 > beaglebone:green:cape0/brightness
-echo 255 > beaglebone:green:cape3/brightness
+echo 255 > beaglebone:green:cape3/brightnessb 
 
 echo 0 > beaglebone:green:cape1/brightness # 关不掉
 ```
