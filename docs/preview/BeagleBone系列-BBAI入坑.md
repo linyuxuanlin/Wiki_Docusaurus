@@ -39,7 +39,7 @@ sudo apt install evtest
 sudo evtest /dev/input/eventｘ（ｘ就是时间编号）
 ```
 
-## 检测按键输入
+## 按键
 
 ```shell
 debian@BeagleBone:~$ evtest
@@ -87,14 +87,18 @@ cat iio\:device4/name
 cat iio\:device5/name
 ```
 
-## 激光雷达
+## 【未完成】激光雷达
 
-如果提示没有权限，请见 [](https://wiki-power.com/BeagleBone%E7%B3%BB%E5%88%97-%E5%9F%BA%E6%9C%AC%E5%8F%82%E6%95%B0%E4%B8%8E%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE#)
+如果提示没有权限，请见 [**启用 ssh 的 root 帐户**](https://wiki-power.com/BeagleBone%E7%B3%BB%E5%88%97-%E5%9F%BA%E6%9C%AC%E5%8F%82%E6%95%B0%E4%B8%8E%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE#%E5%90%AF%E7%94%A8-ssh-%E7%9A%84-root-%E5%B8%90%E6%88%B7)。
 
 ```shell
+ls /sys/class/gpio
 echo 306 > export
 echo 374 > export
-
+echo out > gpio306/direction
+echo out > gpio374/direction
+echo 0 > gpio374/value
+echo 1 > gpio306/value
 ```
 
 ## 参考与致谢
@@ -107,3 +111,28 @@ echo 374 > export
 > 文章作者：**Power Lin**  
 > 原文地址：<https://wiki-power.com>  
 > 版权声明：文章采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh) 协议，转载请注明出处。
+
+## BeagleConnect 通信
+
+```shell
+# BC_RST
+cd /sys/class/gpio
+echo 326 > export
+echo out > gpio326/direction
+echo 0 > gpio326/value
+echo 1 > gpio326/value
+
+# Uart2
+root@BeagleBone:/sys/class/tty# ls -l
+lrwxrwxrwx 1 root root 0 Jul 13 17:29 ttyS4 -> ../../devices/platform/bus@100000/2820000.serial/tty/ttyS4
+
+sudo apt-get install minicom
+sudo minicom -D /dev/ttyS4
+
+Welcome to minicom 2.8
+OPTIONS: I18n
+Port /dev/ttyS4, 10:57:41
+Press CTRL-A Z for help on special keys
+
+hello
+```
