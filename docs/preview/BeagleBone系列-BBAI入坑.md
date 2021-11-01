@@ -1,17 +1,7 @@
 ---
 id: BeagleBone系列-BBAI入坑
-title: BeagleBone 系列 - BBAI 入坑
+title: 【编辑中】BeagleBone 系列 - BBAI 入坑
 ---
-
-## 参考与致谢
-
-- [镜像](https://rcn-ee.net/rootfs/debian-arm64/)
-- [测试代码](https://gitee.com/gary87m/notes_seeed/blob/master/BBAI_Robotics%20Cape.md)
-- [Cape 问题](https://docs.qq.com/sheet/DU1BBZnNORlJhRG5w)
-
-> 文章作者：**Power Lin**  
-> 原文地址：<https://wiki-power.com>  
-> 版权声明：文章采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh) 协议，转载请注明出处。
 
 ## 初始化
 
@@ -97,3 +87,14 @@ cat iio\:device3/name
 cat iio\:device4/name
 cat iio\:device5/name
 ```
+
+## 参考与致谢
+
+- [原理图](file:///C:/Users/Power/Projects/Internship_at_Seeed/Projects/Robotics_Cape_Rev2/Reference/BeagleBone%20AI%20TDA4VM_SCH_V1.0_210805.pdf)
+- [镜像](https://rcn-ee.net/rootfs/debian-arm64/)
+- [测试代码](https://gitee.com/gary87m/notes_seeed/blob/master/BBAI_Robotics%20Cape.md)
+- [Cape 问题](https://docs.qq.com/sheet/DU1BBZnNORlJhRG5w)
+
+> 文章作者：**Power Lin**  
+> 原文地址：<https://wiki-power.com>  
+> 版权声明：文章采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh) 协议，转载请注明出处。
