@@ -58,7 +58,7 @@ usb1：192.168.6.2
 
 使用 SSH 方式访问，用户名为 `debian`，密码为 `temppwd`。
 
-## 启用 root 帐户登录 ssh
+## 启用 ssh 的 root 帐户
 
 ```shell
 vi /etc/ssh/sshd_config

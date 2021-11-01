@@ -89,7 +89,7 @@ cat iio\:device5/name
 
 ## 激光雷达
 
-如果提示没有权限，请见 
+如果提示没有权限，请见 [](https://wiki-power.com/BeagleBone%E7%B3%BB%E5%88%97-%E5%9F%BA%E6%9C%AC%E5%8F%82%E6%95%B0%E4%B8%8E%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE#)
 
 ```shell
 echo 306 > export
