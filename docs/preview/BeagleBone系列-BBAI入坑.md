@@ -23,7 +23,7 @@ title: BeagleBone 系列 - BBAI 入坑
 
 使用命令行工具连接串口（我用的是 MobaXterm），波特率设置为 115200。
 
-## 安装插件
+## 安装补丁包
 
 ```shell
 wget https://github.com/linyuxuanlin/File-host/blob/main/stash/k3-j721e-beagleboneai64.dtb?raw=true
