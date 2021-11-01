@@ -39,6 +39,8 @@ title: BeagleBone 系列 - 基本参数与环境配置
 
 将镜像烧录进 SD 卡，断电插入 BeagleBone，下次上电就会从 SD 卡启动系统
 
+## 使用命令行工具访问
+
 ### 使用串口访问
 
 使用 USB 转串口连接板载的串行端子，在电脑端打开串口工具（如 WindTerm）进行连接。（初始用户名和密码均为 `root`）
@@ -55,6 +57,14 @@ usb0：192.168.7.2
 usb1：192.168.6.2
 
 使用 SSH 方式访问，用户名为 `debian`，密码为 `temppwd`。
+
+## 启用 root 帐户登录 ssh
+
+```shell
+vi /etc/ssh/sshd_config
+```
+
+将 `#PermitRootLogin prohibit-password` 修改为 `PermitRootLogin yes` 即可。
 
 ## 驱动 Seeed OLED（SSD1306，I2C，12864）
 

@@ -77,8 +77,7 @@ Event: time 1634868166.284257, -------------- SYN_REPORT ------------
 - Compass - BMM150
 
 ```shell
-cd /sys/bus/iio/devices
-ls -l
+cd /sys/bus/iio/devices && ls -l
 
 cat iio\:device0/name
 cat iio\:device1/name
@@ -86,6 +85,16 @@ cat iio\:device2/name
 cat iio\:device3/name
 cat iio\:device4/name
 cat iio\:device5/name
+```
+
+## 激光雷达
+
+如果提示没有权限，请见 
+
+```shell
+echo 306 > export
+echo 374 > export
+
 ```
 
 ## 参考与致谢
