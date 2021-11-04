@@ -28,7 +28,7 @@ module.exports = {
           // Options here
         }]
       ],
-    }
+    },
     /*
     algolia: {
       apiKey: "5c07d8bf9c9928c4453857f6cad0420e",
