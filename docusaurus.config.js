@@ -2,26 +2,34 @@ const math = require('remark-math');
 const katex = require('rehype-katex');
 
 module.exports = {
-  title: "Power's Wiki",
-  //titleDelimiter: "🦖", // Defaults to `|`
-  tagline: "啥都玩的斜杠青年",
-  url: "https://wiki-power.com",
-  baseUrl: "/",
-  onBrokenLinks: "warn",
-  onBrokenMarkdownLinks: "warn",
-  favicon: "https://cos.ap-guangzhou.myqcloud.com/wiki-media-1253965369/doc/logo-zip.png",
-  //organizationName: "linyuxuanlin", // Usually your GitHub org/user name.
-  //projectName: "Wiki_Docusaurus", // Usually your repo name.
-  themeConfig: {
-/*
-    footer: {
-      
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
-    },
-    */
+    title: "Power's Wiki",
+    //titleDelimiter: "🦖", // Defaults to `|`
+    tagline: "啥都玩的斜杠青年",
+    url: "https://wiki-power.com",
+    baseUrl: "/",
+    onBrokenLinks: "warn",
+    onBrokenMarkdownLinks: "warn",
+    favicon: "https://cos.ap-guangzhou.myqcloud.com/wiki-media-1253965369/doc/logo-zip.png",
+    //organizationName: "linyuxuanlin", // Usually your GitHub org/user name.
+    //projectName: "Wiki_Docusaurus", // Usually your repo name.
+    themeConfig: {
+      /*
+          footer: {
+            
+            copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+          },
+          */
 
-    //sidebarCollapsible: true, //默认折叠
-    image: 'https://cos.ap-guangzhou.myqcloud.com/wiki-media-1253965369/doc/logo-zip.png',
+      //sidebarCollapsible: true, //默认折叠
+      image: 'https://cos.ap-guangzhou.myqcloud.com/wiki-media-1253965369/doc/logo-zip.png',
+
+      plugins: [
+        [require.resolve('@cmfcmf/docusaurus-search-local'), {
+          // Options here
+        }]
+      ],
+    }
+    /*
     algolia: {
       apiKey: "5c07d8bf9c9928c4453857f6cad0420e",
       indexName: "wiki-power",
@@ -34,10 +42,11 @@ module.exports = {
 
       //... other Algolia params
     },
+    */
 
 
-    
-    
+
+
     colorMode: {
       // "light" | "dark"
       //defaultMode: "dark",
@@ -79,8 +88,7 @@ module.exports = {
           "https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20201122195819.png",
       },
       */
-      items: [
-        {
+      items: [{
           to: "blog",
           label: "博客",
           position: "right",
@@ -104,17 +112,14 @@ module.exports = {
         },
       ],
     },
-  }, 
+  },
 
-  stylesheets: [
-    {
-      href: 'https://cdn.jsdelivr.net/gh/linyuxuanlin/Wiki_Docusaurus/static/katex/v0.12.0/katex.min.css',
-      type: 'text/css',
-      integrity:
-        'sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X',
-      crossorigin: 'anonymous',
-    },
-  ],
+  stylesheets: [{
+    href: 'https://cdn.jsdelivr.net/gh/linyuxuanlin/Wiki_Docusaurus/static/katex/v0.12.0/katex.min.css',
+    type: 'text/css',
+    integrity: 'sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X',
+    crossorigin: 'anonymous',
+  }, ],
 
   presets: [
     [

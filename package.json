@@ -12,6 +12,7 @@
     "clear": "docusaurus clear"
   },
   "dependencies": {
+    "@cmfcmf/docusaurus-search-local": "^0.6.7",
     "@docsearch/react": "^3.0.0-alpha.40",
     "@docusaurus/core": "2.0.0-beta.6",
     "@docusaurus/mdx-loader": "^2.0.0-beta.6",
