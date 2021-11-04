@@ -85,11 +85,13 @@ module.exports = {
           label: "博客",
           position: "right",
         },
+        /*
         {
           href: "https://wiki.wildwolf.tech/",
           label: "队内知识库",
           position: "right",
         },
+        */
         {
           href: "http://digest.wiki-power.com/",
           label: "书摘",
