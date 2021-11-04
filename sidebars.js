@@ -5,9 +5,9 @@ module.exports = {
       type: 'category',
       label: '硬件设计 - 应用开发',
       items: [
-        '如何设计一款单片机的最小系统', // CSDN
-        'STM32F4硬件开发',
         'OSD335x最小系统的设计',
+        'STM32F4硬件开发',
+        '如何设计一款单片机的最小系统', // CSDN
         'TinyDVR-小巧身材，满载动力',
         'RaptorDVR-集成稳压的30A双电机驱动',
         '模块设计-CAN通信',
