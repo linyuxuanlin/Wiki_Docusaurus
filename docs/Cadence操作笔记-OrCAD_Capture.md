@@ -1,6 +1,6 @@
 ---
-id: Cadence基础入门
-title: Cadence 基础入门
+id: Cadence操作笔记-OrCAD_Capture
+title: Cadence 操作笔记 - OrCAD Capture
 ---
 
 ## 基础
@@ -112,14 +112,21 @@ DRC 设置：
 
 - 无法拖动元器件：一般来说，重启能解决问题。
 
-## 参考与致谢
-
-- [【Cadence 快速入门】一文总结版](https://blog.csdn.net/ReCclay/article/details/101225359)
-- [OrCAD Capture Tutorial](https://resources.orcad.com/orcad-capture-tutorials)
-- [cadence 软件用于高分屏笔记本时候显示字体模糊问题解决](https://blog.csdn.net/qq_34338527/article/details/108846792)
-
 ## 技巧
 
 ### off-page 与 port 的区别
 
 off-page 一般用于平坦式原理图，而 port 一般用于层次原理图。
+
+### DRC 检查
+
+1. 在文件树点击选择整个项目
+2. 点击工具栏 `Tools` - `Design Rules Check...`
+3. 附加勾选 `Run Physical Rules`、`View Output`
+4. 点击确定，会生成报告并自动打开
+
+## 参考与致谢
+
+- [【Cadence 快速入门】一文总结版](https://blog.csdn.net/ReCclay/article/details/101225359)
+- [OrCAD Capture Tutorial](https://resources.orcad.com/orcad-capture-tutorials)
+- [cadence 软件用于高分屏笔记本时候显示字体模糊问题解决](https://blog.csdn.net/qq_34338527/article/details/108846792)

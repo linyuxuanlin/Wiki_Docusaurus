@@ -55,7 +55,7 @@ module.exports = {
         '阻抗匹配的原理',
         'PCB常见封装参考',
         '连接器的规范与设计',
-        'Cadence基础入门',
+        'Cadence操作笔记-OrCAD_Capture',
         'AD使用Git的注意事项',
       ],
     },
