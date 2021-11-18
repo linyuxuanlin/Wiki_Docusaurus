@@ -87,7 +87,7 @@ module.exports = {
         },
         /*
         {
-          href: "https://wiki.wildwolf.tech/",
+          href: "https://wiki.wildwolf.pw/",
           label: "队内知识库",
           position: "right",
         },
