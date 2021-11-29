@@ -3,21 +3,13 @@ id: ESD基础知识
 title: ESD基础知识
 ---
 
-## 参考与致谢
-
-- [可靠性与 ESD 介绍](https://mazhaoxin.github.io/2021/08/01/Reliability_and_ESD_Introduction/)
-
-> 文章作者：**Power Lin**  
-> 原文地址：<https://wiki-power.com>  
-> 版权声明：文章采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh) 协议，转载请注明出处。
-
 ESD 是静电释放。电子设备上通常会有很多接口，接口再通过导线连接到芯片的管脚上，然后连到芯片内部。静电释放时产生的高电压可能会击穿管子，大电流可能会烧熔器件，所以要避免。
 
 ESD 防护的关键在于为静电提供一条单独的放电通道（可以类比避雷针）。
 
 ## ESD 测试模型
 
-对于不同的模型有不同的规格，一般人体模型要容忍2kV，机器模型要容忍200V，元件充电模型要容忍250V才算及格。
+对于不同的模型有不同的规格，一般人体模型要容忍 2kV，机器模型要容忍 200V，元件充电模型要容忍 250V 才算及格。
 
 ### 人体模型（HBM）
 
@@ -30,3 +22,12 @@ ESD 防护的关键在于为静电提供一条单独的放电通道（可以类�
 ### 元件充电模型（CDM）
 
 前两种模型模拟的都是带电体向芯片放电的情况，元件充电模型则模拟的是芯片自身带电，向地放电的情形，从在仓库存放了一段时间的包装里把芯片拿出来时会发生这种现象。这种情况下没有电阻、电容，而是芯片通过管脚直接对地放电。
+
+## 参考与致谢
+
+- [可靠性与 ESD 介绍](https://mazhaoxin.github.io/2021/08/01/Reliability_and_ESD_Introduction/)
+- [电子工程师手记：ESD 基本知识及 ESD 保护的选取](https://haipeng.me/2019/09/03/esd-protection/)
+
+> 文章作者：**Power Lin**  
+> 原文地址：<https://wiki-power.com>  
+> 版权声明：文章采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh) 协议，转载请注明出处。
