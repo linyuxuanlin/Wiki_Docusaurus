@@ -17,7 +17,7 @@ title: AD 入门系列二：基础知识
 
 ### 可参考的库
 
-- [**Power_Lib_Altium**](https://github.com/linyuxuanlin/Power_Lib_Altium)：我自己整理的库。目前尚处于前中期阶段，封装库齐全，原理图库仅包含我的项目所需要的元器件型号。将不断更新。
+- [**Power_Lib_Altium**](https://github.com/linyuxuanlin/Power_Lib_Altium)：我自己整理的库。封装库齐全，原理图库仅包含我的项目所需要的元器件型号。不断更新中。
 - [**AltiumDesigner_PcbLibrary**](https://github.com/KitSprout/AltiumDesigner_PcbLibrary)：一个较为齐全的库。
 - [**My_PCB_Library_Github**](https://github.com/Samwuzhitao/My_PCB_Library_Github)：挺齐全的一个库，还包含一些单片机方案板。
 - [**JLCSMT_LIB**](https://gitee.com/JLC_SMT/JLCSMT_LIB)：嘉立创提供的标准集成库，包含嘉立创可以 SMT 贴片的所有元件，直接用这个集成库，打板 / SMT 的时候兼容性会比较好。
