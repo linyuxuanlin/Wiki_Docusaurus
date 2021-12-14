@@ -1,3 +1,16 @@
+- ESD
+  - [可靠性与 ESD 介绍](https://mazhaoxin.github.io/2021/08/01/Reliability_and_ESD_Introduction/)
+  - [电子工程师手记：ESD 基本知识及 ESD 保护的选取](https://haipeng.me/2019/09/03/esd-protection/)
+- 二极管
+  - [电子工程师手记：二极管选择指南](https://haipeng.me/2021/01/27/diode-guide/)
+- 电机驱动
+  - [浅谈直流有刷电机的驱动电路](https://haipeng.me/2021/02/28/h-bridge-driver/)
+- 电源
+  - [请举手回答，LDO 和 DC-DC 有什么不同？](https://mp.weixin.qq.com/s/GfnT3FTVtMr37DIRVPG65g)
+  - [LDO 基础知识：工作原理及应用](https://haipeng.me/2020/06/10/ldo-basics-principles-and-applications/)
+
+---
+
 - Markdown 写论文（论文生成器）
 - 极简的生活方式，尽量减少物理依赖
 - 便携软件
@@ -10,8 +23,6 @@
   - https://www.runoob.com/linux/linux-vim.html
   - https://www.runoob.com/linux/linux-file-attr-permission.html
 
-
-
 用户研究中，有一个众所周知的事实。如果你询问用户是否需要新功能，他们通常会大叫“是的”。毕竟谁会不想要更多的功能呢？
 
 但是，等到发布以后，你才意识到用户可能不使用这个功能。
@@ -23,7 +34,6 @@
 但是，这两句话相互矛盾，需要不同的技能。增加收入通常需要花钱，提高获利潜力。减少开支意味着对于投资新事物持有保守态度，这种心态会阻止你赚更多的钱。
 
 -- 《我的十条金钱规则》[52]
-
 
 斜率比截距重要[47]
 
