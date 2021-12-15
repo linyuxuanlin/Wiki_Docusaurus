@@ -1,6 +1,6 @@
 ---
 id: EMC设计指南
-title: EMC 设计指南
+title: 🚧EMC 设计指南
 ---
 
 ## 参考与致谢
@@ -11,9 +11,29 @@ title: EMC 设计指南
 > 原文地址：<https://wiki-power.com>  
 > 版权声明：文章采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh) 协议，转载请注明出处。
 
-电磁兼容（Electromagnetic Compatibility）指的是设备在其电磁环境中能正常工作且不对环境中任何事物构成不能承受的电磁骚扰的能力，通俗地说，就是你的板子不怕别人干扰，也尽量不去干扰别人。
+电磁兼容性（Electromagnetic Compatibility）指的是设备在其电磁环境中能正常工作且不对环境中任何事物构成不能承受的电磁骚扰的能力，通俗地说，就是你的板子不怕别人干扰，也尽量不去干扰别人。
 
-## 基本方法
+电磁兼容性（EMC）包括电磁干扰（EMI）和电磁耐受性（EMS）。
+
+![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20211215225136.png)
+
+EMI 分为以下方面：
+
+- 辐射发射（RE，Radiated Emission）：指干扰源通过空间把其信号耦合（干扰）到另一个电网络。
+- 传导发射（CE，Conducted Emission）：指通过导电介质把一个电网络上的信号耦合（干扰）到另一个电网络。
+- 谐波（Harmonic）：
+- 闪烁（Flicker）：
+
+EMS 分为以下方面：
+
+- 辐射抗扰（RS）：
+- 传导抗扰（CS）：
+- 防静电（ESD）：
+- 瞬态脉冲干扰（EFT）：
+- 浪涌、雷击（Surge）：
+- 工频磁场抗扰（PMS）：
+
+## EMC 优化基本方法
 
 ### 最小化高频线和电源环路的面积
 
@@ -41,7 +61,6 @@ title: EMC 设计指南
 通过减慢数字信号的上升沿和下降沿时间，可以很好地控制高次谐波频率。过长的转换时间会导致信号完整性和过热问题。
 
 ## PCB 的 EMC 设计
-
 
 ### 元器件布局
 
