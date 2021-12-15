@@ -86,7 +86,7 @@ $$
 
 ### 电容容值与 ESD 耐性的参考
 
-- $C_x$ 电容参数：GCM 系列/0402 封装/X7R/50V
+- $C_x$ 电容参数：GCM 系列 / 0402 封装 / X7R / 50V
 - 测试条件：$C_d=150pF,R_d=2kΩ$
 
 ![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20211215172528.png)
