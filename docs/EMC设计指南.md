@@ -1,6 +1,6 @@
 ---
 id: EMC设计指南
-title: 🚧EMC 设计指南
+title: EMC 设计指南
 ---
 
 电磁兼容性（Electromagnetic Compatibility）指的是设备在其电磁环境中能正常工作且不对环境中任何事物构成不能承受的电磁骚扰的能力，通俗地说，就是你的板子不怕别人干扰，也尽量不去干扰别人，达到「兼容」的状态。
@@ -68,31 +68,6 @@ EMS 分为以下方面：
 
 通过减慢数字信号的上升沿和下降沿时间，可以很好地控制高次谐波频率。过长的转换时间会导致信号完整性和过热问题。
 
-## PCB 的 EMC 设计
-
-### 3W 与 20H 原则
-
-3W 原则指的是线中心距不少于 3 倍线宽时，则可保持 70%的线间电场不互相干扰。如要达到 98% 的电场不互相干扰，则使用 10W 规则。
-
-20H 原则指的是确保电源平面的边缘要比地平面边缘至少缩入相当于两个平面间层距的 20 倍，是为抑制边缘辐射效应，可以将 70% 的电场限制在接地边沿内；内缩 100H 则可以将 98% 的电场限制在内。
-
-### 元器件布局
-
-### 布线
-
-- 3W 原则
-
-## 参考与致谢
-
-- [电磁兼容介绍](https://blog.infonet.io/2021/04/04/%E7%94%B5%E7%A3%81%E5%85%BC%E5%AE%B9%E4%BB%8B%E7%BB%8D/)
-- [电磁兼容（EMC）：简单粗暴的 EMC 设计指南](https://zhuanlan.zhihu.com/p/142866381)
-- [EMI/EMC 设计秘籍–电子产品设计工程师必备手册](https://www.mr-wu.cn/emc-emi-she-ji-mi-ji/)
-- [利用混成式共模电感抑制传导电磁干扰](https://www.richtek.com/Design%20Support/Technical%20Document/AN008?sc_lang=zh-CN)
-
-> 文章作者：**Power Lin**  
-> 原文地址：<https://wiki-power.com>  
-> 版权声明：文章采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh) 协议，转载请注明出处。
-
 ## EMC 元器件
 
 EMC 常用元件有共模电感、磁珠与滤波电容器。
@@ -111,3 +86,27 @@ EMC 常用元件有共模电感、磁珠与滤波电容器。
 
 ### 磁珠
 
+磁珠的介绍与选型请见 [**基本元器件-电感与磁珠 · 磁珠**](https://wiki-power.com/%E5%9F%BA%E6%9C%AC%E5%85%83%E5%99%A8%E4%BB%B6-%E7%94%B5%E6%84%9F%E4%B8%8E%E7%A3%81%E7%8F%A0#%E7%A3%81%E7%8F%A0) 部分。
+
+### 滤波电容
+
+电容的介绍与选型请见 [**基本元器件 - 电容**](https://wiki-power.com/%E5%9F%BA%E6%9C%AC%E5%85%83%E5%99%A8%E4%BB%B6-%E7%94%B5%E5%AE%B9) 部分。
+
+## PCB 的 EMC 设计
+
+### 3W 与 20H 原则
+
+3W 原则指的是线中心距不少于 3 倍线宽时，则可保持 70%的线间电场不互相干扰。如要达到 98% 的电场不互相干扰，则使用 10W 规则。
+
+20H 原则指的是确保电源平面的边缘要比地平面边缘至少缩入相当于两个平面间层距的 20 倍，是为抑制边缘辐射效应，可以将 70% 的电场限制在接地边沿内；内缩 100H 则可以将 98% 的电场限制在内。
+
+## 参考与致谢
+
+- [电磁兼容介绍](https://blog.infonet.io/2021/04/04/%E7%94%B5%E7%A3%81%E5%85%BC%E5%AE%B9%E4%BB%8B%E7%BB%8D/)
+- [电磁兼容（EMC）：简单粗暴的 EMC 设计指南](https://zhuanlan.zhihu.com/p/142866381)
+- [EMI/EMC 设计秘籍–电子产品设计工程师必备手册](https://www.mr-wu.cn/emc-emi-she-ji-mi-ji/)
+- [利用混成式共模电感抑制传导电磁干扰](https://www.richtek.com/Design%20Support/Technical%20Document/AN008?sc_lang=zh-CN)
+
+> 文章作者：**Power Lin**  
+> 原文地址：<https://wiki-power.com>  
+> 版权声明：文章采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh) 协议，转载请注明出处。
