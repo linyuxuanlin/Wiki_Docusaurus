@@ -86,7 +86,25 @@ EMS 分为以下方面：
 
 - [电磁兼容介绍](https://blog.infonet.io/2021/04/04/%E7%94%B5%E7%A3%81%E5%85%BC%E5%AE%B9%E4%BB%8B%E7%BB%8D/)
 - [电磁兼容（EMC）：简单粗暴的 EMC 设计指南](https://zhuanlan.zhihu.com/p/142866381)
+- [EMI/EMC 设计秘籍–电子产品设计工程师必备手册](https://www.mr-wu.cn/emc-emi-she-ji-mi-ji/)
+- [利用混成式共模电感抑制传导电磁干扰](https://www.richtek.com/Design%20Support/Technical%20Document/AN008?sc_lang=zh-CN)
 
 > 文章作者：**Power Lin**  
 > 原文地址：<https://wiki-power.com>  
 > 版权声明：文章采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh) 协议，转载请注明出处。
+
+## EMC 元器件
+
+EMC 常用元件有共模电感、磁珠与滤波电容器。
+
+常见滤波器模型：
+
+![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20211219173751.png)
+
+### 共模电感
+
+共模电感的等效模型：
+
+![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20211219173856.png)
+
+![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20211219174546.png)
