@@ -10,7 +10,6 @@ module.exports = {
         '如何设计一款单片机的最小系统', // CSDN
         'TinyDVR-小巧身材，满载动力',
         'RaptorDVR-集成稳压的30A双电机驱动',
-        '模块设计-CAN通信',
         'SwiftCtrl-蓝牙手柄',
         'AirForce-充满灵性的电机驱动模块',
         'ZenDriver-高性能的电机驱动',
@@ -40,6 +39,7 @@ module.exports = {
         '数字逻辑电平',
         '通信协议-SPI',
         '通信协议-I2C',
+        '通信协议-CAN',
         '保险丝的选型',
         '锂电池选型指南',
         '高速多层PCB的设计',
