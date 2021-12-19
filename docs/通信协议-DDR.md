@@ -1,11 +1,11 @@
 ---
-id: 连接器的规范与设计
-title: 连接器的规范与设计
+id: 通信协议-DDR
+title: 🚧通信协议 - DDR
 ---
 
-## 金手指
+## 连接器的规范与设计
 
-金手指（Gold Finger/Edge Connector）由镀金工艺（金的抗氧化性与传导性都很强）的导电触片组成，因排列如手指状，所以称为「金手指」。
+DDR 的连接器俗称金手指（Gold Finger/Edge Connector），它是由镀金工艺（金的抗氧化性与传导性都很强）的导电触片组成，因排列如手指状，所以称为「金手指」。
 
 ![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20200226143912.png)
 
