@@ -108,3 +108,6 @@ EMC 常用元件有共模电感、磁珠与滤波电容器。
 ![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20211219173856.png)
 
 ![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20211219174546.png)
+
+### 磁珠
+
