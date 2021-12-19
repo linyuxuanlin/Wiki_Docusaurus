@@ -7,7 +7,7 @@ ESD（Electrostatic discharge）即静电释放。指两个物体在接近或接
 
 电子设备上通常会有很多接口，接口再通过导线连接到芯片的管脚上，然后连到芯片内部。静电释放时产生的高电压（一般高达上千伏）可能会击穿管子，如果是大电流，还可能会烧熔器件，所以要避免。
 
-ESD 防护的关键在于为静电提供一条单独的放电通道（原理就像避雷针）。ESD 器件主要分为四类：TVS 二极管、压敏电阻、MLCC、ESD 抑制器
+ESD 防护的关键在于为静电提供一条单独的放电通道（原理就像避雷针）。ESD 器件主要分为四类：TVS 二极管、压敏电阻、MLCC、ESD 抑制器。
 
 ## ESD 测试模型
 
@@ -104,6 +104,7 @@ $$
 - [可靠性与 ESD 介绍](https://mazhaoxin.github.io/2021/08/01/Reliability_and_ESD_Introduction/)
 - [电子工程师手记：ESD 基本知识及 ESD 保护的选取](https://haipeng.me/2019/09/03/esd-protection/)
 - [ESD Resistance of Capacitors](https://article.murata.com/en-us/article/esd-resistance-of-capacitors)
+- [一文搞懂 ESD 器件在 PCB 设计当中的作用](http://murata.eetrend.com/article/2021-11/1004974.html)
 
 > 文章作者：**Power Lin**  
 > 原文地址：<https://wiki-power.com>  
