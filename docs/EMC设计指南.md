@@ -3,15 +3,7 @@ id: EMC设计指南
 title: 🚧EMC 设计指南
 ---
 
-## 参考与致谢
-
-- [电磁兼容（EMC）：简单粗暴的 EMC 设计指南](https://zhuanlan.zhihu.com/p/142866381)
-
-> 文章作者：**Power Lin**  
-> 原文地址：<https://wiki-power.com>  
-> 版权声明：文章采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh) 协议，转载请注明出处。
-
-电磁兼容性（Electromagnetic Compatibility）指的是设备在其电磁环境中能正常工作且不对环境中任何事物构成不能承受的电磁骚扰的能力，通俗地说，就是你的板子不怕别人干扰，也尽量不去干扰别人。
+电磁兼容性（Electromagnetic Compatibility）指的是设备在其电磁环境中能正常工作且不对环境中任何事物构成不能承受的电磁骚扰的能力，通俗地说，就是你的板子不怕别人干扰，也尽量不去干扰别人，达到「兼容」的状态。
 
 电磁兼容性（EMC）包括电磁干扰（EMI，Electro-Magnetic Interference）和电磁耐受性（EMS，Electro-Magnetic Susceptibility）。
 
@@ -35,6 +27,21 @@ EMS 分为以下方面：
 - 工频磁场抗扰（PFMF）：工频磁场抗扰度测试
 
 ## EMC 优化基本方法
+
+产生 EMC 问题的要素是：电磁干扰源、耦合途径、敏感设备。
+
+规律：
+
+1. 高频电流环路面积 S 越大, EMI 辐射越严重。
+2. 环路电流频率 f 越高，引起的 EMI 辐射越严重，电磁辐射场强随电流频率 f 的平方成正比增大。
+
+基本应对方法：
+
+- 传输通道抑制：具体的方法有滤波、屏蔽、接地、搭接、合理的布线；
+- 空间分离：即通过加大骚扰源和敏感电路间的距离，抑制空间辐射骚扰和感应耦合骚扰的有效方法；
+- 时间分离：有用信号在干扰信号发射时短暂关闭，而在干扰信号停止的时间内传输；
+- 频谱处理：频谱改变、展频技术；
+- 电气隔离：光电隔离、继电器隔离、变压器隔离、DC/DC 变换。
 
 ### 最小化高频线和电源环路的面积
 
@@ -68,3 +75,12 @@ EMS 分为以下方面：
 ### 布线
 
 - 3W 原则
+
+## 参考与致谢
+
+- [电磁兼容介绍](https://blog.infonet.io/2021/04/04/%E7%94%B5%E7%A3%81%E5%85%BC%E5%AE%B9%E4%BB%8B%E7%BB%8D/)
+- [电磁兼容（EMC）：简单粗暴的 EMC 设计指南](https://zhuanlan.zhihu.com/p/142866381)
+
+> 文章作者：**Power Lin**  
+> 原文地址：<https://wiki-power.com>  
+> 版权声明：文章采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh) 协议，转载请注明出处。
