@@ -1,6 +1,4 @@
-- ESD
-  - [可靠性与 ESD 介绍](https://mazhaoxin.github.io/2021/08/01/Reliability_and_ESD_Introduction/)
-  - [电子工程师手记：ESD 基本知识及 ESD 保护的选取](https://haipeng.me/2019/09/03/esd-protection/)
+
 - 二极管
   - [电子工程师手记：二极管选择指南](https://haipeng.me/2021/01/27/diode-guide/)
 - 电机驱动
