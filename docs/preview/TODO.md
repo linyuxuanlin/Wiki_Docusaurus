@@ -1,11 +1,12 @@
 
 - 二极管
   - [电子工程师手记：二极管选择指南](https://haipeng.me/2021/01/27/diode-guide/)
-- 电机驱动
-  - [浅谈直流有刷电机的驱动电路](https://haipeng.me/2021/02/28/h-bridge-driver/)
+
 - 电源
   - [请举手回答，LDO 和 DC-DC 有什么不同？](https://mp.weixin.qq.com/s/GfnT3FTVtMr37DIRVPG65g)
   - [LDO 基础知识：工作原理及应用](https://haipeng.me/2020/06/10/ldo-basics-principles-and-applications/)
+
+sw上的波形？如何处理纹波？
 
 ---
 
