@@ -1,6 +1,6 @@
 ---
-id: AD入门系列一：环境搭建
-title: AD 入门系列一：环境搭建
+id: AD基本操作-环境搭建
+title: AD 基本操作 - 环境搭建
 ---
 
 —— Altium Designer 系列教程
