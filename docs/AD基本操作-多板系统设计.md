@@ -1,6 +1,6 @@
 ---
 id: AD基本操作-多板系统设计
-title: AD 基本操作 - 多板系统设计
+title: 🚧AD 基本操作 - 多板系统设计
 ---
 
 使用多板系统设计的原因是，一个硬件项目内可能包含多块 PCB、各种装配元素例如外壳，如果仅仅从每块板的角度去设计，最终做出来的产品有可能会出现配合误差或干涉。在设计多元素的硬件项目时，我们最好使用机电协同。对于硬件工程师来说，可以不用 SolidWorks 等软件，直接在 Altium Designer 里实现。
@@ -45,6 +45,7 @@ title: AD 基本操作 - 多板系统设计
 
 - [PCB 中进行多板设计会是怎样的体验？](https://www.altium.com.cn/blog/pcb%E4%B8%AD%E8%BF%9B%E8%A1%8C%E5%A4%9A%E6%9D%BF%E8%AE%BE%E8%AE%A1%E4%BC%9A%E6%98%AF%E6%80%8E%E6%A0%B7%E7%9A%84%E4%BD%93%E9%AA%8C%EF%BC%9F)
 - [输入逻辑系统设计](https://www.altium.com/cn/documentation/altium-designer/capturing-the-logical-system-design-ad)
+- [创建物理多板装配](https://www.altium.com/cn/documentation/altium-designer/creating-the-physical-multi-board-assembly-ad)
 
 > 文章作者：**Power Lin**  
 > 原文地址：<https://wiki-power.com>  
