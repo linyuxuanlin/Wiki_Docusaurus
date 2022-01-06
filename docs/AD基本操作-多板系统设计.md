@@ -37,7 +37,11 @@ title: 🚧AD 基本操作 - 多板系统设计
 
 ### 从逻辑设计文件导入 PCB
 
+使用快捷键 `D` - `I`，就可以从逻辑设计文件导入项目对应的的 PCB
+
 ### 模拟装配
+
+拖动每个 PCB 的坐标轴，就可以进行模拟装配了。
 
 ## 生成生产数据
 
@@ -46,6 +50,7 @@ title: 🚧AD 基本操作 - 多板系统设计
 - [PCB 中进行多板设计会是怎样的体验？](https://www.altium.com.cn/blog/pcb%E4%B8%AD%E8%BF%9B%E8%A1%8C%E5%A4%9A%E6%9D%BF%E8%AE%BE%E8%AE%A1%E4%BC%9A%E6%98%AF%E6%80%8E%E6%A0%B7%E7%9A%84%E4%BD%93%E9%AA%8C%EF%BC%9F)
 - [输入逻辑系统设计](https://www.altium.com/cn/documentation/altium-designer/capturing-the-logical-system-design-ad)
 - [创建物理多板装配](https://www.altium.com/cn/documentation/altium-designer/creating-the-physical-multi-board-assembly-ad)
+- [生成多板设计的生产数据](https://www.altium.com/cn/documentation/altium-designer/generating-multi-board-production-data-ad)
 
 > 文章作者：**Power Lin**  
 > 原文地址：<https://wiki-power.com>  
