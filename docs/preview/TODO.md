@@ -8,6 +8,10 @@
 
 sw 上的波形？如何处理纹波？
 
+- [没有华丽的学历，硬件求职怎么和大佬们“卷”？](https://mp.weixin.qq.com/s/689cvwXEncGBKagCOnTsiw)
+- [科技爱好者周刊（第 191 期）：一个程序员的财务独立之路](https://mp.weixin.qq.com/s/Nq5a3FtzkqeVGDYP7ZDe-Q)
+- [钢琴入门教程](https://www.flowkey.com/zh/piano-guide/choose-piano)
+
 ---
 
 - Markdown 写论文（论文生成器）
