@@ -123,3 +123,15 @@ with the best power conversion performance, thermal performance, and minimized g
 > 文章作者：**Power Lin**  
 > 原文地址：<https://wiki-power.com>  
 > 版权声明：文章采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh) 协议，转载请注明出处。
+
+### 开关频率与同步（RT/SYNC）
+
+LMR14050 的开关频率可以被接在 RT/SYNC 和 GND 之间的电阻 $R_T$ 编程设定。RT/SYNC 引脚不可浮空或端接到地，根据以下公式或图表决定其阻值：
+
+$$
+R_T(kΩ)=32537*f_{sw}^{-1.045}(kHz)
+$$
+
+![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20220111135021.png)
+
+![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20220111135034.png)
