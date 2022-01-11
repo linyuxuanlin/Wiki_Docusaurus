@@ -33,7 +33,7 @@ LMR1405 是 TI 的一款 Buck 转换器芯片，输入电压范围很宽（4-40V
 - EN：使能开关，内部上拉。外部拉低于 1.2V 可关闭输出，浮空或接 $V_{IN}$ 使能输出。欠压锁定的调节请见下文。
 - RT/SYNC：电阻时序或外部时钟输入。当使用外部电阻接地来设置开关频率时，内部放大器将此引脚保持在固定电压。如果引脚被拉至高于 PLL 上限阈值，则会发生模式更改并且引脚变为同步输入。内部放大器被禁用，引脚是内部 PLL 的高阻抗时钟输入。如果时钟边沿停止，则重新启用内部放大器并且操作模式返回到通过电阻器进行的频率编程。？
 - FB：反馈输入引脚，由电阻从 $V_{OUT}$ 分压输入反馈，不可直接接地。
-- SS：软启动控制引脚，接电容设置软启动时间。
+- SS：缓启动控制引脚，接电容设置缓启动时间。
 - SW：稳压开关输出，在内部连高侧 MOS 管。接功率电感。
 
 ## 特性描述
@@ -56,7 +56,7 @@ LMR14050 的输出电压通过开启高侧 N-MOS 并控制导通时间来调节�
 
 ### BOOT 自举电路的设计
 
-LMR14050 内部集成了自举电压转换器，在 BOOT 和 SW 引脚借一个自举电容，就可以提供足以驱动高侧 MOS 管门极的电压。BOOT 电容的参考值为 0.1uF（X7R 或 X5R 陶瓷电容，耐压至少 16V）。
+LMR14050 内部集成了自举电压转换器，在 BOOT 和 SW 引脚接一个自举电容，就可以提供足以驱动高侧 MOS 管门极的电压。BOOT 电容的参考值为 0.1uF（X7R 或 X5R 陶瓷电容，耐压至少 16V）。
 
 ### 输出电压调节
 
@@ -89,13 +89,13 @@ $$
 
 其中，$V_{STRAT}$ 是希望使能启动的电压阈值，$V_{STOP}$ 是希望欠压关闭的电压阈值，$I_{HYS}$ 是当 EN 电压超过 1.2V 时从 EN 来的滞后电流（典型值为 3.6uA）。
 
-### 外部软启动
+### 外部缓启动
 
-软启动用于抵御通电时冲击稳压器与负载的浪涌电流，可通过外置连接于 SS 与 GND 之间的电容 $C_{SS}$ 来进行配置。有一个内部电流源 $I_{SS}$（典型值为 3uA）为电容充电并生成一个从 0V 到 $V_REF$ 的斜坡。软启动时间可通过公式配置：
+缓启动用于抵御通电时冲击稳压器与负载的浪涌电流，可通过外置连接于 SS 与 GND 之间的电容 $C_{SS}$ 来进行配置。有一个内部电流源 $I_{SS}$（典型值为 3uA）为电容充电并生成一个从 0V 到 $V_REF$ 的斜坡。缓启动时间可通过公式配置：
 
-$t_{SS}(ms)=\frac{C_{SS})(nF)*V_{REF}(V)}{I_{SS}(uA)}$
+$t_{SS}(ms)=\frac{C_{SS}(nF)*V_{REF}(V)}{I_{SS}(uA)}$
 
-在稳压器失能或内部关闭时，软启动将会被重置。
+在稳压器失能或内部关闭时，缓启动将会被重置。
 
 ### 开关频率与同步（RT/SYNC）
 
@@ -140,7 +140,7 @@ LMR14050 有内部热关断保护功能。当结温超过 170℃ 时热关断激
 - 输出电压纹波：50mV
 - 输入电压纹波：400mV
 - 开关频率 $f_{SW}$：300kHz
-- 软启动时间：5ms
+- 缓启动时间：5ms
 
 ### 输出电压设置
 
@@ -212,33 +212,33 @@ $C_{OUT}>\frac{I_{OH}^2-I_{OL}^2}{(V_{OUT}+V_{OS})^2-V_{OUT}^2}*L$
 
 LMR14050 需要高频输入去耦电容和大容量输入电容。高频去耦电容的典型推荐值为 4.7-10 μF（X5R/X7R，陶瓷电容，耐压为最大输入电压两倍以上）。在参考设计中，使用了两个额定电压为 100 V 的 2.2 μF X7R 陶瓷电容器。高频滤波电容需要靠近稳压器放置。
 
-大容量电容为电压尖峰提供阻尼。
+大容量电容为电压尖峰提供阻尼，参考值为 47uF 或 100uF 电解电容。
 
 ### BOOT 自举电容选型
+
+LMR14050 需要一个 BOOT 自举电容，在前文有提及，BOOT 电容的参考值为 0.1uF（X7R 或 X5R 陶瓷电容，耐压至少 16V）。
+
+### 缓启动电容选型
+
+根据前文公式，如果设定缓启动时间为 5ms，则可得出 22 nF（接近计算值 20nF）的缓启动电容。
 
 ## Layout 参考
 
 ![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20220110183248.png)
 
-Layout is a critical portion of good power supply design. The following guidelines will help users design a PCB
-with the best power conversion performance, thermal performance, and minimized generation of unwanted EMI.
+减小 EMI 的 Layout 建议：
 
-1. The feedback network, resistor RFBT and RFBB, should be kept close to the FB pin. $V_{OUT}$ sense path away
-   from noisy nodes and preferably through a layer on the other side of a shielding layer .
-2. The input bypass capacitor CIN must be placed as close as possible to the $V_{IN}$ pin and ground. Grounding
-   for both the input and output capacitors should consist of localized top side planes that connect to the GND
-   pin and PAD .
-3. The inductor L should be placed close to the SW pin to reduce magnetic and electrostatic noise.
-4. The output capacitor, COUT should be placed close to the junction of L and the diode D. The L, D, and COUT
-   trace should be as short as possible to reduce conducted and radiated noise and increase overall efficiency.
-5. The ground connection for the diode, CIN, and COUT should be as small as possible and tied to the system
-   ground plane in only one spot (preferably at the COUT ground point) to minimize conducted noise in the
-   system ground plane
-6. For more detail on switching power supply layout considerations see Application Note AN-1149
+1. 反馈网络、电阻 $R_{FBT}$ 和 $R_{FBB}$ 应尽量靠近 FB 引脚。 $V_{OUT}$ 的采样路径应远离噪声产生路径，最好通过屏蔽层另一侧的层。
+2. 输入去耦电容需要尽可能靠近 $V_{IN}$ 和 GND 放置。
+3. 电感应靠近 SW 引脚放置，以减少磁噪声和静电噪声。
+4. 输出电容 $C_{OUT}$ 应靠近电感和二极管的节点放置，走线尽可能短，以降低传导和辐射噪声，提高效率。
+5. 二极管、$C_{IN}$ 和 $C_{OUT}$ 的接地连接应尽可能小，并仅在一个点（最好在 $C_{OUT}$  接地点）连接到系统接地层，以最大限度地减少系统接地层中的传导噪声。
+6. 
 
 ## 参考与致谢
 
 - [技术文档 · LMR14050](https://www.ti.com.cn/product/cn/LMR14050#tech-docs)
+- [N-1149 Layout Guidelines for Switching Power Supplies](https://www.ti.com/lit/an/snva021c/snva021c.pdf?ts=1641814411004)
 
 > 文章作者：**Power Lin**  
 > 原文地址：<https://wiki-power.com>  
