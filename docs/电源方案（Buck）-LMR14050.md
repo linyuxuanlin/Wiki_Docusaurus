@@ -36,7 +36,7 @@ LMR1405 是 TI 的一款 Buck 转换器芯片，输入电压范围很宽（4-40V
 - SS：软启动控制引脚，接电容设置软启动时间。
 - SW：稳压开关输出，在内部连高侧 MOS 管。接功率电感。
 
-## 设计原理
+## 特性描述
 
 ### 内部功能框图
 
@@ -94,6 +94,36 @@ $t_{SS}(ms)=\frac{C_{SS})(nF)*V_{REF}(V)}{I_{SS}(uA)}$
 
 在稳压器失能或内部关闭时，软启动将会被重置。
 
+### 开关频率与同步（RT/SYNC）
+
+LMR14050 的开关频率可以被接在 RT/SYNC 和 GND 之间的电阻 $R_T$ 编程设定。RT/SYNC 引脚不可浮空或端接到地，根据以下公式或图表决定其阻值：
+
+$$
+R_T(kΩ)=32537*f_{sw}^{-1.045}(kHz)
+$$
+
+![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20220111135021.png)
+
+![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20220111135034.png)
+
+LMR14050 开关动作也可以被外部时钟输入信号同步（250kHz-2.3MHz）:
+
+![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20220111141247.png)
+
+内部晶振将会被外部时钟的下降沿同步。外部时钟推荐高电平不低于 1.7V，低电平不高于 0.5V，最小脉宽不低于 30ns。如果接低内阻信号源，那么频率设定电阻 $R_T$ 需要被并联到 AC 耦合电阻 $C_{COUP}$（可为 10pF 陶瓷电容），接到终端电阻 $R_{TERM}$（例如 50Ω），这样可以较好地匹配阻抗。
+
+### 过流与短路保护
+
+LMR14050 通过对高侧 MOS 管的峰值电流进行逐周期电流限制，以防止过流情况。每个开关周期都会将高端开关电流与误差放大器（EA）的输出减去斜率补偿进行比较。高侧开关的峰值电流受限于恒定的钳位最大峰值电流阈值。因此，高侧开关的峰值电流限制不受斜率补偿的影响，并且在整个占空比范围内保持恒定。
+
+### 过压保护
+
+LMR14050 内置输出过压保护（OVP）电路，以最大限度减少电压过冲。当 FB 电压达到上升 OVP 阈值（VREF 的 109%）时会关闭高侧 MOS 管；当降至低于 OVP 下降阈值（VREF 的 107%）时，高侧 MOS 管恢复正常工作。
+
+### 热关断保护
+
+LMR14050 有内部热关断保护功能。当结温超过 170℃ 时热关断激活，高侧 MOS 管停止开关。当芯片温度降至 158℃ 以下，才会从内部软重启。
+
 ## 参考设计
 
 ## Layout 参考
@@ -123,15 +153,3 @@ with the best power conversion performance, thermal performance, and minimized g
 > 文章作者：**Power Lin**  
 > 原文地址：<https://wiki-power.com>  
 > 版权声明：文章采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh) 协议，转载请注明出处。
-
-### 开关频率与同步（RT/SYNC）
-
-LMR14050 的开关频率可以被接在 RT/SYNC 和 GND 之间的电阻 $R_T$ 编程设定。RT/SYNC 引脚不可浮空或端接到地，根据以下公式或图表决定其阻值：
-
-$$
-R_T(kΩ)=32537*f_{sw}^{-1.045}(kHz)
-$$
-
-![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20220111135021.png)
-
-![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20220111135034.png)
