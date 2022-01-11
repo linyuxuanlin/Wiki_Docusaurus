@@ -3,6 +3,8 @@ id: 电源方案（Buck）-LMR14050
 title: 电源方案（Buck）- LMR14050
 ---
 
+LMR1405 是 TI 的一款 Buck 转换器芯片，输入电压范围很宽（4-40V），且能提供 5A 的持续输出电流，轻载有休眠模式提高效率。它的内部集成度高，所以外围需要设计的元器件很少。开关频率能通过外部电阻 $R_T$ 在 200kHz-2.5MHz 范围内选择，也能够与 250 kHz-2.3 MHz 频率范围内的外部时钟同步。保护功能有过温关断、$V_OUT$ 过压保护（OVP）、$V_IN$ 欠压锁定（UVLO）、逐周期电流限制和带频率折返的短路保护。
+
 ## 主要特性
 
 - 拓扑：DC/DC（Buck）
@@ -22,14 +24,6 @@ title: 电源方案（Buck）- LMR14050
   - 电流模式控制
   - 热保护、过压保护和短路保护
 
-## 参考与致谢
-
-- [技术文档 · LMR14050](https://www.ti.com.cn/product/cn/LMR14050#tech-docs)
-
-> 文章作者：**Power Lin**  
-> 原文地址：<https://wiki-power.com>  
-> 版权声明：文章采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh) 协议，转载请注明出处。
-
 ## 引脚定义
 
 ![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20220110170233.png)
@@ -42,9 +36,29 @@ title: 电源方案（Buck）- LMR14050
 - SS：软启动控制引脚，接电容设置软启动时间。
 - SW：稳压开关输出，在内部连高侧 MOS 管。接功率电感。
 
-## 参考设计
+## 设计原理
 
-## 参数设置
+### 内部功能框图
+
+![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20220111090855.png)
+
+### 稳压原理
+
+LMR14050 的输出电压通过开启高侧 N-MOS 并控制导通时间来调节。在高侧 N-MOS 导通期间，SW 引脚电压摆动至大约 VIN，电感电流 iL 随线性斜率 (VIN – VOUT) / L 增加；当高侧 N-MOS 关断时，电感电流通过续流二极管，以 VOUT / L 的斜率放电。稳压器的控制参数由占空比 D = tON /TSW 决定，其中 tON 是高端开关导通时间，TSW 是开关周期。稳压器控制环路通过调整占空比 D 来保持恒定的输出电压。在理想的降压转换器中，损耗被忽略，D 与输出电压成正比，与输入电压成反比：D = VOUT / VIN。
+
+连续导通模式（CCM）下的 SW 电压与电感电流的对应关系：
+
+![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20220111095020.png)
+
+### 睡眠模式
+
+轻载状态下会进入睡眠模式，以提高效率、减少门极驱动损耗（通过减少开关切换）。如果输出的峰值低于 300mA 将会触发睡眠模式。
+
+### BOOT 自举电路的设计
+
+LMR14050 内部集成了自举电压转换器，在 BOOT 和 SW 引脚借一个自举电容，就可以提供足以驱动高侧 MOS 管门极的电压。BOOT 电容的参考值为 0.1uF（X7R 或 X5R 陶瓷电容，耐压至少 16V）。
+
+## 参考设计
 
 ## Layout 参考
 
@@ -66,6 +80,10 @@ with the best power conversion performance, thermal performance, and minimized g
    system ground plane
 6. For more detail on switching power supply layout considerations see Application Note AN-1149
 
-内部功能框图：
+## 参考与致谢
 
-![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20220111090855.png)
+- [技术文档 · LMR14050](https://www.ti.com.cn/product/cn/LMR14050#tech-docs)
+
+> 文章作者：**Power Lin**  
+> 原文地址：<https://wiki-power.com>  
+> 版权声明：文章采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh) 协议，转载请注明出处。
