@@ -4,7 +4,7 @@ const katex = require('rehype-katex');
 module.exports = {
   title: "Power's Wiki",
   //titleDelimiter: "🦖", // Defaults to `|`
-  tagline: "啥都玩的斜杠青年",
+  tagline: "^_^",
   url: "https://wiki-power.com",
   baseUrl: "/",
   onBrokenLinks: "warn",
