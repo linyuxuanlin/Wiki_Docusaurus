@@ -91,12 +91,12 @@ uint8_t Buffer;
 ```
 
 ```c title="stm32f4xx_it.c"
-/* Private typedef -----------------------------------------------------------*/
-/* USER CODE BEGIN TD */
+/* Private variables -----------------------------------------------------------*/
+/* USER CODE BEGIN PV */
 
 extern uint8_t Buffer;
 
-/* USER CODE END TD */
+/* USER CODE END PV */
 
 ```
 
