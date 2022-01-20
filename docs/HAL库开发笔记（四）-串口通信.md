@@ -82,12 +82,12 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
 其中，`Buffer` 是在 `main.c` 中定义的 uint8_t 类型全局变量。这里每接受的一个字节后就产生中断，将该字节数据返回并重新开启中断。我们需要分别在 `main.c` 和 `stm32f4xx_it.c` 中定义它：
 
 ```c title="main.c"
-/* Private typedef -----------------------------------------------------------*/
-/* USER CODE BEGIN PTD */
+/* Private variables -----------------------------------------------------------*/
+/* USER CODE BEGIN PV */
 
 uint8_t Buffer;
 
-/* USER CODE END PTD */
+/* USER CODE END PV */
 ```
 
 ```c title="stm32f4xx_it.c"
