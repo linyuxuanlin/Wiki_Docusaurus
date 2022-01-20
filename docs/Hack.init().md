@@ -1,6 +1,6 @@
 ---
 id: Hack.init()黑客马拉松
-title: Hack.init( ) 黑客马拉松
+title: Hack.init\(\) 黑客马拉松
 ---
 
 —— Wight · 基于云平台的去线缆化照明系统。
@@ -187,7 +187,7 @@ void loop()
 
 **模型：**
 
-![屏幕快照 2017-07-17 下午 5.00.16 (2).png](http://upload-images.jianshu.io/upload_2218072-c2cb025a94089a51.png?imageMogr2/auto-orient/strip|imageView2/2/w/1240)
+![](http://upload-images.jianshu.io/upload_2218072-c2cb025a94089a51.png?imageMogr2/auto-orient/strip|imageView2/2/w/1240)
 
 比赛时间所限，只能粗略画出模型，打印出来组装。
 
@@ -204,8 +204,6 @@ Q：项目后期还有跟进吗？
 
 - 团队成员：林沛杰，黄岳峰，张梓宜
 - [IntoRobot 云平台](https://www.intorobot.com/)
-
-
 
 > 文章作者：**Power Lin**  
 > 原文地址：<https://wiki-power.com>  
