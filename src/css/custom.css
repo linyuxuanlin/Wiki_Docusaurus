@@ -20,8 +20,8 @@
 
 
 /* 去掉侧边栏右侧的分割线 */
-.main-wrapper>div>div>div {
-	border-right: none !important;
+.main-wrapper>div>div {
+	//border-right: none !important;
 	outline: none;
 }
 
@@ -29,3 +29,4 @@
 ::-webkit-scrollbar {
 	display: none;
 }
+
