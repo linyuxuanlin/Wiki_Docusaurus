@@ -19,10 +19,11 @@
 }
 
 
-/* 去掉侧边栏右侧的分割线 
+/* 去掉侧边栏右侧的分割线 */
 .main-wrapper>div>div {
-	border-right: none !important;
-}*/
+	//border-right: none !important;
+	outline: none;
+}
 
 /* 隐藏 scrollbar */
 ::-webkit-scrollbar {
