@@ -18,15 +18,12 @@
 	display: none !important;
 }
 
-
 /* 去掉侧边栏右侧的分割线 */
 .main-wrapper>div>div {
-	//border-right: none !important;
-	outline: none;
+	border-right: none !important;
 }
 
 /* 隐藏 scrollbar */
 ::-webkit-scrollbar {
 	display: none;
 }
-
