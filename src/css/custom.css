@@ -32,16 +32,3 @@
 .docSidebarContainer_node_modules-\@docusaurus-theme-classic-lib-next-theme-DocPage- {
 	border-right: none !important;
 }
-
-/* Left TOC - Collapse button */
-:root[data-theme='dark'] #__docusaurus>div.main-wrapper button {
-	background: #242526;
-	border: none;
-	border-right: var(--ifm-button-border-width) solid #606770;
-}
-
-:root[data-theme='dark'] #__docusaurus>div.main-wrapper button:hover {
-	background: #606770;
-	border: none;
-	border-right: var(--ifm-button-border-width) solid #606770;
-}
