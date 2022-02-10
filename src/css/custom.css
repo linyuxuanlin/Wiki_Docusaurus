@@ -32,11 +32,3 @@
 .docSidebarContainer_node_modules-\@docusaurus-theme-classic-lib-next-theme-DocPage- {
 	border-right: none !important;
 }
-
-@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
-
-.menu__link--sublist:after {
-	content: "expand_more";
-	font-family: "Material Icons";
-	font-size: 1.25rem;
-}
