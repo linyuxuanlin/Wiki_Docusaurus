@@ -12,7 +12,7 @@
     "clear": "docusaurus clear"
   },
   "dependencies": {
-    "@docsearch/react": "^3.0.0-alpha.40",
+    "@docsearch/react": "^3.0.0-alpha.50",
     "@docusaurus/core": "2.0.0-beta.14",
     "@docusaurus/mdx-loader": "^2.0.0-beta.14",
     "@docusaurus/plugin-content-docs": "^2.0.0-beta.14",
