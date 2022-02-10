@@ -19,14 +19,14 @@
 }
 
 
-/* 去掉侧边栏右侧的分割线 */
+/* 去掉侧边栏右侧的分割线 
 .main-wrapper>div>div {
 	border-right: none !important;
-}
+}*/
 
-/* 隐藏 scrollbar 
+/* 隐藏 scrollbar */
 ::-webkit-scrollbar {display:none;}
-*/
+
 .docSidebarContainer_node_modules-\@docusaurus-theme-classic-lib-next-theme-DocPage- {
 	border-right: none !important;
   }
