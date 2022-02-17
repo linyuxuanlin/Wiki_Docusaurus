@@ -121,7 +121,7 @@ HAL_UART_Receive_IT(&huart1,&Buffer,1);
 
 ......
 
-/* USER CODE BEGIN 0 */
+/* USER CODE BEGIN 1 */
 
 int fputc(int ch,FILE *f)
 {
@@ -129,7 +129,7 @@ int fputc(int ch,FILE *f)
 	return ch;
 }
 
-/* USER CODE END 0 */
+/* USER CODE END 1 */
 ```
 
 ### 下载验证
