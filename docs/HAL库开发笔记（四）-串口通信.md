@@ -112,27 +112,7 @@ HAL_UART_Receive_IT(&huart1, (uint8_t *)aRxBuffer, 1); // 接收中断开启函�
 /* USER CODE END 2 */
 ```
 
-最后，我们需要对 printf 进行重定向。意思就是把 printf 函数用在 STM32 中做串口是输出功能。只需要在 `usart.c` 中重写 fputc 函数并使其作用于串口即可：
-
-```c title="usart.c"
-/* USER CODE BEGIN 0 */
-
-#include "stdio.h"
-
-/* USER CODE END 0 */
-
-......
-
-/* USER CODE BEGIN 1 */
-
-int fputc(int ch,FILE *f)
-{
-	HAL_UART_Transmit(&huart1,(uint8_t*)&ch,1,100);
-	return ch;
-}
-
-/* USER CODE END 1 */
-```
+如果需要对 printf 进行重定向（把 printf 函数用在 STM32 中做串口输出功能），请参考 [**STM32CubeIDE 串口重定向（printf）及输出浮点型**](https://wiki-power.com/STM32CubeIDE%E4%B8%B2%E5%8F%A3%E9%87%8D%E5%AE%9A%E5%90%91%EF%BC%88printf%EF%BC%89%E5%8F%8A%E8%BE%93%E5%87%BA%E6%B5%AE%E7%82%B9%E5%9E%8B)
 
 ### 下载验证
 
@@ -150,5 +130,3 @@ int fputc(int ch,FILE *f)
 > 文章作者：**Power Lin**  
 > 原文地址：<https://wiki-power.com>  
 > 版权声明：文章采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh) 协议，转载请注明出处。
-
-[**STM32CubeIDE 串口重定向（printf）及输出浮点型**](https://wiki-power.com/STM32CubeIDE%E4%B8%B2%E5%8F%A3%E9%87%8D%E5%AE%9A%E5%90%91%EF%BC%88printf%EF%BC%89%E5%8F%8A%E8%BE%93%E5%87%BA%E6%B5%AE%E7%82%B9%E5%9E%8B)
