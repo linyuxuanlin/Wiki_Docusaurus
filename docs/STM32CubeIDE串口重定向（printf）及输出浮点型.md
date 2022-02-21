@@ -1,7 +1,9 @@
 ---
-id: 重定向printf至串口
-title: 重定向 printf 至串口
+id: STM32CubeIDE串口重定向（printf）及输出浮点型
+title: STM32CubeIDE 串口重定向（printf）及输出浮点型
 ---
+
+## 重定向 printf 至串口
 
 ```c title="usart.c"
 /* USER CODE BEGIN 0 */
@@ -27,9 +29,16 @@ __attribute__((weak)) int _write(int file, char *ptr, int len)
 /* USER CODE END 1 */
 ```
 
+## STM32CubeIDE 串口输出浮点型
+
+1. 在 STM32CubeIDE 侧栏选中工程，右键选择 `Properties` - `C/C++ Build` - `Settings` - `MCU GCC Linker` - `Miscellaneous`。
+2. 在 `Other flags` 栏添加一个项目，填 `-u_printf_float`。
+3. 重新编译即可。
+
 ## 参考与致谢
 
 - [STM32CubeIDE 实现 printf 重定向输出到串口](https://blog.51cto.com/u_15353042/3751177)
+- [STM32CubeIDE 之 printf 重定向及串口（uart）输出浮点型数据的修改](https://blog.csdn.net/qq_42980638/article/details/98359026)
 
 > 文章作者：**Power Lin**  
 > 原文地址：<https://wiki-power.com>  
