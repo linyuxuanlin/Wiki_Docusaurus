@@ -65,17 +65,16 @@ USART 是 UART 的升级版，区别在于多了 CLK 线，在 CLK 没有信号�
 首先需要在 `stm32f4xx_it.c` 末尾添加如下代码：
 
 ```c title="stm32f4xx_it.c"
-/* USER CODE BEGIN 1 */
 
+/* USER CODE BEGIN 1 */
 void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
 {
     if(huart->Instance==USART1)
     {
-        HAL_UART_Transmit(&huart1, &Buffer, 1, 0xff);
-        HAL_UART_Receive_IT(&huart1,&Buffer,1);
+        HAL_UART_Receive_IT(huart, &aRxBuffer, 1); // 接收并写入 aRxBuffer
+        HAL_UART_Transmit(huart, &aRxBuffer, 10, 0xFFFF); // 把接收到的 aRxBuffer 发回去
     }
 }
-
 /* USER CODE END 1 */
 ```
 
@@ -85,7 +84,8 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
 /* Private variables -----------------------------------------------------------*/
 /* USER CODE BEGIN PV */
 
-uint8_t Buffer;
+uint8_t aTxBuffer[] = "USART TEST\r\n"; //用于发送的字符串
+uint8_t aRxBuffer[20]; //用于接收的字符串
 
 /* USER CODE END PV */
 ```
@@ -94,7 +94,8 @@ uint8_t Buffer;
 /* Private variables -----------------------------------------------------------*/
 /* USER CODE BEGIN PV */
 
-extern uint8_t Buffer;
+extern uint8_t aTxBuffer;
+extern uint8_t aRxBuffer;
 
 /* USER CODE END PV */
 
@@ -105,7 +106,8 @@ extern uint8_t Buffer;
 ```c title="main.c"
 /* USER CODE BEGIN 2 */
 
-HAL_UART_Receive_IT(&huart1,&Buffer,1);
+HAL_UART_Transmit_IT(&huart1, (uint8_t *)aTxBuffer, sizeof(aTxBuffer) - 1); // 上发一次自定义的 aTxBuffer
+HAL_UART_Receive_IT(&huart1, (uint8_t *)aRxBuffer, 1); // 接收中断开启函数
 
 /* USER CODE END 2 */
 ```
@@ -134,8 +136,9 @@ int fputc(int ch,FILE *f)
 
 ### 下载验证
 
-程序烧录成功后，我们打开串口助手，配置对应的端口和波特率。  
-本实验的效果是，发送什么内容，就返回同样的内容，如图所示：
+程序烧录成功后，我们打开串口助手，配置对应的端口和波特率。
+
+连上串口后，会先打印一行 `aTxBuffer` 的内容，然后将会把接收到的 `aRxBuffer` 回传打印出来。如图：
 
 ![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20210403232628.png)
 
@@ -147,3 +150,5 @@ int fputc(int ch,FILE *f)
 > 文章作者：**Power Lin**  
 > 原文地址：<https://wiki-power.com>  
 > 版权声明：文章采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh) 协议，转载请注明出处。
+
+[**STM32CubeIDE 串口重定向（printf）及输出浮点型**](https://wiki-power.com/STM32CubeIDE%E4%B8%B2%E5%8F%A3%E9%87%8D%E5%AE%9A%E5%90%91%EF%BC%88printf%EF%BC%89%E5%8F%8A%E8%BE%93%E5%87%BA%E6%B5%AE%E7%82%B9%E5%9E%8B)
