@@ -86,6 +86,7 @@ module.exports = {
         'HAL库开发笔记（五）-DMA',
         'HAL库开发笔记（六）-TIM基本定时器',
         'HAL库开发笔记（七）-TIM通用定时器',
+        '重定向printf至串口',
         'PlatformIO—一站式嵌入式开发工具',
         'PlatformIO搭配CubeMX食用',
         'C与STM32常用宏定义',
