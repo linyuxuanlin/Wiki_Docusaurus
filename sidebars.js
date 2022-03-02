@@ -236,6 +236,7 @@ module.exports = {
         'Windows常用命令',
         'Windows11个人初始化配置',
         'VSCode的便携模式',
+        '太阳高度角计算',
         '开启Chrome（Edge）多线程下载',
         '移除Chrome（Edge）由组织管理',
         '使用Rclone同步网盘数据',
