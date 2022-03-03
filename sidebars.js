@@ -114,7 +114,8 @@ module.exports = {
         'BeagleBone系列-无线连接',
         'BeagleBone系列-使用BBIO库开发',
         'BeagleBone系列-BBAI入坑',
-        'JetsonNano系列-入坑'
+        'JetsonNano系列-入坑',
+        '如何读写单个bit'
       ],
     },
 
