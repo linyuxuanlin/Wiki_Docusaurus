@@ -87,6 +87,7 @@ module.exports = {
         'HAL库开发笔记（六）-TIM基本定时器',
         'HAL库开发笔记（七）-TIM通用定时器',
         'STM32CubeIDE串口重定向（printf）及输出浮点型',
+        '如何读写单个bit',
         'PlatformIO—一站式嵌入式开发工具',
         'PlatformIO搭配CubeMX食用',
         'C与STM32常用宏定义',
@@ -115,7 +116,6 @@ module.exports = {
         'BeagleBone系列-使用BBIO库开发',
         'BeagleBone系列-BBAI入坑',
         'JetsonNano系列-入坑',
-        '如何读写单个bit'
       ],
     },
 
