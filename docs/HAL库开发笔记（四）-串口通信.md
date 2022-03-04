@@ -126,6 +126,8 @@ HAL_UART_Receive_IT(&huart1, (uint8_t *)aRxBuffer, 1); // 接收中断开启函�
 
 - [STM32CubeMX 实战教程（六）—— 串口通信](https://blog.csdn.net/weixin_43892323/article/details/105339949)
 - [进阶篇 III [UART & USART]](https://alchemicronin.github.io/posts/b4c69a89/#1-0-%E4%BB%80%E4%B9%88%E6%98%AFUART%E5%92%8CUSART%EF%BC%9F%E6%9C%89%E4%BB%80%E4%B9%88%E5%8C%BA%E5%88%AB%E5%98%9B%EF%BC%9F)
+- [STM32 非阻塞 HAL_UART_Receive_IT 解析与实际应用](https://zhuanlan.zhihu.com/p/147414331)
+- [HAL库教程6：串口数据接收](https://blog.csdn.net/geek_monkey/article/details/89165040)
 
 > 文章作者：**Power Lin**  
 > 原文地址：<https://wiki-power.com>  
