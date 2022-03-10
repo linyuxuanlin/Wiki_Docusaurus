@@ -106,7 +106,7 @@ module.exports = {
   },
 
   stylesheets: [{
-    href: 'static/katex/v0.12.0/katex.min.css',
+    href: 'https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/doc/katex.min.css',
     type: 'text/css',
     integrity: 'sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X',
     crossorigin: 'anonymous',
