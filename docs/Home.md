@@ -22,12 +22,4 @@ Hi there~
 [![GitHub last commit](https://img.shields.io/github/last-commit/linyuxuanlin/Wiki_Docusaurus?color=FCD734&label=Last%20commit&style=flat-square)](https://github.com/linyuxuanlin/Wiki_Docusaurus/commits/main)
 [![contact](https://img.shields.io/badge/Contact%20me-here-34ABE0?&style=flat-square)](ContactMe)
 
-<h6>
-  Power Lin | <a href="https://beian.miit.gov.cn"> 粤 ICP 备 20014898 号 </a> |
-  Built with Docusaurus
-</h6>
-
-@import 'components/altium-ecad-viewer';
-
-<div class="altium-ecad-viewer" data-project-src="5372e99b-47fe-4ecc-945f-572f319ed9aa" data-enabled-views="sch,pcb,3d,bom" data-active-view="sch"></div>
-
+<h6>Power Lin |  <a href="https://beian.miit.gov.cn"> 粤 ICP 备 20014898 号 </a> | Built with Docusaurus</h6>
