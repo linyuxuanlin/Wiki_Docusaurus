@@ -35,5 +35,5 @@ Hi there~
 
 ```
 
-<div class="altium-ecad-viewer" data-project-src="https://github.com/SeeedDocument/Xadow_M0/raw/master/res/Xadow_M0_Schematic.zip " data-enabled-views="pcb,3d" data-active-view="pcb" ></div>
+<div class="altium-ecad-viewer" data-project-src="https://github.com/SeeedDocument/Xadow_M0/raw/master/res/Xadow_M0_Schematic.zip " data-enabled-views="pcb,3d" data-active-view="pcb" style="border-radius: 0px 0px 4px 4px; "></div>
     <script src="https://viewer.altium.com/client/static/js/embed.js"></script>
