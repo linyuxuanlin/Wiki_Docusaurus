@@ -37,6 +37,8 @@ Hi there~
 </iframe>
 ```
 
+<iframe class="altium-ecad-viewer" data-project-src="https://files.seeedstudio.com/wiki/TFT_Touch_Shield_V2/resources/TFT_Eagle_File.zip" style="border-radius: 0px 0px 4px 4px; height: 500px; border-style: solid; border-width: 1px; border-color: rgb(241, 241, 241); overflow: hidden; max-width: 1280px; max-height: 700px; box-sizing: border-box;"></iframe>
+
 <iframe width="675" height="380" src="https://www.youtube.com/embed/_AQXQDjw7Y8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
