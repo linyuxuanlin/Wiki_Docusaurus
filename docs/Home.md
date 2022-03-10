@@ -35,5 +35,9 @@ Hi there~
 
 ```
 
-<div class="altium-ecad-viewer" data-project-src="https://github.com/SeeedDocument/Xadow_M0/raw/master/res/Xadow_M0_Schematic.zip " data-enabled-views="pcb,3d" data-active-view="pcb" width='100%'></div>
+<div class="altium-ecad-viewer" data-project-src="https://github.com/SeeedDocument/Xadow_M0/raw/master/res/Xadow_M0_Schematic.zip " data-enabled-views="pcb,3d" data-active-view="pcb" ></div>
     <script src="https://viewer.altium.com/client/static/js/embed.js"></script>
+
+
+<iframe src='https://viewer.digipcba.com/viewer?token=hDuvSOP7fEy0vM7YJOfv1ocN
+' width='100%'></iframe>
