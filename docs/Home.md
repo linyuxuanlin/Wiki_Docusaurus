@@ -39,7 +39,7 @@ Hi there~
 
 ```
 
-<div class="altium-ecad-viewer" ></div>
+<div class="altium-ecad-viewer" data-project-src="https://github.com/SeeedDocument/Xadow_M0/raw/master/res/Xadow_M0_Schematic.zip" ></div>
 
 ---
 
