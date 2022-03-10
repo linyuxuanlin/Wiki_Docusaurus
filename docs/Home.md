@@ -24,7 +24,7 @@ Hi there~
 
 <h6>Power Lin |  <a href="https://beian.miit.gov.cn"> 粤 ICP 备 20014898 号 </a> | Built with Docusaurus</h6>
 
-<div class="altium-ecad-viewer" data-project-src="b64c0655-31fb-497a-b97a-cdad7c50aa78"  data-enabled-views="pcb,3d" data-active-view="pcb" style={{height:'1200px',height:'500px',backgroundColor:'#3385ff'}}></div>
+<div class="altium-ecad-viewer" data-project-src="b64c0655-31fb-497a-b97a-cdad7c50aa78"  data-enabled-views="pcb,3d" data-active-view="pcb" style={{height:'500px',border-style:'solid',backgroundColor:'#3385ff'}}></div>
         <script src="https://viewer.altium.com/client/static/js/embed.js"></script>
 
 
