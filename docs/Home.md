@@ -24,22 +24,16 @@ Hi there~
 
 <h6>Power Lin |  <a href="https://beian.miit.gov.cn"> 粤 ICP 备 20014898 号 </a> | Built with Docusaurus</h6>
 
+```
+可用
+<iframe src='https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/pcbdesign.html' width='100%'></iframe>
+```
 
 ```
-<iframe width="675" height="380" src="https://www.youtube.com/embed/_AQXQDjw7Y8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-```
 
----
-
-<iframe src='https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/pcbdesign.html' width='100%'></iframe> 
-
---- 
-```
 <div class="altium-ecad-viewer" data-project-src="https://github.com/SeeedDocument/Xadow_M0/raw/master/res/Xadow_M0_Schematic.zip"  data-enabled-views="pcb,3d" data-active-view="pcb" style="border-radius: 0px 0px 4px 4px; height: 500px; border-style: solid; border-width: 1px; border-color: rgb(241, 241, 241); overflow: hidden; max-width: 1280px; max-height: 700px; box-sizing: border-box;"></div>
 
 ```
 
-<div class="altium-ecad-viewer" data-project-src="https://github.com/SeeedDocument/Xadow_M0/raw/master/res/Xadow_M0_Schematic.zip " data-enabled-views="pcb,3d" data-active-view="pcb" style="border-radius: 0px 0px 4px 4px;></div>
+<div class="altium-ecad-viewer" data-project-src="https://github.com/SeeedDocument/Xadow_M0/raw/master/res/Xadow_M0_Schematic.zip " data-enabled-views="pcb,3d" data-active-view="pcb" ></div>
     <script src="https://viewer.altium.com/client/static/js/embed.js"></script>
-
-
