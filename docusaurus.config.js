@@ -66,7 +66,7 @@ const config = {
         appId: 'IRO903CONI',
 
         // Public API key: it is safe to commit it
-        apiKey: '884c4ae3f56335ab485f3c366a9911ce',
+        apiKey: '5c07d8bf9c9928c4453857f6cad0420e',
 
         indexName: 'wiki-power',
 
