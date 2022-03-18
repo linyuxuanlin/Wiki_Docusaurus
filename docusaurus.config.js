@@ -1,175 +1,154 @@
-// @ts-check
-// Note: type annotations allow type checking and IDEs autocompletion
-
-const lightCodeTheme = require('prism-react-renderer/themes/github');
-const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const math = require('remark-math');
 const katex = require('rehype-katex');
 
-/** @type {import('@docusaurus/types').Config} */
-const config = {
-  title: 'Power\'s Wiki',
-  tagline: '^_^',
-  url: 'https://wiki-power.com',
-  baseUrl: '/',
-  onBrokenLinks: 'warn',
-  onBrokenMarkdownLinks: 'warn',
-  favicon: 'https://cos.ap-guangzhou.myqcloud.com/wiki-media-1253965369/doc/logo-zip.png',
-  organizationName: 'linyuxuanlin', // Usually your GitHub org/user name.
-  projectName: 'Wiki_Docusaurus', // Usually your repo name.
+module.exports = {
+  title: "Power's Wiki",
+  //titleDelimiter: "🦖", // Defaults to `|`
+  tagline: "^_^",
+  url: "https://wiki-power.com",
+  baseUrl: "/",
+  onBrokenLinks: "warn",
+  onBrokenMarkdownLinks: "warn",
+  favicon: "https://cos.ap-guangzhou.myqcloud.com/wiki-media-1253965369/doc/logo-zip.png",
+  //organizationName: "linyuxuanlin", // Usually your GitHub org/user name.
+  //projectName: "Wiki_Docusaurus", // Usually your repo name.
+  themeConfig: {
+    /*
+        footer: {
+          
+          copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        },
+        */
+
+    //sidebarCollapsible: true, //默认折叠
+    image: 'https://cos.ap-guangzhou.myqcloud.com/wiki-media-1253965369/doc/logo-zip.png',
+    algolia: {
+      apiKey: "5c07d8bf9c9928c4453857f6cad0420e",
+      indexName: "wiki-power",
+
+      // Optional: see doc section bellow
+      contextualSearch: true,
+
+      // Optional: Algolia search parameters
+      searchParameters: {},
+
+      //... other Algolia params
+    },
+
+
+
+
+    colorMode: {
+      // "light" | "dark"
+      //defaultMode: "dark",
+      disableSwitch: false,
+      respectPrefersColorScheme: true,
+
+      // Dark/light switch icon options
+      switchConfig: {
+        // Icon for the switch while in dark mode
+        darkIcon: '🌙',
+        lightIcon: '🌞',
+
+        // CSS to apply to dark icon,
+        // React inline style object
+        // see https://reactjs.org/docs/dom-elements.html#style
+        darkIconStyle: {
+          marginLeft: "2px",
+        },
+
+        // Unicode icons such as '\u2600' will work
+        // Unicode with 5 chars require brackets: '\u{1F602}'
+        //lightIcon: '\u{1F602}',
+
+        lightIconStyle: {
+          marginLeft: "1px",
+        },
+      },
+    },
+
+    hideableSidebar: false,
+    navbar: {
+      title: "Power's Wiki",
+      hideOnScroll: false,
+      //style: 'primary',
+      /*
+      logo: {
+        alt: "My Site Logo",
+        src:
+          "https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20201122195819.png",
+      },
+      */
+      items: [{
+          to: "blog",
+          label: "博客",
+          position: "right",
+        },
+        /*
+        {
+          href: "https://wiki.wildwolf.pw/",
+          label: "队内知识库",
+          position: "right",
+        },
+        */
+        {
+          href: "http://digest.wiki-power.com/",
+          label: "书摘",
+          position: "right",
+        },
+        {
+          href: "https://nav.wiki-power.com/",
+          label: "友链 & 导航站",
+          position: "right",
+        },
+      ],
+    },
+  },
+
+  stylesheets: [{
+    href: 'https://cdn.jsdelivr.net/gh/linyuxuanlin/Wiki_Docusaurus/static/katex/v0.12.0/katex.min.css',
+    type: 'text/css',
+    integrity: 'sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X',
+    crossorigin: 'anonymous',
+  }, ],
 
   presets: [
     [
-      'classic',
-      /** @type {import('@docusaurus/preset-classic').Options} */
-      ({
+      "@docusaurus/preset-classic",
+      {
         docs: {
-          sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
-          editUrl: 'https://github.com/linyuxuanlin/Wiki_Docusaurus/edit/main/',
           sidebarCollapsible: true, //默认折叠
           routeBasePath: "/",
-          showLastUpdateTime: true,
-          showLastUpdateAuthor: true,
-          breadcrumbs: false,
+          sidebarPath: require.resolve("./sidebars.js"),
+          showLastUpdateAuthor: false,
+          showLastUpdateTime: false,
+          editUrl: "https://github.com/linyuxuanlin/Wiki_Docusaurus/edit/main/",
           remarkPlugins: [math],
           rehypePlugins: [katex],
         },
         blog: {
-          showReadingTime: false,
-          editUrl: 'https://github.com/linyuxuanlin/Wiki_Docusaurus/edit/main/',
+          //blogTitle: 'Power\'s blog!',
+          //blogDescription: 'A docusaurus powered blog!',
           blogSidebarCount: 8,
           postsPerPage: 8,
+          showReadingTime: false,
           path: 'blog',
           blogSidebarTitle: 'Recent',
-        },
-        theme: {
-          customCss: require.resolve('./src/css/custom.css'),
-        },
-      }),
-    ],
-  ],
-
-  stylesheets: [{
-    href: 'https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css',
-    type: 'text/css',
-    integrity: 'sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM',
-    crossorigin: 'anonymous',
-  }, ],
-
-  themeConfig:
-    /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
-    ({
-
-      algolia: {
-        // The application ID provided by Algolia
-        appId: 'IRO903CONI',
-
-        // Public API key: it is safe to commit it
-        apiKey: '884c4ae3f56335ab485f3c366a9911ce',
-
-        indexName: 'wiki-power',
-
-        // Optional: see doc section below
-        contextualSearch: true,
-
-        // Optional: Specify domains where the navigation should occur through window.location instead on history.push. Useful when our Algolia config crawls multiple documentation sites and we want to navigate with window.location.href to them.
-        externalUrlRegex: 'external\\.com|domain\\.com',
-
-        // Optional: Algolia search parameters
-        searchParameters: {},
-
-        // Optional: path for search page that enabled by default (`false` to disable it)
-        searchPagePath: 'search',
-
-        //... other Algolia params
-      },
-
-      //sidebarCollapsible: true, //默认折叠
-      image: 'https://cos.ap-guangzhou.myqcloud.com/wiki-media-1253965369/doc/logo-zip.png',
-
-
-
-      navbar: {
-        title: 'Power\'s Wiki',
-        hideOnScroll: false,
-        /*
-        logo: {
-          alt: 'My Site Logo',
-          src: 'img/logo.svg',
-        },*/
-
-        items: [{
-            to: "blog",
-            label: "博客",
-            position: "right",
-          },
+          editUrl: 'https://github.com/linyuxuanlin/Wiki_Docusaurus/edit/main/',
           /*
-          {
-            href: "https://wiki.wildwolf.pw/",
-            label: "队内知识库",
-            position: "right",
+          feedOptions: {
+            type: 'all', // required. 'rss' | 'feed' | 'all'
+            title: 'Power\'s Blog', // default to siteConfig.title
+            description: '个人博客', // default to  `${siteConfig.title} Blog`
+            copyright: 'Copyright © ${new Date().getFullYear()} Power Lin',
+            language: undefined, // possible values: http://www.w3.org/TR/REC-html40/struct/dirlang.html#langcodes
           },
           */
-          {
-            href: "http://digest.wiki-power.com/",
-            label: "书摘",
-            position: "right",
-          },
-          {
-            href: "https://nav.wiki-power.com/",
-            label: "友链 & 导航站",
-            position: "right",
-          },
-        ],
+        },
+        theme: {
+          customCss: require.resolve("./src/css/custom.css"),
+        },
       },
-
-      /*
-      footer: {
-        style: 'dark',
-        links: [{
-            title: 'Docs',
-            items: [{
-              label: 'Tutorial',
-              to: '/docs/intro',
-            }, ],
-          },
-          {
-            title: 'Community',
-            items: [{
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
-              },
-            ],
-          },
-          {
-            title: 'More',
-            items: [{
-                label: 'Blog',
-                to: '/blog',
-              },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
-              },
-            ],
-          },
-        ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
-      },*/
-      prism: {
-        theme: lightCodeTheme,
-        darkTheme: darkCodeTheme,
-      },
-    }),
+    ],
+  ],
 };
-
-module.exports = config;
