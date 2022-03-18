@@ -128,47 +128,43 @@ const config = {
         ],
       },
 
-      /*
+/*
       footer: {
         style: 'dark',
-        links: [{
-            title: 'Docs',
-            items: [{
-              label: 'Tutorial',
-              to: '/docs/intro',
-            }, ],
+
+
+        links: [
+          {
+            label: '电源模组设计方案收集',
+            href: 'https://github.com/linyuxuanlin/Collection_of_Power_Module_Design',
           },
           {
-            title: 'Community',
-            items: [{
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
-              },
-            ],
+            label: '功能电路模块化',
+            href: 'https://github.com/linyuxuanlin/Modularity_of_Functional_Circuit',
           },
           {
-            title: 'More',
-            items: [{
-                label: 'Blog',
-                to: '/blog',
-              },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
-              },
-            ],
+            label: 'Altium Designer 个人库',
+            href: 'https://github.com/linyuxuanlin/Power_Lib_Altium',
+          },
+          {
+            label: '资源共享仓库',
+            href: 'https://github.com/linyuxuanlin/File-host',
+          },
+          {
+            label: '网页版串口助手',
+            href: 'https://serial.wiki-power.com/',
+          },
+          {
+            label: 'Markdown 转公众号编辑器',
+            href: 'https://md2wechat.wiki-power.com/',
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
-      },*/
+
+
+       //copyright: `by Power Lin | 粤 ICP 备 20014898 号 | Built with Docusaurus.`,
+      },
+*/
+     
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
