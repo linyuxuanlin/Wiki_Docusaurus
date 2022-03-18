@@ -33,8 +33,8 @@ const config = {
           editUrl: 'https://github.com/linyuxuanlin/Wiki_Docusaurus/edit/main/',
           sidebarCollapsible: true, //默认折叠
           routeBasePath: "/",
-          showLastUpdateTime: true,
-          showLastUpdateAuthor: true,
+          showLastUpdateTime: false,
+          showLastUpdateAuthor: false,
           breadcrumbs: false,
           remarkPlugins: [math],
           rehypePlugins: [katex],
