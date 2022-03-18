@@ -70,7 +70,7 @@ const config = {
         appId: 'IRO903CONI',
 
         // Public API key: it is safe to commit it
-        apiKey: '884c4ae3f56335ab485f3c366a9911ce',
+        apiKey: 'defe7fd8690822eed8e3c94801bab286',
 
         indexName: 'wiki-power',
 
@@ -78,7 +78,7 @@ const config = {
         contextualSearch: true,
 
         // Optional: Specify domains where the navigation should occur through window.location instead on history.push. Useful when our Algolia config crawls multiple documentation sites and we want to navigate with window.location.href to them.
-        externalUrlRegex: 'external\\.com|domain\\.com',
+        //externalUrlRegex: 'external\\.com|domain\\.com',
 
         // Optional: Algolia search parameters
         searchParameters: {},
