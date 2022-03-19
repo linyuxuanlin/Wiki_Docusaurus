@@ -152,7 +152,7 @@ const config = {
 
 
       footer: {
-        style: 'dark',
+        style: 'light',
 
 
         links: [
@@ -160,17 +160,17 @@ const config = {
           
           
           {
-            label: '电源模组设计方案收集',
+            label: '电源设计方案收集',
             href: 'https://github.com/linyuxuanlin/Collection_of_Power_Module_Design',
           },
           {
             label: '功能电路模块化',
             href: 'https://github.com/linyuxuanlin/Modularity_of_Functional_Circuit',
-          },
+          },/*
           {
             label: 'Altium Designer 个人库',
             href: 'https://github.com/linyuxuanlin/Power_Lib_Altium',
-          },
+          },*/
           {
             label: '资源共享仓库',
             href: 'https://github.com/linyuxuanlin/File-host',
