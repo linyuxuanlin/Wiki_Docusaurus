@@ -113,7 +113,7 @@ const config = {
 
       //sidebarCollapsible: true, //默认折叠
       image: 'https://cos.ap-guangzhou.myqcloud.com/wiki-media-1253965369/doc/logo-zip.png',
-
+      hideableSidebar: true,
 
 
       navbar: {
@@ -150,12 +150,25 @@ const config = {
         ],
       },
 
-/*
+
       footer: {
         style: 'dark',
 
 
         links: [
+          {
+            label: 'by Power Lin',
+            href: 'https://github.com/linyuxuanlin/Collection_of_Power_Module_Design',
+          },
+          {
+            label: '粤 ICP 备 20014898 号 ',
+            href: 'https://github.com/linyuxuanlin/Collection_of_Power_Module_Design',
+          },
+          {
+            label: 'Built with Docusaurus',
+            href: 'https://github.com/linyuxuanlin/Collection_of_Power_Module_Design',
+          },
+          /*
           {
             label: '电源模组设计方案收集',
             href: 'https://github.com/linyuxuanlin/Collection_of_Power_Module_Design',
@@ -179,13 +192,13 @@ const config = {
           {
             label: 'Markdown 转公众号编辑器',
             href: 'https://md2wechat.wiki-power.com/',
-          },
+          },*/
         ],
 
 
        //copyright: `by Power Lin | 粤 ICP 备 20014898 号 | Built with Docusaurus.`,
       },
-*/
+
      
       prism: {
         theme: lightCodeTheme,
