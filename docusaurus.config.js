@@ -156,17 +156,10 @@ const config = {
 
 
         links: [
-          {
-            label: 'by Power Lin',
-            href: 'https://github.com/linyuxuanlin/Collection_of_Power_Module_Design',
-          },
+          
           {
             label: '粤 ICP 备 20014898 号 ',
-            href: 'https://github.com/linyuxuanlin/Collection_of_Power_Module_Design',
-          },
-          {
-            label: 'Built with Docusaurus',
-            href: 'https://github.com/linyuxuanlin/Collection_of_Power_Module_Design',
+            href: 'https://beian.miit.gov.cn',
           },
           /*
           {
