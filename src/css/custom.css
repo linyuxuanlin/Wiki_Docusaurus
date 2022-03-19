@@ -48,7 +48,7 @@
 	border-left: 4px solid var(--ifm-link-color);
 }
 
-/* 搜索样式优化（去掉 Ctrl + K）*/
+/* Algolia搜索样式优化（去掉 Ctrl + K）*/
 .DocSearch-Button-Key {
 	display: none !important;
 }
@@ -61,4 +61,9 @@
 /* 隐藏 scrollbar */
 ::-webkit-scrollbar {
 	display: none;
+}
+
+/* Remove shadow on the left */
+:root {
+  --ifm-global-shadow-md: 0px;
 }
