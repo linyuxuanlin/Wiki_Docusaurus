@@ -157,11 +157,8 @@ const config = {
 
         links: [
           
-          {
-            label: '粤 ICP 备 20014898 号 ',
-            href: 'https://beian.miit.gov.cn',
-          },
-          /*
+          
+          
           {
             label: '电源模组设计方案收集',
             href: 'https://github.com/linyuxuanlin/Collection_of_Power_Module_Design',
@@ -185,7 +182,7 @@ const config = {
           {
             label: 'Markdown 转公众号编辑器',
             href: 'https://md2wechat.wiki-power.com/',
-          },*/
+          },
         ],
 
 
