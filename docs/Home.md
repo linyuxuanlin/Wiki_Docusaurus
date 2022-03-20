@@ -3,7 +3,6 @@ id: Home
 title: Power's Wiki
 sidebar_label: Home
 slug: /
-hide_table_of_contents: true
 ---
 
 <!--  一个不会讲故事的攻城狮，算不上一个很酷的产品汪~-->
