@@ -19,7 +19,7 @@ const config = {
   projectName: 'Wiki_Docusaurus', // Usually your repo name.
 
 
-/*
+
   themes: [
     // ... Your other themes.
     [
@@ -38,7 +38,7 @@ const config = {
       },
     ],
   ],
-*/
+
 
   presets: [
     [
@@ -86,7 +86,7 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-
+/*
       algolia: {
         // The application ID provided by Algolia
         appId: 'IRO903CONI',
@@ -106,10 +106,10 @@ const config = {
         searchParameters: {},
 
         // Optional: path for search page that enabled by default (`false` to disable it)
-        //searchPagePath: 'search',
+        searchPagePath: 'search',
 
         //... other Algolia params
-      },
+      },*/
 
       //sidebarCollapsible: true, //默认折叠
       image: 'https://cos.ap-guangzhou.myqcloud.com/wiki-media-1253965369/doc/logo-zip.png',
