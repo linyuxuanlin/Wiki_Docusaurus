@@ -130,6 +130,11 @@ const config = {
 
         items: [
           {
+            to: "小技巧",
+            label: "小技巧",
+            position: "right",
+          },
+          {
             to: "生活方式",
             label: "生活方式",
             position: "right",

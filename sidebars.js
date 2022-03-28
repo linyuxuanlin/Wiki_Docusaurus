@@ -230,9 +230,15 @@ const sidebars = {
     },
 
 
-    {
+    小技巧: [{
       type: 'category',
       label: '小技巧',
+      link: {
+        slug: '/小技巧',
+        type: 'generated-index',
+        description: '一些生活相关的笔记。',
+        keywords: ['life', 'lifestyle'],
+      },
       items: [
         'Windows常用命令',
         'Windows11个人初始化配置',
@@ -271,7 +277,7 @@ const sidebars = {
         '使用VSCode进行远程开发',
         'Node.js和npm的安装与卸载（MacOS）',
       ],
-    },
+    }, ],
 
   ],
 
@@ -281,10 +287,8 @@ const sidebars = {
     link: {
       slug: '/生活方式',
       type: 'generated-index',
-      //title: '生活方式',
-      description: 'Learn about the most important Docusaurus concepts!',
-      keywords: ['life'],
-      image: 'https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20200605234144.jpg',
+      description: '一些生活相关的笔记。',
+      keywords: ['life', 'lifestyle'],
     },
     items: [
       '如何调制一杯鸡尾酒',
@@ -302,6 +306,8 @@ const sidebars = {
       '一些观点',
     ],
   }, ],
+
+
 
 
 
