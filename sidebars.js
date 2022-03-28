@@ -283,7 +283,7 @@ const sidebars = {
       title: '生活方式',
       description: 'Learn about the most important Docusaurus concepts!',
       keywords: ['guides'],
-      image: '',
+      //image: '',
     },
     items: [
       '如何调制一杯鸡尾酒',
