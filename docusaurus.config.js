@@ -61,6 +61,18 @@ const config = {
           remarkPlugins: [math],
           rehypePlugins: [katex],
         },
+        api: {
+          sidebarPath: require.resolve('./sidebars.js'),
+          // Please change this to your repo.
+          editUrl: 'https://github.com/linyuxuanlin/Wiki_Docusaurus/edit/main/',
+          sidebarCollapsible: true, //默认折叠
+          routeBasePath: "/",
+          showLastUpdateTime: false,
+          showLastUpdateAuthor: false,
+          breadcrumbs: false,
+          remarkPlugins: [math],
+          rehypePlugins: [katex],
+        },
         blog: {
           showReadingTime: false,
           editUrl: 'https://github.com/linyuxuanlin/Wiki_Docusaurus/edit/main/',
