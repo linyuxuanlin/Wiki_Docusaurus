@@ -18,32 +18,6 @@ const sidebars = {
     'Home',
     {
       type: 'category',
-      label: '硬件设计 - 应用方案',
-      link: {
-        slug: '/硬件设计',
-        type: 'generated-index',
-        description: '硬件设计的应用方案',
-        keywords: ['x', 'x'],
-      },
-      items: [
-        'OSD335x最小系统的设计',
-        '如何设计一款单片机的最小系统', // CSDN
-        'STM32F4硬件开发',
-        '直流有刷电机驱动的设计',
-        'TinyDVR-小巧身材，满载动力',
-        'RaptorDVR-集成稳压的30A双电机驱动',
-        'SwiftCtrl-蓝牙手柄',
-        'AirForce-充满灵性的电机驱动模块',
-        'ZenDriver-高性能的电机驱动',
-        '自制CMSIS-DAP',
-        'PCB名片的设计',
-        '防反接电路的设计',
-        '电源的设计-常用芯片方案收集',
-        '电源方案（Buck）-LMR14050',
-      ],
-    },
-    {
-      type: 'category',
       label: '硬件设计 - 基础理论',
       link: {
         type: 'generated-index',
@@ -101,13 +75,85 @@ const sidebars = {
         'AD使用Git的注意事项',
       ],
     },
+    {
+      type: 'category',
+      label: '硬件设计 - 应用方案',
+      link: {
+        slug: '/硬件设计',
+        type: 'generated-index',
+        description: '硬件设计的应用方案',
+        keywords: ['x', 'x'],
+      },
+      items: [
+        'OSD335x最小系统的设计',
+        '如何设计一款单片机的最小系统', // CSDN
+        'STM32F4硬件开发',
+        '直流有刷电机驱动的设计',
+        'TinyDVR-小巧身材，满载动力',
+        'RaptorDVR-集成稳压的30A双电机驱动',
+        'SwiftCtrl-蓝牙手柄',
+        'AirForce-充满灵性的电机驱动模块',
+        'ZenDriver-高性能的电机驱动',
+        '自制CMSIS-DAP',
+        'PCB名片的设计',
+        '防反接电路的设计',
+        '电源的设计-常用芯片方案收集',
+        '电源方案（Buck）-LMR14050',
+      ],
+    },
   ],
 
 
 
   嵌入式与软件: [{
       type: 'category',
-      label: '嵌入式开发 - 单片机',
+      label: '软件开发',
+      link: {
+        type: 'generated-index',
+        description: 'x',
+        keywords: ['x', 'x'],
+      },
+      items: [
+        '双系统极简安装指南',
+        '网页版串口助手的开发',
+        'Ubuntu配置笔记',
+        'ROS入门笔记',
+        '机器视觉入门',
+        '使用R语言进行数据分析',
+        'CSS学习笔记',
+        'HTML学习笔记',
+        'JavaScript学习笔记',
+        'Docker简易指南',
+        'DockerCompose-更优雅的打开方式',
+        '自适应网页设计',
+        '前端开发-环境搭建',
+        'BookJourney-二手书商城小程序',
+        'Git学习笔记',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Linux',
+      link: {
+        type: 'generated-index',
+        description: 'x',
+        keywords: ['x', 'x'],
+      },
+      items: [
+        'Linux学习笔记-基础知识',
+        'Linux学习笔记-用户操作',
+        '嵌入式Linux-基础知识',
+        '嵌入式Linux-GPIO子系统',
+        'BeagleBone系列-基本参数与环境配置',
+        'BeagleBone系列-无线连接',
+        'BeagleBone系列-使用BBIO库开发',
+        'BeagleBone系列-BBAI入坑',
+        'JetsonNano系列-入坑',
+      ],
+    },
+    {
+      type: 'category',
+      label: '单片机',
       link: {
         type: 'generated-index',
         slug: '/嵌入式与软件',
@@ -139,99 +185,10 @@ const sidebars = {
         '一个舵机的自我修养',
       ],
     },
-    {
-      type: 'category',
-      label: '嵌入式开发 - Linux',
-      link: {
-        type: 'generated-index',
-        description: 'x',
-        keywords: ['x', 'x'],
-      },
-      items: [
-        'Linux学习笔记-基础知识',
-        'Linux学习笔记-用户操作',
-        '嵌入式Linux-基础知识',
-        '嵌入式Linux-GPIO子系统',
-        'BeagleBone系列-基本参数与环境配置',
-        'BeagleBone系列-无线连接',
-        'BeagleBone系列-使用BBIO库开发',
-        'BeagleBone系列-BBAI入坑',
-        'JetsonNano系列-入坑',
-      ],
-    },
-    {
-      type: 'category',
-      label: '软件开发',
-      link: {
-        slug: '/软件开发',
-        type: 'generated-index',
-        description: 'x',
-        keywords: ['x', 'x'],
-      },
-      items: [
-        '双系统极简安装指南',
-        '网页版串口助手的开发',
-        'Ubuntu配置笔记',
-        'ROS入门笔记',
-        '机器视觉入门',
-        '使用R语言进行数据分析',
-        'CSS学习笔记',
-        'HTML学习笔记',
-        'JavaScript学习笔记',
-        'Docker简易指南',
-        'DockerCompose-更优雅的打开方式',
-        '自适应网页设计',
-        '前端开发-环境搭建',
-        'BookJourney-二手书商城小程序',
-        'Git学习笔记',
-      ],
-    },
   ],
 
 
   效率指南: [{
-      type: 'category',
-      label: '高效工作',
-      link: {
-        slug: '/效率指南',
-        type: 'generated-index',
-        description: 'x',
-        keywords: ['x', 'x'],
-      },
-      items: [
-        //'我是如何做数据容灾的',
-        //'如何用Markdown写学术论文',
-        '如何用LaTeX写论文',
-        '基于RSSHub搭建RSS生成器（群晖Docker）', // CSDN
-        '基于Bitwarden搭建密码管理器（群晖Docker）', // CSDN
-        '基于acme.sh自动申请域名证书（群晖Docker）', // CSDN
-        '基于Calibre搭建在线书库（群晖Docker）', // CSDN
-        '如何实现外网RDP远控（frp）', // CSDN
-        '使用rdp访问群晖NAS', // CSDN
-        '如何用Markdown写一份简历', // CSDN
-        '为什么你需要一个知识库', // CSDN
-        '个人文案排版规范', // CSDN todo
-        '技术文档写作规范', // CSDN todo
-        '个人知识库的搭建-基于Docusaurus', // CSDN
-        'Windows初始化与软件推荐', // CSDN todo
-        'Docusaurus极简部署指南', // CSDN todo
-        'Hugo极简搭建指南', // CSDN todo
-        '如何在iPad上运行VSCode', // CSDN
-        '使用Markdown高效写作', // CSDN
-        '用树莓派架设云打印服务器', // CSDN todo
-        '用Graphviz绘制关系图', // CSDN todo
-        'RSS-高效率的阅读方式',
-        '如何在Markdown中使用LaTeX',
-        '把回忆放心交给GooglePhotos',
-        'VSCode生产力指南-环境配置', // CSDN todo
-        'VSCode生产力指南-JupyterNotebook', // CSDN todo
-        '在浏览器上运行VSCode（旧）',
-        '如何配一台电脑',
-        //'面试问题记录'
-        //'用reveal.js制作幻灯片',
-      ],
-    },
-    {
       type: 'category',
       label: '产品相关',
       link: {
@@ -299,6 +256,48 @@ const sidebars = {
         'Node.js和npm的安装与卸载（MacOS）',
       ],
     },
+    {
+      type: 'category',
+      label: '高效工作',
+      link: {
+        slug: '/效率指南',
+        type: 'generated-index',
+        description: 'x',
+        keywords: ['x', 'x'],
+      },
+      items: [
+        //'我是如何做数据容灾的',
+        //'如何用Markdown写学术论文',
+        '如何用LaTeX写论文',
+        '基于RSSHub搭建RSS生成器（群晖Docker）', // CSDN
+        '基于Bitwarden搭建密码管理器（群晖Docker）', // CSDN
+        '基于acme.sh自动申请域名证书（群晖Docker）', // CSDN
+        '基于Calibre搭建在线书库（群晖Docker）', // CSDN
+        '如何实现外网RDP远控（frp）', // CSDN
+        '使用rdp访问群晖NAS', // CSDN
+        '如何用Markdown写一份简历', // CSDN
+        '为什么你需要一个知识库', // CSDN
+        '个人文案排版规范', // CSDN todo
+        '技术文档写作规范', // CSDN todo
+        '个人知识库的搭建-基于Docusaurus', // CSDN
+        'Windows初始化与软件推荐', // CSDN todo
+        'Docusaurus极简部署指南', // CSDN todo
+        'Hugo极简搭建指南', // CSDN todo
+        '如何在iPad上运行VSCode', // CSDN
+        '使用Markdown高效写作', // CSDN
+        '用树莓派架设云打印服务器', // CSDN todo
+        '用Graphviz绘制关系图', // CSDN todo
+        'RSS-高效率的阅读方式',
+        '如何在Markdown中使用LaTeX',
+        '把回忆放心交给GooglePhotos',
+        'VSCode生产力指南-环境配置', // CSDN todo
+        'VSCode生产力指南-JupyterNotebook', // CSDN todo
+        '在浏览器上运行VSCode（旧）',
+        '如何配一台电脑',
+        //'面试问题记录'
+        //'用reveal.js制作幻灯片',
+      ],
+    },
   ],
 
 
@@ -338,6 +337,28 @@ const sidebars = {
     },
     {
       type: 'category',
+      label: '博客',
+      link: {
+        type: 'generated-index',
+        description: '一些生活相关的笔记。',
+        keywords: ['life', 'lifestyle'],
+      },
+      items: [
+        '雨',
+        '当下与永恒',
+        '8月深圳小记',
+        'RoboMaster赛后随笔',
+        '内卷与未来的职业趋势',
+        '关于新能源行业的一些观点',
+        '为什么要抵制智能推荐算法',
+        '不要自己感动自己',
+        '买了一台NAS',
+        '如何不长痘',
+        'Hello-blog',
+      ],
+    },
+    {
+      type: 'category',
       label: '生活记录',
       link: {
         slug: '/生活',
@@ -359,28 +380,6 @@ const sidebars = {
         '为什么要「站在巨人的肩膀上」',
         '如何不被AI取代',
         '一些观点',
-      ],
-    },
-    {
-      type: 'category',
-      label: '博客',
-      link: {
-        type: 'generated-index',
-        description: '一些生活相关的笔记。',
-        keywords: ['life', 'lifestyle'],
-      },
-      items: [
-        '雨',
-        '当下与永恒',
-        '8月深圳小记',
-        'RoboMaster赛后随笔',
-        '内卷与未来的职业趋势',
-        '关于新能源行业的一些观点',
-        '为什么要抵制智能推荐算法',
-        '不要自己感动自己',
-        '买了一台NAS',
-        '如何不长痘',
-        'Hello-blog',
       ],
     },
   ],
