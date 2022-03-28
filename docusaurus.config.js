@@ -126,7 +126,15 @@ const config = {
           src: 'img/logo.svg',
         },*/
 
-        items: [{
+        
+
+        items: [
+          {
+            to: "api",
+            label: "api",
+            position: "right",
+          },
+          {
             to: "blog",
             label: "博客",
             position: "right",
