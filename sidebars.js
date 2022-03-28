@@ -284,7 +284,7 @@ const sidebars = {
       description: 'Learn about the most important Docusaurus concepts!',
       keywords: ['guides'],
       image: '',
-    ,
+    },
     items: [
       '如何调制一杯鸡尾酒',
       //'乐谱-Imagine',
