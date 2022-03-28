@@ -130,8 +130,8 @@ const config = {
 
         items: [
           {
-            to: "api",
-            label: "api",
+            to: "生活方式",
+            label: "生活方式",
             position: "right",
           },
           {

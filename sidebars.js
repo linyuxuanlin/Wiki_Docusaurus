@@ -292,9 +292,7 @@ const sidebars = {
     },
 
   ],
-  api: [
-    '卡片式写作',
-
+  生活方式: [
     {
       type: 'category',
       label: '硬件设计 - 应用方案',
