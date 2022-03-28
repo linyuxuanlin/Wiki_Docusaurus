@@ -61,15 +61,16 @@ const config = {
           remarkPlugins: [math],
           rehypePlugins: [katex],
         },
-        
-        blog: {
-          showReadingTime: false,
-          editUrl: 'https://github.com/linyuxuanlin/Wiki_Docusaurus/edit/main/',
-          blogSidebarCount: 8,
-          postsPerPage: 8,
-          path: 'blog',
-          blogSidebarTitle: 'Recent',
-        },
+        /*
+                blog: {
+                  showReadingTime: false,
+                  editUrl: 'https://github.com/linyuxuanlin/Wiki_Docusaurus/edit/main/',
+                  blogSidebarCount: 8,
+                  postsPerPage: 8,
+                  path: 'blog',
+                  blogSidebarTitle: 'Recent',
+                },
+                */
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
@@ -87,30 +88,30 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-/*
-      algolia: {
-        // The application ID provided by Algolia
-        appId: 'IRO903CONI',
+      /*
+            algolia: {
+              // The application ID provided by Algolia
+              appId: 'IRO903CONI',
 
-        // Public API key: it is safe to commit it
-        apiKey: 'defe7fd8690822eed8e3c94801bab286',
+              // Public API key: it is safe to commit it
+              apiKey: 'defe7fd8690822eed8e3c94801bab286',
 
-        indexName: 'wiki-power',
+              indexName: 'wiki-power',
 
-        // Optional: see doc section below
-        contextualSearch: true,
+              // Optional: see doc section below
+              contextualSearch: true,
 
-        // Optional: Specify domains where the navigation should occur through window.location instead on history.push. Useful when our Algolia config crawls multiple documentation sites and we want to navigate with window.location.href to them.
-        //externalUrlRegex: 'external\\.com|domain\\.com',
+              // Optional: Specify domains where the navigation should occur through window.location instead on history.push. Useful when our Algolia config crawls multiple documentation sites and we want to navigate with window.location.href to them.
+              //externalUrlRegex: 'external\\.com|domain\\.com',
 
-        // Optional: Algolia search parameters
-        searchParameters: {},
+              // Optional: Algolia search parameters
+              searchParameters: {},
 
-        // Optional: path for search page that enabled by default (`false` to disable it)
-        searchPagePath: 'search',
+              // Optional: path for search page that enabled by default (`false` to disable it)
+              searchPagePath: 'search',
 
-        //... other Algolia params
-      },*/
+              //... other Algolia params
+            },*/
 
       //sidebarCollapsible: true, //默认折叠
       image: 'https://cos.ap-guangzhou.myqcloud.com/wiki-media-1253965369/doc/logo-zip.png',
@@ -126,41 +127,38 @@ const config = {
           src: 'img/logo.svg',
         },*/
 
-        
 
-        items: [
-          {
-            to: "小技巧",
-            label: "小技巧",
+
+        items: [{
+            to: "硬件设计",
+            label: "硬件设计",
             position: "right",
           },
           {
-            to: "生活方式",
-            label: "生活方式",
+            to: "嵌入式与软件",
+            label: "嵌入式与软件",
             position: "right",
           },
+          {
+            to: "效率指南",
+            label: "效率指南",
+            position: "right",
+          },
+
+
+          {
+            to: "生活",
+            label: "生活",
+            position: "right",
+          },
+          /*
           {
             to: "blog",
             label: "博客",
             position: "right",
           },
-          /*
-          {
-            href: "https://wiki.wildwolf.pw/",
-            label: "队内知识库",
-            position: "right",
-          },
           */
-          {
-            href: "http://digest.wiki-power.com/",
-            label: "书摘",
-            position: "right",
-          },
-          {
-            href: "https://nav.wiki-power.com/",
-            label: "友链 & 导航站",
-            position: "right",
-          },
+
         ],
       },
 
@@ -170,9 +168,22 @@ const config = {
 
 
         links: [
-          
-          
-          
+
+
+          {
+            href: "http://digest.wiki-power.com/",
+            label: "书摘",
+          },
+          {
+            href: "https://nav.wiki-power.com/",
+            label: "友链 & 导航站",
+          },
+          {
+            href: "https://wiki.wildwolf.pw/",
+            label: "机器人队知识库",
+          },
+
+          /*
           {
             label: '电源设计方案收集',
             href: 'https://github.com/linyuxuanlin/Collection_of_Power_Module_Design',
@@ -180,11 +191,7 @@ const config = {
           {
             label: '功能电路模块化',
             href: 'https://github.com/linyuxuanlin/Modularity_of_Functional_Circuit',
-          },/*
-          {
-            label: 'Altium Designer 个人库',
-            href: 'https://github.com/linyuxuanlin/Power_Lib_Altium',
-          },*/
+          },
           {
             label: '资源共享仓库',
             href: 'https://github.com/linyuxuanlin/File-host',
@@ -197,13 +204,14 @@ const config = {
             label: 'Markdown 转公众号编辑器',
             href: 'https://md2wechat.wiki-power.com/',
           },
+          */
         ],
 
 
-       //copyright: `by Power Lin | 粤 ICP 备 20014898 号 | Built with Docusaurus.`,
+        //copyright: `by Power Lin | 粤 ICP 备 20014898 号 | Built with Docusaurus.`,
       },
 
-     
+
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
