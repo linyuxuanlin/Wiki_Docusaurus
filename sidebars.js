@@ -274,21 +274,34 @@ const sidebars = {
     },
 
   ],
-  生活方式: [
-    '如何调制一杯鸡尾酒',
-    //'乐谱-Imagine',
-    '如何合理配置个人资产',
-    '读《黑客与画家》',
-    '英语六级-备考',
-    '音乐相关',
-    '谈谈未来的职业选择',
-    'THEHack2019黑客马拉松',
-    'Hack.init()黑客马拉松',
-    '焊接大赛培训及总结',
-    '为什么要「站在巨人的肩膀上」',
-    '如何不被AI取代',
-    '一些观点',
-  ],
+
+  生活方式: [{
+    type: 'category',
+    label: '生活方式',
+    link: {
+      type: 'generated-index',
+      title: '生活方式',
+      description: 'Learn about the most important Docusaurus concepts!',
+      slug: '/如何调制一杯鸡尾酒',
+      keywords: ['guides'],
+      //image: '',
+    },
+    items: [
+      '如何调制一杯鸡尾酒',
+      //'乐谱-Imagine',
+      '如何合理配置个人资产',
+      '读《黑客与画家》',
+      '英语六级-备考',
+      '音乐相关',
+      '谈谈未来的职业选择',
+      'THEHack2019黑客马拉松',
+      'Hack.init()黑客马拉松',
+      '焊接大赛培训及总结',
+      '为什么要「站在巨人的肩膀上」',
+      '如何不被AI取代',
+      '一些观点',
+    ],
+  }, ],
 
 
 };
