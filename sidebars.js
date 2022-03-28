@@ -278,14 +278,13 @@ const sidebars = {
   生活方式: [{
     type: 'category',
     label: '生活方式',
-    link: {
-      type: 'generated-index',
-      title: '生活方式',
-      description: 'Learn about the most important Docusaurus concepts!',
-      slug: '/如何调制一杯鸡尾酒',
-      keywords: ['guides'],
+    //link: {
+      //type: 'generated-index',
+      //title: '生活方式',
+      //description: 'Learn about the most important Docusaurus concepts!',
+     // keywords: ['guides'],
       //image: '',
-    },
+    //,
     items: [
       '如何调制一杯鸡尾酒',
       //'乐谱-Imagine',
@@ -302,6 +301,7 @@ const sidebars = {
       '一些观点',
     ],
   }, ],
+
 
 
 };
