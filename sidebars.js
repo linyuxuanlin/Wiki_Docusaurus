@@ -280,9 +280,10 @@ const sidebars = {
     label: '生活方式',
     link: {
       type: 'generated-index',
-      title: '生活方式',
+      //title: '生活方式',
       description: 'Learn about the most important Docusaurus concepts!',
-      keywords: ['guides'],
+      slug: '/生活方式',
+      //keywords: ['guides'],
       //image: '',
     },
     items: [
