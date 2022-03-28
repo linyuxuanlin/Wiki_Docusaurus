@@ -21,7 +21,7 @@ const sidebars = {
       label: '硬件设计 - 基础理论',
       link: {
         type: 'generated-index',
-        description: 'x',
+        description: '硬件设计基础理论，包括基本元器件、通信协议、信号与电源完整性、射频、软件的基本操作等',
         keywords: ['x', 'x'],
       },
       items: [
@@ -110,7 +110,7 @@ const sidebars = {
       label: '软件开发',
       link: {
         type: 'generated-index',
-        description: 'x',
+        description: 'describtion to be updated',
         keywords: ['x', 'x'],
       },
       items: [
@@ -136,7 +136,7 @@ const sidebars = {
       label: 'Linux',
       link: {
         type: 'generated-index',
-        description: 'x',
+        description: 'describtion to be updated',
         keywords: ['x', 'x'],
       },
       items: [
@@ -157,7 +157,7 @@ const sidebars = {
       link: {
         type: 'generated-index',
         slug: '/嵌入式与软件',
-        description: 'x',
+        description: 'describtion to be updated',
         keywords: ['x', 'x'],
       },
       items: [
@@ -194,7 +194,7 @@ const sidebars = {
       link: {
         slug: '/产品相关',
         type: 'generated-index',
-        description: 'x',
+        description: 'describtion to be updated',
         keywords: ['x', 'x'],
       },
       items: [
@@ -214,7 +214,7 @@ const sidebars = {
       link: {
         slug: '/小技巧',
         type: 'generated-index',
-        description: 'x',
+        description: 'describtion to be updated',
         keywords: ['x', 'x'],
       },
       items: [
@@ -262,7 +262,7 @@ const sidebars = {
       link: {
         slug: '/效率指南',
         type: 'generated-index',
-        description: 'x',
+        description: 'describtion to be updated',
         keywords: ['x', 'x'],
       },
       items: [
@@ -302,23 +302,12 @@ const sidebars = {
 
 
 
-  /*
-      产品相关: [],
-      */
-
-
-
-
-
-
-
-
   生活: [{
       type: 'category',
       label: '机器人队行政',
       link: {
         type: 'generated-index',
-        description: 'x',
+        description: 'describtion to be updated',
         keywords: ['x', 'x'],
       },
       items: [
@@ -436,7 +425,7 @@ xxx: [{
     link: {
       slug: '/xxx',
       type: 'generated-index',
-      description: 'x',
+      description: 'describtion to be updated',
       keywords: ['x', 'x'],
     },
     items: [
