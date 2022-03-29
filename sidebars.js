@@ -102,6 +102,20 @@ const sidebars = {
 
     {
       type: 'category',
+      label: '射频设计',
+      link: {
+        type: 'generated-index',
+        description: ' ',
+        keywords: ['x', 'x'],
+      },
+      items: [
+        '射频-基础知识',
+        '射频-无线电波与天线',
+      ],
+    },
+
+    {
+      type: 'category',
       label: '软件与仪器',
       link: {
         type: 'generated-index',
@@ -233,6 +247,7 @@ const sidebars = {
         'ATTiny85调试记录',
         'T-Clock桌上小钟',
         '麦轮小车',
+        '转义字符',
         '一个舵机的自我修养',
       ],
     },
