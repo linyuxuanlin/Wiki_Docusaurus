@@ -258,7 +258,6 @@ const sidebars = {
       type: 'category',
       label: '产品相关',
       link: {
-        slug: '/产品相关',
         type: 'generated-index',
         description: 'describtion to be updated',
         keywords: ['x', 'x'],
@@ -278,7 +277,6 @@ const sidebars = {
       type: 'category',
       label: '小技巧',
       link: {
-        slug: '/小技巧',
         type: 'generated-index',
         description: 'describtion to be updated',
         keywords: ['x', 'x'],
@@ -481,21 +479,3 @@ module.exports = sidebars;
 //'unlist/博客转至GitBook',
 //'unlist/浅谈Bitcron博客平台',
 //'unlist/基于docsify搭建个人Wiki',
-
-
-
-/*
-xxx: [{
-    type: 'category',
-    label: 'xxx',
-    link: {
-      slug: '/xxx',
-      type: 'generated-index',
-      description: 'describtion to be updated',
-      keywords: ['x', 'x'],
-    },
-    items: [
-
-],
-  }, ],
-*/
