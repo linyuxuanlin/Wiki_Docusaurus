@@ -35,7 +35,6 @@ const sidebars = {
         '基本元器件-运算放大器',
         '数字电路基础知识',
         '设计规范-PCB',
-        '射频中的单位',
         '推挽与开漏输出',
         'ESD基础知识',
         'EMC设计指南',
@@ -110,6 +109,7 @@ const sidebars = {
       },
       items: [
         '射频-基础知识',
+        '射频-基本单位',
         '射频-无线电波与天线',
       ],
     },
@@ -287,7 +287,6 @@ const sidebars = {
         'Windows常用命令',
         'Windows11个人初始化配置',
         'VSCode的便携模式',
-        '太阳高度角计算',
         '开启Chrome（Edge）多线程下载',
         '移除Chrome（Edge）由组织管理',
         '使用Rclone同步网盘数据',
@@ -312,7 +311,6 @@ const sidebars = {
         'Git配置代理',
         '删除GitHub仓库中某个文件夹',
         '定制SublimeText3',
-        '如何保存易逝的文字',
         '用Vercel加速Pages服务',
         'Doxygen注释规范',
         'AltiumDesigner安装库文件',
@@ -345,6 +343,7 @@ const sidebars = {
         '为什么你需要一个知识库', // CSDN
         '个人文案排版规范', // CSDN todo
         '技术文档写作规范', // CSDN todo
+        '如何保存易逝的文字',
         '个人知识库的搭建-基于Docusaurus', // CSDN
         'Windows初始化与软件推荐', // CSDN todo
         'Docusaurus极简部署指南', // CSDN todo
@@ -424,6 +423,7 @@ const sidebars = {
       items: [
         '如何调制一杯鸡尾酒',
         //'乐谱-Imagine',
+        '太阳高度角计算',
         '如何合理配置个人资产',
         '读《黑客与画家》',
         '英语六级-备考',
