@@ -21,8 +21,8 @@ const sidebars = {
       label: '基础知识',
       link: {
         type: 'generated-index',
-        description: '硬件设计基础理论，包括基本元器件、通信协议、信号与电源完整性、射频、软件的基本操作等',
-        keywords: ['x', 'x'],
+        //description: '',
+        keywords: ['硬件设计', '硬件设计基础知识', '电阻', '电容', '电感', '磁珠', '二极管', '三极管', 'MOS', '运算放大器', '数字电路', '设计规范', '推挽开漏', '共模差模', '储存介质', '锂电池', '编码器'],
       },
       items: [
         '基本元器件-电阻',
@@ -36,8 +36,6 @@ const sidebars = {
         '数字电路基础知识',
         '设计规范-PCB',
         '推挽与开漏输出',
-        'ESD基础知识',
-        'EMC设计指南',
         '共模信号与差模信号',
         '存储介质类别',
         '保险丝的选型',
@@ -51,8 +49,8 @@ const sidebars = {
       label: '通信协议',
       link: {
         type: 'generated-index',
-        description: ' ',
-        keywords: ['x', 'x'],
+        //description: ' ',
+        keywords: ['硬件设计', '协议', '通信协议', '逻辑电平', 'SPI', 'I2C', 'CAN', 'USB', ],
       },
       items: [
         '通信协议-数字逻辑电平',
@@ -68,7 +66,7 @@ const sidebars = {
       label: '电源设计',
       link: {
         type: 'generated-index',
-        description: ' ',
+        //description: ' ',
         keywords: ['x', 'x'],
       },
       items: [
@@ -85,7 +83,7 @@ const sidebars = {
       label: '信号与电源完整性',
       link: {
         type: 'generated-index',
-        description: ' ',
+        //description: ' ',
         keywords: ['x', 'x'],
       },
       items: [
@@ -104,7 +102,7 @@ const sidebars = {
       label: '射频设计',
       link: {
         type: 'generated-index',
-        description: ' ',
+        //description: ' ',
         keywords: ['x', 'x'],
       },
       items: [
@@ -116,10 +114,24 @@ const sidebars = {
 
     {
       type: 'category',
+      label: '电磁兼容',
+      link: {
+        type: 'generated-index',
+        //description: ' ',
+        keywords: ['x', 'x'],
+      },
+      items: [
+        'ESD基础知识',
+        'EMC设计指南',
+      ],
+    },
+
+    {
+      type: 'category',
       label: '软件与仪器',
       link: {
         type: 'generated-index',
-        description: ' ',
+        //description: ' ',
         keywords: ['x', 'x'],
       },
       items: [
@@ -146,7 +158,7 @@ const sidebars = {
       link: {
         slug: '/硬件设计',
         type: 'generated-index',
-        description: '硬件设计的应用方案',
+        //description: '硬件设计的应用方案',
         keywords: ['x', 'x'],
       },
       items: [
@@ -175,7 +187,7 @@ const sidebars = {
       label: '软件开发',
       link: {
         type: 'generated-index',
-        description: 'describtion to be updated',
+        //description: 'describtion to be updated',
         keywords: ['x', 'x'],
       },
       items: [
@@ -201,7 +213,7 @@ const sidebars = {
       label: 'Linux',
       link: {
         type: 'generated-index',
-        description: 'describtion to be updated',
+        //description: 'describtion to be updated',
         keywords: ['x', 'x'],
       },
       items: [
@@ -222,7 +234,7 @@ const sidebars = {
       link: {
         type: 'generated-index',
         slug: '/嵌入式与软件',
-        description: 'describtion to be updated',
+        //description: 'describtion to be updated',
         keywords: ['x', 'x'],
       },
       items: [
@@ -259,7 +271,7 @@ const sidebars = {
       label: '产品相关',
       link: {
         type: 'generated-index',
-        description: 'describtion to be updated',
+        //description: 'describtion to be updated',
         keywords: ['x', 'x'],
       },
       items: [
@@ -278,7 +290,7 @@ const sidebars = {
       label: '小技巧',
       link: {
         type: 'generated-index',
-        description: 'describtion to be updated',
+        //description: 'describtion to be updated',
         keywords: ['x', 'x'],
       },
       items: [
@@ -324,7 +336,7 @@ const sidebars = {
       link: {
         slug: '/效率指南',
         type: 'generated-index',
-        description: 'describtion to be updated',
+        //description: 'describtion to be updated',
         keywords: ['x', 'x'],
       },
       items: [
@@ -370,7 +382,7 @@ const sidebars = {
       label: '机器人队行政',
       link: {
         type: 'generated-index',
-        description: 'describtion to be updated',
+        //description: 'describtion to be updated',
         keywords: ['x', 'x'],
       },
       items: [
@@ -392,7 +404,7 @@ const sidebars = {
       label: '博客',
       link: {
         type: 'generated-index',
-        description: '一些生活相关的笔记。',
+        //description: '一些生活相关的笔记。',
         keywords: ['life', 'lifestyle'],
       },
       items: [
@@ -415,7 +427,7 @@ const sidebars = {
       link: {
         slug: '/生活',
         type: 'generated-index',
-        description: '一些生活相关的笔记。',
+        //description: '一些生活相关的笔记。',
         keywords: ['life', 'lifestyle'],
       },
       items: [
