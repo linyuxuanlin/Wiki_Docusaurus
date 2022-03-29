@@ -146,6 +146,7 @@ const sidebars = {
         'AD使用Git的注意事项',
         'Cadence操作笔记-OrCAD_Capture',
         '示波器的触发模式',
+        '网络分析仪基本操作',
         '逻辑分析仪的使用',
 
       ],
