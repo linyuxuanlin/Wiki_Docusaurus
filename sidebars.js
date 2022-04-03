@@ -125,6 +125,7 @@ const sidebars = {
       link: {
         type: 'generated-index',
         //description: ' ',
+        slug: '/硬件设计',
         keywords: ['x', 'x'],
       },
       items: [
@@ -176,7 +177,6 @@ const sidebars = {
         keywords: ['x', 'x'],
       },
       items: [
-        '函数思想在电路设计中的应用',
         'AD常用技巧',
         'AD基本操作-环境搭建',
         'AD基本操作-基础知识',
@@ -185,6 +185,7 @@ const sidebars = {
         //'AD基本操作-库文件绘制',
         'AD基本操作-多板系统设计',
         'AD使用Git的注意事项',
+        '函数思想在电路设计中的应用',
         'Cadence操作笔记-OrCAD_Capture',
         '示波器的触发模式',
         '网络分析仪基本操作',
