@@ -41,6 +41,45 @@ const sidebars = {
         '保险丝的选型',
         '锂电池选型指南',
         '编码器的几种输出方式',
+        '防反接电路的设计',
+      ],
+    },
+
+    {
+      type: 'category',
+      label: '嵌入式硬件',
+      link: {
+        type: 'generated-index',
+        //description: ' ',
+        //keywords: ['硬件设计', '协议', '通信协议', '逻辑电平', 'SPI', 'I2C', 'CAN', 'USB', ],
+      },
+      items: [
+
+        'OSD335x最小系统的设计',
+        '如何设计一款单片机的最小系统', // CSDN
+        'STM32F4硬件开发',
+        'SwiftCtrl-蓝牙手柄',
+        '自制CMSIS-DAP',
+        //'PCB名片的设计',
+
+      ],
+    },
+
+    {
+      type: 'category',
+      label: '电机驱动',
+      link: {
+        type: 'generated-index',
+        //description: ' ',
+        //keywords: ['硬件设计', '协议', '通信协议', '逻辑电平', 'SPI', 'I2C', 'CAN', 'USB', ],
+      },
+      items: [
+        '直流有刷电机驱动的设计',
+        'TinyDVR-小巧身材，满载动力',
+        'RaptorDVR-集成稳压的30A双电机驱动',
+        'AirForce-充满灵性的电机驱动模块',
+        'ZenDriver-高性能的电机驱动',
+
       ],
     },
 
@@ -75,6 +114,8 @@ const sidebars = {
         '电源的设计-开关稳压（非隔离型）',
         '电源的设计-集成开关电源',
         '电源的设计-自举电路',
+        '电源的设计-常用芯片方案收集',
+        '电源方案（Buck）-LMR14050',
       ],
     },
 
@@ -153,32 +194,6 @@ const sidebars = {
     },
 
 
-    {
-      type: 'category',
-      label: '硬件应用方案',
-      link: {
-        slug: '/硬件设计',
-        type: 'generated-index',
-        //description: '硬件设计的应用方案',
-        keywords: ['x', 'x'],
-      },
-      items: [
-        'OSD335x最小系统的设计',
-        '如何设计一款单片机的最小系统', // CSDN
-        'STM32F4硬件开发',
-        '直流有刷电机驱动的设计',
-        'TinyDVR-小巧身材，满载动力',
-        'RaptorDVR-集成稳压的30A双电机驱动',
-        'SwiftCtrl-蓝牙手柄',
-        'AirForce-充满灵性的电机驱动模块',
-        'ZenDriver-高性能的电机驱动',
-        '自制CMSIS-DAP',
-        'PCB名片的设计',
-        '防反接电路的设计',
-        '电源的设计-常用芯片方案收集',
-        '电源方案（Buck）-LMR14050',
-      ],
-    },
   ],
 
 
