@@ -79,7 +79,7 @@ const sidebars = {
         'RaptorDVR-集成稳压的30A双电机驱动',
         'AirForce-充满灵性的电机驱动模块',
         'ZenDriver-高性能的电机驱动',
-
+        '电机驱动方案-IR2104S',
       ],
     },
 
