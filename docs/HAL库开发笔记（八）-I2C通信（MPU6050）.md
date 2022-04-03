@@ -15,3 +15,7 @@ title: HAL 库开发笔记（八）- I2C 通信（MPU6050）
 > 版权声明：文章采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh) 协议，转载请注明出处。
 
 ## 基本原理
+
+![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20211026174634.png)
+
+I2C 通信的基本原理可参考文章 [**【通信协议 - I2C】**](https://wiki-power.com/%E9%80%9A%E4%BF%A1%E5%8D%8F%E8%AE%AE-I2C)
