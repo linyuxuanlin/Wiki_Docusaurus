@@ -15,7 +15,7 @@ I2C 通信的基本原理可参考文章 [**【通信协议 - I2C】**](https://
 
 ### MPU6050 模组
 
-![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20220403185008.png)
+![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20220404145145.png)
 
 模组的引脚定义：
 
