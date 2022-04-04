@@ -84,38 +84,6 @@ img {
   background: white;
 }
 
-img[alt=bilibili] {
-  border: none;
-}
-
-img[alt=sspai] {
-  border: none;
-}
-
-img[alt=Zhihu] {
-  border: none;
-}
-
-img[alt=GitHub] {
-  border: none;
-}
-
-img[alt='GitHub deployments'] {
-  border: none;
-}
-
-img[alt='GitHub last commit'] {
-  border: none;
-}
-
-img[alt=contact] {
-  border: none;
-}
-
-img[alt=WeChat] {
-  border: none;
-}
-
-img[alt=Email] {
+img[alt=badge] {
   border: none;
 }

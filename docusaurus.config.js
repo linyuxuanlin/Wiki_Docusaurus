@@ -18,7 +18,7 @@ const config = {
   organizationName: 'linyuxuanlin', // Usually your GitHub org/user name.
   projectName: 'Wiki_Docusaurus', // Usually your repo name.
 
-
+  scripts: ['https://viewer.altium.com/client/static/js/embed.js'],
 
   themes: [
     // ... Your other themes.
