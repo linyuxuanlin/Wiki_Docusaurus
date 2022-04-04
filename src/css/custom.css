@@ -78,3 +78,9 @@ aside.theme-doc-sidebar-container.docSidebarContainer_rKC_ {
 html {
   scroll-behavior: smooth;
 }
+
+img {
+  width: 100%;
+  border:3px solid black;
+  background: white;
+}
