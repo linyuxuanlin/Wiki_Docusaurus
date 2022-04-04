@@ -79,8 +79,43 @@ html {
   scroll-behavior: smooth;
 }
 
-img[alt=bilibili] {
-  
-  border:3px solid black;
+img {
+  border: 3px solid black;
   background: white;
+}
+
+img[alt=bilibili] {
+  border: none;
+}
+
+img[alt=sspai] {
+  border: none;
+}
+
+img[alt=Zhihu] {
+  border: none;
+}
+
+img[alt=GitHub] {
+  border: none;
+}
+
+img[alt='GitHub deployments'] {
+  border: none;
+}
+
+img[alt='GitHub last commit'] {
+  border: none;
+}
+
+img[alt=contact] {
+  border: none;
+}
+
+img[alt=WeChat] {
+  border: none;
+}
+
+img[alt=Email] {
+  border: none;
 }
