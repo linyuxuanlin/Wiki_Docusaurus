@@ -61,16 +61,21 @@ const config = {
           remarkPlugins: [math],
           rehypePlugins: [katex],
         },
-        /*
-                blog: {
-                  showReadingTime: false,
-                  editUrl: 'https://github.com/linyuxuanlin/Wiki_Docusaurus/edit/main/',
-                  blogSidebarCount: 8,
-                  postsPerPage: 8,
-                  path: 'blog',
-                  blogSidebarTitle: 'Recent',
-                },
-                */
+
+        blog: {
+          showReadingTime: false,
+          editUrl: 'https://github.com/linyuxuanlin/Wiki_Docusaurus/edit/main/',
+          //blogSidebarTitle: 'All posts',
+          blogSidebarCount: 'ALL',
+          postsPerPage: 8,
+          path: 'blog',
+          blogSidebarTitle: 'Recent',
+          feedOptions: {
+            type: 'all',
+            copyright: `Copyright © ${new Date().getFullYear()} Power Lin.`,
+          },
+        },
+
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
@@ -152,13 +157,13 @@ const config = {
             label: "生活",
             position: "right",
           },
-          /*
+          
           {
             to: "blog",
             label: "博客",
             position: "right",
           },
-          */
+          
 
         ],
       },
