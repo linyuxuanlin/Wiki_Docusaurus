@@ -32,9 +32,6 @@ Hi there~
   <a href="https://www.altium.com/viewer/">testing</a>
 </div>
 
-
-<div className="altium-ecad-viewer" data-project-token="akrWFsQWqEa6Qk7RJPmbC5xo" data-enabled-views="sch,pcb,3d,bom" data-active-view="sch" style={{borderRadius: '0px 0px 4px 4px', height: '500px', borderStyle: 'solid', borderWidth: '1px', borderColor: 'rgb(241, 241, 241)', overflow: 'hidden', maxWidth: '1280px', maxHeight: '700px', boxSizing: 'border-box'}} />
-
 <div
   className="altium-ecad-viewer"
   data-project-token="akrWFsQWqEa6Qk7RJPmbC5xo"
@@ -52,3 +49,19 @@ Hi there~
     boxSizing: "border-box"
   }}
 />
+
+<div
+  className="altium-ecad-viewer"
+  data-project-src="https://files.seeedstudio.com/wiki/Spartan-Edge-Accelerator-Board/res/Spartan Edge Accelerator Board v1.0.zip"
+  style={{
+    borderRadius: "0px 0px 4px 4px",
+    height: 500,
+    borderStyle: "solid",
+    borderWidth: 1,
+    borderColor: "rgb(241, 241, 241)",
+    overflow: "hidden",
+    maxWidth: 1280,
+    maxHeight: 700,
+    boxSizing: "border-box"
+  }}
+></div>
