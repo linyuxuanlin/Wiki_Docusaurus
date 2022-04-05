@@ -18,10 +18,10 @@ const config = {
   organizationName: 'linyuxuanlin', // Usually your GitHub org/user name.
   projectName: 'Wiki_Docusaurus', // Usually your repo name.
 
-  scripts: [
-    'https://cos.ap-guangzhou.myqcloud.com/wiki-media-1253965369/doc/embed.js',
-    'https://cos.ap-guangzhou.myqcloud.com/wiki-media-1253965369/doc/autoFitIframe.js'
-  ],
+  //scripts: [
+  //  'https://cos.ap-guangzhou.myqcloud.com/wiki-media-1253965369/doc/embed.js',
+  //  'https://cos.ap-guangzhou.myqcloud.com/wiki-media-1253965369/doc/autoFitIframe.js'
+  //],
 
   themes: [
     // ... Your other themes.
