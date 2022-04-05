@@ -285,7 +285,30 @@ const sidebars = {
   ],
 
 
-  效率指南: [{
+  效率指南: [
+    {
+      type: 'category',
+      label: '机器人队行政',
+      link: {
+        type: 'generated-index',
+        //description: 'describtion to be updated',
+        keywords: ['x', 'x'],
+      },
+      items: [
+        '四校交流-策划案',
+        '四校交流-策划案-正式',
+        '团队知识库的搭建-理论',
+        '队内影像资源管理方法',
+        '大扫除-经验模板',
+        '校门口车辆放行-流程',
+        '参观实验室-经验模板',
+        '动员大会-经验总结',
+        '换届大会-经验总结',
+        '破冰活动-经验总结',
+        '出展活动-经验总结',
+      ],
+    },
+    {
       type: 'category',
       label: '产品相关',
       link: {
@@ -304,6 +327,7 @@ const sidebars = {
         '关于复盘',
       ],
     },
+
     {
       type: 'category',
       label: '小技巧',
@@ -351,6 +375,32 @@ const sidebars = {
     },
     {
       type: 'category',
+      label: '生活黑客',
+      link: {
+        //slug: '/生活',
+        type: 'generated-index',
+        //description: '一些生活相关的笔记。',
+        keywords: ['life', 'lifestyle'],
+      },
+      items: [
+        '如何调制一杯鸡尾酒',
+        //'乐谱-Imagine',
+        '太阳高度角计算',
+        '如何合理配置个人资产',
+        '读《黑客与画家》',
+        '英语六级-备考',
+        '音乐相关',
+        '谈谈未来的职业选择',
+        'THEHack2019黑客马拉松',
+        'Hack.init()黑客马拉松',
+        '焊接大赛培训及总结',
+        '为什么要「站在巨人的肩膀上」',
+        '如何不被AI取代',
+        '一些观点',
+      ],
+    },
+    {
+      type: 'category',
       label: '高效工作',
       link: {
         slug: '/效率指南',
@@ -393,85 +443,6 @@ const sidebars = {
       ],
     },
   ],
-
-
-
-  生活: [{
-      type: 'category',
-      label: '机器人队行政',
-      link: {
-        type: 'generated-index',
-        //description: 'describtion to be updated',
-        keywords: ['x', 'x'],
-      },
-      items: [
-        '四校交流-策划案',
-        '四校交流-策划案-正式',
-        '团队知识库的搭建-理论',
-        '队内影像资源管理方法',
-        '大扫除-经验模板',
-        '校门口车辆放行-流程',
-        '参观实验室-经验模板',
-        '动员大会-经验总结',
-        '换届大会-经验总结',
-        '破冰活动-经验总结',
-        '出展活动-经验总结',
-      ],
-    },
-    {
-      type: 'category',
-      label: '博客',
-      link: {
-        type: 'generated-index',
-        //description: '一些生活相关的笔记。',
-        keywords: ['life', 'lifestyle'],
-      },
-      items: [
-        '雨',
-        '当下与永恒',
-        '8月深圳小记',
-        'RoboMaster赛后随笔',
-        '内卷与未来的职业趋势',
-        '关于新能源行业的一些观点',
-        '为什么要抵制智能推荐算法',
-        '不要自己感动自己',
-        '买了一台NAS',
-        '如何不长痘',
-        'Hello-blog',
-      ],
-    },
-    {
-      type: 'category',
-      label: '生活记录',
-      link: {
-        slug: '/生活',
-        type: 'generated-index',
-        //description: '一些生活相关的笔记。',
-        keywords: ['life', 'lifestyle'],
-      },
-      items: [
-        '如何调制一杯鸡尾酒',
-        //'乐谱-Imagine',
-        '太阳高度角计算',
-        '如何合理配置个人资产',
-        '读《黑客与画家》',
-        '英语六级-备考',
-        '音乐相关',
-        '谈谈未来的职业选择',
-        'THEHack2019黑客马拉松',
-        'Hack.init()黑客马拉松',
-        '焊接大赛培训及总结',
-        '为什么要「站在巨人的肩膀上」',
-        '如何不被AI取代',
-        '一些观点',
-      ],
-    },
-  ],
-
-
-
-
-
 
 };
 
