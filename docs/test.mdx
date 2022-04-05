@@ -4,6 +4,35 @@ title: test
 sidebar_label: test
 ---
 
+componentDidMount(){
+    var s = document.querySelector("#jsonp");
+    s&&s.parentNode.removeChild(s);
+    var script = document.createElement("script");
+    script.id = "jsonp";
+    script.src = 'https://cdn.bootcss.com/jquery/3.2.1/core.js';
+    document.body.appendChild(script);
+}
+
+export const Highlight = ({children, color}) => (
+  <span
+    style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+    {children}
+  </span>
+);
+
+<Highlight color="#25c2a0">Docusaurus green</Highlight> and <Highlight color="#1877F2">Facebook blue</Highlight> are my favorite colors.
+
+I can write **Markdown** alongside my _JSX_!
+
+
+
+import altium-ecad-viewer from '@site/src/components/embed';
+
 
 ---
 
