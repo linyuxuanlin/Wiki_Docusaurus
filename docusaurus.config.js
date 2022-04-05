@@ -72,6 +72,8 @@ const config = {
           blogSidebarTitle: 'Recent',
           feedOptions: {
             type: 'all',
+            title: 'Power\'s Blog',
+            description: 'Power\'s Wiki 的博客 RSS',
             copyright: `Copyright © ${new Date().getFullYear()} Power Lin.`,
           },
         },
