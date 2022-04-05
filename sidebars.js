@@ -365,7 +365,7 @@ const sidebars = {
       },
       items: [
         '如何调制一杯鸡尾酒',
-        //'乐谱-Imagine',
+        
         '太阳高度角计算',
         '如何合理配置个人资产',
         '读《黑客与画家》',
@@ -425,7 +425,6 @@ const sidebars = {
 
 module.exports = sidebars;
 
-
 // archive：
 //'archive/Python学习笔记',
 //'archive/STM32麦轮小车',
@@ -449,6 +448,7 @@ module.exports = sidebars;
 
 // unlist：
 //'unlist/CentOS安装Docker',
+//'unlist/乐谱-Imagine',
 //'unlist/Docker方式运行code-server',
 //'unlist/T-Clock桌上小钟（旧）',
 //'unlist/构建知识管理系统',
