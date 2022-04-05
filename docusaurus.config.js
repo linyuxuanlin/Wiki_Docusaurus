@@ -98,7 +98,7 @@ const config = {
   ],
 
   stylesheets: [{
-    href: 'https://cos.ap-guangzhou.myqcloud.com/wiki-media-1253965369/doc/katex.min.css',
+    href: 'https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css',
     type: 'text/css',
     integrity: 'sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM',
     crossorigin: 'anonymous',
