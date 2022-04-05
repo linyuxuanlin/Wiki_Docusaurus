@@ -24,8 +24,7 @@ Hi there~
 
 <h6>Power Lin |  <a href="https://beian.miit.gov.cn"> 粤 ICP 备 20014898 号 </a> | Built with Docusaurus</h6>
 
-
-
+<script src="https://viewer.altium.com/client/static/js/embed.js"></script>
 
 <div class="altium-ecad-viewer"
   data-project-src="https://github.com/SeeedDocument/Retro_Phone_Kit/raw/master/res/RePhone%20core%202G-Atmel32u4%20v1.0_Eagle.zip"
@@ -34,3 +33,22 @@ Hi there~
 </div>
 
 
+<div className="altium-ecad-viewer" data-project-token="akrWFsQWqEa6Qk7RJPmbC5xo" data-enabled-views="sch,pcb,3d,bom" data-active-view="sch" style={{borderRadius: '0px 0px 4px 4px', height: '500px', borderStyle: 'solid', borderWidth: '1px', borderColor: 'rgb(241, 241, 241)', overflow: 'hidden', maxWidth: '1280px', maxHeight: '700px', boxSizing: 'border-box'}} />
+
+<div
+  className="altium-ecad-viewer"
+  data-project-token="akrWFsQWqEa6Qk7RJPmbC5xo"
+  data-enabled-views="sch,pcb,3d,bom"
+  data-active-view="sch"
+  style={{
+    borderRadius: "0px 0px 4px 4px",
+    height: 500,
+    borderStyle: "solid",
+    borderWidth: 1,
+    borderColor: "rgb(241, 241, 241)",
+    overflow: "hidden",
+    maxWidth: 1280,
+    maxHeight: 700,
+    boxSizing: "border-box"
+  }}
+/>
