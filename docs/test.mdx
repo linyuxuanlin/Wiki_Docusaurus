@@ -6,6 +6,15 @@ sidebar_label: test
 
 <script src="https://viewer.altium.com/client/static/js/embed.js"></script>
 
+componentDidMount(){
+var s = document.querySelector("#jsonp");
+s&&s.parentNode.removeChild(s);
+var script = document.createElement("script");
+script.id = "jsonp";
+script.src = 'https://viewer.altium.com/client/static/js/embed.js';
+document.body.appendChild(script);
+}
+
 <div
   className="altium-ecad-viewer"
   data-project-src="https://files.seeedstudio.com/wiki/Spartan-Edge-Accelerator-Board/res/Spartan Edge Accelerator Board v1.0.zip"
