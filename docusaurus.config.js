@@ -28,7 +28,7 @@ const config = {
     {
       src:
         '/js/embed.js',
-      async: false,
+      async: true,
     },
   ],
 
