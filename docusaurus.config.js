@@ -18,7 +18,10 @@ const config = {
   organizationName: 'linyuxuanlin', // Usually your GitHub org/user name.
   projectName: 'Wiki_Docusaurus', // Usually your repo name.
 
-  scripts: ['https://d3l9fju211jpzs.cloudfront.net/114/client/static/js/embed.js'],
+  scripts: [
+    'https://d3l9fju211jpzs.cloudfront.net/114/client/static/js/embed.js',
+    'https://cos.ap-guangzhou.myqcloud.com/wiki-media-1253965369/doc/autoFitIframe.js'
+  ],
 
   themes: [
     // ... Your other themes.
@@ -86,7 +89,7 @@ const config = {
   ],
 
   stylesheets: [{
-    href: 'https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css',
+    href: 'https://cos.ap-guangzhou.myqcloud.com/wiki-media-1253965369/doc/katex.min.css',
     type: 'text/css',
     integrity: 'sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM',
     crossorigin: 'anonymous',
