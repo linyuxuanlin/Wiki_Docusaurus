@@ -23,14 +23,10 @@ const config = {
   //  'https://cos.ap-guangzhou.myqcloud.com/wiki-media-1253965369/doc/autoFitIframe.js'
   //],
 
-  scripts: [
-    
-    {
-      src:
-        '/js/embed.js',
-      async: true,
-    },
-  ],
+  scripts: [{
+    src: '/js/embed.js',
+    async: false,
+  }, ],
 
   themes: [
     // ... Your other themes.
