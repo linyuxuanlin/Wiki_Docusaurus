@@ -1,17 +1,3 @@
-/**
- * Creating a sidebar enables you to:
- - create an ordered group of docs
- - render a sidebar for each doc of that group
- - provide next/previous navigation
-
- The sidebars can be generated from the filesystem, or explicitly defined here.
-
- Create as many sidebars as you want.
- */
-
-// @ts-check
-
-
 /** @type {import('@docusaurus/plugin-content-docs').SidebarsConfig} */
 const sidebars = {
 
@@ -61,7 +47,7 @@ const sidebars = {
         'STM32F4硬件开发',
         'SwiftCtrl-蓝牙手柄',
         '自制CMSIS-DAP',
-        //'PCB名片的设计',
+
 
       ],
     },
@@ -182,8 +168,6 @@ const sidebars = {
         'AD基本操作-环境搭建',
         'AD基本操作-基础知识',
         'AD基本操作-原理图绘制',
-        //'AD基本操作-PCB绘制',
-        //'AD基本操作-库文件绘制',
         'AD基本操作-多板系统设计',
         'AD使用Git的注意事项',
         '函数思想在电路设计中的应用',
@@ -194,10 +178,7 @@ const sidebars = {
 
       ],
     },
-
-
   ],
-
 
 
   嵌入式与软件: [{
@@ -285,8 +266,7 @@ const sidebars = {
   ],
 
 
-  效率指南: [
-    {
+  效率指南: [{
       type: 'category',
       label: '机器人队行政',
       link: {
@@ -356,6 +336,7 @@ const sidebars = {
         '如何从乐曲中分离音轨',
         '如何高效制作幻灯片',
         '卡片式写作',
+        '用reveal.js制作幻灯片',
         'npm和Yarn换源加速国内访问',
         'Vue.js小技巧',
         '正则表达式实用语句',
@@ -409,8 +390,6 @@ const sidebars = {
         keywords: ['x', 'x'],
       },
       items: [
-        //'我是如何做数据容灾的',
-        //'如何用Markdown写学术论文',
         '如何用LaTeX写论文',
         '基于RSSHub搭建RSS生成器（群晖Docker）', // CSDN
         '基于Bitwarden搭建密码管理器（群晖Docker）', // CSDN
@@ -438,8 +417,6 @@ const sidebars = {
         'VSCode生产力指南-JupyterNotebook', // CSDN todo
         '在浏览器上运行VSCode（旧）',
         '如何配一台电脑',
-        //'面试问题记录'
-        //'用reveal.js制作幻灯片',
       ],
     },
   ],
@@ -449,7 +426,7 @@ const sidebars = {
 module.exports = sidebars;
 
 
-// 归档：
+// archive：
 //'archive/Python学习笔记',
 //'archive/STM32麦轮小车',
 //'archive/RM校内赛-前期策划',
@@ -470,7 +447,7 @@ module.exports = sidebars;
 //'archive/STM32模块设计-LED',
 //'archive/团队公开知识库的搭建',
 
-// 未列出文章：
+// unlist：
 //'unlist/CentOS安装Docker',
 //'unlist/Docker方式运行code-server',
 //'unlist/T-Clock桌上小钟（旧）',
@@ -481,3 +458,10 @@ module.exports = sidebars;
 //'unlist/博客转至GitBook',
 //'unlist/浅谈Bitcron博客平台',
 //'unlist/基于docsify搭建个人Wiki',
+//'unlist/PCB名片的设计',
+
+// preview
+//'我是如何做数据容灾的',
+//'如何用Markdown写学术论文',
+//'AD基本操作-PCB绘制',
+//'AD基本操作-库文件绘制',
