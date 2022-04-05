@@ -151,19 +151,12 @@ const config = {
             position: "right",
           },
 
-
-          {
-            to: "生活",
-            label: "生活",
-            position: "right",
-          },
-          
           {
             to: "blog",
             label: "博客",
             position: "right",
           },
-          
+
 
         ],
       },
