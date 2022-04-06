@@ -12,6 +12,8 @@ TinyDVR 是一款电机驱动套件，包含母板（Master）与子板（Slave�
 
 项目在线预览：
 
+TinyDVR_Master：
+
 <div style={{height: "60vh"}}>
 <iframe
   width="100%"
@@ -20,6 +22,8 @@ TinyDVR 是一款电机驱动套件，包含母板（Master）与子板（Slave�
   src="https://viewer.wiki-power.com/TinyDVR_Master.html"
 ></iframe>
 </div>
+
+TinyDVR_Slave：
 
 <div style={{height: "60vh"}}>
 <iframe
