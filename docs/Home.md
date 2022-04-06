@@ -23,3 +23,20 @@ Hi there~
 [![badge](https://img.shields.io/badge/Contact%20me-here-34ABE0?&style=flat-square)](ContactMe)
 
 <h6>Power Lin |  <a href="https://beian.miit.gov.cn"> 粤 ICP 备 20014898 号 </a> | Built with Docusaurus</h6>
+
+
+<div
+  className="altium-ecad-viewer"
+  data-project-src="https://github.com/linyuxuanlin/Collection_of_Motor_Driver_Design/raw/main/DC_Motor/IR2104S/IR2104S.zip"
+  style={{
+    borderRadius: "0px 0px 4px 4px",
+    height: 500,
+    borderStyle: "solid",
+    borderWidth: 1,
+    borderColor: "rgb(241, 241, 241)",
+    overflow: "hidden",
+    maxWidth: 1280,
+    maxHeight: 700,
+    boxSizing: "border-box",
+  }}
+></div>
