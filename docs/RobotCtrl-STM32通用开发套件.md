@@ -5,12 +5,36 @@ title: RobotCtrl - STM32 通用开发套件
 
 项目在线预览：
 
+**RobotCtrl_Core**:
+
 <div style={{height: "60vh"}}>
 <iframe
   width="100%"
   height="100%"
   scrolling="no"
-  src="https://viewer.wiki-power.com/RobotCtrl_MultiBoard_Project.html"
+  src="https://viewer.wiki-power.com/RobotCtrl_Core.html"
+></iframe>
+</div>
+
+**RobotCtrl_Func**:
+
+<div style={{height: "60vh"}}>
+<iframe
+  width="100%"
+  height="100%"
+  scrolling="no"
+  src="https://viewer.wiki-power.com/RobotCtrl_Func.html"
+></iframe>
+</div>
+
+**RobotCtrl_Power**:
+
+<div style={{height: "60vh"}}>
+<iframe
+  width="100%"
+  height="100%"
+  scrolling="no"
+  src="https://viewer.wiki-power.com/RobotCtrl_Power.html"
 ></iframe>
 </div>
 
