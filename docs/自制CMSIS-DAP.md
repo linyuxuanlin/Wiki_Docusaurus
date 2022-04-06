@@ -35,7 +35,7 @@ GitHub 仓库：[**linyuxuanlin/DashDAP**](https://github.com/linyuxuanlin/DashD
   width="100%"
   height="100%"
   scrolling="no"
-  src="https://viewer.wiki-power.com/DashDAP2.0.html"
+  src="https://viewer.wiki-power.com/DashDAP.html"
 ></iframe>
 </div>
 
