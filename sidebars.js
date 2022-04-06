@@ -41,7 +41,8 @@ const sidebars = {
         //keywords: ['硬件设计', '协议', '通信协议', '逻辑电平', 'SPI', 'I2C', 'CAN', 'USB', ],
       },
       items: [
-
+        'RobotCtrl-STM32通用开发套件',
+        'RobotCtrl_Core-核心板',
         'OSD335x最小系统的设计',
         '如何设计一款单片机的最小系统', // CSDN
         'STM32F4硬件开发',
@@ -365,7 +366,6 @@ const sidebars = {
       },
       items: [
         '如何调制一杯鸡尾酒',
-        
         '太阳高度角计算',
         '如何合理配置个人资产',
         '读《黑客与画家》',
