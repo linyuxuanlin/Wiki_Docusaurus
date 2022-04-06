@@ -4,39 +4,49 @@ title: test
 sidebar_label: test
 ---
 
-componentDidMount(){
-var s = document.querySelector("#jsonp");
-s&&s.parentNode.removeChild(s);
-var script = document.createElement("script");
-script.id = "jsonp";
-script.src = 'https://cdn.bootcss.com/jquery/3.2.1/core.js';
-document.body.appendChild(script);
-}
+<script src="https://viewer.altium.com/client/static/js/embed.js"></script>
 
-export const Highlight = ({ children, color }) => (
-  <span
-    style={{
-      backgroundColor: color,
-      borderRadius: "2px",
-      color: "#fff",
-      padding: "0.2rem",
-    }}
-  >
-    {children}
-  </span>
-);
-
-<Highlight color="#25c2a0">Docusaurus green</Highlight> and <Highlight color="#1877F2">
-  Facebook blue
-</Highlight> are my favorite colors.
-
-I can write **Markdown** alongside my _JSX_!
+<div
+  className="altium-ecad-viewer"
+  data-project-src="https://github.com/linyuxuanlin/Online_Viewer_for_Hardware_Project/raw/main/Xadow_M0_Schematic.zip"
+  style={{
+    borderRadius: "0px 0px 4px 4px",
+    height: 500,
+    borderStyle: "solid",
+    borderWidth: 1,
+    overflow: "hidden",
+    maxWidth: 1280,
+    maxHeight: 700,
+    boxSizing: "border-box",
+  }}
+></div>
 
 ---
+
+<div
+  className="altium-ecad-viewer"
+  data-project-token="akrWFsQWqEa6Qk7RJPmbC7Ro"
+  data-enabled-views="sch,pcb,3d,bom"
+  data-active-view="sch"
+  style={{
+    borderRadius: "0px 0px 4px 4px",
+    height: 500,
+    borderStyle: "solid",
+    borderWidth: 1,
+    borderColor: "rgb(241, 241, 241)",
+    overflow: "hidden",
+    maxWidth: 1280,
+    maxHeight: 700,
+    boxSizing: "border-box"
+  }}
+/>
+
 
 ```
 <script src="https://viewer.altium.com/client/static/js/embed.js"></script>
 ```
+
+
 
 <div
   className="altium-ecad-viewer"
