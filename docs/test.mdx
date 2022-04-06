@@ -4,8 +4,6 @@ title: test
 sidebar_label: test
 ---
 
-header("Set-Cookie: cross-site-cookie=whatever; SameSite=None; Secure");
-
 <script src="https://viewer.altium.com/client/static/js/embed.js"></script>
 
 <div
@@ -23,8 +21,6 @@ header("Set-Cookie: cross-site-cookie=whatever; SameSite=None; Secure");
   }}
 ></div>
 
-
-
 ---
 
 <div
@@ -41,13 +37,16 @@ header("Set-Cookie: cross-site-cookie=whatever; SameSite=None; Secure");
     overflow: "hidden",
     maxWidth: 1280,
     maxHeight: 700,
-    boxSizing: "border-box",
+    boxSizing: "border-box"
   }}
 />
+
 
 ```
 <script src="https://viewer.altium.com/client/static/js/embed.js"></script>
 ```
+
+
 
 <div
   className="altium-ecad-viewer"
@@ -77,6 +76,21 @@ class Application extends React2.Component {
               <script src="https://viewer.altium.com/client/static/js/embed.js"></script>
               <script>try{Typekit.load({ async: true })}catch(e){}</script>
           </Helmet>
+          <div
+            className="altium-ecad-viewer"
+            data-project-src="https://github.com/linyuxuanlin/Online_Viewer_for_Hardware_Project/raw/main/Xadow_M0_Schematic.zip"
+            style={{
+              borderRadius: "0px 0px 4px 4px",
+              height: 500,
+              borderStyle: "solid",
+              borderWidth: 1,
+              borderColor: "rgb(241, 241, 241)",
+              overflow: "hidden",
+              maxWidth: 1280,
+              maxHeight: 700,
+              boxSizing: "border-box",
+            }}
+          ></div>
       </div>
     );
   }
