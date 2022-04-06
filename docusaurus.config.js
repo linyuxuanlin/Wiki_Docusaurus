@@ -24,7 +24,8 @@ const config = {
   //],
 
   scripts: [{
-    src: '/js/embed.js',
+    //src: '/js/embed.js',
+    src: 'https://viewer.altium.com/client/static/js/embed.js',
     async: false,
   }, ],
 
