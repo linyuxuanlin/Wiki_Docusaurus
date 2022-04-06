@@ -25,7 +25,7 @@ const config = {
 
   scripts: [{
     //src: '/js/embed.js',
-    src: 'https://viewer.altium.com/client/static/js/embed.js',
+    src: 'https://d3l9fju211jpzs.cloudfront.net/114/client/static/js/embed.js',
     async: false,
   }, ],
 
