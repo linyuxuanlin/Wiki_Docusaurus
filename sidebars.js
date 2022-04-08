@@ -43,6 +43,7 @@ const sidebars = {
       items: [
         'RobotCtrl-STM32通用开发套件',
         'RobotCtrl_Core-核心板',
+        'RobotCtrl_Func-外设拓展板',
         'OSD335x最小系统的设计',
         '如何设计一款单片机的最小系统', // CSDN
         'STM32F4硬件开发',
