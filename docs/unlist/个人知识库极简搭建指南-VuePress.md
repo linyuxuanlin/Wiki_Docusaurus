@@ -72,8 +72,6 @@ title: 个人知识库极简搭建指南 - VuePress
 
 恭喜你！拥有了一个属于自己的知识库！
 
-
-
 > 文章作者：**Power Lin**  
 > 原文地址：<https://wiki-power.com>  
 > 版权声明：文章采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh) 协议，转载请注明出处。
