@@ -132,7 +132,7 @@ const sidebars = {
 
     {
       type: 'category',
-      label: '射频设计',
+      label: '射频电路',
       link: {
         type: 'generated-index',
         //description: ' ',
