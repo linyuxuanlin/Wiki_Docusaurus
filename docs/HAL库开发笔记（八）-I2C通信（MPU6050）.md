@@ -31,7 +31,7 @@ I2C 通信的基本原理可参考文章 [**通信协议 - I2C**](https://wiki-p
 
 这里我们调用带卡尔曼滤波的 MPU6050 库：[**leech001/MPU6050**](https://github.com/leech001/MPU6050)，将下载的 `mpu6050.c` 和 `mpu6050.h` 拷贝至项目文件夹下，并在 STM32CubeIDE/Keil 内将其添加到项目中。
 
-我们对库的内容详细讲解：
+在这里调用的带卡尔曼滤波的 MPU6050 库：
 
 ```c title="mpu6050.h"
 
@@ -298,6 +298,8 @@ double Kalman_getAngle(Kalman_t *Kalman, double newAngle, double newRate, double
     return Kalman->angle;
 };
 ```
+
+可以看到，在设置了 I2C 的地址后，在 `MPU6050_Init` 函数内初始化，并在其余的函数中操作读取各个数值。
 
 ## 使用 I2C 读取 MPU6050 返回的信息
 
