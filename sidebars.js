@@ -250,6 +250,7 @@ const sidebars = {
         'HAL库开发笔记（六）-TIM基本定时器',
         'HAL库开发笔记（七）-TIM通用定时器',
         'HAL库开发笔记（八）-I2C通信（MPU6050）',
+        'Lora通信-基于正点原子ATK-LORA-01模块',
         'STM32CubeIDE串口重定向（printf）及输出浮点型',
         '如何读写单个bit',
         'PlatformIO—一站式嵌入式开发工具',
