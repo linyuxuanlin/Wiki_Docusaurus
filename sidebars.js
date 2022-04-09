@@ -43,6 +43,7 @@ const sidebars = {
       items: [
         'RobotCtrl-STM32通用开发套件',
         'RobotCtrl_Core-核心板',
+        'RobotCtrl_Func-外设拓展板',
         'OSD335x最小系统的设计',
         '如何设计一款单片机的最小系统', // CSDN
         'STM32F4硬件开发',
@@ -100,6 +101,7 @@ const sidebars = {
         '电源的设计-方案确定',
         '电源的设计-线性稳压',
         '电源的设计-开关稳压（非隔离型）',
+        '电源的设计-开关稳压（隔离型）',
         '电源的设计-集成开关电源',
         '电源的设计-自举电路',
         '电源的设计-常用芯片方案收集',
@@ -130,7 +132,7 @@ const sidebars = {
 
     {
       type: 'category',
-      label: '射频设计',
+      label: '射频电路',
       link: {
         type: 'generated-index',
         //description: ' ',
@@ -138,6 +140,7 @@ const sidebars = {
       },
       items: [
         '射频-基础知识',
+        '射频-组件与系统',
         '射频-基本单位',
         '射频-无线电波与天线',
       ],

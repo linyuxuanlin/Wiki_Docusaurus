@@ -189,8 +189,8 @@ const config = {
             label: "友链 & 导航站",
           },
           {
-            href: "https://wiki.wildwolf.pw/",
-            label: "机器人队知识库",
+            label: '资源仓库',
+            href: 'https://github.com/linyuxuanlin/File-host',
           },
 
           /*
@@ -199,13 +199,14 @@ const config = {
             href: 'https://github.com/linyuxuanlin/Collection_of_Power_Module_Design',
           },
           {
+            href: "https://wiki.wildwolf.pw/",
+            label: "机器人队知识库",
+          },
+          {
             label: '功能电路模块化',
             href: 'https://github.com/linyuxuanlin/Modularity_of_Functional_Circuit',
           },
-          {
-            label: '资源共享仓库',
-            href: 'https://github.com/linyuxuanlin/File-host',
-          },
+          
           {
             label: '网页版串口助手',
             href: 'https://serial.wiki-power.com/',
