@@ -258,7 +258,7 @@ const sidebars = {
         'C与STM32常用宏定义',
         'C与STM32代码规范',
         'SWD与JTAG的区别与联系',
-        'CubeMX的一些坑',
+        'CubeMX与CubeIDE避坑',
         'STM32的启动模式',
         'KeilMDK配置指南',
         '大疆N3飞控-参考资料',

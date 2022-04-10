@@ -1,6 +1,6 @@
 ---
-id: CubeMX的一些坑
-title: CubeMX 的一些坑
+id: CubeMX与CubeIDE避坑
+title: CubeMX 与 CubeIDE 避坑
 ---
 
 ## 项目名称路径不能是中文
@@ -32,8 +32,6 @@ title: CubeMX 的一些坑
 ## 参考与致谢
 
 - [STM32 调试器配置异常导致的问题与解决方法（一）](https://www.jianshu.com/p/cea16b641c3d)
-
-
 
 > 文章作者：**Power Lin**  
 > 原文地址：<https://wiki-power.com>  

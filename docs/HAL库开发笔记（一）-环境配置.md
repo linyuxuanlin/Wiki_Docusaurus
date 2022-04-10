@@ -29,7 +29,7 @@ title: HAL 库开发笔记（一）- 环境配置
 
 `Pinout & Configurations` - `System Core` - `SYS`
 
-将 `Debug` 选项改为 `Serial Wire`（原因详见文章 [**CubeMX 的一些坑**](https://wiki-power.com/CubeMX%E7%9A%84%E4%B8%80%E4%BA%9B%E5%9D%91#%E9%BB%98%E8%AE%A4%E5%85%B3%E9%97%AD%E8%B0%83%E8%AF%95%E7%AB%AF%E5%8F%A3)）
+将 `Debug` 选项改为 `Serial Wire`（原因详见文章 [**CubeMX与CubeIDE避坑**](https://wiki-power.com/CubeMX%E7%9A%84%E4%B8%80%E4%BA%9B%E5%9D%91#%E9%BB%98%E8%AE%A4%E5%85%B3%E9%97%AD%E8%B0%83%E8%AF%95%E7%AB%AF%E5%8F%A3)）
 
 ### 配置 RCC
 
