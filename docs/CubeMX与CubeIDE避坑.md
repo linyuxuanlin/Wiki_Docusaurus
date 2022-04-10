@@ -39,11 +39,14 @@ title: CubeMX 与 CubeIDE 避坑
 
 ## STM32CubeIDE 汉化
 
-//todo
+打开 <**http://mirrors.ustc.edu.cn/eclipse/technology/babel/update-site/**> ，点选到最新的数据目录下（比如我可选的是 `http://mirrors.ustc.edu.cn/eclipse/technology/babel/update-site/`），复制此地址链接。
+
+在 STM32CubeIDE菜单栏选择 `Help` - `Install New Software`，点击 `Add`，在 `Name` 栏填入 `language`；`Location` 栏填入刚刚复制的链接，然后点击添加，在弹出来的界面选择简体中文语言包，安装后按提示重启软件即可。
 
 ## 参考与致谢
 
 - [STM32 调试器配置异常导致的问题与解决方法（一）](https://www.jianshu.com/p/cea16b641c3d)
+- [STM32cubeIDE环境配置安装-汉化-主题设置](https://blog.csdn.net/wct3344142/article/details/104142863)
 
 > 文章作者：**Power Lin**  
 > 原文地址：<https://wiki-power.com>  
