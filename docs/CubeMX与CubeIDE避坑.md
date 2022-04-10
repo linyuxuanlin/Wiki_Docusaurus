@@ -37,6 +37,10 @@ title: CubeMX 与 CubeIDE 避坑
 
 如果还是没有解决，那么可以在左侧文件树中，右键项目名称，点击最后的属性 `Properties`，将 `Resource` 面板中的字体编码改为 `GBK`（如果没得选，直接输入即可），保存即可解决。
 
+## STM32CubeIDE 汉化
+
+//todo
+
 ## 参考与致谢
 
 - [STM32 调试器配置异常导致的问题与解决方法（一）](https://www.jianshu.com/p/cea16b641c3d)
