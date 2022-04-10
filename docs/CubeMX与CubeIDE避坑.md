@@ -29,6 +29,14 @@ title: CubeMX 与 CubeIDE 避坑
 
 ![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20200531162352.jpg)
 
+## STM32CubeIDE 中文注释乱码
+
+如果代码是从 Keil 导入的，需要先确保原本的编码是 GB2312。
+
+依次点击菜单栏 - `Window` - `Preferences` - `General` - `Apperance` - `Colors and Fonts` - `C/C++` - `Editor` - `C/C++ Editor Text Font`，点击右侧的 `Edit`，确认字体支持中文（如微软雅黑），并确认脚本为 `中文 GB2312`。
+
+如果还是没有解决，那么可以在左侧文件树中，右键项目名称，点击最后的属性 `Properties`，将 `Resource` 面板中的字体编码改为 `GBK`（如果没得选，直接输入即可），保存即可解决。
+
 ## 参考与致谢
 
 - [STM32 调试器配置异常导致的问题与解决方法（一）](https://www.jianshu.com/p/cea16b641c3d)
