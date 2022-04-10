@@ -17,7 +17,7 @@ title: HAL 库开发笔记（一）- 环境配置
 
 ### STM32CubeMX
 
-从 [**官网链接**](https://my.st.com/content/my_st_com/zh/products/development-tools/software-development-tools/stm32-software-development-tools/stm32-configurators-and-code-generators/stm32cubemx.license=1611899126599.product=STM32CubeMX.version=6.1.1.html) 下载并安装 STM32CubeMX.
+从 [**官网链接**](https://my.st.com/content/my_st_com/zh/products/development-tools/software-development-tools/stm32-software-development-tools/stm32-configurators-and-code-generators/stm32cubemx.license=1611899126599.product=STM32CubeMX.version=6.1.1.html) 下载并安装 STM32CubeMX。
 
 ## 项目的配置
 
@@ -29,7 +29,7 @@ title: HAL 库开发笔记（一）- 环境配置
 
 `Pinout & Configurations` - `System Core` - `SYS`
 
-将 `Debug` 选项改为 `Serial Wire`（原因详见文章 [**CubeMX与CubeIDE避坑**](https://wiki-power.com/CubeMX%E7%9A%84%E4%B8%80%E4%BA%9B%E5%9D%91#%E9%BB%98%E8%AE%A4%E5%85%B3%E9%97%AD%E8%B0%83%E8%AF%95%E7%AB%AF%E5%8F%A3)）
+将 `Debug` 选项改为 `Serial Wire`（原因详见文章 [**CubeMX 与 CubeIDE 避坑**](https://wiki-power.com/CubeMX与CubeIDE避坑)）
 
 ### 配置 RCC
 
@@ -73,7 +73,7 @@ title: HAL 库开发笔记（一）- 环境配置
 - [【STM32】系统时钟 RCC 详解](https://blog.csdn.net/as480133937/article/details/98845509)
 - [板子初始化，RCC 时钟树完整配置的方式和详细过程](https://www.notion.so/2-RCC-770c0c454f954408a3956257aa0fb523)
 - [STM32 HAL 的超全知识总结](https://mp.weixin.qq.com/s/ffcjKtl7JdRibLRNGquGXA)
-- [清晰了，STM32 HAL的超全知识总结](https://mp.weixin.qq.com/s/qkj0fQS5NrCXmbppKEhaAg)
+- [清晰了，STM32 HAL 的超全知识总结](https://mp.weixin.qq.com/s/qkj0fQS5NrCXmbppKEhaAg)
 
 > 文章作者：**Power Lin**  
 > 原文地址：<https://wiki-power.com>  
