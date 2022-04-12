@@ -1,6 +1,6 @@
 ---
 id: HAL库开发笔记（九）-USB通信
-title: HAL库开发笔记（九）-USB通信
+title: HAL 库开发笔记（九）- USB通信
 ---
 
 ## 简单步骤
