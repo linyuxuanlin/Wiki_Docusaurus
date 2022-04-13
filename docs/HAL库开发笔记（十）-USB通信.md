@@ -12,12 +12,12 @@ title: 🚧HAL 库开发笔记（十）- USB 通信
 3. 在 `USB_OTG_FS` 页面，将 `Mode` 配置为 `Device_Only`，默认引脚是 `PA11` 和 `PA12`。
 4. 在 `USB_DEVICE` 页面，将 `Class For FS IP` 配置为 `Commmunication Device Class (Virtual Port Com)`。
 
-### Keil 内代码
+### 代码内配置
 
-实现数据回环功能，只需要在 `CDC_Receive_FS` 函数内添加一行：
+实现数据回环功能，只需要在 `CDC_Receive_FS` 函数（全局搜索即可找到）内添加一行：
 
-```c
-CDC_Transmit_FS(Buf,*Len);//添加数据原样返回
+```c title="usbd_cdc_if.c"
+CDC_Transmit_FS(Buf,*Len); // 返回相同数据
 ```
 
 ### 测试
