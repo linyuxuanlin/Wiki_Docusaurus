@@ -252,6 +252,7 @@ const sidebars = {
         'HAL库开发笔记（八）-I2C通信（MPU6050）',
         'HAL库开发笔记（九）-CAN通信',
         'HAL库开发笔记（十）-USB通信',
+        'HAL库开发笔记（十一）-以太网通信（LwIP）',
         'Lora通信-基于正点原子ATK-LORA-01模块',
         'STM32CubeIDE串口重定向（printf）及输出浮点型',
         '如何读写单个bit',
