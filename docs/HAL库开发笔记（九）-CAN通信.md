@@ -3,13 +3,7 @@ id: HAL库开发笔记（九）-CAN通信
 title: 🚧HAL 库开发笔记（九）- CAN 通信
 ---
 
-## 参考与致谢
-
-- [STM32CubeMX 与 HAL 库学习--简单的 CAN 回环测试](https://blog.csdn.net/weixin_45209978/article/details/119850600)
-
-> 文章作者：**Power Lin**  
-> 原文地址：<https://wiki-power.com>  
-> 版权声明：文章采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh) 协议，转载请注明出处。
+本篇基于自研 RobotCtrl 开发套件，单片机内核为 STM32F407ZET6，CAN 通信使用 TJA1050 芯片，原理图及详细介绍请见 [**RobotCtrl - STM32 通用开发套件**](https://wiki-power.com/RobotCtrl-STM32%E9%80%9A%E7%94%A8%E5%BC%80%E5%8F%91%E5%A5%97%E4%BB%B6)。
 
 ## 回环测试简单步骤
 
@@ -42,9 +36,9 @@ static void CAN_Filter_Config(void) {
 	/* 使能筛选器，按照标志的内容进行比对筛选，扩展ID不是如下的就抛弃掉，是的话，会存入FIFO0。 */
 
 	CAN_FilterTypeDef.FilterIdHigh = ((((uint32_t) 0x2233 << 3) | CAN_ID_EXT
-			| CAN_RTR_DATA) & 0xFFFF0000) >> 16;		//要筛选的ID高位 
+			| CAN_RTR_DATA) & 0xFFFF0000) >> 16;		//要筛选的ID高位
 	CAN_FilterTypeDef.FilterIdLow = (((uint32_t) 0x2233 << 3) | CAN_ID_EXT
-			| CAN_RTR_DATA) & 0xFFFF; //要筛选的ID低位 
+			| CAN_RTR_DATA) & 0xFFFF; //要筛选的ID低位
 	CAN_FilterTypeDef.FilterMaskIdHigh = 0;		//第二个ID的高位
 	CAN_FilterTypeDef.FilterMaskIdLow = 0;			//第二个ID的低位
 	CAN_FilterTypeDef.FilterFIFOAssignment = CAN_FILTER_FIFO0;	//筛选器被关联到FIFO0
@@ -62,4 +56,10 @@ static void CAN_Filter_Config(void) {
 
 打开串口工具（波特率任意），可发现发送任意字符，将返回相同字符。
 
+## 参考与致谢
 
+- [STM32CubeMX 与 HAL 库学习--简单的 CAN 回环测试](https://blog.csdn.net/weixin_45209978/article/details/119850600)
+
+> 文章作者：**Power Lin**  
+> 原文地址：<https://wiki-power.com>  
+> 版权声明：文章采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh) 协议，转载请注明出处。
