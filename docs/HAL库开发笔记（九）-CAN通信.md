@@ -45,7 +45,6 @@ static void CAN_Filter_Config(void) {
 	CAN_FilterTypeDef.FilterActivation = ENABLE;			//使能筛选器
 	HAL_CAN_ConfigFilter(&hcan1, &CAN_FilterTypeDef);
 }
-
 ```
 
 ### 测试
