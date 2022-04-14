@@ -1,6 +1,6 @@
 ---
-id: HAL库开发笔记（五）-DMA
-title: HAL 库开发笔记（五）- DMA
+id: HAL库开发笔记-DMA
+title: HAL 库开发笔记 - DMA
 ---
 
 DMA（Direct Memory Access，直接存储器访问）允许不同速度的硬件装置直接沟通，而不需要依赖于 CPU 的大量中断负载。
@@ -88,7 +88,7 @@ HAL_UART_DMAResume(&huart1)
 
 ### 在 CubeMX 内配置 DMA
 
-串口部分的配置请参考文章 [**HAL 库开发笔记（四）- 串口通信**](https://wiki-power.com/HAL%E5%BA%93%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0%EF%BC%88%E5%9B%9B%EF%BC%89-%E4%B8%B2%E5%8F%A3%E9%80%9A%E4%BF%A1#%E9%85%8D%E7%BD%AE-usart-%E5%BC%95%E8%84%9A)。
+串口部分的配置请参考文章 [**HAL 库开发笔记 - 串口通信**](https://wiki-power.com/HAL%E5%BA%93%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0-%E4%B8%B2%E5%8F%A3%E9%80%9A%E4%BF%A1)。
 
 配置完 USART 引脚和 NVIC 中断后，切换到 `DMA Settings` 标签页，按照下图进行配置：
 
