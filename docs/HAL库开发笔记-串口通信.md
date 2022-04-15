@@ -40,7 +40,6 @@ title: HAL 库开发笔记 - 串口通信
 首先需要在 `stm32f4xx_it.c` 末尾添加如下代码：
 
 ```c title="stm32f4xx_it.c"
-
 /* USER CODE BEGIN 1 */
 void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
 {
