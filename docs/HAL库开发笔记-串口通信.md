@@ -3,41 +3,14 @@ id: HAL库开发笔记-串口通信
 title: HAL 库开发笔记 - 串口通信
 ---
 
-串口通信算得上是单片机中最常用、最基础的一种通讯方式。常用可作为一种调试的手段，与单片机通讯监控数据、发送指令，也可以用作两个单片机之间互相通讯使用。
+本篇基于自研 RobotCtrl 开发套件，单片机内核为 STM32F407ZET6，RS-232 通信使用 SP3232EEN 芯片，原理图及详细介绍请见 [**RobotCtrl - STM32 通用开发套件**](https://wiki-power.com/RobotCtrl-STM32%E9%80%9A%E7%94%A8%E5%BC%80%E5%8F%91%E5%A5%97%E4%BB%B6)。
 
 ## 基本原理
 
-### 并行和串行
-
-- **并行通信**：各个数据位同时传输，速度快但占用引脚资源多。
-- **串行通信**：数据按位顺序传输，占用引脚资源少但速度相对慢。
-
-### 单工、半双工和全双工
-
-- **单工**：数据只在一个方向上进行传输。
-- **半双工**：允许数据在两个方向上传输，但是同一时刻，只允许数据在一个方向上传输，相当于方向可切换的单工通信。
-- **全双工**：允许数据同时在两个方向上传输，因此，全双工通信是两个单工通信方式的结合，要求发送和接收设备都有独立的接发能力。
-
-### 同步和异步
-
-- **同步通信**：带时钟同步信号传输。例如 SPI，IIC 等通信接口。
-- **异步通信**：不带时钟同步信号。例如 UART，单总线。
-
-### USART 和 UART
-
-- **UART**：通用异步收发器（Universal Asynchronous Receiver/Transmitter）
-- **USART**：通用同步异步收发器（Universal Synchronous/Asynchronous Receiver/Transmitter）
-
-![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20210207095411.png)
-
-![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20210207095433.png)
-
-USART 是 UART 的升级版，区别在于多了 CLK 线，在 CLK 没有信号的时候，就表明没有数据传输任务，有 CLK 信号的时候，就是正在传输信号，并且 CLK 提供了时钟同步功能，效验也更精确。
-
-## 串口通讯实验
+## 串口通讯实验（TTL）
 
 在进行下一步实验之前，需要在 CubeMX 里配置串口下载、时钟等各类参数。  
-具体步骤请参考文章 [**HAL 库开发笔记（一） - 环境配置**](https://wiki-power.com/HAL%E5%BA%93%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89-%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE#%E9%A1%B9%E7%9B%AE%E7%9A%84%E9%85%8D%E7%BD%AE) 中的方法进行配置。
+具体步骤请参考文章 [**HAL 库开发笔记 - 环境配置**](https://wiki-power.com/HAL%E5%BA%93%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0-%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE) 中的方法进行配置。
 
 ### 在 CubeMX 内配置串口
 
