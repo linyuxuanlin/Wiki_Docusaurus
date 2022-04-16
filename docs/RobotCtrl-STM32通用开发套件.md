@@ -24,7 +24,7 @@ title: RobotCtrl - STM32 通用开发套件
   scrolling="no"
   src="https://viewer.wiki-power.com/RobotCtrl_Core.html"
 ></iframe>
-</div>
+RobotCtrl_Core</div>
 
 **RobotCtrl_Func**:
 
