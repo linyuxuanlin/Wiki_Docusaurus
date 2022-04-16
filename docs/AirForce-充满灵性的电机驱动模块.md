@@ -1,19 +1,17 @@
 ---
 id: AirForce-充满灵性的电机驱动模块
 title: AirForce - 充满灵性的电机驱动模块
-
-
 ---
 
 AirForce 项目是一款电机驱动组合套件，包含集成稳压功能的母板 AirPort, 和双路电机驱动子板 AirCraft. 可以根据电机数量需求，自由拓展驱动最多 16 路电机。因外观小巧轻便，性能强劲、拓展性高，故命名为 Project AirForce.
 
-需求：
+特征：
 
 - 体积较小，接口方便布线
-- 接口不完全黑盒子封装，锻炼新生布线的能力
+- 接口不完全黑盒子封装，提高布线的能力
 - 不占用单片机（STM32）过多的定时器引脚资源
 
-开源地址：[**linyuxuanlin/AirForceDVR**](https://github.com/linyuxuanlin/AirForceDVR)
+项目仓库：[**linyuxuanlin/AirForceDVR**](https://github.com/linyuxuanlin/AirForceDVR)
 
 ## AirPort - 集成稳压功能的母板
 
@@ -69,8 +67,6 @@ AirCraft 双路电机驱动子板基于 TB6612FNG 集成驱动芯片设计，外
 ## 参考与致谢
 
 - [Dual Motor Driver TB6612 微型电机驱动模块](https://wiki.dfrobot.com.cn/_SKU_DRI0044_Dual_Motor_Driver__TB6612__%E5%BE%AE%E5%9E%8B%E7%94%B5%E6%9C%BA%E9%A9%B1%E5%8A%A8%E6%A8%A1%E5%9D%97)
-
-
 
 > 文章作者：**Power Lin**  
 > 原文地址：<https://wiki-power.com>  

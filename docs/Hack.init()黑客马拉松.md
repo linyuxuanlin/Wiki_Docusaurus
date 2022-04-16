@@ -7,6 +7,8 @@ title: Hack.init( ) 黑客马拉松
 
 ![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/wight.jpg)
 
+项目仓库：[**linyuxuanlin / Wight**](https://github.com/linyuxuanlin/Wight)
+
 ## 背景
 
 项目制作于 2017 hack.init\(\) 创客马拉松。 20 多个小时的敲代码、建模、调试各种乱七八糟的 bug、等待打印、展示 & 演讲，终于有点成品的样子。
@@ -22,8 +24,6 @@ title: Hack.init( ) 黑客马拉松
 - **拓展性。** 对个别有自定义照明需求的特殊用户提供各种自定义的功能
 
 ## 原理及实现
-
-**所有项目文件：**[**linyuxuanlin / Wight**](https://github.com/linyuxuanlin/Wight)
 
 **代码：**
 
@@ -204,8 +204,6 @@ Q：项目后期还有跟进吗？
 
 - 团队成员：林沛杰，黄岳峰，张梓宜
 - [IntoRobot 云平台](https://www.intorobot.com/)
-
-
 
 > 文章作者：**Power Lin**  
 > 原文地址：<https://wiki-power.com>  

@@ -9,6 +9,7 @@ title: TinyDVR - 小巧身材，满载动力
 
 TinyDVR 是一款电机驱动套件，包含母板（Master）与子板（Slave），供电部分与驱动部分分离，相比前身 ZenDriver 大幅度缩减了体积，极大提升了可拓展性。你可以根据自己的需求，堆叠不同数量的子板，驱动 n 个电机。
 
+项目仓库：[**linyuxuanlin/TinyDVR**](https://github.com/linyuxuanlin/TinyDVR)
 
 项目在线预览：
 
@@ -76,7 +77,7 @@ TinyDVR 是一款电机驱动套件，包含母板（Master）与子板（Slave�
 5. 在对应的子板处接上电机
 6. 共地（驱动板 GND 接单片机 GND）
 7. IN1，IN2 端口接单片机对应 PWM 端口（代码内设置）
-8. 用代码调试：请见 Github 仓库 [**linyuxuanlin/TinyDVR**](https://github.com/linyuxuanlin/TinyDVR) 内的测试例程
+8. 测试方法：请见项目仓库内的测试例程
 
 ## 花絮
 
@@ -86,8 +87,6 @@ TinyDVR 是一款电机驱动套件，包含母板（Master）与子板（Slave�
 批量焊接：
 
 ![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20200311182441.jpg)
-
-
 
 > 文章作者：**Power Lin**  
 > 原文地址：<https://wiki-power.com>  

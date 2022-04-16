@@ -5,6 +5,8 @@ title: ZenDriver - 高性能的电机驱动
 
 —— 基于 V5.1 Release 版本
 
+项目仓库：[**linyuxuanlin/ZenDriver**](https://github.com/linyuxuanlin/ZenDriver)
+
 ## 基本参数
 
 1. 输入电压：**7.2 ~ 20 V**
@@ -38,13 +40,7 @@ title: ZenDriver - 高性能的电机驱动
 4. 引脚 **IN1，IN2** 接单片机 PWM 端口
 5. 用代码调试
 
-## 源文件
-
-PCB 工程已开源至 GitHub：[https://github.com/linyuxuanlin/ZenDriver](https://github.com/linyuxuanlin/ZenDriver)
-
 ![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20200125192734.png)
-
-
 
 > 文章作者：**Power Lin**  
 > 原文地址：<https://wiki-power.com>  
