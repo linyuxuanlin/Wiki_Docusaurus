@@ -3,9 +3,7 @@ id: 电源方案（PMIC）-EA3036
 title: 电源方案（PMIC）- EA3036
 ---
 
-## 参考与致谢
-
-- []()
+项目仓库： [**Collection_of_Power_Module_Design/DC-DC(Buck)/LMR14050**](https://github.com/linyuxuanlin/Collection_of_Power_Module_Design/tree/main/PMIC/EA3036)
 
 > 文章作者：**Power Lin**  
 > 原文地址：<https://wiki-power.com>  
