@@ -9,7 +9,7 @@ title: HAL 库开发笔记 - 串口通信
 
 串口通信的基本原理请参考文章 [**通信协议-串口通信**](https://wiki-power.com/%E9%80%9A%E4%BF%A1%E5%8D%8F%E8%AE%AE-%E4%B8%B2%E5%8F%A3%E9%80%9A%E4%BF%A1)。
 
-## 串口通讯实验（TTL）
+## 串口通讯实验
 
 在进行下一步实验之前，需要在 CubeMX 里配置串口下载、时钟等各类参数。  
 具体步骤请参考文章 [**HAL 库开发笔记 - 环境配置**](https://wiki-power.com/HAL%E5%BA%93%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0-%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE) 中的方法进行配置。
