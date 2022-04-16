@@ -15,7 +15,7 @@ title: RobotCtrl - STM32 通用开发套件
 
 **RobotCtrl_Core**:
 
-<div style={{height: "60vh"}}>RobotCtrl_Core：
+<div style={{height: "60vh"}}>
 <iframe
   width="100%"
   height="100%"
