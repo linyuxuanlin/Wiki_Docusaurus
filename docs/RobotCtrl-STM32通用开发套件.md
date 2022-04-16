@@ -3,6 +3,16 @@ id: RobotCtrl-STM32通用开发套件
 title: RobotCtrl - STM32 通用开发套件
 ---
 
+项目仓库：[**linyuxuanlin/RobotCtrl**](https://github.com/linyuxuanlin/RobotCtrl)
+
+项目实物效果：
+
+![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20220416181125.jpeg)
+
+![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20220416181133.jpeg)
+
+![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20220416181139.jpeg)
+
 项目在线预览：
 
 **RobotCtrl_Core**:
@@ -37,10 +47,6 @@ title: RobotCtrl - STM32 通用开发套件
   src="https://viewer.wiki-power.com/RobotCtrl_Power.html"
 ></iframe>
 </div>
-
-## 参考与致谢
-
-- [linyuxuanlin/RobotCtrl](RobotCtrl-STM32通用开发套件)
 
 > 文章作者：**Power Lin**  
 > 原文地址：<https://wiki-power.com>  
