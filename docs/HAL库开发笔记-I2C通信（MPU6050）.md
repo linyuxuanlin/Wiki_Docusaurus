@@ -29,9 +29,7 @@ I2C 通信的基本原理可参考文章 [**通信协议 - I2C**](https://wiki-p
 
 ### 带卡尔曼滤波的 MPU6050 库
 
-这里我们调用带卡尔曼滤波的 MPU6050 库：[**leech001/MPU6050**](https://github.com/leech001/MPU6050)，将下载的 `mpu6050.c` 和 `mpu6050.h` 拷贝至项目文件夹下，并在 STM32CubeIDE/Keil 内将其添加到项目中。
-
-在这里调用的带卡尔曼滤波的 MPU6050 库：
+这里我们调用带卡尔曼滤波的 MPU6050 库：[**leech001/MPU6050**](https://github.com/leech001/MPU6050)，将下载的 `mpu6050.c` 和 `mpu6050.h` 拷贝至项目文件夹下，并在 STM32CubeIDE/Keil 内将其添加到项目中：
 
 ```c title="mpu6050.h"
 
