@@ -3,6 +3,20 @@ id: RobotCtrl_Core-核心板
 title: RobotCtrl_Core - 核心板
 ---
 
+## 主要功能
+
+- 单片机系统
+  - 电源电路（供电去耦、ADC 模拟电源）
+  - 复位电路（外部复位按键）
+  - 时钟电路（HSE 无源晶振）
+  - 启动模式配置（选择从主闪存存储器启动）
+  - USB 供电与通信电路（USB-Micro）
+- B2B 连接器（引出所有 IO）
+- 供电稳压电路（5V 转 3.3V，引出测试点）
+- 用户按键与 LED
+
+## 记录
+
 ### 启动模式
 
 - 选择从主闪存存储器启动，即 BOOT0 串接 10 K 的下拉电阻，BOOT1 任意。
@@ -37,14 +51,3 @@ title: RobotCtrl_Core - 核心板
 > 文章作者：**Power Lin**  
 > 原文地址：<https://wiki-power.com>  
 > 版权声明：文章采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh) 协议，转载请注明出处。
-
-## 主要功能
-
-- 单片机系统
-  - 电源电路（供电去耦、ADC 模拟电源）
-  - 复位电路（外部复位按键）
-  - 时钟电路（HSE 无源晶振）
-  - USB 供电与通信电路（USB-Micro）
-- B2B 连接器（引出所有 IO）
-- 供电稳压电路（5V 转 3.3V，引出测试点）
-- 用户按键与 LED
