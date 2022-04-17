@@ -1,15 +1,11 @@
 ---
-id: 电源方案（PMIC）-EA3036
-title: 电源方案（PMIC）- EA3036
+id: 电源方案（PMIC）-EA3036C
+title: 电源方案（PMIC）- EA3036C
 ---
 
 EA3036C 是一款 3 通道 PMIC，适用于由锂电池或直流 5V 供电的应用。它内部集成三个同步降压转换器，可在轻载和重载运行时提供高效率输出。内部补偿架构使应用电路设计简单。此外，独立的使能控制方便控制上电顺序。EA3036C 采用 20 脚 QFN 3x3 封装。
 
 项目仓库： [**Collection_of_Power_Module_Design/DC-DC(Buck)/LMR14050**](https://github.com/linyuxuanlin/Collection_of_Power_Module_Design/tree/main/PMIC/EA3036)
-
-> 文章作者：**Power Lin**  
-> 原文地址：<https://wiki-power.com>  
-> 版权声明：文章采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh) 协议，转载请注明出处。
 
 ## 主要特性
 
@@ -122,3 +118,39 @@ $$
 | C3216X5R1A226M | 22uF | 10V  | 1206 |
 
 ### 输出电感选型
+
+输出电感的选择，主要取决于通过电感的纹波电流量 $\Delta I_L$。$\Delta I_L$ 越大，输出电压纹波和损耗也会越大。虽然小电感可节省成本和空间，但较大的电感值可以获得更小的 $\Delta I_L$，带来更小的输出电压纹波和损耗。电感取值的计算公式：
+
+$$
+L=\frac{V_{PWR}-V_{OUT}}{\Delta I_L*F_{SW}}*\frac{V_{OUT}}{V_{PWR}}
+$$
+
+对于大多数应用场景，EA3036C 可选用 1.0~2.2uH 的电感。
+
+### 功耗
+
+EA3036C 的总功耗不应超过 6W，计算公式如下：
+
+$$
+P_{D(total)}=V_{OUT1}*I_{OUT1}+V_{OUT2}*I_{OUT2}+V_{OUT3}*I_{OUT3}
+$$
+
+## Layout 参考
+
+PMIC 的 Layout 需要讲究。可参照以下建议以获得最高性能：
+
+- 建议使用 4 层 PCB 布局，将 LX 平面和输出平面放在顶层，将 VIN 平面放在内层。
+- 顶层输入 / 输出贴片电容的接地脚应该打过孔连接到内层地和底层地。
+- AGND 应通过过孔直接连接到内部地层。
+- 尽量加宽大电流路径走线。
+- 将输入电容尽可能靠近 VINx 引脚放置，以减少噪声干扰。
+- 使反馈路径（从 VOUTx 到 FBx）远离噪声节点（例如 LXx）。 LXx 是一个高电流噪声节点。使用短而宽的走线完成布局。
+- 芯片底部焊盘需要打多个孔到内层和底层地，用以散热。
+
+## 参考与致谢
+
+- [EA3036C](http://www.everanalog.com/Product/ProductEA3036CDetailInfo.aspx)
+
+> 文章作者：**Power Lin**  
+> 原文地址：<https://wiki-power.com>  
+> 版权声明：文章采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh) 协议，转载请注明出处。
