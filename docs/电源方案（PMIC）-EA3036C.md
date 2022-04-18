@@ -132,8 +132,10 @@ $$
 EA3036C 的总功耗不应超过 6W，计算公式如下：
 
 $$
-P_{D(total)}=V_{OUT1}*I_{OUT1}+V_{OUT2}*I_{OUT2}+V_{OUT3}*I_{OUT3}
+P_{D(total)}=\Sigma (V_{OUTx}*I_{OUTx})
 $$
+
+
 
 ## Layout 参考
 
