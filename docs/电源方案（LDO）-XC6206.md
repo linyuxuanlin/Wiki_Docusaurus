@@ -15,4 +15,16 @@ XC6206 系列是高精度、低功耗的三端正电压调节器，提供大电�
 
 本篇选用的是 TOREX（特瑞仕）的 XC6206 系列，SOT-23 封装，其他厂商相同型号可替代，但请校对详细参数。
 
+项目仓库： [**Collection_of_Power_Module_Design/LDO/XC6206**](https://github.com/linyuxuanlin/Collection_of_Power_Module_Design/tree/main/LDO/XC6206)
 
+## 主要特性
+
+- 最大输出电流：200mA（典型值 6.0V 下）
+- 压差电压：250mV@100mA（典型值 6.0V 下）
+- 最大工作电压：6.0V
+- 输出电压范围：1.2V ~ 5.0V（0.1V 增量）
+- 精度：当 $V_{out}$ <1.5V 时，精度 ±30mV；当 $V_{out}$ >1.5V 时，精度 ±2%；当 $V_{out}$ >2V 时，精度 ±1%
+- 低功耗：典型值 1.0uA
+- 保护电路：内置限流电路
+- 工作温度：-40℃~ +85℃
+- 可选封装：SOT-23、SOT-89、USP-6B
