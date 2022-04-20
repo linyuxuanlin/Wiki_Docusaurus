@@ -1,6 +1,6 @@
 ---
-id: 电源方案（PMIC）-EA3039
-title: 电源方案（PMIC）- EA3039 🚧
+id: 电源方案（PMIC）-EA3059
+title: 电源方案（PMIC）- EA3059 🚧
 ---
 
 🚧

@@ -112,7 +112,7 @@ const sidebars = {
         '电源方案（Buck）-LMR14050',
         '电源方案（Buck）-XL2009E1',
         '电源方案（PMIC）-EA3036C',
-        '电源方案（PMIC）-EA3039',
+        '电源方案（PMIC）-EA3059',
       ],
     },
 
