@@ -5,37 +5,38 @@ title: 电源方案（PMIC）- EA3059 🚧
 
 🚧
 
-EA3036C 是一款 3 通道 PMIC，适用于由锂电池或直流 5V 供电的应用。它内部集成三个同步降压转换器，可在轻载和重载运行时提供高效率输出。内部补偿架构使应用电路设计简单。此外，独立的使能控制方便控制上电顺序。EA3036C 采用 20 脚 QFN 3x3 封装。
+EA3059 是一款 4 路 PMIC，适用于由锂电池或直流 5V 供电的应用。它内部集成四个同步降压转换器，可在轻载和重载运行时提供高效率输出。内部补偿架构使应用电路设计简单。此外，独立的使能控制方便控制上电顺序。EA3059 采用 24 脚 QFN 4x4 封装。
 
-项目仓库： [**Collection_of_Power_Module_Design/PMIC/EA3036**](https://github.com/linyuxuanlin/Collection_of_Power_Module_Design/tree/main/PMIC/EA3036)
+项目仓库： [**Collection_of_Power_Module_Design/PMIC/EA3059**](https://github.com/linyuxuanlin/Collection_of_Power_Module_Design/tree/main/PMIC/EA3059)
 
 ## 主要特性
 
 - 输入电压与控制电路电压：2.7-5.5V
-- 输出电压（3 个 Buck 转换器）：0.6V-Vin
-- 连续负载电流：1A（3 通道总输出必须小于 6W）
+- 输出电压（4 个 Buck 转换器）：0.6V-Vin
+- 输出电流：单路连续负载 2A、峰值 4A（4 通道总输出必须小于 10W）
 - 固定 1.5MHz 开关频率
-- 100% 占空比低压差操作
-- 关断电流：<1uA
-- 每路独立使能开关
+- 100% 全占空比输出
+- 各通道效率达 95%
+- 待机电流：<1uA
+- 每路独立使能控制
 - 内部补偿
 - 逐周期电流限制
 - 短路保护
 - 自恢复过温（OTP）保护
-- 输入过压（OVP）保护
-- 采用 20 引脚 3mm x 3mm QFN 封装
+- 没有输入过压（OVP）保护（相比 EA3059）
+- 采用 24 引脚 4mm x 4mm QFN 封装
 
 ## 典型应用电路
 
-![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20220417095917.png)
+![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20220420171841.png)
 
 ## 内部功能框图
 
-![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20220417001936.png)
+![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20220420171859.png)
 
 ## 引脚定义
 
-![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20220416234110.png)
+![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20220420171920.png)
 
 | 引脚名称 | 引脚描述                                                   |
 | -------- | ---------------------------------------------------------- |
@@ -47,45 +48,33 @@ EA3036C 是一款 3 通道 PMIC，适用于由锂电池或直流 5V 供电的应
 | GNDx     | 通道 x 的地                                                |
 | AGND     | 模拟地                                                     |
 | 底部焊盘 | 散热用，需要接地                                           |
+| NC       | 无连接                                                     |
 
 ## 特性描述
 
 ### PFM/PWM 模式
 
-每一路 Buck 都可以运行在 PFM/PWM 模式下。如果输出电流小于 260mA（典型值），稳压器将自动进入 PFM 模式。PFM 模式下的输出电压和输出纹波高于 PWM 模式下的输出电压和输出纹波。但在轻载的情况下，PFM 比 PWM 效率高。
+每一路 Buck 都可以运行在 PFM/PWM 模式下。如果输出电流小于 150mA（典型值），稳压器将自动进入 PFM 模式。PFM 模式下的输出电压和输出纹波高于 PWM 模式下的输出电压和输出纹波。但在轻载的情况下，PFM 比 PWM 效率高。
 
 ### 使能开关
 
-EA3036C 是一款专为 IPC 应用设计的电源管理 IC，包含三路 1A 同步 Buck，可通过单独的 EN 引脚进行使能开关控制。
+EA3059 是一款专为 OTT 应用设计的电源管理 IC，包含四路 2A 同步 Buck，可通过单独的 EN 引脚进行使能开关控制。
 
 如果需要设定每路 Buck 的开启时间，可通过使用如下电路进行编程：
 
-![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20220417100845.png)
+![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20220420172125.png)
 
 ### 180° 相位偏移架构
 
-为了降低输入纹波电流，EA3036C 采用了 180° 相位偏移架构。 Buck1 和 Buck3 相位相同，而 Buck2 的相位相差 180°。这样子可以减小纹波电流，从而降低 EMI。
+为了降低输入纹波电流，EA3059 采用了 180° 相位偏移架构。 Buck1 和 Buck3 相位相同，与 Buck2 和 Buck4 的相位相差 180°。这样子可以减小纹波电流，从而降低 EMI。
 
 ### 过流保护
 
-EA3036C 内部的三个稳压器都有自己的逐周期限流电路。当电感峰值电流超过电流限制阈值时，输出电压开始下降，直到 FB 引脚电压低于阈值，通常比参考值低 30%。一旦触发阈值，开关频率就会降低到 400KHz（典型值）。
-
-### 峰值负载电流
-
-EA3036C 的峰值负载电流能力，取决于内部 PMOS 电流限制、工作占空比（Vout/Vin）和电感值。在 Vin=5V, L=1.5uH 的条件下，输出峰值负载电流能力如下图所示：
-
-| 输出电压 | 峰值负载电流 |
-| -------- | ------------ |
-| 3.3V     | 1.2A         |
-| 1.8V     | 1.5A         |
-| 1.5V     | 1.5A         |
-| 1.2V     | 1.5A         |
-
-需要注意的是，总输出功耗必须小于 6W，以免芯片过热损坏。
+EA3059 内部的四个稳压器都有自己的逐周期限流电路。当电感峰值电流超过电流限制阈值时，输出电压开始下降，直到 FB 引脚电压低于阈值，通常比参考值低 30%。一旦触发阈值，开关频率就会降低到 350KHz（典型值）。
 
 ### 热关断
 
-如果芯片温度高于热关断阈值点，EA3036C 将自动禁用。为避免工作不稳定，热关断的迟滞约为 30°C。
+如果芯片温度高于热关断阈值点，EA3059 将自动关断。为避免工作不稳定，热关断的迟滞约为 30°C。
 
 ### 输出电压调节
 
@@ -95,16 +84,16 @@ $$
 V_{OUTx}=0.6*\frac{R_1}{R_2}+0.6V
 $$
 
-![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20220417230210.png)
+![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20220420172602.png)
 
 如果需要输出常用的电压值，则可参考下表配置分压电阻（都需要选用 1% 精度的）：
 
 | 输出电压 | R1    | R2    |
 | -------- | ----- | ----- |
-| 3.3V     | 68KΩ  | 15KΩ  |
-| 1.8V     | 200KΩ | 100KΩ |
-| 1.5V     | 150KΩ | 100KΩ |
-| 1.2V     | 100KΩ | 100KΩ |
+| 3.3V     | 510kΩ | 110kΩ |
+| 1.8V     | 200kΩ | 100kΩ |
+| 1.5V     | 150kΩ | 100kΩ |
+| 1.1V     | 68kΩ  | 82kΩ  |
 
 ### 输入 / 输出电容选型
 
@@ -127,11 +116,11 @@ $$
 L=\frac{V_{PWR}-V_{OUT}}{\Delta I_L*F_{SW}}*\frac{V_{OUT}}{V_{PWR}}
 $$
 
-对于大多数应用场景，EA3036C 可选用 1.0~2.2uH 的电感。
+对于大多数应用场景，EA3059 可选用 1.0~2.2uH 的电感。
 
 ### 功耗
 
-EA3036C 的总功耗不应超过 6W，计算公式如下：
+EA3059 的总功耗不应超过 10W，计算公式如下：
 
 $$
 P_{D(total)}=\Sigma (V_{OUTx}*I_{OUTx})
@@ -148,10 +137,11 @@ PMIC 的 Layout 需要讲究。可参照以下建议以获得最高性能：
 - 将输入电容尽可能靠近 VINx 引脚放置，以减少噪声干扰。
 - 使反馈路径（从 VOUTx 到 FBx）远离噪声节点（例如 LXx）。 LXx 是一个高电流噪声节点。使用短而宽的走线完成布局。
 - 芯片底部焊盘需要打多个孔到内层和底层地，用以散热。
+- 输入电容尽可能靠近 VINx 引脚放置，以减少噪声干扰。
 
 ## 参考与致谢
 
-- [EA3036C](http://www.everanalog.com/Product/ProductEA3036CDetailInfo.aspx)
+- [EA3059](http://www.everanalog.com/Product/ProductEA3059DetailInfo.aspx)
 - [EA3059]{http://www.everanalog.com/ProductCN/ProductEA3059DetailInfoCN.aspx}
 
 > 文章作者：**Power Lin**  
