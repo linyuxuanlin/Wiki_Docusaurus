@@ -135,8 +135,6 @@ $$
 P_{D(total)}=\Sigma (V_{OUTx}*I_{OUTx})
 $$
 
-
-
 ## Layout 参考
 
 PMIC 的 Layout 需要讲究。可参照以下建议以获得最高性能：
