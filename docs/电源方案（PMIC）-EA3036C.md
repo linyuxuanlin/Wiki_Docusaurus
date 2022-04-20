@@ -27,6 +27,10 @@ EA3036C 是一款 3 通道 PMIC，适用于由锂电池或直流 5V 供电的应
 
 ![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20220417095917.png)
 
+## 内部功能框图
+
+![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20220417001936.png)
+
 ## 引脚定义
 
 ![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20220416234110.png)
@@ -41,10 +45,6 @@ EA3036C 是一款 3 通道 PMIC，适用于由锂电池或直流 5V 供电的应
 | GNDx     | 通道 x 的地                                                |
 | AGND     | 模拟地                                                     |
 | 底部焊盘 | 散热用，需要接地                                           |
-
-内部功能框图：
-
-![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20220417001936.png)
 
 ## 特性描述
 
