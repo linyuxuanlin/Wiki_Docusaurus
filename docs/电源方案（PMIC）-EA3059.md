@@ -139,7 +139,23 @@ PMIC 的 Layout 需要讲究。可参照以下建议以获得最高性能：
 - 芯片底部焊盘需要打多个孔到内层和底层地，用以散热。
 - 输入电容尽可能靠近 VINx 引脚放置，以减少噪声干扰。
 
-![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20220420173134.png)
+布局参考如下：
+
+顶层：
+
+![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20220420175756.png)
+
+中间电源层：
+
+![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20220420175833.png)
+
+中间地层：
+
+![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20220420175851.png)
+
+底层：
+
+![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20220420175906.png)
 
 ## 参考与致谢
 
