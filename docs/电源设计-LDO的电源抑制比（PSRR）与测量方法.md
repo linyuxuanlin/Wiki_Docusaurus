@@ -1,6 +1,6 @@
 ---
-id: LDO的电源抑制比（PSRR）与测量方法
-title: LD O的电源抑制比（PSRR）与测量方法
+id: 电源设计-LDO的电源抑制比（PSRR）与测量方法
+title: 电源设计 - LDO的电源抑制比（PSRR）与测量方法
 ---
 
 ## 参考与致谢
