@@ -5,6 +5,7 @@ title: 如何测量 LDO 的电源抑制比（PSRR）
 
 ## 参考与致谢
 
+- [LDO 基础知识：电源抑制比](https://e2echina.ti.com/blogs_/b/analogwire/posts/ldo)
 - [LDO PSRR 测量简化说明](https://www.ti.com/cn/lit/an/zhca089/zhca089.pdf?ts=1650452714023&ref_url=https%253A%252F%252Fwww.google.com%252F)
 
 > 文章作者：**Power Lin**  
