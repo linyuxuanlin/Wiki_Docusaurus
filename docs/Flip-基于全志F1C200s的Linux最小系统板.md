@@ -9,6 +9,8 @@ title: Flip - 基于全志 F1C200s 的 Linux 最小系统板
 
 - [【目录】全志 F1C100S/F1C200S 学习笔记](https://blog.csdn.net/p1279030826/article/details/113370239)
 - [peng-zhihui/Planck-Pi](https://github.com/peng-zhihui/Planck-Pi)
+- [小白自制 Linux 开发板 一. 瞎抄原理图与乱画 PCB](https://www.cnblogs.com/twzy/p/14714651.html)
+- [MangoPi](https://mangopi.cc/f1c200s)
 
 > 文章作者：**Power Lin**  
 > 原文地址：<https://wiki-power.com>  
@@ -20,6 +22,25 @@ F1C100s/F1C200s 基于 ARM9 CPU 架构，封装相同，区别仅仅是 F1C100S 
 
 ## 基本参数
 
+F1C200s 的基本参数如下：
+
+- ARM9 CPU architecture 400M
+- Memory SIP 64MB DDR1
+- SD2.0, eMMC 4.41
+- Video H.264/MPEG1 1920x1080@30fps decoding，MJPEG 1280x720@30fps encoding
+- Audio, 2xDAC 和 1xADC, DAC up to 192kHz,ADC up to 48kHz
+- 1 x I2S/PCM interface
+- Display RGB interface up to 1280x720@60fps
+- TV CVBS output, support NTSC/PAL
+- USB OTG
+- SDIO
+- IR
+- 3 x TWI
+- 2 x SPI
+- 3 x UART
+- Melis or Linux SDK OS
+- Package QFN88, 10mm x 10mm
+
 F1C200s 的系统架构框图：
 
 ![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20220422152227.png)
@@ -27,3 +48,7 @@ F1C200s 的系统架构框图：
 典型应用示意图：
 
 ![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20220422152450.png)
+
+Pin 定义：
+
+![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20220422153239.png)
