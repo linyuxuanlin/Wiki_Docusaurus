@@ -39,7 +39,7 @@ title: CubeMX 与 CubeIDE 避坑
 
 ## STM32CubeIDE 汉化
 
-打开 <**http://mirrors.ustc.edu.cn/eclipse/technology/babel/update-site/**> ，点选到最新的数据目录下（比如我可选的是 `mirrors.ustc.edu.cn/eclipse/technology/babel/update-site/`），复制此地址链接。
+打开链接 **<http://mirrors.ustc.edu.cn/eclipse/technology/babel/update-site/>** ，点选到最新的数据目录下（比如我可选的是 `mirrors.ustc.edu.cn/eclipse/technology/babel/update-site/`），复制此地址链接。
 
 在 STM32CubeIDE 菜单栏选择 `Help` - `Install New Software`，点击 `Add`，在 `Name` 栏填入 `language`；`Location` 栏填入刚刚复制的链接，然后点击添加，在弹出来的界面选择简体中文语言包，安装后按提示重启软件即可。
 
