@@ -12,8 +12,13 @@ title: FreshRSS
 > 原文地址：<https://wiki-power.com>  
 > 版权声明：文章采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh) 协议，转载请注明出处。
 
-http://frp.wiki-power.com:7011/api/greader.php
+https://frp.wiki-power.com:7011/api/greader.php
 
-http://frp.wiki-power.com:7011/api/fever.php
+https://frp.wiki-power.com:7011/api/fever.php
 
 iOS：netnewswire(greader)/unread(fever)
+
+
+[Synology: 30 Second Portainer Install Using Task Scheduler & Docker](https://mariushosting.com/synology-30-second-portainer-install-using-task-scheduler-docker/)
+
+[Synology: 30 Second Watchtower Install Using Task Scheduler & Docker](https://mariushosting.com/synology-30-second-watchtower-install-using-task-scheduler-docker/)
