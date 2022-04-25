@@ -18,7 +18,6 @@ https://frp.wiki-power.com:7011/api/fever.php
 
 iOS：netnewswire(greader)/unread(fever)
 
-
 [Synology: 30 Second Portainer Install Using Task Scheduler & Docker](https://mariushosting.com/synology-30-second-portainer-install-using-task-scheduler-docker/)
 
 [Synology: 30 Second Watchtower Install Using Task Scheduler & Docker](https://mariushosting.com/synology-30-second-watchtower-install-using-task-scheduler-docker/)
