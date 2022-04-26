@@ -9,11 +9,9 @@ EA3059 是一款 4 路 PMIC，适用于由锂电池或直流 5V 供电的应用�
 
 项目在线预览：
 
-<div style={{height: "60vh"}}>
-<iframe
-  width="100%"
-  height="100%"
-  scrolling="no"
+<div class="iframe_viewer">
+    <iframe 
+    scrolling="no"
   src="https://viewer.wiki-power.com/EA3059.html"
 ></iframe>
 </div>

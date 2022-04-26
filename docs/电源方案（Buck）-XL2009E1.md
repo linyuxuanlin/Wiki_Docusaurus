@@ -9,11 +9,9 @@ XL2009E1 是芯龙的一款最高 36V 输入、3A 输出、固定 180kHz 的 Buc
 
 项目在线预览：
 
-<div style={{height: "60vh"}}>
-<iframe
-  width="100%"
-  height="100%"
-  scrolling="no"
+<div class="iframe_viewer">
+    <iframe 
+    scrolling="no"
   src="https://viewer.wiki-power.com/XL2009E1.html"
 ></iframe>
 </div>

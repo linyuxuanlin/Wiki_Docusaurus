@@ -9,11 +9,9 @@ LMR1405 是 TI 的一款 Buck 转换器芯片，输入电压范围很宽（4-40V
 
 项目在线预览：
 
-<div style={{height: "60vh"}}>
-<iframe
-  width="100%"
-  height="100%"
-  scrolling="no"
+<div class="iframe_viewer">
+    <iframe 
+    scrolling="no"
   src="https://viewer.wiki-power.com/LMR14050.html"
 ></iframe>
 </div>

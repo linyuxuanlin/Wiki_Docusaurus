@@ -30,11 +30,9 @@ GitHub 仓库：[**linyuxuanlin/DashDAP**](https://github.com/linyuxuanlin/DashD
 
 项目在线预览：
 
-<div style={{height: "60vh"}}>
-<iframe
-  width="100%"
-  height="100%"
-  scrolling="no"
+<div class="iframe_viewer">
+    <iframe 
+    scrolling="no"
   src="https://viewer.wiki-power.com/DashDAP.html"
 ></iframe>
 </div>
