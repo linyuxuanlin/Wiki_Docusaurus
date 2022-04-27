@@ -9,10 +9,10 @@
 电源抑制比（PSRR）用公式表示为：
 
 $$
-PSRR(dB)=20\log\frac{V_rp(in)}{V_rp(out)}
+PSRR(dB)=20\log\frac{V_{rp(in)}}{V_{rp(out)}}
 $$
 
-其中，$V_rp(in)$ 表示输入纹波，$V_rp(out)$ 表示输出纹波。高速 LDO 的 PSRR 一般大于 60dB，而普通 LDO 的 PSRR 一般在 20dB 左右。60dB 的 PSRR 代表表当输入纹波为 1V 时，输出纹波将为 1mV。
+其中，$V_{rp(in)}$ 表示输入纹波，$V_{rp(out)}$ 表示输出纹波。高速 LDO 的 PSRR 一般大于 60dB，而普通 LDO 的 PSRR 一般在 20dB 左右。60dB 的 PSRR 代表表当输入纹波为 1V 时，输出纹波将为 1mV。
 
 我们先看普通 LDO（XC6206 系列）的纹波抑制曲线：
 
