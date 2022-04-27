@@ -113,7 +113,7 @@ const sidebars = {
         '电源方案（Buck）-XL2009E1',
         '电源方案（PMIC）-EA3036C',
         '电源方案（PMIC）-EA3059',
-        '电源设计-LDO的电源抑制比（PSRR）与测量方法',
+        '电源设计-LDO电源抑制比（PSRR）与测量方法',
       ],
     },
 
