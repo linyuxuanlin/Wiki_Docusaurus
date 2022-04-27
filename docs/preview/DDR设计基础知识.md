@@ -1,6 +1,6 @@
 ---
-id: DDR设计基础知识
-title: 🚧DDR 设计基础知识
+id: DDR3硬件设计基础
+title: 🚧DDR3硬件设计基础
 ---
 
 ## 连接器的规范与设计
@@ -26,12 +26,15 @@ DDR 的连接器俗称金手指（Gold Finger/Edge Connector），它是由镀�
 - [金手指是什么？](https://mp.weixin.qq.com/s?__biz=MjM5NTEwMzgzMQ==&mid=2649269244&idx=2&sn=ca73ef4b3734b41d59ab1e14bcb6623a&chksm=bee196c489961fd25380547dcc36f7ff6c129ffd2382a460d432f6152782ab347f7118cf233e&mpshare=1&scene=1&srcid=&sharer_sharetime=1582689705345&sharer_shareid=57baeb2b96d0cff9b17ac2c15b36602b&key=c7906fbfc53fe5d7bc99093e125472fc5bf7bce47f6e60a292ce9c07c4c99bd1855651114bf5b1f7f41907fbbedf35ee741ee5fbca484d64380c1486cc70f0946f35eadff73993f9cbab7af47b3b6e56&ascene=1&uin=MTk5MDUwOTA0Mg%3D%3D&devicetype=Windows+10&version=62080079&lang=zh_CN&exportkey=A%2BV%2F1nGsX3dWAdVVwb3gU4A%3D&pass_ticket=9Co0R2f8RJ%2BAEY%2FRlXB3p4L%2BjB3NsANRp2QCMNR1ZRpWYbXz9Y2XhUZog5FHSu%2Fm)
 - [PCB 的金手指设计与加工制作](https://mp.weixin.qq.com/s?__biz=MzA3NTEzODc2Mg==&mid=2651875943&idx=1&sn=e2d707f5af6371740cc9d6512434ca0e&chksm=8491d9c2b3e650d4b597d19d9956449156b64e69e7270c2370ef4dfc40aaab6ee09ea4e690f9&mpshare=1&scene=1&srcid=&sharer_sharetime=1582831875991&sharer_shareid=57baeb2b96d0cff9b17ac2c15b36602b&key=039e41916f0c5b3112996dc0d3d118480fc4471f799c219533de763261185bac35959a99889118a8c749bcca85a2ab1c07491a572297d5281cb91702606e77b45ab7547c5d031fdef888c6ae1860c17d&ascene=1&uin=MTk5MDUwOTA0Mg%3D%3D&devicetype=Windows+10&version=62080079&lang=zh_CN&exportkey=A3n60iUGoPLNJyA6X6FXphE%3D&pass_ticket=z4ox3f8nl73K2MPu0EBLLe%2FAru4MK%2B7c3EfDVNQbWWoZL0WujjMAwkBNocQsOmu8)
 - 《Cadence 高速 PCB 设计实战攻略\_李增-林超文》
+- [Xilinx FPGA平台DDR3设计保姆式教程（汇总篇）——看这一篇就够了](https://blog.csdn.net/m0_52840978/article/details/121191410?spm=1001.2014.3001.5501)
 
 > 文章作者：**Power Lin**  
 > 原文地址：<https://wiki-power.com>  
 > 版权声明：文章采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh) 协议，转载请注明出处。
 
 ## DDR 内存基础知识
+
+### DDR 引脚定义
 
 以 DDR3 SDRAM（Micron）为例，引脚符号对应的类型和描述如下：
 
@@ -56,3 +59,31 @@ DDR 的连接器俗称金手指（Gold Finger/Edge Connector），它是由镀�
 | VSS                              | 供电     | 地                               |
 | VSSQ                             | 供电     | DQ 地（隔离降噪）                |
 | ZQ                               | 参考电压 | 输出驱动校准的外部参考           |
+
+详细的描述：
+
+- A0-A9, A10/AP, A11, A12/BC#, A13：为 ACTIVATE 命令提供行地址，同时为 READ/WRITE 命令提供列地址和自动预充电位（A10），以便从某个 Bank 的内存阵列里选出一个位置。
+- BA0-BA2：
+- CK, CK#：
+- CKE：
+- CS#：
+- DM：
+- ODT：
+- RAS#, CAS#, WE#：
+- RESET#：
+- DQ0-DQ7：
+- DQS, DQS#：
+- TDQS, TDQS#：
+- VDD：
+- VDDQ：
+- VREFCA：
+- VREFDQ：
+- VSS：
+- VSSQ：
+- ZQ：
+
+### DDR 储存阵列
+
+### DDR 的定义
+
+DDR（double-data-rate synchronous dynamic RAM）即双倍速率同步动态随机存储器，DDR3 即指第三代。其中，**同步** 指的是读写都是按照时钟基准的，**动态** 指数据不能掉电存储，且需要周期性地刷新才能保持存储，**随机存储** 指的是可随机操作任意地址的数据，**双倍速率** 指在时钟的上升和下降沿都可进行数据传输。
