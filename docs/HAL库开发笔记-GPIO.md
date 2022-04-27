@@ -58,7 +58,7 @@ HAL_GPIO_TogglePin(GPIOx, GPIO_Pin);
 ## 点亮 LED
 
 在进行下一步实验之前，需要在 CubeMX 里配置串口下载、时钟等各类参数。  
-此处不再赘述，请参考文章 [**HAL 库开发笔记 - 环境配置**](https://wiki-power.com/HAL%E5%BA%93%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0-%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE) 中的方法进行配置。
+此处不再赘述，请跳转文章 [**HAL 库开发笔记 - 环境配置**](https://wiki-power.com/HAL%E5%BA%93%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0-%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE) 中的方法进行配置。
 
 ### 在 CubeMX 内配置 GPIO
 

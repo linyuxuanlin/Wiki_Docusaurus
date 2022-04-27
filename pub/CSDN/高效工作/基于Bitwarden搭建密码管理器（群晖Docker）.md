@@ -27,7 +27,7 @@
 
 ![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20210503212146.png)
 
-这是因为，Docker 容器本身没有提供 https 端口配置，而 Bitwarden 又只能够通过 https 来进行登录（SSL 加密防止中间人攻击）。所以，在这里我们必须使用群晖自带的反向代理服务，通过 https 来访问内部 http 端口了。具体教程可以参考文章 [**用群晖自带反向代理实现 HTTPS 访问**](https://wiki-power.com/%E7%94%A8%E7%BE%A4%E6%99%96%E8%87%AA%E5%B8%A6%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86%E5%AE%9E%E7%8E%B0HTTPS%E8%AE%BF%E9%97%AE)
+这是因为，Docker 容器本身没有提供 https 端口配置，而 Bitwarden 又只能够通过 https 来进行登录（SSL 加密防止中间人攻击）。所以，在这里我们必须使用群晖自带的反向代理服务，通过 https 来访问内部 http 端口了。具体教程可以跳转文章 [**用群晖自带反向代理实现 HTTPS 访问**](https://wiki-power.com/%E7%94%A8%E7%BE%A4%E6%99%96%E8%87%AA%E5%B8%A6%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86%E5%AE%9E%E7%8E%B0HTTPS%E8%AE%BF%E9%97%AE)
 
 ## 多设备使用
 

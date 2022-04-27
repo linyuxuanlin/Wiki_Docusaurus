@@ -117,7 +117,7 @@ AD 插件：
       - 固定孔
         - M3 螺孔：内 **3.1** mm、外 **4** mm
    4. 排布元件
-      - 参考文章 [**PCB 元件布局规范**](https://wiki-power.com/PCB%E5%85%83%E4%BB%B6%E5%B8%83%E5%B1%80%E8%A7%84%E8%8C%83)
+      - 跳转文章 [**PCB 元件布局规范**](https://wiki-power.com/PCB%E5%85%83%E4%BB%B6%E5%B8%83%E5%B1%80%E8%A7%84%E8%8C%83)
    5. 布线
       - 设置布线规则
         - 参考 [**PCB 布线规范**](https://wiki-power.com/PCB%E5%B8%83%E7%BA%BF%E8%A7%84%E8%8C%83)
@@ -154,7 +154,7 @@ AD 插件：
 
 ### Logo 添加
 
-参考文章 [**Logo 添加**](https://seujxh.wordpress.com/2018/10/03/logo%E6%B7%BB%E5%8A%A0/) 。
+跳转文章 [**Logo 添加**](https://seujxh.wordpress.com/2018/10/03/logo%E6%B7%BB%E5%8A%A0/) 。
 
 ### 使用 Git 管理项目
 

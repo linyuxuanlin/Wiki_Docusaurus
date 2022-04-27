@@ -13,6 +13,6 @@ title: DDR3 硬件设计 - 基本原理
 > 原文地址：<https://wiki-power.com>  
 > 版权声明：文章采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh) 协议，转载请注明出处。
 
-## DDR3 的定义
-
 DDR3（double-data-rate 3 synchronous dynamic RAM）即第三代双倍速率同步动态随机存储器。其中，**同步** 指的是读写都是按照时钟基准的，**动态** 指数据不能掉电存储，且需要周期性地刷新才能保持存储，**随机存储** 指的是可随机操作任意地址的数据，**双倍速率** 指在时钟的上升和下降沿都可进行数据传输。
+
+关于存储器的基本知识，请跳转文章 [存储器的分类]

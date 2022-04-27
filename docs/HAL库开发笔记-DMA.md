@@ -88,7 +88,7 @@ HAL_UART_DMAResume(&huart1)
 
 ### 在 CubeMX 内配置 DMA
 
-串口部分的配置请参考文章 [**HAL 库开发笔记 - 串口通信**](https://wiki-power.com/HAL%E5%BA%93%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0-%E4%B8%B2%E5%8F%A3%E9%80%9A%E4%BF%A1)。
+串口部分的配置请跳转文章 [**HAL 库开发笔记 - 串口通信**](https://wiki-power.com/HAL%E5%BA%93%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0-%E4%B8%B2%E5%8F%A3%E9%80%9A%E4%BF%A1)。
 
 配置完 USART 引脚和 NVIC 中断后，切换到 `DMA Settings` 标签页，按照下图进行配置：
 

@@ -22,7 +22,7 @@
 
 那么，使用 `你的域名/douban/movie/playing` 就可以使用自己的服务器来生成 RSS 源了。
 
-建议使用群晖系统自带的反向代理，实现 HTTPS 加密访问。具体教程可以参考文章 [**用群晖自带反向代理实现 HTTPS 访问**](https://wiki-power.com/%E7%94%A8%E7%BE%A4%E6%99%96%E8%87%AA%E5%B8%A6%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86%E5%AE%9E%E7%8E%B0HTTPS%E8%AE%BF%E9%97%AE)
+建议使用群晖系统自带的反向代理，实现 HTTPS 加密访问。具体教程可以跳转文章 [**用群晖自带反向代理实现 HTTPS 访问**](https://wiki-power.com/%E7%94%A8%E7%BE%A4%E6%99%96%E8%87%AA%E5%B8%A6%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86%E5%AE%9E%E7%8E%B0HTTPS%E8%AE%BF%E9%97%AE)
 
 ## 使用 RSSHub Radar 自动检测路由
 
