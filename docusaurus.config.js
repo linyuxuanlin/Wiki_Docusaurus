@@ -192,6 +192,10 @@ const config = {
             label: '资源仓库',
             href: 'https://github.com/linyuxuanlin/File-host',
           },
+          {
+            label: '成员（测试）',
+            to: 'members',
+          },
 
           /*
           {
