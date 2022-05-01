@@ -31,3 +31,25 @@ DDR 的连接器俗称金手指（Gold Finger/Edge Connector），它是由镀�
 > 版权声明：文章采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh) 协议，转载请注明出处。
 
 ### DDR 储存阵列
+
+详细的描述：
+
+- A0-A9, A10/AP, A11, A12/BC#, A13：为 ACTIVATE 命令提供行地址，同时为 READ/WRITE 命令提供列地址和自动预充电位（A10），以便从某个 Bank 的内存阵列里选出一个位置。
+- BA0-BA2：
+- CK, CK#：
+- CKE：
+- CS#：
+- DM：
+- ODT：
+- RAS#, CAS#, WE#：
+- RESET#：
+- DQ0-DQ7：
+- DQS, DQS#：
+- TDQS, TDQS#：
+- VDD：
+- VDDQ：
+- VREFCA：
+- VREFDQ：
+- VSS：
+- VSSQ：
+- ZQ：
