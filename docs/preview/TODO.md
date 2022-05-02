@@ -1,3 +1,28 @@
+## 电源
+
+- [[电路]电荷泵](https://zhenhuizhang.tk/post/dian-lu-dian-he-beng/)
+- [[电路]开关电源拓扑结构\_Buck_Boost_Buck-Boost](https://zhenhuizhang.tk/post/dian-lu-kai-guan-dian-yuan-tuo-bu-jie-gou-_buck_boost_buck-boost/)
+- [[电路]线性稳压器 LDO\_损耗功率与热问题](https://zhenhuizhang.tk/post/dian-lu-xian-xing-wen-ya-qi-ldo_-sun-hao-gong-lu-yu-re-wen-ti/)
+- []()
+
+## 通信协议硬件
+
+- []()
+- []()
+- [[FPGA13][电路]接口电平标准](https://zhenhuizhang.tk/post/fpga13jie-kou-dian-ping-biao-zhun/)
+- [[电路]I2C 总线协议](https://zhenhuizhang.tk/post/dian-lu-i2c-zong-xian-xie-yi/)
+- [[电路]UART 异步串口协议](https://zhenhuizhang.tk/post/dian-lu-uart-yi-bu-chuan-kou-xie-yi/)
+- [[电路]SPI 协议](https://zhenhuizhang.tk/post/dian-lu-spi-xie-yi/)
+- [[电路]以太网 PHY 物理层](https://zhenhuizhang.tk/post/dian-lu-yi-tai-wang-phy-wu-li-ceng/)
+
+---
+
+## EMC
+
+- [[电路]EMC 基础介绍](https://zhenhuizhang.tk/post/dian-lu-emc-ji-chu-jie-shao/)
+
+---
+
 - 二极管
 
   - [电子工程师手记：二极管选择指南](https://haipeng.me/2021/01/27/diode-guide/)
@@ -84,9 +109,7 @@ sw 上的波形？如何处理纹波？
 
 剩下的，认准自己的方向，带着那股“心劲儿”，一点点去琢磨、精进、积累那些吃饭的家伙什，岂不快哉。
 
-
 [【杂谈】关于风口和不变的东西](https://mp.weixin.qq.com/s/0KWpt8gAsls3gTZ8DTeGlw)
-
 
 ---
 
