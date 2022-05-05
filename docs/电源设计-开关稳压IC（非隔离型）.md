@@ -49,6 +49,10 @@ title: 电源设计 - 开关稳压 IC（非隔离型）
 - **反馈电容**：按数据手册要求取值，不同厂家芯片取值不同，输出电压不同也会有不同的要求。
 - **反馈电阻和 EN 分压电阻**：要求按规格书取值，精度需选取 1%。
 
+## 开关电源纹波分析
+
+🚧
+
 ## PCB Layout 要求
 
 - 电感：优先选择一体成型的电感，因为它们有较低的 EMI。
@@ -66,6 +70,7 @@ title: 电源设计 - 开关稳压 IC（非隔离型）
 - [【短视频】MPS 电源小课堂第三话: 判断电感饱和的几个小窍门](https://mp.weixin.qq.com/s?__biz=MzIwMTE4MzQwMw==&mid=2884003106&idx=1&sn=41c7eef3377037a1a1d21179447d0df1&scene=19#wechat_redirect)
 - [怎么选择 BUCK 降压电源的电感？](https://mp.weixin.qq.com/s/tTSoUaeaVQI4TM6ruKpeKw)
 - [AN-1149 Layout Guidelines for Switching Power Supplies](https://www.ti.com/lit/an/snva021c/snva021c.pdf?ts=1641814411004)
+- [开关电源纹波分析 🚧](http://www.oliverkung.top/%e5%bc%80%e5%85%b3%e7%94%b5%e6%ba%90%e7%ba%b9%e6%b3%a2%e5%88%86%e6%9e%90/)
 
 > 文章作者：**Power Lin**  
 > 原文地址：<https://wiki-power.com>  
