@@ -3,7 +3,9 @@ id: 通信协议-I2C
 title: 通信协议 - I2C
 ---
 
-在 I2C（Inter-Integrated Circuit）总线上，从机以它的 I2C 地址被选择。这样子可以用在一个主机上通过两根线控制多个从机。
+I2C（Inter-Integrated Circuit）是一种串行通讯总线，可允许存在多主机，但同一时刻只能有一个主机在线。I2C 由两条开漏信号线组成，接线简单，利用电阻上拉，典型电平为正逻辑 3.3V 或 5V。传输速率分快速模式（400Kb/s）、标准模式（100Kb/s）、低速模式（10Kb/s）。
+
+在 I2C 总线上，从机以它的 I2C 地址被选择。这样子可以用在一个主机上通过两根线控制多个从机。
 
 ![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20211026174634.png)
 
@@ -73,6 +75,7 @@ $V_{DD}$ 表示供电电压；$V_{OLMAX}$ 表示最大逻辑低电平（典型�
 
 - 《Analog Engineer’s Pocket Reference》
 - [I2C 总线该怎么用？看完你就会了](https://mp.weixin.qq.com/s/IeL77NTyVdTdkcNtqjjFPA)
+- [[电路]I2C 总线协议 🚧](https://zhenhuizhang.tk/post/dian-lu-i2c-zong-xian-xie-yi/)
 
 > 文章作者：**Power Lin**  
 > 原文地址：<https://wiki-power.com>  

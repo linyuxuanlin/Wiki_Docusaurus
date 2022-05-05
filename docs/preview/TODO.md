@@ -6,8 +6,6 @@
 
 ## 通信协议硬件
 
-- [[FPGA13][电路]接口电平标准](https://zhenhuizhang.tk/post/fpga13jie-kou-dian-ping-biao-zhun/)
-- [[电路]I2C 总线协议](https://zhenhuizhang.tk/post/dian-lu-i2c-zong-xian-xie-yi/)
 - [[电路]UART 异步串口协议](https://zhenhuizhang.tk/post/dian-lu-uart-yi-bu-chuan-kou-xie-yi/)
 - [[电路]SPI 协议](https://zhenhuizhang.tk/post/dian-lu-spi-xie-yi/)
 - [[电路]以太网 PHY 物理层](https://zhenhuizhang.tk/post/dian-lu-yi-tai-wang-phy-wu-li-ceng/)
