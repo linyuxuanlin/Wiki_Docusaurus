@@ -26,38 +26,11 @@ DDR 的连接器俗称金手指（Gold Finger/Edge Connector），它是由镀�
 - [金手指是什么？](https://mp.weixin.qq.com/s?__biz=MjM5NTEwMzgzMQ==&mid=2649269244&idx=2&sn=ca73ef4b3734b41d59ab1e14bcb6623a&chksm=bee196c489961fd25380547dcc36f7ff6c129ffd2382a460d432f6152782ab347f7118cf233e&mpshare=1&scene=1&srcid=&sharer_sharetime=1582689705345&sharer_shareid=57baeb2b96d0cff9b17ac2c15b36602b&key=c7906fbfc53fe5d7bc99093e125472fc5bf7bce47f6e60a292ce9c07c4c99bd1855651114bf5b1f7f41907fbbedf35ee741ee5fbca484d64380c1486cc70f0946f35eadff73993f9cbab7af47b3b6e56&ascene=1&uin=MTk5MDUwOTA0Mg%3D%3D&devicetype=Windows+10&version=62080079&lang=zh_CN&exportkey=A%2BV%2F1nGsX3dWAdVVwb3gU4A%3D&pass_ticket=9Co0R2f8RJ%2BAEY%2FRlXB3p4L%2BjB3NsANRp2QCMNR1ZRpWYbXz9Y2XhUZog5FHSu%2Fm)
 - [PCB 的金手指设计与加工制作](https://mp.weixin.qq.com/s?__biz=MzA3NTEzODc2Mg==&mid=2651875943&idx=1&sn=e2d707f5af6371740cc9d6512434ca0e&chksm=8491d9c2b3e650d4b597d19d9956449156b64e69e7270c2370ef4dfc40aaab6ee09ea4e690f9&mpshare=1&scene=1&srcid=&sharer_sharetime=1582831875991&sharer_shareid=57baeb2b96d0cff9b17ac2c15b36602b&key=039e41916f0c5b3112996dc0d3d118480fc4471f799c219533de763261185bac35959a99889118a8c749bcca85a2ab1c07491a572297d5281cb91702606e77b45ab7547c5d031fdef888c6ae1860c17d&ascene=1&uin=MTk5MDUwOTA0Mg%3D%3D&devicetype=Windows+10&version=62080079&lang=zh_CN&exportkey=A3n60iUGoPLNJyA6X6FXphE%3D&pass_ticket=z4ox3f8nl73K2MPu0EBLLe%2FAru4MK%2B7c3EfDVNQbWWoZL0WujjMAwkBNocQsOmu8)
 
-
 > 文章作者：**Power Lin**  
 > 原文地址：<https://wiki-power.com>  
 > 版权声明：文章采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh) 协议，转载请注明出处。
 
-## DDR 内存基础知识
-
-### DDR 引脚定义
-
-以 DDR3 SDRAM（Micron）为例，引脚符号对应的类型和描述如下：
-
-| 引脚符号                         | 类型     | 描述                             |
-| -------------------------------- | -------- | -------------------------------- |
-| A0-A9, A10/AP, A11, A12/BC#, A13 | 输入     | 地址输入                         |
-| BA0-BA2                          | 输入     | Bank 地址输入                    |
-| CK, CK#                          | 输入     | 时钟                             |
-| CKE                              | 输入     | 时钟使能                         |
-| CS#                              | 输入     | 片选                             |
-| DM                               | 输入     | 数据输入屏蔽                     |
-| ODT                              | 输入     | 片上终端使能                     |
-| RAS#, CAS#, WE#                  | 输入     | 命令输入                         |
-| RESET#                           | 输入     | 复位（低电平有效）               |
-| DQ0-DQ7                          | I/O      | 数据输入 / 输出                  |
-| DQS, DQS#                        | I/O      | 数据选通                         |
-| TDQS, TDQS#                      | 输出     | 终端数据选通                     |
-| VDD                              | 供电     | 电源电压（1.5V±0.075V）          |
-| VDDQ                             |          | DQ 电源（1.5V±0.075V，隔离降噪） |
-| VREFCA                           | 供电     | 控制、命令、地址的参考电压       |
-| VREFDQ                           | 供电     | 数据的参考电压                   |
-| VSS                              | 供电     | 地                               |
-| VSSQ                             | 供电     | DQ 地（隔离降噪）                |
-| ZQ                               | 参考电压 | 输出驱动校准的外部参考           |
+### DDR 储存阵列
 
 详细的描述：
 
@@ -80,6 +53,3 @@ DDR 的连接器俗称金手指（Gold Finger/Edge Connector），它是由镀�
 - VSS：
 - VSSQ：
 - ZQ：
-
-### DDR 储存阵列
-
