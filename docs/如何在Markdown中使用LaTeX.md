@@ -7,7 +7,7 @@ Markdown 原生支持使用 LaTeX 编写数学公式和符号。
 
 ## 字体样式
 
-- 换行：` \cr`
+- 换行：`\\`
 - 空格：`\`
 - 居中：使用 `$$` 包裹
 - 字体样式：加粗：`\mathbf`、斜体：`\mathit`
@@ -41,7 +41,7 @@ Markdown 原生支持使用 LaTeX 编写数学公式和符号。
 
 ## 方程组
 
-方式一：`\begin{array}{c} 表达式一 \cr表达式二... \end{array}`
+方式一：`\begin{array}{c} 表达式一\\表达式二... \end{array}`
 方式二：`\begin{cases}…\end{cases}`
 
 ## 开平方根
