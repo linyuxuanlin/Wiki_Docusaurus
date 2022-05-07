@@ -1,3 +1,7 @@
+## AD
+
+[AD 中，蛇形走线 保姆级教程](https://mp.weixin.qq.com/s/s0ZxVolXZK1EcFSmydumjw)
+
 ## 电源
 
 - [[电路]电荷泵](https://zhenhuizhang.tk/post/dian-lu-dian-he-beng/)
