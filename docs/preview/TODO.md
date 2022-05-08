@@ -4,6 +4,7 @@ volume 也是绕过 container 的文件系统，直接将数据写到 host 机�
 
 ## 电源
 
+- [一文将 DCDC 的 Layout 讲的明明白白，收藏这篇就够了](https://mp.weixin.qq.com/s/ZyAaLJtlgwa6yiRHusoI4w)
 - [[电路]电荷泵](https://zhenhuizhang.tk/post/dian-lu-dian-he-beng/)
 - [[电路]开关电源拓扑结构\_Buck_Boost_Buck-Boost](https://zhenhuizhang.tk/post/dian-lu-kai-guan-dian-yuan-tuo-bu-jie-gou-_buck_boost_buck-boost/)
 - [[电路]线性稳压器 LDO\_损耗功率与热问题](https://zhenhuizhang.tk/post/dian-lu-xian-xing-wen-ya-qi-ldo_-sun-hao-gong-lu-yu-re-wen-ti/)

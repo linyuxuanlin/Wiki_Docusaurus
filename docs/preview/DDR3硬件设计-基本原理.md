@@ -8,7 +8,6 @@ title: DDR3 硬件设计 - 基本原理
 - 《Cadence 高速 PCB 设计实战攻略\_李增-林超文》
 - [Xilinx FPGA 平台 DDR3 设计保姆式教程（汇总篇）——看这一篇就够了](https://blog.csdn.net/m0_52840978/article/details/121191410?spm=1001.2014.3001.5501)
 - [DDR3 总结笔记](https://mp.weixin.qq.com/s?__biz=Mzg5NDYyMzg3NQ==&mid=2247484794&idx=1&sn=b9f8acc771de990dcd941795330894d8&chksm=c01d8c96f76a0580216939860c46bf5edd289f14a306a92b60888f785e7146b7f71846eb9f46&token=203917856&lang=zh_CN#rd)
-- [[电路]DDR3*引脚定义*容量\_特殊功能](https://zhenhuizhang.tk/post/dian-lu-ddr3_-yin-jiao-ding-yi-_-rong-liang-_-te-shu-gong-neng/)
 
 > 文章作者：**Power Lin**  
 > 原文地址：<https://wiki-power.com>  
@@ -77,3 +76,8 @@ DDR3 引脚符号对应的类型和描述如下（以 x16 为例）：
 | ODT      | 输入 | 片上终端使能 |
 
 | RAS#, CAS#, WE# | 输入 | 命令输入 |
+
+## todo
+
+- [[电路]DDR3*引脚定义*容量\_特殊功能](https://zhenhuizhang.tk/post/dian-lu-ddr3_-yin-jiao-ding-yi-_-rong-liang-_-te-shu-gong-neng/)
+- [DDR3 自学笔记](https://zhuanlan.zhihu.com/p/97491454)
