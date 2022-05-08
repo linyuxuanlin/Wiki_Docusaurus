@@ -1,3 +1,7 @@
+volume 也是绕过 container 的文件系统，直接将数据写到 host 机器上，只是 volume 是被 docker 管理的，docker 下所有的 volume 都在 host 机器上的指定目录下/var/lib/docker/volumes
+
+---
+
 ## 电源
 
 - [[电路]电荷泵](https://zhenhuizhang.tk/post/dian-lu-dian-he-beng/)
