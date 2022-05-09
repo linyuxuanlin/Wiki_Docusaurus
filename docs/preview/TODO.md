@@ -1,6 +1,8 @@
 volume 也是绕过 container 的文件系统，直接将数据写到 host 机器上，只是 volume 是被 docker 管理的，docker 下所有的 volume 都在 host 机器上的指定目录下/var/lib/docker/volumes
 
----
+## AD
+
+[AD 中，蛇形走线 保姆级教程](https://mp.weixin.qq.com/s/s0ZxVolXZK1EcFSmydumjw)
 
 ## 电源
 
