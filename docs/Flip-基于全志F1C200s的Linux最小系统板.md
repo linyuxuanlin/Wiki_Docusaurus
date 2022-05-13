@@ -32,15 +32,15 @@ F1C200s 的基本参数如下：
 
 F1C200s 的系统架构框图：
 
-![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20220422152227.png)
+![](https://cos.wiki-power.com/img/20220422152227.png)
 
 典型应用示意图：
 
-![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20220422152450.png)
+![](https://cos.wiki-power.com/img/20220422152450.png)
 
 Pin 定义：
 
-![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20220422153239.png)
+![](https://cos.wiki-power.com/img/20220422153239.png)
 
 ## 参考与致谢
 

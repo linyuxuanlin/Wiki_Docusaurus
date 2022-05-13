@@ -7,9 +7,9 @@ title: RobotCtrl - STM32 通用开发套件
 
 项目实物效果：
 
-![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20220416181125.jpeg)
+![](https://cos.wiki-power.com/img/20220416181125.jpeg)
 
-![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20220416181139.jpeg)
+![](https://cos.wiki-power.com/img/20220416181139.jpeg)
 
 项目在线预览：
 

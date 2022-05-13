@@ -16,11 +16,11 @@ title: HAL 库开发笔记 - 串口通信
 
 ### 在 CubeMX 内配置串口
 
-![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20210207100329.png)
+![](https://cos.wiki-power.com/img/20210207100329.png)
 
 根据原理图，我们用来进行通讯实验的串口是 `USART1` ，即 `PA9` `PA10` 引脚。那么，我们首先需要在 CubeMX 内将这两个引脚配置为 `USART1` 的发送和接受功能，然后点击左侧 USART1 标签页，将模式（Mode）设为异步（Asynchronous），并在下方修改波特率（Baud Rate）等参数：
 
-![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20210207100941.png)
+![](https://cos.wiki-power.com/img/20210207100941.png)
 
 参数详情如下：
 
@@ -33,7 +33,7 @@ title: HAL 库开发笔记 - 串口通信
 
 最后，在 NVIC 标签页使能 USART1 的串口中断，如图：
 
-![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20210207104641.png)
+![](https://cos.wiki-power.com/img/20210207104641.png)
 
 ### 在代码内配置串口
 
@@ -103,7 +103,7 @@ HAL_UART_Transmit(&huart1, (uint8_t*) aTxBuffer, sizeof(aTxBuffer) - 1, 0xFFFF);
 
 连上串口后，会先打印一行 `aTxBuffer` 的内容，然后将会把接收到的 `aRxBuffer` 回传打印出来。如图：
 
-![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20210403232628.png)
+![](https://cos.wiki-power.com/img/20210403232628.png)
 
 ## 参考与致谢
 

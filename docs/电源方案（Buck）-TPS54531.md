@@ -23,11 +23,11 @@ title: 电源方案（Buck）- TPS54531
 
 ## 引脚定义
 
-![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20210713153815.png)
+![](https://cos.wiki-power.com/img/20210713153815.png)
 
 ## 参考设计
 
-![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20210713173605.png)
+![](https://cos.wiki-power.com/img/20210713173605.png)
 
 ## 参数调节
 
@@ -57,9 +57,9 @@ EN 引脚低于 1.25 V 失能，浮空以使能。这里使用两个电阻进行
 
 ## PCB 布局参考
 
-![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20210713161521.png)
+![](https://cos.wiki-power.com/img/20210713161521.png)
 
-![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20210713162833.png)
+![](https://cos.wiki-power.com/img/20210713162833.png)
 
 ## 踩坑总结
 
