@@ -36,7 +36,7 @@ F1C200s 的系统架构框图：
 
 典型应用示意图：
 
-![](https://cos.wiki-power.com/img/20220422152450.png)
+![](https://cos.wiki-power.com/img/20220513232027.png)
 
 Pin 定义：
 
@@ -52,3 +52,5 @@ Pin 定义：
 > 文章作者：**Power Lin**  
 > 原文地址：<https://wiki-power.com>  
 > 版权声明：文章采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh) 协议，转载请注明出处。
+
+## 各模块的设计
