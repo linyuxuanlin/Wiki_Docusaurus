@@ -113,7 +113,6 @@ const sidebars = {
         '电源方案（PMIC）-EA3036C',
         '电源方案（PMIC）-EA3059',
         '电源设计-LDO电源抑制比（PSRR）与测量方法',
-        //'电源设计-LDO跳变抑制能力对比测试记录',
       ],
     },
 
@@ -467,6 +466,7 @@ module.exports = sidebars;
 //'archive/团队公开知识库的搭建',
 
 // unlist：
+//'unlist/电源设计-LDO跳变抑制能力对比测试记录',
 //'unlist/CentOS安装Docker',
 //'unlist/乐谱-Imagine',
 //'unlist/Docker方式运行code-server',
