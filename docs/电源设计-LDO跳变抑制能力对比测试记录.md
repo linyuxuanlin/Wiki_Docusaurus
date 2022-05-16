@@ -3,12 +3,6 @@ id: 电源设计-LDO跳变抑制能力对比测试记录
 title: 电源设计 - LDO 跳变抑制能力对比测试记录
 ---
 
-## 参考与致谢
-
-> 文章作者：**Power Lin**  
-> 原文地址：<https://wiki-power.com>  
-> 版权声明：文章采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh) 协议，转载请注明出处。
-
 如果缺少专用仪器对 LDO 的电源抑制比（PSRR）进行准确测量，那么可以使用以下的简单方法，对 LDO 的跳变抑制能力进行基本的测试。下文对比测试了三款 LDO。
 
 测试环境：
