@@ -9,7 +9,7 @@ title: 电源设计 - LDO 电源抑制比（PSRR）与测量方法
 
 电源抑制比（Power Supply Rejection Ratio, PSRR）也称纹波抑制比，通常在 LDO 的数据手册中能找到，它代表 LDO 在某个频率下从输入到输出的衰减程度，代表不同频率下纹波抑制能力。在有些高速通信电路如 Wi-Fi、蓝牙等，就需要用上电源抑制比较大的高速 LDO，当芯片需要瞬间拉大电流时能快速响应，不至于掉到低于额定电压导致负载重启。还有一些场景是使用 DC-DC 作为一级降压、LDO 作为二级降压 / 滤波，因为 DC-DC 开关频率在 kHz-MHz 级别，即 LDO 在 100kHz 以上，就需要严格考虑 PSRR 了。
 
-![](https://cos.wiki-power.com/img/20220424100347.png)
+![](https://cos.wiki-power.com/img/20220516174303.png)
 
 电源抑制比（PSRR）用公式表示为：
 
