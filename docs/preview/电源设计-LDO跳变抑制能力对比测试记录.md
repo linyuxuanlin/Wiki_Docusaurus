@@ -34,7 +34,7 @@ title: 电源设计 - LDO 跳变抑制能力对比测试记录
 | 30mA 稳定负载纹波 | 1.50mV         | 1.42mV          | 1.03mV       |
 | 0-30mA 跳变纹波   | 7.98mV         | 11.78mV         | 1.74mV       |
 | 30-100mA 跳变纹波 | 11.23mV        | 20.16mV         | 5.06mV       |
-| 静态电流          | 0.040mA        | 0.016mA         | 0.058mA      |
+| 静态电流（空载）  | 0.040mA        | 0.016mA         | 0.058mA      |
 
 **综合看来，CL9195A33L3M 在各种情况下表现最优，比较符合高速开关的场景。**
 
@@ -54,7 +54,7 @@ title: 电源设计 - LDO 跳变抑制能力对比测试记录
 
 ![](https://cos.wiki-power.com/img/20220516140848.png)
 
-静态功耗：
+静态电流（空载）：
 
 ![](https://cos.wiki-power.com/img/20220516154859.jpg)
 
@@ -72,7 +72,7 @@ title: 电源设计 - LDO 跳变抑制能力对比测试记录
 
 ![](https://cos.wiki-power.com/img/20220516141019.png)
 
-静态功耗：
+静态电流（空载）：
 
 ![](https://cos.wiki-power.com/img/20220516154913.jpg)
 
@@ -90,7 +90,7 @@ title: 电源设计 - LDO 跳变抑制能力对比测试记录
 
 ![](https://cos.wiki-power.com/img/20220516141032.png)
 
-静态功耗：
+静态电流（空载）：
 
 ![](https://cos.wiki-power.com/img/20220516154925.jpg)
 
