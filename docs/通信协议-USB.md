@@ -36,16 +36,7 @@ title: 通信协议 - USB 🚧
 
 ![](https://cos.wiki-power.com/img/20211129094829.png)
 
-## 参考与致谢
-
-- [USB 相关介绍](https://blog.infonet.io/2020/03/21/USB%E7%9B%B8%E5%85%B3%E4%BB%8B%E7%BB%8D/)
-- [USB](https://zh.wikipedia.org/wiki/USB)
-- [USB Logo Usage Guidelines](https://www.usb.org/sites/default/files/usb-if_logo_usage_guidelines_final_103019.pdf)
-- [AN1953 | USB Type-C™ 简介](http://www.microchip.com.cn/community/Uploads/Download/Library/00001953a_cn.pdf)
-
-> 文章作者：**Power Lin**  
-> 原文地址：<https://wiki-power.com>  
-> 版权声明：文章采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh) 协议，转载请注明出处。
+---
 
 ## USB Type-C
 
@@ -119,3 +110,32 @@ Type-C 插头：
 | USB Type-C Current@1.5A | 5V       | 1.5A     |
 | USB Type-C Current@2.0A | 5V       | 3.0A     |
 | USB PD                  | 最高 20V | 最高 5A  |
+
+### CC 引脚
+
+CC 引脚使用的上下拉电阻取决于是下行端口（DFP）、上行端口（UFP）还是电子标记/有源电缆，必须始终通过端口监视才能实现插入与移除检测、方向检测、电流能力通告的功能。
+
+**主机 / 下行端口（DFP）使用上拉电阻**。上拉电阻 Rp 需同时连接至 CC1 与 CC2 引脚，并上拉至 3.3V/5V/电流源。上拉电阻的取值将向设备通过端口的供电电流能力，如下表所示：
+
+| DFP 供电电流能力                            | 上拉至 4.75V~5.5V | 上拉至 3.3V±5% | 至 1.7~5.5V 电流源 |
+| ------------------------------------------- | ----------------- | -------------- | ------------------ |
+| 默认 USB 功率（USB2.0-500mA，USB3.0-900mA） | 56kΩ±20%          | 36kΩ±20%       | 80µA±20%           |
+| 1.5A@5V                                     | 22kΩ±5%           | 12kΩ±5%        | 180µA±8%           |
+| 3A@5V                                       | 10kΩ±5%           | 4.7kΩ±5%       | 330µA±8%           |
+
+**设备 / 上行端口（UFP）使用下拉电阻或电压钳位**。下拉电阻 Rd 的值恒定为 5.1kΩ±10%。
+
+电缆方向检测，如果 CC1 引脚检测到有效的上下拉，则代表正向（未翻转）；如果 CC1 检测到，则代表反向（已翻转）：
+
+![](https://cos.wiki-power.com/img/20220520141738.png)
+
+## 参考与致谢
+
+- [USB 相关介绍](https://blog.infonet.io/2020/03/21/USB%E7%9B%B8%E5%85%B3%E4%BB%8B%E7%BB%8D/)
+- [USB](https://zh.wikipedia.org/wiki/USB)
+- [USB Logo Usage Guidelines](https://www.usb.org/sites/default/files/usb-if_logo_usage_guidelines_final_103019.pdf)
+- [AN1953 | USB Type-C™ 简介](http://www.microchip.com.cn/community/Uploads/Download/Library/00001953a_cn.pdf)
+
+> 文章作者：**Power Lin**  
+> 原文地址：<https://wiki-power.com>  
+> 版权声明：文章采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh) 协议，转载请注明出处。
