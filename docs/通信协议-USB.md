@@ -107,8 +107,8 @@ Type-C 插头：
 | USB2.0                  | 5V       | 500 mA   |
 | USB3.0/USB3.1           | 5V       | 900 mA   |
 | USB BC1.2               | 5V       | 1.5A     |
-| USB Type-C Current@1.5A | 5V       | 1.5A     |
-| USB Type-C Current@2.0A | 5V       | 3.0A     |
+| USB Type-C Current @ 1.5A | 5V       | 1.5A     |
+| USB Type-C Current @ 2.0A | 5V       | 3.0A     |
 | USB PD                  | 最高 20V | 最高 5A  |
 
 ### CC 引脚
