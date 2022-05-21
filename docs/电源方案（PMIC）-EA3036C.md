@@ -151,7 +151,6 @@ PMIC 的 Layout 需要讲究。可参照以下建议以获得最高性能：
 ## 参考与致谢
 
 - [EA3036C](http://www.everanalog.com/Product/ProductEA3036CDetailInfo.aspx)
-- [EA3059](http://www.everanalog.com/ProductCN/ProductEA3059DetailInfoCN.aspx）
 
 > 文章作者：**Power Lin**  
 > 原文地址：<https://wiki-power.com>  
