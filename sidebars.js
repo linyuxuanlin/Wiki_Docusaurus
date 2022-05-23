@@ -133,6 +133,8 @@ const sidebars = {
         '信号与电源完整性-失真',
         '信号与电源完整性-串扰',
         '电源完整性设计',
+        'ESD基础知识',
+        'EMC设计指南',
       ],
     },
 
@@ -153,20 +155,6 @@ const sidebars = {
         '射频-谐振电路-无损组件的共振',
         '射频-谐振电路-负载Q值',
         '射频-无线电波与天线',
-      ],
-    },
-
-    {
-      type: 'category',
-      label: '电磁兼容',
-      link: {
-        type: 'generated-index',
-        //description: ' ',
-        keywords: ['x', 'x'],
-      },
-      items: [
-        'ESD基础知识',
-        'EMC设计指南',
       ],
     },
 
