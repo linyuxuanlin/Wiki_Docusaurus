@@ -1,9 +1,22 @@
 ---
 id: Flip-基于全志F1C200s的Linux最小系统板
-title: Flip - 基于全志 F1C200s 的 Linux 最小系统板
+title: Flip - 基于全志 F1C200s 的 Linux 最小系统板 🚧
 ---
 
 项目仓库：[**linyuxuanlin/Flip**](https://github.com/linyuxuanlin/Flip)
+
+项目实物效果：
+
+🚧
+
+项目在线预览 🚧：
+
+<div class="iframe_viewer">
+    <iframe 
+    scrolling="no"
+  src="https://viewer.wiki-power.com/Flip.html"
+></iframe>
+</div>
 
 F1C100s/F1C200s 基于 ARM9 CPU 架构，封装相同，区别仅仅是 F1C100S 内置 32MB DDR1 内存，而 F1C200S 为 64MB。
 
