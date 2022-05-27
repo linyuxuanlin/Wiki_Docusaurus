@@ -3,6 +3,21 @@ id: RobotCtrl_Core-核心板
 title: RobotCtrl_Core - 核心板
 ---
 
+![](https://cos.wiki-power.com/img/20220527113423.png)
+
+项目仓库：[**linyuxuanlin/RobotCtrl/RobotCtrl_Core**](https://github.com/linyuxuanlin/RobotCtrl/tree/main/RobotCtrl_MultiBoard_Project/RobotCtrl_Core)
+
+项目在线预览：
+
+<div class="iframe_viewer">
+    <iframe 
+    scrolling="no"
+  src="https://viewer.wiki-power.com/RobotCtrl_Core.html"
+></iframe>
+</div>
+
+注：项目包含于 [**RobotCtrl - STM32 通用开发套件**](https://wiki-power.com/RobotCtrl-STM32%E9%80%9A%E7%94%A8%E5%BC%80%E5%8F%91%E5%A5%97%E4%BB%B6)。
+
 ## 主要功能
 
 - 单片机系统
@@ -15,7 +30,7 @@ title: RobotCtrl_Core - 核心板
 - 供电稳压电路（5V 转 3.3V，引出测试点）
 - 用户按键与 LED
 
-## 记录
+## 设计参数
 
 ### 启动模式
 
@@ -42,6 +57,10 @@ title: RobotCtrl_Core - 核心板
 ### 下载调试接口
 
 - 直接引出，不需要外部上拉／下拉电阻（因为 STM32 内部有集成）。
+
+## 硬件测试
+
+主控核心板的电源测试，通过 USB 或 B2B 输入 5V，测量 3.3V 的测试点的电压；功能测试通过烧录初始程序，实现用户按键控制用户 LED、USB 虚拟串口通信即通过验证。
 
 ## 参考与致谢
 

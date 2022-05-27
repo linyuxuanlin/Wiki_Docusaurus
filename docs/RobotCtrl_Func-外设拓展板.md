@@ -3,6 +3,21 @@ id: RobotCtrl_Func-外设拓展板
 title: RobotCtrl_Func - 外设拓展板
 ---
 
+![](https://cos.wiki-power.com/img/20220527113505.png)
+
+项目仓库：[**linyuxuanlin/RobotCtrl/RobotCtrl_Func**](https://github.com/linyuxuanlin/RobotCtrl/tree/main/RobotCtrl_MultiBoard_Project/RobotCtrl_Func)
+
+项目在线预览：
+
+<div class="iframe_viewer">
+    <iframe 
+    scrolling="no"
+  src="https://viewer.wiki-power.com/RobotCtrl_Func.html"
+></iframe>
+</div>
+
+注：项目包含于 [**RobotCtrl - STM32 通用开发套件**](https://wiki-power.com/RobotCtrl-STM32%E9%80%9A%E7%94%A8%E5%BC%80%E5%8F%91%E5%A5%97%E4%BB%B6)。
+
 ## 主要功能
 
 - 12V 电源输入，5V 电源输入 / 输出，3.3V 电源输出（引出测试点）
@@ -21,11 +36,7 @@ title: RobotCtrl_Func - 外设拓展板
 - USART1/UART5 接口
 - SW 下载接口
 
----
-
-## 测试
-
-版本：V0.7B
+## 硬件测试
 
 ### 电源测试
 
