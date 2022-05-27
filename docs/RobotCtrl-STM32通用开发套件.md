@@ -9,6 +9,12 @@ title: RobotCtrl - STM32 通用开发套件
 
 项目仓库：[**linyuxuanlin/RobotCtrl**](https://github.com/linyuxuanlin/RobotCtrl)
 
+RobotCtrl - STM32 通用开发套件包含三块板子：
+
+- [**RobotCtrl_Core - 核心板**](https://wiki-power.com/RobotCtrl_Core-%E6%A0%B8%E5%BF%83%E6%9D%BF)
+- [**RobotCtrl_Core - 外设拓展板**](https://wiki-power.com/RobotCtrl_Func-%E5%A4%96%E8%AE%BE%E6%8B%93%E5%B1%95%E6%9D%BF)
+- [**RobotCtrl_Power - 电源供电板**](https://wiki-power.com/RobotCtrl_Power-%E7%94%B5%E6%BA%90%E4%BE%9B%E7%94%B5%E6%9D%BF)
+
 项目在线预览：
 
 **RobotCtrl_Core**:
@@ -79,6 +85,10 @@ RobotCtrl_Power 原理图设计主要由 XT60 双电源输入、24V 转 12V、24
 稳压 12V/5V 电路的设计，选用了基于 LMR14050 的 Buck 非隔离开关稳压方案。根据 Buck 拓扑的原理（如图 2-9 所示）与稳压芯片数据手册的参考，分别挑选反馈电阻的阻值，计算比例使输出保持为 12V/5V。在选择电感的型号时，需要注意最大饱和电流需要大于脉动电流，且留足余量；二极管选择肖特基二极管以实现高速开关，其电压和电流也需要满足电路的需求。此外，输入和输出都需要并联大小去耦电容，以滤除纹波。
 
 使能开关可控制稳压输出的开启与关闭，接入 Buck 芯片的使能引脚以实现稳压输出的软开启与软关断。电源指示灯可向用户指示 12V/5V 稳压的输出状态。
+
+## 参考与致谢
+
+本项目是我个人的毕业设计，在项目的设计焊接调试中遇到了诸多大大小小的问题，在导师、同事、朋友们的鼎力相助下，最终得以成功出炉，也拿到了学校的优秀毕设荣誉。
 
 > 文章作者：**Power Lin**  
 > 原文地址：<https://wiki-power.com>  
