@@ -3,11 +3,11 @@ id: Flip-基于全志F1C200s的Linux最小系统板
 title: Flip - 基于全志 F1C200s 的 Linux 最小系统板 🚧
 ---
 
+![](https://cos.wiki-power.com/img/20220527234815.jpeg)
+
+![](https://cos.wiki-power.com/img/20220527234855.jpeg)
+
 项目仓库：[**linyuxuanlin/Flip**](https://github.com/linyuxuanlin/Flip)
-
-项目实物效果：
-
-🚧
 
 项目在线预览 🚧：
 
