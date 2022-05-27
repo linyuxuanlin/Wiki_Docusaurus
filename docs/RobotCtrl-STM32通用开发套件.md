@@ -15,35 +15,6 @@ RobotCtrl - STM32 通用开发套件包含三块板子：
 - [**RobotCtrl_Core - 外设拓展板**](https://wiki-power.com/RobotCtrl_Func-%E5%A4%96%E8%AE%BE%E6%8B%93%E5%B1%95%E6%9D%BF)
 - [**RobotCtrl_Power - 电源供电板**](https://wiki-power.com/RobotCtrl_Power-%E7%94%B5%E6%BA%90%E4%BE%9B%E7%94%B5%E6%9D%BF)
 
-项目在线预览：
-
-**RobotCtrl_Core**:
-
-<div class="iframe_viewer">
-    <iframe 
-    scrolling="no"
-  src="https://viewer.wiki-power.com/RobotCtrl_Core.html"
-></iframe>
-</div>
-
-**RobotCtrl_Func**:
-
-<div class="iframe_viewer">
-    <iframe 
-    scrolling="no"
-  src="https://viewer.wiki-power.com/RobotCtrl_Func.html"
-></iframe>
-</div>
-
-**RobotCtrl_Power**:
-
-<div class="iframe_viewer">
-    <iframe 
-    scrolling="no"
-  src="https://viewer.wiki-power.com/RobotCtrl_Power.html"
-></iframe>
-</div>
-
 ## 设计需求
 
 ![](https://cos.wiki-power.com/img/20220527111854.png)
