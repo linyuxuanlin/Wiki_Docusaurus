@@ -9,7 +9,7 @@ title: Flip - 基于全志 F1C200s 的 Linux 最小系统板 🚧
 
 项目仓库：[**linyuxuanlin/Flip**](https://github.com/linyuxuanlin/Flip)
 
-项目在线预览 🚧：
+项目在线预览 ：
 
 <div class="iframe_viewer">
     <iframe 
