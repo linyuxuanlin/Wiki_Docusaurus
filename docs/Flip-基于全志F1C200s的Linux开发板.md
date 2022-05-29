@@ -1,6 +1,6 @@
 ---
-id: Flip-基于全志F1C200s的Linux最小系统板
-title: Flip - 基于全志 F1C200s 的 Linux 最小系统板 🚧
+id: Flip-基于全志F1C200s的Linux开发板
+title: Flip - 基于全志 F1C200s 的 Linux 开发板
 ---
 
 ![](https://cos.wiki-power.com/img/20220527234815.jpeg)
