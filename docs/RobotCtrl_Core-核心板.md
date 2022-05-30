@@ -18,7 +18,7 @@ title: RobotCtrl_Core - 核心板
 
 注：项目包含于 [**RobotCtrl - STM32 通用开发套件**](https://wiki-power.com/RobotCtrl-STM32%E9%80%9A%E7%94%A8%E5%BC%80%E5%8F%91%E5%A5%97%E4%BB%B6)。
 
-## 硬件设计
+## 原理图设计
 
 RobotCtrl_Core 的主要功能如下：
 
