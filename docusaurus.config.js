@@ -161,6 +161,12 @@ const config = {
             label: "博客",
             position: "right",
           },
+          {
+            href: 'https://github.com/linyuxuanlin/Wiki_Docusaurus',
+            position: 'right',
+            className: 'header-github-link',
+            'aria-label': 'GitHub repository',
+          },
 
 
         ],
