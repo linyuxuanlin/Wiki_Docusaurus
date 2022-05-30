@@ -18,7 +18,9 @@ title: RobotCtrl_Func - 外设拓展板
 
 注：项目包含于 [**RobotCtrl - STM32 通用开发套件**](https://wiki-power.com/RobotCtrl-STM32%E9%80%9A%E7%94%A8%E5%BC%80%E5%8F%91%E5%A5%97%E4%BB%B6)。
 
-## 主要功能
+## 原理图设计
+
+RobotCtrl_Func 的主要功能如下：
 
 - 12V 电源输入，5V 电源输入 / 输出，3.3V 电源输出（引出测试点）
 - 5V 转 3.3V 供电稳压电路（2 路，供传感器 / 以太网，引出测试点）
