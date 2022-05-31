@@ -24,9 +24,9 @@ RobotCtrl_Func 的主要功能如下：
 
 - 12V 电源输入，5V 电源输入 / 输出，3.3V 电源输出（引出测试点）
 - 5V 转 3.3V 供电稳压电路 \* 2（供传感器 / 以太网，引出测试点）
-- 串口通信电路（RS-232 与 TTL 电平）
-- CAN 通信电路 \* 2
 - 以太网通信电路
+- CAN 通信电路 \* 2
+- 串口通信电路（RS-232 与 TTL 电平）
 - 蜂鸣器电路
 - 用户按键 \* 2
 - 用户 LED \* 3
@@ -39,21 +39,21 @@ RobotCtrl_Func 的主要功能如下：
 
 ### 电源
 
-RobotCtrl_Func 板载 2 路 LDO
+RobotCtrl_Func 板载 2 路 LDO，原理与 RobotCtrl_Core 中相似，其中一路供外设传感器使用，另一路供以太网电路单独使用。
+
+### 以太网通信电路
+
+以太网通信基于以太网 PHY 芯片，使用 RMII 接口与单片机通信，通过内置隔离变压器的 RJ45 网口外接网线通信。以太网电路的时钟采用外部 25M 无源晶振，且需要独立供电以减小电源干扰，这里使用了与核心板相同的低压差线性稳压器供电方案，为以太网电路单独供电。以太网通信的原理可以参考文章 [**HAL 库开发笔记 - 以太网通信（LwIP）**](https://wiki-power.com/HAL%E5%BA%93%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0-%E4%BB%A5%E5%A4%AA%E7%BD%91%E9%80%9A%E4%BF%A1%EF%BC%88LwIP%EF%BC%89)。
+
+### CAN 通信电路
+
+CAN 通信电路基于 CAN 收发芯片搭建，通过 CAN 差分电平传输。CAN 协议控制器（例如单片机）通过串行线（RX/TX）连接到收发器，在收发器上转换为 CAN 信号（CANH/CANL），并通过 RS 引脚来选择高速 / 静音模式。CAN 总线上需加 120Ω 末端电阻，以匹配阻抗，减少信号的反射。CAN 通信的原理可参考文章 [**通信协议 - CAN**](https://wiki-power.com/%E9%80%9A%E4%BF%A1%E5%8D%8F%E8%AE%AE-CAN) 与 [**HAL 库开发笔记 - 串口通信**](https://wiki-power.com/HAL%E5%BA%93%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0-CAN%E9%80%9A%E4%BF%A1)。
 
 ### 串口通信电路
 
 RobotCtrl_Func 板载了 RS-232 电平的串口通信电路，并额外引出了 TTL 电平的 USART1/UART5。串口通信的原理可参考文章 [**通信协议 - 串口通信**](https://wiki-power.com/%E9%80%9A%E4%BF%A1%E5%8D%8F%E8%AE%AE-%E4%B8%B2%E5%8F%A3%E9%80%9A%E4%BF%A1) 与 [**HAL 库开发笔记 - 串口通信**](https://wiki-power.com/HAL%E5%BA%93%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0-%E4%B8%B2%E5%8F%A3%E9%80%9A%E4%BF%A1)。
 
 RS-232 通信电路是采用 TTL 转 232 电平的芯片，将单片机的 TTL 转换为 RS-232 电平。为提高 EMC 性能，DB9 座子外壳连接引脚可对地接 TVS 二极管，TTL 转 232 芯片需要外加电源去耦与自举电容。
-
-### CAN 通信电路
-
-CAN 通信电路基于 CAN 收发芯片搭建，通过 CAN 差分电平传输。CAN 协议控制器（例如单片机）通过串行线（RX/TX）连接到收发器，在收发器上转换为 CAN 信号（CANH/CANL），并通过 RS 引脚来选择高速 / 静音模式。CAN 总线上需加 120Ω 末端电阻，以匹配阻抗，减少信号的反射。CAN 通信的原理可参考文章 [**通信协议 - CAN**](https://wiki-power.com/%E9%80%9A%E4%BF%A1%E5%8D%8F%E8%AE%AE-CAN) 与 [**HAL 库开发笔记 - 串口通信**](https://wiki-power.com/HAL%E5%BA%93%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0-CAN%E9%80%9A%E4%BF%A1)。
-
-### 以太网通信电路
-
-以太网通信基于以太网 PHY 芯片，使用 RMII 接口与单片机通信，通过内置隔离变压器的 RJ45 网口外接网线通信。以太网电路的时钟采用外部 25M 无源晶振，且需要独立供电以减小电源干扰，这里使用了与核心板相同的低压差线性稳压器供电方案，为以太网电路单独供电。以太网通信的原理可以参考文章 [**HAL 库开发笔记 - 以太网通信（LwIP）**](https://wiki-power.com/HAL%E5%BA%93%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0-%E4%BB%A5%E5%A4%AA%E7%BD%91%E9%80%9A%E4%BF%A1%EF%BC%88LwIP%EF%BC%89)。
 
 ### 蜂鸣器电路
 
