@@ -17,7 +17,7 @@ RobotCtrl - STM32 通用开发套件包含三块板子：
 
 ![](https://cos.wiki-power.com/img/20220527111854.png)
 
-注：以下为设计摘要，具体内容请跳转具体文章查看。
+注：以下为设计摘要，具体内容请跳转相关文章。
 
 ### RobotCtrl_Core 的设计思路
 
