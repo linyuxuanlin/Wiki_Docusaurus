@@ -401,7 +401,7 @@ const sidebars = {
         keywords: ['x', 'x'],
       },
       items: [
-        '如何用LaTeX写论文',
+        
         '基于RSSHub搭建RSS生成器（群晖Docker）', // CSDN
         '基于Bitwarden搭建密码管理器（群晖Docker）', // CSDN
         '基于acme.sh自动申请域名证书（群晖Docker）', // CSDN
@@ -471,6 +471,7 @@ module.exports = sidebars;
 //'unlist/浅谈Bitcron博客平台',
 //'unlist/基于docsify搭建个人Wiki',
 //'unlist/PCB名片的设计',
+//'unlist/如何用LaTeX写论文',
 
 // preview
 //'我是如何做数据容灾的',
