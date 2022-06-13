@@ -5,6 +5,7 @@ title: FreeRTOS 开发笔记 🚧
 
 ## 参考与致谢
 
+- [FreeRTOS(Official Website)](https://www.freertos.org/)
 - [STM32F429 FreeRTOS 开发手册 | 正点原子](https://www.amobbs.com/forum.php?mod=attachment&aid=NDE1MDY4fDZkYTVmZjIzfDE2NTUxMTY4NjB8MHw1NjkzMTMw)
 
 > 文章作者：**Power Lin**  
