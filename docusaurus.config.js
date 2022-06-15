@@ -22,7 +22,7 @@ const config = {
   //  'https://cos.ap-guangzhou.myqcloud.com/wiki-media-1253965369/doc/embed.js',
   //  'https://cos.ap-guangzhou.myqcloud.com/wiki-media-1253965369/doc/autoFitIframe.js'
   //],
-/*
+
   themes: [
     // ... Your other themes.
     [
@@ -41,7 +41,6 @@ const config = {
       },
     ],
   ],
-  */
 
 
   presets: [
@@ -104,7 +103,7 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      
+      /*
             algolia: {
               // The application ID provided by Algolia
               appId: 'IRO903CONI',
@@ -127,8 +126,9 @@ const config = {
               searchPagePath: 'search',
 
               //... other Algolia params
-            },
+            },*/
 
+      //sidebarCollapsible: true, //默认折叠
 
       image: 'https://cos.ap-guangzhou.myqcloud.com/wiki-media-1253965369/doc/logo-zip.png',
 
