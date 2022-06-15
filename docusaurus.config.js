@@ -64,12 +64,8 @@ const config = {
           remarkPlugins: [math],
           rehypePlugins: [katex],
 
-/*
-          sidebar: {
-            hideable: true,
-            autoCollapseCategories: true,
-          },
-          */
+
+          
 
 
         },
@@ -137,6 +133,10 @@ const config = {
       image: 'https://cos.ap-guangzhou.myqcloud.com/wiki-media-1253965369/doc/logo-zip.png',
 
 
+      sidebar: {
+        hideable: true,
+        autoCollapseCategories: true,
+      },
 
       navbar: {
         title: 'Power\'s Wiki',
