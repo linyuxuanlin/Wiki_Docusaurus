@@ -22,26 +22,26 @@ const config = {
   //  'https://cos.ap-guangzhou.myqcloud.com/wiki-media-1253965369/doc/embed.js',
   //  'https://cos.ap-guangzhou.myqcloud.com/wiki-media-1253965369/doc/autoFitIframe.js'
   //],
-  /*
-    themes: [
-      // ... Your other themes.
-      [
-        require.resolve("@easyops-cn/docusaurus-search-local"),
-        {
-          // ... Your options.
-          // `hashed` is recommended as long-term-cache of index file is possible.
-          hashed: true,
-          // For Docs using Chinese, The `language` is recommended to set to:
-          // ```
-          language: ["en", "zh"],
-          // ```
-          indexDocs: true,
-          indexBlog: true,
-          indexPages: true,
-        },
-      ],
+/*
+  themes: [
+    // ... Your other themes.
+    [
+      require.resolve("@easyops-cn/docusaurus-search-local"),
+      {
+        // ... Your options.
+        // `hashed` is recommended as long-term-cache of index file is possible.
+        hashed: true,
+        // For Docs using Chinese, The `language` is recommended to set to:
+        // ```
+        language: ["en", "zh"],
+        // ```
+        indexDocs: true,
+        indexBlog: true,
+        indexPages: true,
+      },
     ],
-    */
+  ],
+  */
 
 
   presets: [
@@ -104,30 +104,30 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      
+            algolia: {
+              // The application ID provided by Algolia
+              appId: 'IRO903CONI',
 
-      algolia: {
-        // The application ID provided by Algolia
-        appId: 'IRO903CONI',
+              // Public API key: it is safe to commit it
+              apiKey: 'defe7fd8690822eed8e3c94801bab286',
 
-        // Public API key: it is safe to commit it
-        apiKey: 'defe7fd8690822eed8e3c94801bab286',
+              indexName: 'wiki-power',
 
-        indexName: 'wiki-power',
+              // Optional: see doc section below
+              contextualSearch: true,
 
-        // Optional: see doc section below
-        contextualSearch: true,
+              // Optional: Specify domains where the navigation should occur through window.location instead on history.push. Useful when our Algolia config crawls multiple documentation sites and we want to navigate with window.location.href to them.
+              //externalUrlRegex: 'external\\.com|domain\\.com',
 
-        // Optional: Specify domains where the navigation should occur through window.location instead on history.push. Useful when our Algolia config crawls multiple documentation sites and we want to navigate with window.location.href to them.
-        //externalUrlRegex: 'external\\.com|domain\\.com',
+              // Optional: Algolia search parameters
+              searchParameters: {},
 
-        // Optional: Algolia search parameters
-        searchParameters: {},
+              // Optional: path for search page that enabled by default (`false` to disable it)
+              searchPagePath: 'search',
 
-        // Optional: path for search page that enabled by default (`false` to disable it)
-        searchPagePath: 'search',
-
-        //... other Algolia params
-      },
+              //... other Algolia params
+            },
 
 
       image: 'https://cos.ap-guangzhou.myqcloud.com/wiki-media-1253965369/doc/logo-zip.png',
