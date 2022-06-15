@@ -25,7 +25,8 @@
     "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0",
     "rehype-katex": "^5.0.0",
-    "remark-math": "^3.0.1"
+    "remark-math": "^3.0.1",
+    "@node-rs/jieba-linux-x64-gnu": "lastest"
   },
   "browserslist": {
     "production": [
