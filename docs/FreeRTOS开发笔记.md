@@ -12,3 +12,6 @@ title: FreeRTOS 开发笔记 🚧
 > 原文地址：<https://wiki-power.com>  
 > 版权声明：文章采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh) 协议，转载请注明出处。
 
+## 下载安装
+
+首先，跳转官方下载页面 [**Download FreeRTOS**](https://www.freertos.org/a00104.html) 下载最新的安装器。
