@@ -63,11 +63,6 @@ const config = {
           breadcrumbs: false,
           remarkPlugins: [math],
           rehypePlugins: [katex],
-
-
-
-
-
         },
 
         blog: {
@@ -84,6 +79,13 @@ const config = {
             description: 'Power\'s Wiki 的博客 RSS',
             copyright: `Copyright © ${new Date().getFullYear()} Power Lin.`,
           },
+        },
+
+        sitemap: {
+          changefreq: 'always',
+          priority: 1.0,
+          //ignorePatterns: ['/tags/**'],
+          filename: 'sitemap.xml',
         },
 
         theme: {
