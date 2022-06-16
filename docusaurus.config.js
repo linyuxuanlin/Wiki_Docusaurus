@@ -130,6 +130,11 @@ const config = {
 
       //sidebarCollapsible: true, //默认折叠
 
+      metadata: [{
+        name: 'keywords',
+        content: 'hardware, STM32, Arduino, NAS, software, blog'
+      }],
+
       image: 'https://cos.ap-guangzhou.myqcloud.com/wiki-media-1253965369/doc/logo-zip.png',
 
       docs: {
