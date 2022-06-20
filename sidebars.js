@@ -137,6 +137,7 @@ const sidebars = {
         '电源完整性设计',
         'ESD基础知识',
         'EMC设计指南',
+        '信号地与机壳地间的EMC设计',
       ],
     },
 
@@ -404,7 +405,7 @@ const sidebars = {
         keywords: ['x', 'x'],
       },
       items: [
-        
+
         '基于RSSHub搭建RSS生成器（群晖Docker）', // CSDN
         '基于Bitwarden搭建密码管理器（群晖Docker）', // CSDN
         '基于acme.sh自动申请域名证书（群晖Docker）', // CSDN
