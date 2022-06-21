@@ -3,9 +3,18 @@ id: 电源方案（Buck）-TPS54531
 title: 电源方案（Buck）- TPS54531
 ---
 
-注：此方案因芯片缺货，不推荐使用。
+项目仓库： [**Collection_of_Power_Module_Design/DC-DC(Buck)/TPS54531**](<https://github.com/linyuxuanlin/Collection_of_Power_Module_Design/tree/main/DC-DC(Buck)/TPS54531>)
 
-项目地址：**<https://github.com/linyuxuanlin/Modularity_of_Functional_Circuit/tree/master/Power/TPS54531>**
+项目在线预览：
+
+<div class="iframe_viewer">
+    <iframe 
+    scrolling="no"
+  src="https://viewer.wiki-power.com/TPS54531.html"
+></iframe>
+</div>
+
+## 主要特性
 
 - **原理**：DC/DC（Buck）
 - **输入电压**：3.5-28 V
