@@ -339,7 +339,6 @@ const sidebars = {
         'VSCode的便携模式',
         '开启Chrome（Edge）多线程下载',
         '移除Chrome（Edge）由组织管理',
-        '使用Rclone同步网盘数据',
         '用群晖自带反向代理实现HTTPS访问',
         '解决Google相册导出时间信息丢失问题',
         '使用gitignore忽略特殊文件',
@@ -414,6 +413,7 @@ const sidebars = {
         '如何实现外网RDP远控（frp）', // CSDN
         '使用rdp访问群晖NAS', // CSDN
         '如何用Markdown写一份简历', // CSDN
+        '使用Rclone同步网盘数据',
         '为什么你需要一个知识库', // CSDN
         '个人文案排版规范', // CSDN todo
         '技术文档写作规范', // CSDN todo
