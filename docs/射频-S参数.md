@@ -25,15 +25,15 @@ S11 指的是相对于端口 1 的入射信号，端口 1 的反射信号，$S11
 
 S21 指的是相对于端口 1 的入射信号，端口 2 的传输信号，$S21=\frac{S_{Transmission}}{S_{Incident}}$。
 
-![](https://cos.wiki-power.com/img/20220621000002.gif)
-
 ### S12
+
+![](https://cos.wiki-power.com/img/20220621000002.gif)
 
 S12 指的是相对于端口 2 的入射信号，端口 1 的传输信号，$S12=\frac{S_{Transmission}}{S_{Incident}}$。
 
-![](https://cos.wiki-power.com/img/20220621000003.gif)
-
 ### S22
+
+![](https://cos.wiki-power.com/img/20220621000003.gif)
 
 S22 指的是相对于端口 2 的入射信号，端口 2 的反射信号，$S22=\frac{S_{Reflection}}{S_{Incident}}$。
 
