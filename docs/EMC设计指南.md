@@ -5,26 +5,24 @@ title: EMC 设计指南
 
 电磁兼容性（Electromagnetic Compatibility）指的是设备在其电磁环境中能正常工作且不对环境中任何事物构成不能承受的电磁骚扰的能力，通俗地说，就是你的板子不怕别人干扰，也尽量不去干扰别人，达到「兼容」的状态。
 
-电磁兼容性（EMC）包括电磁干扰（EMI，Electro-Magnetic Interference）和电磁耐受性（EMS，Electro-Magnetic Susceptibility）。
+**电磁兼容性（EMC）**包括 **电磁干扰（EMI，Electro-Magnetic Interference）**和 **电磁耐受性（EMS，Electro-Magnetic Susceptibility）**。
 
-![](https://cos.wiki-power.com/img/20211215225137.png)
+EMI 有以下要素：
 
-EMI 分为以下方面：
+- **辐射发射（RE，Radiated Emission）**：指干扰源通过空间把其信号耦合（干扰）到另一个电网络。
+- **传导发射（CE，Conducted Emission）**：指通过导电介质把一个电网络上的信号耦合（干扰）到另一个电网络。
+- **谐波（Harmonic）**：谐波电流骚扰测试。
+- **闪烁（Flicker）**：电压变化和闪烁测试。
 
-- 辐射发射（RE，Radiated Emission）：指干扰源通过空间把其信号耦合（干扰）到另一个电网络。
-- 传导发射（CE，Conducted Emission）：指通过导电介质把一个电网络上的信号耦合（干扰）到另一个电网络。
-- 谐波（Harmonic）：谐波电流骚扰测试
-- 闪烁（Flicker）：电压变化和闪烁测试
+EMS 有以下要素：
 
-EMS 分为以下方面：
-
-- 辐射抗扰（RS）：射频电磁场辐射抗扰度测试
-- 传导抗扰（CS）：射频场感应的传导骚扰抗扰度测试
-- 防静电（ESD）：静电抗扰度测试
-- 瞬态脉冲干扰（EFT）：电快速瞬变脉冲群抗扰度测试
-- 电压暂降（DIP）：短时中断和电压变化抗扰度测试
-- 浪涌、雷击（SURGE）：浪涌（冲击）抗扰度测试
-- 工频磁场抗扰（PFMF）：工频磁场抗扰度测试
+- **辐射抗扰（RS）**：射频电磁场辐射抗扰度测试。
+- **传导抗扰（CS）**：射频场感应的传导骚扰抗扰度测试（大电流注入）。
+- **防静电（ESD）**：静电抗扰度测试（静电放电实验）。
+- **瞬态脉冲干扰（EFT）**：电快速瞬变脉冲群抗扰度测试。
+- **电压暂降（DIP）**：短时中断和电压变化抗扰度测试。
+- **浪涌、雷击（SURGE）**：浪涌（雷击）抗扰度测试。
+- **工频磁场抗扰（PFMF）**：工频磁场抗扰度测试。
 
 ## EMC 优化基本方法
 
