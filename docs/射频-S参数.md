@@ -19,9 +19,7 @@ S 参数的名称规范是，第一个数字代表测量的端口，第二个代
 
 S11 指的是相对于端口 1 的入射信号，端口 1 的反射信号。
 
-$$
-S11=\frac{S_{Reflection}}{S_{Incident}}
-$$
+$S11=\frac{S_{Reflection}}{S_{Incident}}$
 
 ### S21
 
@@ -29,9 +27,7 @@ $$
 
 S21 指的是相对于端口 1 的入射信号，端口 2 的传输信号。
 
-$$
-S21=\frac{S_{Transmission}}{S_{Incident}}
-$$
+$S21=\frac{S_{Transmission}}{S_{Incident}}$
 
 ### S12
 
@@ -39,9 +35,7 @@ $$
 
 S12 指的是相对于端口 2 的入射信号，端口 1 的传输信号。
 
-$$
-S12=\frac{S_{Transmission}}{S_{Incident}}
-$$
+$S12=\frac{S_{Transmission}}{S_{Incident}}$
 
 ### S22
 
@@ -49,9 +43,7 @@ $$
 
 S22 指的是相对于端口 2 的入射信号，端口 2 的反射信号。
 
-$$
-S22=\frac{S_{Reflection}}{S_{Incident}}
-$$
+$S22=\frac{S_{Reflection}}{S_{Incident}}$
 
 ## 参考与致谢
 
