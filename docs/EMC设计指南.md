@@ -7,7 +7,7 @@ title: EMC 设计指南
 
 电磁兼容性（EMC）包括电磁干扰（EMI，Electro-Magnetic Interference）和电磁耐受性（EMS，Electro-Magnetic Susceptibility）。
 
-![](https://cos.wiki-power.com/img/20211215225136.png)
+![](https://cos.wiki-power.com/img/20211215225137.png)
 
 EMI 分为以下方面：
 
