@@ -52,7 +52,7 @@ const sidebars = {
         'STM32F4硬件开发',
         'SwiftCtrl-蓝牙手柄',
         '自制CMSIS-DAP',
-        'X86平台的硬件测试',
+        //'X86平台的硬件测试',
       ],
     },
 
