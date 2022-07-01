@@ -25,6 +25,7 @@ const config = {
 
   themes: [
     // ... Your other themes.
+    /*
     [
       require.resolve("@easyops-cn/docusaurus-search-local"),
       {
@@ -39,7 +40,7 @@ const config = {
         indexBlog: true,
         indexPages: true,
       },
-    ],
+    ],*/
   ],
 
 
@@ -105,30 +106,34 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      /*
-            algolia: {
-              // The application ID provided by Algolia
-              appId: 'IRO903CONI',
 
-              // Public API key: it is safe to commit it
-              apiKey: 'defe7fd8690822eed8e3c94801bab286',
+      algolia: {
 
-              indexName: 'wiki-power',
+        apiKey: '5c07d8bf9c9928c4453857f6cad0420e',
+        indexName: 'wiki-power',
 
-              // Optional: see doc section below
-              contextualSearch: true,
+        // The application ID provided by Algolia
+        appId: 'IRO903CONI',
 
-              // Optional: Specify domains where the navigation should occur through window.location instead on history.push. Useful when our Algolia config crawls multiple documentation sites and we want to navigate with window.location.href to them.
-              //externalUrlRegex: 'external\\.com|domain\\.com',
+        // Public API key: it is safe to commit it
+        // apiKey: 'defe7fd8690822eed8e3c94801bab286',
 
-              // Optional: Algolia search parameters
-              searchParameters: {},
+        // indexName: 'wiki-power',
 
-              // Optional: path for search page that enabled by default (`false` to disable it)
-              searchPagePath: 'search',
+        // Optional: see doc section below
+        contextualSearch: true,
 
-              //... other Algolia params
-            },*/
+        // Optional: Specify domains where the navigation should occur through window.location instead on history.push. Useful when our Algolia config crawls multiple documentation sites and we want to navigate with window.location.href to them.
+        //externalUrlRegex: 'external\\.com|domain\\.com',
+
+        // Optional: Algolia search parameters
+        searchParameters: {},
+
+        // Optional: path for search page that enabled by default (`false` to disable it)
+        searchPagePath: 'search',
+
+        //... other Algolia params
+      },
 
       //sidebarCollapsible: true, //默认折叠
 
