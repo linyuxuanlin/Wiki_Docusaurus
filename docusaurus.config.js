@@ -113,7 +113,7 @@ const config = {
         indexName: 'wiki-power',
 
         // The application ID provided by Algolia
-        appId: 'IRO903CONI',
+        appId: 'BH4D9OD16A',
 
         // Public API key: it is safe to commit it
         // apiKey: 'defe7fd8690822eed8e3c94801bab286',
