@@ -18,14 +18,17 @@ title: Box-Grove
 | I2C Hub                               |        |      |
 | PIR Motion Sensor                     |        |      |
 | Temperature & Humidity Sensor (DHT11) |        |      |
-| Line Finder                           | V1.0   |      |
+| Line Finder                           | V1.0   | 2    |
 | Magnetic Switch                       |        | 2    |
 | Tilt Switch                           |        |      |
 | Touch Sensor                          |        |      |
 | 3-Axis Digital Accelerometer(±16g)    |        |      |
 | Encoder                               |        |      |
-|                                       |        |      |
-|                                       |        |      |
-|                                       |        |      |
-|                                       |        |      |
-|                                       |        |      |
+| Sound Sensor                          |        |      |
+| Vibration Motor                       |        |      |
+| Temperature Sensor                    |        |      |
+| I2C Mini Motor Driver                 |        |      |
+| Slide Potentiometer                   |        |      |
+| Logic Pirate                          |        |      |
+| Ultrasonic Distance Sensor            |        |      |
+|                                       |        | 4    |
