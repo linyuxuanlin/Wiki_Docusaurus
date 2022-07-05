@@ -115,7 +115,7 @@ const sidebars = {
         '电源方案（Boost）-SX1308',
         '电源方案（PMIC）-EA3036C',
         '电源方案（PMIC）-EA3059',
-        '电源设计-LDO电源抑制比（PSRR）与测量方法',
+        '电源测试-LDO电源抑制比（PSRR）与测量方法',
       ],
     },
 

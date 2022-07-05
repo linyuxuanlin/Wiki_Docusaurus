@@ -1,6 +1,6 @@
 ---
-id: 电源设计-LDO电源抑制比（PSRR）与测量方法
-title: 电源设计 - LDO 电源抑制比（PSRR）与测量方法
+id: 电源测试-LDO电源抑制比（PSRR）与测量方法
+title: 电源测试 - LDO 电源抑制比（PSRR）与测量方法
 ---
 
 低压差线性稳压器（LDO）相比 DC-DC 的优点之一，是输出电压纹波小。但是高速电路下，LDO 的电源抑制比（PSRR）也是不可忽略的因素，通常被误认为是单一的静态值，本篇文章将详细讲解电源抑制比（PSRR）及如何测量它。
@@ -130,7 +130,6 @@ $$
 
 ## 参考与致谢
 
-- Seeed Studio 内部文档
 - [Reducing high-speed signal chain power supply issues](https://e2e.ti.com/blogs_/b/powerhouse/posts/reducing-high-speed-signal-chain-power-supply-issues)
 - [LDO 基础知识：电源抑制比](https://e2echina.ti.com/blogs_/b/analogwire/posts/ldo)
 - [LDO PSRR Measurement Simplified](https://www.ti.com/lit/an/slaa414a/slaa414a.pdf?ts=1650484764171&ref_url=https%253A%252F%252Fwww.google.com%252F)
