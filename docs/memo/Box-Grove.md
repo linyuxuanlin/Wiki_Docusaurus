@@ -27,8 +27,8 @@ title: Box-Grove
 | Sound Sensor                          |        |      |
 | Vibration Motor                       |        |      |
 | Temperature Sensor                    |        |      |
-| I2C Mini Motor Driver                 |        |      |
+| I2C Mini Motor Driver (with 2 motors) |        |      |
 | Slide Potentiometer                   |        |      |
 | Logic Pirate                          |        |      |
-| Ultrasonic Distance Sensor            |        |      |
-|                                       |        | 4    |
+| Ultrasonic Distance Sensor            |        | 3    |
+| Servo                                 |        |      |
