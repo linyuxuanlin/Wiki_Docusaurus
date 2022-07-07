@@ -201,14 +201,13 @@ const config = {
 
         links: [
 
-
-          {
-            href: "http://digest.wiki-power.com/",
-            label: "书摘",
-          },
           {
             href: "https://nav.wiki-power.com/",
             label: "友链 & 导航站",
+          },
+          {
+            href: "http://digest.wiki-power.com/",
+            label: "书摘",
           },
           {
             label: '资源仓库',
