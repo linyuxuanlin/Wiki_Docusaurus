@@ -95,7 +95,7 @@ $$
 
 ### 电压 - 频率变换型（V-F）
 
-电压 - 频率变换型（V-F）ADC 是一种间接 A/D 转换器。主要由 V-F 变换器（也称为压控振荡器 Voltage Controlled Oscillator，简称 VCO）、计数器及其时钟信号控制闸门、寄存器、单稳态触发器等几部分构成：
+电压 - 频率变换型（V-F）ADC 是一种间接 ADC。主要由 V-F 变换器（也称为压控振荡器 Voltage Controlled Oscillator，简称 VCO）、计数器及其时钟信号控制闸门、寄存器、单稳态触发器等几部分构成：
 
 ![](https://cos.wiki-power.com/img/20220723233236.png)
 
