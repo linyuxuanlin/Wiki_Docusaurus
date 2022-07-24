@@ -53,6 +53,10 @@ const config = {
           trackingID: 'UA-152900803-1',
           anonymizeIP: false,
         },
+        gtag: {
+          trackingID: 'G-N2MCBBXJ0F',
+          anonymizeIP: false,
+        },
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
