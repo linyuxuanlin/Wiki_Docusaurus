@@ -7,7 +7,7 @@ title: ADC 与 DAC 基础知识
 
 ![](https://cos.wiki-power.com/img/20220724210409.png)
 
-但需要注意的是，现实中的模拟量连续的，意味着它有无限的分辨率，但转换为数字量之后，将会丢失一定的精度，在时间和幅度上都会变成离散的值。
+但要注意的是，现实中的模拟量连续的，意味着它有无限的分辨率，但转换为数字量之后，将会丢失一定的精度，在时间和幅度上都会变成离散的值。
 
 ## ADC 基本原理
 
@@ -237,10 +237,10 @@ $$
 
 - [《ADC/DAC 应用设计宝典》](https://picture.iczhiku.com/resource/eetop/syIFpRpWgQqgOXnx.pdf)
 - [数模转换与模数转换](https://www.cnblogs.com/redlightASl/p/15542623.html)
-- 《数字电子技术（第六版）\_阎石》
 - [ADC and DAC (Analog to Digital And Digital to Analog Converters)](https://www.youtube.com/playlist?list=PLwjK_iyK4LLCnW-df-_53d-6yYrGb9zZc)
 - [漫谈 DAC 原理](https://www.bilibili.com/read/cv4873472/)
 - 《Analog Engineer’s Pocket Reference》
+- 《数字电子技术（第六版）\_阎石》
 
 > 文章作者：**Power Lin**  
 > 原文地址：<https://wiki-power.com>  
