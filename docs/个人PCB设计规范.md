@@ -1,6 +1,6 @@
 ---
-id: 设计规范-PCB
-title: 设计规范 - PCB
+id: 个人PCB设计规范
+title: 个人 PCB 设计规范
 ---
 
 ## PCB 布局规范
