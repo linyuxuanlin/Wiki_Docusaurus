@@ -251,6 +251,7 @@ $$
 - 《数字电子技术（第六版）\_阎石》
 - [ADC and DAC (Analog to Digital And Digital to Analog Converters)](https://www.youtube.com/playlist?list=PLwjK_iyK4LLCnW-df-_53d-6yYrGb9zZc)
 - [漫谈 DAC 原理](https://www.bilibili.com/read/cv4873472/)
+- 《Analog Engineer’s Pocket Reference》
 
 > 文章作者：**Power Lin**  
 > 原文地址：<https://wiki-power.com>  
