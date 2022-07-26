@@ -69,11 +69,11 @@ title: ATE 测试 - 基本概念
 - 脉宽（Pulse Width）
 - 建立 / 保持时间（Setup / Hold Time）
 
-基本测试类型：
+基本测试项：
 
 - **接触 / 连续性测试（Contact/Continuity Test）**：检查器件引脚中开路 / 短路问题。
 - **直流特性测试（DC PARAMETRICS TEST）**：验证设备 DC 电流和电压参数，包括 IDD。
 - **数字功能测试（DIGITAL FUNCTIONAL TEST）**：测试 DUT 的逻辑功能。
 - **交流时序测试（AC TIMING TEST）**：验证 AC 规格，包括输出信号质量和信号时序参数。
 - **混合信号测试（MIXED SIGNAL TEST）**：验证 DUT 的模拟和数字电路的逻辑。
-- 其他的测试项：射频器件（RF Devices）、汽车器件（Automotive Devices）、存储器件（Memory Devices）、电源管理器件（Power Management Devices）、RFID 器件、高速数字器件（High Speed Digital devices）等。
+- 其他的测试项：射频器件（RF Devices）、汽车器件（Automotive Devices）、存储器件（Memory Devices）、电源管理器件（Power Management Devices）、RFID 器件、高速数字器件（High Speed Digital devices）等的测试。
