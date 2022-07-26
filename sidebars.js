@@ -173,6 +173,19 @@ const sidebars = {
 
     {
       type: 'category',
+      label: '半导体测试',
+      link: {
+        type: 'generated-index',
+        //description: ' ',
+        keywords: ['x', 'x'],
+      },
+      items: [
+        'ATE测试-基本概念',
+      ],
+    },
+
+    {
+      type: 'category',
       label: '软件与仪器',
       link: {
         type: 'generated-index',
