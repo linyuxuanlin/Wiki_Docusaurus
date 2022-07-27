@@ -1,11 +1,7 @@
 ---
-id: ATE测试-基本概念
-title: ATE 测试 - 基本概念
+id: ATE-基本概念
+title: ATE - 基本概念
 ---
-
-## 参考与致谢
-
-- 《The Fundamentals Of Digital Semiconductor Testing》
 
 ## 晶圆、芯片和封装
 
@@ -77,3 +73,13 @@ title: ATE 测试 - 基本概念
 - **交流时序测试（AC TIMING TEST）**：验证 AC 规格，包括输出信号质量和信号时序参数。
 - **混合信号测试（MIXED SIGNAL TEST）**：验证 DUT 的模拟和数字电路的逻辑。
 - 其他的测试项：射频器件（RF Devices）、汽车器件（Automotive Devices）、存储器件（Memory Devices）、电源管理器件（Power Management Devices）、RFID 器件、高速数字器件（High Speed Digital devices）等的测试。
+
+## 测试设备参数
+
+基本术语：
+
+- **预处理（Preconditioning）**：
+
+## 参考与致谢
+
+- 《The Fundamentals Of Digital Semiconductor Testing》
