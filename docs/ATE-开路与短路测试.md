@@ -18,3 +18,6 @@ title: ATE - 开路与短路测试
 ![](https://cos.wiki-power.com/img/20220727175416.png)
 
 ![](https://cos.wiki-power.com/img/2022-07-27_13-17-58_2X.png)
+
+
+https://blog.csdn.net/yunxianpiaoyu/article/details/9091697
