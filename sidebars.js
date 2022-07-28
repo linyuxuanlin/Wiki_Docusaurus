@@ -182,7 +182,7 @@ const sidebars = {
       items: [
         'ATE-基本概念',
         'ATE-开路与短路测试',
-        'ATE-直流参数测试',
+        'ATE-DC参数测试',
       ],
     },
 
