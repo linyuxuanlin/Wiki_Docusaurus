@@ -3,13 +3,13 @@ id: ATE-基本概念
 title: ATE - 基本概念
 ---
 
-## 晶圆、芯片和封装
+## 晶圆、晶粒与芯片
 
 芯片设计制造流程：
 
 ![](https://cos.wiki-power.com/img/20220726161704.png)
 
-晶圆（Wafer），芯片（Die，复数 Dice）与封装（Package）的关系如下：
+晶圆（Wafer），晶粒（Die，复数 Dice，也称裸片）与芯片（Chip）的关系如下：
 
 ![](https://cos.wiki-power.com/img/20220726162316.png)
 
@@ -21,15 +21,17 @@ title: ATE - 基本概念
 
 测试通用术语：
 
-- **DUT（Device Under Test）**：受测试的器件，外部信号通过 DUT 的引脚对其进行测试。也称为 UUT（Device Under Test）。
+- **ATE（Automatic Test Equipment）**：自动化测试设备，用于检测集成电路功能之完整性，是集成电路生产制造最终的流程，确保产品质量。
+- **DUT（Device Under Test）**：待测设备，外部信号通过 DUT 的引脚对其进行测试。也称为 UUT（Device Under Test）。
 - **PMU（Precision Measurement Unit）**：精密测量单元，用于精确测量器件的直流特性。
-- **DIB（Device Interface Board）**：也称 LOAD board。
-- **PIB（Probe Interface Board）**：用于 Wafer Probe。
+- **DIB（Device Interface Board）**：设备接口板，也称 LOAD board。
+- **PIB（Probe Interface Board）**：探针接口板，用于 Wafer Probe。
+- **PDP（Prober docking plate）**：探针台对接板。
 - **PROBE CARD**：带探针的 PCB，用于 Wafer Probe。
 - **BINNING**：根据测试结果对 DUT 进行筛选。
 - **MANIPULATOR**：支撑测试头并允许其向多个方向移动的结构。
-- **HANDLER**：用于将 DUT 放置在测试头插座中的机械。
-- **PROBER**：用于在测试探针下移动晶片的机械单元。
+- **HANDLER**：全称 IC pick up and place handler，自动分选机，用于将 DUT 放置在测试头插座中的机械。
+- **PROBER**：探针台，在测试探针下移动晶片的机械单元。
 
 基本电气术语：
 
