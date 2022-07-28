@@ -23,18 +23,7 @@ title: ATE- DC 参数测试
 
 Binning 是根据测试结果对 DUT 进行筛选分组，举个例子：
 
-| Bin# | Category                    |
-| ---- | --------------------------- |
-| 01   | Good Device 100MHZ          |
-| 02   | Good Device 75MHZ           |
-| 10   | Opens and shorts reject     |
-| 09   | Gross IDD reject            |
-| 08   | Gross Function reject       |
-| 03   | 75MHZ Function reject       |
-| 07   | Function VIL/VIH reject     |
-| 06   | DC VOL/VOH reject           |
-| 05   | Dynamic/Static IDD reject   |
-| 04   | IIL IIH/ IOZ Leakage reject |
+![](https://cos.wiki-power.com/img/20220728223700.png)
 
 Binning 的过程至少需要有两个 bin，以区分某个测试结果通过或者不通过。
 
@@ -177,4 +166,3 @@ IIL 用于衡量的是输入引脚到 VDD 的电阻值；IIH 衡量输入引脚�
 测试 IIH，首先要供 VDDMAX 的电源给 DUT，将 DUT 所有输入引脚设低电平（VIL），随后使用 PMU 将每个输入引脚拉高，最终将检测的电流与标称值比较。
 
 如果同时拉高拉低所有引脚会导致 DUT 出问题，则可以改为一个一个引脚测试，在测试下一个引脚前，将当前被测引脚复位。其缺点是耗时间。
-
