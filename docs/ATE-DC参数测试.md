@@ -7,7 +7,7 @@ title: ATE- DC 参数测试
 
 - 《The Fundamentals Of Digital Semiconductor Testing》
 - [闩锁效应（Latch-up）详解](https://zhuanlan.zhihu.com/p/125519142)
-- [DC Test Theory](https://nanopdf.com/embed/dc-test-theory_pdf.html?sp=0)
+- 《DC Test Theory》
 
 > 文章作者：**Power Lin**  
 > 原文地址：<https://wiki-power.com>  
@@ -64,7 +64,7 @@ Binning 的过程至少需要有两个 bin，以区分某个测试结果通过�
 
 ## VOH 与 IOH
 
-VOH 表示输出（O）为高电平（H）时的最小电压值（V），即高电平输出下不会被识别成逻辑 0 的最低电压阈值。IOH 表示输出（O）为高电平时（H）时电流源的能力（I）。
+VOH 表示输出（O）为高电平（H）时的最小电压值（V），即高电平输出下不会被识别成逻辑 0 的最低电压阈值。IOH 表示输出（O）为高电平时（H）时电流源的驱动能力（I）。
 
 举个例子，下表是 256 x 4 Static RAM 的 VOH 和 IOH 参数：
 
@@ -76,13 +76,38 @@ VOH 与 IOH 衡量的是引脚在高电平（逻辑 1）输出状态下的电阻
 
 ### 串行 / 静态测试方法
 
-以上的参数可以通过串行 / 静态的方法进行测试，也可以通过动态的方法（后文会提）。如果使用静态（DC）测试方法，需要通过预处理将特定引脚输出设置为高电平，使用 PMU 向引脚施加恒定的 IOH，并将测得的 VOH 电压与规格书中的值比较，得出结论。
+以上的参数可以通过串行 / 静态的方法进行测试，也可以通过动态的方法（后文会提）。如果使用静态（DC）测试方法，需要先通过预处理，将特定引脚输出设置为高电平，使用 PMU 向引脚吸收恒定的 IOH，等待 1-5 毫秒（在 PMU 设 delay），并将测得的 VOH 电压与规范值相比较，如果低于规范值则为不通过。
+
+![](https://cos.wiki-power.com/img/20220728143124.png)
 
 需要注意的事项：
 
+- 这种方法测试的是引脚输出 buffer 的电阻。
 - 因为 IOH 是从 DUT 流向 PMU，所以它是一个负电流值。
 - 因为施加的是恒流，所以需要设置电压钳。
-- 如有 VDDMIN 参数，是表示能使 DUT 正常进行测试的最小供电电压，再小将无法得出准确的测试结果。
+- VDDMIN 参数表示能使 DUT 正常进行测试的最小供电电压，再小将无法得出准确的测试结果。
 
+## VOL 与 IOL
 
-<iframe src="https://nanopdf.com/embed/dc-test-theory_pdf.html?sp=0" width="750" height="600" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen></iframe> <div style="margin-bottom:5px"><strong><a href="https://nanopdf.com/download/dc-test-theory_pdf" title="DC Test Theory" target="_blank">DC Test Theory</a></strong></div>
+VOL 表示输出（O）为低电平（L）时的最大电压值（V），即低电平输出下不会被识别成逻辑 1 的最高电压阈值。IOL 表示输出（O）为低电平时（L）时电流源的驱动能力（I）。
+
+举个例子，下表是 256 x 4 Static RAM 的 VOL 和 IOL 参数：
+
+| Parameter | Description        | Test Conditions          | Min | Max | Units |
+| --------- | ------------------ | ------------------------ | --- | --- | ----- |
+| VOL       | Output LOW Voltage | VDD = 4.75V, IOL = 8.0mA |     | 0.4 | V     |
+
+VOL 与 IOL 衡量的是引脚在低电平（逻辑 0）输出状态下的电阻，用来确保该电阻满足功能需求，保证在适当输出的电压下能维持吸收特定的电流值。
+
+### 串行 / 静态测试方法
+
+如果使用静态（DC）测试方法，需要先通过预处理，将特定引脚输出设置为低电平，使用 PMU 向引脚施加恒定的 IOL，等待 1-5 毫秒（在 PMU 设 delay），并将测得的 VOL 电压与规范值相比较，如果高于规范值则为不通过。
+
+![](https://cos.wiki-power.com/img/20220728150542.png)
+
+需要注意的事项：
+
+- 这种方法测试的是引脚输入 buffer 的电阻。
+- 因为 IOL 是从 PMU 流向 DUT，所以它是一个正电流值。
+- 因为施加的是恒流，所以需要设置电压钳。
+- VDDMIN 参数表示能使 DUT 正常进行测试的最小供电电压，再小将无法得出准确的测试结果。
