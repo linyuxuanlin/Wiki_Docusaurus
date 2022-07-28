@@ -6,12 +6,8 @@ title: ATE- DC 参数测试
 ## 参考与致谢
 
 - 《The Fundamentals Of Digital Semiconductor Testing》
-- [闩锁效应（Latch-up）详解](https://zhuanlan.zhihu.com/p/125519142)
 - 《DC Test Theory》
-
-> 文章作者：**Power Lin**  
-> 原文地址：<https://wiki-power.com>  
-> 版权声明：文章采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh) 协议，转载请注明出处。
+- [闩锁效应（Latch-up）详解](https://zhuanlan.zhihu.com/p/125519142)
 
 ## 基本术语
 
@@ -84,7 +80,7 @@ VOH 与 IOH 衡量的是引脚在高电平（逻辑 1）输出状态下的电阻
 
 - 这种方法测试的是引脚输出 buffer 的电阻。
 - 因为 IOH 是从 DUT 流向 PMU，所以它是一个负电流值。
-- 因为施加的是恒流，所以需要设置电压钳。
+- 因为施加的是恒流，所以需要设置电压钳，如果测出电压超出了钳位电压，有可能是逻辑设成了低电平。
 - VDDMIN 参数表示能使 DUT 正常进行测试的最小供电电压，再小将无法得出准确的测试结果。
 
 ## VOL 与 IOL
@@ -109,5 +105,9 @@ VOL 与 IOL 衡量的是引脚在低电平（逻辑 0）输出状态下的电阻
 
 - 这种方法测试的是引脚输入 buffer 的电阻。
 - 因为 IOL 是从 PMU 流向 DUT，所以它是一个正电流值。
-- 因为施加的是恒流，所以需要设置电压钳。
+- 因为施加的是恒流，所以需要设置电压钳，如果测出电压低于钳位电压，有可能是逻辑设成了高电平。
 - VDDMIN 参数表示能使 DUT 正常进行测试的最小供电电压，再小将无法得出准确的测试结果。
+
+## IDD 总电流
+
+IDD表示的是

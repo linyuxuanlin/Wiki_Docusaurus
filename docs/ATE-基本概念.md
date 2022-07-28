@@ -39,7 +39,7 @@ title: ATE - 基本概念
 - **VDD**：CMOS 设备的供电。
 - **VSS**：提供电源回流路径。
 - **GND**：参考电平，在单电源供电设备上常等价于 VSS。
-- **IDD**：从 CMOS 设备中小号的电流。
+- **IDD**：从 CMOS 设备中消耗的电流。
 - **ICC**：从 TTL 设备中消耗的电流。
 - **VIH**：高电平输入下的最低电压识别阈值（不会被识别成 0）。
 - **VIL**：低电平输入下的最高电压识别阈值（不会被识别成 1）。
@@ -85,7 +85,3 @@ title: ATE - 基本概念
 ## 参考与致谢
 
 - 《The Fundamentals Of Digital Semiconductor Testing》
-
-> 文章作者：**Power Lin**  
-> 原文地址：<https://wiki-power.com>  
-> 版权声明：文章采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh) 协议，转载请注明出处。
