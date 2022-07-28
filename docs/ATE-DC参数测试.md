@@ -54,7 +54,7 @@ Binning 的过程至少需要有两个 bin，以区分某个测试结果通过�
 
 | Parameter | Description        | Test Conditions       | Min | Max | Units |
 | --------- | ------------------ | --------------------- | --- | --- | ----- |
-| VOL       | Output LOW Voltage | VDD = Mm, IOL = 8.0mA |     | 0.4 | V     |
+| VOL       | Output Low Voltage | VDD = Mm, IOL = 8.0mA |     | 0.4 | V     |
 
 我们可以看出，VOL 最大值为 0.4V，IOL 为 8mA，即当输出逻辑低电平的情况下，必须是在不大于 0.4V 的电压下产生 8mA 的电流，所以我们可以得出，这个器件的最大电阻不超过 50Ω。所以，可以借用不大于 50Ω 的电阻替代 DUT，以验证测试流程。我们的目的是把问题聚焦在 DUT 上，而非 DUT 以外的问题。
 
@@ -91,7 +91,7 @@ VOL 表示输出（O）为低电平（L）时的最大电压值（V），即低�
 
 | Parameter | Description        | Test Conditions          | Min | Max | Units |
 | --------- | ------------------ | ------------------------ | --- | --- | ----- |
-| VOL       | Output LOW Voltage | VDD = 4.75V, IOL = 8.0mA |     | 0.4 | V     |
+| VOL       | Output Low Voltage | VDD = 4.75V, IOL = 8.0mA |     | 0.4 | V     |
 
 VOL 与 IOL 衡量的是引脚在低电平（逻辑 0）输出状态下的电阻，用来确保该电阻满足功能需求，保证在适当输出的电压下能维持吸收特定的电流值。
 
