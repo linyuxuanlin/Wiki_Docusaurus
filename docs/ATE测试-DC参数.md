@@ -229,11 +229,6 @@ IOZ 指的是输出引脚（O）高阻态（Z）下的漏电流（I）。IOZL �
 
 串行静态法测 VI，就是 PMU 施加约-15mA~-20mA 电流，测引脚上的电压，并与标称值比较（通常为-1.5V）。
 
-## 参考与致谢
-
-- 《The Fundamentals Of Digital Semiconductor Testing》
-- 《DC Test Theory》
-
 ## 短路输出电流（IOS）
 
 短路输出电流表示的是当输出引脚（O）在短路条件（S）下产生的电流（I）。目的是衡量当引脚输出高电平，但被短路至零电压时的电阻量，确保在最坏的负载条件下能产生设定的电流值；也表示了 DUT 引脚可提供容性负载充电的最大瞬时电流，可据此计算上升时间。IOS 在规格书中是这样表示的：
@@ -241,3 +236,27 @@ IOZ 指的是输出引脚（O）高阻态（Z）下的漏电流（I）。IOZL �
 | Parameter | Description                  | Test Conditions                                                                  | Min | Max | Units |
 | --------- | ---------------------------- | -------------------------------------------------------------------------------- | --- | --- | ----- |
 | IOS       | Output Short Circuit Current | Vout = 0V, VDD = 5.25V, \*Short only 1 output at a time for no longer than 1 sec | -85 | -30 | mA    |
+
+对 IOS 的测试，首先对器件预处理，使得引脚输出高电平，随后用 PMU 将引脚拉低至 0V，测量输出电流并与标称值对比，得出结论。
+
+在对 IOS 的测试中，需要有合理的逻辑以避免热切换。需要首先将 PMU 设置为强制零电流的电压测量模式，连接到 DUT 输出，测量并保存 DUT 的 VOH 电压，随后断开连接并设定 PMU 为拉高至刚刚的 VOH 电压，然后重新连接 DUT（此时两端电压都是 VOH），随后再让 PMU 拉低为 0V，测量电流值。测量完成后，PMU 要恢复拉高到 VOH 才能断开连接。这样可以确保继电器在开关切换时，两端的电压是一致的。
+
+### IOS 测试（串行静态法）
+
+![](https://cos.wiki-power.com/img/20220729152549.png)
+
+注：在测试 IOS 时，VDD 通常要设为 VDDmax。
+
+导致测试不通过的因素：
+
+- **超过上限值**
+  - 输出电阻太高，导致电流绝对值不足。
+  - 夹具本身有电阻。
+  - 没有经过正确的预处理。
+- **低于下限值**
+  - 输出电阻太低，导致电流绝对值过大。
+
+## 参考与致谢
+
+- 《The Fundamentals Of Digital Semiconductor Testing》
+- 《DC Test Theory》
