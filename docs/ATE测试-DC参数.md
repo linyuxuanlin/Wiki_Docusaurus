@@ -221,12 +221,6 @@ IIL/IIH 的输入电流测试，通常仅能在纯输入引脚上执行。如果
 
 扇出能力在 TTL 和 CMOS 器件之间差别很大，因为 CMOS 输入阻抗高，所以其扇出能力很强（？），一个 CMOS 输出可驱动任意多个 CMOS 输入。而 CMOS 输入引脚像电容器，连接越多输入引脚，电容量越大，在高低电平切换时会存在电容充放电效应。
 
-## 参考与致谢
-
-- 《The Fundamentals Of Digital Semiconductor Testing》
-- 《DC Test Theory》
-- [闩锁效应（Latch-up）详解](https://zhµAnlan.zhihu.com/p/125519142)
-
 ## 高阻抗电流 IOZL/IOZH
 
 进行高阻输出漏电流测试的目的，是确保双向 / 高阻输出引脚能正常输出高阻状态（关断）。IOZL 测的是输出高阻状态时，引脚对 VDD 的阻值；IOZH 测的是输出高阻状态时，引脚对地的阻值。通常在规格书内是这么表示的：
@@ -236,3 +230,17 @@ IIL/IIH 的输入电流测试，通常仅能在纯输入引脚上执行。如果
 | IOZ       | Output Current High-Z | VSS ≤ Vout ≤VDD(5.25V), Output Disabled | -2.0 | +2.0 | µA    |
 
 ### IOZL/IOZH 测试（串行静态测试法）
+
+串行静态测试 IOZL/IOZH，首先需要给器件供 VDD 的电源，并将器件引脚预处理为高阻状态，使用 PMU 强制将引脚拉高 / 拉低，测量电流值，与标称值作比较，得出结论。此测试需要加电流钳。
+
+串行测试的优点是可以准确测量单个引脚的电流值，缺点是慢。
+
+### IOZL/IOZH 测试（并行测试法）
+
+有些测试系统能进行并行漏电流测量，即多个 PMU 同时（平行）测量多个引脚，此处不多赘述，优点是快。
+
+## 参考与致谢
+
+- 《The Fundamentals Of Digital Semiconductor Testing》
+- 《DC Test Theory》
+- [闩锁效应（Latch-up）详解](https://zhµAnlan.zhihu.com/p/125519142)
