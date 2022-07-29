@@ -109,4 +109,5 @@ Binning 的过程至少需要有两个 bin，以区分某个测试结果通过�
 ## 参考与致谢
 
 - 《The Fundamentals Of Digital Semiconductor Testing》
+- [半导体设备系列研究三 - 半导体检测设备：芯与屏相融，光与电交汇](http://pdf.dfcfw.com/pdf/H3_AP201803301115267697_1.pdf)
 - [闩锁效应（Latch-up）详解](https://zhµAnlan.zhihu.com/p/125519142)
