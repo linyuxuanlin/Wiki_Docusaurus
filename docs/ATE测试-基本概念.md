@@ -13,9 +13,9 @@ title: ATE 测试 - 基本概念
 
 ![](https://cos.wiki-power.com/img/20220726162316.png)
 
-在 Wafer 上，通常有少数用于监控的 Die，它们的制造工艺与 Wafer 上的其他 Dice 一致，作为测试用途。Wafer 还有个特点，在边上有一处平口：
+经过测试和墨点标示的晶圆示意图：
 
-![](https://cos.wiki-power.com/img/20220726162558.png)
+![](https://cos.wiki-power.com/img/20220729161745.png)
 
 ## 基本术语
 
