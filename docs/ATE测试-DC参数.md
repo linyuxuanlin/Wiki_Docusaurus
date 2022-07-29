@@ -3,12 +3,6 @@ id: ATE测试-DC参数
 title: ATE 测试 - DC 参数
 ---
 
-## 参考与致谢
-
-- 《The Fundamentals Of Digital Semiconductor Testing》
-- 《DC Test Theory》
-- [闩锁效应（Latch-up）详解](https://zhuanlan.zhihu.com/p/125519142)
-
 ## 基本术语
 
 ### 热切换（Hot Switching）
@@ -201,3 +195,9 @@ IIL/IIH 的输入电流测试，通常仅能在纯输入引脚上执行。如果
 组合测试的电流限额是单个引脚的标称值，如果测试结果超限，则必须换回串行测试重测，这种测试对拥有高阻抗输入引脚的 CMOS 器件测试效果比较好。
 
 ## 上下拉电阻输入
+
+## 参考与致谢
+
+- 《The Fundamentals Of Digital Semiconductor Testing》
+- 《DC Test Theory》
+- [闩锁效应（Latch-up）详解](https://zhuanlan.zhihu.com/p/125519142)

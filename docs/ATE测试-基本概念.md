@@ -80,7 +80,7 @@ title: ATE 测试 - 基本概念
 
 基本术语：
 
-- **预处理（Preconditioning）**：
+- **预处理（Preconditioning）**：//todo
 
 ## 参考与致谢
 
