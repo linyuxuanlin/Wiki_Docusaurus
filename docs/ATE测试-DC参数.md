@@ -1,6 +1,6 @@
 ---
-id: ATE-DC参数测试
-title: ATE- DC 参数测试
+id: ATE测试-DC参数
+title: ATE 测试 - DC 参数
 ---
 
 ## 参考与致谢

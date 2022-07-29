@@ -180,9 +180,9 @@ const sidebars = {
         keywords: ['x', 'x'],
       },
       items: [
-        'ATE-基本概念',
-        'ATE-开路与短路测试',
-        'ATE-DC参数测试',
+        'ATE测试-基本概念',
+        'ATE测试-开路与短路',
+        'ATE彩色-DC参数',
       ],
     },
 
