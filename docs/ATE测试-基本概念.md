@@ -76,6 +76,30 @@ title: ATE 测试 - 基本概念
 - **混合信号测试（MIXED SIGNAL TEST）**：验证 DUT 的模拟和数字电路的逻辑。
 - 其他的测试项：射频器件（RF Devices）、汽车器件（Automotive Devices）、存储器件（Memory Devices）、电源管理器件（Power Management Devices）、RFID 器件、高速数字器件（High Speed Digital devices）等的测试。
 
+### 热切换（Hot Switching）
+
+继电器在电流在流动时进行开关切换，这样可能会损坏继电器，需要通过编程来避免这样的情况。
+
+### 闩锁效应（Latch-up）
+
+当对某个引脚施加过高的电压时，导致 CMOS 器件中出现大电流状态，可能会损坏器件。
+
+### Binning
+
+Binning 是根据测试结果对 DUT 进行筛选分组，举个例子：
+
+![](https://cos.wiki-power.com/img/20220728223700.png)
+
+Binning 的过程至少需要有两个 bin，以区分某个测试结果通过或者不通过。
+
+### 测试流程（Program Flow）
+
+测试流程的设计对整个测试而言十分重要。比如说某些 DC 测试需要预处理（设定特定的设备逻辑，例如功能测试），少了预处理将导致后续步骤的结果毫无意义。
+
+测试流程的设计需要考虑很多因素：测试量的大小、需要测试哪些参数、怎么去进行 Binning 等待。通常会使用流程图来呈现，确保测试流程满足需求。
+
+![](https://cos.wiki-power.com/img/20220728131317.png)
+
 ## 测试设备参数
 
 基本术语：
@@ -85,3 +109,4 @@ title: ATE 测试 - 基本概念
 ## 参考与致谢
 
 - 《The Fundamentals Of Digital Semiconductor Testing》
+- [闩锁效应（Latch-up）详解](https://zhµAnlan.zhihu.com/p/125519142)
