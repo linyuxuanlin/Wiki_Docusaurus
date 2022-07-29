@@ -37,7 +37,7 @@ Binning 的过程至少需要有两个 bin，以区分某个测试结果通过�
 
 | Parameter | Description        | Test Conditions       | Min | Max | Units |
 | --------- | ------------------ | --------------------- | --- | --- | ----- |
-| VOL       | Output Low Voltage | VDD = Mm, IOL = 8.0mA |     | 0.4 | V     |
+| VOL       | Output LOW Voltage | VDD = Mm, IOL = 8.0mA |     | 0.4 | V     |
 
 我们可以看出，VOL 最大值为 0.4V，IOL 为 8mA，即当输出逻辑低电平的情况下，必须是在不大于 0.4V 的电压下产生 8mA 的电流，所以我们可以得出，这个器件的最大电阻不超过 50Ω。所以，可以借用不大于 50Ω 的电阻替代 DUT，以验证测试流程。我们的目的是把问题聚焦在 DUT 上，而非 DUT 以外的问题。
 
@@ -74,7 +74,7 @@ VOL 表示输出（O）为低电平（L）时的最大电压值（V），即低�
 
 | Parameter | Description        | Test Conditions          | Min | Max | Units |
 | --------- | ------------------ | ------------------------ | --- | --- | ----- |
-| VOL       | Output Low Voltage | VDD = 4.75V, IOL = 8.0mA |     | 0.4 | V     |
+| VOL       | Output LOW Voltage | VDD = 4.75V, IOL = 8.0mA |     | 0.4 | V     |
 
 VOL 与 IOL 衡量的是引脚在低电平（逻辑 0）输出状态下的电阻，用来确保该电阻满足功能需求，保证在适当输出的电压下能维持吸收特定的电流值。
 
@@ -194,12 +194,6 @@ IIL/IIH 的输入电流测试，通常仅能在纯输入引脚上执行。如果
 
 组合测试的电流限额是单个引脚的标称值，如果测试结果超限，则必须换回串行测试重测，这种测试对拥有高阻抗输入引脚的 CMOS 器件测试效果比较好。
 
-## 参考与致谢
-
-- 《The Fundamentals Of Digital Semiconductor Testing》
-- 《DC Test Theory》
-- [闩锁效应（Latch-up）详解](https://zhuanlan.zhihu.com/p/125519142)
-
 ## 上下拉阻性输入（Resistive Inputs）
 
 有些输入引脚可能有主动上拉、下拉结构。在器件规格书内会定义电流范围，在这里我们假设输入引脚会消耗 100uA 左右的电流。由于此类引脚结构相异，所以不能组合测试，需要单独测试每个引脚（串行或并行测试）。并且，这类阻性输入也会影响 IDD 的值。
@@ -216,6 +210,25 @@ IIL/IIH 的输入电流测试，通常仅能在纯输入引脚上执行。如果
 
 ![](https://cos.wiki-power.com/img/20220729132621.png)
 
-如上图，这个 TTL 输出可以拉高大约 17 个输入引脚，或者拉低 30 个输入引脚。
+如上图，这个 TTL 输出可以拉高大约 17 个输入引脚，或者拉低 30 个输入引脚。在规格书中，引脚的参数会这样表示出来：
 
-扇出能力在 TTL 和 CMOS 器件之间差别很大，因为 CMOS 输入阻抗高、输出阻抗小，所以其扇出能力很强，一个 CMOS 输出可驱动任意多个 CMOS 输入。而 CMOS 输入引脚像电容器，连接越多输入引脚，电容量越大，在高低电平切换时会存在电容充放电效应。
+| Parameter | Description             | Test Conditions           | Min  | Max | Units |
+| --------- | ----------------------- | ------------------------- | ---- | --- | ----- |
+| VOH       | Output HIGH Voltage     | VCC = 4.75V, IOH = -2.6mA | 2.4  |     | V     |
+| VOL       | Output LOW Voltage      | VCC = 4.75V, IOH = 24mA   |      | 0.4 | V     |
+| IIL       | Input LOW Load Current  | Vin = 0.4V                | -800 |     | uA    |
+| IIH       | Input HIGH Load Current | Vin = 2.4V                |      | 150 | uA    |
+
+扇出能力在 TTL 和 CMOS 器件之间差别很大，因为 CMOS 输入阻抗高，所以其扇出能力很强（？），一个 CMOS 输出可驱动任意多个 CMOS 输入。而 CMOS 输入引脚像电容器，连接越多输入引脚，电容量越大，在高低电平切换时会存在电容充放电效应。
+
+## 参考与致谢
+
+- 《The Fundamentals Of Digital Semiconductor Testing》
+- 《DC Test Theory》
+- [闩锁效应（Latch-up）详解](https://zhuanlan.zhihu.com/p/125519142)
+
+## 高阻抗电流 IOZL/IOZH
+
+高阻抗电流 IOZL 是指高阻抗输出时
+
+IOZL 是当输出处于高阻抗状态（Z）且向输出施加低电压（L）时，来自输出（O）的电流（I）。IOZH 是当输出处于高阻抗状态（Z）且向输出施加高电压（H）时，来自输出（O）的电流（I）。
