@@ -217,10 +217,9 @@ IOZ 指的是输出引脚（O）高阻态（Z）下的漏电流（I）。IOZL �
 
 输入电压钳 VI 指的是当在 TTL 器件（非 CMOS）输入引脚（I）上施加负电流（抽取电流）时，在引脚上测得的电压（V）。此测试的目的是为了验证三极管发射极和地之间钳位二极管的完整性。它在规格书上是这样表示的：
 
-| Parameter | Description            | Test Conditions | Min  | Max | Units |
-| --------- | ---------------------- | --------------- | ---- | --- | ----- |
-| VI        | Input Clamp            |
-| Voltage   | VCC = Min, Iin = -18mA |                 | +1.5 | v   |
+| Parameter | Description         | Test Conditions        | Min | Max  | Units |
+| --------- | ------------------- | ---------------------- | --- | ---- | ----- |
+| VI        | Input Clamp Voltage | VCC = Min, Iin = -18mA |     | +1.5 | V     |
 
 测量输入电压钳，首先要确保这是个 TTL 器件的输入引脚，然后供 VCCmin 的电源，在设置了电压钳后，使用 PMU 施加-18mA 的电流（抽取 18mA 电流），随后测量得到引脚上的电压值，与标称值相对比。
 
@@ -236,3 +235,9 @@ IOZ 指的是输出引脚（O）高阻态（Z）下的漏电流（I）。IOZL �
 - 《DC Test Theory》
 
 ## 短路输出电流（IOS）
+
+短路输出电流表示的是当输出引脚（O）在短路条件（S）下产生的电流（I）。目的是衡量当引脚输出高电平，但被短路至零电压时的电阻量，确保在最坏的负载条件下能产生设定的电流值；也表示了 DUT 引脚可提供容性负载充电的最大瞬时电流，可据此计算上升时间。IOS 在规格书中是这样表示的：
+
+| Parameter | Description                  | Test Conditions                                                                  | Min | Max | Units |
+| --------- | ---------------------------- | -------------------------------------------------------------------------------- | --- | --- | ----- |
+| IOS       | Output Short Circuit Current | Vout = 0V, VDD = 5.25V, \*Short only 1 output at a time for no longer than 1 sec | -85 | -30 | mA    |
