@@ -182,7 +182,7 @@ const sidebars = {
       items: [
         'ATE测试-基本概念',
         'ATE测试-开路与短路',
-        'ATE彩色-DC参数',
+        'ATE测试-DC参数',
       ],
     },
 
