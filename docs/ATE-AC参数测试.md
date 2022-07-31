@@ -9,7 +9,33 @@ AC 测试用于确保 DUT 符合其时序规格 A，测试时需要设置恰当�
 
 ## 基本 AC 参数
 
-下图是一个 256 x 4 静态 RAM 的 AC 参数规格示例：
+### 建立时间（Setup Time）
+
+### 保持时间（Hold Time）
+
+### 传输时延（Propagation Delay）
+
+### 最小脉宽（Minimum Pulse Widths）
+
+### 最大频率
+
+### 输出使能时间（Output Enable Time）
+
+指的是引脚从高阻（关断失能）状态切换到有效驱动电平（高低电平）所需的时间。
+
+### 输出失能时间（Output Disable Time）
+
+指的是引脚从有效驱动电平（高低电平）状态切换到高阻（关断失能）所需的时间。
+
+## 时序参数
+
+### 写入周期时序（Write Cycle Timing）
+
+### 读取周期时序（Read Cycle Timing）
+
+## 实际规格书中的示例
+
+下面是一个 256 x 4 静态 RAM 的 AC 参数示例：
 
 ### 读取周期时序
 
@@ -42,27 +68,3 @@ AC 测试用于确保 DUT 符合其时序规格 A，测试时需要设置恰当�
 | tHA       | Address Hold from Write End   | 2   |     | ns   |
 | tSCS      | CS LOW to Write End           | 11  |     | ns   |
 | tAW       | Address Set-Up to Write End   | 13  |     | ns   |
-
-### 建立时间（Setup Time）
-
-### 保持时间（Hold Time）
-
-### 传输时延（Propagation Delay）
-
-### 最小脉宽（Minimum Pulse Widths）
-
-### 最大频率
-
-### 输出使能时间（Output Enable Time）
-
-指的是引脚从高阻（关断失能）状态切换到有效驱动电平（高低电平）所需的时间。
-
-### 输出失能时间（Output Disable Time）
-
-指的是引脚从有效驱动电平（高低电平）状态切换到高阻（关断失能）所需的时间。
-
-## 时序参数
-
-### 写入周期时序（Write Cycle Timing）
-
-### 读取周期时序（Read Cycle Timing）
