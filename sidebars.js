@@ -184,6 +184,7 @@ const sidebars = {
         'ATE测试-开路与短路',
         'ATE测试-DC参数',
         'ATE测试-验证功能参数',
+        'ATE测试-AC参数',
       ],
     },
 
