@@ -41,30 +41,30 @@ AC 测试用于确保 DUT 符合其时序规格 A，测试时需要设置恰当�
 
 ![](https://cos.wiki-power.com/img/20220731190300.png)
 
-| Parameter | Description               | Min | Max | Unit |
-| --------- | ------------------------- | --- | --- | ---- |
-| tRC       | Read Cycle Time           | 15  |     | ns   |
-| tAA       | Address to Data Valid     |     | 15  | ns   |
-| tACS      | Chip Select to Data Valid |     | 10  | ns   |
-| tDOE      | OE LOW to Data Valid      |     | 10  | ns   |
-| tHZCS     | Chip Select to High Z     |     | 8   | ns   |
-| tHZOE     | OE HIGH to High Z         |     | 8   | ns   |
-| tLZCS     | Chip Select to Low Z      | 2   |     | ns   |
-| tLZOE     | OE LOW to Low             | 2   |     | ns   |
+| Parameter  | Description               | Min | Max | Unit |
+| ---------- | ------------------------- | --- | --- | ---- |
+| $t_{RC}$   | Read Cycle Time           | 15  |     | ns   |
+| $t_{AA}$   | Address to Data Valid     |     | 15  | ns   |
+| $t_{ACS}$  | Chip Select to Data Valid |     | 10  | ns   |
+| $t_{DOE}$  | OE LOW to Data Valid      |     | 10  | ns   |
+| $t_{HZCS}$ | Chip Select to High Z     |     | 8   | ns   |
+| $t_{HZOE}$ | OE HIGH to High Z         |     | 8   | ns   |
+| $t_{LZCS}$ | Chip Select to Low Z      | 2   |     | ns   |
+| $t_{LZOE}$ | OE LOW to Low             | 2   |     | ns   |
 
 ### 写入周期时序
 
 ![](https://cos.wiki-power.com/img/20220731190328.png)
 
-| Parameter | Description                   | Min | Max | Unit |
-| --------- | ----------------------------- | --- | --- | ---- |
-| tWC       | Write Cycle Time              | 15  |     | ns   |
-| tHZWE     | WE LOW to High Z              |     | 8   | ns   |
-| tLZWE     | WE HIGH to Low Z              | 2   |     | ns   |
-| tPWE      | WE Pulse Width                | 11  |     | ns   |
-| tSD       | Data Set-Up to Write End      | 11  |     | ns   |
-| tHD       | Data Hold from Write End      | 1   |     | ns   |
-| tSA       | Address Set-Up to Write Start | 2   |     | ns   |
-| tHA       | Address Hold from Write End   | 2   |     | ns   |
-| tSCS      | CS LOW to Write End           | 11  |     | ns   |
-| tAW       | Address Set-Up to Write End   | 13  |     | ns   |
+| Parameter  | Description                   | Min | Max | Unit |
+| ---------- | ----------------------------- | --- | --- | ---- |
+| $t_{WC}$   | Write Cycle Time              | 15  |     | ns   |
+| $t_{HZWE}$ | WE LOW to High Z              |     | 8   | ns   |
+| $t_{LZWE}$ | WE HIGH to Low Z              | 2   |     | ns   |
+| $t_{PWE}$  | WE Pulse Width                | 11  |     | ns   |
+| $t_{SD}$   | Data Set-Up to Write End      | 11  |     | ns   |
+| $t_{HD}$   | Data Hold from Write End      | 1   |     | ns   |
+| $t_{SA}$   | Address Set-Up to Write Start | 2   |     | ns   |
+| $t_{HA}$   | Address Hold from Write End   | 2   |     | ns   |
+| $t_{SCS}$  | CS LOW to Write End           | 11  |     | ns   |
+| $t_{AW}$   | Address Set-Up to Write End   | 13  |     | ns   |
