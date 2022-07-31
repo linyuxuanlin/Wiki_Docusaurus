@@ -3,19 +3,40 @@ id: ATE-AC参数测试
 title: ATE - AC 参数测试 🚧
 ---
 
-AC 测试用于确保 DUT 符合其时序规格 A，测试时需要设置恰当的时序值（边沿特性）
-
-【介绍】
+AC 测试用于确保 DUT 的时特性序满足其规格需求。
 
 ## 基本 AC 参数
 
 ### 建立时间（Setup Time）
 
+建立时间指的是在参考信号（图中为 `WE`）发生变化（取中间值 1.5V）前，为了确保能被正确读取，数据（图中为 `DATA IN`）必须提前保持稳定不变的最短时间。在最小建立时间之前，数据可以随意变化，但如果超过了最小建立时间（保持稳定得太晚），就有可能无法被识别，导致错误。在规格书中的表示如下：
+
+| Parameter | Description              | Min | Max | Unit |
+| --------- | ------------------------ | --- | --- | ---- |
+| $t_{SD}$  | Data Set-Up to Write End | 11  |     | ns   |
+
 ### 保持时间（Hold Time）
 
-### 传输时延（Propagation Delay）
+保持时间指的是参考信号（图中为 `WE`）发生变化（到达一定电压阈值）后，为了确保无误，数据（图中为 `DATA IN`）必须保持稳定持续的最短时间。如果保持时间太短，数据有概率不能被正确识别。在规格书中的表示如下：
+
+| Parameter | Description              | Min | Max | Unit |
+| --------- | ------------------------ | --- | --- | ---- |
+| $t_{HD}$  | Data Hold from Write End | 1   |     | ns   |
+
+### 传播时延（Propagation Delay）
+
+传播时延指的是一个信号的传输和另一个相关信号的传输之间的时间间隔。大多时候测量的是输入信号（图中为 `ADDR`）发生变化，到相应输出（图中为 `DATA OUT`）反应之间的时间间隔（从输入端到输出端所需的时间）。它保证了输出信号可在输入信号出现后多久内出现。在规格书中的表示如下：
+
+| Parameter | Description           | Min | Max | Unit |
+| --------- | --------------------- | --- | --- | ---- |
+| $t_{AA}$  | Address to Data Valid |     | 15  | ns   |
 
 ### 最小脉宽（Minimum Pulse Widths）
+
+| Parameter | Description             | Min | Max | Unit |
+| --------- | ----------------------- | --- | --- | ---- |
+| $t_{WL}$  | Minimum clock low time  | 20  |     | ns   |
+| $t_{WH}$  | Minimum clock high time | 25  |     | ns   |
 
 ### 最大频率（Maximum Frequency）
 
