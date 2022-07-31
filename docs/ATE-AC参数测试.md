@@ -17,7 +17,7 @@ AC 测试用于确保 DUT 符合其时序规格 A，测试时需要设置恰当�
 
 ### 最小脉宽（Minimum Pulse Widths）
 
-### 最大频率
+### 最大频率（Maximum Frequency）
 
 ### 输出使能时间（Output Enable Time）
 
