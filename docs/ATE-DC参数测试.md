@@ -1,6 +1,6 @@
 ---
-id: ATE-DC测试
-title: ATE - DC 测试 🚧
+id: ATE-DC参数测试
+title: ATE - DC 参数测试 🚧
 ---
 
 ## DC 测试与电阻率的关系
