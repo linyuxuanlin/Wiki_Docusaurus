@@ -98,5 +98,5 @@ if __name__ == '__main__':
 
 - [谷歌相册下载后的时间丢失问题](https://zhuanlan.zhihu.com/p/356718593)
 
-> 本文章受 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh) 协议保护，转载请注明出处。
+> 本篇文章受 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh) 协议保护，转载请注明出处。
 

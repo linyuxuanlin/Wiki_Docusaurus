@@ -259,5 +259,5 @@ int fputc(int ch,FILE *f)
 - [Learning-Markdown (Markdown 入门参考)](https://xianbai.me/learn-md/index.html)
 - [基本撰写和格式语法](https://docs.github.com/cn/github/writing-on-github/basic-writing-and-formatting-syntax)
 
-> 本文章受 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh) 协议保护，转载请注明出处。
+> 本篇文章受 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh) 协议保护，转载请注明出处。
 

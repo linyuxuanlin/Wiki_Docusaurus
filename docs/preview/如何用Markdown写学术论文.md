@@ -65,5 +65,5 @@ pandoc --filter pandoc-fignos --filter pandoc-citeproc --bibliography=myref.bib 
 
 - [如何用 Markdown 写论文？](https://www.jianshu.com/p/b0ac7ae98100)
 
-> 本文章受 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh) 协议保护，转载请注明出处。
+> 本篇文章受 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh) 协议保护，转载请注明出处。
 

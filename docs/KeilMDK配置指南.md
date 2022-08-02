@@ -67,5 +67,5 @@ title: Keil MDK 配置指南
 - [keil 代码格式化](https://blog.csdn.net/sudaroot/article/details/88095269)
 - [个人界面配置](https://github.com/linyuxuanlin/File-host/blob/main/software-development/global.prop)
 
-> 本文章受 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh) 协议保护，转载请注明出处。
+> 本篇文章受 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh) 协议保护，转载请注明出处。
 

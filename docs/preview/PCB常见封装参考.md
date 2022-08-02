@@ -26,5 +26,5 @@ title: PCB 常见封装参考
 - [topline_catalog.pdf](https://www.topline.tv/topline_catalog.pdf)
 - [TopLine](https://www.topline.tv/)
 
-> 本文章受 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh) 协议保护，转载请注明出处。
+> 本篇文章受 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh) 协议保护，转载请注明出处。
 

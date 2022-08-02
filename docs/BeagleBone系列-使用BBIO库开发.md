@@ -203,5 +203,5 @@ sudo pip3 install --upgrade Adafruit_BBIO
 - [Adafruit-BBIO 1.2.0](https://pypi.org/project/Adafruit-BBIO/#description)
 - [Setting up IO Python Library on BeagleBone Black](https://learn.adafruit.com/setting-up-io-python-library-on-beaglebone-black)
 
-> 本文章受 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh) 协议保护，转载请注明出处。
+> 本篇文章受 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh) 协议保护，转载请注明出处。
 

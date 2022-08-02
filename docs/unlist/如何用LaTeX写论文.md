@@ -25,5 +25,5 @@ title: 如何用 LaTeX 写论文
 
 - [sjtug/SJTUThesis](https://github.com/sjtug/SJTUThesis)
 
-> 本文章受 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh) 协议保护，转载请注明出处。
+> 本篇文章受 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh) 协议保护，转载请注明出处。
 

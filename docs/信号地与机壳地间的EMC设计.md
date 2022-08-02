@@ -15,5 +15,5 @@ title: 信号地与机壳地间的 EMC 设计
 
 - [PCB 地与金属机壳用阻容连接，什么说法？](https://mp.weixin.qq.com/s/vAdoDyBed4uIfISrP0Zeyw)
 
-> 本文章受 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh) 协议保护，转载请注明出处。
+> 本篇文章受 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh) 协议保护，转载请注明出处。
 
