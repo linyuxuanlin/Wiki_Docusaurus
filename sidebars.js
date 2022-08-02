@@ -192,7 +192,7 @@ const sidebars = {
 
     {
       type: 'category',
-      label: '软件与仪器',
+      label: '软件与仪器使用',
       link: {
         type: 'generated-index',
         //description: ' ',
