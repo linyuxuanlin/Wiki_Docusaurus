@@ -121,30 +121,6 @@ const sidebars = {
       ],
     },
 
-    {
-      type: 'category',
-      label: '信号与电源完整性',
-      link: {
-        type: 'generated-index',
-        //description: ' ',
-        slug: '/硬件设计',
-        keywords: ['x', 'x'],
-      },
-      items: [
-        '高速电路的设计',
-        '信号完整性-基础概念',
-        '信号完整性-时域与频域',
-        '信号完整性-阻抗与电气模型',
-        '信号完整性-电阻的物理基础',
-        '信号完整性-传输线',
-        '信号完整性-失真',
-        '信号完整性-串扰',
-        '电源完整性设计',
-        'ESD基础知识',
-        'EMC设计指南',
-        '信号地与机壳地间的EMC设计',
-      ],
-    },
 
     {
       type: 'category',
@@ -173,7 +149,33 @@ const sidebars = {
 
     {
       type: 'category',
-      label: '半导体测试',
+      label: '信号与电源完整性',
+      link: {
+        type: 'generated-index',
+        //description: ' ',
+        slug: '/硬件设计',
+        keywords: ['x', 'x'],
+      },
+      items: [
+        '高速电路的设计',
+        '信号完整性-基础概念',
+        '信号完整性-时域与频域',
+        '信号完整性-阻抗与电气模型',
+        '信号完整性-电阻的物理基础',
+        '信号完整性-传输线',
+        '信号完整性-失真',
+        '信号完整性-串扰',
+        '电源完整性设计',
+        'ESD基础知识',
+        'EMC设计指南',
+        '信号地与机壳地间的EMC设计',
+      ],
+    },
+
+
+    {
+      type: 'category',
+      label: '半导体自动化测试',
       link: {
         type: 'generated-index',
         //description: ' ',
