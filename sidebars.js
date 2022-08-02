@@ -181,10 +181,10 @@ const sidebars = {
       },
       items: [
         'ATE-基本概念',
-        'ATE-开短路测试',
-        'ATE-DC参数测试',
-        'ATE-功能参数测试',
-        'ATE-AC参数测试',
+        'ATE-OS测试',
+        'ATE-DC测试',
+        'ATE-功能测试',
+        'ATE-AC测试',
       ],
     },
 
