@@ -1,7 +1,9 @@
 ---
-id: Cadence操作笔记-OrCAD_Capture
-title: Cadence 操作笔记 - OrCAD Capture
+id: OrCAD配置与技巧
+title: OrCAD 配置与技巧
 ---
+
+注：本文基于 Cadence OrCAD Capture CIS。
 
 ## 基础
 
