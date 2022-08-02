@@ -260,3 +260,5 @@ IOZ 指的是输出引脚（O）高阻态（Z）下的漏电流（I）。IOZL �
 
 - 《The Fundamentals Of Digital Semiconductor Testing》
 - 《DC Test Theory》
+
+> 本文章受 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh) 协议保护，转载请注明出处。
