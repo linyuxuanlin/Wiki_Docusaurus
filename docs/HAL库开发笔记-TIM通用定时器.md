@@ -88,4 +88,6 @@ __HAL_TIM_SetCompare(&htim8,TIM_CHANNEL_1,500);
 
 - [STM32CubeMX 实战教程（五）—— 通用定时器（PWM 输出）](https://blog.csdn.net/weixin_43892323/article/details/104776035)
 
- > 本文章受 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh) 协议保护，转载请注明出处。
+> 文章作者：**Power Lin**  
+> 原文地址：<https://wiki-power.com>  
+> 版权声明：文章采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh) 协议，转载请注明出处。

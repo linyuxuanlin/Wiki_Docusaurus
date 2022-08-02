@@ -34,4 +34,6 @@ CDC_Transmit_FS(Buf,*Len); // 返回相同数据
 
 - [STM32 使用 CubeMX HAL 库快速生成 USBVCP 虚拟串口工程](https://blog.csdn.net/yxy244/article/details/102620249)
 
- > 本文章受 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh) 协议保护，转载请注明出处。
+> 文章作者：**Power Lin**  
+> 原文地址：<https://wiki-power.com>  
+> 版权声明：文章采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh) 协议，转载请注明出处。

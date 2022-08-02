@@ -28,4 +28,6 @@ title: 用群晖自带反向代理实现 HTTPS 访问
 
 依次打开 `控制面板` - `安全性` - `证书`，选中正在使用的证书，点击 `设置`，确保 `bitwarden` 的反代服务所对应的域名的证书为当前证书即可。
 
- > 本文章受 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh) 协议保护，转载请注明出处。
+> 文章作者：**Power Lin**  
+> 原文地址：<https://wiki-power.com>  
+> 版权声明：文章采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh) 协议，转载请注明出处。

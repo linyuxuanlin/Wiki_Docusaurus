@@ -62,6 +62,8 @@ Pin 定义：
 - [小白自制 Linux 开发板 一. 瞎抄原理图与乱画 PCB](https://www.cnblogs.com/twzy/p/14714651.html)
 - [MangoPi](https://mangopi.cc/f1c200s)
 
- > 本文章受 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh) 协议保护，转载请注明出处。
+> 文章作者：**Power Lin**  
+> 原文地址：<https://wiki-power.com>  
+> 版权声明：文章采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh) 协议，转载请注明出处。
 
 ## 各模块的设计
