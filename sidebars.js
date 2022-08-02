@@ -182,11 +182,11 @@ const sidebars = {
         keywords: ['x', 'x'],
       },
       items: [
-        'ATE-基本概念',
-        'ATE-OS测试',
-        'ATE-DC测试',
-        'ATE-功能测试',
-        'ATE-AC测试',
+        'ATE基础-基本概念',
+        'ATE基础-OS测试',
+        'ATE基础-DC测试',
+        'ATE基础-功能测试',
+        'ATE基础-AC测试',
       ],
     },
 

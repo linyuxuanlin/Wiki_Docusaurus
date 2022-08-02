@@ -1,6 +1,6 @@
 ---
-id: ATE-功能测试
-title: ATE - 功能测试 🚧
+id: ATE基础-功能测试
+title: ATE 基础 - 功能测试 🚧
 ---
 
 功能测试分两阶段：功能验证（Functional Verification and characterization）、生产测试（Manufacturing Test）。
