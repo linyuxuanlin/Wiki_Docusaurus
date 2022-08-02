@@ -255,6 +255,4 @@ LMR14050 需要一个 BOOT 自举电容，在前文有提及，BOOT 电容的参
 - [技术文档 · LMR14050](https://www.ti.com.cn/product/cn/LMR14050#tech-docs)
 - [N-1149 Layout Guidelines for Switching Power Supplies](https://www.ti.com/lit/an/snva021c/snva021c.pdf?ts=1641814411004)
 
-> 文章作者：**Power Lin**  
-> 原文地址：<https://wiki-power.com>  
-> 版权声明：文章采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh) 协议，转载请注明出处。
+ > 本文章受 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh) 协议保护，转载请注明出处。

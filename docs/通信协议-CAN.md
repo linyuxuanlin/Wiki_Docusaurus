@@ -118,6 +118,4 @@ CAN 接口防护器件主要包括：滤波电容、共模电感、跨接电容�
 
 - [接口电路的防护设计](https://blog.csdn.net/weixin_40877615/article/details/94381422)
 
-> 文章作者：**Power Lin**  
-> 原文地址：<https://wiki-power.com>  
-> 版权声明：文章采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh) 协议，转载请注明出处。
+ > 本文章受 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh) 协议保护，转载请注明出处。
