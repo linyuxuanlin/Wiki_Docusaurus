@@ -1,6 +1,6 @@
 ---
-id: ATE-AC参数测试
-title: ATE - AC 参数测试
+id: ATE-AC测试
+title: ATE - AC 测试
 ---
 
 AC 测试用于确保 DUT 的时特性序满足其规格需求。
