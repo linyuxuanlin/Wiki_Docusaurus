@@ -76,3 +76,13 @@ ZZZZZ   /* cycle 7 关断所有引脚并测试它们 */
 
 对于 VSS 管的矢量程序测试，只需要执行之前的第 7 个周期，即 `ZZZZZ`，对所有引脚的 VSS 管并行测开路。
 
+### VIL/VIH 测试（功能测试法）
+
+VIL 表示输入低电平逻辑最差的情况；VIH 表示输入高电平逻辑最差的情况。测试这两个值的目的是保证高低电平能被正常识别出来。下例是 256 x 4 静态 RAM 的 VIH 和 VIL 参数：
+
+| Parameter | Description        | Min | Max | Unit |
+| --------- | ------------------ | --- | --- | ---- |
+| VIH       | Input HIGH Voltage | 2.0 |     | V    |
+| VIH       | Input LOW Voltage  |     | 0.8 | V    |
+
+对 TTL 逻辑，一般 VIL 为 0.8V，VIH 为 2.0V；对 CMOS 逻辑，VIL 是 0.3\*VDD，VIH 是 0.7\*VDD。对 VIL 和 VIH 的测试，需要在 VDDmin 和 VDDmax 下分别进行。
