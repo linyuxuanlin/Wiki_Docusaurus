@@ -3,19 +3,25 @@ id: ATE基础-基本概念
 title: ATE 基础 - 基本概念 🚧
 ---
 
-## 晶圆、晶粒与芯片
+## 晶圆、晶粒与封装
 
-芯片设计制造流程：
+芯片设计制造流程示意图：
 
 ![](https://cos.wiki-power.com/img/20220726161704.png)
 
-晶圆（Wafer），晶粒（Die，复数 Dice，也称裸片）与芯片（Chip）的关系如下：
+晶圆（Wafer），晶粒（Die，复数 Dice，也称裸片）与封装后的芯片（Package Device）的关系如下：
 
 ![](https://cos.wiki-power.com/img/20220726162316.png)
 
 经过测试和墨点标示的晶圆示意图：
 
 ![](https://cos.wiki-power.com/img/20220729161745.png)
+
+## CP 测试与 FT 测试
+
+CP（Chip Probe）测试是芯片还在 Wafer 阶段时，就通过探针卡扎到芯片管脚上对芯片进行性能及功能测试。FT（Final Test）是芯片在封装完成以后进行的最终测试。
+
+## 
 
 ## 基本术语
 
