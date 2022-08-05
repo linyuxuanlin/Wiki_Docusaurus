@@ -1,6 +1,6 @@
 ---
-id: ATE基础-AC测试
-title: ATE 基础 - AC 测试
+id: 半导体测试基础-AC测试
+title: 半导体测试基础 - AC 测试
 ---
 
 AC 测试用于确保 DUT 的时特性序满足其规格需求。
