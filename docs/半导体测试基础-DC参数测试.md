@@ -127,7 +127,7 @@ VOH 表示高电平（H）输出（O）时的最低电压（V）限制（不会�
 
 ## IIL/IIH
 
-IIL 指的是输入引脚（I）逻辑为低电平（L）时，允许的最大拉电流（I,source，从外部经引脚往 DUT 的 VSS 漏）。IIH 指的是输入引脚（I）逻辑为高电平（H）时，允许的最大灌电流（I,sink，从 DUT 的 VDD 经引脚往外漏）。举个例子，下表是 256 x 4 Static RAM 的 IIL 和 IIH 参数：
+IIL 指的是输入引脚（I）逻辑为低电平（L）时，允许的最大拉电流（I，source，从外部经引脚往 DUT 的 VSS 漏）。IIH 指的是输入引脚（I）逻辑为高电平（H）时，允许的最大灌电流（I，sink，从 DUT 的 VDD 经引脚往外漏）。举个例子，下表是 256 x 4 Static RAM 的 IIL 和 IIH 参数：
 
 | Parameter | Description        | Test Conditions        | Min | Max | Units |
 | --------- | ------------------ | ---------------------- | --- | --- | ----- |
