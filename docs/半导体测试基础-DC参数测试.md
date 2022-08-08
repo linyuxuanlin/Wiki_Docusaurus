@@ -186,29 +186,6 @@ IIL 衡量的是输入引脚到 VDD 的电阻值；IIH 衡量的是输入引脚�
 
 组合测试方法与以上类似。其电流总限额是单个引脚的标称值，如果测试结果超限，则必须换回串行测试重测，这种测试对 CMOS 器件（高阻抗输入）测试效果比较好。
 
-## 上下拉阻性输入（Resistive Inputs）
-
-有些输入引脚可能有主动上拉、下拉结构，需要保证 **输入 Buffer 的上下拉电阻路径正常**。只能串行测试，因为不同引脚内部上下拉结构可能不一样。引脚结构的示意图：
-
-![](https://cos.wiki-power.com/img/20220729130655.png)
-
-## 输出扇出能力（Output Fanout）
-
-扇出（Fanout）能力是指输出引脚根据其电压电流参数，驱动多个输入引脚的能力。也就是 **引脚的带驱能力，是衡量一个输出引脚可以带得动多少个输入引脚的指标**。
-
-![](https://cos.wiki-power.com/img/20220729132621.png)
-
-如上图，这个 TTL 输出可以拉高大约 17 个输入引脚，或者拉低 30 个输入引脚。在规格书中，引脚的参数会这样表示出来：
-
-| Parameter | Description             | Test Conditions           | Min  | Max | Units |
-| --------- | ----------------------- | ------------------------- | ---- | --- | ----- |
-| VOH       | Output HIGH Voltage     | VCC = 4.75V, IOH = -2.6mA | 2.4  |     | V     |
-| VOL       | Output LOW Voltage      | VCC = 4.75V, IOH = 24mA   |      | 0.4 | V     |
-| IIL       | Input LOW Load Current  | Vin = 0.4V                | -800 |     | µA    |
-| IIH       | Input HIGH Load Current | Vin = 2.4V                |      | 150 | µA    |
-
-扇出能力在 TTL 和 CMOS 器件之间差别很大，因为 CMOS 输入阻抗高，所以理论上一个 CMOS 输出可驱动任意多个 CMOS 输入。但 CMOS 输入引脚有寄生电容，连接越多输入，电容越大，在高低电平切换时会存在电容充放电效应，产生延时。
-
 ## IOZL/IOZH
 
 高阻电流 IOZ 指输出引脚（O）高阻态（Z）下的漏电流（I）。其中，IOZL 指引脚低电平（L）状态时的漏电流；IOZH 指高电平（H）状态时的漏电流。
@@ -291,6 +268,29 @@ IIL 衡量的是输入引脚到 VDD 的电阻值；IIH 衡量的是输入引脚�
   - 没有经过正确的预处理。
 - **低于下限值**
   - 输出阻抗太低，导致电流绝对值过大。
+
+## 上下拉阻性输入（Resistive Inputs）
+
+有些输入引脚可能有主动上拉、下拉结构，需要保证 **输入 Buffer 的上下拉电阻路径正常**。只能串行测试，因为不同引脚内部上下拉结构可能不一样。引脚结构的示意图：
+
+![](https://cos.wiki-power.com/img/20220729130655.png)
+
+## 输出扇出能力（Output Fanout）
+
+扇出（Fanout）能力是指输出引脚根据其电压电流参数，驱动多个输入引脚的能力。也就是 **引脚的带驱能力，是衡量一个输出引脚可以带得动多少个输入引脚的指标**。
+
+![](https://cos.wiki-power.com/img/20220729132621.png)
+
+如上图，这个 TTL 输出可以拉高大约 17 个输入引脚，或者拉低 30 个输入引脚。在规格书中，引脚的参数会这样表示出来：
+
+| Parameter | Description             | Test Conditions           | Min  | Max | Units |
+| --------- | ----------------------- | ------------------------- | ---- | --- | ----- |
+| VOH       | Output HIGH Voltage     | VCC = 4.75V, IOH = -2.6mA | 2.4  |     | V     |
+| VOL       | Output LOW Voltage      | VCC = 4.75V, IOH = 24mA   |      | 0.4 | V     |
+| IIL       | Input LOW Load Current  | Vin = 0.4V                | -800 |     | µA    |
+| IIH       | Input HIGH Load Current | Vin = 2.4V                |      | 150 | µA    |
+
+扇出能力在 TTL 和 CMOS 器件之间差别很大，因为 CMOS 输入阻抗高，所以理论上一个 CMOS 输出可驱动任意多个 CMOS 输入。但 CMOS 输入引脚有寄生电容，连接越多输入，电容越大，在高低电平切换时会存在电容充放电效应，产生延时。
 
 ## 参考与致谢
 
