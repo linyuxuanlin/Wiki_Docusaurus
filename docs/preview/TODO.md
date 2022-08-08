@@ -3,7 +3,7 @@ volume 也是绕过 container 的文件系统，直接将数据写到 host 机�
 ATE 问题：
 
 1. 几种测试模式的区别？DC 与功能测试
-
+2. VIL/VIH 功能测试的含义？
 
 ## 路由器
 
