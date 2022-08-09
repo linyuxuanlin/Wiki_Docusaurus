@@ -149,6 +149,19 @@ const sidebars = {
 
     {
       type: 'category',
+      label: '混合信号处理',
+      link: {
+        type: 'generated-index',
+        //description: ' ',
+        keywords: ['x', 'x'],
+      },
+      items: [
+        '混合信号基本概念',
+      ],
+    },
+
+    {
+      type: 'category',
       label: '信号与电源完整性',
       link: {
         type: 'generated-index',
