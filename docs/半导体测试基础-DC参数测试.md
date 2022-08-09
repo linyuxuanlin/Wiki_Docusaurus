@@ -76,7 +76,7 @@ VOL 表示低电平（L）输出（O）时的最高电压（V）限制（不会�
 
 VOH 表示高电平（H）输出（O）时的最低电压（V）限制（不会被识别成逻辑 0）。IOL 表示高电平（H）输出（O）时拉电流（I，source）的驱动能力。它们共同衡量的是 Buffer 在输出高电平时的阻抗，保证在适当输出的电压下能输出恒定的电流值。
 
-举个例子，下表是 256 x 4 Static RAM 的 VVOL/IOL & VOH/IOH 参数：
+举个例子，下表是 256 x 4 Static RAM 的 VOL/IOL & VOH/IOH 参数：
 
 | Parameter | Description         | Test Conditions           | Min | Max | Units |
 | --------- | ------------------- | ------------------------- | --- | --- | ----- |
