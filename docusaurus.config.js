@@ -157,7 +157,7 @@ const config = {
 
       navbar: {
         title: 'Power\'s Wiki',
-        hideOnScroll: false,
+        hideOnScroll: true,
         /*
         logo: {
           alt: 'My Site Logo',
