@@ -1,10 +1,5 @@
 volume 也是绕过 container 的文件系统，直接将数据写到 host 机器上，只是 volume 是被 docker 管理的，docker 下所有的 volume 都在 host 机器上的指定目录下/var/lib/docker/volumes
 
-ATE 问题：
-
-1. 几种测试模式的区别？DC 与功能测试
-2. VIL/VIH 功能测试的含义？
-
 ## 路由器
 
 AX6 https://supes.top/%E7%BA%A2%E7%B1%B3ax6-%E8%A7%A3%E9%94%81ssh%E5%88%B7u-boot%E4%B8%8Eopenwrt%E6%95%99%E7%A8%8B/
