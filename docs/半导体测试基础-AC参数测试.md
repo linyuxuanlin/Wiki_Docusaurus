@@ -9,6 +9,8 @@ AC 测试确保 DUT 的时特性序满足其规格需求。
 
 ### 建立时间（Setup Time）
 
+![](https://cos.wiki-power.com/img/20220809094845.png)
+
 建立时间指的是在参考信号（图中为 `WE`）发生变化（取中间值 1.5V）前，为了确保能被正确读取，数据（图中为 `DATA IN`）必须提前保持稳定不变的最短时间。在最小建立时间之前，数据可以随意变化，但如果超过了最小建立时间（保持稳定得太晚），就有可能无法被识别，导致错误。在规格书中的表示如下：
 
 | Parameter | Description              | Min | Max | Unit |
@@ -16,6 +18,8 @@ AC 测试确保 DUT 的时特性序满足其规格需求。
 | $t_{SD}$  | Data Set-Up to Write End | 11  |     | ns   |
 
 ### 保持时间（Hold Time）
+
+![](https://cos.wiki-power.com/img/20220809094858.png)
 
 保持时间指的是参考信号（图中为 `WE`）发生变化（到达一定电压阈值）后，为了确保无误，数据（图中为 `DATA IN`）必须保持稳定持续的最短时间。如果保持时间太短，数据有概率不能被正确识别。在规格书中的表示如下：
 
@@ -25,6 +29,8 @@ AC 测试确保 DUT 的时特性序满足其规格需求。
 
 ### 传播时延（Propagation Delay）
 
+![](https://cos.wiki-power.com/img/20220809094910.png)
+
 传播时延指的是一个信号的传输和另一个相关信号的传输之间的时间间隔。大多时候测量的是输入信号（图中为 `ADDR`）发生变化，到相应输出（图中为 `DATA OUT`）反应之间的时间间隔（从输入端到输出端所需的时间）。它保证了输出信号可在输入信号出现后多久内出现。在规格书中的表示如下：
 
 | Parameter | Description           | Min | Max | Unit |
@@ -32,6 +38,8 @@ AC 测试确保 DUT 的时特性序满足其规格需求。
 | $t_{AA}$  | Address to Data Valid |     | 15  | ns   |
 
 ### 最小脉宽（Minimum Pulse Widths）
+
+![](https://cos.wiki-power.com/img/20220809094924.png)
 
 最小脉宽通常包含最小低脉冲宽度和最小高脉冲宽度，用于确保脉冲定时时的最小可操作的值。在规格书中的表示如下：
 
@@ -42,6 +50,8 @@ AC 测试确保 DUT 的时特性序满足其规格需求。
 
 ### 最大频率（Maximum Frequency）
 
+![](https://cos.wiki-power.com/img/20220809094934.png)
+
 最大工作频率通俗地讲，就是设备可运行的最大速度。在规格书中的表示如下：
 
 | Parameter | Description             | Min | Max  | Unit |
@@ -50,6 +60,8 @@ AC 测试确保 DUT 的时特性序满足其规格需求。
 
 ### 输出使能时间（Output Enable Time）
 
+![](https://cos.wiki-power.com/img/20220809094941.png)
+
 指的是引脚从高阻状态（关断失能）切换到有效驱动电平（高低电平）状态所需的时间，确保输出 Buffer 可以在规定的时间内改变引脚状态。测量时计算从控制信号发出到检测到开关输出的时间间隔。在规格书中的表示如下：
 
 | Parameter | Description          | Min | Max | Unit |
@@ -57,6 +69,8 @@ AC 测试确保 DUT 的时特性序满足其规格需求。
 | $t_{DOE}$ | OE LOW to Data Valid |     | 10  | ns   |
 
 ### 输出失能时间（Output Disable Time）
+
+![](https://cos.wiki-power.com/img/20220809094948.png)
 
 指的是引脚从有效驱动电平（高低电平）状态切换到高阻状态（关断失能）所需的时间，确保输出 Buffer 可以在规定的时间内改变引脚状态。测量时计算从控制信号发出到检测到开关输出的时间间隔。在规格书中的表示如下：
 
@@ -113,5 +127,3 @@ AC 测试确保 DUT 的时特性序满足其规格需求。
 - 《The Fundamentals Of Digital Semiconductor Testing》
 
 > 本篇文章受 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh) 协议保护，转载请注明出处。
-
-
