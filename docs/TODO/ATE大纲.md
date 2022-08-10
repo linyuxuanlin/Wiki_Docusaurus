@@ -1,33 +1,14 @@
-讲一下我对 ATE 的认识。ATE 是自动化测试设备，主要指的是 Tester, Handler, Prober, Loadboard 这一类仪器，因为现在的芯片原来越复杂，普通的 Bench 测试没法满足需求。我们这边做的主要是对封装后的芯片进行测试，算是半导体产业链上游里面最末端的一个组成部分。
-
-测试最基础的是测 DC 和 AC 参数。DC 参数用的方法可以是 Static，就是用 PE 卡的 Driver 和 PMU，然后 Force V Measure I 或 Force I Measure V ；也可以用 Functional 的方法，就是 Current Load 和 Voltage Comparator，然后跑 Pattern 来测试。
+讲一下我对 ATE 的认识。
 
 DC 测试的话主要有这么一些参数：
 
-- OS
-  - Static
-  - Functional
-- IDD
-  - Static
-- VOL/IOL,VOH/IOH
-  - Static
-  - Functional
-- VIL/VIH
-  - Functional
-- IIL/IIH
-  - Static
-- IOZL/IOZH
-  - Static
-  - Functional
 
 ---
 
-- OS 用来判断 DUT 是不是正确连接测试系统了
-- IDD 用来看芯片总电流会不会超标，一般要看最低功耗和最大工频下的电流
-- VOL/IOL,VOH/IOH 是用来看在输出一定的电流下能不能达到电平阈值
-- VIL/VIH 是看能不能正常识别输入的逻辑
-- IIL/IIH 引脚对电源的漏电流会不会超标，也就是看隔离的程度
-- IOZL/IOZH 是看引脚关断时漏电流会不会超标
+
+- VOL/IOL,VOH/IOH 
+- VIL/VIH 
+
 
 ---
 
