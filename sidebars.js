@@ -149,14 +149,14 @@ const sidebars = {
 
     {
       type: 'category',
-      label: '混合信号处理',
+      label: 'Mixed Signal Process',
       link: {
         type: 'generated-index',
         //description: ' ',
         keywords: ['x', 'x'],
       },
       items: [
-        '混合信号基本概念',
+        'Basis_of_Mixed_Signal',
       ],
     },
 
