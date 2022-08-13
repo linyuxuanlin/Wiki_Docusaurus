@@ -11,7 +11,10 @@ title: Basis of Mixed Signal 🚧
 
 > This article is protected by [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by/4.0/deed.en) agreement, should be reproduced with attribution.
 
-## 基本术语
+## Terms and Definitions
 
-- **DSP（Digital Signal Processing）**：将模拟信号转换为数字信号进行运算的器件。
-- **LSB（Least Significant Bit）**：数据最低有效位。
+- AWG(Arbitrary Waveform Generato): Low distortion signal generator.
+- DSP:
+  - Digital Signal Processor: A specialized device designed to process arrays rapidly, that are composed of digital representations of analog signals.
+  - Digital Signal Processing: The process of analyzing sampled analog signal after it has been conberted into binary data.
+- WD(Waveform Digitizer): Instrument that samples analog signals and converts them into digital values.
