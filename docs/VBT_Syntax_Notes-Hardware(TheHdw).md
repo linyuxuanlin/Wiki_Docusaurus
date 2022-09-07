@@ -1,9 +1,8 @@
 ---
-id: VBT 
+id: VBT_Syntax_Notes-Hardware(TheHdw) 
 title: VBT 
 ---
 
-VBT_Syntax_Notes-Hardware(TheHdw)
 VBT Syntax Notes - Hardware (TheHdw)
 
 ## Digital
