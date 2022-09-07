@@ -1,5 +1,5 @@
 ---
-id: VBT_Syntax_Notes-Hardware
+id: VBT_Syntax_Notes-Hardware(TheHdw)
 title: VBT Syntax Notes - Hardware (TheHdw)
 ---
 
