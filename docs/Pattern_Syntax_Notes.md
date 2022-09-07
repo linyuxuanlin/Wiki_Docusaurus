@@ -2,7 +2,7 @@
 id: Pattern_Syntax_Notes
 title: Pattern Syntax Notes
 ---
-1
+
 ## Meanings of Pattern Data Characters
 
 Input Drive:
