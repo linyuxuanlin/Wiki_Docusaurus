@@ -1,6 +1,6 @@
 ---
 id: Pattern_Syntax_Notes
-title: Pattern_Syntax_Notes
+title: Pattern Syntax Notes
 ---
 
 ## Meanings of Pattern Data Characters
