@@ -200,7 +200,7 @@ const sidebars = {
         '半导体测试基础-DC参数测试',
         '半导体测试基础-功能测试',
         '半导体测试基础-AC参数测试',
-        'VBT Syntax Notes - Hardware (TheHdw)',
+        'VBT',
       ],
     },
 
