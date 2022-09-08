@@ -23,13 +23,13 @@ Usually use PPMU method with VBT code (also can be tested using PE and functiona
 2. Force a small negative current (-100uA) on the Pin Under Test. (with voltage clamp)
 3. Meaure voltage on the Pin Under Test.
 
-Judge the test result refer to the measured voltage:
+Then determine the test result depending on the measured voltage:
 
-| Situation            | Example       | Result | Comment |
-| -------------------- | ------------- | ------ | ------- |
-| Higher than max spec | >-0.2V       | Fail   | Short   |
+| Situation            | Example     | Result | Comment |
+| -------------------- | ----------- | ------ | ------- |
+| Higher than max spec | >-0.2V      | Fail   | Short   |
 | Midband              | -1.5V~-0.2V | Pass   |         |
-| Lower than min spec  | <-1.5V       | Fail   | Open    |
+| Lower than min spec  | <-1.5V      | Fail   | Open    |
 
 **Test through VDD protection diode**:
 
@@ -37,16 +37,13 @@ Judge the test result refer to the measured voltage:
 2. Force a small positive current (+100uA) on the Pin Under Test. (with voltage clamp)
 3. Meaure voltage on the Pin Under Test.
 
-Judge the test result refer to the measured voltage:
+Then determine the test result depending on the measured voltage:
 
-| Situation            | Example       | Result | Comment |
-| -------------------- | ------------- | ------ | ------- |
-| Higher than max spec | >-0.2V       | Fail   | Short   |
-| Midband              | -1.5V~-0.2V | Pass   |         |
-| Lower than min spec  | <-1.5V       | Fail   | Open    |
-
-
-
+| Situation            | Example   | Result | Comment |
+| -------------------- | --------- | ------ | ------- |
+| Higher than max spec | >1.5V     | Fail   | Open    |
+| Midband              | 0.2V~1.5V | Pass   |         |
+| Lower than min spec  | <-0.2V    | Fail   | Short   |
 
 ## Power Pin Short Test
 
