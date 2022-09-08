@@ -9,9 +9,7 @@ Continuity test is to confirm the electronical contact between tester and DUT, a
 
 ### Test Method
 
-Continuity test is performed with protection diodes (to VDD and to GND). 
-
-Usually use PPMU method with VBT code (also can be tested using PE and functional pattern).
+Continuity test is performed with protection diodes (to VDD and to GND). Usually use PPMU method with VBT code (also can be tested using PE and functional pattern).
 
 #### Test through GND protection diode
 
