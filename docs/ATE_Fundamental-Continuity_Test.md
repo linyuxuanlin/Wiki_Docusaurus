@@ -24,6 +24,7 @@ Judge the test result refer to the measured voltage:
 |Situation|Example|Result|Comment|
 |-|-|-|-|
 |Higher than max spec|>-200mV|Fail|Short|
+|Midband|-800mV~-200mV|Pass||
 |Lower than min spec|<-800mV|Fail|Open|
 
 
