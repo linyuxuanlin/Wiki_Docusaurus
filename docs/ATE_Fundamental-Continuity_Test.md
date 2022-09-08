@@ -11,33 +11,40 @@ Continuity test is to confirm the electronical contact between tester and DUT, a
 
 Continuity test is performed with protection diodes (to VDD and to GND). 
 
+
+
 ### Test Method
 
 Usually use PPMU method with VBT code (also can be tested using PE and functional pattern).
 
+**Test through GND protection diode**:
+
 1. Force 0V to all other pins that are not tested (include power pin).
-2. Force a small negative current (-100uA) on the pin under test. (with voltage clamp)
-3. Meaure voltage on the pin under test
+2. Force a small negative current (-100uA) on the Pin Under Test. (with voltage clamp)
+3. Meaure voltage on the Pin Under Test.
 
 Judge the test result refer to the measured voltage:
 
-|Situation|Example|Result|Comment|
-|-|-|-|-|
-|Higher than max spec|>-200mV|Fail|Short|
-|Midband|-800mV~-200mV|Pass||
-|Lower than min spec|<-800mV|Fail|Open|
+| Situation            | Example       | Result | Comment |
+| -------------------- | ------------- | ------ | ------- |
+| Higher than max spec | >-0.2V       | Fail   | Short   |
+| Midband              | -1.5V~-0.2V | Pass   |         |
+| Lower than min spec  | <-1.5V       | Fail   | Open    |
 
+**Test through VDD protection diode**:
 
+1. Force 0V to all other pins that are not tested (include power pin).
+2. Force a small positive current (+100uA) on the Pin Under Test. (with voltage clamp)
+3. Meaure voltage on the Pin Under Test.
 
+Judge the test result refer to the measured voltage:
 
-  -  (): Fail Short.
-  - Lower than min spec (-800mV): Fail Open
+| Situation            | Example       | Result | Comment |
+| -------------------- | ------------- | ------ | ------- |
+| Higher than max spec | >-0.2V       | Fail   | Short   |
+| Midband              | -1.5V~-0.2V | Pass   |         |
+| Lower than min spec  | <-1.5V       | Fail   | Open    |
 
-1. Test limits to a high of -200mV(higher: short) and a low of -800mV(lower: open).
-
-
-
-**Reasons of not passing**: 
 
 
 
