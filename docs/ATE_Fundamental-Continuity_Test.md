@@ -18,9 +18,9 @@ Continuity test is performed with protection diodes (to VDD and to GND). Usually
 1. Force 0V to all other pins that are not tested (include power pin).
 2. Force a small negative current (-100uA) on the Pin Under Test. (with voltage clamp)
 3. Meaure voltage on the Pin Under Test：
-   - Higher than max spec(>-0.2V): **Fail(Short)**
-   - Midband(-1.5V~-0.2V): **Pass**
-   - Lower than min spec(<-1.5V): **Fail(Open)**
+   - **Higher than max spec(>-0.2V)**: Fail(Short)
+   - **Midband(-1.5V~-0.2V**): Pass
+   - **Lower than min spec(<-1.5V)**: Fail(Open)
 
 #### Test through VDD protection diode
 
@@ -29,9 +29,9 @@ Continuity test is performed with protection diodes (to VDD and to GND). Usually
 1. Force 0V to all other pins that are not tested (include power pin).
 2. Force a small positive current (+100uA) on the Pin Under Test. (with voltage clamp)
 3. Meaure voltage on the Pin Under Test：
-   - Higher than max spec(>1.5V): **Fail(Short)**
-   - Midband(0.2V~1.5V): **Pass**
-   - Lower than min spec(<0.2V): **Fail(Open)**
+   - ** Higher than max spec(>1.5V)**: Fail(Short)
+   - **Midband(0.2V~1.5V)**: Pass
+   - **Lower than min spec(<0.2V)**: Fail(Open)
 
 ## Power Pin Short Test
 
