@@ -1,6 +1,6 @@
 ---
 id: ATE_Fundamental-Continuity_Test
-title: ATE Fundamental - Continuity Test
+title: ATE Fundamental - Continuity Test 🚧
 ---
 
 ## Continuity Test (Open/Short)
