@@ -3,13 +3,15 @@ id: ATE-Continuity_Test
 title: ATE - Continuity Test
 ---
 
-## Continuity Test (Open/Short)
+Continuity test contains open/short test and power pin short test. The former checks the signal pins, while the latter checks the power pin.
 
-Continuity test is to confirm the electronical contact between tester and DUT, and whether if short-circuit existed to other pins or to ground.
+## Open/Short Continuity Test
+
+Open/short continuity test is to confirm the electronical contact between tester and DUT, and whether if short-circuit existed to other pins or to ground.
 
 ### Test Method
 
-Continuity test is performed with testing the protection diodes (diodes to VDD and to GND). Usually use PPMU with VBT code (also can be tested using PE and functional pattern).
+Open/short continuity test is performed with testing the protection diodes (diodes to VDD and to GND). Usually use PPMU with VBT code (also can be tested using PE and functional pattern).
 
 **Test through GND protection diode**:
 
@@ -35,7 +37,7 @@ Continuity test is performed with testing the protection diodes (diodes to VDD a
 
 ## Power Pin Short Test
 
-Power pin short test is to check if there is a short-circuit from VDD to GND pin, which will cause damagement to DUT or tester. Power pin short test always run immediately after continuity test, and when it fails, device power will be shut off and the DUT will be rejected.
+Power pin short test is to check if there is a short-circuit from VDD to GND pin, which will cause damagement to DUT or tester. Power pin short test always run immediately after open/short continuity test, and when it fails, device power will be shut off and the DUT will be rejected.
 
 ### Test Method
 
