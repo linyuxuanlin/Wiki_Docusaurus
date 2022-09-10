@@ -1,6 +1,6 @@
 ---
-id: ATE_Fundamental-Continuity_Test
-title: ATE Fundamental - Continuity Test 🚧
+id: ATE-Continuity_Test
+title: ATE - Continuity Test
 ---
 
 ## Continuity Test (Open/Short)
@@ -50,6 +50,9 @@ Power Pin Short Test is performed by applying a small voltage to VDD, and measur
    - **Midband(-1uA~20uA)**: Pass
    - **Lower than min spec(<-1uA)**: Fail
 
+## References & Acknowledgements
 
+- 《The Fundamentals Of Digital Semiconductor Testing》
+- 《Fundamentals of Testing Using ATE》
 
-
+> This article is protected by CC BY-NC-SA 4.0 agreement, should be reproduced with attribution.
