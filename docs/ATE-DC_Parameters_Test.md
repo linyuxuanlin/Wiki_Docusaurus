@@ -13,11 +13,17 @@ Test items of DC parameters are as follows:
   - Gross IDD 
   - Static IDD
   - Dynamic IDD
-  - IDDQ
+  - Quiescent IDD (IDDQ)
 - Input Leakage Test (IIL & IIH) 
 - Output Level Threshold Test (VOL/IOL & VOH/IOH)
 - Input Level Threshold Test (VIL & VIH)
 - Optional tests: Output High-Z Leakage Test (IOZL & IOZH), Input Clamp (VI), Output Short-circuit Current (IOS), Resistive Inputs, Output Fanout
+
+## Power Supply Current Test (IDD)
+
+IDD indicates the current flows from Drain to Drain in a CMOS circuit (ICC in TTL circuit, Collector to Collector). It can be equivalent as:
+
+![](https://cos.wiki-power.com/img/20220910234238.png)
 
 ## References & Acknowledgements
 
