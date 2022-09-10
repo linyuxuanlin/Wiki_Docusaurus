@@ -17,12 +17,7 @@ Test items of DC parameters are as follows:
 - Input Leakage Test (IIL & IIH) 
 - Output Level Threshold Test (VOL/IOL & VOH/IOH)
 - Input Level Threshold Test (VIL & VIH)
-- Optional tests
-  - Output High-Z Leakage Test (IOZL & IOZH)
-  - Input Clamp (VI)
-  - Output Short-circuit Current (IOS)
-  - Resistive Inputs
-  - Output Fanout
+- Optional tests: Output High-Z Leakage Test (IOZL & IOZH), Input Clamp (VI), Output Short-circuit Current (IOS), Resistive Inputs, Output Fanout
 
 ## References & Acknowledgements
 
