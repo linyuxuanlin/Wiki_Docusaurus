@@ -42,8 +42,16 @@ Static IDD is a measurement of current from Device VDD pin, when the device is i
 
 Static IDD test is performed with applying a voltage of VDDmax and measuring the current value, while the DUT is preconditioned to its lowest current consumption logic state.
 
+![](https://cos.wiki-power.com/img/20220911142730.png)
+
 1. Apply VDDmax to VDD pin (with current clamp?).
 2. Precondition Device to its lowest current consumption logic state.
 3. Measure current flowing into VDD pin:
    - **Higher than max spec(>10uA)**: FAIL
    - **Lower than min spec(<10uA)**: PASS
+
+## Dynamic IDD Test
+
+Dynamic IDD is a measurement of current from Device VDD pin, when the device is in static state (the DUT is not active during the test). The value of static IDD indicates the lowest current consumption of the DUT, which is important for battery operated devices, also help to indicate marginal defects.
+
+### Test Method
