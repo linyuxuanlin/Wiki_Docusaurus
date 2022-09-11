@@ -85,3 +85,15 @@ Input leakage occurs in a input pin's buffer circuit. IIH is the leakage path fr
 
 Actually, the measurement of IIL is the resistance from input pin to VDD, and IIH is the resistance from input pin to GND.  
 Input leakage test is to ensure the pin's input buffer will not source or sink more unwanted current than specified.
+
+### Test Method 🚧
+
+Input leakage test (IIL & IIH) is performed with applying a voltage of VDDmax and measuring the current value, while the DUT is preconditioned to its lowest current consumption logic state.
+
+![](https://cos.wiki-power.com/img/20220911201659.png)
+
+1. Apply VDDmax to VDD pin (with current clamp).
+2. Precondition DUT to its lowest current consumption logic state.
+3. Measure current flowing into VDD pin:
+   - **Higher than max spec(>10uA)**: FAIL
+   - **Lower than min spec(<10uA)**: PASS
