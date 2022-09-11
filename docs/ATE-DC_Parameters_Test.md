@@ -16,17 +16,17 @@ DC parameters test is essentially measuring the resistivity of the silicon. They
 
 DC parameters can also be tested with functional method, will be compared with the spec value by voltage comparator inside the PE (Pin Electronic) during functional test procedure, and conclude a go-nogo test result without specific values. Test items are as follows:
 
-- Power Supply Current Test (IDD)
-  - Gross IDD
-  - Static IDD
-  - Dynamic IDD
-  - Quiescent IDD (IDDQ)
+- Power Supply Current (IDD)
+  - Gross IDD Test
+  - Static IDD Test
+  - Dynamic IDD Test
+  - Quiescent IDD Test (IDDQ)
 - Input Leakage Test (IIL & IIH)
 - Output Level Threshold Test (VOL/IOL & VOH/IOH)
 - Input Level Threshold Test (VIL & VIH)
 - Optional tests: Output High-Z Leakage Test (IOZL & IOZH), Input Clamp (VI), Output Short-circuit Current (IOS), Resistive Inputs, Output Fanout
 
-## Power Supply Current Test (IDD)
+## Power Supply Current (IDD)
 
 IDD indicates the current flows from Drain to Drain in a CMOS circuit (ICC in TTL circuit, Collector to Collector). IDD can be equivalent as:
 
