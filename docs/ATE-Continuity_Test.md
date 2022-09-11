@@ -13,27 +13,27 @@ Open/short continuity test is to confirm the electronical contact between tester
 
 Open/short continuity test is performed with testing the protection diodes (diodes to VDD and to GND). Usually use PPMU with VBT code (also can be tested using PE and functional pattern).
 
-**Test through GND protection diode**:
+#### Test through GND protection diode
 
 ![](https://cos.wiki-power.com/img/20220909003924.png)
 
 1. Force 0V to all other pins that are not tested (include power pin).
 2. Force a small negative current (-100uA) on the Pin Under Test (with voltage clamp). 
 3. Meaure voltage on the Pin Under Test：
-   - **Higher than max spec(>-0.2V)**: Fail (Short)
-   - **Midband(-1.5V~-0.2V**): Pass
-   - **Lower than min spec(<-1.5V)**: Fail (Open)
+   - **Higher than max spec(>-0.2V)**: FAIL (Short)
+   - **Midband(-1.5V~-0.2V**): PASS
+   - **Lower than min spec(<-1.5V)**: FAIL (Open)
 
-**Test through VDD protection diode**:
+#### Test through VDD protection diode
 
 ![](https://cos.wiki-power.com/img/20220909004139.png)
 
 1. Force 0V to all other pins that are not tested (include power pin).
 2. Force a small positive current (+100uA) on the Pin Under Test (with voltage clamp).
 3. Meaure voltage on the Pin Under Test：
-   - **Higher than max spec(>1.5V)**: Fail (Short)
-   - **Midband(0.2V~1.5V)**: Pass
-   - **Lower than min spec(<0.2V)**: Fail (Open)
+   - **Higher than max spec(>1.5V)**: FAIL (Short)
+   - **Midband(0.2V~1.5V)**: PASS
+   - **Lower than min spec(<0.2V)**: FAIL (Open)
 
 ## Power Pin Short Test
 
@@ -48,9 +48,9 @@ Power Pin Short Test is performed by applying a small voltage to VDD, and measur
 1. Apply a small voltage to VDD (100mV) (with current clamp).
 2. Force all other pins to 0V with PPMU.
 3. Measure current flowing into VDD pin:
-   - **Higher than max spec(>20uA)**: Fail (Short)
-   - **Midband(-1uA~20uA)**: Pass
-   - **Lower than min spec(<-1uA)**: Fail
+   - **Higher than max spec(>20uA)**: FAIL (Short)
+   - **Midband(-1uA~20uA)**: PASS
+   - **Lower than min spec(<-1uA)**: FAIL
 
 ## References & Acknowledgements
 
