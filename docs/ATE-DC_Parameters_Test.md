@@ -14,9 +14,7 @@ title: ATE - DC Parameters Test 🚧
 
 DC parameters test is essentially measuring the resistivity of the silicon. They are tested by PPMU forcing current then measuring voltage, or forcing voltage then measuring current. Will compare the measured value with the spec value outside the tester, then conclude a test result with pass or fail.
 
-DC parameters can also be tested with functional method, will be compared with the spec value by voltage comparator inside the PE (Pin Electronic) during functional test procedure, and conclude a go-nogo test result without specific values.
-
-Test items of DC parameters are as follows:
+DC parameters can also be tested with functional method, will be compared with the spec value by voltage comparator inside the PE (Pin Electronic) during functional test procedure, and conclude a go-nogo test result without specific values. Test items are as follows:
 
 - Power Supply Current Test (IDD)
   - Gross IDD
@@ -78,6 +76,5 @@ Quiescent IDD is a measurement of IDD in the quiescent states (the circuit is no
    - **Higher than max spec**: FAIL
    - **Lower than min spec**: PASS
 4. Repeat and test with different working states.
-
 
 ## Input Leakage Test (IIL & IIH)
