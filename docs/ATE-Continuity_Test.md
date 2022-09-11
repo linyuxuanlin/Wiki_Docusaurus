@@ -18,7 +18,7 @@ Open/short continuity test is performed with testing the protection diodes (diod
 ![](https://cos.wiki-power.com/img/20220909003924.png)
 
 1. Force 0V to all other pins that are not tested (include power pin).
-2. Force a small negative current (-100uA) on the Pin Under Test (with voltage clamp). 
+2. Force a small negative current (-100uA) on the Pin Under Test (with voltage clamp).
 3. Meaure voltage on the Pin Under Test：
    - **Higher than max spec(>-0.2V)**: FAIL (Short)
    - **Midband(-1.5V~-0.2V**): PASS
