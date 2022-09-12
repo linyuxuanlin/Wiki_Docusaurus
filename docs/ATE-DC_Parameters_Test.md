@@ -24,9 +24,10 @@ DC parameters can also be tested with functional method, will be compared with t
   - Dynamic IDD Test
   - Quiescent IDD Test (IDDQ)
 - Input Leakage Test (IIL & IIH)
+- Output Tristate Leakage Test (IOZL & IOZH)
 - Output Level Threshold Test (VOL/IOL & VOH/IOH)
 - Input Level Threshold Test (VIL & VIH)
-- Optional tests: Output High-Z Leakage Test (IOZL & IOZH), Input Clamp (VI), Output Short-circuit Current (IOS), Resistive Inputs, Output Fanout
+- Optional tests: Input Clamp (VI), Output Short-circuit Current (IOS), Resistive Inputs, Output Fanout
 
 ## Power Supply Current (IDD)
 
@@ -89,7 +90,7 @@ Actually, the measurement of IIL is the resistance from input pin to VDD, and II
 
 ### Test Method (Serial)
 
-Serial input leakage test (IIL & IIH) is performed with applying a voltage of VDDmax, and force the specific input pin to VDDmax (IIH) or 0V (IIL), while other input pins are forced to oppisite side of the Pin under Test.
+Serial input leakage test (IIL & IIH) is performed with applying a voltage of VDDmax, and force the specific input pin to VDDmax (for IIH) or 0V (for IIL), while other input pins are forced to oppisite side of the Pin under Test.
 
 #### IIL Test (Serial)
 
@@ -112,3 +113,23 @@ Serial input leakage test (IIL & IIH) is performed with applying a voltage of VD
    - **Higher than spec value(>10uA)**: FAIL
    - **Lower than spec value(<10uA)**: PASS
 4. Repeat to test next pin.
+
+### Test Method (Parallel)
+
+Since serial method can identify the leakage between input pins, but it's too inefficient. Parallel test method is more commonly used actually. PPMU is used in parallel method, to drive all input pins to VDDmax (for IIH) or 0V (for IIL) and measure current of per input pin.
+
+The only disadvantage of parallel method is pin to pin leakage will not be detected, because all the pins are forced to the same voltage level at the same time.
+
+## Output Tristate Leakage Test (IOZL & IOZH)
+
+Tristate also named as High-Z or floating state, indicates appear to be high impedance externally of DUT's pin.
+
+Output tristate leakage occurs in HIGH or LOW voltage level is applied on the DUT's output pin, while the pin is preconditioned to be disabled. IOZL means the current flow out when the LOW level is applied, and IOZH means the current flow into when the HIGH level is applied.
+
+![](https://cos.wiki-power.com/img/20220912120527.png)
+
+Essentially, IOZL indicates the resistance from an output pin to VDD when disabled, and IOZH indicates the resistance to GND. The test insures the pin will not source or sink more unwanted current than specified.
+
+Additionally, a control input (enable signal) is required in this test , to controls the specific output pin to LOW, HIGH or High-Z (disable) state.
+
+### Test Method (Serial)
