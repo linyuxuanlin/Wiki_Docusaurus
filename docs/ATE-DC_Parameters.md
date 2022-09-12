@@ -9,15 +9,15 @@ DC parameters can also be tested with functional method, will be compared with t
 
 Test items of DC parameters are as follows:
 
-- Power Supply Current Test (IDD)
+- [**Power Supply Current Test (IDD)**](https://wiki-power.com/ATE-DC-IDD_Test)
   - Gross IDD Test
   - Static IDD Test
   - Dynamic IDD Test
   - Quiescent IDD Test (IDDQ)
-- Leakage Test
+- [**Leakage Test**](https://wiki-power.com/ATE-DC-Leakage_Test)
   - Input Leakage Test (IIL & IIH)
   - Output Tristate Leakage Test (IOZL & IOZH)
-- Level Threshold Test
+- [**Level Threshold Test**](https://wiki-power.com/ATE-DC-Level_Threshold_Test)
   - Output Level Threshold Test (VOL/IOL & VOH/IOH)
   - Input Level Threshold Test (VIL & VIH)
 - Optional tests
