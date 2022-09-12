@@ -147,18 +147,6 @@ const sidebars = {
       ],
     },
 
-    {
-      type: 'category',
-      label: 'Mixed Signal Process',
-      link: {
-        type: 'generated-index',
-        //description: ' ',
-        keywords: ['x', 'x'],
-      },
-      items: [
-        'Basis_of_Mixed_Signal',
-      ],
-    },
 
     {
       type: 'category',
@@ -185,6 +173,22 @@ const sidebars = {
       ],
     },
 
+    {
+      type: 'category',
+      label: 'ATE for Semiconductor',
+      link: {
+        type: 'generated-index',
+        //description: ' ',
+        keywords: ['x', 'x'],
+      },
+      items: [
+        'ATE-Continuity_Test',
+        'ATE-DC_Parameters',
+        'ATE-DC-IDD_Test',
+        'ATE-DC-Leakage_Test',
+        'ATE-DC-Level_Threshold_Test',
+      ],
+    },
 
     {
       type: 'category',
@@ -200,15 +204,24 @@ const sidebars = {
         '半导体测试基础-DC参数测试',
         '半导体测试基础-功能测试',
         '半导体测试基础-AC参数测试',
-        'ATE-Continuity_Test',
-        'ATE-DC_Parameters',
-        'ATE-DC-IDD_Test',
-        'ATE-DC-Leakage_Test',
-        'ATE-DC-Level_Threshold_Test',
         'VBT_Syntax_Notes-Hardware_TheHdw',
         'Pattern_Syntax_Notes',
       ],
     },
+
+    //{
+    //  type: 'category',
+    //  label: 'Mixed Signal Process',
+    //  link: {
+    //    type: 'generated-index',
+    //    //description: ' ',
+    //    keywords: ['x', 'x'],
+    //  },
+    //  items: [
+    //    'Basis_of_Mixed_Signal',
+    //  ],
+    //},
+
 
     {
       type: 'category',
