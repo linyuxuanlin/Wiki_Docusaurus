@@ -3,7 +3,30 @@ id: ATE-DC_Parameters_Test
 title: ATE - DC Parameters Test 🚧
 ---
 
-- Current is defined to positive when flow into DUT, and negative when flow outside of DUT.
+DC parameters test is essentially measuring the resistivity of the silicon. They are tested by PPMU forcing current then measuring voltage, or forcing voltage then measuring current. Will compare the measured value with the spec value outside the tester, then conclude a test result with PASS or FAIL.
+
+DC parameters can also be tested with functional method, will be compared with the spec value by voltage comparator inside the PE (Pin Electronic) during functional test procedure, and conclude a go-nogo test result without specific values.
+
+Test items of DC parameters are as follows:
+
+- Power Supply Current Test (IDD)
+  - Gross IDD Test
+  - Static IDD Test
+  - Dynamic IDD Test
+  - Quiescent IDD Test (IDDQ)
+- Leakage Test
+  - Input Leakage Test (IIL & IIH)
+  - Output Tristate Leakage Test (IOZL & IOZH)
+- Level Threshold Test
+  - Output Level Threshold Test (VOL/IOL & VOH/IOH)
+  - Input Level Threshold Test (VIL & VIH)
+- Optional tests
+  - Input Clamp (VI)
+  - Output Short-circuit Current (IOS) Test
+  - Resistive Inputs Test
+  - Output Fanout Test
+
+Metions that current is defined to positive when flow into DUT, and negative when flow outside of DUT.
 
 ## References & Acknowledgements
 
@@ -11,151 +34,3 @@ title: ATE - DC Parameters Test 🚧
 - *Fundamentals of Testing Using ATE*
 
 > This article is protected by [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by/4.0/deed.en) agreement, should be reproduced with attribution.
-
----
-
-DC parameters test is essentially measuring the resistivity of the silicon. They are tested by PPMU forcing current then measuring voltage, or forcing voltage then measuring current. Will compare the measured value with the spec value outside the tester, then conclude a test result with PASS or FAIL.
-
-DC parameters can also be tested with functional method, will be compared with the spec value by voltage comparator inside the PE (Pin Electronic) during functional test procedure, and conclude a go-nogo test result without specific values. Test items are as follows:
-
-- Power Supply Current (IDD)
-  - Gross IDD Test
-  - Static IDD Test
-  - Dynamic IDD Test
-  - Quiescent IDD Test (IDDQ)
-- Input Leakage Test (IIL & IIH)
-- Output Tristate Leakage Test (IOZL & IOZH)
-- Output Level Threshold Test (VOL/IOL & VOH/IOH)
-- Input Level Threshold Test (VIL & VIH)
-- Optional tests: Input Clamp (VI), Output Short-circuit Current (IOS), Resistive Inputs, Output Fanout
-
-## Power Supply Current (IDD)
-
-IDD indicates the current flows from Drain to Drain in a CMOS circuit (ICC in TTL circuit, Collector to Collector). IDD can be equivalent as:
-
-![](https://cos.wiki-power.com/img/20220910234238.png)
-
-## Static IDD Test
-
-Static IDD is a measurement of current from DUT's VDD pin, when the DUT is in static state (the DUT is not active during the test). The value of static IDD indicates the lowest current consumption of the DUT, which is important for battery operated devices, also help to indicate marginal defects.
-
-### Test Method
-
-Static IDD test is performed with applying a voltage of VDDmax and measuring the current value, while the DUT is preconditioned to its lowest current consumption logic state.
-
-![](https://cos.wiki-power.com/img/20220911201659.png)
-
-1. Apply VDDmax to VDD pin (with current clamp).
-2. Precondition DUT to its lowest current consumption logic state.
-3. Measure current flowing into VDD pin:
-   - **Higher than spec value(>10uA)**: FAIL
-   - **Lower than spec value(<10uA)**: PASS
-
-## Dynamic IDD Test
-
-Dynamic IDD is a measurement of current from DUT's VDD pin, when the DUT is constantly performing some function. Dynamic IDD is also important for battery operated devices.
-
-### Test Method
-
-![](https://cos.wiki-power.com/img/20220911201603.png)
-
-Static IDD test is performed with applying a voltage of VDDmax and measuring the current value, while the DUT is preconditioned to a continuously working state.
-
-1. Apply VDDmax to VDD pin (with current clamp).
-2. Precondition DUT to a continuously working state.
-3. Measure current flowing into VDD pin:
-   - **Higher than spec value(>50mA)**: FAIL
-   - **Lower than spec value(<50mA)**: PASS
-
-## Quiescent IDD Test (IDDQ)
-
-Quiescent IDD is a measurement of IDD in the quiescent states (the circuit is not switching and inputs are held at static values). As processors shrink , the defect of leakage current becomes much more higher, and IDDQ test may detect minor defects within the core of the circuit that could not other wise be detected.
-
-![](https://cos.wiki-power.com/img/20220911213042.png)
-
-1. Apply VDDmax to VDD pin (with current clamp).
-2. Precondition DUT to a certain working state (toggle certain function part to on/off such as Bluetooth and Wi-Fi).
-3. Measure current flowing into VDD pin:
-   - **Higher than spec value**: FAIL
-   - **Lower than spec value**: PASS
-4. Repeat to test with different working states.
-
-## Input Leakage Test (IIL & IIH)
-
-Input leakage occurs in a input pin's buffer circuit. IIH is the leakage path from input pin to GND when the DUT is driven to "1", and IIL is the leakage path from VDD to input pin when driven to "0":
-
-![](https://cos.wiki-power.com/img/20220911215421.png)
-
-Actually, the measurement of IIL is the resistance from input pin to VDD, and IIH is the resistance from input pin to GND. Input leakage test is to ensure the pin's input buffer will not source or sink more unwanted current than specified.
-
-### Test Method (Serial)
-
-Serial input leakage test (IIL & IIH) is performed with applying a voltage of VDDmax, and force the specific input pin to VDDmax (for IIH) or 0V (for IIL), while other input pins are forced to oppisite side of the Pin under Test.
-
-#### IIL Test (Serial)
-
-![](https://cos.wiki-power.com/img/20220911225521.png)
-
-1. Apply VDDmax to VDD pin (with current clamp).
-2. Force VDDmax to all input pins except for the Pin under Test.
-3. Force 0V to the Pin under Test, and measure current flow out:
-   - **Higher than spec value(>-10uA)**: PASS
-   - **Lower than spec value(<-10uA)**: FAIL
-4. Repeat to test next pin.
-
-#### IIH Test (Serial)
-
-![](https://cos.wiki-power.com/img/20220912113044.png)
-
-1. Apply VDDmax to VDD pin (with current clamp).
-2. Force 0V to all input pins except for the Pin under Test.
-3. Force VDDmax to the Pin under Test, and measure current flow into:
-   - **Higher than spec value(>10uA)**: FAIL
-   - **Lower than spec value(<10uA)**: PASS
-4. Repeat to test next pin.
-
-### Test Method (Parallel)
-
-Since serial method can identify the leakage between input pins, but it's too inefficient. Parallel test method is more commonly used actually. PPMU is used in parallel method, to drive all input pins to VDDmax (for IIH) or 0V (for IIL) and measure current of per input pin.
-
-The only disadvantage of parallel method is pin to pin leakage will not be detected, because all the pins are forced to the same voltage level at the same time.
-
-## Output Tristate Leakage Test (IOZL & IOZH)
-
-Tristate also named as High-Z or floating state, indicates appear to be high impedance externally of DUT's pin.
-
-Output tristate leakage occurs in HIGH or LOW voltage level is applied on the DUT's output pin, while the pin is preconditioned to be disabled. IOZL means the current flow out when the LOW level is applied, and IOZH means the current flow into when the HIGH level is applied.
-
-![](https://cos.wiki-power.com/img/20220912120527.png)
-
-Essentially, IOZL indicates the resistance from an output pin to VDD when disabled, and IOZH indicates the resistance to GND. The test insures the pin will not source or sink more unwanted current than specified.
-
-Additionally, a control input (enable signal) is required in this test , to controls the specific output pin to LOW, HIGH or High-Z (disable) state.
-
-### Test Method (Serial)
-
-#### IOZL Test (Serial)
-
-![](https://cos.wiki-power.com/img/20220912121730.png)
-
-1. Apply VDDmax to VDD pin (with current clamp).
-2. Precondition the specific out pin to Hi-Z (disable) state.
-3. Force 0V to the Pin under Test, and measure current flow out:
-   - **Higher than spec value(>-10uA)**: PASS
-   - **Lower than spec value(<-10uA)**: FAIL
-4. Repeat to test next pin.
-
-#### IOZH Test (Serial)
-
-![](https://cos.wiki-power.com/img/20220912122050.png)
-
-1. Apply VDDmax to VDD pin (with current clamp).
-2. Precondition the specific out pin to Hi-Z (disable) state.
-3. Force VDDmax to the Pin under Test, and measure current flow into:
-   - **Higher than spec value(>10uA)**: FAIL
-   - **Lower than spec value(<10uA)**: PASS
-4. Repeat to test next pin.
-
-### Test Method (Parallel)
-
-Parallel method is more commonly used actually with PPMU, to drive all output pins to VDDmax (for IOZH) or 0V (for IOZL) and measure current of per output pin.
