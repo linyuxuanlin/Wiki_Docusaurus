@@ -5,7 +5,7 @@ title: ATE - DC - Level Threshold Test
 
 ![](https://cos.wiki-power.com/img/20220912163403.png)
 
-Level threshold test includes Output Level Threshold (VOL/IOL & VOH/IOH) and Input Level Threshold (VIL & VIH). They are originated from typical TTL and CMOS level threshold:
+Level threshold test includes Output Level Threshold (VOL & VOH) and Input Level Threshold (VIL & VIH). They are originated from typical TTL and CMOS level threshold:
 
 |                       |  VCC                      | VOL          | VOH       | VIL      | VIH          | GND |
 | :---------        | :---- | :-------        | :---------------| :---------- | :------        | :---- |
@@ -24,7 +24,16 @@ VOH represents the minimum output voltage when output HIGH voltage level, IOH re
 
 ### Test Method
 
-#### VOL/IOL Test
+#### VOL/IOL Test (Serial)
+
+1. Apply VDDmin to VDD pin (with current clamp).
+2. Precondition specific output pin to logic '0'.
+3. Force IOLmax to the Pin under Test (flow into DUT).
+4. Measure the voltage on pin
+   -
+
+5. Repeat to test with different output pins
+
 
 #### VOH/IOH Test
 

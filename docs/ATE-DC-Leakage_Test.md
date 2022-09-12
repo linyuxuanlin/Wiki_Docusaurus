@@ -23,10 +23,11 @@ Serial input leakage test (IIL & IIH) is performed with applying a voltage of VD
 
 1. Apply VDDmax to VDD pin (with current clamp).
 2. Force VDDmax to all input pins except for the Pin under Test.
-3. Force 0V to the Pin under Test, and measure current flow out:
+3. Force 0V to the Pin under Test.
+4. Measure the current flow out:
    - **Higher than spec value(>-10uA)**: PASS
    - **Lower than spec value(<-10uA)**: FAIL
-4. Repeat to test next pin.
+5. Repeat to test next pin.
 
 #### IIH Test (Serial)
 
@@ -34,14 +35,15 @@ Serial input leakage test (IIL & IIH) is performed with applying a voltage of VD
 
 1. Apply VDDmax to VDD pin (with current clamp).
 2. Force 0V to all input pins except for the Pin under Test.
-3. Force VDDmax to the Pin under Test, and measure current flow into:
+3. Force VDDmax to the Pin under Test.
+4. Measure the current flow into:
    - **Higher than spec value(>10uA)**: FAIL
    - **Lower than spec value(<10uA)**: PASS
-4. Repeat to test next pin.
+5. Repeat to test next pin.
 
 ### Test Method (Parallel)
 
-Since serial method can identify the leakage between input pins, but it's too inefficient. Parallel test method is more commonly used actually. PPMU is used in parallel method, to drive all input pins to VDDmax (for IIH) or 0V (for IIL) and measure current of per input pin.
+Since serial method can identify the leakage between input pins, but it's too inefficient. Parallel test method is more commonly used actually. PPMU is used in parallel method, to drive all input pins to VDDmax (for IIH) or 0V (for IIL) and measure the current of per input pin.
 
 The only disadvantage of parallel method is pin to pin leakage will not be detected, because all the pins are forced to the same voltage level at the same time.
 
@@ -65,10 +67,11 @@ Additionally, a control input (enable signal) is required in this test , to cont
 
 1. Apply VDDmax to VDD pin (with current clamp).
 2. Precondition the specific out pin to Hi-Z (disable) state.
-3. Force 0V to the Pin under Test, and measure current flow out:
+3. Force 0V to the Pin under Test.
+4. Measure the current flow out:
    - **Higher than spec value(>-10uA)**: PASS
    - **Lower than spec value(<-10uA)**: FAIL
-4. Repeat to test next pin.
+5. Repeat to test next pin.
 
 #### IOZH Test (Serial)
 
@@ -76,14 +79,15 @@ Additionally, a control input (enable signal) is required in this test , to cont
 
 1. Apply VDDmax to VDD pin (with current clamp).
 2. Precondition the specific out pin to Hi-Z (disable) state.
-3. Force VDDmax to the Pin under Test, and measure current flow into:
+3. Force VDDmax to the Pin under Test.
+4. Measure the current flow into:
    - **Higher than spec value(>10uA)**: FAIL
    - **Lower than spec value(<10uA)**: PASS
-4. Repeat to test next pin.
+5. Repeat to test next pin.
 
 ### Test Method (Parallel)
 
-Parallel method is more commonly used actually with PPMU, to drive all output pins to VDDmax (for IOZH) or 0V (for IOZL) and measure current of per output pin.
+Parallel method is more commonly used actually with PPMU, to drive all output pins to VDDmax (for IOZH) or 0V (for IOZL) and measure the current of per output pin.
 
 ## References & Acknowledgements
 

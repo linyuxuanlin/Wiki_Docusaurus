@@ -19,7 +19,7 @@ Static IDD test is performed with applying a voltage of VDDmax and measuring the
 
 1. Apply VDDmax to VDD pin (with current clamp).
 2. Precondition DUT to its lowest current consumption logic state.
-3. Measure current flowing into VDD pin:
+3. Measure the current flowing into VDD pin:
    - **Higher than spec value(>10uA)**: FAIL
    - **Lower than spec value(<10uA)**: PASS
 
@@ -35,7 +35,7 @@ Static IDD test is performed with applying a voltage of VDDmax and measuring the
 
 1. Apply VDDmax to VDD pin (with current clamp).
 2. Precondition DUT to a continuously working state.
-3. Measure current flowing into VDD pin:
+3. Measure the current flowing into VDD pin:
    - **Higher than spec value(>50mA)**: FAIL
    - **Lower than spec value(<50mA)**: PASS
 
@@ -49,7 +49,7 @@ Quiescent IDD is a measurement of IDD in the quiescent states (the circuit is no
 
 1. Apply VDDmax to VDD pin (with current clamp).
 2. Precondition DUT to a certain working state (toggle certain function part to on/off such as Bluetooth and Wi-Fi).
-3. Measure current flowing into VDD pin:
+3. Measure the current flowing into VDD pin:
    - **Higher than spec value**: FAIL
    - **Lower than spec value**: PASS
 4. Repeat to test with different working states.
