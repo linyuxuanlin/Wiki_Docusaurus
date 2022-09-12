@@ -98,7 +98,7 @@ Serial input leakage test (IIL & IIH) is performed with applying a voltage of VD
 
 1. Apply VDDmax to VDD pin (with current clamp).
 2. Force VDDmax to all input pins except for the Pin under Test.
-3. Force 0V to the Pin under Test, and measure current flow outside it:
+3. Force 0V to the Pin under Test, and measure current flow out:
    - **Higher than spec value(>-10uA)**: PASS
    - **Lower than spec value(<-10uA)**: FAIL
 4. Repeat to test next pin.
@@ -109,7 +109,7 @@ Serial input leakage test (IIL & IIH) is performed with applying a voltage of VD
 
 1. Apply VDDmax to VDD pin (with current clamp).
 2. Force 0V to all input pins except for the Pin under Test.
-3. Force VDDmax to the Pin under Test, and measure current flow into it:
+3. Force VDDmax to the Pin under Test, and measure current flow into:
    - **Higher than spec value(>10uA)**: FAIL
    - **Lower than spec value(<10uA)**: PASS
 4. Repeat to test next pin.
@@ -133,3 +133,29 @@ Essentially, IOZL indicates the resistance from an output pin to VDD when disabl
 Additionally, a control input (enable signal) is required in this test , to controls the specific output pin to LOW, HIGH or High-Z (disable) state.
 
 ### Test Method (Serial)
+
+#### IOZL Test (Serial)
+
+![](https://cos.wiki-power.com/img/20220912121730.png)
+
+1. Apply VDDmax to VDD pin (with current clamp).
+2. Precondition the specific out pin to Hi-Z (disable) state.
+3. Force 0V to the Pin under Test, and measure current flow out:
+   - **Higher than spec value(>-10uA)**: PASS
+   - **Lower than spec value(<-10uA)**: FAIL
+4. Repeat to test next pin.
+
+#### IOZH Test (Serial)
+
+![](https://cos.wiki-power.com/img/20220912122050.png)
+
+1. Apply VDDmax to VDD pin (with current clamp).
+2. Precondition the specific out pin to Hi-Z (disable) state.
+3. Force VDDmax to the Pin under Test, and measure current flow into:
+   - **Higher than spec value(>10uA)**: FAIL
+   - **Lower than spec value(<10uA)**: PASS
+4. Repeat to test next pin.
+
+### Test Method (Parallel)
+
+Parallel method is more commonly used actually with PPMU, to drive all output pins to VDDmax (for IOZH) or 0V (for IOZL) and measure current of per output pin.
