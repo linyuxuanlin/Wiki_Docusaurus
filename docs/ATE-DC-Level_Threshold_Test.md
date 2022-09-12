@@ -22,19 +22,29 @@ VOL represents the maximum output voltage when output LOW voltage level, IOL rep
 
 VOH represents the minimum output voltage when output HIGH voltage level, IOH represents the maximum **source** current capability in HIGH output state.They actually measures the resistance of the output pin when provide the logic `1`, insures it can provide current of IOH without less than the voltage of VOH, examining the capability of source current and stay in a correct logic state.
 
-### Test Method
+### Test Method (Serial)
 
 #### VOL/IOL Test (Serial)
 
+![](https://cos.wiki-power.com/img/20220912172403.png)
+
 1. Apply VDDmin to VDD pin (with current clamp).
 2. Precondition specific output pin to logic '0'.
-3. Force IOLmax to the Pin under Test (flow into DUT).
-4. Measure the voltage on pin:
+3. Force IOLmax to the Pin under Test (flow into DUT), and measure the voltage on it:
    - **Higher than spec value(>0.4V)**: FAIL
    - **Lower than spec value(<0.4V)**: PASS
-5. Repeat to test with different output pins
+4. Repeat to test with different output pins.
 
-#### VOH/IOH Test
+#### VOH/IOH Test (Serial)
+
+![](https://cos.wiki-power.com/img/20220912172445.png)
+
+1. Apply VDDmin to VDD pin (with current clamp).
+2. Precondition specific output pin to logic '1'.
+3. Force IOHmax to the Pin under Test (flow out of DUT), and measure the voltage on it:
+   - **Higher than spec value(>2.4V)**: PASS
+   - **Lower than spec value(<2.4V)**: FAIL
+4. Repeat to test with different output pins.
 
 ## Input Level Threshold Test(VIL & VIH)
 
