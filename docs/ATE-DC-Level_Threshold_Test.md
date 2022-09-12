@@ -29,11 +29,10 @@ VOH represents the minimum output voltage when output HIGH voltage level, IOH re
 1. Apply VDDmin to VDD pin (with current clamp).
 2. Precondition specific output pin to logic '0'.
 3. Force IOLmax to the Pin under Test (flow into DUT).
-4. Measure the voltage on pin
-   -
-
+4. Measure the voltage on pin:
+   - **Higher than spec value(>0.4V)**: FAIL
+   - **Lower than spec value(<0.4V)**: PASS
 5. Repeat to test with different output pins
-
 
 #### VOH/IOH Test
 
