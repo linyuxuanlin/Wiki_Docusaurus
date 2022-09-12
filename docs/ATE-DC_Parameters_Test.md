@@ -3,6 +3,8 @@ id: ATE-DC_Parameters_Test
 title: ATE - DC Parameters Test 🚧
 ---
 
+- Current is defined to positive when flow into DUT, and negative when flow outside of DUT.
+
 ## References & Acknowledgements
 
 - *The Fundamentals Of Digital Semiconductor Testing*
@@ -45,8 +47,8 @@ Static IDD test is performed with applying a voltage of VDDmax and measuring the
 1. Apply VDDmax to VDD pin (with current clamp).
 2. Precondition DUT to its lowest current consumption logic state.
 3. Measure current flowing into VDD pin:
-   - **Higher than max spec(>10uA)**: FAIL
-   - **Lower than min spec(<10uA)**: PASS
+   - **Higher than spec value(>10uA)**: FAIL
+   - **Lower than spec value(<10uA)**: PASS
 
 ## Dynamic IDD Test
 
@@ -61,8 +63,8 @@ Static IDD test is performed with applying a voltage of VDDmax and measuring the
 1. Apply VDDmax to VDD pin (with current clamp).
 2. Precondition DUT to a continuously working state.
 3. Measure current flowing into VDD pin:
-   - **Higher than max spec(>50mA)**: FAIL
-   - **Lower than min spec(<50mA)**: PASS
+   - **Higher than spec value(>50mA)**: FAIL
+   - **Lower than spec value(<50mA)**: PASS
 
 ## Quiescent IDD Test (IDDQ)
 
@@ -73,9 +75,9 @@ Quiescent IDD is a measurement of IDD in the quiescent states (the circuit is no
 1. Apply VDDmax to VDD pin (with current clamp).
 2. Precondition DUT to a certain working state (toggle certain function part to on/off such as Bluetooth and Wi-Fi).
 3. Measure current flowing into VDD pin:
-   - **Higher than max spec**: FAIL
-   - **Lower than min spec**: PASS
-4. Repeat and test with different working states.
+   - **Higher than spec value**: FAIL
+   - **Lower than spec value**: PASS
+4. Repeat to test with different working states.
 
 ## Input Leakage Test (IIL & IIH)
 
@@ -87,16 +89,26 @@ Actually, the measurement of IIL is the resistance from input pin to VDD, and II
 
 ### Test Method (Serial)
 
-Serial input leakage test (IIL & IIH) is performed with applying a voltage of VDDmax, and force the specific input pin to VDDmax (IIH) or 0V (IIL), while other input pins are forced to oppisite side of the Pin Under Test.
+Serial input leakage test (IIL & IIH) is performed with applying a voltage of VDDmax, and force the specific input pin to VDDmax (IIH) or 0V (IIL), while other input pins are forced to oppisite side of the Pin under Test.
 
 #### IIL Test (Serial)
 
 ![](https://cos.wiki-power.com/img/20220911225521.png)
 
- 🚧
+1. Apply VDDmax to VDD pin (with current clamp).
+2. Force VDDmax to all input pins except for the Pin under Test.
+3. Force 0V to the Pin under Test, and measure current flow outside it:
+   - **Higher than spec value(>-10uA)**: PASS
+   - **Lower than spec value(<-10uA)**: FAIL
+4. Repeat to test next pin.
+
+#### IIH Test (Serial)
+
+![](https://cos.wiki-power.com/img/20220912113044.png)
 
 1. Apply VDDmax to VDD pin (with current clamp).
-2. Precondition DUT to its lowest current consumption logic state.
-3. Measure current flowing into VDD pin:
-   - **Higher than max spec(>10uA)**: FAIL
-   - **Lower than min spec(<10uA)**: PASS
+2. Force 0V to all input pins except for the Pin under Test.
+3. Force VDDmax to the Pin under Test, and measure current flow into it:
+   - **Higher than spec value(>10uA)**: FAIL
+   - **Lower than spec value(<10uA)**: PASS
+4. Repeat to test next pin.
