@@ -1,6 +1,6 @@
 ---
 id: ATE-DC-Level_Threshold_Test
-title: ATE - DC - Level Threshold Test 🚧
+title: ATE - DC - Level Threshold Test
 ---
 
 ## References & Acknowledgements

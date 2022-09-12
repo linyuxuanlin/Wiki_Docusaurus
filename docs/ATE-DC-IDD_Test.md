@@ -1,6 +1,6 @@
 ---
-id: ATE-DC-Power_Supply_Current_Test
-title: ATE - DC - Power Supply Current Test
+id: ATE-DC-IDD_Test
+title: ATE - DC - IDD Test
 ---
 
 Power supply current (IDD) indicates the current flows from Drain to Drain in a CMOS circuit (ICC in TTL circuit, Collector to Collector). IDD can be equivalent as:

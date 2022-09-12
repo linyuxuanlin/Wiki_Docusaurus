@@ -1,6 +1,6 @@
 ---
-id: ATE-DC_Parameters_Test
-title: ATE - DC Parameters Test 🚧
+id: ATE-DC_Parameters
+title: ATE - DC Parameters
 ---
 
 DC parameters test is essentially measuring the resistivity of the silicon. They are tested by PPMU forcing current then measuring voltage, or forcing voltage then measuring current. Will compare the measured value with the spec value outside the tester, then conclude a test result with PASS or FAIL.
