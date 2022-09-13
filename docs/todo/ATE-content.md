@@ -1,4 +1,6 @@
 
+- KELVIN CONNECTION 约P161
+
 
 ## Introduction to Semiconductor Testing
 - Design and manufacturing cycle of an IC
