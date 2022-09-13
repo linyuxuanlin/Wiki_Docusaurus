@@ -1,5 +1,6 @@
 
-- KELVIN CONNECTION 约P161-178
+- KELVIN CONNECTION 约P161-178 -216
+- digital functional test 216
 
 ## Introduction to Semiconductor Testing
 

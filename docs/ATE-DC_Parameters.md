@@ -3,11 +3,7 @@ id: ATE-DC_Parameters
 title: ATE - DC Parameters
 ---
 
-DC parameters test is essentially measuring the resistivity of the silicon. They are tested by DCVI/PPMU forcing current then measuring voltage, or forcing voltage then measuring current. Will compare the measured value with the spec value out of the tester, then conclude a test result with PASS or FAIL.
-
-DC parameters can also be tested with functional method, will be compared with the spec value by voltage comparator inside the PE (Pin Electronic) during functional test procedure, and conclude a go-nogo test result without specific values.
-
-Test items of DC parameters are as follows:
+Testing DC parameters is essentially measuring the resistivity of the silicon. They can be tested DC method, with DCVI/PPMU forcing current then measuring voltage, or forcing voltage then measuring current. Will compare the measured value with the spec value out of the tester, then conclude a test result with PASS or FAIL. Items can be tested under DC method are as follows:
 
 - [**Power Supply Current Test (IDD)**](https://wiki-power.com/ATE-DC-IDD_Test)
   - Gross IDD Test
@@ -25,6 +21,8 @@ Test items of DC parameters are as follows:
   - Output Short-circuit Current (IOS) Test
   - Resistive Inputs Test
   - Output Fanout Test
+
+DC parameters can also be tested with digital functional method, will be compared with the spec value by voltage comparator inside the PE (Pin Electronic) during functional test procedure, and conclude a Go/No-Go test result without specific values.
 
 Metions that current is defined to positive when flow into DUT, and negative when flow outside of DUT.
 
