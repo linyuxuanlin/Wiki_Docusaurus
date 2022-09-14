@@ -175,7 +175,7 @@ const sidebars = {
 
     {
       type: 'category',
-      label: 'ATE for Semiconductor',
+      label: 'ATE for Semiconductor 🚧',
       link: {
         type: 'generated-index',
         //description: ' ',
