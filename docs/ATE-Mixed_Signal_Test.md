@@ -38,3 +38,9 @@ F_s≥2F_i
 $$
 
 We must sample at a rate higher than twice the highest frequency of interest, to be able to recreate a signal from its samples and avoid losing information.
+
+If we sample at a frequency that lower that the Nyquist rate, it will exhibit a phenomenon called **aliasing**(unwanted components) when we try to convert it back to a continuous time signal, and some of the frequencies in the original signal may be lost.
+
+To minimize aliasing problem, we need to remove the frequency greater than $\Frac{F_s}{2}$ of the signal, via the anti-aliasing filter (e.g. low-pass-filter):
+
+![](https://cos.wiki-power.com/img/20220929104825.png)
