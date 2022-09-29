@@ -189,6 +189,7 @@ const sidebars = {
         'ATE-DC-Leakage_Test',
         'ATE-DC-Level_Threshold_Test',
         'ATE-Digital_Functional_Test',
+        'ATE-Mixed_Signal_Test'
       ],
     },
 
