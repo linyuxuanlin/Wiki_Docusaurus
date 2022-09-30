@@ -184,10 +184,9 @@ const sidebars = {
       items: [
         'ATE-Continuity_Test',
         'ATE-DC_Parameters',
-        'ATE-DC_Test_Items',
-        'ATE-DC-IDD_Test',
-        'ATE-DC-Leakage_Test',
-        'ATE-DC-Level_Threshold_Test',
+        'ATE-IDD_Test',
+        'ATE-Leakage_Test',
+        'ATE-Level_Threshold_Test',
         'ATE-Digital_Functional_Test',
         'ATE-Mixed_Signal_Test'
       ],

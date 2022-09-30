@@ -1,6 +1,6 @@
 ---
-id: ATE-DC-Level_Threshold_Test
-title: ATE - DC - Level Threshold Test
+id: ATE-Level_Threshold_Test
+title: ATE - Level Threshold Test
 ---
 
 ![](https://cos.wiki-power.com/img/20220912163403.png)
