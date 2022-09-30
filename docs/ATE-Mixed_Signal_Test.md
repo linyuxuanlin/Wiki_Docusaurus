@@ -20,11 +20,11 @@ As a part of it, analog signals is signals we use in the real world such as voic
 
 - **Sample**: Each measurement or number.
 - **Sample Set**: A series of samples which represent the analog signal.
-- **AWG(Arbitrary Waveform Generato)**: Low distortion signal generator.
+- **AWG (Arbitrary Waveform Generato)**: Low distortion signal generator.
 - DSP
   - **Digital Signal Processor**: A specialized device designed to process arrays rapidly, that are composed of digital representations of analog signals.
   - **Digital Signal Processing**: The process of analyzing sampled analog signal after it has been conberted into binary data.
-- **WD(Waveform Digitizer)**: Instrument that samples analog signals and converts them into digital values.
+- **WD (Waveform Digitizer)**: Instrument that samples analog signals and converts them into digital values.
 
 ## Basics of Sampling Theory
 
@@ -51,7 +51,7 @@ To minimize aliasing problem, we need to remove the frequency greater than $\fra
 **Coherent sampling（相干采样）** is to ensure the continuity of sampling and prevent spectrum leakage（频谱泄露）, it guarantees that a sample set has a fixed and well defined relationship between $F_s$, $N$, $F_i$ and $M$:
 
 $$
-\frac{M}{N}=≥\frac{F_i}{F_s}
+\frac{M}{N}=\frac{F_i}{F_s}
 $$
 
 Where $N$ is the number of samples, and $M$ is the number of $F_i$ cycles over which samples are taken.
@@ -77,3 +77,4 @@ If $M$ and $N$ aremutually prime ($M=3,N=16$), so they are mutually prime and ev
 
 ![](https://cos.wiki-power.com/img/20220930170343.png)
 
+## Fundamentals Of Fast Fourier Transform (FFT)
