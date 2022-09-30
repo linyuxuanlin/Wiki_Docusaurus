@@ -20,12 +20,11 @@ As a part of it, analog signals is signals we use in the real world such as voic
 
 - **Sample**: Each measurement or number.
 - **Sample Set**: A series of samples which represent the analog signal.
-
-- AWG(Arbitrary Waveform Generato): Low distortion signal generator.
-- DSP:
-  - Digital Signal Processor: A specialized device designed to process arrays rapidly, that are composed of digital representations of analog signals.
-  - Digital Signal Processing: The process of analyzing sampled analog signal after it has been conberted into binary data.
-- WD(Waveform Digitizer): Instrument that samples analog signals and converts them into digital values.
+- **AWG(Arbitrary Waveform Generato)**: Low distortion signal generator.
+- DSP
+  - **Digital Signal Processor**: A specialized device designed to process arrays rapidly, that are composed of digital representations of analog signals.
+  - **Digital Signal Processing**: The process of analyzing sampled analog signal after it has been conberted into binary data.
+- **WD(Waveform Digitizer)**: Instrument that samples analog signals and converts them into digital values.
 
 ## Basics of Sampling Theory
 
@@ -41,6 +40,7 @@ We must sample at a rate higher than twice the highest frequency of interest, to
 
 If we sample at a frequency that lower that the Nyquist rate, it will exhibit a phenomenon called **aliasing**(unwanted components) when we try to convert it back to a continuous time signal, and some of the frequencies in the original signal may be lost.
 
-To minimize aliasing problem, we need to remove the frequency greater than $\Frac{F_s}{2}$ of the signal, via the anti-aliasing filter (e.g. low-pass-filter):
+To minimize aliasing problem, we need to remove the frequency greater than $\frac{F_s}{2}$ of the signal, via the anti-aliasing filter (e.g. low-pass-filter):
 
 ![](https://cos.wiki-power.com/img/20220930154335.png)
+
