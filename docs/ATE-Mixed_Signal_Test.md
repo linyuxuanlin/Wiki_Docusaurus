@@ -43,4 +43,4 @@ If we sample at a frequency that lower that the Nyquist rate, it will exhibit a 
 
 To minimize aliasing problem, we need to remove the frequency greater than $\Frac{F_s}{2}$ of the signal, via the anti-aliasing filter (e.g. low-pass-filter):
 
-![](https://cos.wiki-power.com/img/20220929104825.png)
+![](https://cos.wiki-power.com/img/20220930154335.png)
