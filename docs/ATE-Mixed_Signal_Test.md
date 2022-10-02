@@ -105,7 +105,7 @@ There are several parameters for describing spectral components as follows:
 
 ### Signal To Noise Ratio (SNR)
 
-**Signal To Noise Ratio (SNR)** is derived from storing the value of the fundamental (signal power) first:
+**Signal To Noise Ratio (SNR)** is derived by storing the value of the fundamental (signal power) first:
 
 ![](https://cos.wiki-power.com/img/20221002151235.png)
 
@@ -127,3 +127,36 @@ SNR is usually expressed in decibels (dB), and is often a positive value (assumi
 
 ### Total Harmonic Distortion (THD)
 
+**Total Harmonic Distortion (THD)** is derived by keeping a running sum of the total harmonic power (usually only the first five harmonics, start at the second harmonic):
+
+![](https://cos.wiki-power.com/img/20221002155148.png)
+
+And we can conclude that:
+
+$$
+{THD}_{dB}=10log_{10}(\frac{{Harmonic \ Power}}{{Fundamental}})
+$$
+
+THD is often a negative value (assuming the fundamental power is much larger than the total harmonic power).
+
+### Signal to Noise and Distortion (SINAD)
+
+Signal to Noise and Distortion (SINAD) is the same methodology as computing SNR, but now the power of the harmonics is added into, and only zero out the DC component.
+
+$$
+{SINAD}=\frac{S}{N+D}
+$$
+
+and we can conclued that:
+
+$$
+\because {SNR}=\frac{S}{N}, {THD}=\frac{D}{S}
+$$
+
+$$
+\therefore {SNR}^{-1}+{THD}=\frac {N}{S}+\frac {D}{S}=\frac {N+D}{S}={SINAD}^{-1}
+$$
+
+$$
+\therefore {SINAD}=({SNR}^{-1}+{THD})^{-1}
+$$
