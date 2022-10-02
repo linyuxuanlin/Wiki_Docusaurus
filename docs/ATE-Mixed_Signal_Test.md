@@ -160,3 +160,5 @@ $$
 $$
 \therefore {SINAD}=({SNR}^{-1}+{THD})^{-1}
 $$
+
+### Spurious Free Dynamic Range (SFRD)
