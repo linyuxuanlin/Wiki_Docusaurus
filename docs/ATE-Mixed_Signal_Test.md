@@ -3,15 +3,6 @@ id: ATE-Mixed_Signal_Test
 title: ATE - Mixed Signal Test
 ---
 
-## References & Acknowledgements
-
-- *Fundamentals of Testing Using ATE*
-- *The-Fundamentals-of-Mixed-Signal-Testing_Brian-Lowe*
-
-> This article is protected by [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by/4.0/deed.en) agreement, should be reproduced with attribution.
-
----
-
 Mixed signal contains both analog and digital signals. Devices processing mixed signal typically include ADCs, DACs, analog switches and multiplexers, sample-and-hold amplifiers, and so on.
 
 As a part of it, analog signals is signals we use in the real world such as voice or tempurature, it's continuous in both time and amplitude. To process analog signals into computers, we need to convert them to digital signals, as it's discrete in both time and amplitude.
@@ -123,7 +114,7 @@ $$
 {SNR}_{dB}=10log_{10}(\frac{{Fundamental}}{{Noise\ Power}})
 $$
 
-SNR is usually expressed in decibels (dB), and is often a positive value (assuming the fundamental power is much larger than the noise power).
+SNR is usually expressed in decibels (dB), and is often a positive value (assuming the Fundamental Power is much larger than the Noise Power).
 
 ### Total Harmonic Distortion (THD)
 
@@ -137,11 +128,11 @@ $$
 {THD}_{dB}=10log_{10}(\frac{{Harmonic \ Power}}{{Fundamental}})
 $$
 
-THD is often a negative value (assuming the fundamental power is much larger than the total harmonic power).
+THD is often a negative value (assuming the Fundamental Power is much larger than the total Harmonic Power).
 
 ### Signal to Noise and Distortion (SINAD)
 
-Signal to Noise and Distortion (SINAD) is the same methodology as computing SNR, but now the power of the harmonics is added into, and only zero out the DC component.
+**Signal to Noise and Distortion (SINAD)** is the same methodology as computing SNR, but now the power of the harmonics is added into, and only zero out the DC component.
 
 $$
 {SINAD}=\frac{S}{N+D}
@@ -162,3 +153,22 @@ $$
 $$
 
 ### Spurious Free Dynamic Range (SFRD)
+
+**Spurious Free Dynamic Range (SFRD)** is derived by finding the highest element after the fundamental (ignoring the DC component):
+
+![](https://cos.wiki-power.com/img/20221002161334.png)
+
+Note that the highest element may or may not be a harmonic. So we can conclude that:
+
+$$
+{SFDR}_{dB}=10log_{10}(\frac{{Fundamental}}{{Next \ Highest}})
+$$
+
+The Spurious Free Dynamic Range is a positive value (assuming the Fundamental Power is much larger than the next highest Spur Power.
+
+## References & Acknowledgements
+
+- *Fundamentals of Testing Using ATE*
+- *The-Fundamentals-of-Mixed-Signal-Testing_Brian-Lowe*
+
+> This article is protected by [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by/4.0/deed.en) agreement, should be reproduced with attribution.
