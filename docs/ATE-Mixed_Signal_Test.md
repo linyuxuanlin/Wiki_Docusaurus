@@ -25,6 +25,7 @@ Basic glossary:
   - **Digital Signal Processor**: A specialized device designed to process arrays rapidly, that are composed of digital representations of analog signals.
   - **Digital Signal Processing**: The process of analyzing sampled analog signal after it has been conberted into binary data.
 - **WD (Waveform Digitizer)**: Instrument that samples analog signals and converts them into digital values.
+- **Root Mean Squared (RMS)**: The analog voltage that is equal to a DC voltage containing the same amount of energy. For a sine wave, the RMS value is 0.707 times the peak value.
 
 ## Basics of Sampling Theory
 
@@ -86,3 +87,40 @@ There are several algorithms for transforming data from the time domain to the f
 - **Fast Fourier Transform (FFT)**: sampled signals, $2^n$ numbers of samples, low calculation complexity. FFT assumes periodicity（周期性） in all cases.
 
 for Fast Fourier Transform (FFT), the number of samples $N$ needs to be a power of 2 as it makes transform algorithm simpler and much faster.
+
+🚧
+
+## Common Frequency Analysis Algorithms
+
+For $N$ time-domain signal samples, there are $N$ frequency-domain signal values, and there are $N/2$ frequency-domain power spectrum values. A typical spectral components example is shown below:
+
+![](https://cos.wiki-power.com/img/20221002145846.png)
+
+There are several parameters for describing spectral components as follows:
+
+- Signal To Noise Ratio (SNR)
+- Total Harmonic Distortion (THD)
+- Signal to Noise and Distortion (SINAD)
+- Spurious Free Dynamic Range (SFDR)
+
+### Signal To Noise Ratio (SNR)
+
+**Signal To Noise Ratio (SNR)** is derived from storing the value of the fundamental (signal power) first:
+
+![](https://cos.wiki-power.com/img/20221002151235.png)
+
+Then remove the DC component and harmonics (usually up to 5):
+
+![](https://cos.wiki-power.com/img/20221002151402.png)
+
+Next sum all bins of the remaining power spectrum (the noise power) measured by the RMS value:
+
+![](https://cos.wiki-power.com/img/20221002151646.png)
+
+Ultimately we can conclude that:
+
+$$
+{SNR}*{dB}=10log*{10}(\frac{{Fundamental}}{{Noise\ Power}})
+$$
+
+Usually, SNR is expressed in decibels (dB), and is often a positive value (assuming the fundamental power is much larger than the noise power).
