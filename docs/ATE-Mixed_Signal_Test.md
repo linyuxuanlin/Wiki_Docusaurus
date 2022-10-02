@@ -98,10 +98,10 @@ For $N$ time-domain signal samples, there are $N$ frequency-domain signal values
 
 There are several parameters for describing spectral components as follows:
 
-- Signal To Noise Ratio (SNR)
-- Total Harmonic Distortion (THD)
-- Signal to Noise and Distortion (SINAD)
-- Spurious Free Dynamic Range (SFDR)
+- Signal To Noise Ratio (SNR)（信噪比）
+- Total Harmonic Distortion (THD)（总谐波失真）
+- Signal to Noise and Distortion (SINAD)（信纳比）
+- Spurious Free Dynamic Range (SFDR)（无杂散动态范围）
 
 ### Signal To Noise Ratio (SNR)
 
@@ -123,4 +123,7 @@ $$
 {SNR}_{dB}=10log_{10}(\frac{{Fundamental}}{{Noise\ Power}})
 $$
 
-Usually, SNR is expressed in decibels (dB), and is often a positive value (assuming the fundamental power is much larger than the noise power).
+SNR is usually expressed in decibels (dB), and is often a positive value (assuming the fundamental power is much larger than the noise power).
+
+### Total Harmonic Distortion (THD)
+
