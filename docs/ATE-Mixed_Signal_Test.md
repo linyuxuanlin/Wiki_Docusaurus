@@ -177,5 +177,19 @@ The Spurious Free Dynamic Range is a positive value (assuming the Fundamental Po
 
 ![](https://cos.wiki-power.com/img/20221006174550.png)
 
-In the generic mixed signal tester, the AC src (Arbitrary Waveform
-Generator) connects to the DUT via relay interconnects through the channel board.
+In the generic mixed signal tester, the AWG (AC src) and WD (AC dig) are both connected to the DUT via relay interconnects through the channel board.
+
+### Arbitrary Waveform Generator (AWG)
+
+![](https://cos.wiki-power.com/img/20221006175627.png)
+
+AWG contains a DAC to generate an analog signal from the digital data. LPF (Low Pass Filter) is to smooth the waveform and remove high frequency components. A set of data points for a given waveshape is stored in the waveform source memory, each time a clock occurs, a data point will pass to the DAC.
+
+Important parameters of AWG:
+
+- Maximum Peak to Peak Voltage output
+- Waveform resolution (DAC resolution)
+- Band-width
+- Waveform source memory depth
+- Output Impedance
+- Noise, THD, SNR
