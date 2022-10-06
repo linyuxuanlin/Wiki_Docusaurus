@@ -11,11 +11,8 @@ Basic glossary:
 
 - **Sample**: Each measurement or number.
 - **Sample Set**: A series of samples which represent the analog signal.
-- **AWG (Arbitrary Waveform Generato)**: Low distortion signal generator.
-- DSP
   - **Digital Signal Processor**: A specialized device designed to process arrays rapidly, that are composed of digital representations of analog signals.
   - **Digital Signal Processing**: The process of analyzing sampled analog signal after it has been conberted into binary data.
-- **WD (Waveform Digitizer)**: Instrument that samples analog signals and converts them into digital values.
 - **Root Mean Squared (RMS)**: The analog voltage that is equal to a DC voltage containing the same amount of energy. For a sine wave, the RMS value is 0.707 times the peak value.
 
 ## Basics of Sampling Theory
@@ -183,7 +180,7 @@ In the generic mixed signal tester, the AWG (AC src) and WD (AC dig) are both co
 
 ![](https://cos.wiki-power.com/img/20221006175627.png)
 
-AWG contains a DAC to generate an analog signal from the digital data. LPF (Low Pass Filter) is to smooth the waveform and remove high frequency components. A set of data points for a given waveshape is stored in the waveform source memory, each time a clock occurs, a data point will pass to the DAC.
+**Arbitrary Waveform Generator (AWG)** is a low distortion signal generator. It contains a DAC to generate an analog signal from the digital data. LPF (Low Pass Filter) is to smooth the waveform and remove high frequency components. A set of data points for a given waveshape is stored in the waveform source memory, each time a clock occurs, a data point will pass to the DAC.
 
 Important parameters of AWG:
 
@@ -193,3 +190,11 @@ Important parameters of AWG:
 - Waveform source memory depth
 - Output Impedance
 - Noise, THD, SNR
+
+### Waveform Digitizer (WD)
+
+**Waveform Digitizer (WD)** samples analog signals, and converts them into digital values.
+
+![](https://cos.wiki-power.com/img/20221006180242.png)
+
+If an AWG converts digital samples from a waveform source memory into an analog signal, The digitizer performs the opposite operation. It converts analog signal into digital samples that represent the original analog signal. These digital samples are stored in the capture memory of the digitizer. The low-pass filter limits the bandwidth of the signal in order to remove unwanted frequency components like noise and spurs. the filter also provides anti-aliasing by attenuating spurs that would be aliased into the pass band of the filter during the ADC conversion.
