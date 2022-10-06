@@ -172,3 +172,10 @@ The Spurious Free Dynamic Range is a positive value (assuming the Fundamental Po
 - *The-Fundamentals-of-Mixed-Signal-Testing_Brian-Lowe*
 
 > This article is protected by [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by/4.0/deed.en) agreement, should be reproduced with attribution.
+
+## Architecture of Generic Mixed Signal Tester
+
+![](https://cos.wiki-power.com/img/20221006174550.png)
+
+In the generic mixed signal tester, the AC src (Arbitrary Waveform
+Generator) connects to the DUT via relay interconnects through the channel board.
