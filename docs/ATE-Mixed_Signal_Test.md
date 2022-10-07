@@ -11,8 +11,6 @@ Basic glossary:
 
 - **Sample**: Each measurement or number.
 - **Sample Set**: A series of samples which represent the analog signal.
-  - **Digital Signal Processor**: A specialized device designed to process arrays rapidly, that are composed of digital representations of analog signals.
-  - **Digital Signal Processing**: The process of analyzing sampled analog signal after it has been conberted into binary data.
 - **Root Mean Squared (RMS)**: The analog voltage that is equal to a DC voltage containing the same amount of energy. For a sine wave, the RMS value is 0.707 times the peak value.
 
 ## Basics of Sampling Theory
@@ -163,13 +161,6 @@ $$
 
 The Spurious Free Dynamic Range is a positive value (assuming the Fundamental Power is much larger than the next highest Spur Power.
 
-## References & Acknowledgements
-
-- *Fundamentals of Testing Using ATE*
-- *The-Fundamentals-of-Mixed-Signal-Testing_Brian-Lowe*
-
-> This article is protected by [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by/4.0/deed.en) agreement, should be reproduced with attribution.
-
 ## Architecture of Generic Mixed Signal Tester
 
 ![](https://cos.wiki-power.com/img/20221006174550.png)
@@ -209,3 +200,20 @@ Important parameters of WD:
 - Waveform capture memory depth
 - Input Impedance
 - Noise, THD, SNR, spur
+
+### Clock
+
+The analog and digital clocks are derived from a system wide reference clock. If there is no clock synchronization signal, the timing offset may lead to incorrect results.
+
+### Digital Signal Processor (DSP)
+
+The tester will carry the stored captured signal to the DSP processor through data buses.
+
+![](https://cos.wiki-power.com/img/20221007142019.png)
+
+## References & Acknowledgements
+
+- *Fundamentals of Testing Using ATE*
+- *The-Fundamentals-of-Mixed-Signal-Testing_Brian-Lowe*
+
+> This article is protected by [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by/4.0/deed.en) agreement, should be reproduced with attribution.
