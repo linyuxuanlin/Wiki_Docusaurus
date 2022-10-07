@@ -191,19 +191,6 @@ const sidebars = {
       ],
     },
 
-    //{
-    //  type: 'category',
-    //  label: 'Mixed Signal Process',
-    //  link: {
-    //    type: 'generated-index',
-    //    //description: ' ',
-    //    keywords: ['x', 'x'],
-    //  },
-    //  items: [
-    //    'Basis_of_Mixed_Signal',
-    //  ],
-    //},
-
 
     {
       type: 'category',
