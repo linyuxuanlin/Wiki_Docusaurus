@@ -1,6 +1,6 @@
 ---
-id: ATE-Digital_Functional_Test
-title: ATE - Digital Functional Test 🚧
+id: Digital_Functional_Test
+title: Digital Functional Test 🚧
 ---
 
 

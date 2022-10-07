@@ -1,6 +1,6 @@
 ---
-id: ATE-Leakage_Test
-title: ATE - Leakage Test
+id: Leakage_Test
+title: Leakage Test
 ---
 
 Leakage test contains input leakage test (IIL & IIH) and output tristate leakage test (IOZL & IOZH).

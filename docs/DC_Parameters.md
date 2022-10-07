@@ -1,19 +1,19 @@
 ---
-id: ATE-DC_Parameters
-title: ATE - DC Parameters
+id: DC_Parameters
+title: DC Parameters
 ---
 
 Testing DC parameters is essentially measuring the resistivity of the silicon. They can be tested DC method, with DCVI/PPMU forcing current then measuring voltage, or forcing voltage then measuring current. Will compare the measured value with the spec value out of the tester, then conclude a test result with PASS or FAIL. Items can be tested under DC method are as follows:
 
-- [**Power Supply Current Test (IDD)**](https://wiki-power.com/ATE-DC-IDD_Test)
+- [**Power Supply Current Test (IDD)**](https://wiki-power.com/DC-IDD_Test)
   - Gross IDD Test
   - Static IDD Test
   - Dynamic IDD Test
   - Quiescent IDD Test (IDDQ)
-- [**Leakage Test**](https://wiki-power.com/ATE-DC-Leakage_Test)
+- [**Leakage Test**](https://wiki-power.com/DC-Leakage_Test)
   - Input Leakage Test (IIL & IIH)
   - Output Tristate Leakage Test (IOZL & IOZH)
-- [**Level Threshold Test**](https://wiki-power.com/ATE-DC-Level_Threshold_Test)
+- [**Level Threshold Test**](https://wiki-power.com/DC-Level_Threshold_Test)
   - Output Level Threshold Test (VOL/IOL & VOH/IOH)
   - Input Level Threshold Test (VIL & VIH)
 - Optional tests

@@ -242,12 +242,12 @@ ATE: [{
     keywords: ['x', 'x'],
   },
   items: [
-  'ATE-Continuity_Test',
-  'ATE-DC_Parameters',
-  'ATE-IDD_Test',
-  'ATE-Leakage_Test',
-  'ATE-Level_Threshold_Test',
-  'ATE-Digital_Functional_Test',
+  'Continuity_Test',
+  'DC_Parameters',
+  'IDD_Test',
+  'Leakage_Test',
+  'Level_Threshold_Test',
+  'Digital_Functional_Test',
   ],
 },
 {
@@ -259,7 +259,7 @@ ATE: [{
     keywords: ['x', 'x'],
   },
   items: [
-  'ATE-Mixed_Signal_Test',
+  'Mixed_Signal_Test',
   ],
 },
 {
