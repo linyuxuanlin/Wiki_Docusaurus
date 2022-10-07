@@ -247,6 +247,7 @@ ATE: [{
   },
   items: [
   'Mixed_Signal_Test',
+  'ADC-Basic_Operation',
   ],
 },
 {
