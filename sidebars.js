@@ -264,18 +264,6 @@ ATE: [{
 },
 {
   type: 'category',
-  label: 'Mixed Signal Test',
-  link: {
-    type: 'generated-index',
-    //description: 'describtion to be updated',
-    keywords: ['x', 'x'],
-  },
-  items: [
-  'ATE-Mixed_Signal_Test',
-  ],
-},
-{
-  type: 'category',
   label: 'ATE Coding Syntax',
   link: {
     type: 'generated-index',
