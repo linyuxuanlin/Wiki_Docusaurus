@@ -178,9 +178,11 @@ In the generic mixed signal tester, the AWG (AC src) and WD (AC dig) are both co
 
 ### Arbitrary Waveform Generator (AWG)
 
+**Arbitrary Waveform Generator (AWG)** is a low distortion signal generator. It contains a DAC to generate an analog signal from the digital data.
+
 ![](https://cos.wiki-power.com/img/20221006175627.png)
 
-**Arbitrary Waveform Generator (AWG)** is a low distortion signal generator. It contains a DAC to generate an analog signal from the digital data. LPF (Low Pass Filter) is to smooth the waveform and remove high frequency components. A set of data points for a given waveshape is stored in the waveform source memory, each time a clock occurs, a data point will pass to the DAC.
+LPF (Low Pass Filter) is to smooth the waveform and remove high frequency components. A set of data points for a given waveshape is stored in the waveform source memory, each time a clock occurs, a data point will pass to the DAC.
 
 Important parameters of AWG:
 
@@ -193,8 +195,17 @@ Important parameters of AWG:
 
 ### Waveform Digitizer (WD)
 
-**Waveform Digitizer (WD)** samples analog signals, and converts them into digital values.
+**Waveform Digitizer (WD)** samples analog signals, and converts them into digital values. It performs the opposite operation to the AWG. It converts analog signal into digital samples that represent the original analog signal.
 
 ![](https://cos.wiki-power.com/img/20221006180242.png)
 
-If an AWG converts digital samples from a waveform source memory into an analog signal, The digitizer performs the opposite operation. It converts analog signal into digital samples that represent the original analog signal. These digital samples are stored in the capture memory of the digitizer. The low-pass filter limits the bandwidth of the signal in order to remove unwanted frequency components like noise and spurs. the filter also provides anti-aliasing by attenuating spurs that would be aliased into the pass band of the filter during the ADC conversion.
+The low-pass filter limits the bandwidth of the signal in order to remove unwanted frequency components like noise and spurs, also provides anti-aliasing by attenuating spurs that would be aliased into the pass band of the filter during the ADC conversion.
+
+Important parameters of WD:
+
+- Maximum Peak to Peak input Voltage range
+- Waveform resolution (ADC resolution)
+- Band-width
+- Waveform capture memory depth
+- Input Impedance
+- Noise, THD, SNR, spur
