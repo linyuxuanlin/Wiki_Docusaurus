@@ -235,9 +235,9 @@ const sidebars = {
 ATE: [{
   type: 'category',
   label: 'Test Fundamental',
-  //slug: '/ATE',
   link: {
     type: 'generated-index',
+    slug: '/ATE',
     //description: 'describtion to be updated',
     keywords: ['x', 'x'],
   },
