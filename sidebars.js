@@ -173,24 +173,6 @@ const sidebars = {
       ],
     },
 
-    {
-      type: 'category',
-      label: 'Semiconductor ATE',
-      link: {
-        type: 'generated-index',
-        //description: ' ',
-        keywords: ['x', 'x'],
-      },
-      items: [
-        'ATE-Continuity_Test',
-        'ATE-DC_Parameters',
-        'ATE-IDD_Test',
-        'ATE-Leakage_Test',
-        'ATE-Level_Threshold_Test',
-        'ATE-Digital_Functional_Test',
-        'ATE-Mixed_Signal_Test'
-      ],
-    },
 
     {
       type: 'category',
@@ -251,7 +233,6 @@ const sidebars = {
     },
   ],
 
-///
 
 ATE: [{
   type: 'category',
@@ -263,27 +244,18 @@ ATE: [{
     keywords: ['x', 'x'],
   },
   items: [
-    '双系统极简安装指南',
-    '网页版串口助手的开发',
-    'Ubuntu配置笔记',
-    'ROS入门笔记',
-    '机器视觉入门',
-    '使用R语言进行数据分析',
-    'CSS学习笔记',
-    'HTML学习笔记',
-    'JavaScript学习笔记',
-    'Docker简易指南',
-    'DockerCompose-更优雅的打开方式',
-    '自适应网页设计',
-    '前端开发-环境搭建',
-    'BookJourney-二手书商城小程序',
-    'Git学习笔记',
+  'ATE-Continuity_Test',
+  'ATE-DC_Parameters',
+  'ATE-IDD_Test',
+  'ATE-Leakage_Test',
+  'ATE-Level_Threshold_Test',
+  'ATE-Digital_Functional_Test',
+  'ATE-Mixed_Signal_Test',
   ],
 },
 ],
 
 
-  ///
   
 
   嵌入式与软件: [{
