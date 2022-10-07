@@ -188,8 +188,6 @@ const sidebars = {
         '半导体测试基础-DC参数测试',
         '半导体测试基础-功能测试',
         '半导体测试基础-AC参数测试',
-        'VBT_Syntax_Notes-Hardware_TheHdw',
-        'Pattern_Syntax_Notes',
       ],
     },
 
@@ -250,12 +248,46 @@ ATE: [{
   'ATE-Leakage_Test',
   'ATE-Level_Threshold_Test',
   'ATE-Digital_Functional_Test',
+  ],
+},
+{
+  type: 'category',
+  label: 'Mixed Signal Test',
+  link: {
+    type: 'generated-index',
+    //description: 'describtion to be updated',
+    keywords: ['x', 'x'],
+  },
+  items: [
   'ATE-Mixed_Signal_Test',
   ],
 },
+{
+  type: 'category',
+  label: 'Mixed Signal Test',
+  link: {
+    type: 'generated-index',
+    //description: 'describtion to be updated',
+    keywords: ['x', 'x'],
+  },
+  items: [
+  'ATE-Mixed_Signal_Test',
+  ],
+},
+{
+  type: 'category',
+  label: 'ATE Coding Syntax',
+  link: {
+    type: 'generated-index',
+    //description: 'describtion to be updated',
+    keywords: ['x', 'x'],
+  },
+  items: [
+    'VBT_Syntax_Notes-Hardware_TheHdw',
+    'Pattern_Syntax_Notes',
+  ],
+},
 ],
-
-
   
 
   嵌入式与软件: [{
