@@ -11,7 +11,7 @@ Basic glossary:
 
 - **Sample**: Each measurement or number.
 - **Sample Set**: A series of samples which represent the analog signal.
-- **Root Mean Squared (RMS)**: The analog voltage that is equal to a DC voltage containing the same amount of energy. For a sine wave, the RMS value is 0.707 times the peak value.
+
 
 ## Basics of Sampling Theory
 
@@ -35,7 +35,7 @@ To minimize aliasing problem, we need to remove the frequency greater than $\fra
 
 ### Coherent Sampling
 
-**Coherent sampling（相干采样）** is to ensure the continuity of sampling and prevent spectrum leakage（频谱泄露）, it guarantees that a sample set has a fixed and well defined relationship between $F_s$, $N$, $F_i$ and $M$:
+**Coherent sampling（相干采样）** is to ensure the continuity of sampling and prevent spectrum leakage（频谱泄露）, it guarantees that a sample set (a series of samples which represent the analog signal) has a fixed and well defined relationship between $F_s$, $N$, $F_i$ and $M$:
 
 $$
 \frac{M}{N}=\frac{F_i}{F_s}
@@ -99,7 +99,7 @@ Then remove the DC component and harmonics (usually up to 5):
 
 ![](https://cos.wiki-power.com/img/20221002151402.png)
 
-Next sum all bins of the remaining power spectrum (the noise power) measured by the RMS value:
+Next sum all bins of the remaining power spectrum (the noise power) measured by the RMS value (Root Mean Squared, The analog voltage that is equal to a DC voltage containing the same amount of energy. For a sine wave, the RMS value is 0.707 times the peak value.):
 
 ![](https://cos.wiki-power.com/img/20221002151646.png)
 
