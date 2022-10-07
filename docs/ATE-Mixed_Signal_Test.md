@@ -7,12 +7,6 @@ Mixed signal contains both analog and digital signals. Devices processing mixed 
 
 As a part of it, analog signals is signals we use in the real world such as voice or tempurature, it's continuous in both time and amplitude. To process analog signals into computers, we need to convert them to digital signals, as it's discrete in both time and amplitude.
 
-Basic glossary:
-
-- **Sample**: Each measurement or number.
-- **Sample Set**: A series of samples which represent the analog signal.
-
-
 ## Basics of Sampling Theory
 
 ![](https://cos.wiki-power.com/img/20220929094314.png)
