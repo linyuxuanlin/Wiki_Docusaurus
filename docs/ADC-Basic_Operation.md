@@ -45,6 +45,10 @@ ADC's static parameters contain:
 - Differential Non-Linearity Error (DNE or DNL)
 - Integral Non-Linearity Error (INE or INL)
 
+Test system setup for ADC static parameter tests:
+
+![](https://cos.wiki-power.com/img/20221008184721.png)
+
 ### Offset Error
 
 **Offset Error** (Zero-Scale Error) is the difference between ideal and actual offset (initial) points. It is measured from the midpoint of the zero step (ideal to actual) for the ADC.
@@ -122,16 +126,16 @@ ADC's dynamic parameters contain:
 
 ## Signal to Noise Ratio (SNR)
 
-**Signal to Noise Ratio (SNR)** 
+**Signal to Noise Ratio (SNR)**
 
 ## Total Harmonic Distortion (THD)
 
-**Total Harmonic Distortion (THD)** 
+**Total Harmonic Distortion (THD)**
 
 ## Signal to Noise and Distortion Ratio (SINAD)
 
-**Signal to Noise and Distortion Ratio (SINAD)** 
+**Signal to Noise and Distortion Ratio (SINAD)**
 
 ## Inter-modulation Error (IM)
 
-**Inter-modulation Error (IM)** 
+**Inter-modulation Error (IM)**
