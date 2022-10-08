@@ -129,7 +129,20 @@ $$
 DNL_[n]=\frac{Hits[n]-\frac{\sum Hits[n]}{2^n-2}}{\frac{\sum Hits[n]}{2^n-2}}
 $$
 
-Where $Hits[n]$ represents the Actual Output Code Count, and $\frac{\sum Hits[n]}{2^n-2}$ represents the Ideal Output Code Count
+Where $Hits[n]$ represents the Actual Output Code Count, and $\frac{\sum Hits[n]}{2^n-2}$ represents the Ideal Output Code Count.
+
+![](https://cos.wiki-power.com/img/20221008234157.png)
+
+For an example historam graph as shown below:
+
+![](https://cos.wiki-power.com/img/20221008234921.png)
+
+for DNL[1](Code 001),
+
+- Actual Output Code Count = 14
+- Idea Output Code Count = (14 +18 +15 + 17+ 17 + 15) / (8 -2 ) = 16.
+
+Therefore DNL[1] (Code 001) = (14-16)/16 \* LSB => -0.125 \* LSB.
 
 #### 4. Get the max and min DNL
 
