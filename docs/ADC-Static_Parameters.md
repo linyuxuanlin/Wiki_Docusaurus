@@ -121,9 +121,15 @@ However, a real device will have a count more than 16 times for wider codes, and
 
 ![](https://cos.wiki-power.com/img/20221008194813.png)
 
+3. Calculate for DNL for each step.
 
-3. Calculate for DNL for each step, and get the max and min DNL.
-4. Calculate for INL for each step, and get the max and min INL.
+
+
+4. Get the max and min DNL.
+
+
+
+5. Calculate for INL for each step, and get the max and min INL.
 
 ## References & Acknowledgements
 
