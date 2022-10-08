@@ -103,7 +103,9 @@ Block diagram of signal setup:
 
 Procedure to test an ADC:
 
-1. Make a ramp wave segment for AC SRC. The input ramps goes above and below ±Fs to assure that all codes are covered:
+#### 1. Make a ramp wave segment for AC SRC
+
+The input ramps goes above and below ±Fs to assure that all codes are covered:
 
 ![](https://cos.wiki-power.com/img/20221008193036.png)
 
