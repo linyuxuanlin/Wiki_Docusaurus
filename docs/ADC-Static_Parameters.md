@@ -146,7 +146,11 @@ Therefore DNL[1] (Code 001) = (14-16)/16 \* LSB => -0.125 \* LSB.
 
 #### 4. Get the max and min DNL
 
+![](https://cos.wiki-power.com/img/20221008235342.png)
+
 #### 5. Calculate for INL for each step
+
+
 
 #### 6. Get the max and min INL
 
