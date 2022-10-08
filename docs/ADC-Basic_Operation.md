@@ -71,7 +71,7 @@ $$
 
 ### Differential Non-Linearity Error (DNL)
 
-**Differential Non-Linearity Error (DNL)** is the difference between an actual step width and an ideal step width (1 LSB). It is measured from the difference in the analog input voltage between 2 adjacent transitions and the device's average LSB.
+**Differential Non-Linearity Error (DNL)** is the difference between an actual step width and an ideal step width (1 LSB). It's a measure of "small-signal" linearity error, and is measured from the difference in the analog input voltage between 2 adjacent transitions and the device's average LSB.
 
 Equations to describe DNL:
 
@@ -92,6 +92,19 @@ another image to decribe DNL:
 If DNL exceeds is too large, one or more codes will be missing and never receive an output.
 
 ### Integral Non-Linearity Error (INL)
+
+
+**Integral Non-Linearity Error (INL)** is the cumulative effect at any given input of all differential non-linearity values. It is a measure of "large-signal" linearity error. INL at any point along the curve is the deviation of the ideal linearity line.
+
+Equations to describe INL:
+
+$$
+INL_n=INL_{n-1}+{\frac{DNL_{n-1}+DNL_{n}}{2}}
+$$
+
+$$
+INL=[(\frac{BinaryCode}{2^{bits}-1})(V_{FS}-V_{ZS})+V_{offset}]-CodeCentor
+$$
 
 ## Dynamic Parameters
 
