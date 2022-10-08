@@ -69,8 +69,6 @@ $$
 V_{FS}=V_{FST}+\frac{LSB}{2}
 $$
 
-
-
 ## Dynamic Parameters
 
 ADC's dynamic parameters contain:
