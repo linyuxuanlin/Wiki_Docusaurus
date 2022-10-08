@@ -119,3 +119,19 @@ ADC's dynamic parameters contain:
 - Total Harmonic Distortion (THD)
 - Signal to Noise and Distortion Ratio (SINAD)
 - Inter-modulation Error (IM)
+
+## Signal to Noise Ratio (SNR)
+
+**Signal to Noise Ratio (SNR)** 
+
+## Total Harmonic Distortion (THD)
+
+**Total Harmonic Distortion (THD)** 
+
+## Signal to Noise and Distortion Ratio (SINAD)
+
+**Signal to Noise and Distortion Ratio (SINAD)** 
+
+## Inter-modulation Error (IM)
+
+**Inter-modulation Error (IM)** 
