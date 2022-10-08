@@ -30,7 +30,8 @@ $$
 LSB=\frac{V_{FST}-V_{ZST}}{2^{bits}-2}
 $$
 
-- **Zero Scale Range Transition Voltage (VZST)**: Voltage of the analog input signal which the first transition is recorded 
-- **Full Scale Range Transition Voltage (VFST)**: Voltage of the analog input signal which the last transition is recorded
+- **Zero Scale Range Transition Voltage ($V_{ZST}$)**: Voltage of the analog input signal when the first transition is recorded.
+- **Full Scale Range Transition Voltage ($V_{FST}$)**: Voltage of the analog input signal when the last transition is recorded.
+- **Full Scale Range (FSR)**: Maximum extreme of the analog input signal supplied to the ADC. $FSR = (V_{FST}-V_{ZST}) + 2 * LSB$
 
 For an ideal ADC, LSB represents all codes' width.
