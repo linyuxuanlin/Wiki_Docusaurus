@@ -46,7 +46,7 @@ $$
 Equations to describe DNL:
 
 $$
-DNL_n=CodeWidth_n-LSB_{average}
+DNL[n]=CodeWidth_n-LSB_{average}
 $$
 
 $$
@@ -70,7 +70,7 @@ The deviations are measured at the transition points from one step to the next f
 Equations to describe INL:
 
 $$
-INL_n=INL_{n-1}+{\frac{DNL_{n-1}+DNL_{n}}{2}}
+INL[n]=INL_{n-1}+{\frac{DNL_{n-1}+DNL_{n}}{2}}
 $$
 
 $$
@@ -109,7 +109,7 @@ The input ramps goes above and below ±Fs to assure that all codes are covered:
 
 ![](https://cos.wiki-power.com/img/20221008193036.png)
 
-#### 2. Take data between the start (min+1, e.g. 0…01) and the end (max-1, e.g. 1…10) of the ramp. That gives $2^n – 2$ codes' worth of data.
+#### 2. Take data between the start (min+1, e.g. 0…01) and the end (max-1, e.g. 1…10) of the ramp. That gives $2^n – 2$ codes' worth of data
 
 Voltage applied must be wider than the full-scale range to cover all transitions. 16 steps in-between each code transition is shown below:
 
@@ -123,17 +123,19 @@ However, a real device will have a count more than 16 times for wider codes, and
 
 ![](https://cos.wiki-power.com/img/20221008194813.png)
 
-#### 3. Calculate for DNL for each step.
+#### 3. Calculate for DNL for each step
 
+$$
+DNL_[n]=\frac{Hits[n]-\frac{\sum Hits[n]}{2^n-2}}{\frac{\sum Hits[n]}{2^n-2}}
+$$
 
+Where $Hits[n]$ represents the Actual Output Code Count, and $\frac{\sum Hits[n]}{2^n-2}$ represents the Ideal Output Code Count
 
-#### 4. Get the max and min DNL.
-
-
+#### 4. Get the max and min DNL
 
 #### 5. Calculate for INL for each step
 
-#### 6. Get the max and min INL.
+#### 6. Get the max and min INL
 
 ## References & Acknowledgements
 
