@@ -133,6 +133,13 @@ Block diagram of signal setup:
 
 ### Tests Concept
 
+Procedure to test an ADC:
+
+1. Make a ramp wave segment for AC SRC. The input ramps goes above and below ±Fs to assure that all codes are covered.(?)
+2. Take data between the start (e.g. 0…01) and the end (e.g. 1…10) of the ramp.
+3. Calculate for DNL for each step, and get the max and min DNL.
+4. Calculate for INL for each step, and get the max and min INL.
+
 ## Dynamic Parameters
 
 ADC's dynamic parameters contain:
