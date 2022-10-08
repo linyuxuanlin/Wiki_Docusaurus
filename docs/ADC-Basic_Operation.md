@@ -73,6 +73,8 @@ $$
 
 **Differential Non-Linearity Error (DNL)** is the difference between an actual step width and an ideal step width (1 LSB). It's a measure of "small-signal" linearity error, and is measured from the difference in the analog input voltage between 2 adjacent transitions and the device's average LSB.
 
+![](https://cos.wiki-power.com/img/20221008160020.png)
+
 Equations to describe DNL:
 
 $$
@@ -83,8 +85,6 @@ $$
 DNL=(V_{in2}-V_{in1})-LSB_{average}
 $$
 
-![](https://cos.wiki-power.com/img/20221008160020.png)
-
 another image to decribe DNL:
 
 ![](https://cos.wiki-power.com/img/20221008161707.png)
@@ -93,8 +93,11 @@ If DNL exceeds is too large, one or more codes will be missing and never receive
 
 ### Integral Non-Linearity Error (INL)
 
-
 **Integral Non-Linearity Error (INL)** is the cumulative effect at any given input of all differential non-linearity values. It is a measure of "large-signal" linearity error. INL at any point along the curve is the deviation of the ideal linearity line.
+
+![](https://cos.wiki-power.com/img/20221008163705.png)
+
+The deviations are measured at the transition points from one step to the next for the ADC. INL is the deviation of the values of the actual step function to the ideal straight line function
 
 Equations to describe INL:
 
@@ -105,6 +108,8 @@ $$
 $$
 INL=[(\frac{BinaryCode}{2^{bits}-1})(V_{FS}-V_{ZS})+V_{offset}]-CodeCentor
 $$
+
+![](https://cos.wiki-power.com/img/20221008163911.png)
 
 ## Dynamic Parameters
 
