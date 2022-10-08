@@ -47,7 +47,7 @@ ADC's static parameters contain:
 
 ### Offset Error
 
-Offset Error (Zero-Scale Error) is the difference between ideal and actual offset (initial) points. It is measured from the midpoint of the zero step (ideal to actual) for the ADC.
+**Offset Error** (Zero-Scale Error) is the difference between ideal and actual offset (initial) points. It is measured from the midpoint of the zero step (ideal to actual) for the ADC.
 
 ![](https://cos.wiki-power.com/img/20221008154521.png)
 
@@ -58,6 +58,16 @@ V_{ZS}=V_{ZST}-\frac{LSB}{2}
 $$
 
 ### Gain Error
+
+**Gain Error** is the difference between ideal and actual gain points on the transfer function (after the offset error has been corrected to zero). It is measured from the midpoint of the full step for the ADC.
+
+![](https://cos.wiki-power.com/img/20221008155259.png)
+
+Where
+
+$$
+V_{FS}=V_{FST}+\frac{LSB}{2}
+$$
 
 
 
