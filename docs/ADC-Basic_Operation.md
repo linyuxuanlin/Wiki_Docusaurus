@@ -45,10 +45,6 @@ ADC's static parameters contain:
 - Differential Non-Linearity Error (DNE or DNL)
 - Integral Non-Linearity Error (INE or INL)
 
-Test system setup for ADC static parameter tests:
-
-![](https://cos.wiki-power.com/img/20221008184721.png)
-
 ### Offset Error
 
 **Offset Error** (Zero-Scale Error) is the difference between ideal and actual offset (initial) points. It is measured from the midpoint of the zero step (ideal to actual) for the ADC.
@@ -115,6 +111,28 @@ $$
 
 ![](https://cos.wiki-power.com/img/20221008163911.png)
 
+## How to Test Static Parameters
+
+### Test System Setup
+
+Test system setup for ADC static parameter tests:
+
+![](https://cos.wiki-power.com/img/20221008184721.png)
+
+Since the ADC voltage-to-code transfer curve is a many-to-one mapping function:
+
+![](https://cos.wiki-power.com/img/20221008185819.png)
+
+We use linear ramp histogram method (code width measurement) practically. The input ramp is slow enough to give a statistically relevant "number of hits per code".
+
+![](https://cos.wiki-power.com/img/20221008190154.png)
+
+Block diagram of signal setup:
+
+![](https://cos.wiki-power.com/img/20221008190612.png)
+
+### Tests Concept
+
 ## Dynamic Parameters
 
 ADC's dynamic parameters contain:
@@ -124,18 +142,18 @@ ADC's dynamic parameters contain:
 - Signal to Noise and Distortion Ratio (SINAD)
 - Inter-modulation Error (IM)
 
-## Signal to Noise Ratio (SNR)
+### Signal to Noise Ratio (SNR)
 
 **Signal to Noise Ratio (SNR)**
 
-## Total Harmonic Distortion (THD)
+### Total Harmonic Distortion (THD)
 
 **Total Harmonic Distortion (THD)**
 
-## Signal to Noise and Distortion Ratio (SINAD)
+### Signal to Noise and Distortion Ratio (SINAD)
 
 **Signal to Noise and Distortion Ratio (SINAD)**
 
-## Inter-modulation Error (IM)
+### Inter-modulation Error (IM)
 
 **Inter-modulation Error (IM)**
