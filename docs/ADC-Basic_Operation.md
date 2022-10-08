@@ -69,6 +69,26 @@ $$
 V_{FS}=V_{FST}+\frac{LSB}{2}
 $$
 
+### Differential Non-Linearity Error (DNL)
+
+**Differential Non-Linearity Error (DNL)** is the difference between an actual step width and an ideal step width (1 LSB). It is measured from the difference in the analog input voltage between 2 adjacent transitions and the device's average LSB.
+
+Equations to describe DNL:
+
+$$
+DNL_n=CodeWidth_n-LSB_{average}
+$$
+
+$$
+DNL=(V_{in2}-V_{in1})-LSB_{average}
+$$
+
+![](https://cos.wiki-power.com/img/20221008160020.png)
+
+If DNL exceeds is too large, one or more codes will be missing and never receive an output.
+
+### Integral Non-Linearity Error (INL)
+
 ## Dynamic Parameters
 
 ADC's dynamic parameters contain:
