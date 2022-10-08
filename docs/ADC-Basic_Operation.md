@@ -35,3 +35,37 @@ For example, for a 3 bit converter, there are:
 - **Full Scale Range (FSR)**: Maximum extreme of the analog input signal supplied to the ADC. $FSR = (V_{FST}-V_{ZST}) + 2 * LSB$
 
 For an ideal ADC, LSB represents all of the each code's width.
+
+## Static Parameters
+
+ADC's static parameters contain:
+
+- Offset Error
+- Gain Error
+- Differential Non-Linearity Error (DNE or DNL)
+- Integral Non-Linearity Error (INE or INL)
+
+### Offset Error
+
+Offset Error (Zero-Scale Error) is the difference between ideal and actual offset (initial) points. It is measured from the midpoint of the zero step (ideal to actual) for the ADC.
+
+![](https://cos.wiki-power.com/img/20221008154521.png)
+
+Where
+
+$$
+V_{ZS}=V_{ZST}-\frac{LSB}{2}
+$$
+
+### Gain Error
+
+
+
+## Dynamic Parameters
+
+ADC's dynamic parameters contain:
+
+- Signal to Noise Ratio (SNR)
+- Total Harmonic Distortion (THD)
+- Signal to Noise and Distortion Ratio (SINAD)
+- Inter-modulation Error (IM)
