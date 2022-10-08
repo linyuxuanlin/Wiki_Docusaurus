@@ -85,6 +85,10 @@ $$
 
 ![](https://cos.wiki-power.com/img/20221008160020.png)
 
+another image to decribe DNL:
+
+![](https://cos.wiki-power.com/img/20221008161707.png)
+
 If DNL exceeds is too large, one or more codes will be missing and never receive an output.
 
 ### Integral Non-Linearity Error (INL)
