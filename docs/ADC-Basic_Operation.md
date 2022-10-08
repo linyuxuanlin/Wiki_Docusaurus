@@ -18,6 +18,10 @@ Though ADC's ideal transfer function should be a straight line, but actually is 
 
 The width of one step is defined as 1 **Least Significant Bit (LSB)**. The resolution of an ADC is normally expressed as number of bits (digital output code). An ADC with an n-bit resolution has $2^n$ possible digital codes ($2^n$ step levels).
 
+$$
+LSB=\frac{V_{FST}-V_{ZST}}{2^{bits}-2}
+$$
+
 For example, for a 3 bit converter, there are:
 
 - 8 horizontal steps
@@ -26,12 +30,8 @@ For example, for a 3 bit converter, there are:
 
 ![](https://cos.wiki-power.com/img/20221008151344.png)
 
-$$
-LSB=\frac{V_{FST}-V_{ZST}}{2^{bits}-2}
-$$
-
 - **Zero Scale Range Transition Voltage ($V_{ZST}$)**: Voltage of the analog input signal when the first transition is recorded.
 - **Full Scale Range Transition Voltage ($V_{FST}$)**: Voltage of the analog input signal when the last transition is recorded.
 - **Full Scale Range (FSR)**: Maximum extreme of the analog input signal supplied to the ADC. $FSR = (V_{FST}-V_{ZST}) + 2 * LSB$
 
-For an ideal ADC, LSB represents all codes' width.
+For an ideal ADC, LSB represents all of the each code's width.
