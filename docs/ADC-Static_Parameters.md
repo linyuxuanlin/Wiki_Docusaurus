@@ -107,11 +107,23 @@ Procedure to test an ADC:
 
 ![](https://cos.wiki-power.com/img/20221008193036.png)
 
-2. Take data between the start (e.g. 0…01) and the end (e.g. 1…10) of the ramp.
+2. Take data between the start (min+1, e.g. 0…01) and the end (max-1, e.g. 1…10) of the ramp. That gives $2^n – 2$ codes' worth of data.
+
+Voltage applied must be wider than the full-scale range to cover all transitions. 16 steps in-between each code transition is shown below:
+
+![](https://cos.wiki-power.com/img/20221008194207.png)
+
+for the ideal ADC DUT, 16 output codes are appear in the same times:
+
+![](https://cos.wiki-power.com/img/20221008194450.png)
+
+However, a real device will have a count more than 16 times for wider codes, and less than 16 times for narrower ones (But sum of the total occurrence should be still $2^{bits}$ times of 16):
+
+![](https://cos.wiki-power.com/img/20221008194813.png)
+
+
 3. Calculate for DNL for each step, and get the max and min DNL.
 4. Calculate for INL for each step, and get the max and min INL.
-
-
 
 ## References & Acknowledgements
 
