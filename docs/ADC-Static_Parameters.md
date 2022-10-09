@@ -3,7 +3,6 @@ id: ADC-Static_Parameters
 title: ADC - Static Parameters
 ---
 
-
 ## Static Parameters
 
 ADC's static parameters contain:
