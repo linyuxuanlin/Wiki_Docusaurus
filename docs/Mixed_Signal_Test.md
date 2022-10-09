@@ -100,7 +100,7 @@ Next sum all bins of the remaining power spectrum (the noise power) measured by 
 Ultimately we can conclude that:
 
 $$
-{SNR}_{dB}=10log_{10}(\frac{{Fundamental}}{{Noise\ Power}})
+{SNR}(dB)=10log_{10}(\frac{{Fundamental}}{{Noise\ Power}})
 $$
 
 SNR is usually expressed in decibels (dB), and is often a positive value (assuming the Fundamental Power is much larger than the Noise Power).

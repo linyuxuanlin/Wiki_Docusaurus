@@ -29,6 +29,8 @@ $$
 
 Since SNR is an ratio of power, $20$ in the equation means the square of the ratio of voltage.
 
+![](https://cos.wiki-power.com/img/20221009221450.png)
+
 
 
 ### Total Harmonic Distortion (THD)
