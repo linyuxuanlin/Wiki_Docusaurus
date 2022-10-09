@@ -37,7 +37,6 @@ Although the Harmonic Distortion is not included in the measurement of SNR, but 
 
 **Total Harmonic Distortion (THD)** of an ADC is defined as the ratio of the fundamental to all the harmonic distortion:
 
-
 $$
 THD(dB)=20log(\frac{\sqrt{V^2_{2(RMS)}+V^2_{3(RMS)}+...+V^2_{n(RMS)}}}{V_{1(RMS)}}
 $$
@@ -52,12 +51,14 @@ $$
 
 **Inter-modulation Error (IM)**
 
-
 ## How to Test Dynamic Parameters
-
 
 ### Test System Setup
 
+Test system setup for ADC dynamic parameter tests:
+
+![](https://cos.wiki-power.com/img/20221009230212.png)
+
 ### Tests Concept
 
-Procedure of testing the static parameters of an ADC is listed below.
+Procedure of testing the dynamic parameters of an ADC is listed below.
