@@ -51,3 +51,13 @@ $$
 ### Inter-modulation Error (IM)
 
 **Inter-modulation Error (IM)**
+
+
+## How to Test Dynamic Parameters
+
+
+### Test System Setup
+
+### Tests Concept
+
+Procedure of testing the static parameters of an ADC is listed below.

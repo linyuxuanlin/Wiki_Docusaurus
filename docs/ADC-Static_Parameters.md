@@ -100,7 +100,7 @@ Block diagram of signal setup:
 
 ### Tests Concept
 
-Procedure of testing an ADC DUT is listed below.
+Procedure of testing the static parameters of an ADC DUT is listed below.
 
 #### 1. Make a ramp wave segment for AC SRC
 
