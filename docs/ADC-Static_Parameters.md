@@ -126,7 +126,7 @@ However, a real device will have a count more than 16 times for wider codes, and
 #### 3. Calculate for DNL for each step
 
 $$
-DNL_[n]=\frac{Hits[n]-\frac{\sum Hits[n]}{2^n-2}}{\frac{\sum Hits[n]}{2^n-2}}
+DNL[n]=\frac{Hits[n]-\frac{\sum Hits[n]}{2^n-2}}{\frac{\sum Hits[n]}{2^n-2}}
 $$
 
 Where $Hits[n]$ represents the Actual Output Code Count, and $\frac{\sum Hits[n]}{2^n-2}$ represents the Ideal Output Code Count.
@@ -150,7 +150,17 @@ Therefore DNL[1] (Code 001) = (14-16)/16 \* LSB => -0.125 \* LSB.
 
 #### 5. Calculate for INL for each step
 
+INL is the cumulative value of the first DNL to the DNL[n] (except zero and full scale DNL):
 
+$$
+INL[n]=DNL[n]+DNL[i-1]+...+DNL[2]+DNL[1]
+$$
+
+Note that $DNL[0]$ is not used,
+
+$$
+INL[0]=INL[FullScale]=0
+$$
 
 #### 6. Get the max and min INL
 
