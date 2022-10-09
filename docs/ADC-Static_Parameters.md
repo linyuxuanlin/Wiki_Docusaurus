@@ -162,6 +162,8 @@ $$
 INL[0]=INL[FullScale]=0
 $$
 
+For an example histogram
+
 #### 6. Get the max and min INL
 
 ## References & Acknowledgements
