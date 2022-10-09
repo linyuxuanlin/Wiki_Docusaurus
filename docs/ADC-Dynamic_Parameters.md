@@ -21,7 +21,15 @@ ADC's dynamic parameters contain:
 
 ### Signal to Noise Ratio (SNR)
 
-**Signal to Noise Ratio (SNR)**
+**Signal to Noise Ratio (SNR)** of an ADC is defined as the ratio of the Measured Signal Power's RMS (excluding Harmonic Distortion) to the Noise Power's RMS:
+
+$$
+SNR(dB)=20log(\frac{V_{SignalRMS}}{V_{NoiseRMS}})
+$$
+
+Since SNR is an ratio of power, $20$ in the equation means the square of the ratio of voltage.
+
+
 
 ### Total Harmonic Distortion (THD)
 
