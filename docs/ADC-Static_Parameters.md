@@ -181,6 +181,8 @@ $$
 
 #### 6. Get the max and min INL
 
+![](https://cos.wiki-power.com/img/20221009201838.png)
+
 ## References & Acknowledgements
 
 - *Fundamentals of Testing Using ATE*
