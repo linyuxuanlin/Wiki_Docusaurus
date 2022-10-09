@@ -162,7 +162,22 @@ $$
 INL[0]=INL[FullScale]=0
 $$
 
-For an example histogram
+For an example graph below,
+
+![](https://cos.wiki-power.com/img/20221009201547.png)
+
+$$
+INL[1] = DNL[1] = -0.125 * LSB
+$$
+
+$$
+INL[2] = DNL[2] + DNL[1] = 0 * LSB
+$$
+
+$$
+INL[3] = DNL[3] + DNL[2] + DNL[1] \\
+INL[3]= 0.0625 * LSB
+$$
 
 #### 6. Get the max and min INL
 
