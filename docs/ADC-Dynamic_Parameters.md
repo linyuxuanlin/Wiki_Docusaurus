@@ -99,6 +99,10 @@ Where $Fs(dut)$ is the ADC sampling rate also the Digital Capture's sample rate,
 
 #### 3. Send the collected set of time samples to the DSP to perform DFT / FFT analysis
 
+![](https://cos.wiki-power.com/img/20221011140834.png)
+
+![](https://cos.wiki-power.com/img/20221011140904.png)
+
 #### 4. Analyze the frequency bins of interest using equations or tester algorithms for SNR, THD and compare to specification
 
 #### 5. Make a pass / fail decision based on the results
