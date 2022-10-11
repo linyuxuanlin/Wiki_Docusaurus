@@ -61,4 +61,44 @@ Test system setup for ADC dynamic parameter tests:
 
 ### Tests Concept
 
-Procedure of testing the dynamic parameters of an ADC is listed below.
+Procedure of testing the dynamic parameters of an ADC is listed below. Resolution of AC SRC should be at least 2 to 4 bits better than DUT.
+
+ADC has a theoretical best ever SNR of:
+
+$$
+SNR = (6.02N + 1.76) dB
+$$
+
+Where $N$ is the number of ADC's bits.
+
+Procedure of testing the dynamic parameters of an ADC DUT is listed below.
+
+#### 1. Make a continuous input signal with the tester for the ADC to convert
+
+It is common practice to ensure that the analog/digital clock are referenced to a common master clock, so that the relationship of the clock sources's frequency is fixed and synchronized, which making test results highly repeatable.
+
+![](https://cos.wiki-power.com/img/20221011122459.png)
+
+#### 2. Collect a set of samples with the ADC coherently
+
+For AC Source:
+
+$$
+\frac{Fs}{Fi}=\frac{Ns}{Ms}
+$$
+
+Where $Fs$ is the samping rate of AC Source, $Fi$ is signal frequency, $Ns$ is the number of samples (does not have to be a 2x number), $Ms$ is the number of integer cycles (does not have to be odd).
+
+For Digital Capture:
+
+$$
+\frac{Fs(dut)}{Fi}=\frac{Ncap}{Mc}
+$$
+
+Where $Fs(dut)$ is the ADC sampling rate also the Digital Capture's sample rate, $Fi$ is the  signal frequency, $Ncap$ is the number of samples captured (2x number), $Mc$ is the number of integer cycles (odd).
+
+#### 3. Send the collected set of time samples to the DSP to perform DFT / FFT analysis
+
+#### 4. Analyze the frequency bins of interest using equations or tester algorithms for SNR, THD and compare to specification
+
+#### 5. Make a pass / fail decision based on the results
