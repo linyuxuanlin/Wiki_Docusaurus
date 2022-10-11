@@ -52,9 +52,33 @@ Procedure of testing the dynamic parameters of an DAC is listed below.
 
 #### 1.Make a continuous input digital data signal (of a Sine wave) with the tester for the DAC to convert
 
+It is common practice to ensure that the analog/digital clock are referenced to a common master clock, so that the relationship of the clock sources's frequency is fixed and synchronized, which making test results highly repeatable.
 
+![](https://cos.wiki-power.com/img/20221011195204.png)
 
 #### 2.Coherently collect a set of samples with the DAC
+
+For Digital Source:
+
+$$
+\frac{Fs(dut)}{Fi}=\frac{N}{M}
+$$
+
+Where $Fs(dut)$ is the samping rate of Digital Source, $Fi$ is signal frequency, $N$ is the number of samples, $M$ is the number of integer cycles.
+
+For AC_Digital Capture:
+
+$$
+\frac{Fs}{Fi}=\frac{Ncap}{Mc}
+$$
+
+
+
+
+Where $Fs(dut)$ is the DAC sampling rate also the Digital Capture's sample rate, $Fi$ is the  signal frequency, $Ncap$ is the number of samples captured (2x number), $Mc$ is the number of integer cycles (odd).
+
+
+---
 
 #### 3.Send the collected set of time samples to the DSP to perform DFT / FFT analysis
 
