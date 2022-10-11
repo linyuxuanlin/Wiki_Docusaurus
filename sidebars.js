@@ -246,7 +246,7 @@ ATE: [{
     keywords: ['x', 'x'],
   },
   items: [
-  'Mixed_Signal_Test',
+  'Basics_of_Mixed_Signal_Test',
   'ADC-Basic_Operation',
   'ADC-Static_Parameters',
   'ADC-Dynamic_Parameters',
