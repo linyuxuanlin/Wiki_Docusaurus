@@ -5,7 +5,7 @@ title: ADC - Dynamic Parameters
 
 ## Dynamic Parameters
 
-ADC's dynamic parameters contain:
+ADC's dynamic parameters mainly contain:
 
 - Signal to Noise Ratio (SNR)
 - Total Harmonic Distortion (THD)

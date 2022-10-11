@@ -1,11 +1,24 @@
 ---
-id: ADC-Static_Parameters
-title: ADC - Static Parameters
+id: DAC-Static_Parameters
+title: DAC - Static Parameters
 ---
 
 ## Static Parameters
 
-ADC's static parameters mainly contain:
+DAC's static parameters mainly contain:
+
+- Offset Error
+- Gain Error
+- Differential Non-Linearity Error (DNE or DNL)
+- Integral Non-Linearity Error (INE or INL)
+
+
+
+---
+
+## Static Parameters
+
+ADC's static parameters contain:
 
 - Offset Error
 - Gain Error
