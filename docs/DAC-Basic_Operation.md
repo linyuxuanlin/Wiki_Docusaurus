@@ -3,38 +3,19 @@ id: DAC-Basic_Operation
 title: DAC - Basic Operation
 ---
 
+Digital to Analog Converter (ADC) is a device to converts a sequence of digital input data into analog signals.
 
-Digital to Analog Converter (ADC) is a device to converts analog signals into a sequence of digital data.
+![](https://cos.wiki-power.com/img/20221011141644.png)
 
+Range of DAC output voltage between the minimum ($V_{ZS}$) and maximum ($V_{FS}$) analog outputs is called **Full Scale Range (FSR)**:
 
+![](https://cos.wiki-power.com/img/20221011142249.png)
 
----
-
-Analog to Digital Converter (ADC) is a device to converts analog signals into a sequence of digital data.
-
-![](https://cos.wiki-power.com/img/20221008143831.png)
-
-Though ADC's ideal transfer function should be a straight line, but actually is a uniform staircase, that the number of steps corresponds to the number of digital output codes. Since analog is continuous and digital is discrete, quantization error will be introduced in the procedure.
-
-The width of one step is defined as 1 **Least Significant Bit (LSB)**. The resolution of an ADC is normally expressed as number of bits (digital output code). An ADC with an n-bit resolution has $2^n$ possible digital codes ($2^n$ step levels).
+And average change in voltage when in between the input codes is defined as LSB:
 
 $$
-LSB=\frac{V_{FST}-V_{ZST}}{2^{bits}-2}
+LSB=\frac{FSR_{measured}}{2^{bits}-1}
 $$
-
-For example, for a 3 bit converter, there are:
-
-- 8 horizontal steps
-- 7 transitions
-- 6 steps between 7 transitions
-
-![](https://cos.wiki-power.com/img/20221008151344.png)
-
-- **Zero Scale Range Transition Voltage ($V_{ZST}$)**: Voltage of the analog input signal when the first transition is recorded.
-- **Full Scale Range Transition Voltage ($V_{FST}$)**: Voltage of the analog input signal when the last transition is recorded.
-- **Full Scale Range (FSR)**: Maximum extreme of the analog input signal supplied to the ADC. $FSR = (V_{FST}-V_{ZST}) + 2 LSB$
-
-For an ideal ADC, LSB represents all of the each code's width.
 
 ## References & Acknowledgements
 
