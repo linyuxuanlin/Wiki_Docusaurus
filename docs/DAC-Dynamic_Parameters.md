@@ -72,15 +72,15 @@ $$
 \frac{Fs}{Fi}=\frac{Ncap}{Mc}
 $$
 
-
-
-
-Where $Fs(dut)$ is the DAC sampling rate also the Digital Capture's sample rate, $Fi$ is the  signal frequency, $Ncap$ is the number of samples captured (2x number), $Mc$ is the number of integer cycles (odd).
-
-
----
+Where $Fs$ is the DAC sampling rate also the Digital Capture's sample rate, $Fi$ is the signal frequency, $Ncap$ is the number of samples captured (2x number), $Mc$ is the number of integer cycles (odd).
 
 #### 3.Send the collected set of time samples to the DSP to perform DFT / FFT analysis
+
+![](https://cos.wiki-power.com/img/20221011140834.png)
+
+![](https://cos.wiki-power.com/img/20221011140904.png)
+
+---
 
 #### 4.Analyze the frequency bins of interest using equations or tester algorithms for SNR, THD and compare to specification
 

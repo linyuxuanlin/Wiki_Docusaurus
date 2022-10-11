@@ -80,7 +80,7 @@ $$
 \frac{Fs(dut)}{Fi}=\frac{Ncap}{Mc}
 $$
 
-Where $Fs(dut)$ is the ADC sampling rate also the Digital Capture's sample rate, $Fi$ is the  signal frequency, $Ncap$ is the number of samples captured (2x number), $Mc$ is the number of integer cycles (odd).
+Where $Fs(dut)$ is the ADC sampling rate also the Digital Capture's sample rate, $Fi$ is the signal frequency, $Ncap$ is the number of samples captured (2x number), $Mc$ is the number of integer cycles (odd).
 
 #### 3. Send the collected set of time samples to the DSP to perform DFT / FFT analysis
 
