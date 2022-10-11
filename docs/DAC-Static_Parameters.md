@@ -12,34 +12,39 @@ DAC's static parameters mainly contain:
 - Differential Non-Linearity Error (DNE or DNL)
 - Integral Non-Linearity Error (INE or INL)
 
-
-
----
-
-## Static Parameters
-
-ADC's static parameters contain:
-
-- Offset Error
-- Gain Error
-- Differential Non-Linearity Error (DNE or DNL)
-- Integral Non-Linearity Error (INE or INL)
+![](https://cos.wiki-power.com/img/20221011144045.png)
 
 ### Offset Error
 
-**Offset Error** (Zero-Scale Error) is the difference between ideal and actual offset (initial) points. It is measured from the midpoint of the zero step (ideal to actual) for the ADC.
+**Offset Error** (Zero-Scale Error) is the voltage difference between ideal and actual offset (initial) points.
 
-![](https://cos.wiki-power.com/img/20221008154521.png)
+$$
+OffsetError=V_{ZS(Actual)}-V_{ZS(ideal)}
+$$
+
+![](https://cos.wiki-power.com/img/20221011144415.png)
+
+### Gain Error
+
+**Gain Error** is the voltage difference between ideal and actual gain points on the transfer function.
+
+$$
+GainError=FSR_{Ideal}-FSR_{Actual}
+$$
 
 Where
 
 $$
-V_{ZS}=V_{ZST}-\frac{LSB}{2}
+FSR_{Ideal}=V_{FS(ideal)}-V_{ZS(ideal)}
 $$
 
-### Gain Error
+$$
+FSR_{Actual}=V_{FS(Actual)}-V_{ZS(Actual)}
+$$
 
-**Gain Error** is the difference between ideal and actual gain points on the transfer function (after the offset error has been corrected to zero). It is measured from the midpoint of the full step for the ADC.
+![](https://cos.wiki-power.com/img/20221011144925.png)
+
+---
 
 ![](https://cos.wiki-power.com/img/20221008155259.png)
 
