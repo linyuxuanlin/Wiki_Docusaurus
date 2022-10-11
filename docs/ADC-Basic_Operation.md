@@ -5,7 +5,7 @@ title: ADC - Basic Operation
 
 Analog to Digital Converter (ADC) is a device to converts analog signals into a sequence of digital data.
 
-![](https://cos.wiki-power.com/img/20221008143831.png)
+![](https://cos.wiki-power.com/img/20221011141438.png)
 
 Though ADC's ideal transfer function should be a straight line, but actually is a uniform staircase, that the number of steps corresponds to the number of digital output codes. Since analog is continuous and digital is discrete, quantization error will be introduced in the procedure.
 

@@ -4,7 +4,7 @@ title: DAC - Basic Operation
 ---
 
 
-
+Digital to Analog Converter (ADC) is a device to converts analog signals into a sequence of digital data.
 
 
 
