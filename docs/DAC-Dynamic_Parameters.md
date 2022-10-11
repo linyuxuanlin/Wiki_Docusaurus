@@ -12,11 +12,9 @@ DAC's dynamic parameters mainly contain:
 - Signal to Noise and Distortion Ratio (SINAD)
 - Inter-modulation Error (IM)
 
----
-
 ### Signal to Noise Ratio (SNR)
 
-**Signal to Noise Ratio (SNR)** of an ADC is defined as the ratio of the Measured Signal Power's RMS (excluding Harmonic Distortion) to the Noise Power's RMS:
+**Signal to Noise Ratio (SNR)** of an DAC is defined as the ratio of the Measured Signal Power's RMS (excluding Harmonic Distortion) to the Noise Power's RMS:
 
 $$
 SNR(dB)=20log(\frac{V_{Signal(RMS)}}{V_{Noise(RMS)}})
@@ -30,21 +28,13 @@ Although the Harmonic Distortion is not included in the measurement of SNR, but 
 
 ### Total Harmonic Distortion (THD)
 
-**Total Harmonic Distortion (THD)** of an ADC is defined as the ratio of the fundamental to all the harmonic distortion:
+**Total Harmonic Distortion (THD)** of an DAC is defined as the ratio of the fundamental to all the harmonic distortion:
 
 $$
 THD(dB)=20log(\frac{\sqrt{V^2_{2(RMS)}+V^2_{3(RMS)}+...+V^2_{n(RMS)}}}{V_{1(RMS)}}
 $$
 
 ![](https://cos.wiki-power.com/img/20221009225800.png)
-
-### Signal to Noise and Distortion Ratio (SINAD)
-
-**Signal to Noise and Distortion Ratio (SINAD)**
-
-### Inter-modulation Error (IM)
-
-**Inter-modulation Error (IM)**
 
 ## How to Test Dynamic Parameters
 
@@ -54,53 +44,23 @@ Test system setup for ADC dynamic parameter tests:
 
 ![](https://cos.wiki-power.com/img/20221009230212.png)
 
+Resolution of AC Digitizer should be at least 2 to 4 bits better than DUT.
+
 ### Tests Concept
 
-Procedure of testing the dynamic parameters of an ADC is listed below. Resolution of AC SRC should be at least 2 to 4 bits better than DUT.
+Procedure of testing the dynamic parameters of an DAC is listed below.
 
-ADC has a theoretical best ever SNR of:
+#### 1.Make a continuous input digital data signal (of a Sine wave) with the tester for the DAC to convert
 
-$$
-SNR = (6.02N + 1.76) dB
-$$
 
-Where $N$ is the number of ADC's bits.
 
-Procedure of testing the dynamic parameters of an ADC DUT is listed below.
+#### 2.Coherently collect a set of samples with the DAC
 
-#### 1. Make a continuous input signal with the tester for the ADC to convert
+#### 3.Send the collected set of time samples to the DSP to perform DFT / FFT analysis
 
-It is common practice to ensure that the analog/digital clock are referenced to a common master clock, so that the relationship of the clock sources's frequency is fixed and synchronized, which making test results highly repeatable.
+#### 4.Analyze the frequency bins of interest using equations or tester algorithms for SNR, THD and compare to specification
 
-![](https://cos.wiki-power.com/img/20221011122459.png)
-
-#### 2. Collect a set of samples with the ADC coherently
-
-For AC Source:
-
-$$
-\frac{Fs}{Fi}=\frac{Ns}{Ms}
-$$
-
-Where $Fs$ is the samping rate of AC Source, $Fi$ is signal frequency, $Ns$ is the number of samples (does not have to be a 2x number), $Ms$ is the number of integer cycles (does not have to be odd).
-
-For Digital Capture:
-
-$$
-\frac{Fs(dut)}{Fi}=\frac{Ncap}{Mc}
-$$
-
-Where $Fs(dut)$ is the ADC sampling rate also the Digital Capture's sample rate, $Fi$ is the  signal frequency, $Ncap$ is the number of samples captured (2x number), $Mc$ is the number of integer cycles (odd).
-
-#### 3. Send the collected set of time samples to the DSP to perform DFT / FFT analysis
-
-![](https://cos.wiki-power.com/img/20221011140834.png)
-
-![](https://cos.wiki-power.com/img/20221011140904.png)
-
-#### 4. Analyze the frequency bins of interest using equations or tester algorithms for SNR, THD and compare to specification
-
-#### 5. Make a pass / fail decision based on the results
+#### 5.Make a pass / fail decision based on the results
 
 ## References & Acknowledgements
 

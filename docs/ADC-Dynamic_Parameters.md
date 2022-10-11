@@ -36,14 +36,6 @@ $$
 
 ![](https://cos.wiki-power.com/img/20221009225800.png)
 
-### Signal to Noise and Distortion Ratio (SINAD)
-
-**Signal to Noise and Distortion Ratio (SINAD)**
-
-### Inter-modulation Error (IM)
-
-**Inter-modulation Error (IM)**
-
 ## How to Test Dynamic Parameters
 
 ### Test System Setup
@@ -52,9 +44,9 @@ Test system setup for ADC dynamic parameter tests:
 
 ![](https://cos.wiki-power.com/img/20221009230212.png)
 
-### Tests Concept
+Resolution of AC SRC should be at least 2 to 4 bits better than DUT.
 
-Procedure of testing the dynamic parameters of an ADC is listed below. Resolution of AC SRC should be at least 2 to 4 bits better than DUT.
+### Tests Concept
 
 ADC has a theoretical best ever SNR of:
 
