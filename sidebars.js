@@ -252,6 +252,7 @@ ATE: [{
   'ADC-Dynamic_Parameters',
   'DAC-Basic_Operation',
   'DAC-Static_Parameters',
+  'DAC-Dynamic_Parameters',
   ],
 },
 {
