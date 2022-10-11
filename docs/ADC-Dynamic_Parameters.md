@@ -1,14 +1,7 @@
 ---
 id: ADC-Dynamic_Parameters
-title: ADC - Dynamic Parameters 🚧
+title: ADC - Dynamic Parameters
 ---
-
-## References & Acknowledgements
-
-- *Fundamentals of Testing Using ATE*
-- *The-Fundamentals-of-Mixed-Signal-Testing_Brian-Lowe*
-
-> This article is protected by [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by/4.0/deed.en) agreement, should be reproduced with attribution.
 
 ## Dynamic Parameters
 
@@ -106,3 +99,10 @@ Where $Fs(dut)$ is the ADC sampling rate also the Digital Capture's sample rate,
 #### 4. Analyze the frequency bins of interest using equations or tester algorithms for SNR, THD and compare to specification
 
 #### 5. Make a pass / fail decision based on the results
+
+## References & Acknowledgements
+
+- *Fundamentals of Testing Using ATE*
+- *The-Fundamentals-of-Mixed-Signal-Testing_Brian-Lowe*
+
+> This article is protected by [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by/4.0/deed.en) agreement, should be reproduced with attribution.

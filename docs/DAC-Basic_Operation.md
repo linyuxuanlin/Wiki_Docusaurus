@@ -1,6 +1,13 @@
 ---
-id: ADC-Basic_Operation
-title: ADC - Basic Operation
+id: DAC-Basic_Operation
+title: DAC - Basic Operation
+---
+
+
+
+
+
+
 ---
 
 Analog to Digital Converter (ADC) is a device to converts analog signals into a sequence of digital data.

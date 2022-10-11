@@ -247,6 +247,7 @@ ATE: [{
   },
   items: [
   'Mixed_Signal_Test',
+  'DAC-Basic_Operation',
   'ADC-Basic_Operation',
   'ADC-Static_Parameters',
   'ADC-Dynamic_Parameters',
