@@ -64,7 +64,7 @@ If DNL exceeds is too large, one or more codes will be missing and never receive
 
 ![](https://cos.wiki-power.com/img/20221008163705.png)
 
-The deviations are measured at the transition points from one step to the next for the ADC. INL is the deviation of the values of the actual step function to the ideal straight line function
+The deviations are measured at the transition points from one step to the next for the ADC. INL is the deviation of the values of the actual step function to the ideal straight line function.
 
 Equations to describe INL:
 
@@ -125,10 +125,10 @@ However, a real device will have a count more than 16 times for wider codes, and
 #### 3. Calculate for DNL for each step
 
 $$
-DNL[n]=\frac{Hits[n]-\frac{\sum Hits[n]}{2^n-2}}{\frac{\sum Hits[n]}{2^n-2}}
+DNL[i]=\frac{Hits[i]-\frac{\sum Hits[i]}{2^n-2}}{\frac{\sum Hits[i]}{2^n-2}}
 $$
 
-Where $Hits[n]$ represents the Actual Output Code Count, and $\frac{\sum Hits[n]}{2^n-2}$ represents the Ideal Output Code Count.
+Where $Hits[i]$ represents the Actual Output Code Count, and $\frac{\sum Hits[i]}{2^n-2}$ represents the Ideal Output Code Count.
 
 ![](https://cos.wiki-power.com/img/20221008234157.png)
 
@@ -149,10 +149,10 @@ Therefore DNL[1] (Code 001) = (14-16)/16 \* LSB => -0.125 \* LSB.
 
 #### 5. Calculate for INL for each step
 
-INL is the cumulative value of the first DNL to the DNL[n] (except zero and full scale DNL):
+INL is the cumulative value of the first DNL to the DNL[i] (except zero and full scale DNL):
 
 $$
-INL[n]=DNL[n]+DNL[i-1]+...+DNL[2]+DNL[1]
+INL[i]=DNL[i]+DNL[i-1]+...+DNL[2]+DNL[1]
 $$
 
 Note that $DNL[0]$ is not used,

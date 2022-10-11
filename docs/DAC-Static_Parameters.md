@@ -73,7 +73,7 @@ $$
 also, INL can also be expressed as a function of DNL:
 
 $$
-INL[i]=\sum_{i=0}^{i=n}DNL[i]
+INL[i]=\sum_{n=0}^{n=i}DNL[n]
 $$
 
 ![](https://cos.wiki-power.com/img/20221011184739.png)
