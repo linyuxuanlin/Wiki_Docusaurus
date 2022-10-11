@@ -224,7 +224,6 @@ ATE: [{
   label: 'Test Fundamental',
   link: {
     type: 'generated-index',
-    slug: '/ATE',
     //description: 'describtion to be updated',
     keywords: ['x', 'x'],
   },
@@ -242,6 +241,7 @@ ATE: [{
   label: 'Mixed Signal Test',
   link: {
     type: 'generated-index',
+    slug: '/ATE',
     //description: 'describtion to be updated',
     keywords: ['x', 'x'],
   },
