@@ -58,18 +58,6 @@ If $M$ and $N$ aremutually prime ($M=3,N=16$), so they are mutually prime and ev
 
 ![](https://cos.wiki-power.com/img/20220930170343.png)
 
-## Fundamentals Of Fast Fourier Transform (FFT)
-
-There are several algorithms for transforming data from the time domain to the frequency domain:
-
-- **Fourier Transform (FT)**: continuous-time signals, possible only theoretically, can't be implemented using computer.
-- **Discrete Fourier Transform (DFT)**: sampled signals, finite number of samples, high calculation complexity.
-- **Fast Fourier Transform (FFT)**: sampled signals, $2^n$ numbers of samples, low calculation complexity. FFT assumes periodicity（周期性） in all cases.
-
-for Fast Fourier Transform (FFT), the number of samples $N$ needs to be a power of 2 as it makes transform algorithm simpler and much faster.
-
-🚧
-
 ## Common Frequency Analysis Algorithms
 
 For $N$ time-domain signal samples, there are $N$ frequency-domain signal values, and there are $N/2$ frequency-domain power spectrum values. A typical spectral components example is shown below:
