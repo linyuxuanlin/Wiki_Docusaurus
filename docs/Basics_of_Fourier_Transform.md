@@ -6,14 +6,22 @@ title: Basics of Fourier Transform 🚧
 There are several algorithms for transforming data from the time domain to the frequency domain:
 
 - **Fourier Transform (FT)**: continuous-time signals, possible only theoretically, can't be implemented using computer.
-- **Discrete Fourier Transform (DFT)**: sampled signals, finite number of samples, high calculation complexity.
-- **Fast Fourier Transform (FFT)**: sampled signals, $2^n$ numbers of samples, low calculation complexity. FFT assumes periodicity（周期性） in all cases.
+
+## Fourier Series
+
+**Fourier Series**（傅里叶级数） is summarized as creating a complex waveform by summing pure sine waves with different amplitudes and frequencies, and to decompose a complex signal into a sum of sinusoids of different amplitudes and frequencies.
+
+## Discrete Fourier Transform (DFT)
+
+**Discrete Fourier Transform (DFT)**: sampled signals, finite number of samples, high calculation complexity.
 
 ## Fast Fourier Transform (FFT)
 
-for Fast Fourier Transform (FFT), the number of samples $N$ needs to be a power of 2 as it makes transform algorithm simpler and much faster.
+**Fast Fourier Transform (FFT)**
 
+sampled signals, $2^n$ numbers of samples, low calculation complexity. FFT assumes periodicity（周期性） in all cases.
 
+For Fast Fourier Transform (FFT), the number of samples $N$ needs to be a power of 2 as it makes transform algorithm simpler and much faster.
 
 ## References & Acknowledgements
 
