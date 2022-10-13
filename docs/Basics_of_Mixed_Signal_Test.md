@@ -7,7 +7,7 @@ Mixed signal contains both analog and digital signals. Devices processing mixed 
 
 As a part of it, analog signals is signals we use in the real world such as voice or tempurature, it's continuous in both time and amplitude. To process analog signals into computers, we need to convert them to digital signals, as it's discrete in both time and amplitude.
 
-##  Sampling Theory
+## Sampling Theory
 
 ![](https://cos.wiki-power.com/img/20220929094314.png)
 
@@ -201,9 +201,13 @@ The analog and digital clocks are derived from a system wide reference clock. If
 
 ### Digital Signal Processor (DSP)
 
-The tester will carry the stored captured signal to the DSP processor through data buses.
+**Digital Signal Processor (DSP)** is a specialized microprocessor to performs mathematical operations on arrays of digital numbers. Various algorithms like DFT and FFT are performed on DSP to transform time domain information into the frequency domain.
+
+The architecture of a DSP is optimized to allow fast multiplication, summing, logarithm calculations, squaring, and square root calculations.
 
 ![](https://cos.wiki-power.com/img/20221007142019.png)
+
+The tester will carry the stored captured signal to the DSP processor through data buses.
 
 ## References & Acknowledgements
 
