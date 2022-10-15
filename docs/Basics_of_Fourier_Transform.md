@@ -11,6 +11,16 @@ There are several algorithms for transforming data from the time domain to the f
 
 **Fourier Series**（傅里叶级数） is summarized as creating a complex waveform by summing pure sine waves with different amplitudes and frequencies, and to decompose a complex signal into a sum of sinusoids of different amplitudes and frequencies.
 
+### Dirichlet Conditions
+
+Dirichlet Conditions specify a set of conditions that must be met before a signal can be decomposed into a Fourier Series:
+
+- The signal is a mathematical function, i.e., one and only one y-point corresponds to each x-point.
+- The signal is periodic.
+- The area bounded by the signal over one period is finite. 
+
+
+
 ## Discrete Fourier Transform (DFT)
 
 **Discrete Fourier Transform (DFT)**: sampled signals, finite number of samples, high calculation complexity.
