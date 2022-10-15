@@ -57,11 +57,10 @@ The DFT algorithm uses each sample point in the summation from 0 to N-1 for each
 
 ## Fast Fourier Transform (FFT)
 
-**Fast Fourier Transform (FFT)**
+**Fast Fourier Transform (FFT)** remedies the DFT speed problem by skipping over portions of the summations which produce redundant information. Rules for using FFT:
 
-sampled signals, $2^n$ numbers of samples, low calculation complexity. FFT assumes periodicity（周期性） in all cases.
-
-For Fast Fourier Transform (FFT), the number of samples $N$ needs to be a power of 2 as it makes transform algorithm simpler and much faster.
+- The number of sample points must be a power of 2 ($2^n$).
+- The number of additions and multiplications is: $\frac{N}{2}\log_2 N$.
 
 ## References & Acknowledgements
 
