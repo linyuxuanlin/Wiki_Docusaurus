@@ -7,9 +7,14 @@ There are several algorithms for transforming data from the time domain to the f
 
 - **Fourier Transform (FT)**: continuous-time signals, possible only theoretically, can't be implemented using computer.
 
+<iframe src=https://github.com/linyuxuanlin/File-host/raw/main/semiconductor-test/The-Fundamentals-of-Mixed-Signal-Testing_Brian-Lowe.pdf>
+
+不兼容。
+</iframe>
+
 ## Fourier Series
 
-**Fourier Series**（傅里叶级数） is summarized as creating a complex waveform by summing pure sine waves with different amplitudes and frequencies, and to decompose a complex signal into a sum of sinusoids of different amplitudes and frequencies.
+A **Fourier Series**（傅里叶级数） is summarized as creating a complex waveform by summing pure sine waves with different amplitudes and frequencies, and to decompose a complex signal into a sum of sinusoids of different amplitudes and frequencies.
 
 ### Dirichlet Conditions
 
