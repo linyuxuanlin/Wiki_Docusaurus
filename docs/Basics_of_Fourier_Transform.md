@@ -53,9 +53,7 @@ where:
 - $b$ is one of $B$ frequency bins (each bin represents a frequency range of $F_s /N$).
 - $j$ is the imaginary operator.
 
-The DFT algorithm uses each sample point in the summation from 0 to N - 1 for each analyzed frequency. Note that all N sample points contain information about all B frequencies, thus each of the B frequencies for which information is desired requires a summation of N time sample products. Processing a DFT is slow, because N2 calculations are necessary. For example, a 2000 point DFT requires 4 million calculations, often floating point calculations, which are slower than integer calculations.
-
-sampled signals, finite number of samples, high calculation complexity.
+The DFT algorithm uses each sample point in the summation from 0 to N-1 for each analyzed frequency. All N sample points contain information about all B frequencies, thus each of the B frequencies for which information is desired requires a summation of N time sample products. Because of the reasons above, processing a DFT is slow, because $N^2$ calculations are necessary. For example, a 2000 point DFT requires 4 million calculations, often floating point calculations, which are slower than integer calculations.
 
 ## Fast Fourier Transform (FFT)
 
