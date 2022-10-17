@@ -11,6 +11,8 @@ As a part of it, analog signals is signals we use in the real world such as voic
 
 ![](https://cos.wiki-power.com/img/20220929094314.png)
 
+Sampling theory applies to the signal to be periodic, or errors will be introduced.
+
 ### Nyquist Theorem
 
 We use **Nyquist Theorem（奈奎斯特定理）** to gain the minimum sampling frequency when sampling signals:
