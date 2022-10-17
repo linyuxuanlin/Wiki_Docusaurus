@@ -20,11 +20,11 @@ DDR3（Double-Data-Rate 3 Synchronous Dynamic RAM）即第三代双倍速率同�
 
 DDR3 x4/x8 的详细管脚分布：
 
-![](https://cos.wiki-power.com/img/20220501183947.png)
+![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20220501183947.png)
 
 DDR3 x16 的详细管脚分布：
 
-![](https://cos.wiki-power.com/img/20220501180003.png)
+![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20220501180003.png)
 
 DDR3 引脚符号对应的类型和描述如下（以 x16 为例）：
 

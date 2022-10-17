@@ -3,7 +3,7 @@ id: Level_Threshold_Test
 title: Level Threshold Test 🚧
 ---
 
-![](https://cos.wiki-power.com/img/20220912163403.png)
+![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20220912163403.png)
 
 Level threshold test includes Output Level Threshold (VOL & VOH) and Input Level Threshold (VIL & VIH). They are originated from typical TTL and CMOS level threshold:
 
@@ -26,7 +26,7 @@ VOH represents the minimum output voltage when output HIGH voltage level, IOH re
 
 #### VOL/IOL Test (Serial)
 
-![](https://cos.wiki-power.com/img/20220912172403.png)
+![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20220912172403.png)
 
 1. Apply VDDmin to VDD pin (with current clamp).
 2. Precondition specific output pin to logic '0'.
@@ -37,7 +37,7 @@ VOH represents the minimum output voltage when output HIGH voltage level, IOH re
 
 #### VOH/IOH Test (Serial)
 
-![](https://cos.wiki-power.com/img/20220912172445.png)
+![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20220912172445.png)
 
 1. Apply VDDmin to VDD pin (with current clamp).
 2. Precondition specific output pin to logic '1'.

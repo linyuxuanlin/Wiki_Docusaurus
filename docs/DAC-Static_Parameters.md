@@ -12,7 +12,7 @@ DAC's static parameters mainly contain:
 - Differential Non-Linearity Error (DNE or DNL)
 - Integral Non-Linearity Error (INE or INL)
 
-![](https://cos.wiki-power.com/img/20221011144045.png)
+![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20221011144045.png)
 
 ### Offset Error
 
@@ -22,7 +22,7 @@ $$
 OffsetError=V_{ZS(Actual)}-V_{ZS(ideal)}
 $$
 
-![](https://cos.wiki-power.com/img/20221011144415.png)
+![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20221011144415.png)
 
 ### Gain Error
 
@@ -42,7 +42,7 @@ $$
 FSR_{Actual}=V_{FS(Actual)}-V_{ZS(Actual)}
 $$
 
-![](https://cos.wiki-power.com/img/20221011144925.png)
+![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20221011144925.png)
 
 ### Differential Non-Linearity Error (DNL)
 
@@ -56,7 +56,7 @@ where $V_{in2}$ is the voltage of the upper transition, $V_{in1}$ is the lower.
 
 DNL is a measure of "small-signal" linearity error. Measurement of DNE is made from one step to the next, not each step to the ideal value.
 
-![](https://cos.wiki-power.com/img/20221011153556.png)
+![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20221011153556.png)
 
 ### Integral Non-Linearity Error (INL)
 
@@ -76,7 +76,7 @@ $$
 INL[i]=\sum_{n=0}^{n=i}DNL[n]
 $$
 
-![](https://cos.wiki-power.com/img/20221011184739.png)
+![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20221011184739.png)
 
 ## How to Test Static Parameters
 
@@ -84,21 +84,21 @@ $$
 
 Test system setup for DAC static parameter tests:
 
-![](https://cos.wiki-power.com/img/20221011185006.png)
+![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20221011185006.png)
 
 Block diagram of signal setup:
 
-![](https://cos.wiki-power.com/img/20221011185447.png)
+![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20221011185447.png)
 
 ### Tests Concept
 
 Procedure of testing the static parameters of an DAC DUT is listed below.
 
-![](https://cos.wiki-power.com/img/20221011185739.png)
+![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20221011185739.png)
 
 #### 1. Measure the output voltage by applying the digital data inputs from Zero Scale to Full Scale
 
-![](https://cos.wiki-power.com/img/20221011185711.png)
+![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20221011185711.png)
 
 #### 2. Calculate DNL for each input code
 

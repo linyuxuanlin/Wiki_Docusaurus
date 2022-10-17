@@ -5,7 +5,7 @@ title: Hack.init( ) 黑客马拉松
 
 —— Wight · 基于云平台的去线缆化照明系统。
 
-![](https://cos.wiki-power.com/img/wight.jpg)
+![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/wight.jpg)
 
 项目仓库：[**linyuxuanlin / Wight**](https://github.com/linyuxuanlin/Wight)
 

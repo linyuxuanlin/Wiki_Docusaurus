@@ -37,7 +37,7 @@ title: 电源设计 - 开关稳压 IC（非隔离型）
 
 ## 实验判断电感是否饱和
 
-![](https://cos.wiki-power.com/img/20210723133831.png)
+![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20210723133831.png)
 
 除此之外，也可从异常温升、啸叫等情况来判断。
 

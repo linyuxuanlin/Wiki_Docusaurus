@@ -5,7 +5,7 @@ title: ADC - Basic Operation
 
 Analog to Digital Converter (ADC) is a device to converts analog signals into a sequence of digital data.
 
-![](https://cos.wiki-power.com/img/20221011141438.png)
+![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20221011141438.png)
 
 Though ADC's ideal transfer function should be a straight line, but actually is a uniform staircase, that the number of steps corresponds to the number of digital output codes. Since analog is continuous and digital is discrete, quantization error will be introduced in the procedure.
 
@@ -21,7 +21,7 @@ For example, for a 3 bit converter, there are:
 - 7 transitions
 - 6 steps between 7 transitions
 
-![](https://cos.wiki-power.com/img/20221008151344.png)
+![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20221008151344.png)
 
 - **Zero Scale Range Transition Voltage ($V_{ZST}$)**: Voltage of the analog input signal when the first transition is recorded.
 - **Full Scale Range Transition Voltage ($V_{FST}$)**: Voltage of the analog input signal when the last transition is recorded.

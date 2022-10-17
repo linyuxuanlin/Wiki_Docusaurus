@@ -5,11 +5,11 @@ title: DAC - Basic Operation
 
 Digital to Analog Converter (ADC) is a device to converts a sequence of digital input data into analog signals.
 
-![](https://cos.wiki-power.com/img/20221011141644.png)
+![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20221011141644.png)
 
 Range of DAC output voltage between the minimum ($V_{ZS}$) and maximum ($V_{FS}$) analog outputs is called **Full Scale Range (FSR)**:
 
-![](https://cos.wiki-power.com/img/20221011142249.png)
+![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20221011142249.png)
 
 And average change in voltage when in between the input codes is defined as LSB:
 
