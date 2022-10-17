@@ -7,6 +7,8 @@ Digital to Analog Converter (ADC) is a device to converts a sequence of digital 
 
 ![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20221011141644.png)
 
+**Zero Scale Output** is the measured output value when the zero/null level digital input code is presented to the DUT.
+
 Range of DAC output voltage between the minimum ($V_{ZS}$) and maximum ($V_{FS}$) analog outputs is called **Full Scale Range (FSR)**:
 
 ![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20221011142249.png)
