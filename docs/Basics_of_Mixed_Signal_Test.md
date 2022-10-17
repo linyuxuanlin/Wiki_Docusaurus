@@ -31,7 +31,9 @@ To minimize aliasing problem, we need to remove the frequency greater than $\fra
 
 ### Coherent Sampling
 
-**Coherent sampling（相干采样）** is to ensure the continuity of sampling and prevent spectrum leakage（频谱泄露）, it guarantees that a sample set (a series of samples which represent the analog signal) has a fixed and well defined relationship between $F_s$, $N$, $F_i$ and $M$:
+If a time sample set does not contain a precise integer number of cycles, **spectral leakage（频谱泄露）** will occur.
+
+**Coherent sampling（相干采样）** is to ensure the continuity of sampling and prevent spectral leakage, it guarantees that a sample set (a series of samples which represent the analog signal) has a fixed and well defined relationship between $F_s$, $N$, $F_i$ and $M$:
 
 $$
 \frac{M}{N}=\frac{F_i}{F_s}
