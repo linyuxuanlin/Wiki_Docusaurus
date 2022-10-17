@@ -33,13 +33,11 @@ To minimize aliasing problem, we need to remove the frequency greater than $\fra
 
 If a time sample set does not contain a precise integer number of cycles, **spectral leakage（频谱泄露）** will occur.
 
-**Coherent sampling（相干采样）** is to ensure the continuity of sampling and prevent spectral leakage, it guarantees that a sample set (a series of samples which represent the analog signal) has a fixed and well defined relationship between $F_s$, $N$, $F_i$ and $M$:
+**Coherent sampling（相干采样）** is to ensure the continuity of sampling and prevent spectral leakage, it guarantees that a sample set (a series of samples which represent the analog signal) has a fixed and well defined relationship between the sample frequency $F_s$, the number of samples $N$, the test signal frequency $F_i$, and the number of test signal periods sampled $M$:
 
 $$
 \frac{M}{N}=\frac{F_i}{F_s}
 $$
-
-Where $N$ is the number of samples, and $M$ is the number of $F_i$ cycles over which samples are taken.
 
 For an example, if we want to calculate the $F_s$ of continuous repeating sinewave, where $F_i$ is 1kHz, $M=3$ and $N=16$:
 
