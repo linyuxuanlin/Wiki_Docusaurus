@@ -85,7 +85,7 @@ Then remove the DC component and harmonics (usually up to 5):
 
 ![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20221002151402.png)
 
-Next sum all bins of the remaining power spectrum (the noise power) measured by the RMS value (Root Mean Squared, The analog voltage that is equal to a DC voltage containing the same amount of energy. For a sine wave, the RMS value is 0.707 times the peak value.):
+Next sum all bins of the remaining power spectrum (the noise power) measured by the RMS value (Root Mean Squared, The analog voltage that is equal to a DC voltage containing the same amount of energy, for a sine wave, the RMS value is 0.707 times the peak value):
 
 ![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20221002151646.png)
 
