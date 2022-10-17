@@ -39,6 +39,8 @@ $$
 \frac{M}{N}=\frac{F_i}{F_s}
 $$
 
+The total time required to take all samples is called the **Unit Test Period (UTP)** and requires $M$ cycles of the test signal, which has frequency $F_i$.
+
 For an example, if we want to calculate the $F_s$ of continuous repeating sinewave, where $F_i$ is 1kHz, $M=3$ and $N=16$:
 
 ![](https://cos.wiki-power.com/img/20220930164712.png)
@@ -48,7 +50,7 @@ So we can conclude that $F_s=5.333kHz$.
 Important tips of coherent sampling:
 
 - Increasing $M$ and/or $N$ will increase both accuracy and test time.
-- $M$ and $N$ needs to be a whole number.
+- $M$ and $N$ needs to be an integer.
 - $N$ needs to be a power of 2 when using Fast Fourier Transform (FFT).
 - $M$ and $N$ are recommended to be mutually prime（互质）so that each sample gives unique information. Described in the following.
 
