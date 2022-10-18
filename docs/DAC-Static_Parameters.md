@@ -3,16 +3,41 @@ id: DAC-Static_Parameters
 title: DAC - Static Parameters
 ---
 
+Digital to Analog Converter (ADC) is a device to converts a sequence of digital input data into analog signals.
+
+![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20221011141644.png)
+
 ## Static Parameters
 
 DAC's static parameters mainly contain:
 
+- Zero Scale Output
+- Full Scale Range (FSR)
+- LSB Size
 - Offset Error
 - Gain Error
 - Differential Non-Linearity Error (DNE or DNL)
 - Integral Non-Linearity Error (INE or INL)
 
 ![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20221011144045.png)
+
+### Zero Scale Output
+
+**Zero Scale Output** is the measured output value when the zero/null level digital input code is presented to the DUT.
+
+### Full Scale Range (FSR)
+
+Range of DAC output voltage between the minimum ($V_{ZS}$) and maximum ($V_{FS}$) analog outputs is called **Full Scale Range (FSR)**:
+
+![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20221011142249.png)
+
+### LSB Size
+
+Average change in voltage when in between the input codes is defined as LSB:
+
+$$
+LSB=\frac{FSR_{measured}}{2^{bits}-1}
+$$
 
 ### Offset Error
 

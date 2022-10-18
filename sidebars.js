@@ -248,10 +248,8 @@ ATE: [{
   items: [
   'Basics_of_Mixed_Signal_Test',
   'Basics_of_Fourier_Transform',
-  'ADC-Basic_Operation',
   'ADC-Static_Parameters',
   'ADC-Dynamic_Parameters',
-  'DAC-Basic_Operation',
   'DAC-Static_Parameters',
   'DAC-Dynamic_Parameters',
   ],
