@@ -31,7 +31,7 @@ Although the Harmonic Distortion is not included in the measurement of SNR, but 
 **Total Harmonic Distortion (THD)** of an ADC is defined as the ratio of the fundamental to all the harmonic distortion:
 
 $$
-THD(dB)=20log(\frac{\sqrt{V^2_{2(RMS)}+V^2_{3(RMS)}+...+V^2_{n(RMS)}}}{V_{1(RMS)}}
+THD(dB)=20log(\frac{\sqrt{V^2_{2(RMS)}+V^2_{3(RMS)}+...+V^2_{n(RMS)}}}{V_{1(RMS)}})
 $$
 
 ![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20221009225800.png)
@@ -85,6 +85,8 @@ Where $Fs(dut)$ is the ADC sampling rate also the Digital Capture's sample rate,
 #### 3. Send the collected set of time samples to the DSP to perform DFT / FFT analysis
 
 ![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20221011140834.png)
+
+?
 
 ![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20221011140904.png)
 

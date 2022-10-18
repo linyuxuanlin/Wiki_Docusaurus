@@ -68,8 +68,6 @@ $$
 V_{FS}=V_{FST}-0.5LSB+2LSB
 $$
 
-?
-
 ### Differential Non-Linearity Error (DNL)
 
 **Differential Non-Linearity Error (DNL)** is the difference between an actual step width and an ideal step width (1 LSB). It's a measure of "small-signal" linearity error, and is measured from the difference in the analog input voltage between 2 adjacent transitions and the device's average LSB.
