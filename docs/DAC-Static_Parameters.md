@@ -137,6 +137,12 @@ $$
 LSB_{average}=\frac{OutputMeasured[n]-OutputMeasured[0]}{2^{bits}-1}
 $$
 
+#### 3. Get the max and min DNL
+
+#### 4. Calculate for INL for each step
+
+#### 5. Get the max and min INL
+
 ## References & Acknowledgements
 
 - *Fundamentals of Testing Using ATE*
