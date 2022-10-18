@@ -98,7 +98,7 @@ $$
 also, INL can also be expressed as a function of DNL:
 
 $$
-INL[i]=\sum_{n=0}^{n=i}DNL[n]
+INL[i]=\sum_{n=1}^{n=i}DNL[n]
 $$
 
 ![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20221011184739.png)
