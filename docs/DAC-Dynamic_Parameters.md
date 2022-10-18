@@ -80,8 +80,6 @@ Where $Fs$ is the DAC sampling rate also the Digital Capture's sample rate, $Fi$
 
 ![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20221011140904.png)
 
----
-
 #### 4.Analyze the frequency bins of interest using equations or tester algorithms for SNR, THD and compare to specification
 
 #### 5.Make a pass / fail decision based on the results

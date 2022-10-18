@@ -73,6 +73,7 @@ There are several parameters for describing spectral components as follows:
 - Signal To Noise Ratio (SNR)（信噪比）
 - Total Harmonic Distortion (THD)（总谐波失真）
 - Signal to Noise and Distortion (SINAD)（信纳比）
+- Intermodulation Distortion (IM)（互调失真）
 - Spurious Free Dynamic Range (SFDR)（无杂散动态范围）
 
 ### Signal To Noise Ratio (SNR)
@@ -132,6 +133,12 @@ $$
 $$
 \therefore {SINAD}=({SNR}^{-1}+{THD})^{-1}
 $$
+
+### Intermodulation Distortion (IM)
+
+![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20221018162800.png)
+
+Intermodulation Distortion (IM) occurs when two or more signals are used in a non-linear system. The spectrum will not only consist of the original signals, but will also contain the sum and difference of the input signals along with their harmonics.
 
 ### Spurious Free Dynamic Range (SFRD)
 
