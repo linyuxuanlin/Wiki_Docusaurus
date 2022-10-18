@@ -79,7 +79,7 @@ $$
 
 where $V_{in2}$ is the voltage of the upper transition, $V_{in1}$ is the lower.
 
-DNL is a measure of "small-signal" linearity error. Measurement of DNE is made from one step to the next, not each step to the ideal value.
+DNL is a measure of "small-signal" linearity error. Measurement of DNL is made from one step to the next, not each step to the ideal value.
 
 ![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20221011153556.png)
 
