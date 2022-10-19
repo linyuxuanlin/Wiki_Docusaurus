@@ -107,7 +107,7 @@ SNR is usually expressed in decibels (dB), and is often a positive value (assumi
 And we can conclude that:
 
 $$
-{THD}_{dB}=10log_{10}(\frac{{Harmonic \ Power}}{{Fundamental}})
+{THD}(dB)=10log_{10}(\frac{{Harmonic \ Power}}{{Fundamental}})
 $$
 
 THD is often a negative value (assuming the Fundamental Power is much larger than the total Harmonic Power).
@@ -149,7 +149,7 @@ Intermodulation Distortion (IM) occurs when two or more signals are used in a no
 Note that the highest element may or may not be a harmonic. So we can conclude that:
 
 $$
-{SFDR}_{dB}=10log_{10}(\frac{{Fundamental}}{{Next \ Highest}})
+{SFDR}(dB)=10log_{10}(\frac{{Fundamental}}{{Next \ Highest}})
 $$
 
 The Spurious Free Dynamic Range is a positive value (assuming the Fundamental Power is much larger than the next highest Spur Power.
