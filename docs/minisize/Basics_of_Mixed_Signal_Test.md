@@ -1,9 +1,6 @@
----
-id: Basics_of_Mixed_Signal_Test
-title: Basics of Mixed Signal Test
----
+# Basics of Mixed Signal Test
 
-Mixed signal contains both analog and digital signals. Devices processing mixed signal typically include ADCs, DACs, analog switches and multiplexers, sample-and-hold amplifiers, and so on.
+Mixed signal contains both **analog** and **digital** signals. Devices processing mixed signal typically include ADCs, DACs, analog switches and multiplexers, sample-and-hold amplifiers, and so on.
 
 As a part of it, analog signals is signals we use in the real world such as voice or tempurature, it's continuous in both time and amplitude. To process analog signals into computers, we need to convert them to digital signals, as it's discrete in both time and amplitude.
 
@@ -120,7 +117,7 @@ $$
 {SINAD}=\frac{S}{N+D}
 $$
 
-And we can conclued that:
+and we can conclued that:
 
 $$
 \because {SNR}=\frac{S}{N}, {THD}=\frac{D}{S}
