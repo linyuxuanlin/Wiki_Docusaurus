@@ -95,7 +95,7 @@ $$
 INL[i]=\frac{ActualOutput[i]-ExpectedOutput[i]}{LSB_{average}}
 $$
 
-also, INL can also be expressed as a function of DNL:
+Also, INL can also be expressed as a function of DNL:
 
 $$
 INL[i]=\sum_{n=1}^{n=i}DNL[n]
