@@ -1,6 +1,6 @@
 ---
 id: VBT_Syntax-TheHdw-DCVI
-title: VBT Syntax - TheHdw - DCVI🚧
+title: VBT Syntax - TheHdw - DCVI 🚧
 ---
 
 ```vb
