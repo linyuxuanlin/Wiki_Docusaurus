@@ -265,6 +265,7 @@ ATE: [{
   items: [
     'VBT_Syntax_Notes-Hardware_TheHdw',
     'Pattern_Syntax_Notes',
+    'DCVI_Alarms'
   ],
 },
 ],
