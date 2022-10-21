@@ -1,11 +1,25 @@
 ---
-id: VBT_Syntax_Notes-Hardware_TheHdw
-title: VBT Syntax Notes - Hardware (TheHdw) 🚧
+id: VBT_Syntax-TheHdw
+title: VBT Syntax - TheHdw 🚧
 ---
 
-## PPMU
+**TheHdw** is an object to accesses properties and methods relating to test system hardware.
 
-## Digital
+## TheHdw.DCVI
+
+### Pins
+
+```vb
+TheHdw.DCVI.Pins(PinList)
+```
+
+
+
+## TheHdw.PPMU
+
+🚧
+
+## TheHdw.Digital
 
 ### ApplyLevelsTiming
 

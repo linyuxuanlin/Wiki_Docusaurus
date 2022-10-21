@@ -263,7 +263,8 @@ ATE: [{
     keywords: ['x', 'x'],
   },
   items: [
-    'VBT_Syntax_Notes-Hardware_TheHdw',
+    'VBT_Syntax-TheHdw',
+    'VBT_Syntax-TheHdw-DCVI',
     'Pattern_Syntax_Notes',
     'DCVI_Alarms'
   ],
