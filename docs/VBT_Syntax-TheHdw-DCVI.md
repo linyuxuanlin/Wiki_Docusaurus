@@ -7,12 +7,13 @@ title: VBT Syntax - TheHdw - DCVI🚧
 TheHdw.DCVI
 ```
 
-## TheHdw.DCVI
-
-### Pins
+## Pins
 
 ```vb
 .Pins(PinList)
+
+' thehdw.DCVI.Pins(vin_pin)
+' thehdw.DCVI.Pins(PortA)
 ```
 
-
+### Gate
