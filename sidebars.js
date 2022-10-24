@@ -265,6 +265,7 @@ ATE: [{
   items: [
     'VBT_Syntax-TheHdw',
     'VBT_Syntax-TheHdw-DCVI',
+    'VBT_Syntax-TheExec-Flow',
     'Pattern_Syntax_Notes',
     'DCVI_Alarms'
   ],
