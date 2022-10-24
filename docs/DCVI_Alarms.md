@@ -1,6 +1,6 @@
 ---
 id: DCVI_Alarms
-title: DCVI_Alarms
+title: DCVI Alarms
 ---
 
 ## Mode (0010)
