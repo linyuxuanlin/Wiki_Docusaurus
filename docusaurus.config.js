@@ -143,7 +143,7 @@ const config = {
 
       metadata: [{
         name: 'keywords',
-        content: 'hardware, STM32, Arduino, NAS, software, blog'
+        content: 'ATE, hardware, STM32, Arduino, NAS, software, blog'
       }],
 
       image: 'https://cos.ap-guangzhou.myqcloud.com/wiki-media-1253965369/doc/logo-zip.png',
@@ -192,6 +192,7 @@ const config = {
             label: "博客",
             position: "right",
           },
+
           {
             href: 'https://github.com/linyuxuanlin/Wiki_Docusaurus',
             position: 'right',
