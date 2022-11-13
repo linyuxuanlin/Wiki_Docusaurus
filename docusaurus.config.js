@@ -113,7 +113,7 @@ const config = {
 
       algolia: {
 
-        apiKey: 'defe7fd8690822eed8e3c94801bab286',//5c07d8bf9c9928c4453857f6cad0420e
+        apiKey: '5c07d8bf9c9928c4453857f6cad0420e',//
         indexName: 'wiki-power',
 
         // The application ID provided by Algolia
