@@ -113,11 +113,11 @@ const config = {
 
       algolia: {
 
-        apiKey: '5c07d8bf9c9928c4453857f6cad0420e',//
-        indexName: 'wiki-power',
+        apiKey: '5b53a6725a461a68875055a4479546ec',//5c07d8bf9c9928c4453857f6cad0420e
+        indexName: 'digest', //wiki-power
 
         // The application ID provided by Algolia
-        appId: 'BH4D9OD16A', //这个是默认的，文档见 https://autocomplete-experimental.netlify.app/docs/docsearchmodal/#appid，用自己的 ID IRO903CONI 反而搜不出内容 
+        appId: 'XI73YOJJB4', //这个是默认的，文档见 https://autocomplete-experimental.netlify.app/docs/docsearchmodal/#appid，用自己的 ID IRO903CONI 反而搜不出内容 //BH4D9OD16A
 
         // Public API key: it is safe to commit it
         // apiKey: 'defe7fd8690822eed8e3c94801bab286',
