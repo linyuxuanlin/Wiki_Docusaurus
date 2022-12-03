@@ -194,6 +194,60 @@ const sidebars = {
 
     {
       type: 'category',
+      label: 'ATE Test Fundamental',
+      link: {
+        type: 'generated-index',
+        //description: 'describtion to be updated',
+        keywords: ['x', 'x'],
+      },
+      items: [
+      'Continuity_Test',
+      'DC_Parameters',
+      'IDD_Test',
+      'Leakage_Test',
+      'Level_Threshold_Test',
+      'Digital_Functional_Test',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'ATE Mixed Signal Test',
+      link: {
+        type: 'generated-index',
+        slug: '/ATE',
+        //description: 'describtion to be updated',
+        keywords: ['x', 'x'],
+      },
+      items: [
+      'Basics_of_Mixed_Signal_Test',
+      'Basics_of_Fourier_Transform',
+      'ADC-Static_Parameters',
+      'ADC-Dynamic_Parameters',
+      'DAC-Static_Parameters',
+      'DAC-Dynamic_Parameters',
+      'Troubleshooting_of_ADC_and_DAC',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'ATE Coding Syntax',
+      link: {
+        type: 'generated-index',
+        //description: 'describtion to be updated',
+        keywords: ['x', 'x'],
+      },
+      items: [
+        'VBT_Syntax-TheHdw',
+        'VBT_Syntax-TheHdw-DCVI',
+        'VBT_Syntax-TheExec-Flow',
+        'Pattern_Syntax_Notes',
+        'DCVI_Alarms'
+      ],
+    },
+
+
+    {
+      type: 'category',
       label: '软件与仪器使用',
       link: {
         type: 'generated-index',
@@ -219,60 +273,7 @@ const sidebars = {
   ],
 
 
-ATE: [{
-  type: 'category',
-  label: 'Test Fundamental',
-  link: {
-    type: 'generated-index',
-    //description: 'describtion to be updated',
-    keywords: ['x', 'x'],
-  },
-  items: [
-  'Continuity_Test',
-  'DC_Parameters',
-  'IDD_Test',
-  'Leakage_Test',
-  'Level_Threshold_Test',
-  'Digital_Functional_Test',
-  ],
-},
-{
-  type: 'category',
-  label: 'Mixed Signal Test',
-  link: {
-    type: 'generated-index',
-    slug: '/ATE',
-    //description: 'describtion to be updated',
-    keywords: ['x', 'x'],
-  },
-  items: [
-  'Basics_of_Mixed_Signal_Test',
-  'Basics_of_Fourier_Transform',
-  'ADC-Static_Parameters',
-  'ADC-Dynamic_Parameters',
-  'DAC-Static_Parameters',
-  'DAC-Dynamic_Parameters',
-  'Troubleshooting_of_ADC_and_DAC',
-  ],
-},
-{
-  type: 'category',
-  label: 'ATE Coding Syntax',
-  link: {
-    type: 'generated-index',
-    //description: 'describtion to be updated',
-    keywords: ['x', 'x'],
-  },
-  items: [
-    'VBT_Syntax-TheHdw',
-    'VBT_Syntax-TheHdw-DCVI',
-    'VBT_Syntax-TheExec-Flow',
-    'Pattern_Syntax_Notes',
-    'DCVI_Alarms'
-  ],
-},
-],
-  
+
 
   嵌入式与软件: [{
       type: 'category',
