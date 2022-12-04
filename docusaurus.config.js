@@ -189,10 +189,10 @@ const config = {
           },
 
           {
-            href: 'https://github.com/linyuxuanlin/Wiki_Docusaurus',
-            position: 'right',
-            className: 'header-github-link',
-            'aria-label': 'GitHub repository',
+            href: "https://github.com/linyuxuanlin/Wiki_Docusaurus",
+            position: "right",
+            className: "header-github-link",
+            'aria-label': "GitHub repository",
           },
 
 
