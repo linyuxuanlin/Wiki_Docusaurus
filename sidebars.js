@@ -173,6 +173,22 @@ const sidebars = {
       ],
     },
 
+    {
+      type: 'category',
+      label: '半导体自动化测试',
+      link: {
+        type: 'generated-index',
+        //description: ' ',
+        keywords: ['x', 'x'],
+      },
+      items: [
+        '半导体测试基础-基本概念',
+        '半导体测试基础-OS测试',
+        '半导体测试基础-DC参数测试',
+        '半导体测试基础-功能测试',
+        '半导体测试基础-AC参数测试',
+      ],
+    },
 
     {
       type: 'category',
@@ -256,22 +272,7 @@ const sidebars = {
 
 
 
-    {
-      type: 'category',
-      label: '半导体自动化测试',
-      link: {
-        type: 'generated-index',
-        //description: ' ',
-        keywords: ['x', 'x'],
-      },
-      items: [
-        '半导体测试基础-基本概念',
-        '半导体测试基础-OS测试',
-        '半导体测试基础-DC参数测试',
-        '半导体测试基础-功能测试',
-        '半导体测试基础-AC参数测试',
-      ],
-    },
+
 
   ],
 
