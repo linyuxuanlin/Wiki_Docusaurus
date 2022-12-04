@@ -54,7 +54,7 @@ const config = {
           anonymizeIP: false,
         },
         gtag: {
-          trackingID: 'G-N2MCBBXJ0F',
+          trackingID: 'G-N2MCBBXJ0F', //Fork 我的仓库，请把这个改成你自己的
           anonymizeIP: false,
         },
         docs: {
@@ -113,11 +113,11 @@ const config = {
 
       algolia: {
 
-        apiKey: '02bd2340879bdb682f2a9fe509fec240',//5c07d8bf9c9928c4453857f6cad0420e?
+        apiKey: '5c07d8bf9c9928c4453857f6cad0420e',//?02bd2340879bdb682f2a9fe509fec240
         indexName: 'wiki-power', //
 
         // The application ID provided by Algolia
-        appId: 'IRO903CONI', //BH4D9OD16A 是默认的，文档见 https://autocomplete-experimental.netlify.app/docs/docsearchmodal/#appid，用自己的 ID IRO903CONI 反而搜不出内容 
+        appId: 'BH4D9OD16A', //BH4D9OD16A 是默认的，文档见 https://autocomplete-experimental.netlify.app/docs/docsearchmodal/#appid，用自己的 ID IRO903CONI 反而搜不出内容 
 
         // Public API key: it is safe to commit it
         // apiKey: 'defe7fd8690822eed8e3c94801bab286',
