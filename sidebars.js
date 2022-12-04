@@ -81,7 +81,7 @@ const sidebars = {
       link: {
         type: 'generated-index',
         //description: ' ',
-        keywords: ['硬件与半导体', '协议', '通信协议', '逻辑电平', 'SPI', 'I2C', 'CAN', 'USB', ],
+        keywords: ['硬件与半导体', '协议', '通信协议', '逻辑电平', 'SPI', 'I2C', 'CAN', 'USB',],
       },
       items: [
         '通信协议-数字逻辑电平',
@@ -176,78 +176,6 @@ const sidebars = {
 
     {
       type: 'category',
-      label: '半导体自动化测试',
-      link: {
-        type: 'generated-index',
-        //description: ' ',
-        keywords: ['x', 'x'],
-      },
-      items: [
-        '半导体测试基础-基本概念',
-        '半导体测试基础-OS测试',
-        '半导体测试基础-DC参数测试',
-        '半导体测试基础-功能测试',
-        '半导体测试基础-AC参数测试',
-      ],
-    },
-
-
-    {
-      type: 'category',
-      label: 'ATE Test Fundamental',
-      link: {
-        type: 'generated-index',
-        //description: 'describtion to be updated',
-        keywords: ['x', 'x'],
-      },
-      items: [
-      'Continuity_Test',
-      'DC_Parameters',
-      'IDD_Test',
-      'Leakage_Test',
-      'Level_Threshold_Test',
-      'Digital_Functional_Test',
-      ],
-    },
-    {
-      type: 'category',
-      label: 'ATE Mixed Signal Test',
-      link: {
-        type: 'generated-index',
-        slug: '/ATE',
-        //description: 'describtion to be updated',
-        keywords: ['x', 'x'],
-      },
-      items: [
-      'Basics_of_Mixed_Signal_Test',
-      'Basics_of_Fourier_Transform',
-      'ADC-Static_Parameters',
-      'ADC-Dynamic_Parameters',
-      'DAC-Static_Parameters',
-      'DAC-Dynamic_Parameters',
-      'Troubleshooting_of_ADC_and_DAC',
-      ],
-    },
-    {
-      type: 'category',
-      label: 'ATE Coding Syntax',
-      link: {
-        type: 'generated-index',
-        //description: 'describtion to be updated',
-        keywords: ['x', 'x'],
-      },
-      items: [
-        'VBT_Syntax-TheHdw',
-        'VBT_Syntax-TheHdw-DCVI',
-        'VBT_Syntax-TheExec-Flow',
-        'Pattern_Syntax_Notes',
-        'DCVI_Alarms'
-      ],
-    },
-
-
-    {
-      type: 'category',
       label: '软件与仪器使用',
       link: {
         type: 'generated-index',
@@ -270,254 +198,329 @@ const sidebars = {
         '线性注入器的使用',
       ],
     },
+
+
+    {
+      type: 'category',
+      label: 'ATE Test Fundamental',
+      link: {
+        type: 'generated-index',
+        //description: 'describtion to be updated',
+        keywords: ['x', 'x'],
+      },
+      items: [
+        'Continuity_Test',
+        'DC_Parameters',
+        'IDD_Test',
+        'Leakage_Test',
+        'Level_Threshold_Test',
+        'Digital_Functional_Test',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'ATE Mixed Signal Test',
+      link: {
+        type: 'generated-index',
+        slug: '/ATE',
+        //description: 'describtion to be updated',
+        keywords: ['x', 'x'],
+      },
+      items: [
+        'Basics_of_Mixed_Signal_Test',
+        'Basics_of_Fourier_Transform',
+        'ADC-Static_Parameters',
+        'ADC-Dynamic_Parameters',
+        'DAC-Static_Parameters',
+        'DAC-Dynamic_Parameters',
+        'Troubleshooting_of_ADC_and_DAC',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'ATE Coding Syntax',
+      link: {
+        type: 'generated-index',
+        //description: 'describtion to be updated',
+        keywords: ['x', 'x'],
+      },
+      items: [
+        'VBT_Syntax-TheHdw',
+        'VBT_Syntax-TheHdw-DCVI',
+        'VBT_Syntax-TheExec-Flow',
+        'Pattern_Syntax_Notes',
+        'DCVI_Alarms'
+      ],
+    },
+
+
+
+
+    {
+      type: 'category',
+      label: '半导体自动化测试',
+      link: {
+        type: 'generated-index',
+        //description: ' ',
+        keywords: ['x', 'x'],
+      },
+      items: [
+        '半导体测试基础-基本概念',
+        '半导体测试基础-OS测试',
+        '半导体测试基础-DC参数测试',
+        '半导体测试基础-功能测试',
+        '半导体测试基础-AC参数测试',
+      ],
+    },
+
   ],
 
 
 
 
   嵌入式与软件: [{
-      type: 'category',
-      label: '软件开发',
-      link: {
-        type: 'generated-index',
-        //description: 'describtion to be updated',
-        keywords: ['x', 'x'],
-      },
-      items: [
-        '双系统极简安装指南',
-        '网页版串口助手的开发',
-        'Ubuntu配置笔记',
-        'ROS入门笔记',
-        '机器视觉入门',
-        '使用R语言进行数据分析',
-        'CSS学习笔记',
-        'HTML学习笔记',
-        'JavaScript学习笔记',
-        'Docker简易指南',
-        'DockerCompose-更优雅的打开方式',
-        '自适应网页设计',
-        '前端开发-环境搭建',
-        'BookJourney-二手书商城小程序',
-        'Git学习笔记',
-      ],
+    type: 'category',
+    label: '软件开发',
+    link: {
+      type: 'generated-index',
+      //description: 'describtion to be updated',
+      keywords: ['x', 'x'],
     },
-    {
-      type: 'category',
-      label: 'Linux',
-      link: {
-        type: 'generated-index',
-        //description: 'describtion to be updated',
-        keywords: ['x', 'x'],
-      },
-      items: [
-        'Linux学习笔记-基础知识',
-        'Linux学习笔记-用户操作',
-        '嵌入式Linux-基础知识',
-        '嵌入式Linux-GPIO子系统',
-        'BeagleBone系列-基本参数与环境配置',
-        'BeagleBone系列-无线连接',
-        'BeagleBone系列-使用BBIO库开发',
-        'BeagleBone系列-BBAI入坑',
-        'JetsonNano系列-入坑',
-      ],
+    items: [
+      '双系统极简安装指南',
+      '网页版串口助手的开发',
+      'Ubuntu配置笔记',
+      'ROS入门笔记',
+      '机器视觉入门',
+      '使用R语言进行数据分析',
+      'CSS学习笔记',
+      'HTML学习笔记',
+      'JavaScript学习笔记',
+      'Docker简易指南',
+      'DockerCompose-更优雅的打开方式',
+      '自适应网页设计',
+      '前端开发-环境搭建',
+      'BookJourney-二手书商城小程序',
+      'Git学习笔记',
+    ],
+  },
+  {
+    type: 'category',
+    label: 'Linux',
+    link: {
+      type: 'generated-index',
+      //description: 'describtion to be updated',
+      keywords: ['x', 'x'],
     },
-    {
-      type: 'category',
-      label: '单片机',
-      link: {
-        type: 'generated-index',
-        slug: '/嵌入式与软件',
-        //description: 'describtion to be updated',
-        keywords: ['x', 'x'],
-      },
-      items: [
-        'HAL库开发笔记-环境配置',
-        'HAL库开发笔记-GPIO',
-        'HAL库开发笔记-外部中断',
-        'HAL库开发笔记-串口通信',
-        'HAL库开发笔记-DMA',
-        'HAL库开发笔记-TIM基本定时器',
-        'HAL库开发笔记-TIM通用定时器',
-        'HAL库开发笔记-I2C通信（MPU6050）',
-        'HAL库开发笔记-CAN通信',
-        'HAL库开发笔记-USB通信',
-        'HAL库开发笔记-以太网通信（LwIP）',
-        'Lora通信-基于正点原子ATK-LORA-01模块',
-        'STM32CubeIDE串口重定向（printf）及输出浮点型',
-        '如何读写单个bit',
-        'PlatformIO—一站式嵌入式开发工具',
-        'PlatformIO搭配CubeMX食用',
-        'C与STM32常用宏定义',
-        'C与STM32代码规范',
-        'SWD与JTAG的区别与联系',
-        'CubeMX与CubeIDE避坑',
-        'STM32的启动模式',
-        'KeilMDK配置指南',
-        '大疆N3飞控-参考资料',
-        'ATTiny85调试记录',
-        'T-Clock桌上小钟',
-        '麦轮小车',
-        '转义字符',
-        '一个舵机的自我修养',
-        'FreeRTOS开发笔记',
-      ],
+    items: [
+      'Linux学习笔记-基础知识',
+      'Linux学习笔记-用户操作',
+      '嵌入式Linux-基础知识',
+      '嵌入式Linux-GPIO子系统',
+      'BeagleBone系列-基本参数与环境配置',
+      'BeagleBone系列-无线连接',
+      'BeagleBone系列-使用BBIO库开发',
+      'BeagleBone系列-BBAI入坑',
+      'JetsonNano系列-入坑',
+    ],
+  },
+  {
+    type: 'category',
+    label: '单片机',
+    link: {
+      type: 'generated-index',
+      slug: '/嵌入式与软件',
+      //description: 'describtion to be updated',
+      keywords: ['x', 'x'],
     },
+    items: [
+      'HAL库开发笔记-环境配置',
+      'HAL库开发笔记-GPIO',
+      'HAL库开发笔记-外部中断',
+      'HAL库开发笔记-串口通信',
+      'HAL库开发笔记-DMA',
+      'HAL库开发笔记-TIM基本定时器',
+      'HAL库开发笔记-TIM通用定时器',
+      'HAL库开发笔记-I2C通信（MPU6050）',
+      'HAL库开发笔记-CAN通信',
+      'HAL库开发笔记-USB通信',
+      'HAL库开发笔记-以太网通信（LwIP）',
+      'Lora通信-基于正点原子ATK-LORA-01模块',
+      'STM32CubeIDE串口重定向（printf）及输出浮点型',
+      '如何读写单个bit',
+      'PlatformIO—一站式嵌入式开发工具',
+      'PlatformIO搭配CubeMX食用',
+      'C与STM32常用宏定义',
+      'C与STM32代码规范',
+      'SWD与JTAG的区别与联系',
+      'CubeMX与CubeIDE避坑',
+      'STM32的启动模式',
+      'KeilMDK配置指南',
+      '大疆N3飞控-参考资料',
+      'ATTiny85调试记录',
+      'T-Clock桌上小钟',
+      '麦轮小车',
+      '转义字符',
+      '一个舵机的自我修养',
+      'FreeRTOS开发笔记',
+    ],
+  },
   ],
 
 
   效率指南: [{
-      type: 'category',
-      label: '机器人队行政',
-      link: {
-        type: 'generated-index',
-        //description: 'describtion to be updated',
-        keywords: ['x', 'x'],
-      },
-      items: [
-        '四校交流-策划案',
-        '四校交流-策划案-正式',
-        '团队知识库的搭建-理论',
-        '队内影像资源管理方法',
-        '大扫除-经验模板',
-        '校门口车辆放行-流程',
-        '参观实验室-经验模板',
-        '动员大会-经验总结',
-        '换届大会-经验总结',
-        '破冰活动-经验总结',
-        '出展活动-经验总结',
-      ],
+    type: 'category',
+    label: '机器人队行政',
+    link: {
+      type: 'generated-index',
+      //description: 'describtion to be updated',
+      keywords: ['x', 'x'],
     },
-    {
-      type: 'category',
-      label: '产品相关',
-      link: {
-        type: 'generated-index',
-        //description: 'describtion to be updated',
-        keywords: ['x', 'x'],
-      },
-      items: [
-        '产品经理的日常',
-        '中台的概念',
-        '画图基础',
-        '智能硬件产品经理的技术要求',
-        '如何撰写一份BRD',
-        '软件开发中的注意事项',
-        '专业与分工',
-        '关于复盘',
-      ],
+    items: [
+      '四校交流-策划案',
+      '四校交流-策划案-正式',
+      '团队知识库的搭建-理论',
+      '队内影像资源管理方法',
+      '大扫除-经验模板',
+      '校门口车辆放行-流程',
+      '参观实验室-经验模板',
+      '动员大会-经验总结',
+      '换届大会-经验总结',
+      '破冰活动-经验总结',
+      '出展活动-经验总结',
+    ],
+  },
+  {
+    type: 'category',
+    label: '产品相关',
+    link: {
+      type: 'generated-index',
+      //description: 'describtion to be updated',
+      keywords: ['x', 'x'],
     },
+    items: [
+      '产品经理的日常',
+      '中台的概念',
+      '画图基础',
+      '智能硬件产品经理的技术要求',
+      '如何撰写一份BRD',
+      '软件开发中的注意事项',
+      '专业与分工',
+      '关于复盘',
+    ],
+  },
 
-    {
-      type: 'category',
-      label: '小技巧',
-      link: {
-        type: 'generated-index',
-        //description: 'describtion to be updated',
-        keywords: ['x', 'x'],
-      },
-      items: [
-        'Windows常用命令',
-        'Windows11个人初始化配置',
-        'VSCode的便携模式',
-        '开启Chrome（Edge）多线程下载',
-        '移除Chrome（Edge）由组织管理',
-        '用群晖自带反向代理实现HTTPS访问',
-        '解决Google相册导出时间信息丢失问题',
-        '使用gitignore忽略特殊文件',
-        '3D打印：ABS与PLA的区别',
-        '如何批量拉取Git仓库更新',
-        '如何用Markdown写公众号文章',
-        '如何快速删除node_modules',
-        '如何为公众号文章增加特效',
-        '如何在Linux下使用微信',
-        '如何打印出手写效果的文字',
-        '如何从乐曲中分离音轨',
-        '如何高效制作幻灯片',
-        '卡片式写作',
-        '用reveal.js制作幻灯片',
-        'npm和Yarn换源加速国内访问',
-        'Vue.js小技巧',
-        '正则表达式实用语句',
-        'GitHub改Host',
-        'MSI主板开启虚拟化的方法',
-        'Git配置代理',
-        '删除GitHub仓库中某个文件夹',
-        '定制SublimeText3',
-        '用Vercel加速Pages服务',
-        'Doxygen注释规范',
-        'AltiumDesigner安装库文件',
-        'CentOS配置OhMyZsh',
-        '如何快速制作一个启动盘',
-        '使用VSCode进行远程开发',
-        'Node.js和npm的安装与卸载（MacOS）',
-      ],
+  {
+    type: 'category',
+    label: '小技巧',
+    link: {
+      type: 'generated-index',
+      //description: 'describtion to be updated',
+      keywords: ['x', 'x'],
     },
-    {
-      type: 'category',
-      label: '生活黑客',
-      link: {
-        //slug: '/生活',
-        type: 'generated-index',
-        //description: '一些生活相关的笔记。',
-        keywords: ['life', 'lifestyle'],
-      },
-      items: [
-        '如何调制一杯鸡尾酒',
-        '太阳高度角计算',
-        '如何准备一个逃生背包',
-        '谈谈未来的职业选择',
-        //'如何合理配置个人资产',
-        '读《黑客与画家》',
-        //'英语六级-备考',
-        //'音乐相关',
-        'THEHack2019黑客马拉松',
-        'Hack.init()黑客马拉松',
-        '焊接大赛培训及总结',
-        //'为什么要「站在巨人的肩膀上」',
-        '如何不被AI取代',
-        //'一些观点',
-      ],
+    items: [
+      'Windows常用命令',
+      'Windows11个人初始化配置',
+      'VSCode的便携模式',
+      '开启Chrome（Edge）多线程下载',
+      '移除Chrome（Edge）由组织管理',
+      '用群晖自带反向代理实现HTTPS访问',
+      '解决Google相册导出时间信息丢失问题',
+      '使用gitignore忽略特殊文件',
+      '3D打印：ABS与PLA的区别',
+      '如何批量拉取Git仓库更新',
+      '如何用Markdown写公众号文章',
+      '如何快速删除node_modules',
+      '如何为公众号文章增加特效',
+      '如何在Linux下使用微信',
+      '如何打印出手写效果的文字',
+      '如何从乐曲中分离音轨',
+      '如何高效制作幻灯片',
+      '卡片式写作',
+      '用reveal.js制作幻灯片',
+      'npm和Yarn换源加速国内访问',
+      'Vue.js小技巧',
+      '正则表达式实用语句',
+      'GitHub改Host',
+      'MSI主板开启虚拟化的方法',
+      'Git配置代理',
+      '删除GitHub仓库中某个文件夹',
+      '定制SublimeText3',
+      '用Vercel加速Pages服务',
+      'Doxygen注释规范',
+      'AltiumDesigner安装库文件',
+      'CentOS配置OhMyZsh',
+      '如何快速制作一个启动盘',
+      '使用VSCode进行远程开发',
+      'Node.js和npm的安装与卸载（MacOS）',
+    ],
+  },
+  {
+    type: 'category',
+    label: '生活黑客',
+    link: {
+      //slug: '/生活',
+      type: 'generated-index',
+      //description: '一些生活相关的笔记。',
+      keywords: ['life', 'lifestyle'],
     },
-    {
-      type: 'category',
-      label: '高效工作',
-      link: {
-        slug: '/效率指南',
-        type: 'generated-index',
-        //description: 'describtion to be updated',
-        keywords: ['x', 'x'],
-      },
-      items: [
+    items: [
+      '如何调制一杯鸡尾酒',
+      '太阳高度角计算',
+      '如何准备一个逃生背包',
+      '谈谈未来的职业选择',
+      //'如何合理配置个人资产',
+      '读《黑客与画家》',
+      //'英语六级-备考',
+      //'音乐相关',
+      'THEHack2019黑客马拉松',
+      'Hack.init()黑客马拉松',
+      '焊接大赛培训及总结',
+      //'为什么要「站在巨人的肩膀上」',
+      '如何不被AI取代',
+      //'一些观点',
+    ],
+  },
+  {
+    type: 'category',
+    label: '高效工作',
+    link: {
+      slug: '/效率指南',
+      type: 'generated-index',
+      //description: 'describtion to be updated',
+      keywords: ['x', 'x'],
+    },
+    items: [
 
-        '基于RSSHub搭建RSS生成器（群晖Docker）', // CSDN
-        '基于Bitwarden搭建密码管理器（群晖Docker）', // CSDN
-        '基于acme.sh自动申请域名证书（群晖Docker）', // CSDN
-        '基于Calibre搭建在线书库（群晖Docker）', // CSDN
-        '如何实现外网RDP远控（frp）', // CSDN
-        '使用rdp访问群晖NAS', // CSDN
-        '如何用Markdown写一份简历', // CSDN
-        '使用Rclone同步网盘数据',
-        '为什么你需要一个知识库', // CSDN
-        '个人文案排版规范', // CSDN todo
-        '技术文档写作规范', // CSDN todo
-        '如何保存易逝的文字',
-        '个人知识库的搭建-基于Docusaurus', // CSDN
-        'Windows初始化与软件推荐', // CSDN todo
-        'Docusaurus极简部署指南', // CSDN todo
-        'Hugo极简搭建指南', // CSDN todo
-        '如何在iPad上运行VSCode', // CSDN
-        '使用Markdown高效写作', // CSDN
-        '用树莓派架设云打印服务器', // CSDN todo
-        '用Graphviz绘制关系图', // CSDN todo
-        'RSS-高效率的阅读方式',
-        '如何在Markdown中使用LaTeX',
-        '把回忆放心交给GooglePhotos',
-        'VSCode生产力指南-环境配置', // CSDN todo
-        'VSCode生产力指南-JupyterNotebook', // CSDN todo
-        '在浏览器上运行VSCode（旧）',
-        '如何配一台电脑',
-      ],
-    },
+      '基于RSSHub搭建RSS生成器（群晖Docker）', // CSDN
+      '基于Bitwarden搭建密码管理器（群晖Docker）', // CSDN
+      '基于acme.sh自动申请域名证书（群晖Docker）', // CSDN
+      '基于Calibre搭建在线书库（群晖Docker）', // CSDN
+      '如何实现外网RDP远控（frp）', // CSDN
+      '使用rdp访问群晖NAS', // CSDN
+      '如何用Markdown写一份简历', // CSDN
+      '使用Rclone同步网盘数据',
+      '为什么你需要一个知识库', // CSDN
+      '个人文案排版规范', // CSDN todo
+      '技术文档写作规范', // CSDN todo
+      '如何保存易逝的文字',
+      '个人知识库的搭建-基于Docusaurus', // CSDN
+      'Windows初始化与软件推荐', // CSDN todo
+      'Docusaurus极简部署指南', // CSDN todo
+      'Hugo极简搭建指南', // CSDN todo
+      '如何在iPad上运行VSCode', // CSDN
+      '使用Markdown高效写作', // CSDN
+      '用树莓派架设云打印服务器', // CSDN todo
+      '用Graphviz绘制关系图', // CSDN todo
+      'RSS-高效率的阅读方式',
+      '如何在Markdown中使用LaTeX',
+      '把回忆放心交给GooglePhotos',
+      'VSCode生产力指南-环境配置', // CSDN todo
+      'VSCode生产力指南-JupyterNotebook', // CSDN todo
+      '在浏览器上运行VSCode（旧）',
+      '如何配一台电脑',
+    ],
+  },
   ],
 
 };
